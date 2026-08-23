@@ -1,0 +1,95 @@
+:root{
+  --ink:#3B2C8F;
+  --ink-soft:#5b4dad;
+  --lav:#D1C6F5;
+  --lav-tint:#EFEBFB;
+  --paper:#FCFCFC;
+  --rule:#ded7f5;
+  --max:44rem;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:ui-sans-serif,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;
+  font-size:17px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--ink);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:var(--ink-soft)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 1.5rem}
+header.site{
+  background:var(--lav);
+  padding:3rem 0 2.5rem;
+  text-align:center;
+}
+header.site img{width:104px;height:104px;border-radius:50%;display:block;margin:0 auto 1.1rem}
+header.site h1{
+  margin:0;
+  font-size:1.45rem;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  font-weight:600;
+}
+header.site p{margin:.6rem 0 0;font-size:.95rem;color:var(--ink-soft);letter-spacing:.02em}
+nav.site{
+  background:var(--lav-tint);
+  border-bottom:1px solid var(--rule);
+  text-align:center;
+  padding:.85rem 0;
+  font-size:.83rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+nav.site a{margin:0 .85rem;text-decoration:none;font-weight:600}
+nav.site a:hover{text-decoration:underline}
+main{padding:3rem 0 4rem}
+h2{
+  font-size:1.05rem;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  margin:2.6rem 0 .8rem;
+  padding-bottom:.5rem;
+  border-bottom:1px solid var(--rule);
+}
+h2:first-of-type{margin-top:0}
+h3{font-size:1rem;margin:1.6rem 0 .5rem}
+p,li{color:#2c2350}
+ul{padding-left:1.25rem}
+li{margin:.4rem 0}
+.eyebrow{
+  font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink-soft);margin:0 0 .4rem;
+}
+.lede{font-size:1.08rem}
+.meta{
+  background:var(--lav-tint);
+  border:1px solid var(--rule);
+  border-radius:10px;
+  padding:.9rem 1.1rem;
+  font-size:.9rem;
+  margin:0 0 2.5rem;
+}
+.meta strong{letter-spacing:.04em}
+footer.site{
+  border-top:1px solid var(--rule);
+  padding:2rem 0 3rem;
+  text-align:center;
+  font-size:.85rem;
+  color:var(--ink-soft);
+}
+footer.site a{margin:0 .5rem}
+.card{
+  background:var(--lav-tint);
+  border:1px solid var(--rule);
+  border-radius:12px;
+  padding:1.3rem 1.4rem;
+  margin:1.2rem 0;
+}
+.card h3{margin-top:0}
+@media (prefers-color-scheme:dark){
+  :root{--paper:#141026;--ink:#e2dcf8;--ink-soft:#b3a7e6;--lav:#2a2150;--lav-tint:#1e1838;--rule:#372c63}
+  p,li{color:#cfc7ee}
+}
