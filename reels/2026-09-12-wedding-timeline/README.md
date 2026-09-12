@@ -4,8 +4,19 @@ CTA experiment: binary/simple choice. The caption closes on a two-option
 question (on-site vs. salon), the same shape as Sunday Round 3's
 half-day/full-day question.
 
-Status: **rendered, not posted.** Holding for tomorrow at the author's
-request. Nothing has gone live on any account.
+Status: **rendered, not posted.** Nothing has gone live on any account.
+
+Queued for Sat 2026-09-12 at 9am ET (13:00 UTC), routine
+`trig_01Jt5xBwXxo4C6QsuPP5tf4z`. It surfaces the Instagram cut and the
+caption and waits for approval before publishing; it does not post on its
+own. Unattended posting was considered and declined, since auto mode
+blocks the Composio call as a real-world transaction and allowing it would
+have pre-approved every other Composio action too.
+
+Targets are the default accounts: Instagram `@aiforeventplanners`
+(`28308094898830663`) and the Facebook Page "The Event Planners AI"
+(`1233196746554445`). Meta fetches the video from its raw GitHub URL on
+this branch, so moving or renaming the file breaks the post.
 
 ## Cuts
 
