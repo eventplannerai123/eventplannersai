@@ -3,8 +3,16 @@
 Comment-to-unlock keyword: **CENTERPIECE** (Sep 13 assignment in the guide's
 keyword list; not reused from CONTRACT on Sep 10).
 
-Status: **rendered, awaiting approval.** Nothing posted. Per the guide's
-step 2, the Instagram cut goes to the author for sign-off before publishing.
+Status: **published 2026-09-13.** Live on Instagram and Facebook, captions
+verified against the approved text character for character.
+
+| Account | Post |
+| --- | --- |
+| Instagram `@aiforeventplanners` | https://www.instagram.com/reel/DdOks0FjmRO/ |
+| Facebook "The Event Planners AI" | https://www.facebook.com/reel/1578909337365274/ |
+
+TikTok was not posted from here: the guide records Composio's TikTok
+integration as unable to publish publicly, so that cut is uploaded by hand.
 
 ## Cuts
 
