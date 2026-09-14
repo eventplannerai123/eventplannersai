@@ -3,7 +3,15 @@
 Comment-to-unlock keyword: **LAYOUT** (Sep 14 assignment; no clash with
 CONTRACT or CENTERPIECE).
 
-Status: **rendered, awaiting approval.** Nothing posted.
+Status: **published 2026-09-14.** Live on Instagram and Facebook, captions
+verified against the approved text character for character.
+
+| Account | Post |
+| --- | --- |
+| Instagram `@aiforeventplanners` | https://www.instagram.com/reel/DdRIsv2jZ_Q/ |
+| Facebook "The Event Planners AI" | https://www.facebook.com/reel/1603589134772458/ |
+
+TikTok was not posted from here; that cut is uploaded by hand per the guide.
 
 ## Cuts
 
