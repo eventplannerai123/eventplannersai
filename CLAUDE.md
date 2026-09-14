@@ -60,6 +60,13 @@ update this file to match.**
 Never post without explicit approval in the conversation. Build both cuts,
 show the Instagram one, ask, and wait.
 
+That rule is also enforced, not just written down. `.claude/settings.json`
+carries a PreToolUse hook that inspects every Composio execution call and
+returns `permissionDecision: "ask"` when the payload names an Instagram,
+Facebook, LinkedIn or TikTok create/post/update/delete/publish slug. Read
+calls are untouched, so caption verification still runs without a prompt.
+Do not weaken or remove it to make posting smoother.
+
 - **Instagram** — Composio account `instagram_newing-redate`, `ig_user_id`
   `28308094898830663`. Create the container with `media_type: REELS` and
   `share_to_feed: true`, then publish with a generous `max_wait_seconds`.
@@ -80,9 +87,12 @@ show the Instagram one, ask, and wait.
 ## Comment-to-unlock keywords
 
 One per deliverable, never reused — two posts sharing a keyword misroute the
-automated DM. Assigned so far: CONTRACT (Sep 10), CENTERPIECE (Sep 13),
-LAYOUT (Sep 14), plus FLORAL, TRANSFORM, NOTES, REVIEW (Sep 20), THREE
-(Sep 21). Check this list before writing a new CTA.
+automated DM to one of them.
+
+**The assignment list lives in the guide, under the standing production
+rules. Read it there before writing a new CTA.** It is deliberately not
+copied here: it changes with every new deliverable, so a copy would go stale
+and a stale copy is worse than no copy for this particular rule.
 
 ## Practical gotchas
 

@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "mcp__Composio__COMPOSIO_MULTI_EXECUTE_TOOL|mcp__Composio__COMPOSIO_REMOTE_BASH_TOOL|mcp__Composio__COMPOSIO_REMOTE_WORKBENCH",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -c \"if (tojson | test(\\\"(INSTAGRAM|FACEBOOK|LINKEDIN|TIKTOK)_(POST|CREATE|UPDATE|DELETE|PUBLISH)\\\")) then {hookSpecificOutput:{hookEventName:\\\"PreToolUse\\\",permissionDecision:\\\"ask\\\",permissionDecisionReason:\\\"This Composio call publishes to a live social account. Posting cannot be undone - confirm the video and caption were approved in this conversation before allowing.\\\"}} else {} end\"",
+            "timeout": 10,
+            "statusMessage": "Checking for live social publishing"
+          }
+        ]
+      }
+    ]
+  }
+}
