@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "jq -c \"if (tojson | test(\\\"(INSTAGRAM|FACEBOOK|LINKEDIN|TIKTOK)_(POST|CREATE|UPDATE|DELETE|PUBLISH)\\\")) then {hookSpecificOutput:{hookEventName:\\\"PreToolUse\\\",permissionDecision:\\\"ask\\\",permissionDecisionReason:\\\"This Composio call publishes to a live social account. Posting cannot be undone - confirm the video and caption were approved in this conversation before allowing.\\\"}} else {} end\"",
+            "command": "jq -c \"if (tojson | test(\\\"(_PUBLISH|(FACEBOOK|LINKEDIN|TIKTOK)_(CREATE|POST|UPDATE|DELETE)|INSTAGRAM_(UPDATE|DELETE))\\\")) then {hookSpecificOutput:{hookEventName:\\\"PreToolUse\\\",permissionDecision:\\\"ask\\\",permissionDecisionReason:\\\"This Composio call posts to or changes a live social account. Posting cannot be undone - confirm the video and caption were approved in this conversation before allowing.\\\"}} else {} end\"",
             "timeout": 10,
             "statusMessage": "Checking for live social publishing"
           }

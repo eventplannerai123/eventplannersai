@@ -62,10 +62,12 @@ show the Instagram one, ask, and wait.
 
 That rule is also enforced, not just written down. `.claude/settings.json`
 carries a PreToolUse hook that inspects every Composio execution call and
-returns `permissionDecision: "ask"` when the payload names an Instagram,
-Facebook, LinkedIn or TikTok create/post/update/delete/publish slug. Read
-calls are untouched, so caption verification still runs without a prompt.
-Do not weaken or remove it to make posting smoother.
+returns `permissionDecision: "ask"` when the payload names a slug that
+actually reaches a live account: any `_PUBLISH`, and Facebook, LinkedIn or
+TikTok create/post/update/delete, plus Instagram update/delete. Reads and
+Instagram container creation are untouched, since a container stages the
+upload but publishes nothing. Do not widen it back to cover staging, and do
+not remove it to make posting smoother.
 
 - **Instagram** — Composio account `instagram_newing-redate`, `ig_user_id`
   `28308094898830663`. Create the container with `media_type: REELS` and
