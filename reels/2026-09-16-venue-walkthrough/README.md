@@ -3,7 +3,19 @@
 No comment-to-unlock keyword: the caption closes on a question rather than
 an unlock, so nothing was reserved against the guide's list.
 
-Status: **rendered, awaiting approval.** Nothing posted.
+Status: **published 2026-09-16.** Live on Instagram and Facebook, captions
+verified against the approved text character for character.
+
+| Account | Post |
+| --- | --- |
+| Instagram `@aiforeventplanners` | https://www.instagram.com/reel/DdWVp4XjAYa/ |
+| Facebook "The Event Planners AI" | https://www.facebook.com/reel/1806833616980493/ |
+
+The Facebook post did not appear in the first page of the page feed
+immediately after publishing. It was confirmed through the page videos
+endpoint by its returned id before being reported as live.
+
+TikTok was not posted from here; that cut is uploaded by hand per the guide.
 
 ## Cuts
 
