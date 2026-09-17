@@ -60,14 +60,14 @@ update this file to match.**
 Never post without explicit approval in the conversation. Build both cuts,
 show the Instagram one, ask, and wait.
 
-That rule is also enforced, not just written down. `.claude/settings.json`
-carries a PreToolUse hook that inspects every Composio execution call and
-returns `permissionDecision: "ask"` when the payload names a slug that
-actually reaches a live account: any `_PUBLISH`, and Facebook, LinkedIn or
-TikTok create/post/update/delete, plus Instagram update/delete. Reads and
-Instagram container creation are untouched, since a container stages the
-upload but publishes nothing. Do not widen it back to cover staging, and do
-not remove it to make posting smoother.
+This rule is the only thing standing between a draft and a live account.
+A PreToolUse hook used to force a permission prompt on every publishing
+call; the author had it removed on 2026-09-17, preferring to give the
+go-ahead in conversation. So nothing mechanical stops a post now.
+
+Wait for words that clearly mean go: "go ahead", "publish", "post it".
+"Looks good" or "great" is feedback on the cut, not permission — ask.
+Do not re-add the hook unless the author asks for it.
 
 - **Instagram** — Composio account `instagram_newing-redate`, `ig_user_id`
   `28308094898830663`. Create the container with `media_type: REELS` and
