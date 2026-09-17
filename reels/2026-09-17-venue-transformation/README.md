@@ -3,7 +3,15 @@
 Comment-to-unlock keyword: **TRANSFORM** (unused; FLORAL went to the Sep 15
 post).
 
-Status: **rendered, awaiting approval.** Nothing posted.
+Status: **published 2026-09-17.** Live on Instagram and Facebook, captions
+verified against the approved text character for character.
+
+| Account | Post |
+| --- | --- |
+| Instagram `@aiforeventplanners` | https://www.instagram.com/reel/DdY0EX3lYdC/ |
+| Facebook "The Event Planners AI" | https://www.facebook.com/reel/1796803324806020/ |
+
+TikTok was not posted from here; that cut is uploaded by hand per the guide.
 
 ## Cuts
 
