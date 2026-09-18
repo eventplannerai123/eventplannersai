@@ -3,8 +3,23 @@
 Comment-to-unlock keyword: **CATERER**. Not on the guide's assignment list,
 so nothing to clash with; worth adding to that list.
 
-Status: **rendered, awaiting approval.** Nothing posted. Built a day early
-because the author is travelling on the morning of the 18th.
+Status: **published 2026-09-18.** Live on Instagram and Facebook, captions
+verified against the approved text character for character.
+
+| Account | Post |
+| --- | --- |
+| Instagram `@aiforeventplanners` | https://www.instagram.com/reel/DdbftmjgmIB/ |
+| Facebook "The Event Planners AI" | https://www.facebook.com/reel/1672652570949483/ |
+
+Posted by the scheduled routine at 9am ET, approved by the author the day
+before. The publish call returned an MCP client timeout at 60s while
+`max_wait_seconds` was set to 300; both posts had in fact succeeded
+server-side. State was checked before doing anything else rather than
+retrying, which would have duplicated the Facebook post. **Next time keep
+`max_wait_seconds` under the 60s client timeout, or publish Instagram and
+Facebook in separate calls.**
+
+TikTok was not posted from here; that cut is uploaded by hand per the guide.
 
 ## Cuts
 
