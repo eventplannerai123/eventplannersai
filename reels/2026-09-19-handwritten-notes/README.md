@@ -3,7 +3,24 @@
 Comment-to-unlock keyword: **NOTES**. Not on the guide's assignment list, so
 nothing to clash with; worth adding to that list alongside CATERER.
 
-Status: **awaiting approval.** Built and QC'd, not posted.
+Status: **published 2026-09-19.** Approved in conversation, then posted to
+Instagram and Facebook.
+
+| Account | Post |
+| --- | --- |
+| Instagram `@aiforeventplanners` | https://www.instagram.com/reel/DdeNg6tCTt9/ |
+| Facebook "The Event Planners AI" | https://www.facebook.com/reel/1748053619796411/ |
+
+Both captions were read back live and compared to the approved text byte
+for byte - identical on both platforms, with the four hashtags carrying a
+literal `#` rather than `%23`. Facebook reports the video length as
+17.166s, matching the cut.
+
+Instagram publish used `max_wait_seconds: 45`, under the 60s MCP client
+timeout that bit on Sep 18; the container reached FINISHED after 18.9s.
+Facebook did not appear in the page feed on the first read-back - it was
+still processing. It was re-read rather than re-posted, since
+`FACEBOOK_CREATE_VIDEO_POST` has no duplicate protection.
 
 TikTok is not posted from here; that cut is uploaded by hand per the guide.
 
@@ -13,7 +30,8 @@ The brief asked for confirmation that the AI-generated organization is
 actually accurate to the real notes before proceeding, since a visible
 misread would undercut the premise. The handwritten page was transcribed
 from the fullscreen frame at native resolution and checked line by line
-against ChatGPT's output.
+against ChatGPT's output. The author then sent the original photo, and the
+check was re-run against that rather than against a video frame.
 
 **No errors and no fabrications.** Everything on the page is carried
 through: event date November 12 2026, 6-8pm; 200 guests, cocktail
