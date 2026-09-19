@@ -15,11 +15,14 @@ update this file to match.**
 
 - **1080x1920, ratio exactly 0.5625.** Verify with ffprobe before calling an
   export finished; never leave raw screen-recording dimensions.
-- **Crop for a 1206-wide iPhone recording: `crop=1206:2144:0:478`.** The
-  y-offset matters. 478 drops the status bar and the red recording dot off
-  the top and keeps the ChatGPT input bar at the bottom, where the platform
-  UI covers it anyway. A y-offset of 0 leaves the recording dot in frame.
-  Recalculate the offset for any other capture width.
+- **Compute the crop from the source, don't reuse numbers.** Height =
+  width / 0.5625, and set the y-offset so the status bar and the red
+  recording dot fall off the top while the ChatGPT input bar stays at the
+  bottom, where the platform UI covers it anyway. A y-offset of 0 leaves
+  the recording dot in frame. For the usual 1206x2622 iPhone capture that
+  is **`crop=1206:2144:0:478`** — 478 off the top, nothing off the bottom.
+  Those numbers hold only for a 1206-wide source; a different device
+  silently breaks them, so recompute when the capture size changes.
 - 30 fps out, H.264 high, CRF 19, `+faststart`, AAC 192k at 48 kHz.
 - **Voiceover to -14 LUFS.** Measure the source with a loudnorm first pass
   and feed the measured values back in, rather than a single dynamic pass.
@@ -32,8 +35,8 @@ update this file to match.**
 - **Time to payoff must stay under 6 seconds** — everything before the
   reveal, combined. This is a hard ceiling from real watch-time data and is
   the rule most often missed. The Sep 12 reel shipped at 6.5s and broke it.
-- The generating section needs a **visible beat of at least 2.5s**, sped to
-  2-3x, about 4 seconds.
+- The generating section needs a **visible beat of 2.5-3s minimum**, sped
+  to 2-3x, about 4 seconds.
 - If the real generating phase runs much longer than that and is visually
   static, take a **representative slice** rather than compressing the whole
   thing, and say so in the reply.
@@ -50,8 +53,15 @@ update this file to match.**
 - Only two text overlays: the hook at 0:00-0:02 and the end card. **No
   rolling mid-video captions** — transcription-synced captions were tested
   and made retention worse.
+- **Never post both cuts to the same platform** — near-identical posts
+  split engagement.
 - Hooks must name a concrete scenario, number or timeframe immediately.
   Abstract superlatives and vague teases both measured badly.
+- Prefer broader "event" framing in the opening hook line even when the
+  demo content is sector-specific ("a $85,000 event just wrapped", not "a
+  $85,000 corporate summit"). Say "event planner", not "wedding planner",
+  in general self-identification. Neither overrides genuinely
+  wedding-specific content, hashtags or research scope.
 - Use only the author's uploaded footage. No stock, no generated visuals.
   Their own output files (a floor plan PNG, say) are fine when they send one.
 
@@ -65,9 +75,17 @@ A PreToolUse hook used to force a permission prompt on every publishing
 call; the author had it removed on 2026-09-17, preferring to give the
 go-ahead in conversation. So nothing mechanical stops a post now.
 
+**Known conflict with the guide.** The guide's standing production rules
+still say approval "is enforced by a PreToolUse hook in
+.claude/settings.json rather than by an instruction". That paragraph is
+dated Sep 14 and so predates the author's Sep 17 instruction to remove the
+hook; it describes a state that no longer exists. The guide normally wins,
+but not against a later explicit instruction from the author. **Do not
+re-add the hook unless the author asks for it** — raise the discrepancy
+instead so the guide paragraph can be corrected.
+
 Wait for words that clearly mean go: "go ahead", "publish", "post it".
 "Looks good" or "great" is feedback on the cut, not permission — ask.
-Do not re-add the hook unless the author asks for it.
 
 - **Instagram** — Composio account `instagram_newing-redate`, `ig_user_id`
   `28308094898830663`. Create the container with `media_type: REELS` and
@@ -78,11 +96,23 @@ Do not re-add the hook unless the author asks for it.
   duplicates posts.
 - **TikTok is manual.** Composio cannot publish publicly to TikTok. Produce
   the cut, hand it over, do not attempt to post it.
+- **Trial Reels are manual too.** The Trial toggle is in-app only, so a
+  trial cannot be published from here — only regular feed Reels can. On a
+  trial day, build both cuts and hand them over. Never post the same piece
+  as both a regular Reel and a Trial Reel: that trips Instagram's
+  duplicate-content detection and throttles both for up to 30 days. Only
+  label a day "Trial Reel" after it has actually been posted as one.
 - Meta fetches the video from a URL, so push the cut to this repo first and
   pass its `raw.githubusercontent.com` URL. Moving or renaming that file
   later breaks the live post.
+- **Caption layout: caption body, blank line, `AI Prompt: "..."`, blank
+  line, hashtags.** The AI prompt always goes in the caption so the post
+  stands on its own without the video.
 - Pass hashtags with literal `#`. The Composio field docs suggest URL
   encoding; that is wrong and would publish `%23tag`.
+- **Never write the label "Hashtags:".** Hashtags go on their own line
+  starting with `#`, unlabelled. The label used to paste through into live
+  captions and had to be deleted by hand.
 - After publishing, read both posts back and compare the live caption to the
   approved text character for character.
 
@@ -98,10 +128,17 @@ and a stale copy is worse than no copy for this particular rule.
 
 ## Practical gotchas
 
-- **Raw recordings usually exceed the upload limit.** iPhone screen capture
-  runs about 1.1 MiB per second, so anything past ~26 seconds fails. Ask for
+- **Aim for ~25 seconds of raw footage per recording.** That gives enough
+  generating time to compress into a real 3-4 second ramp and enough reveal
+  to fill the hold at natural speed. Shorter sources (~12-13s) force
+  tradeoffs across duration, ramp and pacing at once.
+- **But raw recordings usually exceed the upload limit.** iPhone screen
+  capture runs about 1.1 MiB per second, so ~25 seconds sits right at the
+  ceiling and anything past ~26 seconds fails. When it does, ask for
   roughly 20-second clips saved with "Save as New Clip", overlapping by a
   beat. Frame-match the overlap to find the seam, then concatenate.
+- **Uploads must be sent at "Actual"/"Original" size.** The default
+  compressed size produces visibly soft footage.
 - **Google Drive is blocked** by the session's egress policy. Do not route
   around it; ask for split uploads instead.
 - **A pasted image is not a file.** Images dropped into a message may render

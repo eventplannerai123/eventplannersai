@@ -1,7 +1,7 @@
 # RSVP meal counts reel — 2026-09-18 (built 09-17)
 
-Comment-to-unlock keyword: **CATERER**. Not on the guide's assignment list,
-so nothing to clash with; worth adding to that list.
+Comment-to-unlock keyword: **CATERER**. Now on the guide's assignment list
+(added in the Sep 19 revision).
 
 Status: **published 2026-09-18.** Live on Instagram and Facebook, captions
 verified against the approved text character for character.

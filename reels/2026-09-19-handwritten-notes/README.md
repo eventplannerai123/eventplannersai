@@ -1,7 +1,7 @@
 # Handwritten consultation notes reel — 2026-09-19
 
-Comment-to-unlock keyword: **NOTES**. Not on the guide's assignment list, so
-nothing to clash with; worth adding to that list alongside CATERER.
+Comment-to-unlock keyword: **NOTES**. Now on the guide's assignment list
+(added in the Sep 19 revision, alongside CATERER).
 
 Status: **published 2026-09-19.** Approved in conversation, then posted to
 Instagram and Facebook.
