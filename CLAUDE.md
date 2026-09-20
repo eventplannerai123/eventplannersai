@@ -31,7 +31,14 @@ update this file to match.**
 
 ## Timing rules
 
-- **16-20 seconds** unless that day's brief says otherwise.
+- **Length is under test from 2026-09-23.** The guide alternates by date:
+  odd-numbered days target **15-20s**, even-numbered days target **40-50s**.
+  Each day's block in the guide states its target; follow that over any
+  remembered default, and log the result. Before Sep 23 the standing target
+  was 16-20s. A day's brief still overrides both.
+- **The 6-second payoff ceiling is unchanged by the length test.** A 40-50s
+  piece has to front-load just as hard; the extra time goes into the reveal,
+  never into a slower open.
 - **Time to payoff must stay under 6 seconds** — everything before the
   reveal, combined. This is a hard ceiling from real watch-time data and is
   the rule most often missed. The Sep 12 reel shipped at 6.5s and broke it.
@@ -62,6 +69,13 @@ update this file to match.**
   $85,000 corporate summit"). Say "event planner", not "wedding planner",
   in general self-identification. Neither overrides genuinely
   wedding-specific content, hashtags or research scope.
+- **Transformation is the house format** (set 2026-09-20). A messy or ugly
+  real input visibly becoming a structured or beautiful output on screen.
+  The three best-performing posts are all this shape, and at least half of
+  every week is now built this way. Advice and email-writing pieces
+  underperform and should be the minority.
+- **No more than two wedding-specific pieces in any seven.** The account is
+  "event planner", and Round 5 drifted to four weddings in a row.
 - Use only the author's uploaded footage. No stock, no generated visuals.
   Their own output files (a floor plan PNG, say) are fine when they send one.
 
@@ -75,17 +89,14 @@ A PreToolUse hook used to force a permission prompt on every publishing
 call; the author had it removed on 2026-09-17, preferring to give the
 go-ahead in conversation. So nothing mechanical stops a post now.
 
-**Known conflict with the guide.** The guide's standing production rules
-still say approval "is enforced by a PreToolUse hook in
-.claude/settings.json rather than by an instruction". That paragraph is
-dated Sep 14 and so predates the author's Sep 17 instruction to remove the
-hook; it describes a state that no longer exists. The guide normally wins,
-but not against a later explicit instruction from the author. **Do not
-re-add the hook unless the author asks for it** — raise the discrepancy
-instead so the guide paragraph can be corrected.
+The guide now states this position itself (corrected Sep 20): there is **no
+technical gate**, the hook was removed on the author's instruction, and
+"the gate is now her word rather than a control". Do not re-add the hook
+unless the author asks for it.
 
-Wait for words that clearly mean go: "go ahead", "publish", "post it".
-"Looks good" or "great" is feedback on the cut, not permission — ask.
+**The standing rule is post when she says, not post whenever.** Wait for
+words that clearly mean go: "go ahead", "publish", "post it". "Looks good"
+or "great" is feedback on the cut, not permission — ask.
 
 - **Instagram** — Composio account `instagram_newing-redate`, `ig_user_id`
   `28308094898830663`. Create the container with `media_type: REELS` and
@@ -94,8 +105,14 @@ Wait for words that clearly mean go: "go ahead", "publish", "post it".
 - **Facebook** — Composio account `facebook_radius-iguana`, page_id
   `1233196746554445` ("The Event Planners AI"). Never blind-retry, it
   duplicates posts.
-- **TikTok is manual.** Composio cannot publish publicly to TikTok. Produce
-  the cut, hand it over, do not attempt to post it.
+- **TikTok is manual — and is now the primary discovery platform** (set
+  2026-09-20: 138 average views per video against Instagram's 53, on a
+  fifth of the followers). Composio cannot publish publicly to TikTok, so
+  produce the cut and hand it over; do not attempt to post it. Because it
+  is the platform that actually reaches people, the TikTok cut is not an
+  afterthought to the Instagram one.
+- Facebook has 7 followers and is not yet a platform. Still post there, but
+  do not read anything into its numbers.
 - **Trial Reels are manual too.** The Trial toggle is in-app only, so a
   trial cannot be published from here — only regular feed Reels can. On a
   trial day, build both cuts and hand them over. Never post the same piece
@@ -116,15 +133,16 @@ Wait for words that clearly mean go: "go ahead", "publish", "post it".
 - After publishing, read both posts back and compare the live caption to the
   approved text character for character.
 
-## Comment-to-unlock keywords
+## CTA — comment-to-unlock is retired
 
-One per deliverable, never reused — two posts sharing a keyword misroute the
-automated DM to one of them.
+**Retired 2026-09-20.** Nine keywords were assigned across the series and
+every one returned zero comments. Deliverables move to Gumroad and the CTA
+is **"link in bio"**. Do not write a new comment keyword.
 
-**The assignment list lives in the guide, under the standing production
-rules. Read it there before writing a new CTA.** It is deliberately not
-copied here: it changes with every new deliverable, so a copy would go stale
-and a stale copy is worse than no copy for this particular rule.
+The guide keeps the old assignment list as a record of what was tried, so
+the mechanic is not reintroduced without knowing it already failed nine
+times. Read it there if you need the history; it is deliberately not copied
+here.
 
 ## Practical gotchas
 
