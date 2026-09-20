@@ -2,9 +2,40 @@
 
 Comment-to-unlock keyword: **REVIEW**, per the guide's assignment list.
 
-Status: **awaiting approval.** Built and QC'd, not posted.
+Status: **published 2026-09-20.** Approved in conversation, then posted to
+Instagram and Facebook.
+
+| Account | Post |
+| --- | --- |
+| Instagram `@aiforeventplanners` | https://www.instagram.com/reel/DdgyXNgCA6U/ |
+| Facebook "The Event Planners AI" | https://www.facebook.com/reel/1718311282993916/ |
+
+Both captions were read back live and compared to the approved text byte
+for byte - identical on both, with the four hashtags carrying a literal `#`
+and no "Hashtags:" label. Instagram publish used `max_wait_seconds: 45`;
+the container reached FINISHED after 18.9s. Facebook again took a second
+read-back to surface, and was re-read rather than re-posted.
+
+While checking, the page's `/videos` listing showed a second Sep 19 entry
+(id 1635908261451285, same 17.166s length, created 38 minutes after the
+post). The page **feed** has only one Sep 19 post, so this is a
+video-library object rather than a duplicate post. Worth knowing for future
+read-backs: verify duplicates against the feed, not the video list.
 
 TikTok is not posted from here; that cut is uploaded by hand per the guide.
+
+### TikTok caption (for the manual upload)
+
+```
+Stop signing vendor contracts you haven't read past page one. This is a real one — here's everything AI flagged that I'd actually push back on. Comment REVIEW and I'll send you the prompt to try on your own.
+
+AI Prompt: "Here's my vendor contract for an upcoming event. Read through the entire document and flag everything that seems unfavorable to me or that I should push back on before signing — unclear terms, one-sided clauses, missing protections, or anything that favors the vendor unfairly."
+
+#aiforeventplanners #eventprofs #eventplanningtips #vendormanagement
+```
+
+Opens on the TikTok cut's command-style hook rather than the Instagram
+line; same REVIEW keyword, since it is the same deliverable.
 
 ## The page-count correction
 
