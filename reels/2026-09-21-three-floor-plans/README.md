@@ -1,10 +1,37 @@
 # Three floor plan options reel — 2026-09-21
 
-CTA: **"link in bio"**, per the brief. No comment keyword — the author
-switched two days ahead of the guide's Sep 23 changeover. THREE was the
-assigned keyword and went unused.
+CTA: **"The full prompt is in the caption below."** This morning's brief
+said "link in bio", but the guide's own copy of this day's caption (and its
+Round 6 note) says the caption-below wording: "link in bio" is reserved for
+downloadable files, and only once the bio links to a hub page holding them,
+which it does not yet. The author confirmed the change before posting.
+THREE was the assigned comment keyword and went unused - the mechanic is
+retired.
 
-Status: **awaiting approval.** Built and QC'd, not posted.
+Status: **published 2026-09-21.** Approved in conversation, then posted to
+Instagram and Facebook.
+
+| Account | Post |
+| --- | --- |
+| Instagram `@aiforeventplanners` | https://www.instagram.com/reel/DdjwZmKCPZB/ |
+| Facebook "The Event Planners AI" | https://www.facebook.com/reel/1370019611567622/ |
+
+Both captions were read back live and compared to the approved text byte
+for byte - identical on both, four literal `#`, no "Hashtags:" label, no
+comment keyword and no "link in bio".
+
+**The Instagram container took longer than 45s to process** and the publish
+call returned a 408 wait-timeout with the container still IN_PROGRESS.
+Nothing had been published at that point. Rather than retrying blind or
+building a second container, the container's status was read directly with
+`INSTAGRAM_GET_POST_STATUS` (note: the field is `creation_id`, not
+`ig_container_id`), which reported FINISHED on the second poll; the *same*
+container then published cleanly. Worth recording because the single-use
+rule applies to containers that **error**, not to ones still working - a
+new container here would have risked a duplicate.
+
+Facebook again had not surfaced on the first read-back and was re-read
+rather than re-posted.
 
 TikTok is not posted from here; that cut is uploaded by hand per the guide.
 
