@@ -14,9 +14,9 @@ echo "Repo"
 if git rev-parse --git-dir >/dev/null 2>&1; then
   ok "git repo"
   b=$(git rev-parse --abbrev-ref HEAD)
-  [ "$b" = "claude/wedding-timeline-reel-adcqej" ] \
+  [ "$b" = "main" ] \
     && ok "on branch $b" \
-    || bad "on branch '$b' - expected claude/wedding-timeline-reel-adcqej (main has no reels or CLAUDE.md)"
+    || bad "on branch '$b' - work happens on main"
 else
   bad "not a git repo - clone it, do not work in a loose folder"
 fi

@@ -5,7 +5,7 @@ What went wrong on 2026-09-21, so it doesn't repeat:
 | What happened | Consequence |
 | --- | --- |
 | The folder was not a git repo, and git was not installed | No clone, no push, **no way to publish** — Meta fetches the video from a URL, and the URL comes from pushing to this repo |
-| The working files live only on `claude/wedding-timeline-reel-adcqej`; `main` holds just the website | A default clone looks empty — no CLAUDE.md, no reels |
+| The working files lived only on a feature branch; `main` held just the website | A default clone looked empty — no CLAUDE.md, no reels. **Fixed 2026-09-21: everything is on `main` now, so a plain clone is correct.** |
 | CLAUDE.md was recreated from scratch by the new session | Two diverging copies of the standing rules |
 
 Composio was fine. **Git was the linchpin**, and it is the one thing that
@@ -43,8 +43,9 @@ cd /c/
 mkdir -p dev && cd dev
 git clone https://github.com/eventplannerai123/eventplannersai
 cd eventplannersai
-git checkout claude/wedding-timeline-reel-adcqej
 ```
+
+No checkout step — `main` is the working branch.
 
 **Do not work in `OneDrive\Desktop\...`.** OneDrive syncs while ffmpeg
 writes, locks files mid-render, and uploads every intermediate frame and

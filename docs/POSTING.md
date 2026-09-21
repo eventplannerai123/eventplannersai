@@ -35,8 +35,18 @@ Meta fetches the video from a URL rather than accepting an upload, so the
 cut must be in the repo and pushed first.
 
 ```
-https://raw.githubusercontent.com/eventplannerai123/eventplannersai/<branch>/reels/<YYYY-MM-DD-slug>/<file>.mp4
+https://raw.githubusercontent.com/eventplannerai123/eventplannersai/main/reels/<YYYY-MM-DD-slug>/<file>.mp4
 ```
+
+Work happens on `main` (since 2026-09-21), so that is the branch in the
+URL. Posts published before that date use
+`claude/wedding-timeline-reel-adcqej` in their URLs and still fetch from
+it — **that branch must not be deleted**, or nine live posts lose their
+video. It is identical to `main` and needs no maintenance.
+
+Two things break a live post, neither of them branch-related: moving or
+renaming a file after it has been posted, and force-pushing the branch the
+URL points at. Don't do either.
 
 Confirm it resolves before using it:
 
