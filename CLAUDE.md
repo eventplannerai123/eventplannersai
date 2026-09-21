@@ -98,6 +98,10 @@ unless the author asks for it.
 words that clearly mean go: "go ahead", "publish", "post it". "Looks good"
 or "great" is feedback on the cut, not permission — ask.
 
+**Step-by-step mechanics, including exact tool slugs and arguments, are in
+[`docs/POSTING.md`](docs/POSTING.md).** Posting runs through the Composio
+MCP server; a session without `mcp__Composio__*` tools cannot post at all.
+
 - **Instagram** — Composio account `instagram_newing-redate`, `ig_user_id`
   `28308094898830663`. Create the container with `media_type: REELS` and
   `share_to_feed: true`, then publish with a generous `max_wait_seconds`.
