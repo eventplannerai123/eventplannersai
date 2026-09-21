@@ -15,14 +15,17 @@ update this file to match.**
 
 - **1080x1920, ratio exactly 0.5625.** Verify with ffprobe before calling an
   export finished; never leave raw screen-recording dimensions.
-- **One crop rule: `crop=1206:2144:0:478`.** 478 off the top, nothing off
-  the bottom — it drops the status bar and the red recording dot while
-  keeping the ChatGPT input bar at the bottom, where the platform UI covers
-  it. A y-offset of 0 leaves the recording dot in frame; the guide's
-  duplicate `:0:0` rule was deleted on 2026-09-21, so this is the only one.
-  It holds for the standard 1206x2622 iPhone capture. If a recording ever
-  arrives at a different width, recompute (height = width / 0.5625) rather
-  than reusing these numbers, and say so.
+- **Compute the crop from the source, don't reuse numbers.** Height =
+  width / 0.5625, and set the y-offset so the status bar and the red
+  recording dot fall off the top while the ChatGPT input bar stays at the
+  bottom, where the platform UI covers it anyway. A y-offset of 0 leaves
+  the recording dot in frame. For the usual 1206x2622 iPhone capture that
+  is **`crop=1206:2144:0:478`** — 478 off the top, nothing off the bottom.
+  Those numbers hold only for a 1206-wide source; a different device
+  silently breaks them, so recompute when the capture size changes. The
+  guide's duplicate `:0:0` rule was deleted on 2026-09-21, so this is now
+  the only crop rule — but it is still compute-from-source, not a fixed
+  string to paste blindly.
 - 30 fps out, H.264 high, CRF 19, `+faststart`, AAC 192k at 48 kHz.
 - **Voiceover to -14 LUFS.** Measure the source with a loudnorm first pass
   and feed the measured values back in, rather than a single dynamic pass.
@@ -34,9 +37,11 @@ update this file to match.**
 - **Length test, Sep 23-30.** Named days, not a formula:
   **short (15-20s): Sep 23, 25, 29.  long (40-50s): Sep 24, 26, 30.**
   Keep to them — it is a test, so drifting defeats it. Each day's block in
-  the guide states its target; follow that. Sep 27 and 28 are trials and do
-  not run through here at all (see Posting). Before Sep 23 the standing
-  target was 16-20s. A day's brief still overrides both.
+  the guide states its target; follow that. Sep 27 (short) and 28 (long)
+  are trials: they are **excluded from the test** — trial reach is
+  non-follower, so it cannot be compared — and they do not run through here
+  at all (see Posting). Before Sep 23 the standing target was 16-20s. A
+  day's brief still overrides both.
 - **The 6-second payoff ceiling is unchanged by the length test.** A 40-50s
   piece has to front-load just as hard; the extra time goes into the reveal,
   never into a slower open.
