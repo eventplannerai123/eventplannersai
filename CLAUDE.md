@@ -170,11 +170,23 @@ mechanic is not reintroduced without knowing it already failed nine times.
   generating time to compress into a real 3-4 second ramp and enough reveal
   to fill the hold at natural speed. Shorter sources (~12-13s) force
   tradeoffs across duration, ramp and pacing at once.
-- **But raw recordings usually exceed the upload limit.** iPhone screen
-  capture runs about 1.1 MiB per second, so ~25 seconds sits right at the
-  ceiling and anything past ~26 seconds fails. When it does, ask for
-  roughly 20-second clips saved with "Save as New Clip", overlapping by a
-  beat. Frame-match the overlap to find the seam, then concatenate.
+- **The upload ceiling is ~30 MB, NOT a number of seconds.** Measured
+  across every clip uploaded this month: the largest that succeeded was
+  29.7 MB, and source bitrates range from **0.96 to 2.68 MB/s - nearly
+  3x**. So a duration rule is actively misleading. At ~25 MB:
+  screen recordings (1.0-2.1 MB/s) give 12-25s; camera video in HEVC
+  (~2.6 MB/s) gives only **9-10s**. Always quote a size, and work out the
+  seconds from that clip's own bitrate.
+- **Never route uploads through email.** Mail attachment caps are
+  typically 25 MB - *tighter* than the chat's ~30 MB - so a clip that
+  would have uploaded fine gets bounced, sliced smaller, and bounced
+  again. Sending from the phone straight into the chat removes both the
+  round trip and the tighter limit.
+- Shooting at **1080p/30** rather than 4K/60 roughly halves the camera
+  bitrate, and a 1080x1920 30fps Reel discards the extra anyway.
+- When clips do need splitting, ask for overlapping takes saved with
+  "Save as New Clip". Frame-match the overlap to find the seam, then
+  concatenate.
 - **Uploads must be sent at "Actual"/"Original" size.** The default
   compressed size produces visibly soft footage.
 - **Google Drive is blocked** by the session's egress policy. Do not route
