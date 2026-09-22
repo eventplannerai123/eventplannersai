@@ -31,4 +31,6 @@ card(["AI got me 90% there."],                          64, 1320, "c5_ninety.png
 card(["The last 10% is still you."],                    60, 1320, "c6_ten.png",    bg=(0,0,0,235))
 # Script says: add "+ Amazon" only once it shows Live. The author says the
 # print edition is coming shortly, so the card says soon, not available.
-card(["Now on Etsy","Amazon coming soon"],              58, 1650, "c7_end.png",    bg=(0,0,0,240))
+# Sits just under "50 PAGES - INSTANT DOWNLOAD" on the cover, clear of the
+# bottom strip where Instagram puts the username, caption and audio label.
+card(["Now on Etsy","Amazon coming soon"],              58, 1440, "c7_end.png",    bg=(0,0,0,240))

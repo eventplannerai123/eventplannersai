@@ -87,8 +87,8 @@ LN_TT = ("loudnorm=I=-14:TP=-1.5:LRA=11:measured_I=-21.25:measured_TP=-2.09:"
 # 3 contact sheet, 4 proof copy open, 5 half-coloured page with pencils.
 ig = [
  ("v", FLIP,  0.00,  6.15, 1.0, 6.15, FLIPCROP),   # beat 1
- ("v", LONG,  0.00,  1.60, 1.0, 1.60, SRCROP),     # beat 2
- ("v", LONG,  1.60, 11.20, 3.0, 3.20, SRCROP),
+ ("v", LONG,  1.85,  3.45, 1.0, 1.60, SRCROP),     # beat 2 - prompt bubble, keyboard already gone
+ ("v", LONG,  3.45, 13.05, 3.0, 3.20, SRCROP),
  ("v", SHORT, 3.55,  6.30, 1.0, 2.75, SRCROP),
  ("z", HOLD,    0.85, 1.00, 1.00),
  ("z", SHEET_W, 6.05, 1.10, 1.75),                 # beat 3 - all 50 pages
@@ -109,8 +109,8 @@ ig_cards = [
 ]
 tt = [
  ("v", FLIP,  0.00,  6.95, 1.0, 6.95, FLIPCROP),
- ("v", LONG,  0.00,  1.60, 1.0, 1.60, SRCROP),
- ("v", LONG,  1.60, 10.00, 3.0, 2.80, SRCROP),
+ ("v", LONG,  1.85,  3.45, 1.0, 1.60, SRCROP),
+ ("v", LONG,  3.45, 11.85, 3.0, 2.80, SRCROP),
  ("v", SHORT, 3.05,  6.30, 1.0, 3.25, SRCROP),
  ("z", HOLD,    1.00, 1.00, 1.00),
  ("z", SHEET_W, 4.70, 1.10, 1.62),

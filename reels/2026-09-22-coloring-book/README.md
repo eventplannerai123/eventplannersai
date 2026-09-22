@@ -100,6 +100,30 @@ caption. This is why the two cuts differ by more than a hook swap.
 because the author confirmed on 2026-09-22 that the bio now points at the
 book.
 
+## Two author notes, applied
+
+**The ChatGPT clip starts after the send, not before it.** The first 1.3s of
+the recording is the phone keyboard with the autocorrect bar offering
+"black / blame / blah", which the author called out. Both cuts now come in at
+long SR **1.85s** — keyboard gone, prompt bubble scrolling into view. The
+guide asks for the send tap on camera; that is dropped here on the author's
+instruction, and the prompt is still fully legible on screen.
+
+**The end card moved up.** It was centred at y 1650, in the strip where
+Instagram lays its username, caption and audio label. It now sits at y 1440,
+spanning **1328-1553** — directly under "50 PAGES · INSTANT DOWNLOAD" on the
+cover, with clear air above and 367px below it. Checked at full resolution on
+the finished file at both the card's fade-in and the last frame, since the
+cover is still pushing in underneath it.
+
+**A "12 pages printed too thin" card was asked for and not built** — the
+author's own condition was "unless the voiceover already says it", and it
+does, twice over: *"Then the printed proof came back. Twelve pages had lines
+too thin to print. I found them by measuring every page."* That narration runs
+28.94-36.22s, which is **after** the "AI got me 90% there." card, not before
+it, so a card there would also have run ahead of its own audio. The screen
+carries "The last 10% is still you." over the measuring line instead.
+
 ## The closing shot
 
 The reel ends on the **digital cover** (`build/cover-digital.jpg`), composited
@@ -145,8 +169,8 @@ Eleven segments. Instagram timings; TikTok is the same shape, tighter.
 | # | Beat | Source | Out |
 | --- | --- | --- | --- |
 | 1 | 1 | IMG_4030 0.00-6.15 | 0.00-6.15 |
-| 2 | 2 | long SR 0.00-1.60 — prompt in the box, send tap on camera | 6.15-7.75 |
-| 3 | 2 | long SR 1.60-11.20 @3x — generating | 7.75-10.95 |
+| 2 | 2 | long SR 1.85-3.45 — prompt bubble scrolling | 6.15-7.75 |
+| 3 | 2 | long SR 3.45-13.05 @3x — generating | 7.75-10.95 |
 | 4 | 2 | short SR 3.55-6.30 — into the reveal | 10.95-13.70 |
 | 5 | 2 | freeze of short SR 6.28 | 13.70-14.55 |
 | 6 | 3 | contact sheet, z 1.10-1.75 — all 50 pages | 14.55-20.60 |
