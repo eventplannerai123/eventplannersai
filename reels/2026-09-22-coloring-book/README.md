@@ -1,6 +1,26 @@
 # Coloring book reel — 2026-09-22
 
-Status: **built, not posted.** Awaiting approval in the conversation.
+Status: **published 2026-09-22.** Approved in conversation ("Go ahead and
+post"), then posted to Instagram and Facebook.
+
+| Account | Post |
+| --- | --- |
+| Instagram `@aiforeventplanners` | https://www.instagram.com/reel/DdmjnESEu83/ |
+| Facebook "The Event Planners AI" | https://www.facebook.com/reel/2863383737377115/ |
+
+Both captions were read back live and diffed against
+`build/caption-instagram.txt` with `cmp` rather than by eye — **identical
+byte for byte on both**, md5 `f2cd500cb1b1aa66e85ec513f2925c87`, 1146 bytes.
+Eight literal `#`, no "Hashtags:" label, no comment keyword, no "two weeks".
+
+The Instagram container (`18091943858367131`) reached FINISHED after 31.8s
+over 11 status checks and published cleanly on the first attempt as media
+`18623821672002547`. Facebook had not surfaced in `FACEBOOK_GET_PAGE_POSTS`
+on the first read-back, as on Sep 19 and Sep 21; it was re-read by id with
+`FACEBOOK_GET_POST` rather than re-posted, and was there.
+
+TikTok is not posted from here. `coloringbook-tiktok.mp4` was handed to the
+author for manual upload, per the guide.
 
 The piece for *The Calm Before the Aisle*, a 50-page coloring book made with
 AI.
