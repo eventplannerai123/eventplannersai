@@ -2,11 +2,11 @@ import os
 from PIL import Image, ImageDraw, ImageFont
 W, H = 1080, 1920
 FONT = "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf"
-OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "cards0922r")
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "cards0922s")
 os.makedirs(OUT, exist_ok=True)
 
 def card(lines, fontsize, center_y, name, pad_x=54, pad_y=46, radius=34,
-         bg=(0,0,0,210), fg=(255,255,255,255)):
+         bg=(0,0,0,215), fg=(255,255,255,255)):
     img = Image.new("RGBA", (W, H), (0,0,0,0)); d = ImageDraw.Draw(img)
     f = ImageFont.truetype(FONT, fontsize); lh = int(fontsize*1.30)
     widths = [d.textbbox((0,0),l,font=f)[2]-d.textbbox((0,0),l,font=f)[0] for l in lines]
@@ -18,12 +18,17 @@ def card(lines, fontsize, center_y, name, pad_x=54, pad_y=46, radius=34,
         bb = d.textbbox((0,0),l,font=f)
         d.text(((W-(bb[2]-bb[0]))//2-bb[0], ty-bb[1]), l, font=f, fill=fg); ty += lh
     img.save(os.path.join(OUT,name))
-    print(f"{name}: {box_w}x{box_h}  y {y0}-{y0+box_h}  widest {max(widths)}px")
+    print(f"{name}: {box_w}x{box_h}  y {y0}-{y0+box_h}")
 
-# Instagram hook - narrative, concrete number + timeframe
-card(["I made a 50-page","coloring book with AI","in under 3 weeks."], 62, 900, "hook_ig.png")
-# TikTok hook - command style, same concrete numbers
-card(["Stop thinking AI does","the whole job.","50 pages. Under 3 weeks."], 56, 900, "hook_tt.png")
-# End cards - opaque enough to read over the line art
-card(["The Calm Before the Aisle","Printable version in my bio"], 54, 1320, "end_ig.png", bg=(0,0,0,240))
-card(["The Calm Before the Aisle","On Etsy"], 58, 1320, "end_tt.png", bg=(0,0,0,240))
+# Verbatim from reel_script_1.txt, one card per beat as the script lays them out.
+# Script text is "I made this with AI in under three weeks." - the author
+# flagged that "this" never names the thing, so the card names it.
+card(["I made this 50-page","coloring book with AI","in under three weeks."], 58, 900, "c1_hook.png")
+card(["Three tools. One book."],                        62, 900, "c2_tools.png")
+card(["The app's images:","about $9"],                  72, 960, "c3_images.png")
+card(["The app itself: $183"],                          72, 960, "c4_app.png")
+card(["AI got me 90% there."],                          64, 1320, "c5_ninety.png", bg=(0,0,0,235))
+card(["The last 10% is still you."],                    60, 1320, "c6_ten.png",    bg=(0,0,0,235))
+# Script says: add "+ Amazon" only once it shows Live. The author says the
+# print edition is coming shortly, so the card says soon, not available.
+card(["Now on Etsy","Amazon coming soon"],              58, 1650, "c7_end.png",    bg=(0,0,0,240))

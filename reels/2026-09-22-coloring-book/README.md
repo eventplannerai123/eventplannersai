@@ -3,9 +3,11 @@
 Status: **built, not posted.** Awaiting approval in the conversation.
 
 The piece for *The Calm Before the Aisle*, a 50-page coloring book made with
-AI. Built from `reel_script_1.txt` plus the day's uploads. The script's own
-target — **35-45 seconds** — overrides the pre-Sep-23 standing target of
-16-20s, per the guide's "a day's brief still overrides both".
+AI.
+
+**Built to `reel_script_1.txt`, not to the master guide.** The author asked
+for that explicitly for this post. Where the two disagree, the script wins —
+see "What the script overrode" below.
 
 ## Cuts
 
@@ -17,52 +19,69 @@ Both 1080x1920 (ratio exactly 0.5625), 30 fps, H.264 high, CRF 19,
 | `coloringbook-instagram.mp4` | Instagram, Facebook | 44.00s | -14.13 LUFS, TP -1.20 | 3.0x, 3.20s | 2.10s |
 | `coloringbook-tiktok.mp4` | TikTok (manual upload) | 37.50s | -14.11 LUFS, TP -1.34 | 3.0x, 2.80s | 2.65s |
 
-Two separate voiceovers, not one audio reused. Opening lines:
+Two separate voiceovers, not one audio reused.
 
-- Instagram: "This is a 50-page coloring book. I made it with AI. Here's
-  what that actually took."
-- TikTok: "Stop thinking AI does the whole job. I made a 50-page coloring
-  book with AI in under three weeks."
+## What the script overrode
 
-End cards: "The Calm Before the Aisle / Printable version in my bio" on
-Instagram, "The Calm Before the Aisle / On Etsy" on TikTok.
+- **Seven text cards, not two.** The script writes a TEXT line into every
+  beat and they are all built. The guide allows only a hook and an end card
+  and calls mid-video captions out as tested and worse for retention; the
+  author set that aside for this post.
+- **Length.** The script's 35-45s target, not the pre-Sep-23 16-20s.
+- **Time to payoff.** If the payoff is the ChatGPT reveal it lands at 12.85s
+  (Instagram) / 11.25s (TikTok), over the 6-second ceiling. The voiceover
+  narrates the book first and the tooling second, so the reveal cannot move
+  earlier without a different script. If the payoff is the finished book,
+  it is on screen at 0:00.
+- **Caption.** The script's caption verbatim, with no `AI Prompt:` block —
+  the script's caption does not carry one.
+
+The guide's rules on rendering, the ad check and posting approval were kept.
+
+## Cards, verbatim from the script
+
+| Card | Instagram | TikTok |
+| --- | --- | --- |
+| I made this 50-page coloring book with AI in under three weeks. | 0.00-2.60 | 0.00-2.60 |
+| Three tools. One book. | 6.90-10.30 | 5.45-8.60 |
+| The app's images: about $9 | 14.95-17.75 | 14.51-17.30 |
+| The app itself: $183 | 17.95-23.40 | 17.55-23.30 |
+| AI got me 90% there. | 26.15-30.20 | 24.30-26.35 |
+| The last 10% is still you. | 33.40-37.00 | 26.55-28.75 |
+| Now on Etsy / Amazon coming soon | 40.90-44.00 | 34.80-37.50 |
+
+Two changes to the script's wording, both on the author's instruction:
+
+- The script's beat-1 line is "I made this with AI in under three weeks."
+  The author flagged that "this" never names the thing, so the card names it.
+- The script says add "+ Amazon" only once it shows Live. The author says
+  the print edition is coming shortly, so the card reads **"Amazon coming
+  soon"** — true today, and it does not claim a listing that is not there.
+  Swap it to "Now on Etsy + Amazon" the day it shows Live.
 
 ## TikTok has no bio link
 
 Flagged by the author mid-build. The Instagram voiceover ends "Link in
 bio"; TikTok profiles don't carry one, so the TikTok cut was given its own
-voiceover ending on "The Calm Before the Aisle. On Etsy." and its own end
-card and caption to match. This is why the two cuts differ by more than the
-usual hook swap.
+voiceover ending on "The Calm Before the Aisle. On Etsy." and its own
+caption. This is why the two cuts differ by more than a hook swap.
 
-"Printable version in my bio" is allowed on Instagram only because the
-author confirmed on 2026-09-22 that the bio now points at the book. The
-guide reserves that wording for downloadable files behind a live bio link.
+"Printable version in my bio" is on the Instagram caption only, and only
+because the author confirmed on 2026-09-22 that the bio now points at the
+book.
 
-## Time to payoff — read this before posting
+## The closing shot
 
-The 6-second ceiling does not map cleanly onto this piece, and the answer
-depends on what counts as the payoff.
+The reel ends on the **digital cover** (`build/cover-digital.jpg`), composited
+onto a 1080x1920 frame in the cover's own cream (#FBF7EE, sampled from the
+file) with a slow push-in. The digital edition is the one that is live and
+the one the bio points at, so it is the cover that matches the CTA.
 
-- **The book is the payoff, and it is on screen at 0:00.** The reel opens
-  on the finished physical book being flipped, which is the thing being
-  sold. On that reading, time to payoff is 0.0s.
-- **The ChatGPT reveal is the payoff.** On that reading it is **12.85s**
-  (Instagram) and **11.25s** (TikTok), which breaks the ceiling badly.
-
-The order is fixed by the voiceover, which narrates the book first and the
-tooling second, so the screen-recording reveal cannot be moved earlier
-without a different script. Recorded here rather than buried: if the second
-reading is the right one, this needs a restructure, not a trim.
-
-## Overlays — two only
-
-The script asks for a text card on every one of its five beats, including
-the two number cards ("The app's images: about $9" / "The app itself:
-$183"). Those were **not** built. The guide allows only the hook at
-0:00-0:02 and the end card, and calls out mid-video captions specifically
-as tested and worse for retention. The numbers are spoken in the voiceover
-and written in the caption instead.
+The **print cover wrap** is in `build/CalmBeforeTheAisle_cover_wrap.pdf`
+(back cover, spine, front cover, 8.5 x 11 with bleed). Its front panel is the
+same bouquet with a different subtitle — "An Adult Coloring Book for Brides,
+Bridesmaids & Wedding Planners", "50 INTRICATE PAGES · FOR COLORED PENCIL".
+Swap it in once Amazon is Live and the CTA changes.
 
 ## The flip footage and the visible monitor
 
@@ -91,23 +110,26 @@ including the held frames. No ad in either.
 
 ## Structure
 
-Ten segments. Instagram timings; TikTok is the same shape, tighter.
+Eleven segments. Instagram timings; TikTok is the same shape, tighter.
 
-| # | Source | Out | What |
+| # | Beat | Source | Out |
 | --- | --- | --- | --- |
-| 1 | IMG_4030 0.00-6.55 | 0.00-6.55 | Book flipping. Hook card 0.0-2.0. |
-| 2 | long SR 0.00-1.60 | 6.55-8.15 | Prompt in the box, send tap on camera. |
-| 3 | long SR 1.60-11.20 @3x | 8.15-11.35 | Generating. |
-| 4 | short SR 3.55-6.30 | 11.35-14.12 | "Finishing up" into the reveal. |
-| 5 | freeze of short SR 6.28 | 14.12-14.95 | Holds the finished page. |
-| 6 | contact sheet, z 1.10-1.75 | 14.95-21.22 | All 50 pages, push in. |
-| 7 | IMG_3940, push in | 21.22-26.08 | Proof copy on tile, part-coloured. |
-| 8 | contact sheet, pan | 26.08-31.52 | Close across individual pages. |
-| 9 | IMG_3939, push in | 31.52-37.08 | Hand holding the book open. |
-| 10 | IMG_3927, push in | 37.08-44.00 | Half-coloured page and pencils. End card from 40.80. |
+| 1 | 1 | IMG_4030 0.00-6.55 | 0.00-6.55 |
+| 2 | 2 | long SR 0.00-1.60 — prompt in the box, send tap on camera | 6.55-8.15 |
+| 3 | 2 | long SR 1.60-11.20 @3x — generating | 8.15-11.35 |
+| 4 | 2 | short SR 3.55-6.30 — into the reveal | 11.35-14.12 |
+| 5 | 2 | freeze of short SR 6.28 | 14.12-14.95 |
+| 6 | 3 | contact sheet, z 1.10-1.75 — all 50 pages | 14.95-21.22 |
+| 7 | 3 | contact sheet, pan — close across pages | 21.22-26.08 |
+| 8 | 4 | IMG_3940, push in — proof copy open | 26.08-31.52 |
+| 9 | 4 | IMG_3939, push in — hand on a page | 31.52-37.08 |
+| 10 | 5 | IMG_3927, push in — half-coloured page and pencils | 37.08-40.50 |
+| 11 | 5 | digital cover, slow push in | 40.50-44.00 |
 
-Cuts land on the narration's beat boundaries, taken from a Scribe
-transcript of the finished voiceover cross-checked against a silence map
+Shot assignment follows the script's beat list: contact sheet on the money
+beat, proof copy open on the 90% beat, pencils page on the payoff. Cuts land
+on the narration's beat boundaries, taken from a Scribe transcript of the
+finished voiceover cross-checked against a silence map
 (`silencedetect=noise=-32dB:d=0.28`). The 1.87s of lead-in silence is
 trimmed so speech starts at 0.25s.
 
@@ -119,61 +141,43 @@ status bar and the recording dot.
 
 ### Representative slice
 
-Flagged per the timing rules. The real generating phase runs past the end
-of the long recording — over 16 seconds, visually static the whole way.
-Segment 3 is a representative slice of it at 3x, not the whole span
-compressed.
+The real generating phase runs past the end of the long recording — over 16
+seconds, visually static the whole way. Segment 3 is a representative slice
+of it at 3x, not the whole span compressed.
 
 ### The reveal hold
 
 The generated page resolves at short-SR 5.0s and is then completely static
 until the ad arrives at 6.6s, which leaves only 1.2s of live finished
 image. Segment 5 freezes the last clean frame so the page is held long
-enough to read — 2.10s on Instagram, 2.65s on TikTok. The guide allows a
-freeze on a final frame; nothing is faked, the frame is the real one.
+enough to read — 2.10s on Instagram, 2.65s on TikTok. Nothing is faked; the
+frame is the real one.
 
 ## Accuracy
 
-The voiceover was checked line by line against the script's own corrections
-record. One line is looser than the script: the voiceover says "12 pages
-too thin to print", where the script says twelve pages had **lines** too
-thin to print well. The caption carries the precise wording. Worth a
-re-record if the author wants it exact — the piece's whole claim is that it
-is the honest one.
+Checked line by line against the script's own corrections record. One line
+is looser than the script: the voiceover says "12 pages too thin to print",
+where the script says twelve pages had **lines** too thin to print well. The
+caption carries the precise wording. Worth a re-record if the author wants
+it exact — the piece's whole claim is that it is the honest one.
 
 Everything else matches: three sources not one style block, "under three
 weeks" not two, "$9" scoped to the app's images only, "remade by hand in
-ChatGPT" not drawn, and Etsy only — Amazon is not confirmed Live.
-
-## Not a prompt piece, but the prompt is in the caption
-
-The reel shows a prompt being pasted, so the caption carries it under
-`AI Prompt:` per the caption layout. The spoken and on-card CTA is the book,
-not "the full prompt is in the caption below" — this piece is selling the
-book, and two CTAs is one too many. Raised rather than decided silently.
+ChatGPT" not drawn, and Etsy live with Amazon flagged as coming, not there.
 
 ## Sources used
 
 | File | Used for |
 | --- | --- |
-| `b0cb03e7-IMG_4030.mov` | Hook, segment 1 |
-| `1448842b-…10-27-15AM_1.mov` (16.86s) | Segments 2-3 |
-| `b06cd7cf-…10-27-15AM_1_3.mov` (7.75s) | Segments 4-5 |
-| `images/13.webp` (2000x1294, 50 tiles) | Segments 6, 8 |
-| `99563f10-IMG_3940.HEIC` | Segment 7 |
-| `b447192a-IMG_3939.HEIC` | Segment 9 |
-| `b4bc3d31-IMG_3927.HEIC` | Segment 10 |
+| `b0cb03e7-IMG_4030.mov` | Beat 1 |
+| `1448842b-…10-27-15AM_1.mov` (16.86s) | Beat 2, segments 2-3 |
+| `b06cd7cf-…10-27-15AM_1_3.mov` (7.75s) | Beat 2, segments 4-5 |
+| `images/13.webp` (2000x1294, 50 tiles) | Beat 3 |
+| `99563f10-IMG_3940.HEIC` | Beat 4 |
+| `b447192a-IMG_3939.HEIC` | Beat 4 |
+| `b4bc3d31-IMG_3927.HEIC` | Beat 5 |
+| `images/14.jpg` (2000x2000 digital cover) | Beat 5 close |
 
 Unused: both `IMG_4033` takes (visible monitor), the second `IMG_4030`
-upload, and `4dba47df-…10-27-15AM_1.mov`, which is a smaller re-encode of
-the `b06cd7cf` clip.
-
-## House rules checked
-
-- Transformation format: yes — messy prompt to finished page on screen, and
-  the wider before/after of an idea becoming a printed book.
-- Wedding-specific pieces in the last seven: this is the first. Under the
-  cap of two.
-- Both cuts differ; neither goes to the platform the other is for.
-- No comment keyword, no "Hashtags:" label, literal `#` in both captions.
-- Instagram caption 1633 characters, TikTok 1639 — both well under 2200.
+upload, `4dba47df-…10-27-15AM_1.mov` (a smaller re-encode of the `b06cd7cf`
+clip), and the print cover wrap (held for when Amazon is Live).
