@@ -16,10 +16,40 @@ Both 1080x1920 (ratio exactly 0.5625), 30 fps, H.264 high, CRF 19,
 
 | File | Platform | Duration | Voiceover | Ramp | Reveal held |
 | --- | --- | --- | --- | --- | --- |
-| `coloringbook-instagram.mp4` | Instagram, Facebook | 44.00s | -14.13 LUFS, TP -1.20 | 3.0x, 3.20s | 2.10s |
-| `coloringbook-tiktok.mp4` | TikTok (manual upload) | 37.50s | -14.11 LUFS, TP -1.34 | 3.0x, 2.80s | 2.65s |
+| `coloringbook-instagram.mp4` | Instagram, Facebook | 44.70s | -14.13 LUFS, TP -1.30 | 3.0x, 3.20s | 2.15s |
+| `coloringbook-tiktok.mp4` | TikTok (manual upload) | 38.95s | -13.96 LUFS, TP -1.45 | 3.0x, 2.80s | 2.60s |
 
 Two separate voiceovers, not one audio reused.
+
+## The voiceover was re-recorded
+
+The first take opened "This is a 50-page coloring book. I made it with AI."
+The author flagged it twice: **"it" never names the thing**, and on mute or in
+the first half-second a viewer has no idea what they are looking at. Both
+voiceovers were regenerated so the object sits next to the verb:
+
+- Instagram: "I made this 50-page wedding coloring book with AI in under
+  three weeks."
+- TikTok: "Stop thinking AI does the whole job. I made a 50-page wedding
+  coloring book with AI in under three weeks."
+
+The same pass fixed the one loose claim flagged earlier. It now says
+**"Twelve pages had lines too thin to print"** rather than "12 pages too thin
+to print" — pages are not thin, lines are, and the script's corrections
+record is explicit about it. Both cuts now make identical claims.
+
+Confirmed by transcribing the audio **off the finished mp4**, not off the
+generator's echo of its own prompt.
+
+### Pause tightening, not word cutting
+
+The new Instagram take came back at 49.41s, over the script's 35-45s window.
+Rather than cut any of the author's words, `build/tighten.py` compresses the
+gaps *between* sentences to 0.59x and leaves every syllable untouched
+(minimum gap 0.26s). That is 5.4s recovered from silence. The same factor is
+applied to the TikTok take so the two cuts share a pace. The script reports
+where every speech segment lands afterwards, and the shot and card timings
+are set from that table rather than by eye.
 
 ## What the script overrode
 
@@ -28,8 +58,8 @@ Two separate voiceovers, not one audio reused.
   and calls mid-video captions out as tested and worse for retention; the
   author set that aside for this post.
 - **Length.** The script's 35-45s target, not the pre-Sep-23 16-20s.
-- **Time to payoff.** If the payoff is the ChatGPT reveal it lands at 12.85s
-  (Instagram) / 11.25s (TikTok), over the 6-second ceiling. The voiceover
+- **Time to payoff.** If the payoff is the ChatGPT reveal it lands at 12.40s
+  (Instagram) / 14.00s (TikTok), over the 6-second ceiling. The voiceover
   narrates the book first and the tooling second, so the reveal cannot move
   earlier without a different script. If the payoff is the finished book,
   it is on screen at 0:00.
@@ -43,12 +73,12 @@ The guide's rules on rendering, the ad check and posting approval were kept.
 | Card | Instagram | TikTok |
 | --- | --- | --- |
 | I made this 50-page coloring book with AI in under three weeks. | 0.00-2.60 | 0.00-2.60 |
-| Three tools. One book. | 6.90-10.30 | 5.45-8.60 |
-| The app's images: about $9 | 14.95-17.75 | 14.51-17.30 |
-| The app itself: $183 | 17.95-23.40 | 17.55-23.30 |
-| AI got me 90% there. | 26.15-30.20 | 24.30-26.35 |
-| The last 10% is still you. | 33.40-37.00 | 26.55-28.75 |
-| Now on Etsy / Amazon coming soon | 40.90-44.00 | 34.80-37.50 |
+| Three tools. One book. | 6.50-9.60 | 7.20-10.20 |
+| The app's images: about $9 | 14.65-17.55 | 15.70-18.90 |
+| The app itself: $183 | 17.75-23.00 | 19.10-24.60 |
+| AI got me 90% there. | 24.55-28.60 | 25.25-27.30 |
+| The last 10% is still you. | 33.20-36.60 | 27.55-30.00 |
+| Now on Etsy / Amazon coming soon | 41.30-44.70 | 36.50-38.95 |
 
 Two changes to the script's wording, both on the author's instruction:
 
@@ -114,17 +144,17 @@ Eleven segments. Instagram timings; TikTok is the same shape, tighter.
 
 | # | Beat | Source | Out |
 | --- | --- | --- | --- |
-| 1 | 1 | IMG_4030 0.00-6.55 | 0.00-6.55 |
-| 2 | 2 | long SR 0.00-1.60 — prompt in the box, send tap on camera | 6.55-8.15 |
-| 3 | 2 | long SR 1.60-11.20 @3x — generating | 8.15-11.35 |
-| 4 | 2 | short SR 3.55-6.30 — into the reveal | 11.35-14.12 |
-| 5 | 2 | freeze of short SR 6.28 | 14.12-14.95 |
-| 6 | 3 | contact sheet, z 1.10-1.75 — all 50 pages | 14.95-21.22 |
-| 7 | 3 | contact sheet, pan — close across pages | 21.22-26.08 |
-| 8 | 4 | IMG_3940, push in — proof copy open | 26.08-31.52 |
-| 9 | 4 | IMG_3939, push in — hand on a page | 31.52-37.08 |
-| 10 | 5 | IMG_3927, push in — half-coloured page and pencils | 37.08-40.50 |
-| 11 | 5 | digital cover, slow push in | 40.50-44.00 |
+| 1 | 1 | IMG_4030 0.00-6.15 | 0.00-6.15 |
+| 2 | 2 | long SR 0.00-1.60 — prompt in the box, send tap on camera | 6.15-7.75 |
+| 3 | 2 | long SR 1.60-11.20 @3x — generating | 7.75-10.95 |
+| 4 | 2 | short SR 3.55-6.30 — into the reveal | 10.95-13.70 |
+| 5 | 2 | freeze of short SR 6.28 | 13.70-14.55 |
+| 6 | 3 | contact sheet, z 1.10-1.75 — all 50 pages | 14.55-20.60 |
+| 7 | 3 | contact sheet, pan — close across pages | 20.60-24.20 |
+| 8 | 4 | IMG_3940, push in — proof copy open | 24.20-30.20 |
+| 9 | 4 | IMG_3939, push in — hand on a page | 30.20-36.60 |
+| 10 | 5 | IMG_3927, push in — half-coloured page and pencils | 36.60-40.90 |
+| 11 | 5 | digital cover, slow push in | 40.90-44.70 |
 
 Shot assignment follows the script's beat list: contact sheet on the money
 beat, proof copy open on the 90% beat, pencils page on the payoff. Cuts land
@@ -150,16 +180,15 @@ of it at 3x, not the whole span compressed.
 The generated page resolves at short-SR 5.0s and is then completely static
 until the ad arrives at 6.6s, which leaves only 1.2s of live finished
 image. Segment 5 freezes the last clean frame so the page is held long
-enough to read — 2.10s on Instagram, 2.65s on TikTok. Nothing is faked; the
+enough to read — 2.15s on Instagram, 2.60s on TikTok. Nothing is faked; the
 frame is the real one.
 
 ## Accuracy
 
-Checked line by line against the script's own corrections record. One line
-is looser than the script: the voiceover says "12 pages too thin to print",
-where the script says twelve pages had **lines** too thin to print well. The
-caption carries the precise wording. Worth a re-record if the author wants
-it exact — the piece's whole claim is that it is the honest one.
+Checked line by line against the script's own corrections record, against a
+transcript taken from the finished files. Nothing outstanding: the earlier
+"12 pages too thin to print" was re-recorded to "Twelve pages had lines too
+thin to print", which matches the caption and the script.
 
 Everything else matches: three sources not one style block, "under three
 weeks" not two, "$9" scoped to the app's images only, "remade by hand in

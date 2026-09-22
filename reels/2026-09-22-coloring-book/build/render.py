@@ -44,15 +44,18 @@ def seg_pan(still, dur, x0, x1, out):
 
 def build(tag, segs, cards, vo, trim, total, ln, out):
     d = f"{SP}/seg/{tag}"; os.makedirs(d, exist_ok=True)
+    if os.environ.get("REUSE") and os.path.exists(f"{d}/cat.mp4"):
+        segs = []          # concat already built; skip straight to the overlay pass
     files = []
     for i, s in enumerate(segs):
         o = f"{d}/{i:02d}.mp4"; files.append(o)
         if s[0] == "v":   seg_video(s[1], s[2], s[3], s[4], s[5], s[6], o)
         elif s[0] == "z": seg_zoom(s[1], s[2], s[3], s[4], o)
         elif s[0] == "p": seg_pan(s[1], s[2], s[3], s[4], o)
-    lst = f"{d}/list.txt"
-    open(lst, "w").write("".join(f"file '{f}'\n" for f in files))
-    run(f'ffmpeg -y -v error -f concat -safe 0 -i {lst} -c copy {d}/cat.mp4')
+    if files:
+        lst = f"{d}/list.txt"
+        open(lst, "w").write("".join(f"file '{f}'\n" for f in files))
+        run(f'ffmpeg -y -v error -f concat -safe 0 -i {lst} -c copy {d}/cat.mp4')
 
     # one -loop input per card, then chained overlays
     ins, fil, prev = [], [], "0:v"
@@ -75,60 +78,61 @@ def build(tag, segs, cards, vo, trim, total, ln, out):
         f'-c:a aac -b:a 192k -ar 48000 -movflags +faststart {shlex.quote(out)}')
     print("built", out)
 
-LN_IG = ("loudnorm=I=-14:TP=-1.5:LRA=11:measured_I=-21.45:measured_TP=-2.80:"
-         "measured_LRA=2.70:measured_thresh=-32.10:offset=0.87:linear=true")
-LN_TT = ("loudnorm=I=-14:TP=-1.5:LRA=11:measured_I=-21.29:measured_TP=-2.59:"
-         "measured_LRA=2.50:measured_thresh=-31.80:offset=0.89:linear=true")
+LN_IG = ("loudnorm=I=-14:TP=-1.5:LRA=11:measured_I=-22.28:measured_TP=-2.72:"
+         "measured_LRA=2.90:measured_thresh=-32.77:offset=1.19:linear=true")
+LN_TT = ("loudnorm=I=-14:TP=-1.5:LRA=11:measured_I=-21.25:measured_TP=-2.09:"
+         "measured_LRA=2.80:measured_thresh=-31.74:offset=0.89:linear=true")
 
 # Beat order follows the script: 1 book flipping, 2 screen recording,
 # 3 contact sheet, 4 proof copy open, 5 half-coloured page with pencils.
 ig = [
- ("v", FLIP,  0.00,  6.55, 1.0, 6.55, FLIPCROP),   # beat 1
+ ("v", FLIP,  0.00,  6.15, 1.0, 6.15, FLIPCROP),   # beat 1
  ("v", LONG,  0.00,  1.60, 1.0, 1.60, SRCROP),     # beat 2
  ("v", LONG,  1.60, 11.20, 3.0, 3.20, SRCROP),
  ("v", SHORT, 3.55,  6.30, 1.0, 2.75, SRCROP),
  ("z", HOLD,    0.85, 1.00, 1.00),
- ("z", SHEET_W, 6.27, 1.10, 1.75),                 # beat 3 - all 50 pages
- ("p", SHEET_C, 4.87, 400, 1300),
- ("z", P3940,   5.44, 1.00, 1.12),                 # beat 4 - proof copy open
- ("z", P3939,   5.56, 1.00, 1.12),
- ("z", P3927,   3.42, 1.00, 1.10),                 # beat 5 - pencils, slow push in
- ("z", COVER,   3.50, 1.00, 1.06),                 # beat 5 close - cover art
+ ("z", SHEET_W, 6.05, 1.10, 1.75),                 # beat 3 - all 50 pages
+ ("p", SHEET_C, 3.60, 400, 1200),
+ ("z", P3940,   6.00, 1.00, 1.12),                 # beat 4 - proof copy open
+ ("z", P3939,   6.40, 1.00, 1.12),
+ ("z", P3927,   4.30, 1.00, 1.10),                 # beat 5 - pencils, slow push in
+ ("z", COVER,   3.80, 1.00, 1.06),                 # beat 5 close - cover art
 ]
 ig_cards = [
  (f"{C}/c1_hook.png",   0.00, 2.60, 2.30),
- (f"{C}/c2_tools.png",  6.90, 3.40, 3.10),
- (f"{C}/c3_images.png",14.95, 2.80, 2.50),
- (f"{C}/c4_app.png",   17.95, 5.45, 5.15),
- (f"{C}/c5_ninety.png",26.15, 4.05, 3.75),
- (f"{C}/c6_ten.png",   33.40, 3.60, 3.30),
- (f"{C}/c7_end.png",   40.90, 3.10, None),
+ (f"{C}/c2_tools.png",  6.50, 3.10, 2.80),
+ (f"{C}/c3_images.png",14.65, 2.90, 2.60),
+ (f"{C}/c4_app.png",   17.75, 5.25, 4.95),
+ (f"{C}/c5_ninety.png",24.55, 4.05, 3.75),
+ (f"{C}/c6_ten.png",   33.20, 3.40, 3.10),
+ (f"{C}/c7_end.png",   41.30, 3.40, None),
 ]
 tt = [
- ("v", FLIP,  0.00,  5.05, 1.0, 5.05, FLIPCROP),
- ("v", LONG,  0.00,  1.40, 1.0, 1.40, SRCROP),
- ("v", LONG,  1.40,  9.80, 3.0, 2.80, SRCROP),
+ ("v", FLIP,  0.00,  6.95, 1.0, 6.95, FLIPCROP),
+ ("v", LONG,  0.00,  1.60, 1.0, 1.60, SRCROP),
+ ("v", LONG,  1.60, 10.00, 3.0, 2.80, SRCROP),
  ("v", SHORT, 3.05,  6.30, 1.0, 3.25, SRCROP),
- ("z", HOLD,    1.40, 1.00, 1.00),
+ ("z", HOLD,    1.00, 1.00, 1.00),
  ("z", SHEET_W, 4.70, 1.10, 1.62),
- ("p", SHEET_C, 5.20, 400, 1300),
- ("z", P3940,   4.70, 1.00, 1.12),
- ("z", P3939,   3.30, 1.00, 1.12),
- ("z", P3927,   2.60, 1.00, 1.10),
- ("z", COVER,   3.10, 1.00, 1.06),
+ ("p", SHEET_C, 4.60, 400, 1250),
+ ("z", P3940,   5.40, 1.00, 1.12),
+ ("z", P3939,   3.70, 1.00, 1.12),
+ ("z", P3927,   2.20, 1.00, 1.08),
+ ("z", COVER,   2.75, 1.00, 1.05),
 ]
 tt_cards = [
  (f"{C}/c1_hook.png",   0.00, 2.60, 2.30),
- (f"{C}/c2_tools.png",  5.45, 3.15, 2.85),
- (f"{C}/c3_images.png",14.51, 2.79, 2.49),
- (f"{C}/c4_app.png",   17.55, 5.75, 5.45),
- (f"{C}/c5_ninety.png",24.30, 2.05, 1.75),
- (f"{C}/c6_ten.png",   26.55, 2.20, 1.90),
- (f"{C}/c7_end.png",   34.80, 2.70, None),
+ (f"{C}/c2_tools.png",  7.20, 3.00, 2.70),
+ (f"{C}/c3_images.png",15.70, 3.20, 2.90),
+ (f"{C}/c4_app.png",   19.10, 5.50, 5.20),
+ (f"{C}/c5_ninety.png",25.25, 2.05, 1.75),
+ (f"{C}/c6_ten.png",   27.55, 2.45, 2.15),
+ (f"{C}/c7_end.png",   36.50, 2.45, None),
 ]
 
 os.makedirs(f"{SP}/out0922s", exist_ok=True)
-build("ig3", ig, ig_cards, f"{SP}/vo_book/final.mp3", 1.870, 44.00, LN_IG,
+# ig2c/tt2c are already lead-trimmed and pause-tightened, so trim=0.
+build("ig4", ig, ig_cards, f"{SP}/vo_book/ig2c.mp3", 0.0, 44.70, LN_IG,
       f"{SP}/out0922s/coloringbook-instagram.mp4")
-build("tt3", tt, tt_cards, f"{SP}/vo_book/tiktok.mp3", 1.821, 37.50, LN_TT,
+build("tt4", tt, tt_cards, f"{SP}/vo_book/tt2c.mp3", 0.0, 38.95, LN_TT,
       f"{SP}/out0922s/coloringbook-tiktok.mp4")
