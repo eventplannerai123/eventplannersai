@@ -1,0 +1,15 @@
+I made a 50-page coloring book with AI in under three weeks. Here's the honest version.
+
+It came from three places: ChatGPT for the first seventeen pages, an app I built for the next thirty-three, and one hand-written set of rules for the last four when the app broke.
+
+The images the app made cost about $9. The app itself cost $183 — ninety-five percent of my spend was fixing a tool, not making art. Next time I'd skip the app and work straight from a written style guide.
+
+AI got me about ninety percent there. When the printed proof arrived, twelve pages had lines too thin to print well, and I only found them by measuring every page. Using three tools also left the line weights slightly different page to page — invisible to most people, obvious to me.
+
+The last ten percent is still a person looking at paper.
+
+It's called The Calm Before the Aisle. Fifty wedding pages for the planner who spends all day making everyone else's day perfect. It's on Etsy — search the title.
+
+AI Prompt: "Draw an adult coloring book page. STYLE — never vary: 8.5 x 11 portrait, all artwork inside a 0.5 inch margin. Black line art on white. No shading, no gradients, nothing filled solid black. Thick, even outlines like a felt-tip pen. No hairlines. Every shape fully closed so color can't bleed. A full, generous page — more objects and bigger shapes, never finer marks. No text, no border, no frame. PAGE: A bridal bouquet of peonies and ranunculus tied with a silk ribbon, lying on a lace veil, seen from directly above."
+
+#eventplanner #weddingplanner #aiforbusiness #selfpublishing #etsyseller #coloringbook #aitools #smallbusiness
