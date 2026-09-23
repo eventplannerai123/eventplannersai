@@ -1,0 +1,5 @@
+Never pay a final catering invoice without checking it against the BEO you signed. Here's a line-by-line comparison, done in seconds. (Demo documents — names changed, and the invoice was built with deliberate errors.) The full prompt is in the caption below.
+
+AI Prompt: "Here's the banquet event order we signed for a five-day corporate program, and the final invoice for it. Compare them line by line. Flag anything billed that wasn't ordered, any quantity or unit price that doesn't match the BEO, any arithmetic that doesn't add up, and whether the service charge matches what the BEO says. Show me the total difference."
+
+#aiforeventplanners #corporateevents #eventprofs #eventplanningtips
