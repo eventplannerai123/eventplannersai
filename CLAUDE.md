@@ -62,10 +62,17 @@ update this file to match.**
 - **Two separate cuts every time**, never one file posted twice. Instagram
   takes the narrative hook; TikTok takes a genuinely different command-style
   hook ("Stop doing X") and slightly different pacing.
+- **Build the TikTok cut first.** Round 6 briefs say so outright: TikTok is
+  the primary discovery platform now, so its cut is not a derivative of the
+  Instagram one.
 - Footage in motion from frame one. **Never open on a static title card.**
 - Only two text overlays: the hook at 0:00-0:02 and the end card. **No
   rolling mid-video captions** — transcription-synced captions were tested
   and made retention worse.
+- **Round 6 (Sep 23-30) drops the end card**: every brief in it says "end on
+  the output itself, not an end card asking for a comment". So those days
+  carry the hook overlay alone and finish on the answer still moving. The
+  two-overlay rule is the default; the day's brief overrides it.
 - **Never post both cuts to the same platform** — near-identical posts
   split engagement.
 - Hooks must name a concrete scenario, number or timeframe immediately.
@@ -163,6 +170,22 @@ keywords across the series returned zero comments between them.
 
 The guide keeps the old keyword list as a record of what was tried, so the
 mechanic is not reintroduced without knowing it already failed nine times.
+
+## TikTok back catalogue (added to the guide 2026-09-23)
+
+A second workstream: re-posting fifteen August and September pieces to
+TikTok, which never saw them. All manual uploads, so they never publish from
+here.
+
+- **`#theeventplannerai` is dead** — it points at an account name that no
+  longer exists. Swap it for `#aiforeventplanners` on every reposted caption;
+  fourteen of the fifteen carry it.
+- Strip any comment-to-unlock CTA from the old caption. Open questions
+  ("what's the pettiest seating conflict you've had?") stay — those are
+  conversation prompts, not a keyword gate.
+- **Never re-use the original file byte for byte.** Re-export it, or
+  duplicate detection can throttle both copies. Space a repost several hours
+  from any trial upload the same day.
 
 ## Practical gotchas
 
