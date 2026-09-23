@@ -150,6 +150,14 @@ Two things that look like failures and are not:
 
 - **Facebook usually has not surfaced on the first read-back.** It is still
   processing. Re-read; do not re-post.
+- **`FACEBOOK_CREATE_VIDEO_POST` returns a reel id, not a post id.** Seen
+  2026-09-23: it returned `1761765678094827`, and `FACEBOOK_GET_POST` refused
+  both `<page_id>_1761765678094827` ("object does not exist") and the bare id
+  ("must be in full format pageId_postId"). Neither is a failure to post —
+  that number is the reel id from the permalink. Read the post back through
+  `FACEBOOK_GET_PAGE_POSTS` and take the `id` from the feed entry
+  (`1233196746554445_122111214693449533` that day). On 2026-09-22 the
+  composite form happened to work, so do not rely on it.
 - **Duplicate checks go against the page feed** (`FACEBOOK_GET_PAGE_POSTS`),
   **not** `FACEBOOK_GET_PAGE_VIDEOS`. The video listing can carry entries the
   feed does not — seen 2026-09-20, where a second video-library object for

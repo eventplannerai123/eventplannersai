@@ -1,6 +1,33 @@
 # Catering invoice vs BEO reel — 2026-09-23
 
-Status: **built, not posted.** Awaiting approval in the conversation.
+Status: **published 2026-09-23.** Approved in conversation ("go ahead and
+post"), then posted to Instagram and Facebook.
+
+| Account | Post |
+| --- | --- |
+| Instagram `@aiforeventplanners` | https://www.instagram.com/reel/DdocwZkkyBY/ |
+| Facebook "The Event Planners AI" | https://www.facebook.com/reel/1761765678094827/ |
+
+Both captions were read back live and diffed against `build/caption.txt` with
+`cmp` rather than by eye — **identical byte for byte on both**, md5
+`c5f84ae5245eef756e23a709ac06f893`, 697 bytes. Four literal `#`, no
+"Hashtags:" label, no comment keyword, no link-in-bio, and none of the retired
+`#theeventplannerai`.
+
+The Instagram container (`18092095340367131`) reached FINISHED after 18.9s
+over 7 status checks and published first try as media `17863972956680133`.
+
+**Facebook's read-back needed the feed, not the id.** `FACEBOOK_CREATE_VIDEO_POST`
+returned `1761765678094827`, and `FACEBOOK_GET_POST` rejected both
+`1233196746554445_1761765678094827` (object does not exist) and the bare id
+(wrong format). That returned value is the *reel* id, which appears in the
+permalink but is not the post id. The actual post id is
+`1233196746554445_122111214693449533`, found via `FACEBOOK_GET_PAGE_POSTS` —
+which is the duplicate-check path the runbook already specifies. Nothing was
+re-posted; the feed shows exactly one copy.
+
+TikTok is not posted from here. `invoice-tiktok.mp4` was handed to the author
+for manual upload, per the guide.
 
 Wednesday of Round 6 — a short day in the Sep 23–30 length test (15–20s).
 Corporate, not wedding, so the cap of two wedding pieces per seven is
