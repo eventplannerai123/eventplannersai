@@ -1,0 +1,5 @@
+The staffing gap always shows up mid-room-turn, when it's too late to fix. This finds it the week before instead. The full prompt is in the caption below.
+
+AI Prompt: "Here's the agenda for a one-day conference: six sessions across three rooms, 200 attendees, and I have four staff plus myself. Build a staffing plan in fifteen-minute blocks showing who covers what, including registration, room turns, AV checks and breaks. Flag any block where we're short."
+
+#aiforeventplanners #corporateevents #eventprofs #eventplanningtips
