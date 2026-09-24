@@ -141,6 +141,14 @@ MCP server; a session without `mcp__Composio__*` tools cannot post at all.
   the TikTok cut every single day** and never attempt to post it. It is the
   platform that actually reaches people, so its cut is not an afterthought
   to the Instagram one.
+- **The split, stated plainly (author, 2026-09-24): anything going to
+  TikTok is hers.** Not just the day's TikTok cut — the back-catalogue
+  uploads and every item a brief labels "repost to TikTok" too, whatever
+  the wording. This session builds those files and hands them over with
+  their captions; it never uploads one. **Reposts to Instagram are the
+  opposite and do run from here** — the Sep 27 and Sep 28 repost days are
+  the only case. So when a day's brief lists a second post, read which
+  platform it names before assuming it is this session's work.
 - Facebook has 7 followers and is not yet a platform. Still post there, but
   do not read anything into its numbers.
 - **Trial Reels are manual: the Sep 27 and 28 trials do not come through
