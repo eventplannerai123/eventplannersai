@@ -105,6 +105,23 @@ update this file to match.**
 
 ## Posting
 
+**Who posts what — the author restated this on 2026-09-24 and it has had to
+be said more than once, so read it before assuming a piece is yours:**
+
+| Goes out as | Who posts it |
+| --- | --- |
+| **Anything to TikTok** — the day's cut, the back catalogue, anything a brief calls a "repost to TikTok" | **The author.** Build the file, hand it over with its caption, never upload it. |
+| **Anything that is a Trial Reel** | **The author.** Edited in the Claude.ai chat, uploaded with the in-app toggle. |
+| Instagram feed Reels and Facebook | This session, after explicit approval. |
+| An Instagram **repost** on a trial day | This session in principle — but ask first. Sep 27's was cancelled outright. |
+
+The wording in a brief does not change this: what matters is the platform
+and whether it is a trial, not how the line is phrased. **The author is
+re-editing the guide as of 2026-09-24 because its Round 6 blocks are
+confusing on exactly this point** — two reposts filed under one day, trial
+and non-trial posts described in adjacent paragraphs. Until the new guide
+lands, treat anything ambiguous about a second post as hers and ask.
+
 Never post without explicit approval in the conversation. Build both cuts,
 show the Instagram one, ask, and wait.
 
