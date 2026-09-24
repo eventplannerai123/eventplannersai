@@ -33,6 +33,13 @@ cut that is roughly **19 seconds of silence**. This is the same shape as
 Sep 24, where the guide's original 66-word script was extended to 112 words
 and the finished cut carried a 1.23s tail instead of twenty.
 
+The finished scripts are in `build/voiceover-instagram-script.txt` (~116
+words, ~45s) and `build/voiceover-tiktok-script.txt` (~103 words, ~40s, with
+a command-style opener). Only the first paragraph of the Instagram one is the
+guide's; the rest narrates the output. Added after the author queried the
+shortfall — the guide's line was re-extracted untruncated to confirm it, and
+it is 64 words.
+
 Proposed addition after "…where we don't have enough people":
 
 > It came back as a grid. Every fifteen minutes, who's on registration, who's
@@ -48,7 +55,11 @@ against what the output actually shows before recording.
 - Screen recording: two or three clips of ~20s. Per the Sep 24 lesson, shoot
   the reveal as a **deliberate scroll after the answer finishes**, not the
   live auto-scroll.
-- Voiceover, once the script is settled.
+- Voiceover. **Do not record the guide's script as written** — it is the
+  short one. Use `build/voiceover-instagram-script.txt`. Neither script
+  depends on the footage, so both can be generated before the recording
+  exists; the author records the Instagram one herself, so it was offered
+  rather than generated unasked.
 
 ## Posting while the author is away
 
