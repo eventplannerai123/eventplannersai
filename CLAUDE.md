@@ -267,6 +267,25 @@ around them.
   A false all-clear is worse than no check.
 - Check the full raw footage for other in-app ads before finalising the
   reveal.
+- **Ad-check the finished export, over the whole frame — not a crop of the
+  source.** On 2026-09-24 a bottom-620px crop of the raw clip read clean at
+  the chosen cut point, and the exported reel still carried the ad's lead
+  line on its last frame: once the 2144-tall crop is scaled to 1920 that
+  source crop stops about 20px short of the frame bottom. Scan the bottom
+  ~300px of the actual mp4 through to its final frame. A crop that misses the
+  last few rows gives the same false all-clear a colour threshold does.
+- **Ads seen so far are not one banner**: Adobe Acrobat (Sep 21), Adobe
+  Firefly (Sep 22), Rillion "AI for Accounts Payable" (Sep 23), Cambridge
+  "Event Florals in NYC" (Sep 24). Do not search for a known logo — look for
+  anything new at the bottom of the reveal.
+- **"Save as New Clip" splits are not always frame-matchable.** On 2026-09-24
+  three clips of the same answer turned out to be separate scroll passes: best
+  whole-frame match across the overlaps was MAD 13.4 and 18.6, and last-frame
+  to first-frame 21.0 and 17.7 against a control of 28.2 — no true match
+  anywhere. That is not a blocker. A dense page of text throws a large MAD for
+  even a one-line scroll offset, so check contiguity by **reading the text**
+  at each boundary instead; a seam of a line or two reads as ordinary
+  scrolling.
 - The recording is supposed to start with the prompt sitting in the input
   box and the send tap on camera. Two recordings so far began after the tap.
   Flag it rather than faking an opening.
