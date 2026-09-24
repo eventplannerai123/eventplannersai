@@ -1,6 +1,31 @@
 # Client enquiry to event brief reel — 2026-09-24
 
-Status: **built, not posted.** Awaiting approval in the conversation.
+Status: **published 2026-09-24.** Approved in conversation ("go ahead and
+post"), then posted to Instagram and Facebook.
+
+| Account | Post |
+| --- | --- |
+| Instagram `@aiforeventplanners` | https://www.instagram.com/reel/Ddq8qEDihmJ/ |
+| Facebook "The Event Planners AI" | https://www.facebook.com/reel/2060227754604735/ |
+
+Both captions were read back live and diffed against `build/caption.txt` with
+`cmp` — **identical byte for byte on both**, md5
+`f0cb38790c659cbcb0c3d96630537abe`, 587 bytes. Four literal `#`, no
+"Hashtags:" label, no comment keyword, no link-in-bio, no dead
+`#theeventplannerai`.
+
+The Instagram container (`18092292773367131`) reached FINISHED after 25.1s
+over 9 status checks and published first try as media `18161078440433918`.
+
+Facebook took two reads plus a 60s wait to surface in the page feed — the
+same lag as Sep 19, 21, 22 and 23. Read through `FACEBOOK_GET_PAGE_POSTS`
+per the Sep 23 note, since `FACEBOOK_CREATE_VIDEO_POST` returns the reel id
+(`2060227754604735`) rather than the post id
+(`1233196746554445_122111505363449533`). Nothing was re-posted; the feed shows
+one copy.
+
+TikTok is not posted from here. `enquiry-tiktok.mp4` was handed to the author
+for manual upload.
 
 Thursday of Round 6 — a long day in the Sep 23–30 length test (40–50s).
 Milestone category, not wedding.
