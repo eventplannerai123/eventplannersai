@@ -29,8 +29,19 @@ update this file to match.**
 - 30 fps out, H.264 high, CRF 19, `+faststart`, AAC 192k at 48 kHz.
 - **Voiceover to -14 LUFS.** Measure the source with a loudnorm first pass
   and feed the measured values back in, rather than a single dynamic pass.
-- The screen recordings carry a silent audio track. The uploaded voiceover
-  is the only audio.
+- The screen recordings carry a silent audio track. The voiceover is the
+  only audio.
+- **Generate both voiceovers here — standing instruction from 2026-09-24.**
+  The author used to record the Instagram one herself and leave the TikTok
+  one to this session; she asked for both to be generated from now on. Use
+  ElevenLabs, voice "Vanessa - Beach Girl" (`8DzKSPdgEQPaK5vKG0Rs`). Neither
+  script depends on the footage, so both can be made as soon as the day's
+  script is settled, before the recording exists.
+- **Check the day's script length before generating.** The guide's per-day
+  scripts have twice run short for a 40-50s day — 66 words on Sep 24 and 64
+  on Sep 26, about 25s, which would leave ~20s of silence. Target roughly
+  2.55 words per second of finished cut and extend the script by narrating
+  what the output actually shows, as the Sep 24 rewrite did.
 
 ## Timing rules
 
