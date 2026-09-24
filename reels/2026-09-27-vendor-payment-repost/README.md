@@ -1,7 +1,22 @@
 # Vendor payment schedule — Instagram repost, 2026-09-27
 
-Status: **blocked on the source file.** Caption is ready; there is nothing to
-export yet.
+Status: **cancelled. Nothing ships on Sep 27.**
+
+The author cancelled this repost on 2026-09-24: "skip sunday all together."
+That followed her saying Sunday was all hers because trial uploads cannot run
+from here, and this session putting the distinction to her — the trial is
+hers, but the repost is a normal feed Reel that can post from here. She chose
+to drop it anyway. Her call, and it is recorded rather than quietly dropped
+because the opposite mistake (assuming a trial day has nothing in it) is
+already on the record as having nearly cost two posts.
+
+The folder is kept because the work is done and correct. If the repost is
+revived, the caption below is ready and only the source file is missing.
+
+**Sep 28's repost has not been cancelled** — but do not assume it is on
+either. Ask before building it.
+
+The rest of this file describes the repost as it was prepared.
 
 Sunday Sep 27 carries two Instagram posts, which is the only day of the week
 that is true:

@@ -158,7 +158,12 @@ MCP server; a session without `mcp__Composio__*` tools cannot post at all.
 - **But each trial day also has a second post, and that one does come through
   here.** Sep 27 and 28 each carry an Instagram **repost** — Sep 3's vendor
   payment schedule and Sep 2's seating chart — posted as a normal feed Reel
-  through Claude Code as usual. A trial reaches only non-followers, so on a
+  through Claude Code as usual.
+  **Sep 27's was cancelled by the author on 2026-09-24** ("skip sunday all
+  together"), after the distinction between the trial and the repost was
+  put to her. Sep 27 therefore has nothing in it for this session. Sep 28's
+  repost has not been cancelled, but do not assume it is on either — ask
+  before building it. A trial reaches only non-followers, so on a
   trial day the 280 followers see nothing in feed and nothing lands on the
   grid; the repost reaches a separate audience and the two do not compete.
   **Re-export the file rather than re-using the original byte for byte**, or
@@ -273,8 +278,19 @@ around them.
   concatenate.
 - **Uploads must be sent at "Actual"/"Original" size.** The default
   compressed size produces visibly soft footage.
-- **Google Drive is blocked** by the session's egress policy. Do not route
-  around it; ask for split uploads instead.
+- **Google Drive works now** (2026-09-24 — the author changed the
+  environment's network policy; this file said "blocked" until then).
+  Download with
+  `https://drive.usercontent.google.com/download?id=<FILE_ID>&export=download&confirm=t`.
+  The file must be shared **"Anyone with the link - Viewer"**; a
+  Restricted file returns a Google sign-in HTML page, not the video, and
+  `curl` will happily save that page as an .mp4. Check the response is
+  `content-type: video/mp4` before trusting it.
+  **This retires the ~30 MB ceiling for anything routed through Drive** -
+  the first file this way was 40.6 MB, well past what the chat takes. So
+  no more splitting a clip into overlapping takes, and no more seam
+  matching, unless the author prefers the chat. Send full-length
+  recordings via Drive.
 - **A pasted image is not a file.** Images dropped into a message may render
   without landing in the uploads directory. Check for a real path before
   planning to use one.
