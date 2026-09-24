@@ -132,11 +132,19 @@ MCP server; a session without `mcp__Composio__*` tools cannot post at all.
   to the Instagram one.
 - Facebook has 7 followers and is not yet a platform. Still post there, but
   do not read anything into its numbers.
-- **Trial Reels are manual, and Sep 27 and 28 do not come through here at
-  all.** Those two are planned Instagram trials: they are edited in the
-  Claude.ai chat and the author uploads them herself. **Do not post them.**
-  If their content turns up in this session, stop and say so rather than
-  building or publishing anything.
+- **Trial Reels are manual: the Sep 27 and 28 trials do not come through
+  here.** Both are planned Instagram trials, edited in the Claude.ai chat and
+  uploaded by the author. **Do not post them.** If their content turns up in
+  this session, stop and say so rather than building or publishing anything.
+- **But each trial day also has a second post, and that one does come through
+  here.** Sep 27 and 28 each carry an Instagram **repost** — Sep 3's vendor
+  payment schedule and Sep 2's seating chart — posted as a normal feed Reel
+  through Claude Code as usual. A trial reaches only non-followers, so on a
+  trial day the 280 followers see nothing in feed and nothing lands on the
+  grid; the repost reaches a separate audience and the two do not compete.
+  **Re-export the file rather than re-using the original byte for byte**, or
+  duplicate detection can throttle both copies, and space it several hours
+  from the trial upload.
   Generally: the Trial toggle is in-app only, so a trial cannot be
   published from here — only regular feed Reels can. Never post the same
   piece as both a regular Reel and a Trial Reel: that trips Instagram's
@@ -171,21 +179,55 @@ keywords across the series returned zero comments between them.
 The guide keeps the old keyword list as a record of what was tried, so the
 mechanic is not reintroduced without knowing it already failed nine times.
 
-## TikTok back catalogue (added to the guide 2026-09-23)
+## TikTok back catalogue (added to the guide 2026-09-23, corrected same day)
 
-A second workstream: re-posting fifteen August and September pieces to
-TikTok, which never saw them. All manual uploads, so they never publish from
-here.
+**12 of 39** Instagram pieces have never been posted to TikTok, verified
+against the full 31-video TikTok catalogue. These are **not reposts** — the
+TikTok audience has genuinely not seen them. One goes up per day as a second
+post alongside that day's scheduled piece. All manual uploads, so they never
+publish from here.
+
+Most of the twelve are carousels: TikTok did not support carousels when they
+ran, so they had nowhere to go. That changed, and the first TikTok carousel
+went up on Sep 22, which is what makes the backlog postable at all.
 
 - **`#theeventplannerai` is dead** — it points at an account name that no
-  longer exists. Swap it for `#aiforeventplanners` on every reposted caption;
-  fourteen of the fifteen carry it.
-- Strip any comment-to-unlock CTA from the old caption. Open questions
-  ("what's the pettiest seating conflict you've had?") stay — those are
-  conversation prompts, not a keyword gate.
-- **Never re-use the original file byte for byte.** Re-export it, or
-  duplicate detection can throttle both copies. Space a repost several hours
-  from any trial upload the same day.
+  longer exists. Swap it for `#aiforeventplanners` wherever the old handle
+  appears in the original caption.
+- Strip any comment-to-unlock CTA. The Sep 13 centerpieces caption still has
+  one. Open questions ("what's the pettiest seating conflict you've had?")
+  stay — those are conversation prompts, not a keyword gate.
+- Excluded on purpose: the Aug 23 poll carousel (it points at a Story poll
+  that no longer exists) and the Aug 30 tablecloth carousel (the
+  swipe-to-zoom version of the same content went to TikTok on Sep 22).
+- Three links in the guide are still placeholders — the Sep 8 photography
+  carousel, the Sep 14 floor plan and the Sep 20 vendor contract. Find them
+  on the profile grid by date.
+- **Not to Instagram, not yet.** A second Instagram feed post competes with
+  that day's main post for the same small pool of reach. Followers went 271
+  to 280 over the fortnight these ran, so the same people would simply see it
+  twice. Revisit when the count has roughly doubled.
+
+**How the first version of this list got it wrong**, recorded because the
+failure mode is easy to repeat: it listed 15 pieces and 11 of them were
+wrong. The TikTok list endpoint returns 20 videos per page and the second
+page was never fetched, so the catalogue was incomplete; the "missing" list
+was then built by fuzzy word-overlap against captions of very different
+lengths. Page the endpoint to the end, and match on something stronger than
+word overlap.
+
+## The paid guide and the four templates (added 2026-09-24)
+
+`@_eventguide` — the account whose awards-night post was the model for the
+comment-to-unlock experiment — has launched a paid product for the same
+audience: a per-event Claude project setup, four document templates, prompt
+workflows and instructions.
+
+**The four document templates are the blocker.** Event brief, project plan,
+budget, run of show — the four Sahiba actually works from, named Sep 8 and
+still unbuilt. Two things wait on them: the Round 6 awards-night piece
+promises the pack as its deliverable, and any paid guide would be built
+around them.
 
 ## Practical gotchas
 
