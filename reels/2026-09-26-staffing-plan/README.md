@@ -1,6 +1,6 @@
 # Conference agenda to staffing plan reel — 2026-09-26
 
-Status: **built, not posted.** Awaiting approval.
+Status: **approved and scheduled.** Not yet posted.
 
 | File | Platform | Duration | Voiceover | Payoff |
 | --- | --- | --- | --- | --- |
@@ -92,3 +92,21 @@ Clip A is clean throughout. Verified on the finished exports across the last
 The author chose: **this session schedules it and posts on the day.** The
 trigger is not created until the finished cut has been approved — a scheduled
 post with nothing approved behind it would bypass the only safeguard there is.
+
+Approved 2026-09-24: "publish to instagram and FB at 9am on saturday".
+
+| | |
+| --- | --- |
+| Fires | 2026-09-26 **13:00 UTC** = 9am ET (EDT, UTC-4) |
+| Trigger | `trig_01Jo39Zoa7Sa9RETEDQAM1e4`, one-shot, fires into this session |
+| Platforms | Instagram + Facebook only |
+| Video URL | `.../main/reels/2026-09-26-staffing-plan/staffing-instagram.mp4` — verified 200, content-length 13647203 |
+| `staffing-instagram.mp4` md5 | `ca1b4c1d574c093a0f3a3937f82430fe` |
+| `build/caption.txt` md5 | `0cfdbaa8d7394b5fc009f107c572838a` |
+
+The timezone is **assumed ET**, matching the Sep 18 routine ("posted by the
+scheduled routine at 9am ET"). The author did not name one.
+
+The scheduled run checks both md5s and the URL before posting and stops
+rather than posting if either has moved. `staffing-tiktok.mp4` is a manual
+upload and the trigger will not touch it.

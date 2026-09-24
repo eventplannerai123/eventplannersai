@@ -72,8 +72,12 @@ AI Prompt: "<that day's prompt, verbatim>"
   encoding; that is wrong and publishes `%23tag`.
 - **Never write the label "Hashtags:"** — it pastes through into the live
   caption.
-- Since 2026-09-20 the CTA is **"link in bio"**. Comment-to-unlock keywords
-  are retired.
+- Comment-to-unlock keywords are retired. Prompt pieces close on **"The
+  full prompt is in the caption below."** **"link in bio" is not in use** —
+  it is only for downloadable files, and only once the bio links to a hub
+  page that holds them, which it does not yet. (This file said "link in
+  bio" from 2026-09-20 until 2026-09-24; CLAUDE.md is the authority and
+  says otherwise.)
 
 Write the caption to a file and keep its md5 — Step 5 compares against it.
 
