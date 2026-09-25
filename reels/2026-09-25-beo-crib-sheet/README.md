@@ -1,6 +1,15 @@
 # Dense BEO into a one-page day-of crib sheet — 2026-09-25
 
-Status: **built, not posted.** Awaiting approval.
+Status: **published 2026-09-25.** Approved in conversation ("Its perfect go
+ahead and post").
+
+| Account | Post |
+| --- | --- |
+| Instagram `@aiforeventplanners` | https://www.instagram.com/reel/Ddta32ulMwS/ |
+| Facebook "The Event Planners AI" | reel id `1115616567472637` — see below |
+
+The Instagram caption was read back and compared to `build/caption.txt`
+character for character: **identical**. Container processing took 28.4s.
 
 | File | Platform | Duration | Voiceover | Payoff |
 | --- | --- | --- | --- | --- |
