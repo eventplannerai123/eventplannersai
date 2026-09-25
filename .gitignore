@@ -1,0 +1,5 @@
+# Scratch staging for files handed to the author mid-session.
+# The app can only open files inside the working directory, so intermediates
+# get copied here to be sent. They are working files, not deliverables —
+# finished cuts live in reels/<date>-<slug>/ and are committed there.
+.tmp-out/
