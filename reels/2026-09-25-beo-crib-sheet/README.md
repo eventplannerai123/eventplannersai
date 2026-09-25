@@ -6,10 +6,15 @@ ahead and post").
 | Account | Post |
 | --- | --- |
 | Instagram `@aiforeventplanners` | https://www.instagram.com/reel/Ddta32ulMwS/ |
-| Facebook "The Event Planners AI" | reel id `1115616567472637` — see below |
+| Facebook "The Event Planners AI" | https://www.facebook.com/reel/1115616567472637/ |
 
-The Instagram caption was read back and compared to `build/caption.txt`
-character for character: **identical**. Container processing took 28.4s.
+Both live captions were read back and compared to `build/caption.txt`
+character for character: **identical on both**. Instagram container
+processing took 28.4s.
+
+Facebook did not surface in the page feed on the first two read-backs, which
+is the documented normal behaviour — it appeared on the third, post id
+`1233196746554445_122111744817449533`. Nothing was retried.
 
 | File | Platform | Duration | Voiceover | Payoff |
 | --- | --- | --- | --- | --- |
