@@ -146,7 +146,14 @@ or "great" is feedback on the cut, not permission — ask.
 MCP server; a session without `mcp__Composio__*` tools cannot post at all.
 
 - **Instagram** — Composio account `instagram_newing-redate`, `ig_user_id`
-  `28308094898830663`. Create the container with `media_type: REELS` and
+  `28308094898830663`. **The guide disagrees and the guide is wrong here.**
+  The Sep 25 guide records this account's user ID as `17841441013925532`.
+  The live value from Composio's own connection listing is
+  `28308094898830663`, and every post this month published with it. Do not
+  "correct" it to the guide's number — that is the one place the
+  guide-wins rule has to be overridden, because this is a fact checkable
+  against the API rather than an editorial decision. Flagged to the author
+  2026-09-25 for the guide to be fixed. Create the container with `media_type: REELS` and
   `share_to_feed: true`, then publish with a generous `max_wait_seconds`.
   Containers are single-use; on a processing error build a new one.
 - **Facebook** — Composio account `facebook_radius-iguana`, page_id
@@ -296,7 +303,9 @@ around them.
 - **Uploads must be sent at "Actual"/"Original" size.** The default
   compressed size produces visibly soft footage.
 - **Google Drive works now** (2026-09-24 — the author changed the
-  environment's network policy; this file said "blocked" until then).
+  environment's network policy; this file said "blocked" until then, and the
+  Sep 25 guide still does, flagged as "reported Sep 14 and not yet
+  re-verified" — it has now been re-verified, and it works).
   Download with
   `https://drive.usercontent.google.com/download?id=<FILE_ID>&export=download&confirm=t`.
   The file must be shared **"Anyone with the link - Viewer"**; a
@@ -328,7 +337,8 @@ around them.
   last few rows gives the same false all-clear a colour threshold does.
 - **Ads seen so far are not one banner**: Adobe Acrobat (Sep 21), Adobe
   Firefly (Sep 22), Rillion "AI for Accounts Payable" (Sep 23), Cambridge
-  "Event Florals in NYC" (Sep 24). Do not search for a known logo — look for
+  "Event Florals in NYC" (Sep 24), Turning Stone "Make It Easier" (Sep 25).
+  Five advertisers in five days. Do not search for a known logo — look for
   anything new at the bottom of the reveal.
 - **"Save as New Clip" splits are not always frame-matchable.** On 2026-09-24
   three clips of the same answer turned out to be separate scroll passes: best
@@ -339,5 +349,25 @@ around them.
   at each boundary instead; a seam of a line or two reads as ordinary
   scrolling.
 - The recording is supposed to start with the prompt sitting in the input
-  box and the send tap on camera. Two recordings so far began after the tap.
-  Flag it rather than faking an opening.
+  box and the send tap on camera. Three recordings have now begun after the
+  tap (the third on Sep 25, where the author said to run with it). Flag it
+  rather than faking an opening.
+- **A single-frame PNG overlay needs `repeatlast=1`.** Feeding a hook card
+  straight into `overlay` with `eof_action=pass:repeatlast=0` shows it on
+  frame one and then drops it — the Sep 25 first build shipped with no hook
+  at all and the filtergraph looked correct. Use
+  `eof_action=repeat:repeatlast=1` with an `enable=between(t,0,2)` window,
+  and **verify the hook on the exported frames**, never from the command.
+  (The Sep 26 script builds the card as a timed stream instead, which is
+  also fine — that export was checked and does render.)
+- **`alimiter` undoes its own limiting unless you pass `level=0`.** Its
+  `level` option (auto level) defaults to true and renormalises the output
+  back to full scale, so the audio clips at 0.0 dBFS however low `limit` is
+  set. This looks exactly like the limiter not working.
+- **`loudnorm` cannot always reach -14 LUFS.** When a voiceover's crest
+  factor is high the filter's true-peak ceiling binds first: on Sep 25 the
+  measured two-pass result stalled at -15.8 LUFS with TP pinned to -1.5, and
+  raising the offset moved it 0.6 dB. When that happens, apply the gain
+  explicitly and let `alimiter` (with `level=0`) catch the peaks. Still take
+  the first-pass measurement — it is what the gain is computed from. Always
+  confirm by measuring the finished export.
