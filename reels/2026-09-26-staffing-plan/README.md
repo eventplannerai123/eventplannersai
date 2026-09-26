@@ -1,6 +1,21 @@
 # Conference agenda to staffing plan reel — 2026-09-26
 
-Status: **approved and scheduled.** Not yet posted.
+Status: **published 2026-09-26** by the scheduled routine at 9am ET, while
+the author was away. Approved by her on 2026-09-24 ("approved" / "publish to
+instagram and FB at 9am on saturday").
+
+| Account | Post |
+| --- | --- |
+| Instagram `@aiforeventplanners` | https://www.instagram.com/reel/DdwGGoXk0u1/ |
+| Facebook "The Event Planners AI" | reel id `4367231790255737` |
+
+Before posting, the routine re-checked the video md5
+(`ca1b4c1d574c093a0f3a3937f82430fe`), the caption md5
+(`0cfdbaa8d7394b5fc009f107c572838a`) and the raw URL (200,
+content-length 13647203). All three matched.
+
+The Instagram caption was read back and compared to `build/caption.txt`
+character for character: **identical**. Container processing took 12.7s.
 
 | File | Platform | Duration | Voiceover | Payoff |
 | --- | --- | --- | --- | --- |
