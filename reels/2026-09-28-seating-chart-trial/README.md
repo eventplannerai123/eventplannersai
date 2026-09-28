@@ -1,6 +1,23 @@
 # Guest list with family notes into a seating chart — 2026-09-28
 
-Status: **built, handed over. NOT posted, and must not be posted from here.**
+Status: **built and handed over. Facebook posted from here; Instagram and
+TikTok are the author's.**
+
+She split it on 2026-09-28: "I'll post to Instagram and TikTok - you can post
+it to facebook." So the Instagram **Trial Reel** and the TikTok upload stay
+manual, and only Facebook went out from this session.
+
+| Account | Post |
+| --- | --- |
+| Facebook "The Event Planners AI" | reel id `1724608128627406` |
+| Instagram (Trial Reel) | the author, manually, Trial toggle on |
+| TikTok | the author, manually |
+
+Facebook carries the **hashtag** version of the caption
+(`build/caption-tiktok.txt`). The guide's "no hashtags" instruction is
+specific to the Instagram trial - trials are kept off hashtag pages, so tags
+do nothing there. Facebook is not a trial, and every prior Facebook post this
+month carried them.
 
 | File | Platform | Duration | Voiceover | Payoff |
 | --- | --- | --- | --- | --- |
