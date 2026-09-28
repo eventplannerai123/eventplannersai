@@ -175,6 +175,12 @@ MCP server; a session without `mcp__Composio__*` tools cannot post at all.
   platform it names before assuming it is this session's work.
 - Facebook has 7 followers and is not yet a platform. Still post there, but
   do not read anything into its numbers.
+- **Facebook keeps the hashtags even on a trial day** (author, 2026-09-28:
+  "Keep hashtags on Facebook"). A trial day's Instagram caption carries no
+  hashtags, because a trial is kept off hashtag pages and tags do nothing
+  there. That reasoning is Instagram-only. Facebook is never a trial, so it
+  takes the ordinary caption - body, blank line, `AI Prompt: "..."`, blank
+  line, hashtags - exactly as on any other day.
 - **Trial Reels are manual: the Sep 27 and 28 trials do not come through
   here.** Both are planned Instagram trials, edited in the Claude.ai chat and
   uploaded by the author. **Do not post them.** If their content turns up in
