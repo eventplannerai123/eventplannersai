@@ -223,8 +223,14 @@ MCP server; a session without `mcp__Composio__*` tools cannot post at all.
 **Never write "Comment [KEYWORD]."** Comment-to-unlock is retired — nine
 keywords across the series returned zero comments between them.
 
-- **Prompt pieces end: "The full prompt is in the caption below."** The AI
-  prompt is already in the caption body, so the piece is self-contained.
+- **Prompt pieces end: "Prompt below."** Shortened guide-wide on 2026-09-28:
+  the previous wording, "The full prompt is in the caption below", appeared
+  18 times in the Sep 27 guide and zero times in the Sep 28 one, replaced by
+  "Prompt below" in all 16 places. The standing-rules line was changed to
+  match, so this is a deliberate edit rather than drift. The point is
+  unchanged - the AI prompt sits in the caption body, so the piece is
+  self-contained without the video. **Captions already published keep their
+  original wording**; do not go back and edit live posts.
 - **"link in bio" is only for downloadable files**, and only once the bio
   links to a hub page that actually holds them. **It does not yet** — the
   bio currently points at the tablecloth cheat sheet alone. So do not write
