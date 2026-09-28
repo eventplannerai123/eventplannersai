@@ -1,0 +1,5 @@
+Every family event comes with a list of who can't sit with whom. Here's all of it worked through — including which constraints couldn't be met, rather than hiding them. The full prompt is in the caption below.
+
+AI Prompt: "Here's a guest list of 120 for a 50th anniversary party, with notes on who shouldn't sit together and who should. Build a seating chart for twelve tables of ten that honours every note. Tell me which constraints you couldn't satisfy and why, rather than quietly breaking one."
+
+#aiforeventplanners #partyplanning #eventprofs #eventplanningtips
