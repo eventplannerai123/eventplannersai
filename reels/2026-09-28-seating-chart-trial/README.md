@@ -9,9 +9,14 @@ manual, and only Facebook went out from this session.
 
 | Account | Post |
 | --- | --- |
-| Facebook "The Event Planners AI" | reel id `1724608128627406` |
+| Facebook "The Event Planners AI" | https://www.facebook.com/reel/1724608128627406/ |
 | Instagram (Trial Reel) | the author, manually, Trial toggle on |
 | TikTok | the author, manually |
+
+Live caption read back and compared to `build/caption-tiktok.txt` character
+for character: **identical**. It surfaced in the page feed on the third
+read-back, ~15 minutes after posting, the same as Sep 25 and Sep 26. Post id
+`1233196746554445_122112351387449533`. Nothing was retried.
 
 Facebook carries the **hashtag** version of the caption
 (`build/caption-tiktok.txt`). The guide's "no hashtags" instruction is
