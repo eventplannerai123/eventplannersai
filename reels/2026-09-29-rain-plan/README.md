@@ -4,8 +4,8 @@ Status: **built, not posted.** Awaiting approval.
 
 | File | Platform | Duration | Voiceover | Payoff |
 | --- | --- | --- | --- | --- |
-| `rainplan-tiktok.mp4` | TikTok (manual) | 18.73s | -13.7 LUFS | 4.54s |
-| `rainplan-instagram.mp4` | Instagram, Facebook | 19.90s | -14.0 LUFS | 5.01s |
+| `rainplan-tiktok.mp4` | TikTok (manual) | 18.73s | -13.7 LUFS | 4.84s |
+| `rainplan-instagram.mp4` | Instagram, Facebook | 19.83s | -14.0 LUFS | 5.44s |
 
 Both 1080x1920 (ratio exactly 0.5625), 30 fps, H.264 High, AAC 192k / 48 kHz.
 Tuesday of Round 6 — a short day in the length test (15–20s). Hook overlay
@@ -56,15 +56,31 @@ opens command-style instead and runs 48 words.
 
 Instagram 19.17s, TikTok 17.87s. Vanessa - Beach Girl, `8DzKSPdgEQPaK5vKG0Rs`.
 
+## The opening was rebuilt
+
+The first version started at source 7.00s and opened on the run-of-show PDF.
+The author asked why the prompt was not the first thing on screen, and she was
+right: **this recording opens exactly as the house rules ask** — the prompt
+already sitting in the input box, all three files attached, and the send tap
+on camera at about 0.7s. Three of the last four recordings began after the
+tap, and that was assumed rather than checked. It is the first thing the
+viewer sees now.
+
+The hook card moved with it. At the usual y=620 it landed square on the prompt
+text — the one thing the opening exists to show — so it sits at **y=1300**,
+over the keyboard, which carries no information. The send button stays clear,
+which is the fault the Sep 23 card had at y880.
+
 ## Structure
 
 | # | Source | On screen | IG out |
 | --- | --- | --- | --- |
-| 1 | 7.00–11.50 @3.0x | Run of show, then the 14,250 sq ft lawn plan | 0.00–1.50 |
-| 2 | 14.00–17.00 @2.5x | The empty 3,800 sq ft hall | 1.50–2.70 |
-| 3 | 19.00–25.00 @2.6x | Generating, 2.31s on screen | 2.70–5.01 |
-| 4 | 49.00–55.50 @1.0x | **The generated INDOOR RAIN PLAN diagram** | 5.01–11.51 |
-| 5 | 68.00–76.40 @1.0x | "What stays vs. what gets cut" | 11.51–19.90 |
+| 1 | 0.00–2.30 @1.0x | **The prompt in the box, then the send tap** | 0.00–2.30 |
+| 2 | 9.00–11.80 @2.8x | The 14,250 sq ft lawn plan | 2.30–3.30 |
+| 3 | 14.00–17.00 @2.8x | The empty 3,800 sq ft hall | 3.30–4.37 |
+| 4 | 21.00–24.00 @2.8x | Generating, "Arranging functional zones" | 4.37–5.44 |
+| 5 | 49.00–55.50 @1.0x | **The generated INDOOR RAIN PLAN diagram** | 5.44–11.94 |
+| 6 | 68.00–75.90 @1.0x | "What stays vs. what gets cut" | 11.94–19.83 |
 
 The transformation is legible without the voiceover: a green lawn plan, an
 empty hall, then a drawn indoor layout and a KEEP/CUT table.

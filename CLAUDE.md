@@ -361,9 +361,21 @@ around them.
   at each boundary instead; a seam of a line or two reads as ordinary
   scrolling.
 - The recording is supposed to start with the prompt sitting in the input
-  box and the send tap on camera. Three recordings have now begun after the
-  tap (the third on Sep 25, where the author said to run with it). Flag it
-  rather than faking an opening.
+  box and the send tap on camera. Three recordings have begun after the tap
+  (the third on Sep 25, where the author said to run with it). Flag it
+  rather than faking an opening. **But check before assuming it is missing
+  again** - the Sep 29 recording opened exactly right, prompt in the box with
+  all three files attached and the tap at ~0.7s, and the first build started
+  at 7.00s and threw it away. The author spotted it: "Why is the ChatGPT
+  prompt not the first thing we see". Look at the first two seconds of every
+  source before choosing a cold open.
+- **The hook card's usual y=620 is not automatic.** It is placed to avoid
+  whatever the frame is showing at 0:00-0:02, and that changes per day: on
+  Sep 23 it covered the send button at y880 and moved to 620; on Sep 29 it
+  landed on the prompt text - the one thing that opening exists to show - and
+  moved to **y=1300**, which sits over the keyboard, carries no information,
+  and still clears Instagram's own bottom furniture. Look at the opening
+  frames, then pick the y.
 - **A single-frame PNG overlay needs `repeatlast=1`.** Feeding a hook card
   straight into `overlay` with `eof_action=pass:repeatlast=0` shows it on
   frame one and then drops it — the Sep 25 first build shipped with no hook

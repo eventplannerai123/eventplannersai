@@ -46,17 +46,26 @@ SCALE= "scale=1080:1920:flags=lanczos,setsar=1,fps=30"
 # The reveal starts at 49.00, not earlier: opening the rain-plan image throws
 # a second "Loading" screen at 48.25-48.90, the same preview sequence as the
 # failed download. The diagram is only rendered from 49.00.
+# (source, in, out, speed)  - speed >1 plays faster
+# Segment 1 is the opening the house rules ask for and this recording actually
+# has: the prompt already sitting in the input box with all three files
+# attached, and the send tap on camera at ~0.7s. The first build started at
+# 7.00s and threw it away.
+# The reveal starts at 49.00: opening the rain-plan image throws a "Loading"
+# screen at 48.25-48.90, the same preview sequence as the failed download.
 CUTS = {
-    "instagram": [(A,  7.00, 11.50, 3.00),   # run of show + the outdoor lawn plan
-                  (A, 14.00, 17.00, 2.50),   # the empty 3,800 sq ft hall
-                  (A, 19.00, 25.00, 2.60),   # generating, 2.31s on screen
+    "instagram": [(A,  0.00,  2.30, 1.00),   # prompt in the box, send tapped
+                  (A,  9.00, 11.80, 2.80),   # the 14,250 sq ft lawn plan
+                  (A, 14.00, 17.00, 2.80),   # the empty 3,800 sq ft hall
+                  (A, 21.00, 24.00, 2.80),   # generating, "Arranging functional zones"
                   (A, 49.00, 55.50, 1.00),   # the INDOOR RAIN PLAN diagram - payoff
-                  (A, 68.00, 76.40, 1.00)],  # "What stays vs. what gets cut"
-    "tiktok":    [(A,  7.00, 11.50, 3.30),
-                  (A, 14.00, 17.00, 2.70),
-                  (A, 19.00, 25.00, 2.90),
+                  (A, 68.00, 75.90, 1.00)],  # "What stays vs. what gets cut"
+    "tiktok":    [(A,  0.00,  2.30, 1.15),
+                  (A,  9.00, 11.80, 3.10),
+                  (A, 14.00, 17.00, 3.10),
+                  (A, 21.00, 24.00, 3.10),
                   (A, 49.00, 55.00, 1.00),
-                  (A, 68.00, 76.20, 1.00)],
+                  (A, 68.00, 75.90, 1.00)],
 }
 FREEZE = {"instagram": 0.0, "tiktok": 0.0}
 HOOK   = {"instagram": "cards0929/hook_ig.png", "tiktok": "cards0929/hook_tt.png"}

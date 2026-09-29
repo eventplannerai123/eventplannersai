@@ -18,5 +18,10 @@ def card(lines,fs,cy,name,px=54,py=46,r=34,bg=(0,0,0,215),fg=(255,255,255,255)):
 # Instagram's hook is verbatim from the guide; TikTok's is the command-style
 # counterpart, naming the square footage because the transformation is a
 # 14,250 sq ft lawn collapsing into a 3,800 sq ft hall.
-card(["Rained out at 9am.","Doors at 6."],66,620,"hook_ig.png")
-card(["Stop winging the rain plan.","14,250 sq ft into 3,800."],56,620,"hook_tt.png")
+#
+# y=1300, not the usual 620: this piece opens on the prompt sitting in the
+# input box, and a card at 620 lands straight on the prompt text - the one
+# thing the opening exists to show. At 1300 it sits over the keyboard, which
+# carries no information, and clears Instagram's own bottom furniture too.
+card(["Rained out at 9am.","Doors at 6."],66,1300,"hook_ig.png")
+card(["Stop winging the rain plan.","14,250 sq ft into 3,800."],56,1300,"hook_tt.png")
