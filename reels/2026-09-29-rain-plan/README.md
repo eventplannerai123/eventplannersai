@@ -1,6 +1,26 @@
 # Outdoor reception rained out, rebuilt indoors — 2026-09-29
 
-Status: **approved and scheduled.** Not yet posted.
+Status: **published 2026-09-29** by the scheduled routine at 9am ET.
+Approved in conversation ("It's better go ahead at post at 9 am").
+
+| Account | Post |
+| --- | --- |
+| Instagram `@aiforeventplanners` | https://www.instagram.com/reel/Dd30flnAYEY/ |
+| Facebook "The Event Planners AI" | https://www.facebook.com/reel/1986378878727437/ |
+
+Before posting, the routine re-checked the video md5
+(`f43aef67c9dddd7af77e4dd229b49bf7`), the caption md5
+(`429a3ce08611f74b05258f9e6274929b`) and the raw URL (200, content-length
+3402934). All three matched.
+
+Both live captions were read back and compared to `build/caption.txt`
+character for character: **identical on both**. Instagram container
+processing took 15.8s.
+
+**Facebook surfaced on the first read-back**, which it had not done on any of
+Sep 25-28 — those each needed three reads and about fifteen minutes. Worth
+knowing before treating a missing Facebook post as normal: the lag is
+variable, not fixed.
 
 Approved 2026-09-29: "It's better go ahead at post at 9 am and give me the
 tik tok file."
