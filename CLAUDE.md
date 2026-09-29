@@ -60,7 +60,15 @@ update this file to match.**
   reveal, combined. This is a hard ceiling from real watch-time data and is
   the rule most often missed. The Sep 12 reel shipped at 6.5s and broke it.
 - The generating section needs a **visible beat of 2.5-3s minimum**, sped
-  to 2-3x, about 4 seconds.
+  to 2-3x, about 4 seconds. **This is what gets sacrificed first when the
+  setup is crowded, and it shows.** On Sep 29 a four-beat setup - prompt,
+  lawn plan, empty hall, generating - left each beat about a second under
+  the 6-second ceiling, and the author said the piece "flips to the rain
+  plan floorplan way too fast". The fix is to drop a setup beat, not to
+  shave the generating one: three beats at a readable speed beat four
+  flashing past. Check what the reveal itself already says before keeping a
+  setup shot - that day's diagram was captioned with the indoor dimensions,
+  so the empty-hall shot was redundant.
 - If the real generating phase runs much longer than that and is visually
   static, take a **representative slice** rather than compressing the whole
   thing, and say so in the reply.

@@ -4,8 +4,8 @@ Status: **built, not posted.** Awaiting approval.
 
 | File | Platform | Duration | Voiceover | Payoff |
 | --- | --- | --- | --- | --- |
-| `rainplan-tiktok.mp4` | TikTok (manual) | 18.73s | -13.7 LUFS | 4.84s |
-| `rainplan-instagram.mp4` | Instagram, Facebook | 19.83s | -14.0 LUFS | 5.44s |
+| `rainplan-tiktok.mp4` | TikTok (manual) | 18.83s | -13.7 LUFS | 5.36s |
+| `rainplan-instagram.mp4` | Instagram, Facebook | 19.67s | -14.0 LUFS | 5.87s |
 
 Both 1080x1920 (ratio exactly 0.5625), 30 fps, H.264 High, AAC 192k / 48 kHz.
 Tuesday of Round 6 — a short day in the length test (15–20s). Hook overlay
@@ -75,12 +75,26 @@ which is the fault the Sep 23 card had at y880.
 
 | # | Source | On screen | IG out |
 | --- | --- | --- | --- |
-| 1 | 0.00–2.30 @1.0x | **The prompt in the box, then the send tap** | 0.00–2.30 |
-| 2 | 9.00–11.80 @2.8x | The 14,250 sq ft lawn plan | 2.30–3.30 |
-| 3 | 14.00–17.00 @2.8x | The empty 3,800 sq ft hall | 3.30–4.37 |
-| 4 | 21.00–24.00 @2.8x | Generating, "Arranging functional zones" | 4.37–5.44 |
-| 5 | 49.00–55.50 @1.0x | **The generated INDOOR RAIN PLAN diagram** | 5.44–11.94 |
-| 6 | 68.00–75.90 @1.0x | "What stays vs. what gets cut" | 11.94–19.83 |
+| 1 | 0.00–1.70 @1.0x | **The prompt in the box, then the send tap** | 0.00–1.70 |
+| 2 | 10.20–12.20 @1.0x | The 14,250 sq ft lawn plan, held at normal speed | 1.70–3.70 |
+| 3 | 21.00–26.00 @2.3x | Generating, 2.17s on screen | 3.70–5.87 |
+| 4 | 49.00–55.80 @1.0x | **The generated INDOOR RAIN PLAN diagram** | 5.87–12.67 |
+| 5 | 68.00–74.90 @1.0x | "What stays vs. what gets cut" | 12.67–19.67 |
+
+## Pacing: why the empty hall is not in the cut
+
+An earlier build had four setup beats — prompt, lawn plan, empty hall,
+generating — and with the 6-second payoff ceiling each came out at about a
+second. The author's verdict: "It flips to the rain plan floorplan way too
+fast." The generating beat in that version was **1.07s**, under the 2.5s the
+timing rules ask for, which is what made the reveal feel unearned.
+
+Four beats do not fit under six seconds at a speed anyone can read, so the
+**empty hall was dropped rather than all four being squeezed**. Nothing is
+lost from the idea: the rain plan's own header reads "Main hall · 76 × 50 ft ·
+3,800 sq ft", so the indoor size still lands, and the diagram itself is the
+hall. What it buys is a real 2.0s look at the lawn plan at normal speed and a
+2.17s generating beat, with the reveal then held for 6.8s.
 
 The transformation is legible without the voiceover: a green lawn plan, an
 empty hall, then a drawn indoor layout and a KEEP/CUT table.

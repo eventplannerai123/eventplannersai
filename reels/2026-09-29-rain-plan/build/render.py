@@ -53,19 +53,29 @@ SCALE= "scale=1080:1920:flags=lanczos,setsar=1,fps=30"
 # 7.00s and threw it away.
 # The reveal starts at 49.00: opening the rain-plan image throws a "Loading"
 # screen at 48.25-48.90, the same preview sequence as the failed download.
+# (source, in, out, speed)  - speed >1 plays faster
+# Pacing note. The 6-second payoff ceiling will not accommodate four setup
+# beats at a speed anyone can read: prompt, lawn plan, empty hall and a
+# generating beat came to ~1s each and the author said it "flips to the rain
+# plan floorplan way too fast". The empty hall was dropped rather than
+# squeezing all four - the rain plan's own header reads "Main hall - 76 x 50
+# ft - 3,800 sq ft", so the indoor size still lands. That buys the lawn plan
+# a real 2s look at normal speed and the generating beat 2.2s, up from 1.07s,
+# which was under the 2.5s the timing rules ask for.
+#
+# The reveal starts at 49.00: opening the rain-plan image throws a "Loading"
+# screen at 48.25-48.90, the same preview sequence as the failed download.
 CUTS = {
-    "instagram": [(A,  0.00,  2.30, 1.00),   # prompt in the box, send tapped
-                  (A,  9.00, 11.80, 2.80),   # the 14,250 sq ft lawn plan
-                  (A, 14.00, 17.00, 2.80),   # the empty 3,800 sq ft hall
-                  (A, 21.00, 24.00, 2.80),   # generating, "Arranging functional zones"
-                  (A, 49.00, 55.50, 1.00),   # the INDOOR RAIN PLAN diagram - payoff
-                  (A, 68.00, 75.90, 1.00)],  # "What stays vs. what gets cut"
-    "tiktok":    [(A,  0.00,  2.30, 1.15),
-                  (A,  9.00, 11.80, 3.10),
-                  (A, 14.00, 17.00, 3.10),
-                  (A, 21.00, 24.00, 3.10),
-                  (A, 49.00, 55.00, 1.00),
-                  (A, 68.00, 75.90, 1.00)],
+    "instagram": [(A,  0.00,  1.70, 1.00),   # prompt in the box, send tapped
+                  (A, 10.20, 12.20, 1.00),   # the 14,250 sq ft lawn plan, held
+                  (A, 21.00, 26.00, 2.30),   # generating, 2.17s on screen
+                  (A, 49.00, 55.80, 1.00),   # the INDOOR RAIN PLAN diagram - payoff
+                  (A, 68.00, 74.90, 1.00)],  # "What stays vs. what gets cut"
+    "tiktok":    [(A,  0.00,  1.70, 1.10),
+                  (A, 10.20, 12.20, 1.10),
+                  (A, 21.00, 26.00, 2.50),
+                  (A, 49.00, 55.80, 1.00),
+                  (A, 68.00, 74.60, 1.00)],
 }
 FREEZE = {"instagram": 0.0, "tiktok": 0.0}
 HOOK   = {"instagram": "cards0929/hook_ig.png", "tiktok": "cards0929/hook_tt.png"}
