@@ -154,19 +154,18 @@ or "great" is feedback on the cut, not permission — ask.
 MCP server; a session without `mcp__Composio__*` tools cannot post at all.
 
 - **Instagram** — Composio account `instagram_newing-redate`, `ig_user_id`
-  `28308094898830663`. **The guide disagrees and the guide is wrong here.**
-  The Sep 25 guide records this account's user ID as `17841441013925532`.
-  The live value from Composio's own connection listing is
-  `28308094898830663`, and every post this month published with it. Do not
-  "correct" it to the guide's number — that is the one place the
-  guide-wins rule has to be overridden, because this is a fact checkable
-  against the API rather than an editorial decision. Flagged to the author
-  2026-09-25 for the guide to be fixed. Create the container with `media_type: REELS` and
+  `28308094898830663`. **The guide agrees as of the 2026-09-29 revision**,
+  which also explains the discrepancy that ran from Sep 25 to Sep 28: the
+  `17841441013925532` it used to carry is the legacy business-account ID
+  that appears inside Insights URLs, and is not what you call the API with.
+  Both numbers are real; only this one works. Create the container with `media_type: REELS` and
   `share_to_feed: true`, then publish with a generous `max_wait_seconds`.
   Containers are single-use; on a processing error build a new one.
 - **Facebook** — Composio account `facebook_radius-iguana`, page_id
-  `1233196746554445` ("The Event Planners AI"). Never blind-retry, it
-  duplicates posts.
+  `1233196746554445` ("The Event Planners AI"), now recorded in the guide
+  too. Never blind-retry, it duplicates posts. It has taken three read-backs
+  and about fifteen minutes to surface in the page feed on every day from
+  Sep 25 to Sep 28; that is normal, not a failure.
 - **TikTok is the main platform — and still a manual upload.** (138
   average views per video against Instagram's 53, on a fifth of the
   followers.) Composio cannot publish publicly to TikTok, so **hand over
@@ -239,10 +238,12 @@ keywords across the series returned zero comments between them.
   unchanged - the AI prompt sits in the caption body, so the piece is
   self-contained without the video. **Captions already published keep their
   original wording**; do not go back and edit live posts.
-- **"link in bio" is only for downloadable files**, and only once the bio
-  links to a hub page that actually holds them. **It does not yet** — the
-  bio currently points at the tablecloth cheat sheet alone. So do not write
-  "link in bio" until the author says the hub is live.
+- **"link in bio" is available again from 2026-09-28** and is still only for
+  **downloadable files**. It was blocked while the bio pointed at the single
+  tablecloth product; the bio now points at the Gumroad profile page,
+  `aiforeventplanners.gumroad.com`, which holds them. Prompt pieces — most
+  of the schedule — still end "Prompt below." instead, because the prompt is
+  already in the caption body and there is nothing to download.
 
 The guide keeps the old keyword list as a record of what was tried, so the
 mechanic is not reintroduced without knowing it already failed nine times.
@@ -322,10 +323,12 @@ around them.
   concatenate.
 - **Uploads must be sent at "Actual"/"Original" size.** The default
   compressed size produces visibly soft footage.
-- **Google Drive works now** (2026-09-24 — the author changed the
-  environment's network policy; this file said "blocked" until then, and the
-  Sep 25 guide still does, flagged as "reported Sep 14 and not yet
-  re-verified" — it has now been re-verified, and it works).
+- **Google Drive works here, and not in the Claude.ai chat.** That is the
+  distinction the 2026-09-29 guide revision drew, and it explains the old
+  "blocked" note: the Claude.ai chat has no Drive tools and an allowlisted
+  network, so files for *that* chat must still be uploaded directly, while
+  Claude Code can fetch from Drive freely. The author changed this session's
+  network policy on 2026-09-24 and it has been used daily since.
   Download with
   `https://drive.usercontent.google.com/download?id=<FILE_ID>&export=download&confirm=t`.
   The file must be shared **"Anyone with the link - Viewer"**; a
