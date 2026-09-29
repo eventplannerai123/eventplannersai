@@ -206,6 +206,10 @@ Amazon went Live on 2026-09-29, so this is now swappable — it was **not**
 swapped in the re-export, which changed the end card only. The cover still
 on screen is the digital edition's.
 
+**Holding until the author copies arrive** (author, 2026-09-29). The wrap
+PDF would work, but she would rather shoot the physical paperback than use
+the artwork, so this waits for the books rather than for a render.
+
 ## The flip footage and the visible monitor
 
 Three clips of the book being flipped were uploaded. Two of them
