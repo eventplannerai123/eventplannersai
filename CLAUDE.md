@@ -45,17 +45,18 @@ update this file to match.**
 
 ## Timing rules
 
-- **Length test, Sep 23-30.** Named days, not a formula:
-  **short (15-20s): Sep 23, 25, 29.  long (40-50s): Sep 24, 26, 30.**
-  Keep to them — it is a test, so drifting defeats it. Each day's block in
-  the guide states its target; follow that. Sep 27 (short) and 28 (long)
-  are trials: they are **excluded from the test** — trial reach is
-  non-follower, so it cannot be compared — and they do not run through here
-  at all (see Posting). Before Sep 23 the standing target was 16-20s. A
-  day's brief still overrides both.
-- **The 6-second payoff ceiling is unchanged by the length test.** A 40-50s
-  piece has to front-load just as hard; the extra time goes into the reveal,
-  never into a slower open.
+- **Everything is 15-20s from Oct 1.** The October plan sets one target for
+  every piece. A day's brief still overrides it, but no piece is long by
+  default any more.
+- **The length test is over — it measured nothing.** It ran Sep 23-30 on
+  named days (short: 23, 25, 29; long: 24, 26, 30) and the October plan
+  dropped it: short days averaged 25 views and long days 23, but both sat
+  inside a decline that halved reach mid-test, so the comparison is
+  worthless. At three Instagram posts a week it would be three against
+  three, which is not enough either. Recorded so it is not re-run in the
+  belief it was never tried.
+- **The 6-second payoff ceiling was never part of the length test** and is
+  unaffected by dropping it. It applies to every piece at every duration.
 - **Time to payoff must stay under 6 seconds** — everything before the
   reveal, combined. This is a hard ceiling from real watch-time data and is
   the rule most often missed. The Sep 12 reel shipped at 6.5s and broke it.
@@ -88,10 +89,12 @@ update this file to match.**
 - Only two text overlays: the hook at 0:00-0:02 and the end card. **No
   rolling mid-video captions** — transcription-synced captions were tested
   and made retention worse.
-- **Round 6 (Sep 23-30) drops the end card**: every brief in it says "end on
-  the output itself, not an end card asking for a comment". So those days
-  carry the hook overlay alone and finish on the answer still moving. The
-  two-overlay rule is the default; the day's brief overrides it.
+- **Round 6 (Sep 23-30) dropped the end card**: every brief in it said "end on
+  the output itself, not an end card asking for a comment". The October
+  plan's six Instagram briefs continue this — each specifies a hook overlay
+  at 0:00-0:02 and nothing else — and its five TikTok-only quick pieces say
+  "no hook line, no end card" outright. The two-overlay rule is the written
+  default; in practice every current brief overrides it down to one.
 - **Never post both cuts to the same platform** — near-identical posts
   split engagement.
 - Hooks must name a concrete scenario, number or timeframe immediately.
@@ -101,17 +104,54 @@ update this file to match.**
   $85,000 corporate summit"). Say "event planner", not "wedding planner",
   in general self-identification. Neither overrides genuinely
   wedding-specific content, hashtags or research scope.
-- **Transformation is the house format** (set 2026-09-20). A messy or ugly
-  real input visibly becoming a structured or beautiful output on screen.
-  The three best-performing posts are all this shape, and at least half of
-  every week is now built this way. Advice and email-writing pieces
-  underperform and should be the minority.
+- **Transformation is a hypothesis, not the house format** (downgraded by the
+  October plan, 2026-09-28). A messy real input visibly becoming a structured
+  output on screen. It was written in on 2026-09-20 off three posts — 83, 110
+  and 155 reach — and every transformation piece since has gone 28, 19, 16,
+  13, 8. The pattern did not hold. Keep making them, because they are good
+  pieces, but **stop treating the format as the explanation for anything**,
+  and do not enforce a quota of them.
+- **The build-story format is the one being tested now.** The best Instagram
+  post of the week by a distance was the coloring book build story — 90 views,
+  79 reach, against a weekly average of 29. Not a demo: a personal, honest
+  account of making something, including what went wrong. Oct 7 ("The one
+  thing I stopped using AI for") is the piece that tests whether it repeats.
 - **No more than two wedding-specific pieces in any seven.** The account is
   "event planner", and Round 5 drifted to four weddings in a row.
 - Use only the author's uploaded footage. No stock, no generated visuals.
   Their own output files (a floor plan PNG, say) are fine when they send one.
 
 ## Posting
+
+**Cadence from Oct 1 (October plan, written 2026-09-28).** Daily Instagram
+posting is over.
+
+| | Frequency | Days |
+| --- | --- | --- |
+| Instagram | **3 a week** | Mon, Wed, Fri — plus Thu Oct 1 to start |
+| TikTok | daily | every day |
+| Facebook | whatever this session posts | automatic |
+| Pinterest | 2 pins a day | from Fri Oct 2 |
+
+Why: Instagram reach fell every day of the week to Sep 28 — 79, 38, 28, 19,
+16, 13, 8, averaging 29 against 53 the week before. Five weeks of daily
+posting with almost no engagement is the likeliest cause. TikTok over the
+same week averaged 77 views and grew 62 to 73 followers against Instagram's
+281 to 284: twice the reach and three times the growth on a quarter of the
+base.
+
+**This is a test with a decision point, and the author is hesitant about it.**
+The number that matters is **total weekly Instagram reach, not reach per
+post** — three posts reaching 250 beats seven reaching 200. Decision on **Wed
+14 Oct**: if total weekly reach has not improved across both weeks, three a
+week is not the answer and it goes back to daily. Honest caveat worth
+repeating rather than burying: reach was already sliding before the change,
+so a recovery cannot be cleanly attributed to posting less.
+
+**Facebook cannot be measured at all.** It deprecated reach and impressions
+in its API in November 2025, it has 7 followers, and every reaction on every
+post is the author's own. Keep posting there because it costs nothing —
+but **do not report on it** and do not spend manual time on it.
 
 **Who posts what — the author restated this on 2026-09-24 and it has had to
 be said more than once, so read it before assuming a piece is yours:**
@@ -272,6 +312,11 @@ went up on Sep 22, which is what makes the backlog postable at all.
 - Three links in the guide are still placeholders — the Sep 8 photography
   carousel, the Sep 14 floor plan and the Sep 20 vendor contract. Find them
   on the profile grid by date.
+- **The back catalogue ends Sat 3 Oct.** The October plan schedules the last
+  three: Sep 14 floor plan (Thu 1, strip the retired LAYOUT keyword), Sep 20
+  vendor contract (Fri 2, strip REVIEW), Sep 22 coloring book build story
+  (Sat 3). After that every TikTok day is either an Instagram piece's cut or
+  one of the five TikTok-only quick pieces.
 - **Not to Instagram, not yet.** A second Instagram feed post competes with
   that day's main post for the same small pool of reach. Followers went 271
   to 280 over the fortnight these ran, so the same people would simply see it
@@ -297,6 +342,46 @@ budget, run of show — the four Sahiba actually works from, named Sep 8 and
 still unbuilt. Two things wait on them: the Round 6 awards-night piece
 promises the pack as its deliverable, and any paid guide would be built
 around them.
+
+## Pinterest (added to the guide 2026-09-28, started 2026-09-29)
+
+A separate account and a separate workstream: `@calmbeforetheaisle`, business
+account, for the coloring book only. Nothing to do with `@aiforeventplanners`.
+**Full working detail is in [`pinterest/README.md`](pinterest/README.md)** —
+board ids, the Drive folder, the schedule CSV. The parts that govern:
+
+- **Two pins a day, never a batch.** Twelve at once on a new account reads as
+  automated. Two a day for a fortnight takes it from 6 pins to about 30,
+  which is the minimum volume Pinterest responds to.
+- **It does not need this repo.** `PINTEREST_CREATE_PIN` takes the image bytes
+  via `media_source image_base64`, so there is no push-then-fetch step the way
+  Instagram and Facebook have. Composio account `pinterest_reking-alpha`.
+- **Pin creation works; pin editing does not.** `PINTEREST_UPDATE_PIN` returns
+  "does not have access to this restricted feature: `pin_edit`". That is the
+  app's access tier, not anything session-specific, so a wrong board or a
+  typo is permanent. **Check every argument before the call, not after.** The
+  guide's worry that trial-level access would block creation outright was
+  tested on 2026-09-29 and did not happen.
+- **Outbound clicks is the only number that matters.** Baseline over two
+  weeks: 137 impressions, 16 pin clicks, **0 saves, 0 outbound clicks** — and
+  133 of the 137 impressions landed on one day, Sep 22, Pinterest's initial
+  distribution test. The creative is fine (11.7% tap rate). Nobody clicks
+  through, which points at the descriptions; and nobody saves, which matters
+  more than it sounds, because **on Pinterest saves are distribution**, so a
+  pin with no saves never gets redistributed.
+- **No ad spend.** Paying for impressions at a zero outbound-click rate buys
+  a larger version of zero. The threshold for revisiting is one organic
+  outbound click.
+- Review **Tue 14 Oct**. If outbound clicks are still zero after ~30 pins
+  across four boards, the problem is the offer or the price rather than the
+  marketing, and Pinterest goes on the back burner rather than getting money.
+- Links carry `?utm_source=pinterest&utm_medium=social&utm_campaign=<sampler
+  |book>&utm_content=<file stem>`. `campaign` is the product, because the
+  question worth answering is whether the 99c sampler beats the $5.99 book.
+  **The guide says the tag makes traffic "identifiable in Etsy's own stats"
+  and that is wrong** — Etsy reports "Pinterest" as a source and nothing
+  finer. The author knew and kept the tags anyway: they cost nothing and
+  become readable if pins ever point at Gumroad or an owned page.
 
 ## Practical gotchas
 
