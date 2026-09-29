@@ -1,6 +1,22 @@
 # Outdoor reception rained out, rebuilt indoors — 2026-09-29
 
-Status: **built, not posted.** Awaiting approval.
+Status: **approved and scheduled.** Not yet posted.
+
+Approved 2026-09-29: "It's better go ahead at post at 9 am and give me the
+tik tok file."
+
+| | |
+| --- | --- |
+| Fires | 2026-09-29 **13:00 UTC** = 9am ET (EDT, UTC-4) |
+| Trigger | `trig_01LhZkGu8XRFQ48fNd5dLrpy`, one-shot, fires into this session |
+| Platforms | Instagram + Facebook only |
+| Video URL | `.../main/reels/2026-09-29-rain-plan/rainplan-instagram.mp4` — verified 200, content-length 3402934 |
+| `rainplan-instagram.mp4` md5 | `f43aef67c9dddd7af77e4dd229b49bf7` |
+| `build/caption.txt` md5 | `429a3ce08611f74b05258f9e6274929b` |
+
+The scheduled run re-checks both md5s and the URL before posting and stops
+rather than posting if anything has moved. `rainplan-tiktok.mp4` was handed
+over the same day and the trigger will not touch it.
 
 | File | Platform | Duration | Voiceover | Payoff |
 | --- | --- | --- | --- | --- |
