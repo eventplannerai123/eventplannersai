@@ -69,13 +69,27 @@ SCALE= "scale=1080:1920:flags=lanczos,setsar=1,fps=30"
 # fault the author called out on Sep 29.
 # The reveal runs below 1.0x because the debrief is dense and the rule is to
 # hold it so it can be read.
+# (source, in, out, speed)  - speed >1 plays faster, <1 slower
+# Three setup beats, none under 2s. Segment 1 runs at normal speed and
+# carries the prompt, the send tap and the model starting to respond, so the
+# working beat is inside it rather than a separate one-second flash - the
+# fault the author called out on Sep 29.
+#
+# The reveal starts at source 13.40, not 13.10. At 13.10 the frame is still
+# mostly the prompt bubble with the answer only beginning underneath, and the
+# theme table did not become readable until about 6.0s in the export - at the
+# payoff ceiling rather than safely under it. 13.40 enters on "Worked for 10s"
+# with the answer and the Theme breakdown heading already on screen.
+#
+# The reveal runs below 1.0x because the debrief is dense and the rule is to
+# hold it so it can be read.
 CUTS = {
-    "instagram": [(A,  0.00,  3.40, 1.000),   # prompt in the box, send, response starts
-                  (A,  4.20, 11.00, 3.200),   # the 50 free-text responses, scrolling
-                  (A, 13.10, 34.20, 0.815)],  # themes, counts, quotes, three changes
-    "tiktok":    [(A,  0.00,  3.40, 1.150),
-                  (A,  4.20, 11.00, 3.500),
-                  (A, 13.10, 34.20, 0.875)],
+    "instagram": [(A,  0.00,  3.15, 1.000),   # prompt in the box, send, response starts
+                  (A,  4.20, 11.00, 3.400),   # the 50 free-text responses, scrolling
+                  (A, 13.40, 34.20, 0.800)],  # themes, counts, quotes, three changes
+    "tiktok":    [(A,  0.00,  3.15, 1.150),
+                  (A,  4.20, 11.00, 3.700),
+                  (A, 13.40, 34.20, 0.855)],
 }
 FREEZE = {"instagram": 0.0, "tiktok": 0.0}
 HOOK   = {"instagram": "cards0930/hook_ig.png", "tiktok": "cards0930/hook_tt.png"}

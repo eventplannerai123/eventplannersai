@@ -1,8 +1,14 @@
 # Fifty feedback responses into a one-page debrief — 2026-09-30
 
-Status: **in progress.** Built ahead on 2026-09-29 at the author's request.
-The Instagram export is still rendering; neither cut has been through the
-hook, payoff or ad checks yet, and nothing has been shown for approval.
+Status: **built, not posted.** Awaiting approval. Built a day ahead on
+2026-09-29 at the author's request.
+
+| File | Platform | Duration | Voiceover | Payoff |
+| --- | --- | --- | --- | --- |
+| `debrief-tiktok.mp4` | TikTok (manual) | 28.90s | -13.9 LUFS | ~4.6s |
+| `debrief-instagram.mp4` | Instagram, Facebook | 31.17s | -13.9 LUFS | **~5.0s** |
+
+Both 1080x1920 (ratio exactly 0.5625), 30 fps, H.264 High, AAC 192k / 48 kHz.
 
 ## This day deliberately misses the length test
 
@@ -44,19 +50,30 @@ Sep 29, where four beats left each at about a second.
 
 | # | Source | On screen | IG speed |
 | --- | --- | --- | --- |
-| 1 | 0.00–3.40 | Prompt in the box, send tap, the model starting to respond | 1.00x |
-| 2 | 4.20–11.00 | The 50 free-text responses, scrolling | 3.20x |
-| 3 | 13.10–34.20 | Themes and counts, the quotes, the three changes | **0.815x** |
+| 1 | 0.00–3.15 | Prompt in the box, send tap, the model starting to respond | 1.00x |
+| 2 | 4.20–11.00 | The 50 free-text responses, scrolling | 3.40x |
+| 3 | 13.40–34.20 | Themes and counts, the quotes, the three changes | **0.800x** |
 
 Segment 1 carries the working beat inside it rather than as a separate
 one-second flash. Segment 3 runs slower than real time because the debrief is
 dense and the rule is to hold the reveal so it can be read.
 
+**The reveal entry moved from 13.10 to 13.40 after checking the first build.**
+At 13.10 the frame is still mostly the prompt bubble with the answer only
+starting underneath, and the theme table did not become readable until about
+**6.0s** in the export — at the payoff ceiling rather than under it. Entering
+at 13.40 lands on "Worked for 10s" with the answer and the Theme breakdown
+heading already on screen, which brings the payoff to **~5.0s**. The 0.3s
+skipped was the least informative part of the answer.
+
 ## Ad check
 
 No in-app ad anywhere in this recording — it ends on the Sources row with
-clean white space. Verified on the source across 30–36.5s. **Still to be
-re-verified on both finished exports.**
+clean white space. Verified on the source across 30–36.5s, and again on the
+bottom 300px of **both finished exports**, last 3s at 10fps, through to the
+final frame: **clean**. Both end on "Those three changes address the largest
+concentration of negative feedback while preserving the things attendees
+already said were working."
 
 ## Caption
 
