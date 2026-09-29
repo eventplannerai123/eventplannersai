@@ -29,8 +29,12 @@ card(["The app's images:","about $9"],                  72, 960, "c3_images.png"
 card(["The app itself: $183"],                          72, 960, "c4_app.png")
 card(["AI got me 90% there."],                          64, 1320, "c5_ninety.png", bg=(0,0,0,235))
 card(["The last 10% is still you."],                    60, 1320, "c6_ten.png",    bg=(0,0,0,235))
-# Script says: add "+ Amazon" only once it shows Live. The author says the
-# print edition is coming shortly, so the card says soon, not available.
+# Script says: add "+ Amazon" only once it shows Live. It went Live on
+# 2026-09-29 (ASIN B0HL3B4CLM), so the card now names both and the "coming
+# soon" wording is gone. One line rather than two: it reads faster, and the
+# TikTok cut only holds this card for 2.45s.
 # Sits just under "50 PAGES - INSTANT DOWNLOAD" on the cover, clear of the
 # bottom strip where Instagram puts the username, caption and audio label.
-card(["Now on Etsy","Amazon coming soon"],              58, 1440, "c7_end.png",    bg=(0,0,0,240))
+# The shorter box (745x150 against the old 711x225, both centred at y 1440)
+# moves away from both, so the clearances only improve.
+card(["Now on Etsy + Amazon"],                          58, 1440, "c7_end.png",    bg=(0,0,0,240))

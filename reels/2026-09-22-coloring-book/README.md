@@ -37,7 +37,14 @@ Both 1080x1920 (ratio exactly 0.5625), 30 fps, H.264 high, CRF 19,
 | File | Platform | Duration | Voiceover | Ramp | Reveal held |
 | --- | --- | --- | --- | --- | --- |
 | `coloringbook-instagram.mp4` | Instagram, Facebook | 44.70s | -14.13 LUFS, TP -1.30 | 3.0x, 3.20s | 2.15s |
-| `coloringbook-tiktok.mp4` | TikTok (manual upload) | 38.95s | -13.96 LUFS, TP -1.45 | 3.0x, 2.80s | 2.60s |
+| `coloringbook-instagram-v2.mp4` | *(not posted)* | 44.70s | -14.1 LUFS, TP -1.3 | 3.0x, 3.20s | 2.15s |
+| `coloringbook-tiktok.mp4` | TikTok (manual upload) | 38.97s | -13.9 LUFS, TP -1.5 | 3.0x, 2.80s | 2.60s |
+
+**Re-exported 2026-09-29 with the end card corrected** — see "Amazon went
+Live" below. `coloringbook-tiktok.mp4` was replaced in place, because it had
+not been posted yet. The Instagram file was **not** replaced: it is the byte
+the live Reel was built from, and the corrected export sits beside it as
+`coloringbook-instagram-v2.mp4`, unposted.
 
 Two separate voiceovers, not one audio reused.
 
@@ -104,10 +111,50 @@ Two changes to the script's wording, both on the author's instruction:
 
 - The script's beat-1 line is "I made this with AI in under three weeks."
   The author flagged that "this" never names the thing, so the card names it.
-- The script says add "+ Amazon" only once it shows Live. The author says
-  the print edition is coming shortly, so the card reads **"Amazon coming
-  soon"** — true today, and it does not claim a listing that is not there.
-  Swap it to "Now on Etsy + Amazon" the day it shows Live.
+- The script says add "+ Amazon" only once it shows Live. On 2026-09-22 it
+  was not, so the card read **"Now on Etsy / Amazon coming soon"** — true
+  that day, and it did not claim a listing that was not there.
+
+## Amazon went Live (2026-09-29)
+
+ASIN **B0HL3B4CLM**. The card is now the single line **"Now on Etsy +
+Amazon"**, and both caption files say "The paperback is on Amazon now."
+
+| | 2026-09-22 | 2026-09-29 |
+| --- | --- | --- |
+| End card | Now on Etsy / Amazon coming soon | Now on Etsy + Amazon |
+| Card box | 711x225, y 1327-1552 | 745x150, y 1365-1515 |
+
+One line rather than two because it reads faster, and the TikTok cut only
+holds this card for 2.45s. The shorter box moved *away* from both the
+"50 PAGES · INSTANT DOWNLOAD" line above it and the bottom strip below, so
+the clearances the original placement was chosen for only improved.
+
+**The Instagram caption was also changed**, beyond the Amazon line. It said
+"Printable version in my bio", and the bio no longer points at this product
+— it points at the Gumroad profile, which holds the downloadable files. The
+coloring book is on Etsy, so the line now names Etsy directly and matches
+the TikTok caption.
+
+**What was re-run, and what was checked.** `make_cards.py` regenerated all
+seven cards; the six that are not the end card came out byte-identical, so
+the only input that changed was `c7_end.png`. The render reused the existing
+concatenated segments (`REUSE=1`), so the underlying footage is the same
+file, not a re-cut. Both exports were then diffed frame by frame against the
+shipped originals: **identical outside the end-card window**, differing only
+inside it. Audio is unchanged (-14.1 and -13.9 LUFS, matching the originals
+measurement for measurement). The new card was confirmed on extracted frames
+rather than from the filtergraph.
+
+Two gotchas worth keeping:
+
+- `make_cards.py` writes to `cards0922s/` **next to itself**, while
+  `render.py` reads `cards0922s/` from the scratchpad. Regenerating the
+  cards does nothing until they are copied across.
+- The first frame-diff pass reported "identical" for every timestamp because
+  `ffmpeg` refused to overwrite the extracted PNGs and silently re-compared
+  one stale pair. Always pass `-y`. This is the same shape of false
+  all-clear as the ad-check colour threshold.
 
 ## TikTok has no bio link
 
@@ -155,7 +202,9 @@ The **print cover wrap** is in `build/CalmBeforeTheAisle_cover_wrap.pdf`
 (back cover, spine, front cover, 8.5 x 11 with bleed). Its front panel is the
 same bouquet with a different subtitle — "An Adult Coloring Book for Brides,
 Bridesmaids & Wedding Planners", "50 INTRICATE PAGES · FOR COLORED PENCIL".
-Swap it in once Amazon is Live and the CTA changes.
+Amazon went Live on 2026-09-29, so this is now swappable — it was **not**
+swapped in the re-export, which changed the end card only. The cover still
+on screen is the digital edition's.
 
 ## The flip footage and the visible monitor
 
