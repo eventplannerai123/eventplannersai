@@ -1,7 +1,25 @@
 # Fifty feedback responses into a one-page debrief — 2026-09-30
 
-Status: **built, not posted.** Awaiting approval. Built a day ahead on
+Status: **approved and scheduled.** Not yet posted. Built a day ahead on
 2026-09-29 at the author's request.
+
+Approved 2026-09-29: "Yes to both. For Instagram/facebook schedule Wednesday
+at 9 AM."
+
+| | |
+| --- | --- |
+| Fires | 2026-09-30 **13:00 UTC** = 9am ET (EDT, UTC-4) |
+| Trigger | `trig_011Uacnre4d6ouzL7tvPo5vR`, one-shot, fires into this session |
+| Platforms | Instagram + Facebook only |
+| Video URL | `.../main/reels/2026-09-30-feedback-debrief/debrief-instagram.mp4` — verified 200, content-length 17993244 |
+| `debrief-instagram.mp4` md5 | `e3c5717bedf0c6a2840f70010a0ed328` |
+| `build/caption.txt` md5 | `73279958f9b32186b5696d494a195139` |
+
+The scheduled run re-checks both md5s and the URL before posting and stops
+rather than posting if anything has moved. It also carries a note that the
+31.17s length is a deliberate miss, so a later session does not read it as a
+fault and try to "fix" it. `debrief-tiktok.mp4` was handed over on 2026-09-29
+and the trigger will not touch it.
 
 | File | Platform | Duration | Voiceover | Payoff |
 | --- | --- | --- | --- | --- |
