@@ -1,0 +1,5 @@
+Most post-event feedback gets skimmed and filed. Here's fifty responses turned into three concrete changes for next year. Prompt below.
+
+AI Prompt: "Here are 50 free-text responses from our post-event survey for a corporate conference. Group them into themes and tell me how many responses fall into each. Pull the single most useful direct quote for each theme, and give me the three concrete changes to make for next year's event."
+
+#aiforeventplanners #corporateevents #eventprofs #eventplanningtips
