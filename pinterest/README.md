@@ -23,11 +23,20 @@ https://drive.usercontent.google.com/download?id=<FILE_ID>&export=download&confi
 
 All twelve verified 1000x1500 JPEG. Encode at full size, never downscale.
 
-**There are two `pin_copy` files and only one is right.** The 5-column one
-(`File,Title,Description,Board,Link`) is authoritative. A 4-column copy with
-no `Link` column also exists and prices everything at $5.99 — that one is
-stale. The schedule CSV here is built from the 5-column file, so prefer it
-over either.
+**`pin_copy_v4.csv` is the authoritative copy from 2026-09-30**, on the
+author's instruction ("Post from pin_copy_v4.csv starting Friday"). It adds a
+`Post date` column and holds the eleven unposted pins. Two older copies are
+in the same folder and are both stale: `pin_copy (2).csv` (5 columns, no post
+dates) and a 4-column one with no `Link` column that prices everything at
+$5.99. `2026-10-pin-schedule.csv` here is generated from v4.
+
+v4 changed more than the dates. Several pins moved from the 99c sampler to
+the $5.99 book, `pin_11_gift` now points at the **Amazon paperback**
+(B0HL3B4CLM) rather than Etsy, and every link carries
+`utm_campaign=calmbeforetheaisle` with no `utm_content`, in place of the
+per-product `sampler`/`book` convention set on 2026-09-29. Those tags no
+longer separate sampler from book, which was the question the convention
+existed to answer — raised with the author 2026-09-30.
 
 Also in that Drive folder and **not part of this run**: `pin_1.jpg`,
 `pin_2.jpg`, `pin_3.jpg` and `pinterest_post.txt`, which belong to the six
