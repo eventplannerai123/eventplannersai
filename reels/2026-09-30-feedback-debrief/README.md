@@ -1,19 +1,37 @@
 # Fifty feedback responses into a one-page debrief — 2026-09-30
 
-Status: **approved and scheduled.** Not yet posted. Built a day ahead on
-2026-09-29 at the author's request.
+Status: **published 2026-09-30**, on the 9am ET schedule the author approved
+on 2026-09-29 ("Yes to both. For Instagram/facebook schedule Wednesday at 9
+AM"). Built a day ahead at her request.
 
-Approved 2026-09-29: "Yes to both. For Instagram/facebook schedule Wednesday
-at 9 AM."
+| Account | Post |
+| --- | --- |
+| Instagram `@aiforeventplanners` | https://www.instagram.com/reel/Dd6ZV5vlZTH/ |
+| Facebook "The Event Planners AI" | reel id `2078204866141109` — see below |
+
+**Instagram caption verified.** Read back live and diffed against
+`build/caption.txt`: identical, 503 bytes each. Hashtags render with a
+literal `#`, no `%23`, no "Hashtags:" label, CTA is the shortened "Prompt
+below."
+
+**Facebook had not surfaced in the page feed after two read-backs**, which is
+normal for this page — it has taken up to three read-backs and about fifteen
+minutes every day since Sep 25. `FACEBOOK_CREATE_VIDEO_POST` returned reel id
+`2078204866141109`, and that call succeeded, so the post exists; the feed
+listing simply lags. A follow-up check is scheduled rather than re-posting:
+that tool has no duplicate protection and a blind retry would double-post.
+
+Pre-flight checks at fire time, all passing:
 
 | | |
 | --- | --- |
-| Fires | 2026-09-30 **13:00 UTC** = 9am ET (EDT, UTC-4) |
-| Trigger | `trig_011Uacnre4d6ouzL7tvPo5vR`, one-shot, fires into this session |
-| Platforms | Instagram + Facebook only |
-| Video URL | `.../main/reels/2026-09-30-feedback-debrief/debrief-instagram.mp4` — verified 200, content-length 17993244 |
-| `debrief-instagram.mp4` md5 | `e3c5717bedf0c6a2840f70010a0ed328` |
-| `build/caption.txt` md5 | `73279958f9b32186b5696d494a195139` |
+| Fired | 2026-09-30 13:00 UTC = 9am ET |
+| Trigger | `trig_011Uacnre4d6ouzL7tvPo5vR`, one-shot |
+| Video URL | verified 200, content-length 17993244 |
+| `debrief-instagram.mp4` md5 | `e3c5717bedf0c6a2840f70010a0ed328` — matched |
+| `build/caption.txt` md5 | `73279958f9b32186b5696d494a195139` — matched |
+| Instagram container | `18093591473367131`, FINISHED after 19.2s |
+| Instagram media id | `18017699552938755` |
 
 The scheduled run re-checks both md5s and the URL before posting and stops
 rather than posting if anything has moved. It also carries a note that the
