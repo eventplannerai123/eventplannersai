@@ -11,6 +11,23 @@ itself records that relying on a per-session upload has caused rules to be
 missed. **If the uploaded guide and this file disagree, the guide wins, and
 update this file to match.**
 
+## How to reply to her (standing instruction, 2026-09-30)
+
+She asked for this twice, so it is a rule, not a preference.
+
+- **Be as concise as possible.** No walls of text, no restating what she
+  already knows, no narrating the work. Lead with the answer.
+- **Keep the technical detail out of the reply.** ffmpeg numbers, loudness
+  figures, filter names and timestamps belong in the reel README and the
+  commit message, not in chat. Mention a number only when she has to act on
+  it or decide something with it.
+- **End with a clear action list** — hers separated from this session's, with
+  dates. She should be able to read the last block and know exactly what is
+  on her.
+- **Spell out anything she has not done before**, step by step, including
+  where to click. Do not assume a setting is findable just because it is
+  named.
+
 ## Render rules
 
 - **1080x1920, ratio exactly 0.5625.** Verify with ffprobe before calling an
