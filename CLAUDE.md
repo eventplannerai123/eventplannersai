@@ -143,10 +143,19 @@ base.
 **This is a test with a decision point, and the author is hesitant about it.**
 The number that matters is **total weekly Instagram reach, not reach per
 post** — three posts reaching 250 beats seven reaching 200. Decision on **Wed
-14 Oct**: if total weekly reach has not improved across both weeks, three a
-week is not the answer and it goes back to daily. Honest caveat worth
-repeating rather than burying: reach was already sliding before the change,
-so a recovery cannot be cleanly attributed to posting less.
+14 Oct**.
+
+**The decision rule is pre-registered in
+[`docs/OCT-CADENCE-TEST.md`](docs/OCT-CADENCE-TEST.md)** — written 2026-09-30,
+before any data existed, because the plan says "if reach has not improved"
+without saying improved against what, and the two candidate baselines (201 and
+371) are not equivalent tests. Read that file on Oct 14 rather than
+re-deciding what counts as a pass. Two things it fixes that are easy to get
+wrong: the baseline is **201**, and the metric is Instagram's **deduplicated
+weekly accounts reached**, never the sum of per-post reach.
+
+Honest caveat worth repeating rather than burying: reach was already sliding
+before the change, so a recovery cannot be cleanly attributed to posting less.
 
 **Facebook cannot be measured at all.** It deprecated reach and impressions
 in its API in November 2025, it has 7 followers, and every reaction on every
