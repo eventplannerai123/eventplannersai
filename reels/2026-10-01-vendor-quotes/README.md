@@ -1,6 +1,6 @@
 # Vendor quotes reel — 2026-10-01
 
-Status: **source files built, nothing recorded yet.**
+Status: **both cuts rendered, awaiting approval.**
 
 First piece of the October plan, and the first Instagram day under the new
 three-a-week cadence (Mon/Wed/Fri, plus this Thursday to start). Target
@@ -56,24 +56,111 @@ LibreOffice's HTML import fails here ("source file could not be loaded"),
 so the PDFs come from `pip install reportlab` and reportlab's platypus,
 not from an HTML conversion.
 
-## Still needed before this can be cut
+## Cuts
 
-1. The screen recording — paste the plan's prompt into ChatGPT with all three
-   PDFs attached. **Start recording with the prompt already in the box and
-   the send tap on camera**; the Sep 29 build threw away a correct opening by
-   assuming it was missing.
-2. Aim for ~25s of raw footage, and check the reveal for in-app ads before
-   the cut is finalised. Five different advertisers turned up in five days.
+Both 1080x1920 (ratio exactly 0.5625), 30 fps, H.264 high, CRF 19,
+`+faststart`, AAC 192k at 48 kHz.
 
-## From the plan
+| File | Platform | Duration | Voiceover | Payoff at |
+| --- | --- | --- | --- | --- |
+| `quotes-instagram.mp4` | Instagram, Facebook | 15.77s | -14.0 LUFS | 4.85s |
+| `quotes-tiktok.mp4` | TikTok (manual upload) | 15.03s | -14.0 LUFS | 4.62s |
 
-- Hook overlay 0:00-0:02: "Three quotes. None of them comparable."
-- Voiceover: "Three AV quotes for the same job, and not one of them lists the
-  same things. Here's all three side by side on what's actually comparable,
-  and where each one is hiding the cost."
-- Caption: Three quotes for the same job, none of them comparable. Here's what
-  each one actually includes once the extras are added. Prompt below.
-- Hashtags: `#aiforeventplanners #corporateevents #eventprofs #eventplanningtips`
-- TikTok cut is a manual upload, as always. Note the plan holds the TikTok
-  version of this piece back to **Tue 13 Oct**, rather than running it the
-  same day.
+Both inside the plan's 15-20s target and well under the 6-second payoff
+ceiling. Two separate voiceovers, both generated here.
+
+**The TikTok cut is not for Oct 1.** The plan holds it back to **Tue 13 Oct**;
+Thursday's TikTok slot is the Sep 14 floor plan back-catalogue item.
+
+## The recording
+
+36.31s, 1206x2622 at 60fps HEVC, 51.5 MB, via Drive. The standard iPhone
+capture size, so `crop=1206:2144:0:478` applies unchanged.
+
+**It opens exactly right** — the prompt sitting in the input box with all
+three PDFs attached, and the send tap at ~2.75s. Checked before choosing the
+cold open rather than assumed, after the Sep 29 build threw away a correct
+opening.
+
+Five beats, and the generating phase is a **representative slice** rather
+than the whole thing compressed: the real gap between the send and the first
+table is about fourteen seconds and visually static, so the cut takes
+3.15-11.55 at 3x. Compressing all of it would have pushed the payoff past
+the six-second ceiling.
+
+## Ads
+
+**A sixth advertiser**: "NYC Event Spaces" from Will & Wall LLC, a black
+circular NYC VENUE badge that scrolls up into frame at around t=34.5 in the
+source. Both cuts end at 33.60, so it is out of frame, and both finished
+exports were checked frame by frame over the whole frame through the final
+frame — clean.
+
+Worth recording: a dark-pixel count over the bottom strip was **useless**
+here. The reveal is a dense page of black text, so the count swings between
+3,000 and 9,000 from one frame to the next and the ad badge does not stand
+out against it. That is the same shape of false all-clear as the Sep 21
+colour threshold. The ad was found by looking.
+
+## What ChatGPT got, and the one thing it missed
+
+It ranked the three correctly — Clearline < Meridian < Stagecraft — and
+named each hiding mechanism. Its pre-tax figures against the answer key:
+
+| | ChatGPT | Answer key (pre-tax) |
+| --- | --- | --- |
+| Clearline | ~$9,555 | $9,555.00 |
+| Meridian | ~$15,269.50 | $15,775.50 |
+| Stagecraft | ~$16,965.90 | $16,831.25 |
+
+Clearline is exact. **Meridian is $506 light, and that is precisely the
+detail the quotes were built to test**: the 22% production service charge
+recalculates on the breakout equipment too, and ChatGPT applied it only to
+the ballroom. It also correctly refused to state tax-inclusive totals,
+saying none of the quotes gives enough information to compute the tax — a
+fair call rather than a miss.
+
+None of this changes the ranking or the point of the piece, so it does not
+affect the cut.
+
+## Hooks and voiceovers
+
+The plan gives one hook and one script. The standing rule is that the TikTok
+cut takes a genuinely different command-style hook and slightly different
+pacing, so TikTok got its own of both.
+
+| | Instagram | TikTok |
+| --- | --- | --- |
+| Hook, 0:00-0:02 | Three quotes. / None of them comparable. | Stop comparing / quote totals. |
+| Voiceover | 13.45s | 12.72s |
+
+- **Instagram voiceover** — the plan's script, plus a closing line so the
+  piece ends on its own payoff: "Three AV quotes for the same job, and not
+  one of them lists the same things. Here's all three side by side on what's
+  actually comparable, and where each one is hiding the cost. The cheapest
+  one isn't the cheapest."
+- **TikTok voiceover** — "Stop comparing the totals on vendor quotes. These
+  three are for the same job, and not one of them lists the same things.
+  Here's all three side by side — and the cheapest quote is ten thousand
+  dollars more than it looks." The figure is exact: Meridian quotes
+  $6,799.50 and lands at $17,175.58, a difference of $10,376.08.
+
+**The hook card sits at y=1300, not the usual 620.** The opening exists to
+show the prompt in the input box with all three PDFs attached, and 620 lands
+straight on it. 1300 sits over the keyboard, which carries no information,
+and still clears Instagram's own bottom furniture. Same call as Sep 29, and
+verified on the exported frames rather than from the filtergraph.
+
+## Caption
+
+`build/caption.txt`, used for Instagram and Facebook. `build/caption-tiktok.txt`
+is the same text — the plan gives no separate TikTok caption.
+
+CTA is the shortened "Prompt below." No end card: every current brief ends on
+the output itself.
+
+## Posting
+
+- Instagram and Facebook: this session, **after explicit approval**.
+- TikTok: manual upload, always. And **not on Oct 1** — the plan holds this
+  piece's TikTok cut back to Tue 13 Oct.
