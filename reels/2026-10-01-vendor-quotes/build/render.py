@@ -53,21 +53,30 @@ LN_TT = ("loudnorm=I=-14:TP=-1.5:LRA=11:measured_I=-20.31:measured_TP=-2.51:"
          "measured_LRA=2.10:measured_thresh=-30.94:offset=1.54:linear=true,volume=-0.6dB")
 
 # (start, end, speed, duration-out)
-#  beat 1  the prompt sitting in the box, three PDFs attached, and the send tap
-#  beat 2  a representative slice of the generating phase, not the whole thing
-#  beat 3  the side-by-side table, all three columns
-#  beat 4  what is really happening: Clearline then Meridian's real numbers
-#  beat 5  the bottom line, all three totals together
-ig = [(1.10,  3.15, 1.0, 2.05),
-      (3.15, 11.55, 3.0, 2.80),
-      (17.60, 23.60, 1.0, 6.00),
-      (26.80, 29.40, 1.0, 2.60),
-      (31.30, 33.60, 1.0, 2.30)]
-tt = [(1.25,  3.15, 1.0, 1.90),
-      (3.15, 11.30, 3.0, 2.72),
-      (17.70, 23.50, 1.0, 5.80),
-      (26.90, 29.30, 1.0, 2.40),
-      (31.40, 33.60, 1.0, 2.20)]
+#  beat 1   the prompt sitting in the box, three PDFs attached, and the send tap
+#  beats 2-4  each quote as ChatGPT opens it, ONE PER BEAT AT NORMAL SPEED
+#  beat 5   the side-by-side table, all three columns
+#  beat 6   the bottom line, all three real totals together
+#
+# The first build ran 3.15-11.55 at 3x as a single "generating" beat. That was
+# wrong twice over, and the author caught both: the third quote renders at
+# 12.3-13.9 so it was never in frame at all, and at 3x the two that were in
+# frame got about half a second each — "too many abrupt flashes". The document
+# views are the premise of the piece, not filler to ramp through, so each now
+# gets a full second at 1.0x and the dead chat between them is cut instead.
+# No speed ramp anywhere in this cut.
+ig = [(1.30,  3.15, 1.0, 1.85),
+      (6.45,  7.50, 1.0, 1.05),
+      (9.45, 10.50, 1.0, 1.05),
+      (12.45, 13.50, 1.0, 1.05),
+      (17.50, 24.90, 1.0, 7.40),
+      (30.90, 33.60, 1.0, 2.70)]
+tt = [(1.45,  3.15, 1.0, 1.70),
+      (6.45,  7.50, 1.0, 1.05),
+      (9.45, 10.50, 1.0, 1.05),
+      (12.45, 13.50, 1.0, 1.05),
+      (17.55, 25.10, 1.0, 7.55),
+      (30.90, 33.60, 1.0, 2.70)]
 
 OUT = f"{SP}/out"; os.makedirs(OUT, exist_ok=True)
 build("tt", tt, f"{C}/tt_hook.png", f"{SP}/vo/tt.mp3", sum(s[3] for s in tt), LN_TT,
@@ -76,5 +85,5 @@ build("ig", ig, f"{C}/ig_hook.png", f"{SP}/vo/ig.mp3", sum(s[3] for s in ig), LN
       f"{OUT}/quotes-instagram.mp4")
 
 for tag, segs in (("tiktok", tt), ("instagram", ig)):
-    payoff = segs[0][3] + segs[1][3]
+    payoff = sum(x[3] for x in segs[:4])
     print(f"{tag:<10} total {sum(s[3] for s in segs):.2f}s   payoff at {payoff:.2f}s")

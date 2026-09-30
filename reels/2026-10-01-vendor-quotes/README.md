@@ -63,8 +63,8 @@ Both 1080x1920 (ratio exactly 0.5625), 30 fps, H.264 high, CRF 19,
 
 | File | Platform | Duration | Voiceover | Payoff at |
 | --- | --- | --- | --- | --- |
-| `quotes-instagram.mp4` | Instagram, Facebook | 15.77s | -14.0 LUFS | 4.85s |
-| `quotes-tiktok.mp4` | TikTok (manual upload) | 15.03s | -14.0 LUFS | 4.62s |
+| `quotes-instagram.mp4` | Instagram, Facebook | 15.10s | -14.0 LUFS | 5.00s |
+| `quotes-tiktok.mp4` | TikTok (manual upload) | 15.10s | -14.0 LUFS | 4.85s |
 
 Both inside the plan's 15-20s target and well under the 6-second payoff
 ceiling. Two separate voiceovers, both generated here.
@@ -82,11 +82,31 @@ three PDFs attached, and the send tap at ~2.75s. Checked before choosing the
 cold open rather than assumed, after the Sep 29 build threw away a correct
 opening.
 
-Five beats, and the generating phase is a **representative slice** rather
-than the whole thing compressed: the real gap between the send and the first
-table is about fourteen seconds and visually static, so the cut takes
-3.15-11.55 at 3x. Compressing all of it would have pushed the payoff past
-the six-second ceiling.
+Six beats, and **no speed ramp anywhere** — unusual for this series, and the
+result of the author's note on the first build.
+
+ChatGPT opens each attached PDF in turn and renders it full-screen:
+Stagecraft at 6.3-7.9, Meridian at 9.3-10.9, Clearline at 12.3-13.9. The
+first build treated all of that as one "generating" beat and ran 3.15-11.55
+at 3x. That was wrong twice over, and she caught both faults from the cut
+alone:
+
+- **The third quote was never in frame.** The slice ended at 11.55 and
+  Clearline does not render until 12.3.
+- **"Too many abrupt flashes."** At 3x the two quotes that were in frame got
+  about half a second each.
+
+The document views are the premise of the piece — it is called three quotes —
+not filler to ramp through. So each now gets its own beat of 1.05s at 1.0x,
+and the dead chat between them is cut out instead of sped up. Three seconds
+of setup buys three legible documents, and the payoff still lands at 5.00s.
+
+A reveal beat was dropped in the same pass, for the same reason: the
+per-vendor breakdown ("1. Clearline... 2. Meridian... the classic low
+headline-price trap") went, leaving the table and the bottom line. That is
+one cut in the reveal instead of two, and the bottom line carries all three
+numbers anyway. Dropping a beat rather than shaving every beat is the Sep 29
+lesson.
 
 ## Ads
 
