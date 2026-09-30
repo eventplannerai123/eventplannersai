@@ -104,17 +104,27 @@ regardless.
 Amazon, not Etsy, and the author confirmed that is deliberate (2026-09-30).
 Post its link exactly as it stands; do not "correct" it to an Etsy URL.
 
-`pin_01_bouquet` was published untagged on 2026-09-29, before the convention
-was settled. The author asked on 2026-09-30 for it to be tagged too, but
-`pin_edit` is not permitted at this API access tier, so **it can only be done
-by hand in the Pinterest app.** The string it needs:
+`pin_01_bouquet` went out untagged on 2026-09-29 and **has since been tagged
+by hand**, found on 2026-09-30 by reading the live pin rather than trusting
+the earlier note:
 
 ```
-https://www.etsy.com/listing/4581180302/printable-wedding-coloring-pages-5-page?utm_source=pinterest&utm_medium=social&utm_campaign=sampler&utm_content=pin_01_bouquet
+...?utm_source=pinterest&utm_medium=social&utm_campaign=calmbeforetheaisle&utm_content=pin_01
 ```
 
-`utm_content` is the **full file stem** (`pin_01_bouquet`), not a bare
-`pin_01`, matching the convention as the author first wrote it on 2026-09-29.
+So it carries the flat campaign name that was reversed the same day. It still
+needs one word changed by hand — `calmbeforetheaisle` to `sampler` — because
+`pin_edit` is not permitted at this API access tier.
+
+That live pin also settles the form of `utm_content`: it is the **short
+`pin_NN`**, not the full file stem, matching how the author wrote the
+instruction ("keep utm_content=pin_XX on every link"). The schedule CSV uses
+the short form throughout so the whole set is consistent with what is already
+live.
+
+**Read the live pin before assuming its state.** This session twice recorded
+pin_01 as untagged from an old read; the author asked "are you sure that
+hasn't been done already", and it had.
 
 ## Still outstanding, and the author's to do
 
