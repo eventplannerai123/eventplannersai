@@ -7,19 +7,23 @@ AM"). Built a day ahead at her request.
 | Account | Post |
 | --- | --- |
 | Instagram `@aiforeventplanners` | https://www.instagram.com/reel/Dd6ZV5vlZTH/ |
-| Facebook "The Event Planners AI" | reel id `2078204866141109` — see below |
+| Facebook "The Event Planners AI" | https://www.facebook.com/reel/2078204866141109/ |
 
 **Instagram caption verified.** Read back live and diffed against
 `build/caption.txt`: identical, 503 bytes each. Hashtags render with a
 literal `#`, no `%23`, no "Hashtags:" label, CTA is the shortened "Prompt
 below."
 
-**Facebook had not surfaced in the page feed after two read-backs**, which is
-normal for this page — it has taken up to three read-backs and about fifteen
-minutes every day since Sep 25. `FACEBOOK_CREATE_VIDEO_POST` returned reel id
-`2078204866141109`, and that call succeeded, so the post exists; the feed
-listing simply lags. A follow-up check is scheduled rather than re-posting:
-that tool has no duplicate protection and a blind retry would double-post.
+**Facebook caption verified** on the third read-back: identical to
+`build/caption.txt`, 503 bytes each. Post id
+`1233196746554445_122112893955449533`, created 13:03:44 UTC, and the feed
+holds exactly one entry for Sep 30 — no duplicate.
+
+It took three read-backs over about twenty minutes to surface, matching every
+day since Sep 25. The first two returned the Sep 29 rain plan as the newest
+post. That is the lag, not a failure, and the right response is to re-read:
+`FACEBOOK_CREATE_VIDEO_POST` has no duplicate protection, so a retry on an
+apparently missing post would have double-posted a live page.
 
 Pre-flight checks at fire time, all passing:
 
