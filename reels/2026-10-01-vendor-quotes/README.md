@@ -63,8 +63,11 @@ Both 1080x1920 (ratio exactly 0.5625), 30 fps, H.264 high, CRF 19,
 
 | File | Platform | Duration | Voiceover | Payoff at |
 | --- | --- | --- | --- | --- |
-| `quotes-instagram.mp4` | Instagram, Facebook | 15.10s | -14.0 LUFS | 5.00s |
-| `quotes-tiktok.mp4` | TikTok (manual upload) | 15.10s | -14.0 LUFS | 4.85s |
+| `quotes-instagram.mp4` | Instagram, Facebook | 15.07s | -14.0 LUFS | 5.30s |
+| `quotes-tiktok.mp4` | TikTok (manual upload) | 15.10s | -14.0 LUFS | 5.50s |
+
+TikTok's opening beat is 0.3s shorter than Instagram's on purpose: it is the
+primary platform, so it keeps more margin under the six-second ceiling.
 
 Both inside the plan's 15-20s target and well under the 6-second payoff
 ceiling. Two separate voiceovers, both generated here.
@@ -107,6 +110,33 @@ headline-price trap") went, leaving the table and the bottom line. That is
 one cut in the reveal instead of two, and the bottom line carries all three
 numbers anyway. Dropping a beat rather than shaving every beat is the Sep 29
 lesson.
+
+## Flow
+
+Every cut is a **0.20s dissolve**, not a hard cut, and the beat boundaries sit
+on the voiceover's own phrase gaps rather than on round numbers. The gaps were
+measured off the generated mp3 with
+`silencedetect=noise=-32dB:d=0.18` rather than guessed:
+
+| Instagram voiceover | Beat |
+| --- | --- |
+| "Three AV quotes for the same job," 0.00-1.91 | prompt in the box, send tap |
+| "and not one of them lists the same things." 2.27-4.31 | the three quotes |
+| "Here's all three side by side..." 4.93-8.07 | the table |
+| "and where each one is hiding the cost." 8.57-10.62 | the table |
+| "The cheapest one isn't the cheapest." 11.17-13.15 | the bottom line |
+
+So the picture turns over where the narration does. The table arrives at 5.10
+against "side by side" at 4.93, and the bottom line at 11.20 against "The
+cheapest one" at 11.17.
+
+**Each quote beat starts ~0.25s after its document appears.** ChatGPT shows a
+"Loading" spinner before it renders a PDF, and starting on the render boundary
+pulled that spinner into the dissolve. Caught on the exported frames, not from
+the filtergraph. A faint "Loading" label does remain lower in the frame during
+each quote hold — that is the viewer fetching page 2 of the same PDF, it is
+what the screen actually showed, and it sits in whitespace well below the
+page.
 
 ## Ads
 
