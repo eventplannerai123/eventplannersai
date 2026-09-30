@@ -28,6 +28,36 @@ She asked for this twice, so it is a rule, not a preference.
   where to click. Do not assume a setting is findable just because it is
   named.
 
+## The working guide is a Google Doc (from 2026-09-30)
+
+**"AI for Event Planners — Working Guide"**, doc id
+`1x8jXHHNOOl9ipDO5u7ZEfbtiG9ABor_zrEYal56Xtrg`. It replaces the per-session
+.docx, and **no local copy is kept** — read the section you need from the live
+doc at the start of each task and make every update in the doc itself.
+
+Read and write were both verified on 2026-09-30 through Composio's
+`googledocs` connection (account `googledocs_malter-azoch`).
+
+- Read with `GOOGLEDOCS_GET_DOCUMENT_PLAINTEXT`. The doc is ~87k characters,
+  so the response goes to the workbench; pull out the one section you need
+  there rather than into chat.
+- **Never append to the very end.** The doc finishes with a bulleted list, so
+  an append becomes a bullet, and deleting its text leaves an empty bullet
+  behind. Insert into the right section instead.
+
+**Question of the day.** Ask it at the start of every session, plus any
+earlier ones still unanswered, and write her answer straight into the doc's
+career content bank as a new numbered item — hook, the true story, the AI
+shortcut — then mark that day's question answered with the date. Claude.ai
+reads the answers from this doc, so an answer that stays in chat is lost.
+
+**Take the next item number from the highest one in the bank, never from the
+question list.** They do not line up: the bank also holds extras she adds by
+hand, such as item 16 on 2026-09-30 ("They were told exactly which entrance.
+They still used the wrong one."), which answers no daily question. On
+2026-09-30 the bank ran 1-16, so the next item was 17 while only three daily
+questions had been answered.
+
 ## Render rules
 
 - **1080x1920, ratio exactly 0.5625.** Verify with ffprobe before calling an
