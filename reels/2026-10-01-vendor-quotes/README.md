@@ -1,6 +1,29 @@
 # Vendor quotes reel — 2026-10-01
 
-Status: **both cuts rendered, awaiting approval.**
+Status: **published 2026-10-01**, on the 9am ET schedule the author approved
+on 2026-09-30 ("So much better. Thursday at 9am schedule go ahead").
+
+| Account | Post |
+| --- | --- |
+| Instagram `@aiforeventplanners` | https://www.instagram.com/reel/Dd8-Gz8Feq6/ |
+| Facebook "The Event Planners AI" | reel id `1046553998431682` — confirmation pending |
+
+**Instagram caption verified**: read back live and diffed against
+`build/caption.txt`, identical, 598 bytes each. Literal `#`, no `%23`, no
+"Hashtags:" label, CTA is "Prompt below."
+
+Facebook's create call succeeded but the post had not surfaced in the page
+feed on the first read-back, which is the normal lag for this page. A
+follow-up check is scheduled rather than a retry, since
+`FACEBOOK_CREATE_VIDEO_POST` has no duplicate protection.
+
+Pre-flight checks at fire time, all passing: mp4 md5
+`7519d2e0f36ddaf922aff8c38f1d628f`, caption md5
+`bac72e131e7184dca8449b10d1729b20`, raw URL 200 at 7,029,991 bytes, container
+`18093807053367131` FINISHED after 15.9s, media id `18199658662376106`.
+
+**First Instagram post under the October plan's three-a-week cadence**, and
+the first since the length test was dropped.
 
 First piece of the October plan, and the first Instagram day under the new
 three-a-week cadence (Mon/Wed/Fri, plus this Thursday to start). Target
