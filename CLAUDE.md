@@ -64,14 +64,23 @@ Her idea, so she stops saving cuts to a hard drive. **Both cuts of every piece
 are uploaded to Drive once they are pushed**, as part of finishing the build —
 not something to be asked for.
 
+Structure, set by the author on 2026-10-01: a month folder holding **one
+subfolder per day**.
+
 | | |
 | --- | --- |
-| Parent folder | `AI for Event Planners — Reels`, id `1GFs9qwlVHq6Pdo0LEX0TG5lFN4ipmtax` |
-| October | `2026-10 October`, id `1gCWHchI1_mvS7eQiQmGDlp6H8P8i59Qg` |
+| Parent | `AI for Event Planners — Reels`, id `1GFs9qwlVHq6Pdo0LEX0TG5lFN4ipmtax` |
+| Month | `October`, id `1gCWHchI1_mvS7eQiQmGDlp6H8P8i59Qg` |
+| Days | `October 1` … `October 14` exist; create the rest as the schedule reaches them |
 | Naming | `YYYY-MM-DD-slug-instagram.mp4` and `-tiktok.mp4` |
 
-Create a new month subfolder under the parent at the start of each month, and
-record its id here.
+`October 1` is `1I9q3H4T29ZoMeDt72CYik_ck-oqxhDzG`. Day folder ids are not
+listed here beyond that — look them up with `GOOGLEDRIVE_FIND_FOLDER` under
+the month folder, since Drive allows duplicate names and the id is what
+matters.
+
+At the start of each month, create the month folder under the parent and its
+day subfolders, and record the month id here.
 
 **Use `GOOGLEDRIVE_UPLOAD_FROM_URL`** (Composio, account
 `googledrive_hasty-charer`) with the cut's `raw.githubusercontent.com` URL —
