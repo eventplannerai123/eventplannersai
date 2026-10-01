@@ -6,16 +6,16 @@ on 2026-09-30 ("So much better. Thursday at 9am schedule go ahead").
 | Account | Post |
 | --- | --- |
 | Instagram `@aiforeventplanners` | https://www.instagram.com/reel/Dd8-Gz8Feq6/ |
-| Facebook "The Event Planners AI" | reel id `1046553998431682` — confirmation pending |
+| Facebook "The Event Planners AI" | https://www.facebook.com/reel/1046553998431682/ |
 
-**Instagram caption verified**: read back live and diffed against
-`build/caption.txt`, identical, 598 bytes each. Literal `#`, no `%23`, no
-"Hashtags:" label, CTA is "Prompt below."
+**Both captions verified**: read back live and diffed against
+`build/caption.txt` character for character, identical. Literal `#`, no
+`%23`, no "Hashtags:" label, CTA is "Prompt below."
 
-Facebook's create call succeeded but the post had not surfaced in the page
-feed on the first read-back, which is the normal lag for this page. A
-follow-up check is scheduled rather than a retry, since
-`FACEBOOK_CREATE_VIDEO_POST` has no duplicate protection.
+Facebook surfaced on the second read-back, about 20 minutes after the create
+call — the usual lag for this page. Post id
+`1233196746554445_122113103553449533`. The follow-up was a re-read rather than
+a retry, since `FACEBOOK_CREATE_VIDEO_POST` has no duplicate protection.
 
 Pre-flight checks at fire time, all passing: mp4 md5
 `7519d2e0f36ddaf922aff8c38f1d628f`, caption md5
