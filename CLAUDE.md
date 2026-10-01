@@ -58,6 +58,35 @@ They still used the wrong one."), which answers no daily question. On
 2026-09-30 the bank ran 1-16, so the next item was 17 while only three daily
 questions had been answered.
 
+## Finished cuts go to Google Drive (from 2026-10-01)
+
+Her idea, so she stops saving cuts to a hard drive. **Both cuts of every piece
+are uploaded to Drive once they are pushed**, as part of finishing the build —
+not something to be asked for.
+
+| | |
+| --- | --- |
+| Parent folder | `AI for Event Planners — Reels`, id `1GFs9qwlVHq6Pdo0LEX0TG5lFN4ipmtax` |
+| October | `2026-10 October`, id `1gCWHchI1_mvS7eQiQmGDlp6H8P8i59Qg` |
+| Naming | `YYYY-MM-DD-slug-instagram.mp4` and `-tiktok.mp4` |
+
+Create a new month subfolder under the parent at the start of each month, and
+record its id here.
+
+**Use `GOOGLEDRIVE_UPLOAD_FROM_URL`** (Composio, account
+`googledrive_hasty-charer`) with the cut's `raw.githubusercontent.com` URL —
+the same one Meta fetches from. Drive pulls it server-side, so no bytes pass
+through the session. Push to the repo first, or the URL will not resolve.
+
+**Do not use the inline-upload route for video.** Both the native Drive
+connector's `create_file` and Composio's `GOOGLEDRIVE_UPLOAD_FILE` take the
+bytes inside the call: base64 adds a third, so a 6.8 MB cut becomes 9.1 M
+characters, and `GOOGLEDRIVE_UPLOAD_FILE` caps at 5 MB anyway. Every finished
+cut so far is larger than that.
+
+Verify by comparing the returned `size` to the local file. Started 2026-10-01
+with the vendor quotes pair, both exact.
+
 ## Render rules
 
 - **1080x1920, ratio exactly 0.5625.** Verify with ffprobe before calling an
