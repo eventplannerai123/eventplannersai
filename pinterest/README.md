@@ -134,3 +134,37 @@ hasn't been done already", and it had.
 - The profile's website is a single listing URL rather than the shop root.
 - No pin has `alt_text` — the copy CSV has no column for it. Worth adding
   for accessibility and search; would need generating from the descriptions.
+
+## The Mac's scheduled tasks were running a second, pre-v4 queue (2026-10-01)
+
+A local Claude session on the author's Mac had its own Pinterest schedule in
+`~/.claude/scheduled-tasks/pin-*/`, one task per pin — "pin 2 of the 1-5 Oct
+batch of 10", ten pins across Oct 1-5, against this file's twelve across Oct
+2-7. The author stopped the chat, but the scheduled tasks fire on their own
+timer whatever the chat is told, so they had to be deleted rather than
+called off.
+
+Nothing of it reached the account. Verified 2026-10-01 by listing all three
+target boards directly as well as the account feed: `Adult coloring pages`
+and `Bridal shower gifts` are empty, `Wedding planning printables` holds only
+`pin_01` from Sep 29. No pin exists with a Sep 30 or Oct 1 creation date.
+
+**Its manifest was pre-v4, and its safety check could not have caught that.**
+The `pin-oct01-pm-cake` task has `pin_03_cake.jpg` linking to the 99c sampler
+(`4581180302`) with a description stating "99c". In v4 `pin_03` is one of the
+pins that moved to the **$5.99 book** (`4572665693`). Its step 1 opens the
+sampler listing and refuses to post unless the live price reads $0.99 — which
+it does, so the check passes and the superseded copy goes out. The price was
+never the thing that was wrong; the product was. A check that validates copy
+against the listing the copy itself names cannot detect copy pointing at the
+wrong listing.
+
+It also held `pin_11_gift.jpg` back permanently for a copy error — "claims a
+50-page book for under $1" — that v4 had already fixed by pointing pin_11 at
+the Amazon paperback. So its queue would have under-posted by one as well as
+mis-posting pin_03.
+
+The general lesson, since this will recur as long as two sessions can both
+reach the account: **a second scheduler is a duplicate-post risk even when it
+is correct, and pins cannot be edited or cleanly deleted at this API access
+tier.** Pinterest posting runs from the cloud session only.
