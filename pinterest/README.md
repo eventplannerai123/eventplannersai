@@ -168,3 +168,46 @@ The general lesson, since this will recur as long as two sessions can both
 reach the account: **a second scheduler is a duplicate-post risk even when it
 is correct, and pins cannot be edited or cleanly deleted at this API access
 tier.** Pinterest posting runs from the cloud session only.
+
+## Posted log
+
+| Date | Pin | Board | Pin id |
+| --- | --- | --- | --- |
+| 2026-09-29 | `pin_01_bouquet` | Wedding planning printables | `1148629079996340621` |
+| 2026-10-02 | `pin_02_dress` | Adult coloring pages | `1148629079996575282` |
+| 2026-10-02 | `pin_07_cover` | Adult coloring pages | `1148629079996575283` |
+
+Both Oct 2 pins read back live on `calmbeforetheaisle`, right board, title,
+description and tagged link exactly as this directory's schedule CSV holds
+them. One read-back each, no retry.
+
+## Posting route: `image_url`, not base64 (from 2026-10-02)
+
+`pin_01` went up with `media_source image_base64`. That works, but a
+1000x1500 JPEG here is 120-340 KB, which is 160k-450k characters of base64
+inside the tool call for an image that never changes — paid again on every
+pin.
+
+The eleven unposted images are now committed under `images/`, and pins are
+created with:
+
+```
+media_source: { source_type: "image_url",
+                url: "https://raw.githubusercontent.com/eventplannerai123/eventplannersai/main/pinterest/images/<file>" }
+```
+
+Pinterest fetches it server-side, the same way Meta fetches a Reel. Confirm
+the raw URL returns `200 image/jpeg` at the expected byte count before the
+call. Drive stays the author's working copy; `images/` is what actually gets
+posted, and the two were verified byte-identical on download.
+
+This retires the note above that this workstream "needs nothing from this repo
+at post time" — it now does, in exchange for not re-encoding every image.
+
+## Still open: `alt_text`
+
+Both Oct 2 pins went out with `alt_text: null`, matching `pin_01` and the copy
+CSV, which has no column for it. Not invented here: alt text is permanent at
+this access tier and would be unreviewed copy on a customer-facing pin. Worth
+asking the author to add a column for the next batch rather than writing it
+unilaterally.
