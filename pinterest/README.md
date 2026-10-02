@@ -211,3 +211,43 @@ CSV, which has no column for it. Not invented here: alt text is permanent at
 this access tier and would be unreviewed copy on a customer-facing pin. Worth
 asking the author to add a column for the next batch rather than writing it
 unilaterally.
+
+## Deleting a scheduled task's files does not stop it firing (2026-10-02)
+
+The author deleted the `pin-*` folders under `~/.claude/scheduled-tasks/` on
+the Mac and the runs kept arriving — `pin-oct02-am-arch` fired at 9:00 her
+time on Oct 2, for `pin_04_arch.jpg`, and surfaced on her phone through Remote
+Control.
+
+That is the expected behaviour, and worth writing down because it is
+counter-intuitive: **the folder holds the task's instructions, the schedule
+itself lives in the account.** Removing the folder leaves the timer intact and
+the run then fails on a missing file — which is exactly the "can't find the
+file" message she had been getting. The schedule has to be deleted as a
+schedule.
+
+Nothing of it reached the account: all three target boards listed directly at
+13:33Z on Oct 2 hold only `pin_01` and the two posted from here that morning.
+
+Those Mac tasks are local to that computer and **do not appear in this
+session's `list_triggers`**, so they cannot be stopped from here. Only the
+author can remove them, from the machine that owns them.
+
+## A duplicate this session nearly caused, and the rule that follows
+
+This session's own Routine `trig_0169hJ1CezAfwKaiTeNuHhp1` was set to post
+`pin_02` and `pin_07` at 13:48Z on Oct 2. Both had already gone up at 11:28Z,
+posted by hand earlier in the same conversation. The Routine would have posted
+both a second time, and a duplicate pin cannot be edited or cleanly removed.
+It was disabled at 13:32Z, sixteen minutes before firing.
+
+**Posting a day's pins early does not cancel that day's Routine.** Whenever a
+scheduled item is done ahead of its trigger, disable the trigger in the same
+breath — `update_trigger` with `enabled: false`, which is reversible, rather
+than `delete_trigger`. The remaining pin Routines (Oct 3, 4, 5, 6 and 7) are
+untouched and still correct.
+
+The scheduled prompts still describe the `image_base64` route and a Drive
+download. That route works and was not changed; the images committed under
+`images/` make the cheaper `image_url` route available to any run that
+prefers it.
