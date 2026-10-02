@@ -56,7 +56,13 @@ question list.** They do not line up: the bank also holds extras she adds by
 hand, such as item 16 on 2026-09-30 ("They were told exactly which entrance.
 They still used the wrong one."), which answers no daily question. On
 2026-09-30 the bank ran 1-16, so the next item was 17 while only three daily
-questions had been answered.
+questions had been answered. As of 2026-10-01 it runs **1-19** (17-19 came from
+her 2007 internship paper), so the next new item is 20.
+
+**Check which questions are already marked answered before asking.** The Oct 1,
+2 and 3 questions were all answered on Sep 30 in one sitting, so on Oct 2 the
+next unanswered one was **Sun 4 Oct** — the one she asked to be given on
+Sunday. A day whose question is already answered has nothing to ask.
 
 ## Finished cuts go to Google Drive (from 2026-10-01)
 
@@ -214,6 +220,13 @@ posting is over.
 | | Frequency | Days |
 | --- | --- | --- |
 | Instagram | **3 a week** | Mon, Wed, Fri — plus Thu Oct 1 to start |
+
+**The guide's day-by-day table governs, not the Mon/Wed/Fri shorthand.** Week
+one is Thu 1, Sat 3, Mon 5, Wed 7 — so **Fri 2 Oct has no Instagram Reel at
+all**, and Sat 3 is an extra single photo (the Future of AI pinned post), which
+the guide says is placed on a Saturday precisely so it does not take a
+Mon/Wed/Fri slot. Read the day's row before assuming a weekday is a posting
+day.
 | TikTok | daily | every day |
 | Facebook | whatever this session posts | automatic |
 | Pinterest | 2 pins a day | from Fri Oct 2 |
