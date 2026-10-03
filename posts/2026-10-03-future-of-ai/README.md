@@ -1,7 +1,30 @@
 # The Future of AI — pinned post, 2026-10-03
 
-Status: **built, awaiting approval.** Not posted. The author sent the photo on
-2026-10-03 but did not give a go-ahead, and sending a file is not approval.
+Status: **published 2026-10-03**, on the author's explicit approval
+("Approved") after the corrected caption was put to her.
+
+| Account | Post |
+| --- | --- |
+| Instagram `@aiforeventplanners` | https://www.instagram.com/p/DeCa6-fIPTf/ |
+| Facebook "The Event Planners AI" | https://www.facebook.com/122100389133449533/posts/122113559187449533 |
+
+Instagram media id `18111114170519807`, container `18094295024367131`.
+Facebook post id `1233196746554445_122113559187449533`, photo id
+`122113559163449533`.
+
+**Both captions verified**: read back live and diffed against `caption.txt`
+character for character, identical (443 bytes live against the file's 444 —
+both platforms strip the trailing newline). Literal `#`, no `%23`, no
+"Hashtags:" label.
+
+Worth noting against the Reels: **Facebook surfaced this one immediately**, on
+the first read-back seconds after the create call. Every video post from Sep 25
+on took three read-backs and fifteen to twenty minutes. The lag is a Reels
+property, not a page property, so a photo post does not need the follow-up
+check a Reel does.
+
+Still outstanding, and the author's: pinning it to the top of the Instagram
+profile, which is in-app only.
 
 Not a Reel, so it does not live under `reels/`. A single photo, to
 **Instagram and Facebook** — not TikTok. Once live it is pinned to the top of
