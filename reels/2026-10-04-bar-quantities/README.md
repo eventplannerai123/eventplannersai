@@ -72,15 +72,24 @@ She sent a centerpieces recording first, labelled as Sunday's TikTok — a
 different prompt, DIY centerpieces against a professional florist for a 25-table
 gala. It was raised with her rather than built on the assumption that the day's
 piece had been swapped, and she confirmed on 2026-10-04: **"The centerpiece was
-a mistake."** The bar quantities recording arrived straight afterwards and is
-what this day uses.
+a mistake."** Later the same day she explained what the mistake was —
+**"Centerpieces have also posted"**: the piece was already live on TikTok, so
+sending the recording here was the error, not recording it. The bar quantities
+recording arrived straight afterwards and is what this day uses.
 
 So there is **no pending centerpieces piece**. Nothing is scheduled for it and
 nothing is owed. Its source was never brought into the repo.
 
 Worth keeping as a case for the rule: a recording that does not match the day's
-brief is a question, not a swap. Building it would have produced a piece nobody
-wanted and a caption that matched neither the footage nor the guide.
+brief is a question, not a swap. Building it would have produced a duplicate of
+something already live, with a caption matching neither the footage nor the
+guide.
+
+**This repo cannot tell whether a TikTok has been posted.** Two pieces were
+proposed for Mon 5 Oct on the strength of repo notes — the vendor quotes cut
+and this one — and both were already up. Uploads are hers, nothing reports
+back, and a schedule line records what was *planned*, never what happened. Until
+there is a record she updates, the only reliable source is asking her.
 
 ## Caption
 
