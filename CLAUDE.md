@@ -106,6 +106,14 @@ day subfolders, and record the month id here.
 the same one Meta fetches from. Drive pulls it server-side, so no bytes pass
 through the session. Push to the repo first, or the URL will not resolve.
 
+**Its field names are `source_url`, `name` and `parent_folder_id`** — not
+`file_url`, and not `parent_id`. On 2026-10-04 `parent_id` was passed and
+**silently ignored**: the call reported success and the file landed in the root
+of My Drive instead of the day folder. A wrong `source_url`/`name` fails loudly;
+a wrong parent does not. **Check `parents` in the response against the folder id
+you asked for**, not just `size`. The stray copy was trashed and the file
+re-uploaded.
+
 **Do not use the inline-upload route for video.** Both the native Drive
 connector's `create_file` and Composio's `GOOGLEDRIVE_UPLOAD_FILE` take the
 bytes inside the call: base64 adds a third, so a 6.8 MB cut becomes 9.1 M
