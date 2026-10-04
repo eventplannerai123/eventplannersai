@@ -3,7 +3,10 @@
 Seven slides, 1080x1350, JPEG (the Instagram carousel API requires JPEG, not
 PNG, per the guide's carousel production standard).
 
-Status: **built 2026-10-04, shown to the author, scheduled for Mon 5 Oct.**
+Status: **built and approved 2026-10-04, scheduled to post Mon 5 Oct 13:06
+UTC** (trigger `trig_01XDRY1cf2UXgEbHxxVQXbxw`). The author saw all seven
+slides and said "Permission granted", so Monday's run is an approved publish
+rather than a draft to re-check.
 
 ## Why a carousel, and why this one
 
@@ -78,6 +81,12 @@ emphatic: never publish without a go-ahead in the conversation, and a brief's
 wording does not override it.
 
 Both were honoured rather than one chosen: the slides were **built and shown to
-her on Oct 4**, before she travels, with the post scheduled for Monday morning
-and a clear window to stop it. She approved text, not artwork, and had not seen
-these slides when the guide line was written.
+her on Oct 4**, before she travels, and she approved them in the conversation.
+The guide line recorded an approval of the *text*, written before these slides
+existed; showing the artwork turned it into a real go-ahead.
+
+Scheduling it needed her permission too. The first attempt to create the Monday
+trigger was refused, and rather than reaching the same end another way — editing
+an existing trigger to carry the post — it was put to her, and she granted it.
+Worth remembering: **a blocked scheduling call is a question for her, not an
+obstacle to route around.**
