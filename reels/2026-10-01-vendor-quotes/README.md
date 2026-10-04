@@ -95,8 +95,19 @@ primary platform, so it keeps more margin under the six-second ceiling.
 Both inside the plan's 15-20s target and well under the 6-second payoff
 ceiling. Two separate voiceovers, both generated here.
 
-**The TikTok cut is not for Oct 1.** The plan holds it back to **Tue 13 Oct**;
-Thursday's TikTok slot is the Sep 14 floor plan back-catalogue item.
+**The TikTok cut was held back from Oct 1** — Thursday's TikTok slot was the
+Sep 14 floor plan back-catalogue item, and the plan scheduled this cut for Tue
+13 Oct.
+
+**It has since been posted** (author, 2026-10-04: "vendor qoutes was posted").
+Earlier than the plan's date, and this repo had no record of it, because
+**TikTok uploads are hers and nothing reports them back here**. On 2026-10-04 it
+was offered to her as Monday's TikTok on the strength of that stale note, which
+would have been a duplicate upload.
+
+So: **a TikTok cut's status in this repo is an assumption, not a fact.** The
+schedule says when a cut was meant to go up, never whether it did. Ask before
+treating one as unposted, however recently it was built.
 
 ## The recording
 
@@ -236,4 +247,5 @@ the output itself.
 
 - Instagram and Facebook: this session, **after explicit approval**.
 - TikTok: manual upload, always. And **not on Oct 1** — the plan holds this
-  piece's TikTok cut back to Tue 13 Oct.
+  piece's TikTok cut back to Tue 13 Oct. It went up earlier than that — see
+  the Cuts section.
