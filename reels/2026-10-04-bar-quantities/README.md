@@ -66,15 +66,21 @@ into frame from about t=24 in the source. Both of the last two beats end well
 before that — the final frame is source t≈14.6 — and the bottom strip of the
 exported final frame was checked visually and is clean.
 
-## There were two recordings that day
+## There were two recordings that day, and the first was sent in error
 
-She sent a centerpieces recording first, labelled as Sunday's TikTok. It is a
-different prompt — DIY centerpieces against a professional florist for a
-25-table gala — and a strong piece in its own right, ending on a real
-break-even number: if the non-assembly DIY work takes more than 18 hours 20
-minutes, the florist is cheaper. It is **not** this day's scheduled piece and
-is not built here. Raised with her rather than guessed at, and the bar
-quantities recording arrived straight afterwards.
+She sent a centerpieces recording first, labelled as Sunday's TikTok — a
+different prompt, DIY centerpieces against a professional florist for a 25-table
+gala. It was raised with her rather than built on the assumption that the day's
+piece had been swapped, and she confirmed on 2026-10-04: **"The centerpiece was
+a mistake."** The bar quantities recording arrived straight afterwards and is
+what this day uses.
+
+So there is **no pending centerpieces piece**. Nothing is scheduled for it and
+nothing is owed. Its source was never brought into the repo.
+
+Worth keeping as a case for the rule: a recording that does not match the day's
+brief is a question, not a swap. Building it would have produced a piece nobody
+wanted and a caption that matched neither the footage nor the guide.
 
 ## Caption
 
