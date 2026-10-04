@@ -56,9 +56,9 @@ question list.** They do not line up: the bank also holds extras she adds by
 hand, such as item 16 on 2026-09-30 ("They were told exactly which entrance.
 They still used the wrong one."), which answers no daily question. On
 2026-09-30 the bank ran 1-16, so the next item was 17 while only three daily
-questions had been answered. As of 2026-10-04 it runs **1-22** (17-19 came from
-her 2007 internship paper; 20-22 from her Oct 4 budget answer), so the next new
-item is 23.
+questions had been answered. As of 2026-10-04 it runs **1-24** (17-19 came from
+her 2007 internship paper; 20-22 from her Oct 4 budget answer; 23-24 from her
+Oct 4 site-visit answer), so the next new item is 25.
 
 **One answer can be several items.** Her Oct 4 answer to "the most common
 reason an event budget goes over" named three distinct causes — no contingency
@@ -66,6 +66,11 @@ line, an unpriced rain plan, and year-on-year inflation — and she said so
 herself: "could actually lead into 3 pieces of content". Each became its own
 numbered item rather than one crowded entry, because the bank is a source of
 individual pieces. Mark the question answered with the range (items 20-22).
+
+The same happened again that day: her site-visit answer gave a firewall
+question and, filed under "other", hidden venue fees — items 23 and 24. **Her
+"other" items are bank material too**, even when they do not answer the
+question asked.
 
 **Check which questions are already marked answered before asking.** The Oct 1,
 2 and 3 questions were all answered on Sep 30 in one sitting, so on Oct 2 the
