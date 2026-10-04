@@ -1,8 +1,31 @@
 # Site report reel — 2026-10-05
 
-Status: **voiceovers generated, waiting on the author's screen recording.**
-She confirmed on 2026-10-04 that she would record it that day, a day early,
-because she is flying on the Mon 5.
+Status: **voiceovers generated, moved to Mon 12 Oct, waiting on the author's
+screen recording.**
+
+She first said she would record it a day early, then changed her mind the same
+day: "lets switch mondays post to later next week - find something easier for
+tomorrow." She is flying Mon 5, and this piece is the worst possible one to
+have on a travel day — it is a planned Trial, so **she** has to upload it by
+hand in the app, which cannot happen mid-flight.
+
+**The directory keeps its 2026-10-05 name** so the voiceovers and this record
+stay in one place; the date in the name is the day it was built for, not the
+day it runs.
+
+## Why Mon 12 and not Thu 8
+
+Thu 8 looks like the obvious slot because it has no Instagram piece, but it
+would put four Instagram posts into the Thu 8 - Wed 14 week against a cadence
+of three, and that week is the second half of the test in
+`docs/OCT-CADENCE-TEST.md`. Mon 12 already had a piece — ticket allocation —
+so swapping that out and pushing it to the following week keeps **both** weeks
+at exactly three.
+
+Dropping Mon 5 does not cost the first week anything either: Thu 1, Sat 3 and
+Wed 7 still leave three posts in the Thu 1 - Wed 7 window. So the move is free
+against the measurement, which is the only reason it is safe to make
+mid-test.
 
 **This is a PLANNED TRIAL on Instagram, so this session does not post it.** The
 Trial toggle is in-app only. Build both cuts, hand the Instagram one over with
