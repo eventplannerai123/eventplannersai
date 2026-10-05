@@ -155,6 +155,43 @@ with the vendor quotes pair, both exact.
   2.55 words per second of finished cut and extend the script by narrating
   what the output actually shows, as the Sep 24 rewrite did.
 
+## Video lessons from Oct 5 (the guide's own, apply to every video)
+
+Added to the guide on 2026-10-05 as six standing rules. They replace several
+things below rather than sitting alongside them, so read this block first.
+
+1. **Every video needs sound that tells the story** — an ElevenLabs voiceover
+   (Vanessa, standard settings), or, for an overlay-led piece, overlays that
+   carry the whole story alone. **This ends the silent quick piece.** The Oct 6
+   cancellation piece was built silent to the old spec and she said it "made no
+   sense without sound"; the guide was rewritten the same day.
+2. **Open on the biggest takeaway, not on the prompt. The prompt goes in the
+   caption.** So the opening prompt card is gone, and so is opening on the send
+   tap.
+3. **Zoom: every highlighted line fills about 85% of the width, in the middle of
+   the frame. Freeze frames, never scrolling footage.**
+4. **Safe zones for TikTok and Reels: nothing important in the top 12%, the
+   bottom 25%, or the right 15%**, where the app's tabs, caption and buttons sit.
+5. **Clean every screen recording**: crop off the phone status bar (time, red
+   recording dot) and the app's input bar, and cut any ad that appears in the
+   answer.
+6. **Check before assuming.** Look at the calendar, the live accounts or Drive
+   before saying something is undone, open or still to post.
+
+Two honest notes on applying these, from the build they came out of:
+
+- **85% of the width is often a reduction, not a magnification.** When the
+  answer text runs nearly the full width of the capture — which it usually does
+  — those lines already occupy about 96% of the frame, and no crop can enlarge
+  them without clipping words. What makes a line read as zoomed is **isolating**
+  it: lift the passage onto its own panel and throw the rest of the frame out of
+  focus hard. At a light blur the same sentence stays legible behind the panel
+  and the frame looks like two copies of itself.
+- **Rule 2 does not retire the opening-shot check, it redirects it.** The cut no
+  longer opens on the prompt, so a recording that starts after the send tap is
+  no longer a problem. What still matters is that the recording reaches the
+  takeaway cleanly.
+
 ## Timing rules
 
 - **Everything is 15-20s from Oct 1.** The October plan sets one target for
@@ -204,9 +241,15 @@ with the vendor quotes pair, both exact.
 - **Round 6 (Sep 23-30) dropped the end card**: every brief in it said "end on
   the output itself, not an end card asking for a comment". The October
   plan's six Instagram briefs continue this — each specifies a hook overlay
-  at 0:00-0:02 and nothing else — and its five TikTok-only quick pieces say
-  "no hook line, no end card" outright. The two-overlay rule is the written
-  default; in practice every current brief overrides it down to one.
+  at 0:00-0:02 and nothing else. The two-overlay rule is the written default;
+  in practice every current brief overrides it down to one.
+- **The quick-piece format was rewritten on 2026-10-05** and is no longer the
+  silent, prompt-card-first thing it was. It is now **15-20s**, opens on the
+  biggest takeaway as a big overlay for the first three seconds, then 2-3 key
+  lines of the answer as zoomed, highlighted freeze frames, with a **30-40 word
+  voiceover this session writes from the takeaway** and shows her with the edit.
+  No scrolling, no end card. The caption's first line states the takeaway, then
+  the full prompt as typed, then four hashtags, no CTA.
 - **Never post both cuts to the same platform** — near-identical posts
   split engagement.
 - Hooks must name a concrete scenario, number or timeframe immediately.
@@ -594,6 +637,10 @@ board ids, the Drive folder, the schedule CSV. The parts that govern:
   even a one-line scroll offset, so check contiguity by **reading the text**
   at each boundary instead; a seam of a line or two reads as ordinary
   scrolling.
+- **Superseded 2026-10-05 for the cut, not for the recording:** the cut now
+  opens on the takeaway, never on the prompt, so a source that starts after the
+  send tap no longer costs anything. The note below is kept because it still
+  describes what she films and what to look at before choosing an opening.
 - The recording is supposed to start with the prompt sitting in the input
   box and the send tap on camera. Three recordings have begun after the tap
   (the third on Sep 25, where the author said to run with it). Flag it
