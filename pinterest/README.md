@@ -104,6 +104,10 @@ regardless.
 Amazon, not Etsy, and the author confirmed that is deliberate (2026-09-30).
 Post its link exactly as it stands; do not "correct" it to an Etsy URL.
 
+It went up on 2026-10-05 with `https://www.amazon.com/dp/B0HL3B4CLM` and no
+tag, read back and confirmed. The one pin in the twelve that sends traffic
+somewhere Pinterest's own outbound-click number is the only measure of.
+
 `pin_01_bouquet` went out untagged on 2026-09-29 and **has since been tagged
 by hand**, found on 2026-09-30 by reading the live pin rather than trusting
 the earlier note:
@@ -180,6 +184,8 @@ tier.** Pinterest posting runs from the cloud session only.
 | 2026-10-03 | `pin_05_ring` | Bridal shower gifts | `1148629079996676933` |
 | 2026-10-04 | `pin_08_fifty` | Adult coloring pages | `1148629079996771403` |
 | 2026-10-04 | `pin_10_coloured` | Adult coloring pages | `1148629079996771404` |
+| 2026-10-05 | `pin_03_cake` | Adult coloring pages | `1148629079996849379` |
+| 2026-10-05 | `pin_11_gift` | Bridal shower gifts | `1148629079996849380` |
 
 Both Oct 2 pins read back live on `calmbeforetheaisle`, right board, title,
 description and tagged link exactly as this directory's schedule CSV holds
