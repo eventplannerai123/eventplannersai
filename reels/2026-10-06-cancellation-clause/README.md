@@ -14,137 +14,80 @@ something closer to a short Reel built from stills.
 | Duration | 16.39s |
 | Voiceover | **-14.0 LUFS**, true peak -1.3 dBFS |
 
-## Three versions, and what changed
+## Four versions, and what changed
 
 | | |
 | --- | --- |
 | v1 | Four freeze frames, silent, prompt card first, highlights at source size |
 | v2 | Highlighted passages lifted out as strips over a blurred frame |
-| v3 | Her 39-word voiceover, opens on the takeaway, **no prompt card** |
+| v3 | Voiceover added, opens on the takeaway, no prompt card |
+| **v4** | **Her story order, genuinely zoomed, no dimmed background** |
 
-v3 drops the opening prompt card entirely and opens on the cancellation table
-with the 89-60 day row marked, under the biggest line in the piece. The prompt
-moves to the caption, which is where the guide wants it anyway.
-
-## Loudness
-
-The two-pass `loudnorm` stalled at **-15.6 LUFS** with the true peak pinned at
--1.5 — the crest factor is high and the peak ceiling binds before the target
-does. So the gain is applied explicitly, +9.7 dB, with `alimiter` at
-`level=0` catching the peaks; without `level=0` it renormalises straight back to
-full scale and the limiting looks broken. Measured on the finished export:
-**-14.0 LUFS**, exactly on target.
-
-The video runs 16.60s and the mux is `-shortest`, so the piece ends on the last
-word at 16.39s rather than on a silent tail.
-
-## She asked whether this was a rebuild. It is not
-
-The Sep 20 vendor contract reel flagged a one-sided cancellation clause as one
-of eight findings, and that piece went to TikTok on Oct 2 — four days before
-this one. The overlap is real and was put to her rather than glossed over. The
-difference is the scope: that piece reviewed a whole contract, this one takes a
-single clause and answers one question, "what does 60 days actually cost".
-
-## The clause is built, and so is the answer key
-
-`source/clause.md` and `source/ANSWER-KEY.md`, written for the piece the way the
-Sep 23 catering invoice was. Every mechanism in it occurs in real venue
-contracts; what is artificial is having all of them in one article.
-`source/paste-into-chatgpt.txt` is the single block she pasted — prompt and
-clause together, at her request, because she was recording from a phone at a
-conference.
-
-## Four freeze frames, no scrolling
-
-Her brief: no scrolling, freeze frames only. That suits the source, which only
-ever moves by scrolling, and it is what keeps dense text readable at phone size.
+v4 is built to the five-beat brief she wrote: the prompt, what the contract
+says, the catch, the maths, the takeaway. 17.40s.
 
 | Beat | Source | On screen |
 | --- | --- | --- |
-| 0.00-3.00 | 13.0 | the cancellation table, 89-60 day row marked, under "This contract says 75%. It actually charges 100%." |
-| 3.00-8.00 | 13.0 | the deposit sits **on top of** the fee |
-| 8.00-12.00 | 15.0 | $21,250 + $63,750 = $85,000 |
-| 12.00-end | **25.5** | 75% at 60 days becomes an effective 100% |
+| 0.00-4.00 | 0.0 | the question, zoomed 1.26x, under "I asked AI what cancelling 60 days out would cost." |
+| 4.00-7.00 | 13.0 | the table, 89-60 day row marked |
+| 7.00-11.00 | **12.0** | the deposit sits on top of the fee |
+| 11.00-15.00 | **14.4** | $21,250 + $63,750 = $85,000 |
+| 15.00-17.40 | **26.0** | 75% becomes an effective 100%, under "The table says 75%. The contract charges 100%." |
 
-Hard cuts, not dissolves: the brief gives exact boundaries and a dissolve would
-soften them.
+## How the zoom finally got solved
 
-The opening beat shows the whole table but marks only one row — the build takes
-separate "what to show" and "what to highlight" boxes for exactly this.
+v2 and v3 put the highlighted lines on a panel over a blurred frame, and she
+rejected that: "not a small box on a dimmed background". The fix is not a
+different crop, it is **a different frame**.
 
-## One crop for every beat
+The answer text is full-width in the capture, so it cannot be magnified — but
+where it sits on screen changes as the page scrolls. So each beat now uses the
+timestamp at which its own sentence happens to be mid-screen, and the frame is
+shown whole:
 
-`crop=1125:2000:40:300`, then scaled to 1080x1920.
+- the catch is at the very top of frame at t=13 and at **43-54%** at t=12
+- the maths is below the fold at t=14 and at **53-60%** at t=14.4
+- the table row is at **48-51%** at t=13
+- the takeaway is at **42-53%** at t=26
 
-- 300 off the top clears the status bar — time and the red recording dot — and
-  the nav row below it
-- the window ends at 2300, which clears the "Ask ChatGPT" bar starting about
-  2374
-- 1125/2000 is exactly 0.5625, and **1125 is wide enough to hold the full text
-  column** (x 47-1150), so no words are cut
+Every highlight lands between 42% and 60% of the frame height. The build asserts
+it and fails rather than shipping a frame outside the band.
 
-## How the zoom works, and the limit on it (v2, after her note)
+**Beat 1 is the only real magnification, and only because the prompt bubble is
+narrower than the answer text** — 855px against the frame's 1206. Blown up to
+1080 that is 1.26x, and the question genuinely fills the screen.
 
-v1 showed the highlighted lines at source size inside the whole frame, and they
-did not read as zoomed. v2 lifts each highlighted passage out as a **strip**,
-sets it on a heavily blurred, dimmed copy of its own frame, and puts it in the
-middle of the safe band.
+### The one rule that could not be kept
 
-The honest limit: **the lines cannot be made much larger than they already
-were.** The answer text runs nearly the full width of the capture, so a crop
-tight enough to magnify it clips words, and the strip can only be as wide as the
-safe area allows — 880px, which is 81% of frame width against the 96% the same
-lines occupied in v1. So the strip is fractionally *smaller* than before.
+The Oct 5 safe zones ask for nothing important in the right 15%. **The answer
+text runs to within 56px of the capture's right edge**, so filling the frame
+with it — which is what she asked for — necessarily pushes the ends of those
+lines into that band. The two requirements are geometrically incompatible on
+this source.
 
-What makes it read as a zoom is the background, not the scale. At a light blur
-the same sentence stayed legible behind the strip and the frame looked like two
-copies of itself; at radius 16 and 46% brightness it becomes texture, and the
-strip is the only thing in focus. If genuinely larger type is wanted, the
-sentence has to be re-typeset as our own text rather than shown as a screenshot
-— a different kind of piece, and her call.
+Filling the frame won, because that was the explicit instruction and the dimmed
+panel was the thing being rejected. Top 12% and bottom 25% are both honoured and
+asserted. The only way to satisfy all three at once is to re-typeset the lines
+as our own text instead of showing the screenshot.
 
-Highlights are one colour throughout — amber, translucent, so the text reads
-through — held four to five seconds each.
+## The ad, handled by cropping rather than by timing
 
-### Safe area
+v3 avoided the Visit Denver ad by taking the takeaway at 25.5 instead of 26.0.
+v4 needs 26.0, because that is where the sentence is mid-screen — so the window
+is cut at source y 1900 instead and the rest of the canvas is filled with the
+page's own background colour. The ad starts at 1913 and simply is not in the
+file. The fill sits in the bottom 25%, which is TikTok's own dead zone.
 
-Her brief: nothing that matters in the top 12%, the bottom 25%, or the right
-15%. The strips sit at x 30-910 against a 918 limit and are vertically centred
-at 47.5% of the frame; the build **asserts** both rather than trusting the
-arithmetic, and fails rather than shipping a frame that breaks them.
+## Overlays and audio
 
-The prompt card is gone in v3, which also removes the one frame whose text sat
-inside the top 12%.
+One highlight colour throughout, amber, translucent. Two dark cards, neither in
+the highlight colour: the opening line and the closing takeaway. No end card.
 
-## The last beat is taken at 25.5, not 26.0
-
-The brief said freeze at 0:26. **The Visit Denver ad is already on screen at
-26.0** — it sits around y 1965-2345 of the capture, and the target sentence runs
-y 1961-2181, so no 9:16 crop can hold the sentence and exclude the ad.
-
-At 25.5 the same sentence is on screen, in the same wording, with no ad anywhere
-in frame. All four exported stills were checked whole-frame; the ad appears in
-none of them. This is also why the piece is four stills rather than any moving
-footage: there is no scroll to show that does not eventually reach it.
-
-## Overlays
-
-One highlight colour throughout — amber at 45% over the target lines, held four
-to five seconds each, which is long enough to read twice.
-
-The fourth beat adds the bold overlay the brief asked for, "60 days out: the
-table says 75%. The contract charges 100%." It is a **solid dark card**, not the
-highlight colour, so it reads as a separate element rather than a fourth
-highlight. At 60px over three lines it is the biggest type on screen, and it
-sits in the upper third, below the top 12% and clear of the strip. No hook line
-before the prompt card and no end card, per the quick-piece format.
-
-## The floating down-arrow
-
-Blurred out rather than painted over, on every frame. It sits on top of body
-text, so a filled patch would have erased words with it. On beats 2 to 4 the
-background blur removes it anyway.
+Voiceover is her 42-word script in the series voice, 15.65s against a 17.40s
+cut, so the takeaway holds for about two seconds after the last word rather than
+cutting on it. **-14.0 LUFS**, true peak -1.0 dBFS, reached the explicit way —
+`loudnorm`'s two-pass stalls short on this voice because the true-peak ceiling
+binds first, so the gain is applied directly with `alimiter` at `level=0`.
 
 ## Caption
 
