@@ -21,7 +21,7 @@ never a reason to treat the piece as unposted either.
 | 2026-10-02 | Sep 20 vendor contract (back catalogue) | handed over |
 | 2026-10-03 | Sep 22 coloring book build story (back catalogue) | handed over |
 | 2026-10-04 | Bar quantities quick piece | handed over |
-| 2026-10-05 | Hidden fees carousel, as a photo post | handed over |
+| 2026-10-05 | Hidden fees carousel, as a photo post | **confirmed** 2026-10-05 — "Hidden fees" |
 | date unknown | Vendor quotes cut | **confirmed** 2026-10-04 — "vendor qoutes was posted" |
 | date unknown | Centerpieces (DIY vs florist) | **confirmed** 2026-10-04 — "Centerpieces have also posted" |
 
