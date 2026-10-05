@@ -3,10 +3,32 @@
 Seven slides, 1080x1350, JPEG (the Instagram carousel API requires JPEG, not
 PNG, per the guide's carousel production standard).
 
-Status: **built and approved 2026-10-04, scheduled to post Mon 5 Oct 13:06
-UTC** (trigger `trig_01XDRY1cf2UXgEbHxxVQXbxw`). The author saw all seven
-slides and said "Permission granted", so Monday's run is an approved publish
-rather than a draft to re-check.
+Status: **published 2026-10-05.** Built and approved on Oct 4 — the author saw
+all seven slides and said "Permission granted" — then posted by the scheduled
+trigger while she travelled.
+
+| Account | Post |
+| --- | --- |
+| Instagram `@aiforeventplanners` | https://www.instagram.com/p/DeHTXygIIjR/ |
+| Facebook "The Event Planners AI" | https://www.facebook.com/122100389133449533/posts/122114001357449533 |
+
+Instagram media id `18077271479470932` (`CAROUSEL_ALBUM`, 7 children), Facebook
+post id `1233196746554445_122114001357449533` with 7 photos.
+
+**Both captions verified** against the approved text character for character,
+identical on both platforms. Four literal `#`, no `%23`, no "Hashtags:" label.
+
+**Slide order verified — but not from the images.** Instagram's CDN
+(`scontent-*.cdninstagram.com`) is blocked by this session's network policy, so
+the live slides could not be downloaded and compared pixel to pixel. Instead the
+children edge was read back with `alt_text`, and all seven alt texts come back
+in the right positions: cover, charges 1 to 5 in order, prompt. Since each alt
+text was written for one specific slide, that pins the order as firmly as the
+images would have.
+
+Worth keeping: **per-slide alt text doubles as the order check** when the images
+themselves cannot be fetched. The Sep 22 carousel verified order by looking at
+the slides; that route is not available here.
 
 ## Why a carousel, and why this one
 
