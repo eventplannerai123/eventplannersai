@@ -55,11 +55,38 @@ soften them.
 - 1125/2000 is exactly 0.5625, and **1125 is wide enough to hold the full text
   column** (x 47-1150), so no words are cut
 
-Worth recording, because it shapes everything else: **this source cannot be
-zoomed.** The answer text runs nearly the full width of the capture, so any crop
-tight enough to magnify it would clip words. Emphasis therefore comes from the
-highlight, not from scale — one amber band per target line, translucent so the
-text reads through it.
+## How the zoom works, and the limit on it (v2, after her note)
+
+v1 showed the highlighted lines at source size inside the whole frame, and they
+did not read as zoomed. v2 lifts each highlighted passage out as a **strip**,
+sets it on a heavily blurred, dimmed copy of its own frame, and puts it in the
+middle of the safe band.
+
+The honest limit: **the lines cannot be made much larger than they already
+were.** The answer text runs nearly the full width of the capture, so a crop
+tight enough to magnify it clips words, and the strip can only be as wide as the
+safe area allows — 880px, which is 81% of frame width against the 96% the same
+lines occupied in v1. So the strip is fractionally *smaller* than before.
+
+What makes it read as a zoom is the background, not the scale. At a light blur
+the same sentence stayed legible behind the strip and the frame looked like two
+copies of itself; at radius 16 and 46% brightness it becomes texture, and the
+strip is the only thing in focus. If genuinely larger type is wanted, the
+sentence has to be re-typeset as our own text rather than shown as a screenshot
+— a different kind of piece, and her call.
+
+Highlights are one colour throughout — amber, translucent, so the text reads
+through — held four to five seconds each.
+
+### Safe area
+
+Her brief: nothing that matters in the top 12%, the bottom 25%, or the right
+15%. The strips sit at x 30-910 against a 918 limit and are vertically centred
+at 47.5% of the frame; the build **asserts** both rather than trusting the
+arithmetic, and fails rather than shipping a frame that breaks them.
+
+The prompt card at 0:00 is left as it was, per "keep everything else" — worth
+knowing that its first line does sit inside the top 12%.
 
 ## The last beat is taken at 25.5, not 26.0
 
@@ -80,8 +107,15 @@ to five seconds each, which is long enough to read twice.
 The fourth beat adds the bold overlay the brief asked for, "60 days out: the
 table says 75%. The contract charges 100%." It is a **solid dark card**, not the
 highlight colour, so it reads as a separate element rather than a fourth
-highlight. No hook line before the prompt card and no end card, per the
-quick-piece format.
+highlight. At 60px over three lines it is the biggest type on screen, and it
+sits in the upper third, below the top 12% and clear of the strip. No hook line
+before the prompt card and no end card, per the quick-piece format.
+
+## The floating down-arrow
+
+Blurred out rather than painted over, on every frame. It sits on top of body
+text, so a filled patch would have erased words with it. On beats 2 to 4 the
+background blur removes it anyway.
 
 ## Caption
 
