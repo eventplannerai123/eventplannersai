@@ -416,6 +416,14 @@ keywords across the series returned zero comments between them.
 The guide keeps the old keyword list as a record of what was tried, so the
 mechanic is not reintroduced without knowing it already failed nine times.
 
+**What has actually gone up on TikTok is tracked in
+[`docs/TIKTOK-POSTED.md`](docs/TIKTOK-POSTED.md), not in a schedule line.**
+Uploads are hers and nothing reports back, so a day's plan records only what was
+*meant* to run. On 2026-10-04 two pieces were offered to her as unposted on the
+strength of repo notes and both were already live. She now sends one line when
+she uploads; record it there, and **never call a piece unposted without checking
+that file.**
+
 ## TikTok back catalogue (added to the guide 2026-09-23, corrected same day)
 
 **12 of 39** Instagram pieces have never been posted to TikTok, verified
@@ -445,6 +453,8 @@ went up on Sep 22, which is what makes the backlog postable at all.
   vendor contract (Fri 2, strip REVIEW), Sep 22 coloring book build story
   (Sat 3). After that every TikTok day is either an Instagram piece's cut or
   one of the five TikTok-only quick pieces.
+  **All three are now up** (author, 2026-10-05: "All are posted"), so the back
+  catalogue is finished and nothing is left in it.
 - **Not to Instagram, not yet.** A second Instagram feed post competes with
   that day's main post for the same small pool of reach. Followers went 271
   to 280 over the fortnight these ran, so the same people would simply see it

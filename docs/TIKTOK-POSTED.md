@@ -15,12 +15,16 @@ it is recorded here.** Nothing else is reliable.
 and caption went to her and nothing has come back — **not** that it is live, and
 never a reason to treat the piece as unposted either.
 
+As of 2026-10-05 **every piece handed over so far is confirmed live.** The
+back catalogue is finished: the Sep 14 floor plan, Sep 20 vendor contract and
+Sep 22 coloring book build story were the last three, and all three are up.
+
 | Date | Piece | Status |
 | --- | --- | --- |
 | 2026-10-01 | Sep 14 floor plan (back catalogue) | **confirmed** — "the floor plan is on TikTok" |
-| 2026-10-02 | Sep 20 vendor contract (back catalogue) | handed over |
-| 2026-10-03 | Sep 22 coloring book build story (back catalogue) | handed over |
-| 2026-10-04 | Bar quantities quick piece | handed over |
+| 2026-10-02 | Sep 20 vendor contract (back catalogue) | **confirmed** 2026-10-05 — "All are posted" |
+| 2026-10-03 | Sep 22 coloring book build story (back catalogue) | **confirmed** 2026-10-05 — "All are posted" |
+| 2026-10-04 | Bar quantities quick piece | **confirmed** 2026-10-05 — "All are posted" |
 | 2026-10-05 | Hidden fees carousel, as a photo post | **confirmed** 2026-10-05 — "Hidden fees" |
 | date unknown | Vendor quotes cut | **confirmed** 2026-10-04 — "vendor qoutes was posted" |
 | date unknown | Centerpieces (DIY vs florist) | **confirmed** 2026-10-04 — "Centerpieces have also posted" |
