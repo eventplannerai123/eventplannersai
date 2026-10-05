@@ -1,6 +1,7 @@
-"""Tue 6 Oct cancellation-clause quick piece — v2.
+"""Tue 6 Oct cancellation-clause piece — v3, with voiceover.
 
-Four freeze frames, no scrolling, no voiceover.
+Four freeze frames, no scrolling. No prompt card: it opens on the takeaway and
+the prompt lives in the caption.
 
 v2 answers the author's note on v1: the highlighted lines are now genuinely
 zoomed rather than shown at source size. That cannot be done with a plain crop
@@ -57,15 +58,17 @@ def drop_arrow(full):
     full.paste(full.crop(box).filter(ImageFilter.GaussianBlur(26)), box)
     return full
 
-def strip(full, boxes, pad_x=20, pad_y=18):
-    """Lift the highlighted passage out, scale it up, draw the bands on it."""
+def strip(full, boxes, hl_boxes, pad_x=20, pad_y=18):
+    """Lift the passage out, scale it up, draw the bands on it. `boxes` sets what
+    is shown, `hl_boxes` what is marked — on the opening beat the whole table is
+    shown and only one row is marked."""
     x0 = min(b[0] for b in boxes) - pad_x; x1 = max(b[2] for b in boxes) + pad_x
     y0 = min(b[1] for b in boxes) - pad_y; y1 = max(b[3] for b in boxes) + pad_y
     f = STRIP_W / (x1 - x0)
     im = full.crop((x0, y0, x1, y1)).resize((STRIP_W, round((y1 - y0) * f)),
                                             Image.LANCZOS).convert("RGBA")
     lay = Image.new("RGBA", im.size, (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
-    for bx0, by0, bx1, by1 in boxes:
+    for bx0, by0, bx1, by1 in hl_boxes:
         d.rounded_rectangle([(bx0 - x0) * f - 8, (by0 - y0) * f - 8,
                              (bx1 - x0) * f + 8, (by1 - y0) * f + 8],
                             radius=12, fill=AMBER)
@@ -106,17 +109,21 @@ def headline(img, lines, cy, maxw=800, fs=76):
     print(f"   headline {fs}px, card {x}-{x+bw} x {y}-{y+bh}")
     return Image.alpha_composite(img, lay)
 
-# 1 — the prompt, full frame, held 3s. Sharp, so the arrow is blurred out here.
-f1 = drop_arrow(grab(0, "f1.png"))
-f1.crop((CX, CY, CX + CW, CY + CH)).resize((W, H), Image.LANCZOS).save(
-    "frames/slide1.jpg", quality=95)
-
-def beat(t, name, boxes, head=None, out_name="x.jpg"):
+def beat(t, name, boxes, hl_boxes=None, head=None, out_name="x.jpg", pad_x=20, pad_y=18):
     full = drop_arrow(grab(t, name))
-    img = place(background(full), strip(full, boxes))
+    st = strip(full, boxes, hl_boxes or boxes, pad_x, pad_y)
+    img = place(background(full), st)
     if head: img = headline(img, head, int(H * 0.235))
     img.convert("RGB").save(f"frames/{out_name}", quality=95)
     print(f"   {out_name} from t={t}")
+
+# 1 — open on the takeaway: the table, with the 89-60 day row highlighted, under
+# the biggest statement in the piece. No prompt card.
+beat(13, "f1.png",
+     [(47, 840, 1035, 1340)],                  # header plus the first three rows
+     hl_boxes=[(47, 1264, 1035, 1323)],        # the 89-60 days / 75% row
+     head=["This contract says 75%.", "It actually charges 100%."],
+     out_name="slide1.jpg", pad_x=14, pad_y=14)
 
 # 2 — the deposit sits on top of the fee
 beat(13, "f2.png", [(963, 369, 1055, 417), (47, 452, 1124, 502), (47, 537, 858, 587)],
@@ -129,7 +136,9 @@ beat(25.5, "f4.png", [(1035, 1961, 1150, 2011), (47, 2046, 1061, 2096),
      head=["60 days out:", "the table says 75%.", "The contract charges 100%."],
      out_name="slide4.jpg")
 
-BEATS = [("slide1.jpg", 3.0), ("slide2.jpg", 4.0), ("slide3.jpg", 4.0), ("slide4.jpg", 5.0)]
+# Beat lengths follow the voiceover: it runs 16.43s, so the last beat holds to
+# 16.60 and the piece ends just after the last word rather than on a silent tail.
+BEATS = [("slide1.jpg", 3.0), ("slide2.jpg", 5.0), ("slide3.jpg", 4.0), ("slide4.jpg", 4.6)]
 parts = []
 for i, (f, dur) in enumerate(BEATS):
     p = f"frames/seg{i}.mp4"; parts.append(p)
@@ -140,11 +149,13 @@ with open("frames/list.txt", "w") as fh:
     for p in parts: fh.write(f"file '{os.path.basename(p)}'\n")
 subprocess.run('ffmpeg -y -loglevel error -f concat -safe 0 -i frames/list.txt '
                '-c:v copy frames/novo.mp4', shell=True, check=True)
-subprocess.run('ffmpeg -y -loglevel error -i frames/novo.mp4 -f lavfi '
-               '-i anullsrc=r=48000:cl=stereo -shortest -c:v copy -c:a aac -b:a 192k '
-               '-ar 48000 -movflags +faststart ../cancellation-tiktok.mp4',
-               shell=True, check=True)
-print(subprocess.run('ffprobe -v error -show_entries stream=width,height,r_frame_rate '
-                     '-show_entries format=duration -of default=noprint_wrappers=1 '
-                     '../cancellation-tiktok.mp4', shell=True, capture_output=True,
-                     text=True).stdout)
+# vo.wav is already at -14.4 LUFS: loudnorm's two-pass stalled at -15.6 because
+# the true-peak ceiling binds first, so the gain is applied explicitly and
+# alimiter (level=0, or it renormalises straight back) catches the peaks.
+subprocess.run('ffmpeg -y -loglevel error -i frames/novo.mp4 -i vo.wav '
+               '-c:v copy -c:a aac -b:a 192k -ar 48000 -shortest '
+               '-movflags +faststart ../cancellation-tiktok.mp4', shell=True, check=True)
+print(subprocess.run('ffprobe -v error -show_entries stream=codec_name,width,height,'
+                     'r_frame_rate -show_entries format=duration -of '
+                     'default=noprint_wrappers=1 ../cancellation-tiktok.mp4',
+                     shell=True, capture_output=True, text=True).stdout)

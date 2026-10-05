@@ -3,14 +3,40 @@
 Status: **built, handed over.** TikTok only, and TikTok is always her upload.
 Nothing goes to Instagram or Facebook: Tue 6 has no Instagram piece.
 
-The second of the October plan's five TikTok-only quick pieces, and the first
-built entirely from freeze frames.
+The second of the October plan's five TikTok-only quick pieces — and **no longer
+a quick piece in form**. v3 adds a voiceover at her request, which takes it out
+of the silent, prompt-card-first format the guide sets for these and into
+something closer to a short Reel built from stills.
 
 | | |
 | --- | --- |
-| `cancellation-tiktok.mp4` | 1080x1920, ratio exactly 0.5625, 30 fps, H.264 high, CRF 19, `+faststart` |
-| Duration | 16.00s |
-| Audio | **silent** — a quick piece has no voiceover |
+| `cancellation-tiktok.mp4` | 1080x1920, ratio exactly 0.5625, 30 fps, H.264 high, CRF 19, `+faststart`, AAC 192k at 48 kHz |
+| Duration | 16.39s |
+| Voiceover | **-14.0 LUFS**, true peak -1.3 dBFS |
+
+## Three versions, and what changed
+
+| | |
+| --- | --- |
+| v1 | Four freeze frames, silent, prompt card first, highlights at source size |
+| v2 | Highlighted passages lifted out as strips over a blurred frame |
+| v3 | Her 39-word voiceover, opens on the takeaway, **no prompt card** |
+
+v3 drops the opening prompt card entirely and opens on the cancellation table
+with the 89-60 day row marked, under the biggest line in the piece. The prompt
+moves to the caption, which is where the guide wants it anyway.
+
+## Loudness
+
+The two-pass `loudnorm` stalled at **-15.6 LUFS** with the true peak pinned at
+-1.5 — the crest factor is high and the peak ceiling binds before the target
+does. So the gain is applied explicitly, +9.7 dB, with `alimiter` at
+`level=0` catching the peaks; without `level=0` it renormalises straight back to
+full scale and the limiting looks broken. Measured on the finished export:
+**-14.0 LUFS**, exactly on target.
+
+The video runs 16.60s and the mux is `-shortest`, so the piece ends on the last
+word at 16.39s rather than on a silent tail.
 
 ## She asked whether this was a rebuild. It is not
 
@@ -36,13 +62,16 @@ ever moves by scrolling, and it is what keeps dense text readable at phone size.
 
 | Beat | Source | On screen |
 | --- | --- | --- |
-| 0.00-3.00 | 0.0 | the prompt, held three seconds |
-| 3.00-7.00 | 13.0 | the deposit sits **on top of** the fee |
-| 7.00-11.00 | 15.0 | $21,250 + $63,750 = $85,000 |
-| 11.00-16.00 | **25.5** | 75% at 60 days becomes an effective 100% |
+| 0.00-3.00 | 13.0 | the cancellation table, 89-60 day row marked, under "This contract says 75%. It actually charges 100%." |
+| 3.00-8.00 | 13.0 | the deposit sits **on top of** the fee |
+| 8.00-12.00 | 15.0 | $21,250 + $63,750 = $85,000 |
+| 12.00-end | **25.5** | 75% at 60 days becomes an effective 100% |
 
 Hard cuts, not dissolves: the brief gives exact boundaries and a dissolve would
 soften them.
+
+The opening beat shows the whole table but marks only one row — the build takes
+separate "what to show" and "what to highlight" boxes for exactly this.
 
 ## One crop for every beat
 
@@ -85,8 +114,8 @@ Her brief: nothing that matters in the top 12%, the bottom 25%, or the right
 at 47.5% of the frame; the build **asserts** both rather than trusting the
 arithmetic, and fails rather than shipping a frame that breaks them.
 
-The prompt card at 0:00 is left as it was, per "keep everything else" — worth
-knowing that its first line does sit inside the top 12%.
+The prompt card is gone in v3, which also removes the one frame whose text sat
+inside the top 12%.
 
 ## The last beat is taken at 25.5, not 26.0
 
@@ -119,7 +148,10 @@ background blur removes it anyway.
 
 ## Caption
 
-`build/caption-tiktok.txt`, her wording. **One change**: her text ended
-`#eventplanningtips #` with a bare hash and no fourth tag, so it is completed to
-`#eventplanner`, which is the fourth tag the guide uses on every quick piece.
-Flagged to her rather than silently fixed.
+`build/caption-tiktok.txt`, her wording, unchanged across v2 and v3. **One
+change from what she sent**: her text ended `#eventplanningtips #` with a bare
+hash and no fourth tag, so it is completed to `#eventplanner`, the fourth tag
+the guide uses on every quick piece. Flagged to her rather than silently fixed.
+
+The prompt stays in the caption, which matters more in v3 than it did before —
+it is now the only place the prompt appears.
