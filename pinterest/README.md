@@ -132,7 +132,21 @@ hasn't been done already", and it had.
 
 ## Still outstanding, and the author's to do
 
-- **Rewrite the six existing pin descriptions** (the Sep 13-22 pins).
+- **Rewrite the six existing pin descriptions** (the Sep 13-22 pins). Listed
+  the account on 2026-10-06: still untouched, and three of them are worse than
+  "needs a rewrite".
+  - `1148629079995092117` (Sep 14) has **no title, no link and a single space
+    for a description**. It is a dead pin sitting on the profile.
+  - `1148629079995007641` (Sep 13) links to `sahibaanandpaintal.etsy.com` with
+    **no UTM tag**, and `1148629079995739314` (Sep 22) links with `?etsrc=sdt`,
+    also untagged. Neither will ever show up as Pinterest traffic.
+  - `1148629079995092123` (Sep 14) does carry a tag, `utm_content=old_blank`.
+    Nothing here wrote that, so it came from the Mac queue or an in-app edit.
+
+  All four are **Idea pins** (`creative_type: IDEA`), and `pin_edit` is refused
+  for this app, so every one of these is an in-app fix only. Deleting the dead
+  pin is possible from here — the connection can delete — but it is permanent,
+  so it waits for the author to say so.
 - The profile's website is a single listing URL rather than the shop root.
   The guide's Sep 30 Composio note treats that as sufficient, so this is a
   preference rather than a task.
