@@ -132,12 +132,39 @@ hasn't been done already", and it had.
 
 ## Still outstanding, and the author's to do
 
-- **Claim the Etsy shop in Pinterest settings.** Affects attribution on
-  everything, including pins already up.
 - **Rewrite the six existing pin descriptions** (the Sep 13-22 pins).
 - The profile's website is a single listing URL rather than the shop root.
+  The guide's Sep 30 Composio note treats that as sufficient, so this is a
+  preference rather than a task.
+- ~~Claim the Etsy shop in Pinterest settings.~~ **Dropped 2026-10-06**: the
+  guide records that the Etsy claim option no longer exists in Pinterest
+  settings, and that the profile website linking to the $5.99 listing covers
+  it. It was carried here as an open item for a week after the guide had
+  already closed it, so nothing was ever actionable.
 - No pin has `alt_text` — the copy CSV has no column for it. Worth adding
   for accessibility and search; would need generating from the descriptions.
+
+## The schedule runs dry after Wed 7 Oct (checked 2026-10-06)
+
+`pin_12_whatyouget` on Wed 7 is the last scheduled pin. The guide wants two a
+day through the **Tue 14 Oct** review, so **Oct 8-14 needs fourteen more** and
+none exist.
+
+The blocker is copy, not images. The guide's Pinterest section says a **batch of
+15 pins was due Mon 5 Oct** and that `pin_13` (planner's kit) and `pin_14`
+(aisle) "are already cropped to 2:3 and count toward it" — but the doc carries
+**no titles, descriptions or links for either**, and the batch itself never
+landed. Checked the live doc on 2026-10-06: that one sentence is its only
+mention of them.
+
+So both stay unscheduled. Do not draft their copy here: these are
+customer-facing pins on a product account, the copy is the author's, and
+**nothing posted can be edited afterwards** at this access tier.
+
+The pin sources the guide lists in build order are still unused and would cover
+the fourteen: the eight Etsy listing images, individual sample pages (each page
+its own pin), the printed-book photos, and the partially-coloured walkie-talkie
+page.
 
 ## The Mac's scheduled tasks were running a second, pre-v4 queue (2026-10-01)
 
@@ -186,6 +213,8 @@ tier.** Pinterest posting runs from the cloud session only.
 | 2026-10-04 | `pin_10_coloured` | Adult coloring pages | `1148629079996771404` |
 | 2026-10-05 | `pin_03_cake` | Adult coloring pages | `1148629079996849379` |
 | 2026-10-05 | `pin_11_gift` | Bridal shower gifts | `1148629079996849380` |
+| 2026-10-06 | `pin_06_table` | Wedding planning printables | `1148629079996935180` |
+| 2026-10-06 | `pin_09_printed` | Wedding planning printables | `1148629079996935181` |
 
 Both Oct 2 pins read back live on `calmbeforetheaisle`, right board, title,
 description and tagged link exactly as this directory's schedule CSV holds
