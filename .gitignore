@@ -3,3 +3,11 @@
 # get copied here to be sent. They are working files, not deliverables —
 # finished cuts live in reels/<date>-<slug>/ and are committed there.
 .tmp-out/
+
+# Her raw conference footage. The repo is public - raw.githubusercontent URLs
+# are how Meta and Pinterest fetch from it - so source media with faces, a
+# venue or third-party branding in it does not belong here. Finished cuts only.
+reels/*/source/*.mov
+reels/*/source/*.jpg
+reels/*/source/*.jpeg
+reels/*/source/*.png
