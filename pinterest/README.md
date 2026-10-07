@@ -160,9 +160,11 @@ hasn't been done already", and it had.
 
 ## The schedule runs dry after Wed 7 Oct (checked 2026-10-06)
 
-`pin_12_whatyouget` on Wed 7 is the last scheduled pin. The guide wants two a
-day through the **Tue 14 Oct** review, so **Oct 8-14 needs fourteen more** and
-none exist.
+`pin_12_whatyouget` went up on Wed 7 Oct and was the last scheduled pin, so
+**the schedule is now empty**. All twelve of the batch built on Sep 29 are
+confirmed live, each read back against its CSV row. The guide wants two a day
+through the **Tue 14 Oct** review, so **Oct 8-14 needs fourteen more** and none
+exist.
 
 The blocker is copy, not images. The guide's Pinterest section says a **batch of
 15 pins was due Mon 5 Oct** and that `pin_13` (planner's kit) and `pin_14`
@@ -171,7 +173,8 @@ The blocker is copy, not images. The guide's Pinterest section says a **batch of
 landed. Checked the live doc on 2026-10-06: that one sentence is its only
 mention of them.
 
-So both stay unscheduled. Do not draft their copy here: these are
+Re-read the live doc on 2026-10-07, after pin_12 posted: unchanged, same single
+sentence, still no copy. So both stay unscheduled. Do not draft their copy here: these are
 customer-facing pins on a product account, the copy is the author's, and
 **nothing posted can be edited afterwards** at this access tier.
 
@@ -229,6 +232,7 @@ tier.** Pinterest posting runs from the cloud session only.
 | 2026-10-05 | `pin_11_gift` | Bridal shower gifts | `1148629079996849380` |
 | 2026-10-06 | `pin_06_table` | Wedding planning printables | `1148629079996935180` |
 | 2026-10-06 | `pin_09_printed` | Wedding planning printables | `1148629079996935181` |
+| 2026-10-07 | `pin_12_whatyouget` | Bridal shower gifts | `1148629079997014987` |
 
 Both Oct 2 pins read back live on `calmbeforetheaisle`, right board, title,
 description and tagged link exactly as this directory's schedule CSV holds
