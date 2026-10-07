@@ -56,9 +56,10 @@ question list.** They do not line up: the bank also holds extras she adds by
 hand, such as item 16 on 2026-09-30 ("They were told exactly which entrance.
 They still used the wrong one."), which answers no daily question. On
 2026-09-30 the bank ran 1-16, so the next item was 17 while only three daily
-questions had been answered. As of 2026-10-04 it runs **1-24** (17-19 came from
+questions had been answered. As of 2026-10-07 it runs **1-25** (17-19 came from
 her 2007 internship paper; 20-22 from her Oct 4 budget answer; 23-24 from her
-Oct 4 site-visit answer), so the next new item is 25.
+Oct 4 site-visit answer; 25 from her Oct 7 runny-eggs remark), so the next new
+item is 26.
 
 **One answer can be several items.** Her Oct 4 answer to "the most common
 reason an event budget goes over" named three distinct causes — no contingency
@@ -127,6 +128,12 @@ with the vendor quotes pair, both exact.
 
 - **1080x1920, ratio exactly 0.5625.** Verify with ffprobe before calling an
   export finished; never leave raw screen-recording dimensions.
+- **Check `stream_side_data=rotation` before planning any crop on a phone
+  clip.** On 2026-10-07 both of her conference clips reported 1920x1080 and read
+  as landscape, which would have meant a 608-wide centre slice upscaled 1.78x.
+  They carry `rotation=-90` and decode as 1080x1920 — already the output frame.
+  `-show_entries stream=width,height` alone is misleading for anything shot on a
+  phone.
 - **Compute the crop from the source, don't reuse numbers.** Height =
   width / 0.5625, and set the y-offset so the status bar and the red
   recording dot fall off the top while the ChatGPT input bar stays at the
@@ -275,6 +282,20 @@ Two honest notes on applying these, from the build they came out of:
   "event planner", and Round 5 drifted to four weddings in a row.
 - Use only the author's uploaded footage. No stock, no generated visuals.
   Their own output files (a floor plan PNG, say) are fine when they send one.
+- **Her raw footage never goes into this repo. The repo is public** — the
+  `raw.githubusercontent.com` URLs Meta and Pinterest fetch from only work
+  because it is — so committing source media publishes attendees' faces, a
+  named venue and any third-party branding in frame. Only finished cuts belong
+  here. `.gitignore` carries the rule as of 2026-10-07, after a commit of her
+  conference b-roll was correctly blocked as an out-of-place publication; it had
+  been staged purely to give Drive a URL to fetch from, which is not a good
+  enough reason.
+- **So raw source cannot be filed to Drive from here.** The upload-from-URL
+  route needs a public URL, and the inline routes are base64 — a 1.5 MB photo
+  becomes 2 MB of characters and `GOOGLEDRIVE_UPLOAD_FILE` caps at 5 MB and
+  wants an `s3key` rather than a path. **Finished cuts still upload normally**,
+  because those are committed. Anything else she wants archived in Drive, she
+  adds from her phone.
 
 ## Posting
 
