@@ -276,8 +276,16 @@ Two honest notes on applying these, from the build they came out of:
 - **The build-story format is the one being tested now.** The best Instagram
   post of the week by a distance was the coloring book build story — 90 views,
   79 reach, against a weekly average of 29. Not a demo: a personal, honest
-  account of making something, including what went wrong. Oct 7 ("The one
-  thing I stopped using AI for") is the piece that tests whether it repeats.
+  account of making something, including what went wrong. The AI-makes-mistakes
+  piece is what tests whether it repeats; it **moved from Wed 7 to Fri 9** and
+  Headcount moved to the following week.
+- **"B-roll of real work" means the artefact the piece is about.** The Oct 7
+  build used her conference footage — an empty ballroom, a corridor, a drinks
+  table — and she rejected it: "No this isn't good content." The execution was
+  fine; the footage was generic, and a build story is personal by definition.
+  When a piece is about a seating chart, a floor plan or a budget, the footage
+  has to show **that artefact**. Check what the voiceover is about before
+  accepting whatever footage is to hand, and say so rather than building it.
 - **No more than two wedding-specific pieces in any seven.** The account is
   "event planner", and Round 5 drifted to four weddings in a row.
 - Use only the author's uploaded footage. No stock, no generated visuals.
