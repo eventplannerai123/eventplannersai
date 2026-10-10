@@ -8,6 +8,11 @@
 # are how Meta and Pinterest fetch from it - so source media with faces, a
 # venue or third-party branding in it does not belong here. Finished cuts only.
 reels/*/source/*.mov
+reels/*/source/*.mp4
 reels/*/source/*.jpg
 reels/*/source/*.jpeg
 reels/*/source/*.png
+
+# Freeze frames pulled from the source recording at build time. Regenerable,
+# and they are raw source rather than finished output.
+reels/*/build/frames/

@@ -1,0 +1,5 @@
+Doors at 7pm — every vendor's arrival time, worked backwards.
+
+Prompt: "Doors open at 7pm for a 200-person evening event in a hotel ballroom: a one-hour cocktail hour with passed hors d'oeuvres and a full open bar, then a plated three-course dinner at 8pm at 20 rounds of ten. The venue allows load-in from 1pm. Vendors: caterer, bar, AV (projector, two mics and a DJ), florist (centerpieces for 20 tables), rentals (linens and chairs) and a photographer. Work backwards from doors and give me each vendor's arrival time, how long their setup takes, and the order they go in so nobody is in anyone's way."
+
+#aiforeventplanners #eventprofs #eventplanningtips #eventplanner

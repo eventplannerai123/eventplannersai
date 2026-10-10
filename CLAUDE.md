@@ -58,8 +58,10 @@ They still used the wrong one."), which answers no daily question. On
 2026-09-30 the bank ran 1-16, so the next item was 17 while only three daily
 questions had been answered. As of 2026-10-07 it runs **1-25** (17-19 came from
 her 2007 internship paper; 20-22 from her Oct 4 budget answer; 23-24 from her
-Oct 4 site-visit answer; 25 from her Oct 7 runny-eggs remark), so the next new
-item is 26.
+Oct 4 site-visit answer; 25 from her Oct 7 runny-eggs remark; 26 she added
+herself on Oct 7, "Every conference has the dry sandwich lunch"), so the next
+new item is 27. **She adds items by hand, so re-read the bank's highest number
+from the live doc rather than trusting this line.**
 
 **One answer can be several items.** Her Oct 4 answer to "the most common
 reason an event budget goes over" named three distinct causes — no contingency
@@ -172,9 +174,17 @@ things below rather than sitting alongside them, so read this block first.
    carry the whole story alone. **This ends the silent quick piece.** The Oct 6
    cancellation piece was built silent to the old spec and she said it "made no
    sense without sound"; the guide was rewritten the same day.
-2. **Open on the biggest takeaway, not on the prompt. The prompt goes in the
-   caption.** So the opening prompt card is gone, and so is opening on the send
-   tap.
+2. **Tell it in order: the prompt first as the setup** (what she asked, zoomed
+   on the question), then the key lines of the answer, then the biggest
+   takeaway as a big overlay at the end. **Never cut the prompt — "a video
+   without the original prompt makes no sense" (Sahiba, Oct 5).**
+   **This file had this rule backwards from Oct 5 to Oct 10**, recorded as
+   "open on the biggest takeaway, not on the prompt", which is its opposite.
+   Re-read from the live guide on 2026-10-10 and corrected. Nothing was
+   mis-built on it — the Oct 6 rebuild opened on the prompt because her brief
+   said so, and the Oct 7 piece had no prompt to show — but it would have
+   wrecked the next quick piece. **Read rule 2 from the guide, not from
+   memory.**
 3. **Zoom: every highlighted line fills about 85% of the width, in the middle of
    the frame. Freeze frames, never scrolling footage.**
 4. **Safe zones for TikTok and Reels: nothing important in the top 12%, the
@@ -194,10 +204,11 @@ Two honest notes on applying these, from the build they came out of:
   it: lift the passage onto its own panel and throw the rest of the frame out of
   focus hard. At a light blur the same sentence stays legible behind the panel
   and the frame looks like two copies of itself.
-- **Rule 2 does not retire the opening-shot check, it redirects it.** The cut no
-  longer opens on the prompt, so a recording that starts after the send tap is
-  no longer a problem. What still matters is that the recording reaches the
-  takeaway cleanly.
+- **Rule 2 makes the opening-shot check matter more, not less.** The cut opens
+  on the prompt, so the recording still has to show it. A recording that starts
+  after the send tap is still a problem, and the sent prompt bubble is usually
+  the better frame to open on anyway — it holds the whole prompt, where the
+  input box holds only the first few lines.
 
 ## Timing rules
 
@@ -250,13 +261,15 @@ Two honest notes on applying these, from the build they came out of:
   plan's six Instagram briefs continue this — each specifies a hook overlay
   at 0:00-0:02 and nothing else. The two-overlay rule is the written default;
   in practice every current brief overrides it down to one.
-- **The quick-piece format was rewritten on 2026-10-05** and is no longer the
-  silent, prompt-card-first thing it was. It is now **15-20s**, opens on the
-  biggest takeaway as a big overlay for the first three seconds, then 2-3 key
-  lines of the answer as zoomed, highlighted freeze frames, with a **30-40 word
-  voiceover this session writes from the takeaway** and shows her with the edit.
-  No scrolling, no end card. The caption's first line states the takeaway, then
-  the full prompt as typed, then four hashtags, no CTA.
+- **The quick-piece format was rewritten on 2026-10-05** and is no longer
+  silent. It is **15-20s**: open on the prompt as the setup (0:00-0:04, zoomed
+  on the question, with an overlay saying what was asked), then 2-3 key lines
+  of the answer as zoomed, highlighted freeze frames, then the biggest takeaway
+  as a big overlay at the end. A **30-40 word voiceover this session writes
+  from the takeaway**, shown to her with the edit. No scrolling, no end card.
+  The caption's first line states the takeaway, then the full prompt as typed,
+  then four hashtags, no CTA. **Quick pieces are TikTok-only, so they get one
+  cut, not two.**
 - **Never post both cuts to the same platform** — near-identical posts
   split engagement.
 - Hooks must name a concrete scenario, number or timeframe immediately.
