@@ -679,10 +679,11 @@ board ids, the Drive folder, the schedule CSV. The parts that govern:
   even a one-line scroll offset, so check contiguity by **reading the text**
   at each boundary instead; a seam of a line or two reads as ordinary
   scrolling.
-- **Superseded 2026-10-05 for the cut, not for the recording:** the cut now
-  opens on the takeaway, never on the prompt, so a source that starts after the
-  send tap no longer costs anything. The note below is kept because it still
-  describes what she films and what to look at before choosing an opening.
+- **The note below still stands in full.** It was marked superseded on
+  2026-10-05 on the strength of this file's own mis-reading of rule 2 — "the
+  cut now opens on the takeaway, never on the prompt". The guide says the
+  opposite, so the opening shot matters as much as it ever did. Un-superseded
+  2026-10-10.
 - The recording is supposed to start with the prompt sitting in the input
   box and the send tap on camera. Three recordings have begun after the tap
   (the third on Sep 25, where the author said to run with it). Flag it
@@ -707,6 +708,13 @@ board ids, the Drive folder, the schedule CSV. The parts that govern:
   and **verify the hook on the exported frames**, never from the command.
   (The Sep 26 script builds the card as a timed stream instead, which is
   also fine — that export was checked and does render.)
+- **Leave ChatGPT's floating scroll-to-bottom button in frame** (author,
+  2026-10-10: "you dont need to blur it"). It sits around y 1772-1892 of the
+  output, inside the bottom 25% that TikTok's caption covers. Both removals
+  are worse than the button: a boxblur patch over black-on-white text reads as
+  a censor smudge, and cropping above it (source y 2205) forces the width from
+  1161 down to 1062, which clipped the "K" off "Key rule" on Oct 10. She had
+  asked for it gone on Oct 6; this supersedes that.
 - **`alimiter` undoes its own limiting unless you pass `level=0`.** Its
   `level` option (auto level) defaults to true and renormalises the output
   back to full scale, so the audio clips at 0.0 dBFS however low `limit` is
