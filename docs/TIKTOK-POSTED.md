@@ -15,7 +15,7 @@ it is recorded here.** Nothing else is reliable.
 and caption went to her and nothing has come back — **not** that it is live, and
 never a reason to treat the piece as unposted either.
 
-As of 2026-10-10 **every piece handed over so far is confirmed live.** The
+As of 2026-10-10 **every piece handed over so far is confirmed live**, except the Oct 11 piece, which is scheduled rather than posted. The
 back catalogue is finished: the Sep 14 floor plan, Sep 20 vendor contract and
 Sep 22 coloring book build story were the last three, and all three are up.
 
@@ -28,6 +28,7 @@ Sep 22 coloring book build story were the last three, and all three are up.
 | 2026-10-05 | Hidden fees carousel, as a photo post | **confirmed** 2026-10-05 — "Hidden fees" |
 | 2026-10-06 | Cancellation clause quick piece | **confirmed** 2026-10-06 — "Tik tok posted" |
 | 2026-10-10 | Timeline backwards from doors quick piece | **confirmed** 2026-10-10 — "tik tok and the instagram piece has been posted" |
+| 2026-10-11 | Headcount to floor space quick piece | **scheduled** — she scheduled it on 2026-10-10 to post Oct 11. Not yet confirmed live. |
 | date unknown | Vendor quotes cut | **confirmed** 2026-10-04 — "vendor qoutes was posted" |
 | date unknown | Centerpieces (DIY vs florist) | **confirmed** 2026-10-04 — "Centerpieces have also posted" |
 
@@ -51,6 +52,10 @@ nothing went out.
 
 ## Rules
 
+- **Scheduled is not posted.** From 2026-10-10 she also schedules uploads in
+  the TikTok app ahead of time. A scheduled piece gets its own row and stays
+  that way until she says it went out — a schedule can be edited, moved or
+  silently fail, and nothing reports back here either way.
 - **Never offer a piece as "unposted" from a schedule line.** Check here, and if
   it is not confirmed, ask.
 - A piece can be live before its planned date. The calendar says when something
