@@ -15,7 +15,7 @@ it is recorded here.** Nothing else is reliable.
 and caption went to her and nothing has come back — **not** that it is live, and
 never a reason to treat the piece as unposted either.
 
-As of 2026-10-06 **every piece handed over so far is confirmed live.** The
+As of 2026-10-10 **every piece handed over so far is confirmed live.** The
 back catalogue is finished: the Sep 14 floor plan, Sep 20 vendor contract and
 Sep 22 coloring book build story were the last three, and all three are up.
 
@@ -27,6 +27,7 @@ Sep 22 coloring book build story were the last three, and all three are up.
 | 2026-10-04 | Bar quantities quick piece | **confirmed** 2026-10-05 — "All are posted" |
 | 2026-10-05 | Hidden fees carousel, as a photo post | **confirmed** 2026-10-05 — "Hidden fees" |
 | 2026-10-06 | Cancellation clause quick piece | **confirmed** 2026-10-06 — "Tik tok posted" |
+| 2026-10-10 | Timeline backwards from doors quick piece | **confirmed** 2026-10-10 — "tik tok and the instagram piece has been posted" |
 | date unknown | Vendor quotes cut | **confirmed** 2026-10-04 — "vendor qoutes was posted" |
 | date unknown | Centerpieces (DIY vs florist) | **confirmed** 2026-10-04 — "Centerpieces have also posted" |
 
@@ -34,6 +35,19 @@ The two with no date went up earlier than the plan plotted them: the vendor
 quotes cut was scheduled for Tue 13 Oct, and the centerpieces recording was
 never on the calendar at all. Neither is a problem — it just means **the plan's
 dates are not evidence**.
+
+## Stories and trials cannot be checked from here
+
+In the same message she said "the instagram piece has been posted". The feed
+was read back and its most recent post is still the Oct 5 hidden-fees carousel,
+so it was not a feed post. Sat 10's plan has no Instagram Reel at all — only the
+then-vs-now **Story** with the receipts poll — so that is what she meant.
+
+Worth writing down because it will recur: **Stories and Trial Reels do not
+appear in `INSTAGRAM_GET_IG_USER_MEDIA`.** A Story expires in 24 hours and a
+trial is withheld from the grid by design. So for those two, her word is the
+only record there is, and the absence of a feed post is not evidence that
+nothing went out.
 
 ## Rules
 
