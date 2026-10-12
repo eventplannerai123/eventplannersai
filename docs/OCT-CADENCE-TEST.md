@@ -164,3 +164,68 @@ most likely to matter", and then places it outside the plan.
 It is the only lever never tried. Running it during these two weeks muddies
 attribution, but per the section above, attribution is already unavailable.
 Recorded here so that trade-off is a decision rather than an oversight.
+
+---
+
+# THE RESULT (read 2026-10-12)
+
+All three figures are Instagram **Viewers** — deduplicated unique accounts — so
+both sides are finally the same unit.
+
+| Week | Viewers | Instagram feed posts |
+| --- | --- | --- |
+| Mon 22 – Sun 28 Sep (baseline) | **203** | 7 |
+| Thu 1 – Wed 7 Oct | **64** | 3 |
+| Thu 8 – Wed 14 Oct (part week) | **27** so far | **0** |
+
+## What it says
+
+**Three a week did not beat seven a day. It was about a third of it.** 203 to
+64 is **−68%**, against a post count that fell −57%. Per post it also fell:
+29.0 down to 21.3. So posting less lost reach roughly in proportion to the
+posts dropped, and then a bit more.
+
+Under the pre-registered rule that is the "neither week beats 201" row:
+**back to daily.**
+
+## Why it worked out that way — the overlap was never there
+
+The baseline week's seven posts reached 79, 38, 28, 19, 16, 13 and 8 accounts,
+summing to 201. The deduplicated weekly figure for the same week is **203**.
+
+They are the same number. That means the posts' audiences **barely overlapped
+at all** — practically nobody saw two of them. (203 is marginally higher than
+201 because the weekly figure also counts Stories.)
+
+This retires the worry recorded above about summed-versus-deduplicated numbers:
+on this account, with this audience size, the two are equivalent, because reach
+is effectively **additive in posts**. Each post found a fresh set of people.
+
+And it explains the result mechanically rather than as a mystery. If reach is
+additive in posts, then cutting posts cuts reach, and no amount of posting less
+can concentrate an audience that was never doubling up in the first place. The
+hypothesis behind the test — that fewer, better posts would reach more people
+in total — needed overlap to exist. It did not.
+
+## The one caveat, stated plainly
+
+**Week two is void as a test of the cadence.** It carries **zero** Instagram
+feed posts: Wed 7 was cancelled, and Fri 9 was never built because the footage
+did not arrive. Its 27 viewers measure a week of Stories only, not a week of
+three posts. It should not be read as "three a week got 27".
+
+That does not rescue the result. Week one *did* run the treatment — three
+posts, as designed — and it came in at 64 against 203. One valid week, and it
+failed by a wide margin.
+
+## What this does and does not establish
+
+It does establish that **three a week reaches far fewer people than seven a
+week** on this account, and that the mechanism is additive reach.
+
+It does **not** establish that daily posting is good, or that the September
+numbers were healthy. Reach was falling through the baseline week too — 79 down
+to 8 across those seven days. Going back to daily restores volume; it does not
+fix whatever was causing the per-post decline. Both things were true at once and
+this test only measured one of them.
+
