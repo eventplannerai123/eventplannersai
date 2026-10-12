@@ -45,6 +45,39 @@ Read and write were both verified on 2026-09-30 through Composio's
   an append becomes a bullet, and deleting its text leaves an empty bullet
   behind. Insert into the right section instead.
 
+**Cross tasks off in the doc as they are finished** (her instruction,
+2026-10-12: "as you go along in the guide can you start crossing off the things
+you have completed"). The guide's own Oct 1 convention: every task under YOU and
+CLAUDE CODE is a checkbox, she ticks hers, and "Claude Code and Claude.ai can't
+tick boxes through the API, so when they finish a task they strike the line
+through and add '✅ done' with the date. A struck-through line means done,
+whoever did it." So check for strikethrough before starting anything.
+
+- `GOOGLEDOCS_REPLACE_ALL_TEXT` **cannot do this** — it only changes text, and
+  the convention needs real strikethrough formatting. Use
+  `GOOGLEDOCS_UPDATE_EXISTING_DOCUMENT` (batchUpdate) with an `insertText` for
+  the marker and an `updateTextStyle` carrying `strikethrough: true`.
+- Index ranges come from `GOOGLEDOCS_GET_DOCUMENT_BY_ID`. **Walk tables too** —
+  a plain pass over `body.content` paragraphs found 851 of the doc's 1034 and
+  missed the task lines entirely, because much of the guide sits in table cells.
+- Per line, one batch of two requests: `insertText` at `end - 1` (before the
+  paragraph's newline), then `updateTextStyle` over `start` to
+  `end - 1 + len(marker)`. The marker `" ✅ done Oct 12"` is 14 units; compute it
+  rather than hard-coding. Operations run in order, so the style range is
+  measured against the post-insert text.
+- **Do the highest index first.** An insert shifts every index after it, so
+  working top-down invalidates the ranges you already measured.
+- Verify by re-reading the paragraph and checking `textStyle.strikethrough` is
+  `True`, not by trusting the batchUpdate reply — it returns empty objects on
+  success either way.
+
+**Only strike what actually happened as written.** On 2026-10-12 her own line
+"Record the site-report screen recording — PLANNED TRIAL, upload it yourself"
+was left unstruck: she recorded it, but the piece had become the event-brief
+piece and she uploaded it as a regular Reel, not a trial. Half-done against a
+changed brief is hers to judge. The TikTok line stayed unstruck too, because
+she had only scheduled it, and **scheduled is not posted**.
+
 **Question of the day.** Ask it at the start of every session, plus any
 earlier ones still unanswered, and write her answer straight into the doc's
 career content bank as a new numbered item — hook, the true story, the AI
