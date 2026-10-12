@@ -1,0 +1,7 @@
+If the budget is $100,000, $5,000 of it should have no name on it.
+
+This draft had $2,000 in contingency. ChatGPT caught it: 2% of the total, $3,000 short.
+
+Prompt: "Read this draft budget for a 250-guest client dinner. Is there a contingency line? Calculate 5% of the total, flag it if the line is missing or under, and tell me how much I'm short."
+
+#aiforeventplanners #eventprofs #eventplanningtips #eventplanner
