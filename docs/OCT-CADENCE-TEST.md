@@ -55,6 +55,18 @@ So the deduplicated figure exists only in Insights in the app. Ask her for it
 rather than reconstructing it, and do not accept a summed number from any
 source as a substitute.
 
+**Views is not reach, and the app now leads with views.** On 2026-10-12 the
+first number that came back was "220 views". Instagram's 2024 Insights redesign
+made **Views** the headline metric, so it is the number the dashboard shows
+first and the easy one to read off. It counts plays, including the same person
+twice. **Accounts reached counts each account once**, and that is the metric
+this test is written on — the baseline of 201 is a reach figure, so comparing
+220 views against it would be comparing two different things and would read as
+a pass when it might not be one.
+
+Ask for **accounts reached** by name, and if a number arrives without a label,
+ask which metric it is before writing it down.
+
 **Where she finds it:** Instagram app → her profile → **Professional dashboard**
 → **Accounts reached** → change the date range to the week in question. Both
 weeks are inside Insights' 90-day retention, so Thu 1 – Wed 7 is still
