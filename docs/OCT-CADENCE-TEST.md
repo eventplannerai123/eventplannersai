@@ -38,6 +38,28 @@ So 371 is not a test, it is a guarantee of failure. 201 is the honest bar, and
 it is already a hard one. Recorded here so the softer-looking number is not
 quietly swapped in later either.
 
+## The number cannot be pulled from here (established 2026-10-12)
+
+**Only Sahiba can read it, in the Instagram app.** Tried on Oct 12, a day
+before the second week closes:
+
+- `INSTAGRAM_GET_USER_INSIGHTS` accepts `period` of **`day` or `lifetime`
+  only**. Meta removed the `week` and `days_28` periods from the Insights API,
+  so there is no weekly reach endpoint left to call.
+- Daily reach **can** be fetched, but summing seven days of it is the same
+  error as summing seven posts, in a different shape: an account that saw
+  something on Monday and again on Thursday is counted twice. See the trap
+  below — it applies to days exactly as it applies to posts.
+
+So the deduplicated figure exists only in Insights in the app. Ask her for it
+rather than reconstructing it, and do not accept a summed number from any
+source as a substitute.
+
+**Where she finds it:** Instagram app → her profile → **Professional dashboard**
+→ **Accounts reached** → change the date range to the week in question. Both
+weeks are inside Insights' 90-day retention, so Thu 1 – Wed 7 is still
+readable.
+
 ## The trap that would void the comparison
 
 Instagram's weekly reach counts **each account once**, however many posts that
