@@ -1,5 +1,32 @@
 # Site report reel — 2026-10-05
 
+> **STOP — both voiceovers in `build/` are dead as of 2026-10-12. Do not use
+> them.** The piece changed premise twice over, and the scripts no longer
+> describe what the video will show.
+>
+> 1. **The source material changed.** It is no longer five site-visit photos
+>    plus notes. It is one page of **handwritten client-consultation notes** for
+>    a **200-person cocktail reception** (`handwritten_consultation_notes (1).jpeg`
+>    in her Drive "Event photos"), so the prompt was reworded from a site report
+>    to an **event brief**. Both scripts say "five photos and a page of notes"
+>    and both say "site report".
+> 2. **The firewall hook is gone, and she spotted why.** Nothing in the prompt
+>    would make ChatGPT raise network access, so the hook promised something the
+>    output would never show. That was true of the *original* site-report prompt
+>    too — it asks for power and AV and nothing about connectivity. A hook has to
+>    name something the answer actually contains.
+> 3. **The piece is now the miss, by her decision.** The prompt deliberately
+>    stays open-ended and the expectation is that ChatGPT **will not** surface
+>    network access for corporate laptops. If it misses it, that is the story:
+>    the brief looks complete and leaves out the thing that bites on the day. If
+>    it surfaces it, the piece flips and becomes a straight demo.
+>
+> **So the hook and both voiceovers can only be written after seeing the actual
+> output.** That is the opposite of the standing rule that scripts can be
+> generated before the footage exists — it holds only while the script does not
+> depend on what the answer says. Here it entirely does.
+
+
 Status: **voiceovers generated, moved to Mon 12 Oct, waiting on the author's
 screen recording.**
 
