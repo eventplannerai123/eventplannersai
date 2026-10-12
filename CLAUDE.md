@@ -453,6 +453,23 @@ MCP server; a session without `mcp__Composio__*` tools cannot post at all.
   there. That reasoning is Instagram-only. Facebook is never a trial, so it
   takes the ordinary caption - body, blank line, `AI Prompt: "..."`, blank
   line, hashtags - exactly as on any other day.
+- **A trial day is a Facebook day, and that post runs from here** (author,
+  2026-10-12: "update the guide so that anyday theres a trial reel you will
+  post to facebook"). The guide's own Oct 1 Facebook rule used to except
+  "posts Sahiba uploads herself, such as Trial Reels and Stories"; the trial
+  half of that exception is gone, and only Stories are left. So on a trial
+  day the Instagram upload is hers and the Facebook post is this session's,
+  with the hashtag-bearing caption.
+- **But read the Page feed before every Facebook post.** The in-app "Also
+  share to Facebook" toggle is on for her own uploads. On 2026-10-12 her
+  manual Instagram upload of the event-brief piece appeared on the Page as a
+  reel **12 seconds later**, carrying her Instagram caption verbatim — so
+  Facebook was already done and a post from here would have duplicated it.
+  Facebook has no duplicate protection and a live post cannot be taken back,
+  so `FACEBOOK_GET_PAGE_POSTS` first, then decide from what is actually live.
+  The guide has said since 2026-08-30 not to rely on that toggle — Meta
+  decides whether the cross-post lands as a real video, a plain feed post or
+  a bare cover image — so it is a reason to check, never a reason to skip.
 - **Trial Reels are manual: the Sep 27 and 28 trials do not come through
   here.** Both are planned Instagram trials, edited in the Claude.ai chat and
   uploaded by the author. **Do not post them.** If their content turns up in

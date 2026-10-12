@@ -130,6 +130,19 @@ unambiguous:
 result is ambiguous, read state first (Step 6) and decide from what is
 actually live.
 
+**Read the Page feed before the call, not only after it.** Run the Step 6
+`FACEBOOK_GET_PAGE_POSTS` read *first* and only post if the piece is not
+there. The reason is the in-app "Also share to Facebook" toggle, which is on
+for the author's own uploads: on 2026-10-12 her manual Instagram upload of
+the event-brief Reel landed on the Page as a reel **12 seconds later** with
+her Instagram caption verbatim, before this session had posted anything. The
+post was already live, so the correct action was to publish nothing. A
+pre-check costs one read; a duplicate cannot be undone.
+
+**On a trial day this step still runs** (author, 2026-10-12). The Instagram
+upload is hers, the Facebook post is this session's, and it takes the
+hashtag-bearing caption — subject to the same pre-check above.
+
 ## Step 6 — read both posts back
 
 Required by the standing brief: compare each live caption to the approved

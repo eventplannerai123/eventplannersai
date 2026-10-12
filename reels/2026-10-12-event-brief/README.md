@@ -1,8 +1,34 @@
 # 2026-10-12 — Consultation notes to event brief
 
-The Mon 12 Oct piece, and **both cuts are hers to upload**: the Instagram one is
-a planned Trial (in-app toggle only) and TikTok is always manual. Nothing posts
-from here.
+The Mon 12 Oct piece. Built here, uploaded by her — and it went out as a
+**regular feed Reel, not the planned Trial.**
+
+## What actually went live
+
+| | |
+| --- | --- |
+| Instagram | [reel/DeZij_5KQ56](https://www.instagram.com/reel/DeZij_5KQ56/) — 15:19:57 UTC, `media_product_type: REELS` |
+| Facebook | [reel/3387118554928889](https://www.facebook.com/reel/3387118554928889/) — 15:20:09 UTC, post id `1233196746554445_122115473787449533` |
+
+**The Facebook post was not made from here.** No `FACEBOOK_CREATE_VIDEO_POST`
+call has ever run in this session. It arrived through Instagram's in-app "Also
+share to Facebook" toggle, 12 seconds after her upload, carrying her Instagram
+caption verbatim. She then asked for it to be posted to Facebook; the answer was
+that it was already there, and a second post would have duplicated it on a page
+with no duplicate protection. Nothing was published.
+
+**It was a regular Reel, not a trial.** Two independent signs: it is returned by
+the Instagram media edge, which a trial is not until it is shared to everyone,
+and the Facebook cross-post fired at all — the toggle is unavailable for trials.
+The guide's Mon 12 block specced a PLANNED TRIAL, so this day should be recorded
+as a regular post, per the standing rule that a day is only labelled "Trial
+Reel" after it has actually been posted as one.
+
+**So the live caption is the trial caption**, with no hashtags and with "Prompt
+below." still in it — the version written before she retired that line at 15:16.
+As a regular feed Reel it should have carried the four hashtags. The Instagram
+caption is editable in-app; the Facebook one is a cross-post and would have to
+be edited on the page separately.
 
 | | |
 | --- | --- |
@@ -127,10 +153,16 @@ Two files, and the difference is deliberate.
 - `build/caption-tiktok.txt` — the ordinary layout, four hashtags.
 - `build/caption-instagram-trial.txt` — **identical body, no hashtags.** A trial
   is kept off hashtag pages, so tags do nothing there. That reasoning is
-  Instagram-only; if this piece ever goes to Facebook it takes the hashtags.
+  Instagram-only; a post made to Facebook from here takes the hashtags. The
+  cross-post bypassed that entirely — it copies whatever caption Instagram has.
 
-Both end "Prompt below.", the standing CTA for prompt pieces, and both carry the
-reworded prompt in the body so the post stands on its own.
+Both carry the reworded prompt in the body so the post stands on its own.
+
+Both originally ended "Prompt below.", which she retired at 15:16 on the day
+("we dont need to say prompt below its redundent") as redundant next to the
+`AI Prompt:` line directly beneath it. The files here no longer carry it. **The
+live posts do**, because she had already copied the caption before the change —
+see the live-caption note at the top.
 
 ## The prebuilt voiceovers in `reels/2026-10-05-site-report/` are dead
 
