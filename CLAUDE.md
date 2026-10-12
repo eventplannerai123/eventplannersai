@@ -89,12 +89,16 @@ question list.** They do not line up: the bank also holds extras she adds by
 hand, such as item 16 on 2026-09-30 ("They were told exactly which entrance.
 They still used the wrong one."), which answers no daily question. On
 2026-09-30 the bank ran 1-16, so the next item was 17 while only three daily
-questions had been answered. As of 2026-10-07 it runs **1-25** (17-19 came from
+questions had been answered. As of 2026-10-12 it runs **1-29** (17-19 came from
 her 2007 internship paper; 20-22 from her Oct 4 budget answer; 23-24 from her
 Oct 4 site-visit answer; 25 from her Oct 7 runny-eggs remark; 26 she added
-herself on Oct 7, "Every conference has the dry sandwich lunch"), so the next
-new item is 27. **She adds items by hand, so re-read the bank's highest number
-from the live doc rather than trusting this line.**
+herself on Oct 7, "Every conference has the dry sandwich lunch"; 27-29 from her
+Oct 12 staff-briefing answer), so the next new item is 30. **She adds items by
+hand, so re-read the bank's highest number from the live doc rather than
+trusting this line.**
+
+Write the range with an **en dash**, as the bank does elsewhere ("items 20–22").
+The Oct 12 entry went in with an em dash and had to be corrected.
 
 **One answer can be several items.** Her Oct 4 answer to "the most common
 reason an event budget goes over" named three distinct causes — no contingency
