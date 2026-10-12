@@ -55,6 +55,20 @@ So the deduplicated figure exists only in Insights in the app. Ask her for it
 rather than reconstructing it, and do not accept a summed number from any
 source as a substitute.
 
+**The metric is called "Viewers" in the app (confirmed from her screen,
+2026-10-12).** There is no "accounts reached" label any more. Instagram's
+current Insights has three tabs — Overview, Content, Audience — and the
+deduplicated figure sits on **Overview**, below the headline tiles, under the
+heading **"Views by content type"**, as **Viewers**. The Content tab carries the
+same metric per post, as a "Viewers" sort chip next to "Views".
+
+Reference point from that screen: **681 viewers for Sep 12 – Oct 11**, against
+3,221 views over the same 30 days. Views run roughly 4.7x viewers on this
+account, which is the scale of the double-counting the baseline problem below is
+about.
+
+So: ask her for **Viewers**, on the Overview tab, for the date range wanted.
+
 **Views is not reach, and the app now leads with views.** On 2026-10-12 the
 first number that came back was "220 views". Instagram's 2024 Insights redesign
 made **Views** the headline metric, so it is the number the dashboard shows
