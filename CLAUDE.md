@@ -344,10 +344,22 @@ same week averaged 77 views and grew 62 to 73 followers against Instagram's
 281 to 284: twice the reach and three times the growth on a quarter of the
 base.
 
-**This is a test with a decision point, and the author is hesitant about it.**
-The number that matters is **total weekly Instagram reach, not reach per
-post** — three posts reaching 250 beats seven reaching 200. Decision on **Wed
-14 Oct**.
+**DECIDED 2026-10-12: back to daily. The test failed.** Deduplicated weekly
+viewers went **203 (7 posts) to 64 (3 posts)** — down 68% against a post count
+down 57%, and per-post reach fell too, 29.0 to 21.3. Called two days early
+because the second week carried zero feed posts and could not change it.
+
+The mechanism, which is the part worth keeping: the baseline week's seven posts
+summed to 201 and its deduplicated weekly figure was 203 — **the same number**,
+so their audiences barely overlapped. Reach on this account is **additive in
+posts**. Posting less can only concentrate an audience that is doubling up, and
+this one never was.
+
+It does not follow that daily was working: reach fell 79 to 8 across the
+baseline week itself. Volume and per-post decline are two separate problems and
+this test only measured the first. **Full write-up in
+[`docs/OCT-CADENCE-TEST.md`](docs/OCT-CADENCE-TEST.md).** She is updating the
+guide's cadence section; re-read it before planning a week.
 
 **The decision rule is pre-registered in
 [`docs/OCT-CADENCE-TEST.md`](docs/OCT-CADENCE-TEST.md)** — written 2026-09-30,
