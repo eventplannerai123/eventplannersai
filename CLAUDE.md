@@ -495,8 +495,19 @@ MCP server; a session without `mcp__Composio__*` tools cannot post at all.
 **Never write "Comment [KEYWORD]."** Comment-to-unlock is retired — nine
 keywords across the series returned zero comments between them.
 
-- **Prompt pieces end: "Prompt below."** Shortened guide-wide on 2026-09-28:
-  the previous wording, "The full prompt is in the caption below", appeared
+- **RETIRED 2026-10-12: do not write "Prompt below."** Her words: "we dont
+  need to say prompt below its redundent". She is right — the prompt sits
+  directly underneath, under its own `AI Prompt:` label, so the line points at
+  something already in view. Captions now go straight from the body to the
+  prompt block.
+  **Captions already published keep their original wording**, as always; this
+  is for new ones. The guide still carries "Prompt below" in its per-day caption
+  blocks, so strip it when copying a caption out of the guide until she has
+  edited those.
+
+  The history, kept because it shows the direction of travel: the line was
+  shortened guide-wide on 2026-09-28 from "The full prompt is in the caption
+  below", which appeared
   18 times in the Sep 27 guide and zero times in the Sep 28 one, replaced by
   "Prompt below" in all 16 places. The standing-rules line was changed to
   match, so this is a deliberate edit rather than drift. The point is

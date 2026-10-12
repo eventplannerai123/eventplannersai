@@ -2,8 +2,6 @@ A page of consultation notes in. A 31-point checklist out, and it's genuinely go
 
 Except one line: "confirm internet/Wi-Fi." That's the question everyone asks. It isn't the one that saves you on the day — ask whether the client's laptops can actually get past the venue's firewall.
 
-Prompt below.
-
 AI Prompt: "Here's a photo of my handwritten notes from a client consultation for a 200-person cocktail reception. Turn them into a written event brief: event details, format and agenda, what the venue supplies and what I need to bring in, food and beverage, décor, and a list of everything I still need to confirm with the client or the venue."
 
 #aiforeventplanners #eventprofs #eventplanningtips #eventplanner
