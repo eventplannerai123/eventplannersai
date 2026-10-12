@@ -72,6 +72,35 @@ ask which metric it is before writing it down.
 weeks are inside Insights' 90-day retention, so Thu 1 – Wed 7 is still
 readable.
 
+## The baseline is itself a summed number (found 2026-10-12)
+
+**This is a flaw in the rule above, found before any October number was read,
+and it has to be fixed or the test is biased.**
+
+The baseline is given as "201 — the week to Sun 28 Sep (79, 38, 28, 19, 16, 13,
+8)". Those seven numbers add to exactly 201. They are the **per-post reach** of
+that week's seven posts, taken from the same source as CLAUDE.md's "reach fell
+every day of the week to Sep 28". So **201 is a sum of per-post reach**, which
+is precisely what the section below says must never be compared against a
+deduplicated weekly figure.
+
+Comparing October's deduplicated weekly reach against 201 is biased **against**
+October: the same account seeing two posts counts twice in 201 and once in the
+October figure. The test would under-report October and could fail a cadence
+that actually worked.
+
+**The fix, which follows this file's own stated metric rather than overriding
+it:** read **accounts reached for the baseline week in Insights too**, and
+compare deduplicated to deduplicated on both sides. Sun 28 Sep is inside the
+90-day retention window, so the figure is still readable.
+
+Until that number exists, **201 is not the bar** — it is a different unit. The
+decision on Wed 14 Oct uses the Insights figure for the baseline week, whatever
+it turns out to be, against the Insights figures for the two October weeks.
+
+Recorded now, with no October number in hand, so this is a correction to the
+instrument and not a reaction to a result.
+
 ## The trap that would void the comparison
 
 Instagram's weekly reach counts **each account once**, however many posts that
