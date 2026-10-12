@@ -3,6 +3,30 @@
 The Sun 11 Oct TikTok quick piece. **TikTok only** — she uploads it. There is
 no Instagram post on Sun 11.
 
+## APPROVED for Instagram + Facebook on Tue 13 Oct — not yet posted
+
+She gave the go-ahead on 2026-10-12 ("approved") for this cut to run as the
+**Tue 13** Instagram post, to Instagram and Facebook, with the Sun 11 TikTok
+caption. The guide schedules it there. She is at a conference on Tue 13, so
+this does not need asking again.
+
+**It was not posted on Oct 12 on purpose:** that day's Instagram slot was
+already taken by the event-brief Reel she uploaded herself at 15:19, and a
+second feed post the same day competes with it for the same small pool of
+reach.
+
+**A timer could not be set from this session** — scheduling the wake-up was
+refused by the permission classifier — so the post needs a session on Tue 13.
+Everything is staged:
+
+- file `headcount-floor-space-tiktok.mp4`, raw URL verified resolving at
+  1,370,794 bytes
+- caption `build/caption-tiktok.txt`, md5 `e8fd5f4512e0309d73c4f708dc806dd6`,
+  checked word for word against the live guide's Sun 11 block on Oct 12
+- **read the Facebook page feed before posting.** Her own Instagram upload
+  cross-posted to the Page in 12 seconds on Oct 12 via the in-app toggle, and
+  Facebook has no duplicate protection.
+
 Built a day early: she sent the recording on Oct 10 with "if you wanna get a
 head start".
 
