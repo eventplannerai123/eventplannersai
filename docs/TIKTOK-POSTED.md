@@ -32,7 +32,7 @@ Sep 22 coloring book build story were the last three, and all three are up.
 | 2026-10-12 | Event brief from consultation notes (the Instagram piece's TikTok cut) | **confirmed** 2026-10-12 — "TIK TOK WITH THE NOTES IS DONE" |
 | 2026-10-13 | Contingency carousel, 6 slides as a photo post | **confirmed** 2026-10-14 — "it did". Scheduled Oct 12, fired Oct 13. |
 | 2026-10-14 | AV schedule check | **confirmed** 2026-10-14 — "posted to both and did the review". Instagram went up the same day as a Trial. |
-| 2026-10-15 | The annoyed email, rewritten (quick piece) | **handed over** 2026-10-14 — file and caption sent, nothing back yet |
+| 2026-10-15 | The annoyed email, rewritten (quick piece) | **scheduled** — she scheduled it in the app on 2026-10-14. Not posted until she says it fired. |
 | date unknown | Vendor quotes cut | **confirmed** 2026-10-04 — "vendor qoutes was posted" |
 | date unknown | Centerpieces (DIY vs florist) | **confirmed** 2026-10-04 — "Centerpieces have also posted" |
 
