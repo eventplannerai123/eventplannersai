@@ -71,6 +71,18 @@ whoever did it." So check for strikethrough before starting anything.
   `True`, not by trusting the batchUpdate reply — it returns empty objects on
   success either way.
 
+**Strike it when it becomes true, not only when you do it.** The misses are
+always the same shape: a task finishes on a *later* turn than the one that
+touched it, and the moment passes. On 2026-10-14 an audit found two — the Mon 12
+question of the day, struck only once she answered it two turns later, and the
+Tue 13 TikTok carousel, which stayed "scheduled" until she confirmed it the next
+day. So strike on the confirming message, not on the building one.
+
+**Audit the week's blocks when she asks, and periodically anyway.** Walk every
+task line in the recent day blocks and print struck/unstruck — it takes one
+pass and it is the only way to catch the ones that went true quietly. Her
+instruction is "as you go along", and going along includes going back.
+
 **Only strike what actually happened as written.** On 2026-10-12 her own line
 "Record the site-report screen recording — PLANNED TRIAL, upload it yourself"
 was left unstruck: she recorded it, but the piece had become the event-brief
