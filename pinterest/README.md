@@ -199,6 +199,23 @@ creation time rather than after:
   here, so it stays unwritten rather than invented. Third batch running — worth
   asking her for a column.
 
+### The rest of the queue is scheduled
+
+The four remaining days are set as one-shot wake-ups rather than left to be
+remembered, now that scheduling is permitted from here (she added
+`send_later` to `permissions.allow` on Oct 12):
+
+| Fires | Pins | Trigger |
+| --- | --- | --- |
+| 2026-10-15 13:30 UTC | `pin_13`, `pin_16`, `pin_22` | `trig_019bKjDHgwAVGcdRc3MiK21o` |
+| 2026-10-16 13:30 UTC | `pin_18`, `pin_19`, `pin_25` | `trig_019LVmp6gAZsqmRj9mavZJXL` |
+| 2026-10-17 13:30 UTC | `pin_20`, `pin_23`, `pin_27` | `trig_01NtVsq395gFGQPn2ZTZ65nK` |
+| 2026-10-18 13:30 UTC | `pin_14`, `pin_17`, `pin_24` | `trig_01Pb9KyLRjU3KTHzQceqx79o` |
+
+Each names its own pins rather than deriving them, so a firing cannot post the
+wrong three if the CSV moves. The Sun 18 one also carries the review and the
+"schedule is dry again from Mon 19" flag.
+
 ### The Tue 14 review cannot run as specified
 
 The guide sets a review for **Tue 14 Oct** against "~30 pins across four
