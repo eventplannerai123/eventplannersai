@@ -6,7 +6,7 @@ planned Trial (in-app toggle only), TikTok as always. Nothing posted from here.
 **Both went out on 2026-10-14** ("posted to both and did the review"). The
 Instagram one is a genuine Trial, so this day can be labelled one.
 
-**Trial views land Fri 17 Oct**, 72 hours out. They cannot be read from here —
+**Trial views land Sat 17 Oct**, 72 hours out. They cannot be read from here —
 trials are withheld from `INSTAGRAM_GET_IG_USER_MEDIA`, so her word is the only
 record. A wake-up is set for then (`trig_01ANT5dQVNMMQjtzNiPGoFzX`) to ask her
 for the number and then follow the guide: over 100 views, share it to everyone

@@ -24,3 +24,7 @@ carousels/*/source/*.pdf
 # and they are raw source rather than finished output.
 reels/*/build/frames/
 carousels/*/build/frames/
+
+# Overlay previews — they composite the raw freeze frames, so same rule.
+reels/*/build/preview.png
+carousels/*/build/preview.png
