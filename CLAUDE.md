@@ -777,6 +777,25 @@ board ids, the Drive folder, the schedule CSV. The parts that govern:
   moved to **y=1300**, which sits over the keyboard, carries no information,
   and still clears Instagram's own bottom furniture. Look at the opening
   frames, then pick the y.
+- **Never type highlight coordinates by hand** (author, 2026-10-14: "tighten up
+  the yellow highlights some times they have been off"). They were being read
+  off a y-ruler on a contact sheet and typed in, which is eyeballing: on Oct 14
+  both boxes on one beat landed on body text, and it was only caught after a
+  full render. Use **`tools/cardkit.py`**:
+  `fit_highlight(frame, seed_y, lines=N, up=M)` finds the real text lines in the
+  frame, picks the one at `seed_y`, takes `N` of them, and snaps the box to the
+  actual ink — so the edges follow the glyphs instead of a guess.
+  - **Count lines, do not grow through blank rows.** An earlier version expanded
+    until it hit a gap of N blank rows. That cannot work: on the same capture
+    the leading inside a heading is 18 rows and inside a body paragraph 33, so
+    any one threshold either splits a heading or swallows the next block. The
+    caller knows how many lines it means; the frame knows where they are.
+  - **Look at `preview()` before rendering.** It composites every overlay onto
+    its own beat frame. That is the check that catches a misplaced box without
+    burning an export — the Oct 14 mistake survived until the finished mp4
+    because this step did not exist.
+  - Still verify the hook and the highlights on the **exported** frames too. The
+    preview catches placement; the export catches the `repeatlast` class of bug.
 - **A single-frame PNG overlay needs `repeatlast=1`.** Feeding a hook card
   straight into `overlay` with `eof_action=pass:repeatlast=0` shows it on
   frame one and then drops it — the Sep 25 first build shipped with no hook
