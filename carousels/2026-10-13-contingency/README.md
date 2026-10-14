@@ -1,7 +1,34 @@
 # Contingency carousel — 2026-10-13
 
-Six slides, two sizes. **Hers to post on both platforms** — TikTok photo mode on
-Tue 13, then the Instagram carousel on Wed 14.
+Six slides, two sizes. TikTok photo mode was hers on Tue 13; the Instagram and
+Facebook posts ran from here on Wed 14.
+
+## Published 2026-10-14 to Instagram and Facebook
+
+| Account | Post |
+| --- | --- |
+| Instagram `@aiforeventplanners` | https://www.instagram.com/p/DeenxoVEa60/ |
+| Facebook "The Event Planners AI" | https://www.facebook.com/122100389133449533/posts/122115799191449533 |
+
+Instagram media id `18187136200416002` (`CAROUSEL_ALBUM`, 6 children), Facebook
+post id `1233196746554445_122115799191449533` with 6 photos.
+
+Posted on her explicit go-ahead ("You have permission"), with the Tue 13
+caption. **Both captions `cmp`'d identical** to `build/caption-tiktok.txt` — four
+literal `#`, no `%23`, no "Hashtags:" label. Both platforms were read first; the
+piece was on neither.
+
+**Slide order verified from the alt text, not the images.** Instagram's CDN is
+blocked by this session's network policy, so the six children were read back with
+their `alt_text` and all six came home in the right positions — cover, why it
+goes over, the prompt, the budget, ChatGPT's answer, the rule. Each alt text was
+written for one specific slide, so that pins the order as firmly as the pixels
+would.
+
+**The child-container warning held.** The six ids came back from the batch in a
+non-monotonic order (`...819, ...813, ...822, ...816, ...891, ...888`), exactly
+as the Oct 5 carousel's README warns. The sequence was taken from the results
+array index, never from sorting the ids.
 
 | Set | Size | Goes where |
 | --- | --- | --- |
