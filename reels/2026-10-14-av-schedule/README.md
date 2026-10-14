@@ -1,8 +1,17 @@
 # 2026-10-14 — AV schedule check
 
-The Wed 14 Oct piece, and **both cuts are hers to upload**: the Instagram one
-is a planned Trial (in-app toggle only) and TikTok is always manual. Nothing
-posts from here.
+The Wed 14 Oct piece. **Both cuts were hers to upload** — the Instagram one as a
+planned Trial (in-app toggle only), TikTok as always. Nothing posted from here.
+
+**Both went out on 2026-10-14** ("posted to both and did the review"). The
+Instagram one is a genuine Trial, so this day can be labelled one.
+
+**Trial views land Fri 17 Oct**, 72 hours out. They cannot be read from here —
+trials are withheld from `INSTAGRAM_GET_IG_USER_MEDIA`, so her word is the only
+record. A wake-up is set for then (`trig_01ANT5dQVNMMQjtzNiPGoFzX`) to ask her
+for the number and then follow the guide: over 100 views, share it to everyone
+with the one-tap option; under 100, leave it. Either way the figure goes into
+the guide next to the trial heading and into this file.
 
 | | |
 | --- | --- |
