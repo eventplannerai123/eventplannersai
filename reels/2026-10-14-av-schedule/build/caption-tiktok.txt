@@ -1,0 +1,5 @@
+At my first job, I sent the AV team to lunch during the keynote. The day two and day three AV schedules had been swapped, so the crew was at lunch when they should have been filming. The save: lunch served early, every afternoon speaker moved up about 30 minutes, each one asked in person. Attendees barely noticed. Here's the check that would have caught it.
+
+AI Prompt: "Here's the AV crew schedule and the production schedule for a three-day conference. Compare them day by day and flag every place they don't match: crew on a break during a session that needs them, sessions with no crew assigned, call times after a session starts, and any day where the two schedules look swapped."
+
+#aiforeventplanners #eventprofs #eventplanningtips #eventplanner
