@@ -129,29 +129,48 @@ question asked.
 next unanswered one was **Sun 4 Oct** — the one she asked to be given on
 Sunday. A day whose question is already answered has nothing to ask.
 
-## Finished cuts go to Google Drive (from 2026-10-01)
+## Everything for a post lives in one Drive folder (reorganised 2026-10-14)
 
-Her idea, so she stops saving cuts to a hard drive. **Both cuts of every piece
-are uploaded to Drive once they are pushed**, as part of finishing the build —
-not something to be asked for.
+Drive started on 2026-10-01 as a place for finished cuts, so she stops saving
+them to a hard drive. **On 2026-10-14 the author reorganised it**: a post's
+whole life now sits in one folder — her screen recordings, prompt files and
+photos alongside the finished cuts. **The old Screenrecordings folder is empty
+and no longer used.**
 
-Structure, set by the author on 2026-10-01: a month folder holding **one
-subfolder per day**.
+**Folders go by the date the post goes out, not the date she recorded.** The
+Oct 14 recording of the annoyed-email piece lives in `October 15`, because that
+is when it posts.
 
 | | |
 | --- | --- |
-| Parent | `AI for Event Planners — Reels`, id `1GFs9qwlVHq6Pdo0LEX0TG5lFN4ipmtax` |
+| Parent | `AI for Event Planners — Reels & Screen Recordings`, id `1GFs9qwlVHq6Pdo0LEX0TG5lFN4ipmtax` |
 | Month | `October`, id `1gCWHchI1_mvS7eQiQmGDlp6H8P8i59Qg` |
-| Days | `October 1` … `October 14` exist; create the rest as the schedule reaches them |
-| Naming | `YYYY-MM-DD-slug-instagram.mp4` and `-tiktok.mp4` |
+| Days | `October 1`–`16`, `18`, `21`, `23`, `25`–`30` exist; create the rest as the schedule reaches them |
+| Naming | finished cuts `YYYY-MM-DD-slug-instagram.mp4` and `-tiktok.mp4`; her own files keep their own names |
 
-`October 1` is `1I9q3H4T29ZoMeDt72CYik_ck-oqxhDzG`. Day folder ids are not
-listed here beyond that — look them up with `GOOGLEDRIVE_FIND_FOLDER` under
-the month folder, since Drive allows duplicate names and the id is what
-matters.
+She calls the parent "AI for Event Planners — Reels" in conversation; its real
+title carries "& Screen Recordings" on the end. **The id is what matters** —
+Drive allows duplicate names, so look a folder up rather than matching a string.
+
+`October 1` is `1I9q3H4T29ZoMeDt72CYik_ck-oqxhDzG` and `October 15` is
+`1LTWK7D8rNsRwell3OKUFUPq7K6whUsOY`; the rest are not listed here.
 
 At the start of each month, create the month folder under the parent and its
 day subfolders, and record the month id here.
+
+**`GOOGLEDRIVE_LIST_FILES` silently ignores its `query`.** On 2026-10-14 three
+different `'<id>' in parents` queries each returned the same 100 files — the
+whole of My Drive — which would have supported any conclusion at all. Nothing
+in the response says the filter was dropped. **Use
+`mcp__Google_Drive__search_files`** instead, which honours `parentId = '<id>'`
+and `createdTime > '<RFC3339>'`, and returns `parentId` per file so the answer
+can be checked. `GOOGLEDRIVE_FIND_FOLDER` is fine for folders — it does return
+`parents`. `GOOGLEDRIVE_GET_FILE_METADATA` does **not** return parents at all.
+
+**So check Drive before telling her something is missing** — rule 6 of the Oct 5
+video lessons. On 2026-10-14 she asked "are you sure its not already in the
+folder" about footage this session had just asked her to film. It was not
+there, but the first listing used to check was the broken one above.
 
 **Use `GOOGLEDRIVE_UPLOAD_FROM_URL`** (Composio, account
 `googledrive_hasty-charer`) with the cut's `raw.githubusercontent.com` URL —
