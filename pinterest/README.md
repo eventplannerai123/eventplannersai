@@ -158,30 +158,55 @@ hasn't been done already", and it had.
 - No pin has `alt_text` — the copy CSV has no column for it. Worth adding
   for accessibility and search; would need generating from the descriptions.
 
-## The schedule runs dry after Wed 7 Oct (checked 2026-10-06)
+## The batch landed on 2026-10-14, and the gap it leaves
 
-`pin_12_whatyouget` went up on Wed 7 Oct and was the last scheduled pin, so
-**the schedule is now empty**. All twelve of the batch built on Sep 29 are
-confirmed live, each read back against its CSV row. The guide wants two a day
-through the **Tue 14 Oct** review, so **Oct 8-14 needs fourteen more** and none
-exist.
+`pin_12_whatyouget` went up on Wed 7 Oct and was the last of the Sep 29 batch,
+so **nothing posted between Oct 8 and Oct 13** — seven days dark. The blocker
+was always copy rather than images: the guide named `pin_13` and `pin_14` as
+"already cropped to 2:3" but carried no titles, descriptions or links for them,
+and the batch of 15 due Mon 5 Oct never arrived. The live doc was re-read on
+Oct 6 and Oct 7 and was unchanged both times.
 
-The blocker is copy, not images. The guide's Pinterest section says a **batch of
-15 pins was due Mon 5 Oct** and that `pin_13` (planner's kit) and `pin_14`
-(aisle) "are already cropped to 2:3 and count toward it" — but the doc carries
-**no titles, descriptions or links for either**, and the batch itself never
-landed. Checked the live doc on 2026-10-06: that one sentence is its only
-mention of them.
+She approved it on **2026-10-14**, and it arrived as `pin_copy_v5.csv` in the
+Drive folder with fifteen images, `pin_13` to `pin_27`. All fifteen are now in
+`images/` and `2026-10-pin-schedule-v5.csv` is generated from v5 with board ids
+resolved.
 
-Re-read the live doc on 2026-10-07, after pin_12 posted: unchanged, same single
-sentence, still no copy. So both stay unscheduled. Do not draft their copy here: these are
-customer-facing pins on a product account, the copy is the author's, and
-**nothing posted can be edited afterwards** at this access tier.
+**v5 is three a day, not two**, running Tue 13 to Sat 17. Worth noting against
+the standing "two a day, never a batch" rule — three is close enough to keep
+the intent, and the dates are hers.
 
-The pin sources the guide lists in build order are still unused and would cover
-the fourteen: the eight Etsy listing images, individual sample pages (each page
-its own pin), the printed-book photos, and the partially-coloured walkie-talkie
-page.
+**The queue shifted one day.** v5 starts Tue 13, which had already passed when
+the batch landed, so running it as written would have meant six pins in one
+day — exactly the burst the rule guards against. It now runs Wed 14 to Sun 18.
+
+### What was checked before the first three went out
+
+Nothing can be edited at this access tier, so all of it was checked at
+creation time rather than after:
+
+- all fifteen images are **1000x1500 JPEG**, byte-identical to Drive
+- titles 49-59 characters, descriptions 251-331 — well inside Pinterest's caps
+- the three board names resolve to the three live board ids, read from
+  `PINTEREST_LIST_BOARDS` rather than trusted from this file's cached table
+- the raw GitHub URLs return `200 image/jpeg` at the exact byte count
+- **the UTM tags survived.** v4 arrived with a flat
+  `utm_campaign=calmbeforetheaisle` on every link and had to be re-tagged by
+  hand; v5 carries `campaign=sampler|book` with `utm_content` set to the pin
+  stem, so the question the convention exists for is still answerable. The two
+  Amazon links carry no tags, matching `pin_11`.
+- `alt_text` is still **null**. v5 has no column for it, and it is permanent
+  here, so it stays unwritten rather than invented. Third batch running — worth
+  asking her for a column.
+
+### The Tue 14 review cannot run as specified
+
+The guide sets a review for **Tue 14 Oct** against "~30 pins across four
+boards". With the seven dark days, the account stands at **21** — six from
+September plus twelve, plus today's three — across three boards. The review's
+own threshold is not met, so a zero-outbound-click reading today would be a
+verdict on a gap in posting rather than on the offer or the price. It should
+move to after the queue finishes on **Sun 18 Oct**, which lands it at 33 pins.
 
 ## The Mac's scheduled tasks were running a second, pre-v4 queue (2026-10-01)
 
@@ -233,6 +258,9 @@ tier.** Pinterest posting runs from the cloud session only.
 | 2026-10-06 | `pin_06_table` | Wedding planning printables | `1148629079996935180` |
 | 2026-10-06 | `pin_09_printed` | Wedding planning printables | `1148629079996935181` |
 | 2026-10-07 | `pin_12_whatyouget` | Bridal shower gifts | `1148629079997014987` |
+| 2026-10-14 | `pin_15_sampler5` | Adult coloring pages | `1148629079997617009` |
+| 2026-10-14 | `pin_21_cakedetail` | Adult coloring pages | `1148629079997617008` |
+| 2026-10-14 | `pin_26_paperbackgift` | Bridal shower gifts | `1148629079997617007` |
 
 Both Oct 2 pins read back live on `calmbeforetheaisle`, right board, title,
 description and tagged link exactly as this directory's schedule CSV holds
