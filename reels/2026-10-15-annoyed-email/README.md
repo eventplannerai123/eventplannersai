@@ -1,7 +1,31 @@
 # 2026-10-15 — The annoyed email
 
-The Thu 15 Oct quick piece. **TikTok-only, so one cut, not two** — and TikTok is
-hers, so the file is handed over and never uploaded from here.
+The Thu 15 Oct quick piece. **One cut, three platforms.** TikTok is hers — the
+file was handed over and she posted it on Oct 15. The same file then went out
+from here that evening as the day's **second Instagram post**, and to Facebook.
+
+## Published 2026-10-15
+
+| Where | Post | When |
+| --- | --- | --- |
+| TikTok | hers — confirmed "i posted it, all good" | Oct 15 |
+| Instagram | https://www.instagram.com/reel/DeiCY8mDrRr/ | 6:31pm ET |
+| Facebook | https://www.facebook.com/reel/1117454167422413/ | 6:32pm ET |
+
+Instagram media id `17913216915284218`, Facebook post id
+`1233196746554445_122116025217449533`. **Both live captions compared to
+`build/caption-tiktok.txt` and identical** — four literal `#`, hashtags
+included per her Oct 15 rule.
+
+Her instruction: "Claude Code posts the annoyed email to Instagram and Facebook
+this evening, with hashtags, as a second post after the rebuild." Both feeds
+were read first and the piece was on neither; the day's main post, the deposit
+tracker rebuild, was already up at 9:30am ET, so this was correctly second.
+
+**The same cut, not a re-cut.** The guide's Thu 15 line says "post the
+annoyed-email cut", and a quick piece gets one cut — so TikTok, Instagram and
+Facebook all carry the identical file. The never-both-cuts-to-one-platform rule
+is about two different cuts on one platform, which is not this.
 
 | | |
 | --- | --- |
