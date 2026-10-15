@@ -18,8 +18,18 @@ was assumed to be a trial and turned out to be a regular Reel for the same
 reason. **Do not label a day a trial until she confirms she used the toggle** —
 and ask her, rather than inferring it from the plan.
 
-If it was a regular Reel, the Sat 17 views check is just a views check, and
-the "share it to everyone" step does not apply.
+**Confirmed by her on 2026-10-15: both were meant to be trials.** So the
+toggle was not applied either time, and two pieces that were planned as trials
+went out as ordinary feed posts. Nothing is broken and nothing can be undone —
+a live post cannot be converted — but it means:
+
+- The Sat 17 check is a plain views check. "Share to everyone" only exists for
+  trials, so that step is dropped.
+- **No day should be labelled a trial anywhere until she says she used the
+  toggle on that upload.** The plan saying "PLANNED TRIAL" is not evidence; it
+  is the thing that misled this repo twice.
+- Wed 21 and Thu 22 are both planned as trials. She needs to find the control
+  before then.
 
 **Trial views land Sat 17 Oct**, 72 hours out. They cannot be read from here —
 trials are withheld from `INSTAGRAM_GET_IG_USER_MEDIA`, so her word is the only
