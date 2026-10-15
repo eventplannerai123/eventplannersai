@@ -83,3 +83,43 @@ practice already agree.
 and has been falling, so a two-week time test will be noisy and may not
 resolve. Pre-register what counts as a difference before starting, or it will
 be read the way the length test was — as a result, when it was noise.
+
+---
+
+## Appendix: the per-post numbers this pull produced
+
+Pulled 2026-10-15 — all 56 Instagram posts, `views` and `reach` from
+`INSTAGRAM_GET_IG_MEDIA_INSIGHTS`. Used for the hour histogram above and,
+separately, to re-pick a rebuild candidate.
+
+The ten lowest-viewed posts at least a week old:
+
+| Views | Reach | Date | Post |
+| --- | --- | --- | --- |
+| 14 | 11 | 2026-09-01 | ROI report — **Rebuild 1** |
+| 14 | 14 | 2026-09-03 | vendor deposit tracker — **Rebuild 2**, done Oct 15 |
+| 20 | 16 | 2026-09-30 | post-event feedback debrief — **Rebuild 3** from Oct 15 |
+| 21 | 23 | 2026-09-28 | |
+| 23 | 20 | 2026-09-26 | |
+| 23 | 22 | 2026-09-13 | |
+| 23 | 26 | 2026-09-07 | pricing trial — **Rebuild 4** |
+| 28 | 19 | 2026-09-11 | referral email — **dropped Oct 15** |
+| 28 | 22 | 2026-09-25 | |
+| 31 | 18 | 2026-09-04 | |
+
+**The referral email was never one of the four lowest.** At 28 views it is
+eighth. It was picked on its 94% skip rate — the worst on the account — which
+is a different criterion from the one the experiment states. Worth knowing
+before the next selection: say which number is being used.
+
+It was dropped on 2026-10-15 for a better reason anyway. She is a **corporate**
+event planner and does not work from referrals, so she could not answer its
+question and the subject does not fit the account. That is a relevance problem,
+not a hook problem, and the experiment only measures hooks — rebuilding the
+first three seconds of a piece that is about the wrong thing would have
+measured nothing.
+
+Its replacement, the Sep 30 feedback debrief, is the genuine third-lowest, is
+corporate, has its master in this repo, and takes its hook from **content bank
+item 8** — which the bank itself already records as pairing with that Reel. So
+it needs nothing from her.
