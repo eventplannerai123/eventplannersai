@@ -115,8 +115,14 @@ Loudness: measured first pass, explicit gain, `alimiter` with `level=0` at a
 ## Captions
 
 - `build/caption-tiktok.txt` — the ordinary layout, four hashtags.
-- `build/caption-instagram-trial.txt` — identical body, **no hashtags**, because
-  a trial is kept off hashtag pages.
+- `build/caption-instagram-trial.txt` — identical body, **no hashtags**.
+
+**That was wrong, and the rule changed on 2026-10-15.** Hashtags go on every
+Instagram caption, trials included: they do nothing in the 72-hour trial
+window, but a trial that clears 100 views is shared to everyone and from then
+on they work like any other post's. The file is left as it was because it
+records what was handed over on the day; **do not copy its no-hashtag form
+onto a new trial caption.**
 
 Both have "Prompt below." stripped, per the Oct 12 retirement; the guide's own
 block still carries it.

@@ -336,8 +336,13 @@ Two honest notes on applying these, from the build they came out of:
   as a big overlay at the end. A **30-40 word voiceover this session writes
   from the takeaway**, shown to her with the edit. No scrolling, no end card.
   The caption's first line states the takeaway, then the full prompt as typed,
-  then four hashtags, no CTA. **Quick pieces are TikTok-only, so they get one
-  cut, not two.**
+  then four hashtags, no CTA. **A quick piece gets one cut, not two** — but
+  that cut is no longer TikTok-only. Under the Oct 12 daily rule every TikTok
+  also goes to Instagram, and on 2026-10-15 the annoyed-email quick piece was
+  scheduled as the evening's **second Instagram post**, the same file and the
+  same caption, hashtags included, posted from here to Instagram and Facebook
+  after the day's main piece. So: one cut, three platforms, TikTok by her hand
+  and the other two from here.
 - **Never post both cuts to the same platform** — near-identical posts
   split engagement.
 - Hooks must name a concrete scenario, number or timeframe immediately.
@@ -515,12 +520,26 @@ MCP server; a session without `mcp__Composio__*` tools cannot post at all.
   platform it names before assuming it is this session's work.
 - Facebook has 7 followers and is not yet a platform. Still post there, but
   do not read anything into its numbers.
-- **Facebook keeps the hashtags even on a trial day** (author, 2026-09-28:
-  "Keep hashtags on Facebook"). A trial day's Instagram caption carries no
-  hashtags, because a trial is kept off hashtag pages and tags do nothing
-  there. That reasoning is Instagram-only. Facebook is never a trial, so it
-  takes the ordinary caption - body, blank line, `AI Prompt: "..."`, blank
-  line, hashtags - exactly as on any other day.
+- **Hashtags go on every Instagram caption, always — trials included, and
+  anything she uploads by hand** (author, 2026-10-15, verbatim: "Hashtags go on
+  every Instagram caption, always — including trials and anything I upload by
+  hand. They don't help a trial in its first 72 hours, but they count once it's
+  shared to everyone. Stop telling me to drop them, and update your own notes
+  to match."). The four are
+  `#aiforeventplanners #eventprofs #eventplanningtips #eventplanner`.
+
+  **This reverses what this file said from 2026-09-28 to 2026-10-15** — that a
+  trial day's Instagram caption carries none, because a trial is kept off
+  hashtag pages. The reasoning was half right and the conclusion was wrong: the
+  tags do nothing during the 72-hour trial window, but a trial that clears 100
+  views gets shared to everyone, and from that moment they work like any other
+  post's. She has had to say this more than once, so **do not suggest dropping
+  them again, on any caption, for any reason.** She has reworded the guide's own
+  line to "still include them every time".
+
+  Facebook was never the exception — it is never a trial, so it has always taken
+  the ordinary caption: body, blank line, `AI Prompt: "..."`, blank line,
+  hashtags.
 - **A trial day is a Facebook day, and that post runs from here** (author,
   2026-10-12: "update the guide so that anyday theres a trial reel you will
   post to facebook"). The guide's own Oct 1 Facebook rule used to except
