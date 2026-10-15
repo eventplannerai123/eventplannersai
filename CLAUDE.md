@@ -109,11 +109,22 @@ question list.** They do not line up: the bank also holds extras she adds by
 hand, such as item 16 on 2026-09-30 ("They were told exactly which entrance.
 They still used the wrong one."), which answers no daily question. On
 2026-09-30 the bank ran 1-16, so the next item was 17 while only three daily
-questions had been answered. As of 2026-10-12 it runs **1-29** (17-19 came from
+questions had been answered. As of 2026-10-15 it runs **1–31** (17-19 came from
 her 2007 internship paper; 20-22 from her Oct 4 budget answer; 23-24 from her
 Oct 4 site-visit answer; 25 from her Oct 7 runny-eggs remark; 26 she added
 herself on Oct 7, "Every conference has the dry sandwich lunch"; 27-29 from her
-Oct 12 staff-briefing answer), so the next new item is 30. **She adds items by
+Oct 12 staff-briefing answer; 30 from her Oct 15 senior-stakeholder answer;
+31 from her Oct 15 ROI answer), so the next new item is 32.
+
+**Never name an employer, and that includes one she names herself.** On
+2026-10-15 her ROI answer opened with a company name and she said in the same
+breath not to use it ("dont use the company name"). Item 31 carries the story
+with the role described instead — "a corporate role running high-profile client
+and broker events" — and a standing NO EMPLOYER note, because the risk is not
+her forgetting, it is this session copying her words through to a caption or an
+overlay. The same applies to clients: on the same day she named two principals
+in conversation, and item 30 records the distinction they illustrate without
+either name. **She adds items by
 hand, so re-read the bank's highest number from the live doc rather than
 trusting this line.**
 
