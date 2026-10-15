@@ -5,38 +5,19 @@ planned Trial (in-app toggle only), TikTok as always. Nothing posted from here.
 
 **Both went out on 2026-10-14** ("posted to both and did the review").
 
-**But it may not have gone up as a Trial.** On 2026-10-15 the Instagram feed
-was read back and the AV piece is **on it** —
-[reel/Deer64EKR7K](https://www.instagram.com/reel/Deer64EKR7K/), `REELS`,
-2026-10-14T15:17:53Z — and it cross-posted to the Facebook Page 8 seconds
-later through her in-app toggle. By this repo's own note (below), a trial is
-withheld from `INSTAGRAM_GET_IG_USER_MEDIA`, so a piece that appears there is
-a regular feed Reel.
+**It did go up as a Trial** — confirmed by her on 2026-10-15, and confirmed
+independently by the API. The piece is
+[reel/Deer64EKR7K](https://www.instagram.com/reel/Deer64EKR7K/),
+2026-10-14T15:17:53Z, and it carries **`is_shared_to_feed: false`** — true on
+every Reel posted from here, false on exactly this piece and the Oct 12 event
+brief, which were the two planned trials. So this day is a trial, and the Sat
+17 check runs the trial flow as written.
 
-That is the **second** time this has happened: the Oct 12 event-brief piece
-was assumed to be a trial and turned out to be a regular Reel for the same
-reason. **Do not label a day a trial until she confirms she used the toggle** —
-and ask her, rather than inferring it from the plan.
-
-**Confirmed by her on 2026-10-15: both were meant to be trials.** So the
-toggle was not applied either time, and two pieces that were planned as trials
-went out as ordinary feed posts. Nothing is broken and nothing can be undone —
-a live post cannot be converted — but it means:
-
-- The Sat 17 check is a plain views check. "Share to everyone" only exists for
-  trials, so that step is dropped.
-- **No day should be labelled a trial anywhere until she says she used the
-  toggle on that upload.** The plan saying "PLANNED TRIAL" is not evidence; it
-  is the thing that misled this repo twice.
-- Wed 21 and Thu 22 are both planned as trials. She needs to find the control
-  before then.
-
-**Trial views land Sat 17 Oct**, 72 hours out. They cannot be read from here —
-trials are withheld from `INSTAGRAM_GET_IG_USER_MEDIA`, so her word is the only
-record. A wake-up is set for then (`trig_01ANT5dQVNMMQjtzNiPGoFzX`) to ask her
-for the number and then follow the guide: over 100 views, share it to everyone
-with the one-tap option; under 100, leave it. Either way the figure goes into
-the guide next to the trial heading and into this file.
+**An earlier version of this file said the opposite**, on the reasoning that
+the piece appears in `INSTAGRAM_GET_IG_USER_MEDIA` and trials do not. The
+second half of that was never true — see
+[`docs/TIKTOK-POSTED.md`](../../docs/TIKTOK-POSTED.md). Kept here as a record
+of the wrong call rather than quietly deleted.
 
 | | |
 | --- | --- |

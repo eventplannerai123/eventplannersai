@@ -48,11 +48,21 @@ was read back and its most recent post is still the Oct 5 hidden-fees carousel,
 so it was not a feed post. Sat 10's plan has no Instagram Reel at all — only the
 then-vs-now **Story** with the receipts poll — so that is what she meant.
 
-Worth writing down because it will recur: **Stories and Trial Reels do not
-appear in `INSTAGRAM_GET_IG_USER_MEDIA`.** A Story expires in 24 hours and a
-trial is withheld from the grid by design. So for those two, her word is the
-only record there is, and the absence of a feed post is not evidence that
+Worth writing down because it will recur: **Stories do not appear in
+`INSTAGRAM_GET_IG_USER_MEDIA`.** A Story expires in 24 hours, so her word is
+the only record there is, and the absence of a feed post is not evidence that
 nothing went out.
+
+**The half of this that said Trial Reels are also missing was wrong, and was
+corrected on 2026-10-15.** It was extrapolated from the missing Story rather
+than observed. Trials *do* appear in the media edge — they are published, and
+only their distribution is restricted. The field that actually distinguishes
+them is **`is_shared_to_feed`**: `true` on every Reel posted from here, and
+`false` on exactly the two planned trials. Request it explicitly; it is not in
+the default field set.
+
+That wrong line cost something: on 2026-10-15 this session used it to tell the
+author two of her planned trials had gone out as ordinary Reels. They had not.
 
 ## Rules
 

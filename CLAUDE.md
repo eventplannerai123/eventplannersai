@@ -562,22 +562,26 @@ MCP server; a session without `mcp__Composio__*` tools cannot post at all.
   The guide has said since 2026-08-30 not to rely on that toggle — Meta
   decides whether the cross-post lands as a real video, a plain feed post or
   a bare cover image — so it is a reason to check, never a reason to skip.
-- **Two planned trials went out as regular Reels — check, never assume**
-  (2026-10-15). The Oct 12 event-brief piece and the Oct 14 AV piece were both
-  meant to be trials; she confirmed that was the intent. Both appear in
-  `INSTAGRAM_GET_IG_USER_MEDIA` as ordinary `REELS` on the feed, and both
-  cross-posted to the Facebook Page within seconds through her in-app toggle —
-  neither of which a trial does. So the Trial toggle was not applied either
-  time.
+- **A trial IS visible to the API, and `is_shared_to_feed` is how you tell**
+  (settled 2026-10-15). On a `REELS` item that field is `true` for every Reel
+  posted from here and **`false` for exactly the two planned trials** — Oct 12's
+  event brief and Oct 14's AV piece, and nothing else in the account. That is
+  what a trial is: published, but kept off the grid and the followers' feed.
+  Request it explicitly; it is not in the default field set.
 
-  **A day's plan saying "PLANNED TRIAL" is not evidence that a trial happened.**
-  That line is what misled this repo twice, and on Oct 14 it was written into a
-  README as fact. The test is the feed: a piece that shows up in the media edge
-  went out as a regular Reel. Ask her which it was, and only label a day a
-  trial once she says she used the toggle on that upload.
+  **This corrects a wrong call made earlier the same day.** Seeing both pieces
+  in `INSTAGRAM_GET_IG_USER_MEDIA`, this session concluded the toggle had not
+  been used and told her two planned trials had gone out as ordinary posts. She
+  pushed back — "why is it a problem, they went out as trials" — and she was
+  right. The claim rested on a line in `docs/TIKTOK-POSTED.md` saying trials do
+  not appear in that endpoint, which was extrapolated from a **Story** that was
+  missing on Oct 10. A Story expires and is a different object; it says nothing
+  about trials. The media edge lists what the account has published, and a
+  trial is published — only its *distribution* is restricted.
 
-  Cost of the confusion: a trial reaches only non-followers, so the whole point
-  of those two posts was lost, and neither can be converted after the fact.
+  So: **the media edge proves nothing about trial status on its own.** Check
+  `is_shared_to_feed`, and when it matters, ask her. Do not tell her a post
+  went out wrong on the strength of an inference the API can settle directly.
 
 - **Trial Reels are manual: the Sep 27 and 28 trials do not come through
   here.** Both are planned Instagram trials, edited in the Claude.ai chat and
