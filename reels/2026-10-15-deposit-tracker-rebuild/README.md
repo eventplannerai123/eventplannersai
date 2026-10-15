@@ -50,6 +50,44 @@ rebuild replaces is four seconds long.
 Original loudness is **−14.5 LUFS**, so the new opening can be cut to match
 without touching the rest.
 
+## Oct 15: two files arrived, neither is the one
+
+| Sent | What it is | Verdict |
+| --- | --- | --- |
+| `tracker_TIKTOK.mp4` | 1080x1920, 16.07s, AAC LC, 3.4 MB | **the TikTok cut, not the Instagram one** |
+| `Video_1.mov` | **220x480**, 21.6s, 1.7 MB | the raw screen recording, sent at compressed size |
+
+`tracker_TIKTOK.mp4` is the right quality and the right length, but it is a
+different edit. Its hook card reads **"Stop losing track of vendor deposits.
+Do this instead."** — the command-style TikTok opening — against the Instagram
+cut's "Five vendors, five deposit dates, five balance due dates."
+
+**And the difference is not only the hook.** A frame-match against the
+Instagram copy was run at 6, 8, 10 and 12s across offsets from −3.0 to +3.0s,
+looking for a uniform shift that would mean the same body with a different
+opening. There is none: the best offset differs per timestamp (−1.0 at t=8,
+−0.5 at t=12) and t=6 never matches at any offset. The two cuts are paced
+differently in the middle, which is what the two-cuts rule asks for.
+
+So it cannot stand in for the Instagram body without breaking the control the
+experiment depends on.
+
+`Video_1.mov` is the unedited capture — status bar and recording dot still in
+frame — and at **220x480** it is far below the output frame, so it was sent at
+the default compressed size rather than "Actual". Not needed for a rebuild
+anyway: rebuilding from raw would change the whole edit, not the first three
+seconds.
+
+## The opening voiceover is made
+
+She approved the line on Oct 15: **"A missed vendor balance date is survivable.
+Going quiet isn't."** — the hook read aloud, so the first three seconds do one
+job instead of two.
+
+`voiceover/vo-new-opening.mp3`, ElevenLabs, Vanessa - Beach Girl,
+`eleven_multilingual_v2`, **4.00s** against the 4.02s slot the original's first
+line occupies. It drops straight in.
+
 ## The plan once the file lands
 
 Change only the opening, per the guide's rebuild rules:
