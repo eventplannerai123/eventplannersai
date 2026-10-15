@@ -3,8 +3,23 @@
 The Wed 14 Oct piece. **Both cuts were hers to upload** — the Instagram one as a
 planned Trial (in-app toggle only), TikTok as always. Nothing posted from here.
 
-**Both went out on 2026-10-14** ("posted to both and did the review"). The
-Instagram one is a genuine Trial, so this day can be labelled one.
+**Both went out on 2026-10-14** ("posted to both and did the review").
+
+**But it may not have gone up as a Trial.** On 2026-10-15 the Instagram feed
+was read back and the AV piece is **on it** —
+[reel/Deer64EKR7K](https://www.instagram.com/reel/Deer64EKR7K/), `REELS`,
+2026-10-14T15:17:53Z — and it cross-posted to the Facebook Page 8 seconds
+later through her in-app toggle. By this repo's own note (below), a trial is
+withheld from `INSTAGRAM_GET_IG_USER_MEDIA`, so a piece that appears there is
+a regular feed Reel.
+
+That is the **second** time this has happened: the Oct 12 event-brief piece
+was assumed to be a trial and turned out to be a regular Reel for the same
+reason. **Do not label a day a trial until she confirms she used the toggle** —
+and ask her, rather than inferring it from the plan.
+
+If it was a regular Reel, the Sat 17 views check is just a views check, and
+the "share it to everyone" step does not apply.
 
 **Trial views land Sat 17 Oct**, 72 hours out. They cannot be read from here —
 trials are withheld from `INSTAGRAM_GET_IG_USER_MEDIA`, so her word is the only

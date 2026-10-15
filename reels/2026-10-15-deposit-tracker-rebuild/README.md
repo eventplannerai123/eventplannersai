@@ -1,7 +1,26 @@
 # 2026-10-15 — Rebuild 2: Sep 3 vendor deposit tracker
 
-**Built, not posted.** Instagram and Facebook only, not TikTok, and nothing
-goes out without her go-ahead.
+## Published 2026-10-15 to Instagram and Facebook
+
+| Account | Post |
+| --- | --- |
+| Instagram `@aiforeventplanners` | https://www.instagram.com/reel/DehEbVkFItH/ |
+| Facebook "The Event Planners AI" | https://www.facebook.com/reel/2411280792734746/ |
+
+Instagram media id `18212241865362368` (REELS, 13:30:31Z), Facebook post id
+`1233196746554445_122115954939449533` (13:31:45Z). Posted on her explicit
+go-ahead ("1. approved"). **Both live captions compared to
+`build/caption.txt` and identical** — four literal `#`, no `%23`, no
+"Hashtags:" label. Both feeds were read first and the piece was on neither.
+
+Not TikTok: a rebuild is Instagram and Facebook only.
+
+**`FACEBOOK_CREATE_VIDEO_POST` takes `file_url`, not `video_url`.** The first
+call was rejected with "At least one of 'video' or 'file_url' must be
+provided" — a 400 before anything was created, so correcting the field and
+calling again was not a blind retry. Worth knowing: this is the first video
+post to Facebook since the field was last used, and a wrong field name here
+fails loudly, unlike Drive's `parent_folder_id`.
 
 | | |
 | --- | --- |

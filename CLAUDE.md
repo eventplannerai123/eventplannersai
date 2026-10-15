@@ -501,7 +501,12 @@ MCP server; a session without `mcp__Composio__*` tools cannot post at all.
   Containers are single-use; on a processing error build a new one.
 - **Facebook** — Composio account `facebook_radius-iguana`, page_id
   `1233196746554445` ("The Event Planners AI"), now recorded in the guide
-  too. Never blind-retry, it duplicates posts. It has taken three read-backs
+  too. **`FACEBOOK_CREATE_VIDEO_POST` takes `file_url` and `description`** —
+  not `video_url`, which is rejected with "At least one of 'video' or
+  'file_url' must be provided" (2026-10-15). That is a 400 before anything is
+  created, so fixing the field and calling again is not a blind retry; a
+  *blind* retry is one after a call that may have succeeded. Never do that —
+  it duplicates posts. It has taken three read-backs
   and about fifteen minutes to surface in the page feed on every day from
   Sep 25 to Sep 28; that is normal, not a failure.
 - **TikTok is the main platform — and still a manual upload.** (138
