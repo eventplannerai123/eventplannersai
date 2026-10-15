@@ -454,6 +454,16 @@ weekly accounts reached**, never the sum of per-post reach.
 Honest caveat worth repeating rather than burying: reach was already sliding
 before the change, so a recovery cannot be cleanly attributed to posting less.
 
+**Morning vs evening is being tested from Fri 16 Oct to Thu 12 Nov**, on her
+instruction ("run it properly"). The rules are pre-registered in
+[`docs/POSTING-TIME-TEST.md`](docs/POSTING-TIME-TEST.md) — the per-day schedule
+is fixed in advance, the decision threshold is 1.35x, and second posts and
+trials are excluded. **Read that file on Fri 13 Nov rather than re-deciding
+what counts as a result**, which is what went wrong with both the length and
+cadence tests. Research behind it is in
+[`docs/POSTING-TIMES.md`](docs/POSTING-TIMES.md): the published studies
+contradict each other, and 9-11am already matched the only B2B consensus.
+
 **Facebook cannot be measured at all.** It deprecated reach and impressions
 in its API in November 2025, it has 7 followers, and every reaction on every
 post is the author's own. Keep posting there because it costs nothing —
