@@ -27,6 +27,14 @@ She asked for this twice, so it is a rule, not a preference.
 - **Spell out anything she has not done before**, step by step, including
   where to click. Do not assume a setting is findable just because it is
   named.
+- **Always give times in Eastern** (her instruction, 2026-10-15: "always tell
+  me eastern"). Never quote UTC to her, and never leave a time unconverted
+  because the scheduling tool stores it in UTC. Say "6:30pm" — if the UTC
+  figure matters at all, it goes in the README or the commit message.
+  **Eastern is UTC−4 (EDT) until Sun 1 Nov 2026, then UTC−5 (EST).** A
+  scheduled task set before that date and firing after it will land an hour
+  later in her day than intended, so re-check anything standing when the clocks
+  change.
 
 ## The working guide is a Google Doc (from 2026-09-30)
 
