@@ -148,6 +148,21 @@ the note above asks:
 - Corporate, so she can speak to it, and it needs **no new question** — the
   hook comes from **content bank item 9**, the three-documents/3,500-person
   story, which is about exactly this artefact.
+
+**The new hook, APPROVED by her on 2026-10-16 ("a is good"):**
+
+> **Four staff, six sessions, one block you're short.**
+
+She would not approve it until she knew what the piece was, which was the right
+instinct and the gap in how it was put to her — a hook was offered before the
+video behind it was described. The old hook was `Six sessions. Three rooms.
+Four staff.`: three numbers and no stake, which is the likeliest reason 80% of
+viewers left. The replacement leads with the thing the output actually delivers
+— the prompt ends "flag any block where we're short", and the answer's verdict
+is "staffable with four people, but…" — so the hook now promises what the
+reveal pays off. The runner-up, offered and not taken, was "Six sessions, three
+rooms — and a 15-minute gap you can't see yet."
+
 - Its master is in this repo, so the rebuild is a splice, as Rebuild 2 was.
 
 **Sep 28 is lower by views (21) and was still rejected.** Its skip rate is
@@ -169,3 +184,31 @@ wedding-specific, and the guide caps wedding pieces at two in seven.
    only, so trimming the body would change two things at once and break the
    comparison. It ships long, and the duration is a known confound rather than
    a hidden one.
+
+---
+
+## Caveat found while swapping Rebuild 4 — the API and the app disagree on trials
+
+Worth writing down because it affects how the *next* rebuild gets picked, and
+the appendix above is now the thing people will rank from.
+
+For the two posts in that table that went out as **Trial Reels**, the guide's
+own recorded numbers and the Oct 15 API pull do not agree:
+
+| Post | Guide's record | API pull, 2026-10-15 |
+| --- | --- | --- |
+| Sep 7 "am I undercharging" (trial) | 18 views, 68% skip, 5.4s watch | 23 views, 26 reach |
+| Sep 28 guest list → seating chart (trial) | 9 views, "the worst, left as a trial" | 21 views, 23 reach, 39.1% skip |
+
+The guide says to read trial views **in the Instagram app** because the API
+undercounts them. Here the API reads *higher* on both, so whatever the
+mechanism is, it is not a simple undercount. The regular Reels in the table
+have not shown this.
+
+**So do not rank trials against regular Reels on API views alone.** Check the
+app for any trial before using its number to pick anything. Nothing was decided
+on the strength of these two: Sep 7 was dropped on relevance, not on views, and
+Sep 28 was rejected because its hook is the best-performing on the account —
+a conclusion that rests on its skip rate, which is the one figure here with no
+second source. If a future selection turns on Sep 28, get the app figures
+first.
