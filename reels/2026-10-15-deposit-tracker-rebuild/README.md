@@ -36,6 +36,38 @@ Rebuild 2 of the four-Reel hook experiment. Original:
 IG media id `18437908249177797`, published 2026-09-03 — 14 views, 14 reach,
 **83% skip rate**, 3.7s average watch.
 
+## First numbers, 23 hours in (pulled Fri 16 Oct)
+
+| | Original (Sep 3, lifetime) | Rebuild (23 hours) |
+| --- | --- | --- |
+| Views | 14 | **34** |
+| Reach | 14 | **25** |
+| Skip rate | 83% | **74.1%** |
+| Avg watch | 3.7s | **4.81s** |
+
+Better on all four, at under a day against the original's whole life. Against
+the account rather than itself: the median skip across all 40 Reels is 74% and
+average watch about 3.8s, so this sits at the median for skip and **above
+average for watch time**. Interactions are 0, which is normal here.
+
+**Too early to call, and the right caution is the opposite of the usual one** —
+these are good numbers and the temptation is to bank them. Seven days is the
+measure the experiment named.
+
+### This cannot answer the length question, and the Fri 16 task assumed it could
+
+The guide's Fri 16 block says to pull this Reel's numbers and, if it
+underperformed, rewrite every remaining brief to 30–45 seconds. It did not
+underperform, so nothing was rewritten.
+
+But the deeper point: **a rebuild changes the first three seconds and nothing
+else**, which is what makes it a hook test. Its length is whatever the original
+was. So this piece measures the hook and is silent on duration — reading it as
+evidence about length would repeat exactly what made the September length test
+unreadable. If duration is worth testing, it needs its own comparison with the
+rules written first, as
+[`docs/POSTING-TIME-TEST.md`](../../docs/POSTING-TIME-TEST.md) does.
+
 ## What changed, and only what changed
 
 | | Original | Rebuild |
