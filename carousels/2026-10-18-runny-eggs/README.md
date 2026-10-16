@@ -138,3 +138,22 @@ She is uploading the original to Drive herself (October 18,
 `conference-runny-eggs.jpg`); it cannot be filed there from here, because the
 upload-from-URL route needs a public URL and the inline route is base64 over
 the size cap.
+
+## In Drive, October 18
+
+Both sets uploaded 2026-10-16 with `GOOGLEDRIVE_UPLOAD_FROM_URL`, server-side
+from the `raw.githubusercontent.com` URLs, named to the convention the Oct 13
+carousel set: `2026-10-18-runny-eggs-instagram-1.jpg` through `-5.jpg` and
+`2026-10-18-runny-eggs-tiktok-1.jpg` through `-5.jpg`.
+
+All ten verified two ways: the returned `size` matches the local file exactly,
+and **`parents` on every one reads `1WFNiojWqJ4ZYT8t4ij_3-btz7o-TO_sp`** — the
+October 18 folder, not the root of My Drive, which is the silent failure the
+Oct 4 upload hit when the wrong field name was used.
+
+**She had to ask for this** — "i dont see the carosel saved to the files". The
+build finished, the slides were committed, shown and approved, and the Drive
+upload was simply skipped. Worth being honest about the cause: the files rule
+in CLAUDE.md is written around *cuts* and gives an mp4 naming pattern, so a
+carousel of JPEGs did not read as covered by it. It is. The rule has been
+reworded.
