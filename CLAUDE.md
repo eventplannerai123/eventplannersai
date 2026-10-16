@@ -687,6 +687,25 @@ MCP server; a session without `mcp__Composio__*` tools cannot post at all.
   piece as both a regular Reel and a Trial Reel: that trips Instagram's
   duplicate-content detection and throttles both for up to 30 days. Only
   label a day "Trial Reel" after it has actually been posted as one.
+- **A Reel posted from here cannot carry music** (settled 2026-10-16, when she
+  asked "it goes out with music?"). Instagram's licensed audio library is
+  in-app only. Checked against the live tool schema rather than from memory:
+  `INSTAGRAM_POST_IG_USER_MEDIA` has exactly one audio-related field,
+  `audio_name`, and it only *labels* the track ("default: 'Original Audio'") —
+  it attaches nothing. **Whatever audio is in the mp4 is what goes out**, so a
+  silent file is a silent Reel.
+
+  That makes the choice explicit on any silent piece: ship it silent, add a
+  voiceover here, or let her upload it in the app with a trending track — and
+  only the third gets music, at the cost of it no longer running from here.
+  Say so plainly rather than letting a silent file go out unremarked.
+
+  Note the genuine tension with the Oct 5 video lessons: rule 1 allows a silent
+  piece "for an overlay-led piece, overlays that carry the whole story alone",
+  and the Oct 4 bar-quantities cut is exactly that. So silence is not
+  automatically a rule break — but she said of the Oct 6 piece that it "made no
+  sense without sound", so raise it every time rather than deciding alone.
+
 - Meta fetches the video from a URL, so push the cut to this repo first and
   pass its `raw.githubusercontent.com` URL. Moving or renaming that file
   later breaks the live post.
