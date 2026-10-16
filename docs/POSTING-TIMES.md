@@ -100,9 +100,9 @@ The ten lowest-viewed posts at least a week old:
 | 14 | 14 | 2026-09-03 | vendor deposit tracker — **Rebuild 2**, done Oct 15 |
 | 20 | 16 | 2026-09-30 | post-event feedback debrief — **Rebuild 3** from Oct 15 |
 | 21 | 23 | 2026-09-28 | |
-| 23 | 20 | 2026-09-26 | |
+| 23 | 20 | 2026-09-26 | staffing plan — **Rebuild 4** from Oct 16 |
 | 23 | 22 | 2026-09-13 | |
-| 23 | 26 | 2026-09-07 | pricing trial — **Rebuild 4** |
+| 23 | 26 | 2026-09-07 | pricing trial — **Rebuild 4, dropped Oct 16** |
 | 28 | 19 | 2026-09-11 | referral email — **dropped Oct 15** |
 | 28 | 22 | 2026-09-25 | |
 | 31 | 18 | 2026-09-04 | |
@@ -123,3 +123,49 @@ Its replacement, the Sep 30 feedback debrief, is the genuine third-lowest, is
 corporate, has its master in this repo, and takes its hook from **content bank
 item 8** — which the bank itself already records as pairing with that Reel. So
 it needs nothing from her.
+
+---
+
+## The pricing rebuild was dropped too, on the same grounds — 2026-10-16
+
+Rebuild 4 was the Sep 7 pricing trial. Its question to her was *"when did you,
+or a planner you know, realise they were undercharging, and what gave it
+away?"* and her answer was **"3. i cant really answer from a corporate
+standpoint"** — the same relevance problem as the referral email, for the same
+reason: she is a salaried corporate planner and does not price her own work.
+A hook rebuilt onto a piece about the wrong subject measures nothing.
+
+**Its replacement is the Sep 26 staffing plan**
+([`reels/2026-09-26-staffing-plan/`](../reels/2026-09-26-staffing-plan/),
+`reel/DdwGGoXk0u1`). Why that one, and say the criterion out loud this time, as
+the note above asks:
+
+- **23 views / 20 reach** — the same view count as the piece it replaces, and
+  by views the lowest unassigned corporate post on the account.
+- **80% skip rate.** This is the part that makes it the right pick rather than
+  merely the lowest: the hook is genuinely where it loses people, which is the
+  only thing a hook rebuild can fix.
+- Corporate, so she can speak to it, and it needs **no new question** — the
+  hook comes from **content bank item 9**, the three-documents/3,500-person
+  story, which is about exactly this artefact.
+- Its master is in this repo, so the rebuild is a splice, as Rebuild 2 was.
+
+**Sep 28 is lower by views (21) and was still rejected.** Its skip rate is
+**39.1%, the best on the entire account** — its hook is the one thing on the
+grid that demonstrably works. Rebuilding it would be measuring a fix to
+something that is not broken. **Sep 13** ties on views at 23 but is
+wedding-specific, and the guide caps wedding pieces at two in seven.
+
+**Two consequences of the swap, both unavoidable:**
+
+1. **Thu 22 loses its trial.** The Sep 7 original was a Trial Reel, so its
+   rebuild was planned as one (hers to upload). The Sep 26 original was a
+   regular feed Reel, and the guide forbids posting the same piece as both a
+   regular Reel and a Trial Reel — it trips duplicate detection and throttles
+   both for up to 30 days. So the Sep 26 rebuild posts from here as a normal
+   Reel, and the week carries one trial (Wed 21 headcount) instead of two.
+2. **The master is 26.90s**, against a 15-20s default. It ran long on her own
+   instruction that day ("miss the length test"). A rebuild changes the opening
+   only, so trimming the body would change two things at once and break the
+   comparison. It ships long, and the duration is a known confound rather than
+   a hidden one.

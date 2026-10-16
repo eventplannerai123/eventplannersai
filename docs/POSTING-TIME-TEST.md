@@ -1,5 +1,55 @@
 # Morning vs evening — pre-registration
 
+## CLOSED 2026-10-16, before day 1 produced a number
+
+Her instruction, the morning of day 1: **"i think we should only test the 6:30
+time when 2 posts are scheduled that day"**, and **"in general we know that 9am
+is optimal or early morning"**.
+
+That ends the test, and it is worth being exact about why rather than quietly
+re-scoping it. The design below **excludes second posts of the day** — that
+exclusion is the reason the test was readable at all, because an evening post
+sitting behind a morning post is competing with it for the same small audience,
+so the hour and the second-post position would be perfectly confounded. If
+6:30pm now only ever carries a second post, the evening arm can never be
+filled. There is no PM arm left, so there is nothing to compare. A test with
+one arm is not a test.
+
+**So the standing time is morning, and it is not being tested.** The Fri 16 Oct
+post was moved from 6:30pm to 9:10am the same morning. 6:30pm is reserved for
+the day's second post, when there is one.
+
+**She is right on the substance anyway.** Morning was the only thing the
+published research agreed on for a B2B audience
+([`POSTING-TIMES.md`](POSTING-TIMES.md)) — the studies contradict each other on
+nearly everything else — and 9–11am is already where 61% of the account's 56
+posts went. Nothing in her own numbers argued against it.
+
+**What is not being claimed:** that evening would have lost. It was never
+measured. If the question comes back, it needs same-day A/B pairs on an account
+with more reach, not this design.
+
+**And do not replace it with a narrower version.** A 9am-vs-11am test survives
+her rule, because both arms are morning main posts — but the table below shows
+this account cannot resolve anything smaller than about **1.37x** at 14 posts
+per arm, and two hours inside the same consensus band will not differ by 37%.
+It would produce a number and the number would be noise. The effort belongs in
+the content, which varies far more than the hour does.
+
+**The one question her rule does create**, recorded in case it is wanted later:
+does a 6:30pm *second* post add reach or split it? The cadence test already
+answers it in principle — reach on this account is **additive in posts**, 201
+summed against 203 deduplicated ([`OCT-CADENCE-TEST.md`](OCT-CADENCE-TEST.md))
+— so a second post almost certainly adds. Not worth a four-week run to confirm.
+
+Everything below is the pre-registration as written on 2026-10-15. It is kept
+unedited, because a pre-registration that gets rewritten after the fact is the
+exact failure the length and cadence tests had.
+
+---
+
+# The pre-registration as written, 2026-10-15 (not run)
+
 **Written 2026-10-15, before any data.** She asked for it run properly, and the
 two tests before this one were not: the length test and the cadence test both
 decided what counted as a result after seeing the numbers, and both ended up

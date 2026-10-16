@@ -465,15 +465,29 @@ weekly accounts reached**, never the sum of per-post reach.
 Honest caveat worth repeating rather than burying: reach was already sliding
 before the change, so a recovery cannot be cleanly attributed to posting less.
 
-**Morning vs evening is being tested from Fri 16 Oct to Thu 12 Nov**, on her
-instruction ("run it properly"). The rules are pre-registered in
-[`docs/POSTING-TIME-TEST.md`](docs/POSTING-TIME-TEST.md) — the per-day schedule
-is fixed in advance, the decision threshold is 1.35x, and second posts and
-trials are excluded. **Read that file on Fri 13 Nov rather than re-deciding
-what counts as a result**, which is what went wrong with both the length and
-cadence tests. Research behind it is in
+**Posting time: the day's main post goes out in the MORNING, around 9am**
+(her instruction, 2026-10-16: "in general we know that 9am is optimal or early
+morning"). **6:30pm is only for a day's second post** — "i think we should only
+test the 6:30 time when 2 posts are scheduled that day", same message. So a day
+with one Instagram post is a morning post, full stop.
+
+**The morning-vs-evening test is CLOSED, unrun**, on the morning of its day 1.
+Her rule ends it rather than narrowing it: the pre-registration excluded second
+posts, so if 6:30pm only ever carries a second post, the evening arm can never
+be filled and there is nothing to compare. The Fri 16 Oct post was moved from
+6:30pm to 9:10am that morning. **Do not re-open it, and do not replace it with
+a 9am-vs-11am version** — this account cannot resolve anything under about
+1.37x at 14 posts an arm, and two hours inside one consensus band will not
+differ by 37%. The full reasoning, and the pre-registration kept unedited
+beneath it, are in
+[`docs/POSTING-TIME-TEST.md`](docs/POSTING-TIME-TEST.md).
+
+She is right on the substance: morning is the **only** thing the published
+research agreed on for a B2B audience, and 9-11am is already where 61% of the
+account's 56 posts went. Research in
 [`docs/POSTING-TIMES.md`](docs/POSTING-TIMES.md): the published studies
-contradict each other, and 9-11am already matched the only B2B consensus.
+contradict each other on nearly everything else. What is **not** established is
+that evening would have lost — it was never measured, so do not claim it was.
 
 **Facebook cannot be measured at all.** It deprecated reach and impressions
 in its API in November 2025, it has 7 followers, and every reaction on every
