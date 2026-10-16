@@ -18,7 +18,7 @@ W, H = 1080, 1920
 FONT = "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf"
 OUT = os.path.join(HERE, "cards1016"); os.makedirs(OUT, exist_ok=True)
 SAFE_TOP, SAFE_BOT = int(H * 0.12), int(H * 0.75)
-FRAME = os.path.join(HERE, "chart-probe.png")
+FRAME = os.path.join(HERE, "frames", "chart-probe.png")
 
 
 def card(img, lines, fs, cy, name, px=46, py=36, r=28,

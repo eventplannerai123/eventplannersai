@@ -28,3 +28,8 @@ carousels/*/build/frames/
 # Overlay previews — they composite the raw freeze frames, so same rule.
 reels/*/build/preview.png
 carousels/*/build/preview.png
+
+# Stills pulled from source for card placement. Same rule as frames/: they are
+# raw source, and one of them is a frame of her desk. The repo is public.
+reels/*/build/*-probe.png
+carousels/*/build/*-probe.png
