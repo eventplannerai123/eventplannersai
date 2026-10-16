@@ -1,7 +1,44 @@
 # 2026-10-16 — AI makes mistakes, just like us
 
-**Built, not posted.** Instagram and Facebook run from here after her
-go-ahead; the TikTok cut is handed over.
+Status: **published 2026-10-16** at 9:15am ET by the scheduled task, on her
+Oct 16 approval ("approved"). TikTok went up by her hand the same day
+("tik tok posted").
+
+| Account | Post |
+| --- | --- |
+| Instagram `@aiforeventplanners` | https://www.instagram.com/reel/Dejnfc_ilLR/ |
+| Facebook "The Event Planners AI" | https://www.facebook.com/reel/1546513110527670/ |
+
+Instagram media id `18020923679941031`, `is_shared_to_feed: true` — a regular
+feed Reel, not a trial. Container processing took 25.4s over 9 status checks.
+
+The live Instagram caption was read back and diffed against
+`build/caption.txt`: **identical**. Before posting, the raw URL was fetched and
+its md5 compared to the committed file — `f886e393adf7da2e420b4a0b4c8b102d` on
+both, 6,786,104 bytes — and both duplicate checks were run and came back clean
+(`INSTAGRAM_GET_IG_USER_MEDIA` and `FACEBOOK_GET_PAGE_POSTS`, newest entry on
+each being the Oct 15 annoyed-email piece).
+
+## Posted in the morning, not the evening
+
+It was scheduled for 6:30pm as day 1 of the morning-vs-evening test, and moved
+to 9:10am on the morning itself. Her instruction: "i think we should only test
+the 6:30 time when 2 posts are scheduled that day", and "in general we know
+that 9am is optimal or early morning". Today carries one Instagram post, so it
+is a morning post.
+
+That rule also **ends the posting-time test unrun** — the pre-registration
+excluded second posts, so an evening slot that only ever carries a second post
+can never fill its arm. Closed in
+[`docs/POSTING-TIME-TEST.md`](../../docs/POSTING-TIME-TEST.md) with the
+reasoning; this piece is therefore not test data.
+
+Facebook surfaced in the page feed on the **first** read-back, which is faster
+than the three reads and ~15 minutes seen every day from Sep 25 to Sep 28. Feed
+entry `1233196746554445_122116127379449533`; the live message was compared to
+`build/caption.txt` and matches. Nothing was retried.
+
+Fired 13:10 UTC, Instagram published 13:15:28 UTC, Facebook 13:16:03 UTC.
 
 | | |
 | --- | --- |
