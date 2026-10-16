@@ -1,8 +1,28 @@
 # Bar quantities — TikTok quick piece, 2026-10-04
 
-Status: **built, handed over.** TikTok only, and TikTok is always her upload —
-this session never posts one. Nothing goes to Instagram or Facebook today; the
-guide's Sun 4 row has no Instagram piece.
+Status: **built, handed over** on Oct 4 — TikTok only, and TikTok is always
+her upload. Nothing went to Instagram or Facebook on the day; the guide's Sun 4
+row had no Instagram piece.
+
+**Going to Instagram and Facebook on Sun 18 Oct as the day's second post**, at
+6:30pm ET, behind the runny eggs carousel. She approved it on 2026-10-16
+("yes to the second post"). The guide's Sun 18 block says to use the existing
+cut with no re-edit, so this is the same file, unchanged — `bd5986bc…`,
+4,416,779 bytes.
+
+Two things flagged to her rather than fixed quietly:
+
+- **It is silent.** The audio track is digital silence, confirmed by `astats`
+  reporting an RMS level of `-inf`. It was built to the old silent quick-piece
+  spec, which the **Oct 5 video lessons retired**: rule 1 is that every video
+  needs sound that tells the story, and it exists because she said of the Oct 6
+  cancellation piece that it "made no sense without sound". This cut predates
+  that rule by a day. The guide says no re-edit and she approved the cut as it
+  stands, so it ships silent — but she was told, and a voiceover can be added
+  before Sunday evening if she wants one.
+- **Instagram has not seen it**, which is the whole point of the repost, but
+  the scheduled run checks the media edge live before posting rather than
+  trusting this line.
 
 The first of the October plan's five **TikTok-only quick pieces**. They exist to
 test whether TikTok rewards volume, they cost about ten minutes of her time
