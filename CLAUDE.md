@@ -191,6 +191,29 @@ video lessons. On 2026-10-14 she asked "are you sure its not already in the
 folder" about footage this session had just asked her to film. It was not
 there, but the first listing used to check was the broken one above.
 
+**She does not need to paste a Drive link any more** (settled 2026-10-16, when
+she asked outright: "do i stil need to copy and paste the screen recording link
+from google drive each tim or are you able to grab it directly"). **She does
+not.** She drops the file into the day folder and says so; this session finds
+it and downloads it.
+
+Why it works: the `October` month folder carries **`role: reader, type: anyone`**
+— "Anyone with the link — Viewer" — and every day folder and every file created
+inside inherits it. Verified on Oct 16 against `October`, `October 18` and her
+20.6 MB screen recording in it, all three returning the same permission.
+
+- Find it with `mcp__Google_Drive__search_files` and `parentId = '<day folder>'`.
+- Download it with
+  `curl -L "https://drive.usercontent.google.com/download?id=<FILE_ID>&export=download&confirm=t"`.
+  Check the bytes match Drive's `fileSize` and that it is not a sign-in page.
+- **`mcp__Google_Drive__download_file_content` caps at 10 MB** and refuses
+  anything larger, which is most recordings. The curl route has no such cap —
+  20.6 MB came down whole on Oct 16.
+- **If a future folder is not shared, the curl route silently returns a Google
+  sign-in page instead.** Check `mcp__Google_Drive__get_file_permissions` for
+  `type: anyone` before concluding a file is missing or broken, and ask her to
+  share it rather than guessing.
+
 **Use `GOOGLEDRIVE_UPLOAD_FROM_URL`** (Composio, account
 `googledrive_hasty-charer`) with the cut's `raw.githubusercontent.com` URL —
 the same one Meta fetches from. Drive pulls it server-side, so no bytes pass
@@ -203,6 +226,14 @@ of My Drive instead of the day folder. A wrong `source_url`/`name` fails loudly;
 a wrong parent does not. **Check `parents` in the response against the folder id
 you asked for**, not just `size`. The stray copy was trashed and the file
 re-uploaded.
+
+**This session cannot move a file between Drive folders.**
+`mcp__Google_Drive__update_file` takes no `addParents`/`removeParents` — the
+call is rejected with "Unknown name". On 2026-10-16 she uploaded the runny eggs
+photo to `Event photos` rather than the day folder and it could not be filed
+from here. Renaming works; re-parenting does not. Ask her to move it in the
+Drive app (long-press → Move), and treat the file as usable where it is in the
+meantime.
 
 **Do not use the inline-upload route for video.** Both the native Drive
 connector's `create_file` and Composio's `GOOGLEDRIVE_UPLOAD_FILE` take the

@@ -25,6 +25,7 @@ from PIL import Image, ImageDraw, ImageEnhance, ImageFont
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "slides")
 SRC = os.path.join(HERE, "source")
+FRAMES = os.path.join(HERE, "build", "frames")
 
 W = 1080
 SIZES = {"tiktok": 1920, "instagram": 1350}
@@ -74,16 +75,20 @@ HOOK = "Breakfast runs 7:30 to 9. The runny eggs don't."
 CLOSER = "Nobody complains about breakfast. They just remember it."
 
 
+# From her own answer, read off the recording: the eggs are the worst item on
+# the BEO and this is the interval it gives them. Slide 4 restates it under
+# the screenshot, so the two must not drift apart.
+EGGS_INTERVAL = "15\u201320"
+EGGS_VERDICT = "Poor if left in one pan."
+
+
 def assert_beo():
     """The piece only works if nothing on the BEO covers the window alone."""
     assert len(HOT) == 6, "the BEO lists six hot items"
-    worst = min(m for _, m, _ in HOT)
-    assert worst == 20, "scrambled eggs and pancakes are the 20-minute items"
     assert all(m < SERVICE_MIN for _, m, _ in HOT), \
-        "something now holds the full 90 minutes; the slide's claim moved"
-    flagged = [n for n, m, _ in HOT if m <= 20]
-    assert flagged[0].startswith("Scrambled eggs"), "eggs lead the table"
-    return worst, len(flagged)
+        "something now holds the full 90 minutes; the piece's claim moved"
+    assert HOT[0][0].startswith("Scrambled eggs"), "eggs lead the BEO"
+    return min(m for _, m, _ in HOT), len([1 for _, m, _ in HOT if m <= 20])
 
 
 def wrap(d, text, font, maxw):
@@ -248,35 +253,57 @@ def slide3(H):
 
 
 def slide4(H):
-    worst, nflag = assert_beo()
+    """A crop of her own ChatGPT answer, plus the number it turns on.
+
+    Built in house type at first, because she had not run the prompt. She ran
+    it on Oct 16 and put the recording in the October 18 folder, so this is
+    now the real thing and the Oct 13 label applies honestly.
+
+    The crop is the table header and its first two rows, from t=10.8s — the
+    one frame where the header and a whole row are on screen together. Her
+    answer's own worst case is the eggs, which is the piece, so they lead.
+
+    Cut well clear of the FELFEL advert that scrolls in near the end of the
+    recording at ~21s.
+    """
     img, d = new(H)
-    fr = F(SANS, 32)
-    frb = F(SANSB, 32)
-    fsm = F(SANS, 27)
-    row, sub = 46, 38
-    cap = F(SANS, 31)
-    note = ('The BEO says "Replenishment: as needed." Ninety minutes of '
-            "service needs a number, not a phrase.")
 
-    hh = LABEL_H + len(HOT) * (row + sub) + 30 + measure(d, note, cap, W - 2 * M)
-    y = head_label(d, "HOW LONG EACH ONE HOLDS", (H - hh) // 2)
+    card = Image.open(os.path.join(FRAMES, "answer-card.png")).convert("RGB")
+    cw = W - 2 * M
+    ch = round(card.height * cw / card.width)
 
-    for name, mins, fix in HOT:
-        hot = mins <= 20
-        if hot:
-            d.rounded_rectangle([M - 18, y - 10, W - M + 18, y + row + sub - 20],
-                                10, fill=(238, 226, 228))
-        f1 = frb if hot else fr
-        d.text((M, y), name, font=f1, fill=MAROON if hot else INK)
-        t = f"{mins} min"
-        d.text((W - M - d.textlength(t, font=f1), y), t, font=f1,
-               fill=MAROON if hot else INK)
-        y += row
-        d.text((M, y), fix, font=fsm, fill=GREY)
-        y += sub
+    # The 4:5 slide is 570px shorter than the 9:16 one and the card does not
+    # shrink with it, so at full width the restated line and the footer end up
+    # on top of each other. Cap the card to whatever is left once the label,
+    # the line, the note and the footer have taken their share, and scale the
+    # width to match so the screenshot is never stretched.
+    f_probe, sub_probe = F(SERIF, 62), F(SANS, 33)
+    reserved = (LABEL_H + 52 + int(62 * 1.24) + 16
+                + measure(d, 'The BEO said "Replenishment: as needed."', sub_probe, cw)
+                + 150)                      # footer and breathing room
+    avail = H - reserved - 60               # 60 = minimum headroom at the top
+    if ch > avail:
+        ch = avail
+        cw = round(card.width * ch / card.height)
+    card = card.resize((cw, ch), Image.LANCZOS)
+    cx = (W - cw) // 2
 
-    y += 30
-    block(d, note, cap, M, y, W - 2 * M, INK, align="center")
+    f = F(SERIF, 62)
+    sub = F(SANS, 33)
+    line = "Every 15-20 minutes."
+    assert EGGS_INTERVAL in line.replace("-", "\u2013"), "the restated interval drifted"
+    note = 'The BEO said "Replenishment: as needed."'
+
+    hh = LABEL_H + card.height + 52 + int(62 * 1.24) + 16 \
+        + measure(d, note, sub, W - 2 * M)
+    y = head_label(d, "WHAT AI CAME BACK WITH", (H - hh) // 2)
+
+    img.paste(card, (cx, y))
+    d.rectangle([cx, y, cx + cw - 1, y + card.height - 1], outline=RULE, width=2)
+    y += card.height + 52
+    d.text(((W - d.textlength(line, font=f)) / 2, y), line, font=f, fill=MAROON)
+    y += int(62 * 1.24) + 16
+    block(d, note, sub, M, y, W - 2 * M, GREY, align="center")
     footer(d, H)
     return img
 

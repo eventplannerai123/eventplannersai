@@ -65,29 +65,53 @@ dim and orange. It is lifted before anything is laid over it — brightness
 1.30, contrast 1.10, saturation 0.92 — on her instruction, "yes brighen it
 up". Her first version read as a dark smudge.
 
-## Slide 4 is NOT a screenshot, and is not labelled as one
+## Slide 4 is her real answer — swapped in the same day
 
-The Oct 13 contingency carousel embedded a crop of her real ChatGPT answer
-under the heading "WHAT AI CAME BACK WITH". There is no such recording for
-this piece — she has not run the prompt — so the hold times are set in house
-type under **"HOW LONG EACH ONE HOLDS"**, a heading that claims no tool and
-does not present the slide as any model's output.
+It was built in house type first, under the neutral heading "HOW LONG EACH ONE
+HOLDS", because she had not run the prompt and this session will not label its
+own writing as a model's output. She then ran it and dropped the recording in
+the day folder, so the slide is now a crop of her own ChatGPT answer and the
+Oct 13 label — **"WHAT AI CAME BACK WITH"** — applies honestly.
 
-The precedent for a carousel with no answer slide is the Oct 5 hidden-fees
-one, which is house type throughout.
+**Her answer is better than the house version was.** The invented hold times
+were round numbers; hers is a real three-column table (Hot item / Quality over
+90 minutes / Refresh and replenishment plan) and gives the eggs *"Poor if left
+in one pan. Dry, rubbery, watery, or discolored"* with a **15–20 minute**
+replacement interval. That verdict is the piece.
 
-**If she runs the prompt and sends the answer, crop it in and relabel.** That
-would be the stronger slide; this is the honest version of the weaker one.
+It also reached the callout independently. Near the end of the recording it
+says the priority is to get the manager to commit to **"a real replenishment
+plan, not simply 'as needed.' That phrase doesn't tell you who is watching the
+food, how frequently it's checked, or whether fresh batches will actually be
+available."** The slide's own line under the screenshot — *The BEO said
+"Replenishment: as needed."* — was written before that was read, and her
+answer arrives at the same place.
 
-The six hot items, their order and their hold times come from the real demo
-file in Drive (`BEO — Day 1 Breakfast`, October 18 folder): 400 guests,
-7:30–9:00am, buffet from chafing dishes. `assert_beo()` fails the build if
-anything on the list grows to cover the 90-minute window, because the whole
-piece rests on nothing on that BEO surviving the hold unattended.
+| Detail | Value |
+| --- | --- |
+| Source | `ScreenRecording_10-16-2026 9-51-12 AM_1.mov`, Drive October 18 |
+| Frame | **t = 10.8s** — the only one with the header and a whole row together |
+| Crop | source `(20, 303, 1190, 1508)` of a 1206x2622 capture |
+| Shows | header + scrambled eggs + applewood bacon |
 
-The callout under the table is the real find in the demo file: it says
-**"Replenishment: as needed"**, which names no interval and so makes the
-refresh nobody's job.
+**Ad check: the recording carries a FELFEL advert** ("Book a Free Tasting —
+office meals stocked daily") that scrolls in at about **21s**, right at the
+end. A sixth advertiser to add to the guide's list, and a fresh reminder not
+to look for a known logo. The crop at 10.8s is ten seconds clear of it.
+
+The top of the crop was moved down 17px after the first render: at y=286 it
+caught a ghost of the app's floating buttons above the table. At 303 the
+header is whole and the ghosts are gone.
+
+**The card is capped, not just scaled.** The 4:5 slide is 570px shorter than
+the 9:16 one and the screenshot does not shrink with it, so at full width the
+restated line landed on top of the footer. The card now takes whatever is left
+once the label, the line, the note and the footer have had their share, and
+its width scales with it so the screenshot is never stretched.
+
+The six hot items and `assert_beo()` stay in the script even though the table
+no longer draws a slide: the piece still rests on nothing on that BEO holding
+the full 90 minutes, and the build should fail if that stops being true.
 
 ## Slides
 
@@ -96,7 +120,7 @@ refresh nobody's job.
 | 1 | Her photo + "Breakfast runs 7:30 to 9. The runny eggs don't." |
 | 2 | Why it matters — scrambled eggs don't survive 90 minutes in a chafing dish |
 | 3 | The prompt |
-| 4 | How long each one holds — the six hot items, two flagged |
+| 4 | Her real ChatGPT answer — the hold table, eggs at 15-20 minutes |
 | 5 | "Nobody complains about breakfast. They just remember it." |
 
 Palette, fonts and footer match the Oct 13 contingency and Oct 5 hidden-fees
