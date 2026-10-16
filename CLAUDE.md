@@ -919,15 +919,26 @@ board ids, the Drive folder, the schedule CSV. The parts that govern:
   source crop stops about 20px short of the frame bottom. Scan the bottom
   ~300px of the actual mp4 through to its final frame. A crop that misses the
   last few rows gives the same false all-clear a colour threshold does.
-- **Ads seen so far are not one banner**: Adobe Acrobat (Sep 21), Adobe
-  Firefly (Sep 22), Rillion "AI for Accounts Payable" (Sep 23), Cambridge
-  "Event Florals in NYC" (Sep 24), Turning Stone "Make It Easier" (Sep 25) and
-  **FELFEL "Book a Free Tasting — office meals stocked daily" (Oct 16)**, which
-  scrolled in about 21s into her runny eggs recording, right at the end.
-  **Six advertisers.** Do not search for a known logo — look for anything new
-  at the bottom of the reveal. The Oct 16 one is also a reminder that the ad
-  can sit at the very end of a recording rather than partway through, so scan
-  to the final frame.
+- **Ads seen so far are not one banner. SEVEN advertisers**: Adobe Acrobat
+  (Sep 21), Adobe Firefly (Sep 22), Rillion "AI for Accounts Payable"
+  (Sep 23), Cambridge "Event Florals in NYC" (Sep 24), Turning Stone "Make It
+  Easier" (Sep 25), **Fever "Private corporate events" (Oct 4)** and **FELFEL
+  "Book a Free Tasting — office meals stocked daily" (Oct 16)**. Do not search
+  for a known logo — look for anything new at the bottom of the reveal.
+
+  Two corrections worth keeping, because the list's whole point is that it
+  keeps growing and an undercount weakens it:
+
+  - **Fever was missed here for twelve days.** It was found and written up in
+    `reels/2026-10-04-bar-quantities/README.md` on the day, and never copied
+    into this list. A find recorded only in a reel README does not survive into
+    the next build — **add it here too**.
+  - On 2026-10-16 this list was updated to "six advertisers" on the strength of
+    its own five entries plus FELFEL, without checking the reel READMEs. It was
+    already seven. Count from the records, not from the line above.
+
+  The Oct 16 one is also a reminder that an ad can sit at the very **end** of a
+  recording rather than partway through, so scan to the final frame.
 - **"Save as New Clip" splits are not always frame-matchable.** On 2026-09-24
   three clips of the same answer turned out to be separate scroll passes: best
   whole-frame match across the overlaps was MAD 13.4 and 18.6, and last-frame
