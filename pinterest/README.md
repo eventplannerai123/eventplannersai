@@ -135,8 +135,22 @@ hasn't been done already", and it had.
 - **Rewrite the six existing pin descriptions** (the Sep 13-22 pins). Listed
   the account on 2026-10-06: still untouched, and three of them are worse than
   "needs a rewrite".
-  - `1148629079995092117` (Sep 14) has **no title, no link and a single space
-    for a description**. It is a dead pin sitting on the profile.
+  - ~~`1148629079995092117` (Sep 14) has **no title, no link and a single space
+    for a description**. It is a dead pin sitting on the profile.~~
+    **FIXED — confirmed live 2026-10-16.** It now carries the title "Wedding
+    Flowers Coloring Page | Printable Adult Coloring Book", a full description
+    ("Three vases of wedding flowers, before and after colouring...") and a
+    tagged link, `utm_content=old_vase`. Nothing here wrote that and `pin_edit`
+    is still refused for this app, so Sahiba fixed it in the Pinterest app.
+    **It is the account's best pin: 62 lifetime impressions, 4 clicks** — more
+    than half the per-pin impressions on the whole profile — so deleting it was
+    always the wrong instinct, and it is moot now.
+
+    Recorded because this session told her on 2026-10-16 that the Sunday
+    Pinterest review was blocked on this pin and that deleting might be the
+    only route. Both wrong, and the guide's own rule 6 says why: **check the
+    live account before calling something undone.** The claim came from this
+    file rather than from Pinterest.
   - `1148629079995007641` (Sep 13) links to `sahibaanandpaintal.etsy.com` with
     **no UTM tag**, and `1148629079995739314` (Sep 22) links with `?etsrc=sdt`,
     also untagged. Neither will ever show up as Pinterest traffic.
@@ -157,6 +171,40 @@ hasn't been done already", and it had.
   already closed it, so nothing was ever actionable.
 - No pin has `alt_text` — the copy CSV has no column for it. Worth adding
   for accessibility and search; would need generating from the descriptions.
+  One exception found on 2026-10-16: the Sep 22 pin does carry alt text, which
+  she must have written in the app.
+
+## What the Sun 18 review will find — read 2026-10-16
+
+Pulled from `PINTEREST_LIST_PINS` with `include_metrics`, all 26 live pins.
+Putting it here now so Sunday is not a surprise, **without pre-empting the
+review itself** — the decision is hers with the content planning chat, and the
+pre-registered condition is ~30 pins across four boards.
+
+**Lifetime, across every one of the 26: 0 saves and 0 outbound clicks.** Not
+one, on any pin, since Sep 13. That is the number the review turns on, and it
+has not moved in five weeks.
+
+Per-pin lifetime impressions, the only ones above zero:
+
+| Pin | Created | Impressions | Clicks |
+| --- | --- | --- | --- |
+| `...95092117` vase | Sep 14 | 62 | 4 |
+| `...95092123` | Sep 14 | 20 | 1 |
+| `...96340621` pin_01 | Sep 29 | 12 | 4 |
+| `...95739314` | Sep 22 | 7 | 1 |
+| `...96575282`, `...96575283` | Oct 2 | 1 each | 0 |
+
+**Every pin created Oct 3 or later reports 0 lifetime impressions** — 19 of
+them. Treat that figure with suspicion rather than reporting it as fact: the
+per-pin numbers sum to about 103 while the profile reports 213 monthly views,
+so the per-pin impression counts are lagging or partial. The zero on outbound
+clicks is the robust part, because it agrees with every earlier reading.
+
+Oct 17 and 18 take the account to **32 pins**, which clears the guide's ~30
+threshold. On the guide's own pre-registered rule, that means the problem is
+the offer or the price rather than the marketing, and Pinterest goes on the
+back burner rather than getting ad spend. Her call, on Sunday.
 
 ## The batch landed on 2026-10-14, and the gap it leaves
 
