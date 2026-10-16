@@ -33,6 +33,7 @@ Sep 22 coloring book build story were the last three, and all three are up.
 | 2026-10-13 | Contingency carousel, 6 slides as a photo post | **confirmed** 2026-10-14 — "it did". Scheduled Oct 12, fired Oct 13. |
 | 2026-10-14 | AV schedule check | **confirmed** 2026-10-14 — "posted to both and did the review". Instagram went up the same day as a Trial. |
 | 2026-10-15 | The annoyed email, rewritten (quick piece) | **confirmed** 2026-10-15 — "i posted it, all good ... to tik tok i mean". Scheduled Oct 14, out Oct 15. The same cut also went to Instagram and Facebook that evening, from here. |
+| 2026-10-16 | AI makes mistakes (VIP seating) | **confirmed** 2026-10-16 — "tik tok posted". The Instagram cut is scheduled from here for 6:30pm the same day. |
 | date unknown | Vendor quotes cut | **confirmed** 2026-10-04 — "vendor qoutes was posted" |
 | date unknown | Centerpieces (DIY vs florist) | **confirmed** 2026-10-04 — "Centerpieces have also posted" |
 
