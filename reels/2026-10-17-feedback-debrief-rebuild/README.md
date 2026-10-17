@@ -125,3 +125,43 @@ fewer followers in early September, so views are not comparable. Original:
 
 A new file, never a re-upload of the original: a re-upload of the same bytes
 gets suppressed as a duplicate.
+
+## A TikTok cut as well — added later the same day
+
+The rebuild rules say Instagram and Facebook only, so this one is extra. She
+asked for it after the Instagram post went out: the original went to TikTok on
+**Sep 30**, so a straight repost would show that audience the same opening
+twice. The rebuilt cut has a new hook, a new opening frame and a new file, so
+TikTok reads it as a new video rather than a duplicate.
+
+It changes nothing about the experiment — the rebuild is judged on the
+Instagram numbers, and TikTok is a separate audience on a separate platform.
+
+`feedback-debrief-rebuild-tiktok.mp4`, **28.90s — identical to the TikTok
+master**, −14.16 LUFS.
+
+Same shape as the Instagram build, different numbers throughout, because the
+TikTok master is cut to its own pacing:
+
+| | Instagram | TikTok |
+| --- | --- | --- |
+| Master length | 31.17s | 28.90s |
+| First silence | 2.778–3.136 | **2.880–3.521** |
+| Splice | 2.95 | **3.10** |
+| Opening frame | t=31.0 | **t=28.8** |
+| Three changes at | 1017–1289 | **961–1233** |
+| Card centred | 480 | **425** |
+| Body loudness | −14.11 | −14.10 |
+| VO gain | +5.93 dB | +5.94 dB |
+
+**Nothing was reused on assumption.** The same content sits about 56px higher
+in the TikTok frame, so a card placed from the Instagram measurement would
+have drifted toward the payoff. `make_cards.py` now measures both frames and
+asserts each card clears its own frame's changes block, so the build fails
+rather than quietly covering them.
+
+Hook verified on the exported frames at 0.3 / 1.5 / 3.0s and gone by 3.5s.
+Ad check on the export's bottom strip from 26s through to the final frame:
+clean.
+
+**Hers to upload.** Anything going to TikTok is her upload, always.
