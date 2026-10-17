@@ -332,6 +332,9 @@ tier.** Pinterest posting runs from the cloud session only.
 | 2026-10-16 | `pin_18_bouquetcoloured` | Wedding planning printables | `1148629079997788394` |
 | 2026-10-16 | `pin_19_howtoprint` | Adult coloring pages | `1148629079997788393` |
 | 2026-10-16 | `pin_25_coverquiet` | Adult coloring pages | `1148629079997788395` |
+| 2026-10-17 | `pin_20_showerstation` | Bridal shower gifts | `1148629079997878754` |
+| 2026-10-17 | `pin_23_candles` | Wedding planning printables | `1148629079997878755` |
+| 2026-10-17 | `pin_27_engagementgift` | Bridal shower gifts | `1148629079997878756` |
 
 Both Oct 2 pins read back live on `calmbeforetheaisle`, right board, title,
 description and tagged link exactly as this directory's schedule CSV holds
@@ -407,3 +410,24 @@ The scheduled prompts still describe the `image_base64` route and a Drive
 download. That route works and was not changed; the images committed under
 `images/` make the cheaper `image_url` route available to any run that
 prefers it.
+
+## pin_27 went out with an untagged link, on purpose
+
+`pin_27_engagementgift` points at `https://www.amazon.com/dp/B0HL3B4CLM` with
+no query string at all, where every other pin in v5 carries the
+`utm_source=pinterest&utm_medium=social&utm_campaign=…&utm_content=pin_XX` set.
+
+That is the CSV she approved on Oct 14 and it was posted verbatim, which is
+the standing rule — pins cannot be edited at this access tier, so a guessed
+tag would have been permanent too.
+
+It is also the right call on the merits: **Amazon ignores `utm_*` entirely.**
+Attribution there runs through Amazon Attribution tags (`tag=…`), which is a
+different mechanism and is on the guide's list to set up from Sun 18 Oct. A
+utm string on an Amazon link buys nothing; a `tag=` value invented here would
+be worse than none.
+
+So the pin is permanently unattributable and that costs approximately nothing:
+the account has recorded **0 outbound clicks across 26 pins in five weeks**.
+Worth noting rather than fixing, and worth remembering when the Amazon
+Attribution setup lands — **future Amazon pins want a `tag=`, not a `utm_`.**
