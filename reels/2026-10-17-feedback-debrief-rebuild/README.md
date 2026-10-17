@@ -1,8 +1,27 @@
 # Feedback debrief rebuild — 2026-10-17
 
-**Rebuild 3 of 4. Built, not posted** — Instagram and Facebook run from here
-after her go-ahead. Not TikTok: the rebuild rules say Instagram and Facebook
-only.
+Status: **published 2026-10-17** at 11:18am ET on her go-ahead ("approve").
+Not TikTok: the rebuild rules say Instagram and Facebook only.
+
+| Account | Post |
+| --- | --- |
+| Instagram `@aiforeventplanners` | https://www.instagram.com/reel/DemaWL6iETX/ |
+| Facebook "The Event Planners AI" | reel id `922363110962541` |
+
+Instagram media `18002430083814206`, `is_shared_to_feed: true` — a regular
+feed Reel, which is what a rebuild must be. Container finished in 22.5s over 8
+checks. The live Instagram caption was read back and diffed against
+`build/caption.txt`: **identical**.
+
+Before posting: the raw URL returned 200 at exactly the committed byte count
+(16,583,075), and both duplicate checks came back clean, newest entry on each
+being the Oct 16 AI-makes-mistakes piece.
+
+**Facebook had not surfaced in the page feed at the first read-back.** The
+create call returned an id, so it was accepted; the feed lag has run to three
+reads and about fifteen minutes on every day since Sep 25. Not retried — that
+endpoint has no duplicate protection, so a retry on an apparently missing post
+double-posts a live page.
 
 | | |
 | --- | --- |
