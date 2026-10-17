@@ -126,6 +126,8 @@ trending track. She picked the voiceover.
 > thousand drinks. Then the actual order, bottle by bottle, before anyone
 > signs off on it.
 
+**She approved the finished cut on 2026-10-17** ("approved"), after seeing and hearing it — so the go-ahead covers the rendered file, not just the decision to add a voice.
+
 29 words, 11.42s against the 12.20s cut, Vanessa as always. Written against
 what is actually on screen: the three beats are the prompt, "5 drinks per
 guest, ~1,000 drinks total", and the order table — which really does break
