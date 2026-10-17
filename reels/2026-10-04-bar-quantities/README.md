@@ -12,14 +12,11 @@ cut with no re-edit, so this is the same file, unchanged — `bd5986bc…`,
 
 Two things flagged to her rather than fixed quietly:
 
-- **It is silent.** The audio track is digital silence, confirmed by `astats`
-  reporting an RMS level of `-inf`. It was built to the old silent quick-piece
-  spec, which the **Oct 5 video lessons retired**: rule 1 is that every video
-  needs sound that tells the story, and it exists because she said of the Oct 6
-  cancellation piece that it "made no sense without sound". This cut predates
-  that rule by a day. The guide says no re-edit and she approved the cut as it
-  stands, so it ships silent — but she was told, and a voiceover can be added
-  before Sunday evening if she wants one.
+- ~~**It is silent.**~~ **She chose the voiceover** on 2026-10-17, so the
+  Instagram post is `barquantities-instagram.mp4`, not the silent TikTok file.
+  See below. The silence was real — `astats` reported an RMS of `-inf` — and
+  it predated the **Oct 5 video lessons** by a day; rule 1 exists because she
+  said of the Oct 6 cancellation piece that it "made no sense without sound".
 - **Instagram has not seen it**, which is the whole point of the repost, but
   the scheduled run checks the media edge live before posting rather than
   trusting this line.
@@ -117,3 +114,38 @@ there is a record she updates, the only reliable source is asking her.
 quick-piece caption format is one line of what it does, the prompt, four
 hashtags, **no CTA** — and it writes `Prompt:` rather than the usual
 `AI Prompt:`.
+
+## The Instagram cut has a voiceover — added 2026-10-17
+
+Offered as one of three options once it was established that **a Reel posted
+from here cannot carry music** (Instagram's audio library is in-app only), so
+the real choice was silent, a voiceover, or her uploading it by hand with a
+trending track. She picked the voiceover.
+
+> Two hundred guests, four hours, open bar. Five drinks a head — about a
+> thousand drinks. Then the actual order, bottle by bottle, before anyone
+> signs off on it.
+
+29 words, 11.42s against the 12.20s cut, Vanessa as always. Written against
+what is actually on screen: the three beats are the prompt, "5 drinks per
+guest, ~1,000 drinks total", and the order table — which really does break
+down into bottles and servings, so "bottle by bottle" describes the video
+rather than dressing it up.
+
+**The picture is copied, not re-encoded** (`-c:v copy`). The video stream is
+bit-for-bit the Oct 4 export — same codec, same 366 frames — so this is the
+approved cut plus a voice, not a second-generation re-encode. The guide's
+"use the existing cut, no re-edit" is honoured on the only part a re-edit
+would damage, and adding an audio track changes no frame.
+
+| | |
+| --- | --- |
+| `barquantities-instagram.mp4` | 12.20s, unchanged; **−14.44 LUFS, −0.93 dBTP** |
+| VO gain | +5.56 dB from −19.56, with `alimiter level=0` catching the +2.96 dBTP it would otherwise hit |
+| Speech ends | 11.0s, leaving a 1.2s tail — nothing clipped |
+| md5 | `add84f567f8b8c4e273b0a114083ad36` |
+
+**`barquantities-tiktok.mp4` is untouched.** It is already live on TikTok from
+Oct 4 and moving or re-rendering it would break that post. Two files, two
+platforms, and the no-both-cuts-to-one-platform rule is not in play because
+the TikTok cut never went to Instagram.
