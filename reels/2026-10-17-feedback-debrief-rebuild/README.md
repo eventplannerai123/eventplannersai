@@ -6,7 +6,7 @@ Not TikTok: the rebuild rules say Instagram and Facebook only.
 | Account | Post |
 | --- | --- |
 | Instagram `@aiforeventplanners` | https://www.instagram.com/reel/DemaWL6iETX/ |
-| Facebook "The Event Planners AI" | reel id `922363110962541` |
+| Facebook "The Event Planners AI" | https://www.facebook.com/reel/922363110962541/ |
 
 Instagram media `18002430083814206`, `is_shared_to_feed: true` — a regular
 feed Reel, which is what a rebuild must be. Container finished in 22.5s over 8
@@ -17,11 +17,12 @@ Before posting: the raw URL returned 200 at exactly the committed byte count
 (16,583,075), and both duplicate checks came back clean, newest entry on each
 being the Oct 16 AI-makes-mistakes piece.
 
-**Facebook had not surfaced in the page feed at the first read-back.** The
-create call returned an id, so it was accepted; the feed lag has run to three
-reads and about fifteen minutes on every day since Sep 25. Not retried — that
-endpoint has no duplicate protection, so a retry on an apparently missing post
-double-posts a live page.
+**Facebook surfaced on the second read-back**, feed entry
+`1233196746554445_122116305879449533`, created 15:18:59 UTC — 56 seconds after
+the Instagram publish, so the lag was under a minute rather than the three
+reads and ~fifteen minutes seen daily from Sep 25 to Sep 28. Nothing was
+retried in between: that endpoint has no duplicate protection, so a retry on
+an apparently missing post double-posts a live page.
 
 | | |
 | --- | --- |
