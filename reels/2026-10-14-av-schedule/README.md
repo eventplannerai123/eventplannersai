@@ -132,3 +132,31 @@ onto a new trial caption.**
 
 Both have "Prompt below." stripped, per the Oct 12 retirement; the guide's own
 block still carries it.
+
+## The trial result — 167 views, shared to everyone
+
+Read in the Instagram app by Sahiba on **Sat 17 Oct**, at the 72-hour mark the
+guide sets. Trial view counts are not readable from here, so her reading is the
+only record.
+
+| | |
+| --- | --- |
+| Views at 72 hours | **167** |
+| Threshold | 100 |
+| Outcome | over it, so **shared to everyone** — she did it the same day ("sent") |
+| Follows | not reported |
+
+For comparison, the account's other trials: Aug 29 day-of contact sheet 113,
+Sep 5 rehearsal dinner checklist 311, Sep 7 "am I undercharging" 18, Sep 27
+storage room into an inventory list 315, Sep 28 guest list into a seating chart
+9. At 167 this is the third-best trial of the five that came before it, and
+well clear of the median Reel on the account.
+
+It was a trial, settled twice over: by her word on Oct 15 ("why is it a
+problem, they wnet out as trials") and by `is_shared_to_feed: false` on media
+`18075595451746204`, which is false on exactly this piece and the Oct 12 event
+brief and true on every Reel posted from here.
+
+**Note for the next trial read:** once a trial is shared to everyone its
+distribution stops being restricted, so a later pull of `is_shared_to_feed` on
+this media may well read `true`. That would not mean it was never a trial.
