@@ -4,11 +4,44 @@ Status: **built, handed over** on Oct 4 — TikTok only, and TikTok is always
 her upload. Nothing went to Instagram or Facebook on the day; the guide's Sun 4
 row had no Instagram piece.
 
-**Going to Instagram and Facebook on Sun 18 Oct as the day's second post**, at
-6:30pm ET, behind the runny eggs carousel. She approved it on 2026-10-16
-("yes to the second post"). The guide's Sun 18 block says to use the existing
-cut with no re-edit, so this is the same file, unchanged — `bd5986bc…`,
-4,416,779 bytes.
+## Published 2026-10-18 to Instagram and Facebook — the day's second post
+
+| Account | Post |
+| --- | --- |
+| Instagram `@aiforeventplanners` | https://www.instagram.com/reel/Depw19ACVdb/ |
+| Facebook "The Event Planners AI" | https://www.facebook.com/reel/1630598911879889/ |
+
+Went out at **6:32pm ET** (22:32:36 UTC), behind the runny eggs carousel at
+9:05am. Instagram media `18128832925856211`, `media_product_type: REELS`,
+`is_shared_to_feed: true` — a regular feed Reel. The live caption was read back
+and diffed against `build/caption-instagram.txt`: **identical**.
+
+This is the 6:30pm slot used as her Oct 16 rule intends it — the evening is
+only ever a day's second post, and the day's main one went out in the morning.
+
+Posted on her Oct 16 go-ahead ("yes to the second post") and her Oct 17 choice
+of the voiced version over shipping it silent ("voiceover"). The file is
+`barquantities-instagram.mp4` — md5 `add84f567f8b8c4e273b0a114083ad36`,
+4,681,746 bytes, confirmed 200 at that exact byte count before posting. Both
+duplicate checks were clean: the piece had never been on Instagram, and the
+morning carousel was up on both platforms.
+
+**The publish call timed out client-side at 60s and the post had in fact
+succeeded.** Exactly the Sep 18 failure mode, and the reason the rule is read
+state, never blind-retry: the media edge was read and the Reel was already
+there at 22:32:36. Nothing was retried. `max_wait_seconds` was 55, inside the
+under-60 rule, and the timeout was the MCP client's own, not Instagram's.
+
+**Facebook surfaced on the second read-back**, feed entry
+`1233196746554445_122116500765449533`, created 22:33:24 UTC — 48 seconds after
+the Instagram publish. It was absent on the first read, which is normal for
+that endpoint; nothing was retried in between, because it has no duplicate
+protection and a live page post cannot be taken back. Its live caption was
+compared character for character and is **identical** at 192 bytes.
+
+**The guide's Sun 18 block says to use the existing cut with no re-edit**, and
+that is honoured on the part a re-edit would damage: the picture is `-c:v copy`
+from the Oct 4 export, bit-for-bit. Only a voice was added.
 
 Two things flagged to her rather than fixed quietly:
 
