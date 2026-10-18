@@ -206,6 +206,56 @@ threshold. On the guide's own pre-registered rule, that means the problem is
 the offer or the price rather than the marketing, and Pinterest goes on the
 back burner rather than getting ad spend. Her call, on Sunday.
 
+## The Sun 18 review — the numbers, read 2026-10-18
+
+The queue is finished. `pin_14_aisle`, `pin_17_kitcoloured` and `pin_24_mug`
+went up at 9:33am ET, which takes the account to **33 pins across three
+boards** and clears the guide's ~30 threshold. So the review can finally run
+against the condition it was written for.
+
+Pulled from `PINTEREST_GET_ACCOUNT_ANALYTICS`, which is a better source than
+the per-pin `include_metrics` figures used on Oct 16 — those summed to about
+103 against a profile reporting 213 monthly views, so they were lagging or
+partial. The account edge agrees with itself.
+
+| | Baseline, Sep 15–28 | Posting, Sep 29 – Oct 18 |
+| --- | --- | --- |
+| Pins live at the end | 6 | **33** |
+| Impressions | 133 | **144** |
+| Pin clicks | 16 | **12** |
+| Saves | 0 | **0** |
+| **Outbound clicks** | **0** | **0** |
+
+**Nought outbound clicks, and nought saves, across 27 pins in twenty days.**
+That is the number the review turns on, and it has not moved once since Sep 13.
+
+The impressions line looks flat and is worse than flat. **All 133 baseline
+impressions landed on a single day, Sep 22** — Pinterest's initial
+distribution test — and every other day of that fortnight was zero. The
+posting window's 144 is spread over twenty days of actual pinning, with its
+own two spikes on Oct 1 (19) and Oct 15 (51). So four-and-a-half times the pin
+count bought no more distribution than one unprompted test did.
+
+Honest caveats, both of which cut the same way:
+
+- **Oct 17 and 18 are still `PROCESSING`** and Oct 16 reads a flat zero, so
+  the last three days are not final. Today's three pins are twenty minutes old
+  and cannot have data at all.
+- The zero on outbound clicks is the robust part, because it agrees with every
+  earlier reading from every endpoint. No lag explains a metric that has never
+  once been non-zero.
+
+**On the guide's own pre-registered rule, this is the back-burner outcome, not
+the ad-spend one.** The creative is not the problem: the tap rate across both
+windows is 8–12%, which is healthy. People look and do not click through, and
+nobody saves — and on Pinterest saves *are* distribution, so a pin with no
+saves is never redistributed. That points at the offer or the price, which is
+not something more pins or paid impressions can fix. The standing rule holds:
+no ad spend, and the threshold for revisiting is **one organic outbound
+click**.
+
+Her call, with the content planning chat.
+
 ## The batch landed on 2026-10-14, and the gap it leaves
 
 `pin_12_whatyouget` went up on Wed 7 Oct and was the last of the Sep 29 batch,
@@ -335,6 +385,9 @@ tier.** Pinterest posting runs from the cloud session only.
 | 2026-10-17 | `pin_20_showerstation` | Bridal shower gifts | `1148629079997878754` |
 | 2026-10-17 | `pin_23_candles` | Wedding planning printables | `1148629079997878755` |
 | 2026-10-17 | `pin_27_engagementgift` | Bridal shower gifts | `1148629079997878756` |
+| 2026-10-18 | `pin_14_aisle` | Wedding planning printables | `1148629079997970612` |
+| 2026-10-18 | `pin_17_kitcoloured` | Adult coloring pages | `1148629079997970616` |
+| 2026-10-18 | `pin_24_mug` | Adult coloring pages | `1148629079997970614` |
 
 Both Oct 2 pins read back live on `calmbeforetheaisle`, right board, title,
 description and tagged link exactly as this directory's schedule CSV holds
