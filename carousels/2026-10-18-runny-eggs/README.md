@@ -1,7 +1,46 @@
 # Runny eggs carousel — 2026-10-18
 
-Five slides, two sizes. **Built, not posted** — Instagram and Facebook run from
-here after her go-ahead; the TikTok photo carousel is hers.
+Five slides, two sizes. **Published 2026-10-18** at 9:05am ET to Instagram and
+Facebook; the TikTok photo carousel is hers.
+
+## Published 2026-10-18, the morning slot
+
+| Account | Post |
+| --- | --- |
+| Instagram `@aiforeventplanners` | https://www.instagram.com/p/Deov8rhESc8/ |
+| Facebook "The Event Planners AI" | https://www.facebook.com/122100389133449533/posts/122116438551449533 |
+
+Instagram media `18075860063748548` (`CAROUSEL_ALBUM`, `FEED`, 5 children),
+published 13:05:14 UTC. Facebook post `1233196746554445_122116438551449533`,
+an album of 5 photos, created 13:05:35 UTC — **21 seconds later, on the first
+read-back**, so nothing was retried.
+
+Posted on her Oct 16 go-ahead ("carousel is approved", then "slide is approved"
+for the revised slide 4). The **morning slot** under her Oct 16 rule: 6:30pm is
+only for a day's second post, and this is the day's main one.
+
+**Both live captions diffed identical** to `build/caption.txt` — four literal
+`#`, no `%23`, no "Hashtags:" label.
+
+Before posting: all five raw URLs returned 200 at exactly the committed byte
+counts (305509 / 134188 / 132626 / 198979 / 77041), and both duplicate checks
+came back clean, the newest entry on each platform being the Oct 17 feedback
+debrief rebuild.
+
+**Slide order verified from the alt text, not the images.** Instagram's CDN is
+blocked by this session's network policy, so the five children were read back
+with their `alt_text` and all five came home in the right positions — the plate,
+why breakfast is the opinion-former, the prompt, ChatGPT's table, the closing
+line. Each alt text was written for one specific slide, so that pins the order
+as firmly as the pixels would.
+
+**The child-container warning held again.** The five ids came back from the
+batch as `...576, ...570, ...579, ...573, ...648` — non-monotonic, so sorting
+them would have put slide 2 first. The sequence was taken from the results
+array index.
+
+Facebook alt text cannot be set from this tier, which is expected rather than a
+failure.
 
 | Set | Size | Goes where |
 | --- | --- | --- |
