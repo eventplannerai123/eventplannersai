@@ -913,6 +913,12 @@ board ids, the Drive folder, the schedule CSV. The parts that govern:
 - Review **Tue 14 Oct**. If outbound clicks are still zero after ~30 pins
   across four boards, the problem is the offer or the price rather than the
   marketing, and Pinterest goes on the back burner rather than getting money.
+  **RAN 2026-10-19 at 33 pins: still 0 saves and 0 outbound clicks, so the rule
+  pointed at the back burner — and she overruled it ("no post it"). Pinterest
+  keeps running.** That is the decision of record; do not re-propose the back
+  burner off the same numbers. No ad spend is unaffected and still stands.
+  **The queue has been empty since Oct 19** — nothing can go out until she
+  sends the next batch of pin copy, three a day as v5 ran.
 - Links carry `?utm_source=pinterest&utm_medium=social&utm_campaign=<sampler
   |book>&utm_content=<file stem>`. `campaign` is the product, because the
   question worth answering is whether the 99c sampler beats the $5.99 book.

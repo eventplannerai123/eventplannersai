@@ -206,6 +206,18 @@ threshold. On the guide's own pre-registered rule, that means the problem is
 the offer or the price rather than the marketing, and Pinterest goes on the
 back burner rather than getting ad spend. Her call, on Sunday.
 
+## DECIDED 2026-10-19: Pinterest keeps running. She overruled the review.
+
+The review below recommended the back burner, which is what the guide's own
+pre-registered rule calls for at zero outbound clicks. **She said no, keep
+posting.** Her call, and it is the decision of record — a future session
+reading the recommendation below should not act on it.
+
+No ad spend either way: that rule was never in question and still stands.
+
+The queue is empty as of Oct 19, so nothing can run until she sends the next
+batch of pin copy. Three a day, as the v5 batch ran.
+
 ## The Sun 18 review — the numbers, read 2026-10-18
 
 The queue is finished. `pin_14_aisle`, `pin_17_kitcoloured` and `pin_24_mug`
