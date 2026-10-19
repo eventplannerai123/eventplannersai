@@ -24,10 +24,27 @@ company, the client or the blog.
     of them.
   * MOTION FROM FRAME ONE. The zoom starts moving at frame 0, so this is not
     a static title card even though the source is a still.
-  * SILENT BY THE BRIEF. An anullsrc track is muxed so the file carries a real
-    (silent) audio stream rather than none at all - Meta handles a trackless
-    mp4 inconsistently. Oct 5 rule 1 allows silence only for an overlay-led
-    piece, which this is: the four cards carry the whole story.
+  * IT WAS SILENT, AND IS NOT ANY MORE. The brief says "no voiceover - the
+    overlay and caption carry it", and the first build followed that. She
+    asked why ("why is it silent though"), which is the same objection she
+    raised about the Oct 6 cancellation piece, and approved a 39-word script.
+    So the brief loses to the standing preference.
+  * THE CARD TIMINGS MOVED TO MATCH THE VOICE, which is the one thing adding a
+    voiceover forces. Her instruction was to keep the overlays as they are,
+    meaning the words; the windows had to shift or the text would leave while
+    the voice was still saying it. Boundaries were measured off the take's own
+    energy envelope rather than guessed - sentences run 0.16-4.16, 4.70-5.64,
+    6.04-10.26 and 11.06-13.04 - and the windows below are built around them.
+    Card 2 is held to 2.4s rather than the 0.94s its line takes to say,
+    because the card carries the long form ("I was one of the girls at the
+    door") where the voice says the short one ("I was one of them").
+  * THE LAST 1.96s ARE QUIET ON PURPOSE. The voice stops at 13.04 and the
+    prompt card holds alone to 15.0. That is a beat under the payoff, not the
+    long silent tail the timing rules warn about.
+  * LEVEL: the take measures -27.05 LUFS, so it goes up 13.05 dB to the house
+    -14. Its true peak is -8.12, which that gain would push to +4.93 dBTP, so
+    alimiter catches it - with level=0, or the limiter renormalises back to
+    full scale and the audio clips at 0.0 dBFS however low the limit is set.
   * Each card is a single PNG, so every overlay needs repeatlast=1 or it shows
     on one frame and vanishes.
 """
@@ -54,12 +71,15 @@ CX0, CY0 = OPEN_W / 2, OPEN_H / 2
 CX1 = (END_X + END_W / 2) - OPEN_X
 CY1 = (END_Y + END_H / 2) - OPEN_Y
 
-# (file, start, end) - held long enough to read, per the brief's own rule
+VO = os.path.join(REEL, "voiceover", "take2.mp3")
+VO_GAIN = 13.05        # measured: VO -27.05 LUFS, house target -14.0
+
+# (file, start, end), built around the voice's own sentence boundaries
 BEATS = [
-    ("01-blog.png",    0.0,  4.0),
-    ("02-me.png",      4.0,  7.0),
-    ("03-today.png",   7.0, 11.0),
-    ("04-prompt.png", 11.0, DUR),
+    ("01-blog.png",    0.0,  4.4),   # voice 0.16-4.16
+    ("02-me.png",      4.4,  6.8),   # voice 4.70-5.64, card holds longer to read
+    ("03-today.png",   6.8, 10.9),   # voice 6.04-10.26
+    ("04-prompt.png", 10.9,  DUR),   # voice 11.06-13.04, then quiet to 15.0
 ]
 
 p = f"on/{FRAMES - 1}"                          # 0 -> 1 across the piece
@@ -88,10 +108,14 @@ cmd = ["ffmpeg", "-nostdin", "-v", "error", "-y",
 for f, _, _ in BEATS:
     cmd += ["-framerate", str(FPS), "-loop", "1", "-t", f"{DUR}",
             "-i", os.path.join(CARDS, f)]
+cmd += ["-i", VO]
+chain += (
+    f";[{len(BEATS)+1}:a]volume={VO_GAIN}dB,alimiter=limit=-1.0dB:level=0,"
+    f"aresample=48000,apad,atrim=0:{DUR},asetpts=PTS-STARTPTS[a]"
+)
 cmd += [
-    "-f", "lavfi", "-t", f"{DUR}", "-i", "anullsrc=r=48000:cl=stereo",
     "-filter_complex", chain,
-    "-map", "[v]", "-map", f"{len(BEATS)+1}:a",
+    "-map", "[v]", "-map", "[a]",
     "-c:v", "libx264", "-profile:v", "high", "-crf", "19", "-pix_fmt", "yuv420p",
     "-movflags", "+faststart", "-r", str(FPS), "-t", f"{DUR}",
     "-c:a", "aac", "-b:a", "192k", "-ar", "48000", OUT,

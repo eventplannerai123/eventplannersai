@@ -7,7 +7,7 @@ go-ahead; she posts the same file to TikTok.
 | --- | --- |
 | `girls-at-the-door.mp4` | 1080x1920 (0.5625 exactly), 30 fps, H.264 High, CRF 19, `+faststart` |
 | Duration | 15.00s — the top of the brief's 12–15s |
-| Audio | **silent**, by the brief: "No voiceover — the overlay and caption carry it" |
+| Audio | **Vanessa voiceover**, −15.42 LUFS, −0.85 dBTP |
 
 Content bank: her own 2007 door story. **Never name the company, the client or
 the blog** — the brief says so and nothing in the piece or the caption does.
@@ -90,16 +90,54 @@ Two notes worth keeping:
 repo rule: there are no faces, no branding and no venue name left in it, and it
 is exactly what the public video shows.
 
-## Silent, and why that is allowed
+## It shipped silent for about an hour, and then it did not
 
-Oct 5 rule 1 ends the silent quick piece but keeps one exception — "for an
-overlay-led piece, overlays that carry the whole story alone". This is that
-piece, and the brief says so outright. A real silent AAC track is muxed rather
-than leaving the file trackless, because Meta handles a trackless mp4
-inconsistently.
+The brief says "No voiceover — the overlay and caption carry it", which is the
+Oct 5 rule-1 exception for an overlay-led piece, so the first build was silent.
+It was flagged to her, she said go ahead, and then — with the container already
+built and not yet published — she asked **"why is it silent though"**.
 
-Raised with her anyway, per the standing rule that silence is never shipped
-unremarked.
+That is the same objection she made to the Oct 6 cancellation piece, which
+"made no sense without sound". **The standing preference beats the day's
+brief**, and flagging silence is not the same as arguing against it. Nothing
+had been published; the container was abandoned rather than used.
+
+She approved a 39-word script and said to keep the overlays as they are.
+
+| | |
+| --- | --- |
+| Voice | Vanessa - Beach Girl (`8DzKSPdgEQPaK5vKG0Rs`), `eleven_v4` |
+| Takes | 2 — 14.72s and 13.04s. **The shorter one was used**, because it leaves the last 1.96s quiet under the prompt card: a beat under the payoff, not a dead tail |
+| Level | take measures −27.05 LUFS → +13.05 dB, `alimiter` at −1.0 with `level=0` |
+
+**The export measures −15.42 LUFS, not −14.** Speech-only measures the same, so
+the tail is not the cause: true peak sits at −0.85 against the limiter's −1.0
+ceiling, and more gain only buys more limiting. This is the documented case
+where loudnorm's true-peak ceiling binds first — Sep 25 stalled at −15.8 and
+was accepted. Measured on the finished export, not assumed.
+
+### The card timings moved, the cards did not
+
+Adding a voice forces this: the windows had to shift or the text would leave
+while the voice was still saying it. Her instruction was to keep the overlays
+as they are, which is about the words.
+
+Boundaries were **measured off the take's own energy envelope**, not guessed —
+20ms RMS windows, gaps found against the file's own noise floor:
+
+| Voice says | Card |
+| --- | --- |
+| 0.16–4.16 | 0.0–4.4 |
+| 4.70–5.64 | 4.4–6.8 |
+| 6.04–10.26 | 6.8–10.9 |
+| 11.06–13.04 | 10.9–15.0 |
+
+Every card boundary falls inside a gap between sentences. Card 2 is held 2.4s
+rather than the 0.94s its line takes to say, because the card carries the long
+form ("I was one of the girls at the door") where the voice says the short one
+("I was one of them").
+
+Verified on the export's own audio envelope as well as its frames.
 
 ## Caption
 
@@ -117,6 +155,9 @@ label, which is how the brief writes it.
 - Every card asserted inside the safe band (y 259–1401) by `make_cards.py`
   itself, so a reworded line that grew too tall would fail the build rather
   than drift into TikTok's furniture.
+- Audio envelope of the export read back in 0.5s windows: speech in four runs
+  with real gaps at 4.0–4.5, 5.5–6.5 and 10.5–11.0, silent from 13.5. The card
+  boundaries land in those gaps.
 - No ad check needed: there is no screen recording in this piece.
 
 ## Who posts what
