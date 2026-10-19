@@ -320,6 +320,20 @@ things below rather than sitting alongside them, so read this block first.
 6. **Check before assuming.** Look at the calendar, the live accounts or Drive
    before saying something is undone, open or still to post.
 
+   **Rule 6 covers asking her for things, not just reporting on them** (her
+   instruction, 2026-10-19: "You should always look first before asking me").
+   On Mon 19 Oct she was asked to edit `IMG_0853` and replied "I don't have
+   that photo. What are you talking about" — the filename had been copied
+   out of the guide without looking it up. It was in her Drive the whole
+   time, in `Event photos`, and one `GOOGLEDRIVE_FIND_FILE` call found it.
+   Worse, the next message asked *her* to open it and say whether it was the
+   right shot, which is the same failure twice.
+
+   So before handing her any task that names a file: **find the file, open
+   it, and look at it.** Only then say what is needed, and say it in terms
+   of what is actually in frame. A filename from the guide is a pointer, not
+   a thing she will recognise.
+
 Two honest notes on applying these, from the build they came out of:
 
 - **85% of the width is often a reduction, not a magnification.** When the
@@ -904,6 +918,16 @@ board ids, the Drive folder, the schedule CSV. The parts that govern:
 - **A pasted image is not a file.** Images dropped into a message may render
   without landing in the uploads directory. Check for a real path before
   planning to use one.
+- **Her phone photos are HEIC, and nothing here decodes them out of the box.**
+  `ffmpeg` reports "moov atom not found" (it reads the container as MP4) and
+  ImageMagick refuses with "Unsupported codec". The fix is one line:
+  `python3.13 -m pip install pillow-heif`, then `pillow_heif
+  .register_heif_opener()` and open it with PIL as normal. Do that rather than
+  concluding a photo cannot be viewed — on 2026-10-19 the first attempt gave up
+  after ffmpeg and ImageMagick both failed, and asked her to look at it
+  instead.
+  Her stills come off the phone at **3024x4032**, so downscale before reading
+  one into the session.
 - **Check the reveal for the Adobe Acrobat banner ad and trim around it.**
   It scrolls up into the bottom of frame during long scrolls. Verify this
   **visually** on bottom-strip frames — on 2026-09-21 a red-pixel detector
