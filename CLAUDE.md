@@ -630,6 +630,18 @@ back. Do not re-add the hook unless the author asks for it.
 words that clearly mean go: "go ahead", "publish", "post it". "Looks good"
 or "great" is feedback on the cut, not permission — ask.
 
+**But a scheduled item must never be allowed to lapse** (her instruction,
+2026-10-19: "always post when something is scheduled"). On Mon 19 the day's
+second post — the cancellation clause cut, which needed no building — sat in
+the guide's block all day and was never raised; at 7:50pm it was offered to her
+as skip-or-post, and she asked why it had not gone out. **Do not offer to skip
+something the guide schedules.** Work the day's whole block, not just the
+thread in front of you: surface each scheduled item in time, with whatever it
+needs, and ask for the go-ahead early enough that the slot is still live.
+
+That does not loosen the rule above — she still says go, and nothing publishes
+without it. It removes the other failure: letting a slot die in silence.
+
 **Step-by-step mechanics, including exact tool slugs and arguments, are in
 [`docs/POSTING.md`](docs/POSTING.md).** Posting runs through the Composio
 MCP server; a session without `mcp__Composio__*` tools cannot post at all.

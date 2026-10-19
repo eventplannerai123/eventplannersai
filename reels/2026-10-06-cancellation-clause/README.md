@@ -1,7 +1,35 @@
 # Cancellation clause — TikTok quick piece, 2026-10-06
 
-Status: **built, handed over.** TikTok only, and TikTok is always her upload.
-Nothing goes to Instagram or Facebook: Tue 6 has no Instagram piece.
+Status: **published to Instagram and Facebook 2026-10-19** at 7:54pm ET, as
+Mon 19's second post. It went to TikTok on Oct 6, which is always her upload.
+
+| Account | Post |
+| --- | --- |
+| Instagram `@aiforeventplanners` | https://www.instagram.com/reel/DesfC6sE3m4/ |
+| Facebook "The Event Planners AI" | https://www.facebook.com/reel/1621536409587174/ |
+
+Instagram media `17874235746638522`, `REELS`, `is_shared_to_feed: true`.
+Facebook feed entry `1233196746554445_122116660395449533`, 36 seconds later.
+Both live captions compared character for character against
+`build/caption-instagram.txt`: **identical**, 422 bytes.
+
+The Mon 19 brief says use the existing cut with no re-edit, so this is the
+same file that went to TikTok, unchanged — `cancellation-tiktok.mp4`,
+1,232,320 bytes. Different platforms, so the duplicate-detection rule about
+re-exporting does not apply.
+
+**It should have gone out at 6:30pm and did not.** It was in the Mon 19 block
+all day and was never surfaced; the day went on the photo edit, the runner
+colour and the voiceover for the main piece. She asked why, and set a standing
+rule in reply: **"always post when something is scheduled"** — a scheduled item
+is not something to come back and offer to skip.
+
+**The publish call timed out at 50s with the container still `IN_PROGRESS`**,
+which is not the same as a processing error: nothing had been published and the
+container was still valid. `INSTAGRAM_GET_POST_STATUS` (its field is
+`creation_id`, not `ig_container_id`) reported `FINISHED`, and the same
+container published on the next call. A new container was **not** built — that
+is only for an actual processing error.
 
 The second of the October plan's five TikTok-only quick pieces — and **no longer
 a quick piece in form**. v3 adds a voiceover at her request, which takes it out

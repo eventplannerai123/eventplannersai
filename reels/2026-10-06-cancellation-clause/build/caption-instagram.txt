@@ -1,0 +1,5 @@
+Cancel 60 days out and this contract charges 100%, not 75%. The deposit doesn't count toward the fee.
+
+Prompt: "Rewrite this venue cancellation clause in plain English, and tell me what it means if we cancel 60 days out. Our Estimated Total is $85,000. Show the actual dollar cost of cancelling at 60 days, and flag anything in here that works against us."
+
+#aiforeventplanners #eventprofs #eventplanningtips #eventplanner
