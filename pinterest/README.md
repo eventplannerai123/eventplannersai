@@ -211,11 +211,22 @@ back burner rather than getting ad spend. Her call, on Sunday.
 15 pins, three a day, from `pin_copy_v6.csv` in her Drive folder. Generated
 into `2026-10-pin-schedule-v6.csv` with board ids resolved and ISO dates.
 
-**v6 uses a FOURTH board.** `Wedding Coloring Pages`, id
-`1148629148653658866`, which this file's cached table did not carry — it was
-created outside this session and already holds 5 pins. The ids were read live
-from `PINTEREST_LIST_BOARDS` rather than matched against the table, which is
-the rule and is what caught it.
+**v6 uses a FOURTH board, and it is intentional.** `Wedding Coloring Pages`,
+id `1148629148653658866`. This file's cached table did not carry it, so it was
+put to her, and she confirmed on 2026-10-19: *"Wedding Coloring Pages (board ID
+1148629148653658866) is intentional. It's the original public board. Post to it
+as written."*
+
+So it is not a new board and not a typo — it is the **original public board**,
+created before the three this file has been tracking, and it already holds 5
+pins. The ids were read live from `PINTEREST_LIST_BOARDS` rather than matched
+against the table, which is the rule and is what surfaced it.
+
+**The guide's review condition said "~30 pins across four boards" and this is
+the fourth.** The Oct 19 review noted the four-boards half was unmet; it was
+met all along, by a board this file did not know about. That does not change
+the review's outcome — she overruled it anyway — but the caveat was wrong and
+should not be repeated.
 
 | Board | id |
 | --- | --- |
