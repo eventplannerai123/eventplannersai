@@ -21,9 +21,28 @@ She asked for this twice, so it is a rule, not a preference.
   figures, filter names and timestamps belong in the reel README and the
   commit message, not in chat. Mention a number only when she has to act on
   it or decide something with it.
+- **One thing per reply. This is the rule broken most often** (her
+  instruction, 2026-10-18: "tell me one thing at a time"; again 2026-10-19:
+  "you are giving me way to much information at one time we discussed this
+  before"). Concretely, in a normal reply:
+  - **answer the question asked, and stop.** Do not append the other open
+    items, the caveats, or the reasoning unless she asks for them.
+  - **no tables** unless she asked to see numbers.
+  - **no bulleted caveat list.** If something genuinely qualifies the answer,
+    it is one sentence inside the answer, or it waits.
+  - **the action list is the one next thing**, not a roundup. Carrying four
+    open items forward every reply is the same failure as a wall of text.
+  - Things that are done need no narration at all. A log entry, a struck
+    guide line, a commit — none of that goes in the reply.
+
+  The failure mode is always the same: the work genuinely had several parts,
+  so the reply reports all of them. She does not want the report. Put the
+  parts in the README and the commit message, which is what they are for, and
+  tell her the one thing she has to act on.
+
 - **End with a clear action list** — hers separated from this session's, with
-  dates. She should be able to read the last block and know exactly what is
-  on her.
+  dates, **when there is genuinely more than one thing outstanding and she has
+  asked for the picture.** Otherwise the last block is one line.
 - **Spell out anything she has not done before**, step by step, including
   where to click. Do not assume a setting is findable just because it is
   named.
