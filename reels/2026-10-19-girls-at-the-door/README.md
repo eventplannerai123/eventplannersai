@@ -1,7 +1,36 @@
 # The girls at the door — 2026-10-19
 
-Status: **built, not posted.** Instagram and Facebook run from here after her
-go-ahead; she posts the same file to TikTok.
+Status: **published 2026-10-19** at 6:04pm ET on her go-ahead ("its fine post
+it"). She posts the same file to TikTok.
+
+| Account | Post |
+| --- | --- |
+| Instagram `@aiforeventplanners` | https://www.instagram.com/reel/DesSa3qkok0/ |
+| Facebook "The Event Planners AI" | https://www.facebook.com/reel/1635228448047752/ |
+
+Instagram media `18010485146775660`, `media_product_type: REELS`,
+`is_shared_to_feed: true` — a regular feed Reel. Container finished in 19.1s
+over 7 checks. **Facebook surfaced on the second read-back**, feed entry
+`1233196746554445_122116649343449533` at 22:05:02 UTC — 36 seconds after the
+Instagram publish, nothing retried in between.
+
+**Both live captions compared character for character against
+`build/caption.txt`: identical**, 852 bytes, four literal `#`, no `%23`, no
+"Hashtags:" label.
+
+Before posting: the raw URL returned 200 at exactly the committed byte count
+(3,907,939), and both duplicate checks came back clean, newest entry on each
+being the Oct 18 bar quantities cut.
+
+**A stale container was left unused.** One was built for the silent version
+before she asked why it was silent; it was abandoned rather than published, and
+a fresh container built for the voiced file. Containers are single-use, so
+reusing it would have posted the silent cut.
+
+**This went out at 6:04pm, not in the morning.** Her Oct 16 rule puts a day's
+only Instagram post in the morning; this one ran late because the photo edit,
+the colour change and the voiceover all landed during the day. Worth knowing
+when the numbers are read, and not a precedent.
 
 | | |
 | --- | --- |
