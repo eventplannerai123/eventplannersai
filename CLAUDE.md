@@ -334,6 +334,23 @@ things below rather than sitting alongside them, so read this block first.
    of what is actually in frame. A filename from the guide is a pointer, not
    a thing she will recognise.
 
+   **And where the task can be done here, do it rather than hand it over**
+   (her instruction, 2026-10-19: "You can do it on your own"). The same day,
+   told the photo needed its branding removed, she was asked whether she
+   wanted to do it in ChatGPT — she did not. **De-branding her photos runs
+   from here**, with ElevenLabs `creative_edit_image` (`gpt-image-2.5-sunburst`
+   for a reference-driven edit): create a flow, `creative_create_asset_upload`
+   → PUT the bytes → `creative_finalize_asset_upload` with the `flow_id`, then
+   edit with that node as `connect_from`. Pick the best of the four variations
+   here rather than making her choose.
+
+   The guide's YOU lines assign work on the assumption this session cannot do
+   it. Where that assumption is now wrong, **take the task**, and tell her what
+   was done rather than what is needed from her.
+
+   **This does not touch the posting rule.** Nothing is published without her
+   explicit go-ahead, ever, whatever else this session does on its own.
+
 Two honest notes on applying these, from the build they came out of:
 
 - **85% of the width is often a reduction, not a magnification.** When the
@@ -447,6 +464,18 @@ Two honest notes on applying these, from the build they came out of:
   "event planner", and Round 5 drifted to four weddings in a row.
 - Use only the author's uploaded footage. No stock, no generated visuals.
   Their own output files (a floor plan PNG, say) are fine when they send one.
+  **An AI edit of her own photo is not a generated visual** — the guide itself
+  specs those edits (the Event Photo Shortlist carries an EDIT line per file),
+  and from 2026-10-19 they run from here rather than from her. The rule bars
+  substituting invented imagery for her real work; it does not bar removing a
+  logo from a photograph she took.
+- **Branding: look at the whole frame, not just the obvious piece.** On
+  2026-10-19 the shortlist's edit line for `IMG_0853` covered only "the wall of
+  portraits and all lettering", and the frame also carried a client-branded
+  runner down the front of the check-in table and a named room sign above the
+  door. The client's name is as barred as the employer's, so an edit line out
+  of the shortlist is a starting point to be checked against the actual
+  picture, never a complete spec.
 - **Her raw footage never goes into this repo. The repo is public** — the
   `raw.githubusercontent.com` URLs Meta and Pinterest fetch from only work
   because it is — so committing source media publishes attendees' faces, a
