@@ -36,6 +36,7 @@ Sep 22 coloring book build story were the last three, and all three are up.
 | 2026-10-16 | AI makes mistakes (VIP seating) | **confirmed** 2026-10-16 — "tik tok posted". The Instagram cut is scheduled from here for 6:30pm the same day. |
 | 2026-10-17 | Feedback debrief REBUILD (new hook) | **confirmed** 2026-10-17 — "posted". Not in the plan: Sat 17 was Instagram-only because the original went to TikTok on Sep 30. She asked for a TikTok cut of the rebuild anyway, and it is a new file with a new hook and opening, so TikTok reads it as a new video rather than a repost of Sep 30. |
 | 2026-10-18 | Runny eggs carousel, 5 slides as a photo post | **scheduled, not confirmed** — she said on 2026-10-16 "18th on tik tok is pre-scheduled to go out". Scheduled is not posted; leave the guide line unstruck and wait for her word on the day. |
+| 2026-10-19 | The girls at the door (the Instagram piece's own cut) | **confirmed** 2026-10-19 — "posted". Same file and same caption as the Instagram Reel, which is what the Mon 19 brief specifies. |
 | date unknown | Vendor quotes cut | **confirmed** 2026-10-04 — "vendor qoutes was posted" |
 | date unknown | Centerpieces (DIY vs florist) | **confirmed** 2026-10-04 — "Centerpieces have also posted" |
 
