@@ -206,6 +206,56 @@ threshold. On the guide's own pre-registered rule, that means the problem is
 the offer or the price rather than the marketing, and Pinterest goes on the
 back burner rather than getting ad spend. Her call, on Sunday.
 
+## Batch v6 — approved 2026-10-19, runs Tue 20 to Sat 24 Oct
+
+15 pins, three a day, from `pin_copy_v6.csv` in her Drive folder. Generated
+into `2026-10-pin-schedule-v6.csv` with board ids resolved and ISO dates.
+
+**v6 uses a FOURTH board.** `Wedding Coloring Pages`, id
+`1148629148653658866`, which this file's cached table did not carry — it was
+created outside this session and already holds 5 pins. The ids were read live
+from `PINTEREST_LIST_BOARDS` rather than matched against the table, which is
+the rule and is what caught it.
+
+| Board | id |
+| --- | --- |
+| Wedding planning printables | `1148629148653722470` |
+| Bridal shower gifts | `1148629148653722469` |
+| Adult coloring pages | `1148629148653722468` |
+| **Wedding Coloring Pages** | **`1148629148653658866`** |
+
+Checked before anything was scheduled, because nothing is editable afterwards:
+
+- all 15 images **1000x1500 JPEG**, byte-identical to Drive
+- titles 44–61 characters, descriptions 287–347 — inside Pinterest's caps
+- all four board names resolve to live ids
+- all 15 raw GitHub URLs return `200 image/jpeg` at the exact byte count
+- **UTM tags survived.** Thirteen Etsy links carry
+  `campaign=sampler|book` with `utm_content` set to the pin stem. The two
+  Amazon links are untagged, which matches `pin_11` and `pin_27` and is
+  deliberate.
+- **Only `pin_42_samplerstart` links to the 99c sampler.** Every other Etsy
+  link goes to the $5.99 book, which is the guide's rule: the sampler holds
+  five pages and a pin for any other page links to the full book.
+- `alt_text` still **null**. v6 has no column for it. Fourth batch running —
+  worth asking her for a column.
+
+### Scheduled
+
+| Fires | Pins | Trigger |
+| --- | --- | --- |
+| 2026-10-20 13:30 UTC | `pin_28`, `pin_29`, `pin_36` | `trig_019L2mVu4eJJC7MxkXhYZ26a` |
+| 2026-10-21 13:30 UTC | `pin_30`, `pin_31`, `pin_37` | `trig_01Ufh57wyFHhaEkjbXujTkDu` |
+| 2026-10-22 13:30 UTC | `pin_32`, `pin_33`, `pin_39` | `trig_01HbLMEtgRVQP1ekbhPsYFrf` |
+| 2026-10-23 13:30 UTC | `pin_34`, `pin_38`, `pin_40` | `trig_01GV5g81WZUKAJ98LAmBuUGx` |
+| 2026-10-24 13:30 UTC | `pin_35`, `pin_41`, `pin_42` | `trig_018DkYECJm42BFWTUb12k9Ec` |
+
+13:30 UTC is **9:30am ET**, the same slot v5 ran. Every firing is before the
+Nov 1 clock change, so all five land at 9:30am her time.
+
+Each trigger names its own three pins rather than deriving them from the CSV,
+so a firing cannot post the wrong three if the file moves.
+
 ## DECIDED 2026-10-19: Pinterest keeps running. She overruled the review.
 
 The review below recommended the back burner, which is what the guide's own
