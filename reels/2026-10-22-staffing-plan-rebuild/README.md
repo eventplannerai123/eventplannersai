@@ -1,7 +1,28 @@
 # Staffing plan rebuild (Rebuild 4) — 2026-10-22
 
-Status: **built, not posted.** Instagram and Facebook run from here after her
-go-ahead, at 6:30pm as the day's second post. The TikTok cut is hers.
+Status: **published 2026-10-22** at 6:31pm ET on her go-ahead ("Approved"),
+the day's second post. The TikTok cut is hers.
+
+| Account | Post |
+| --- | --- |
+| Instagram `@aiforeventplanners` | https://www.instagram.com/reel/De0D7FxiMX-/ |
+| Facebook "The Event Planners AI" | https://www.facebook.com/reel/1583887796316110/ |
+
+Instagram media `18133295842786706`, `media_product_type: REELS`,
+**`is_shared_to_feed: true`** — a regular feed Reel, which is what a rebuild
+must be. Container finished in 25.0s over 7 checks.
+
+**All three captions hash identically**: `build/caption.txt`, the live Instagram
+caption and the live Facebook message are all 538 characters,
+sha256 `d25a731fe286128690347d3b78e13707f9a8ba8b119bb29ff3fc541a37342ba5`.
+
+**Facebook surfaced on the second read-back**, feed entry
+`1233196746554445_122117132559449533` at 22:32:19 UTC — 34 seconds after the
+Instagram publish. Nothing was retried in between.
+
+Before posting: the raw URL returned 200 at exactly the committed byte count
+(12,071,315), and both duplicate checks came back clean, the newest entry on
+each being the setup-times carousel from that morning.
 
 Rebuilds the Sep 26 conference agenda → staffing plan Reel
 ([`reel/DdwGGoXk0u1`](https://www.instagram.com/reel/DdwGGoXk0u1/)): 23 views,
