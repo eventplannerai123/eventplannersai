@@ -1,7 +1,30 @@
 # Setup times carousel — 2026-10-22
 
-Status: **built, not posted.** Instagram and Facebook run from here after her
-go-ahead; the TikTok photo carousel is hers.
+Status: **published 2026-10-22** at 11:34am ET on her go-ahead ("Go ahead").
+The TikTok photo carousel is hers.
+
+| Account | Post |
+| --- | --- |
+| Instagram `@aiforeventplanners` | https://www.instagram.com/p/DezUMkwEZhB/ |
+| Facebook "The Event Planners AI" | https://www.facebook.com/122100389133449533/posts/122117080749449533 |
+
+Instagram media `18115341239028674`, `media_type: CAROUSEL_ALBUM`,
+`media_product_type: FEED`.
+
+**All three captions hash identically**: `build/caption.txt`, the live Instagram
+caption and the live Facebook message are all 735 characters,
+sha256 `1a5421adaf2e72e8455101cf75e4d2e62ddf169157e2fd25e3aec204c225e726`. Four
+literal `#`, no `%23`, no "Hashtags:" label.
+
+**Facebook surfaced on the first read-back**, 21 seconds after the Instagram
+publish, so nothing was retried.
+
+Before posting: all five raw URLs returned 200 at exactly the committed byte
+counts, and both duplicate checks came back clean, the newest entry on each
+being this morning's wrong-entrance carousel.
+
+**Child container ids came back non-monotonic again** (…148, …154, …145, …151,
+…220 for slides 1–5), so slide order was taken from the results array index.
 
 | Set | Size | Goes where |
 | --- | --- | --- |
