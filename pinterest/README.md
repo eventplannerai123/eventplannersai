@@ -467,6 +467,9 @@ tier.** Pinterest posting runs from the cloud session only.
 | 2026-10-21 | `pin_30_emergencykit` | Wedding planning printables | `1148629079998228369` |
 | 2026-10-21 | `pin_31_rainplan` | Adult coloring pages | `1148629079998228367` |
 | 2026-10-21 | `pin_37_guestbook` | Wedding Coloring Pages | `1148629079998228368` |
+| 2026-10-22 | `pin_32_dancefloor` | Adult coloring pages | `1148629079998319325` |
+| 2026-10-22 | `pin_33_handsring` | Bridal shower gifts | `1148629079998319326` |
+| 2026-10-22 | `pin_39_invitations` | Wedding planning printables | `1148629079998319324` |
 
 Both Oct 2 pins read back live on `calmbeforetheaisle`, right board, title,
 description and tagged link exactly as this directory's schedule CSV holds
