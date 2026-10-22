@@ -1,7 +1,39 @@
 # Wrong entrance carousel — 2026-10-21
 
-Status: **built, not posted.** Instagram and Facebook run from here after her
-go-ahead; the TikTok photo carousel is hers.
+Status: **published 2026-10-22** at 9:17am ET on her go-ahead ("approved", Wed
+21 ~10pm ET). The TikTok photo carousel is hers.
+
+| Account | Post |
+| --- | --- |
+| Instagram `@aiforeventplanners` | https://www.instagram.com/p/DezEe6EkbUL/ |
+| Facebook "The Event Planners AI" | https://www.facebook.com/122100389133449533/posts/122117062881449533 |
+
+Instagram media `18415004578092095`, `media_type: CAROUSEL_ALBUM`,
+`media_product_type: FEED`. **`is_shared_to_feed` is absent**, which is correct
+for a carousel rather than a signal about it — that field only comes back on a
+`REELS` item, so it says nothing here either way.
+
+**All three captions hash identically**: `build/caption.txt`, the live Instagram
+caption and the live Facebook message are all 889 characters,
+sha256 `dc5287e3ecc6d36e33dbaa0ae87be06c9001603bca5788082605e35014c9b1ef`. Four
+literal `#`, no `%23`, no "Hashtags:" label. Hashing both live captions against
+the file is the character-for-character check, done without retyping either.
+
+**Facebook surfaced on the first read-back**, 22 seconds after the Instagram
+publish — faster than the ~15 minutes the notes warn about, so nothing was
+retried.
+
+Before posting: all five raw URLs returned 200 at exactly the committed byte
+counts, and both duplicate checks came back clean, the newest entry on each
+being the Oct 19 cancellation clause Reel.
+
+**Child container ids came back non-monotonic** (…839, …842, …836, …833, …920
+for slides 1–5), so slide order was taken from the results array index. Reading
+order off the ids would have shuffled the carousel.
+
+**It went out a day late.** The brief put it on Wed 21; it was built that
+evening after she asked what she had missed, approved that night, and posted the
+next morning. Thu 22 therefore carries three Instagram posts instead of two.
 
 | Set | Size | Goes where |
 | --- | --- | --- |
