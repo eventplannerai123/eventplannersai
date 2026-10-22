@@ -367,6 +367,19 @@ things below rather than sitting alongside them, so read this block first.
    it. Where that assumption is now wrong, **take the task**, and tell her what
    was done rather than what is needed from her.
 
+   **Build without being asked, especially when she is away** (her
+   instruction, 2026-10-19: "You can do it on your own"; sharpened 2026-10-21:
+   **"you need to be doing things i cant when im away"**). On Wed 21 she was
+   travelling; Pinterest ran on its scheduled task and the day's Instagram
+   carousel was never built at all, because nothing in the conversation
+   prompted it. That is the failure she is describing. **Her absence is when
+   the building should happen, not when it stops** — read the day's block,
+   build what it specifies, and have it ready and shown by the time she
+   surfaces.
+
+   Posting is still hers to approve. Building, editing, de-branding, writing
+   captions, filing to Drive and committing are not.
+
    **This does not touch the posting rule.** Nothing is published without her
    explicit go-ahead, ever, whatever else this session does on its own.
 

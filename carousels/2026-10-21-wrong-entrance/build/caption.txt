@@ -1,0 +1,10 @@
+Put the entrance in the first line. Nothing below it gets read.
+
+They were told exactly which entrance. They still used the wrong one. At a big museum, guests head for the main doors no matter what the invitation said.
+
+The prompt:
+“Here’s the invitation for an evening reception at a large museum: [paste]. Guests must use the side event entrance, not the main entrance. Write a “know before you go” text to send the day before and the morning of. Put the entrance in the first line with a landmark to look for, then the nearest subway, train and bus stops and which exit to use, then the closest parking garages. Nothing else. Check every transit and parking detail against the museum’s own directions page and tell me which ones you couldn’t confirm.”
+
+And on the day, put one person (or one sign) at the wrong entrance.
+
+#aiforeventplanners #eventprofs #eventplanningtips #eventplanner
