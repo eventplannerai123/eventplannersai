@@ -1,0 +1,9 @@
+Everybody's client was the most important client. That's what splitting 2,000 sponsor tickets across departments taught me.
+
+It wrote fair rules, a ranked waitlist and a no-more-seats email that doesn't start a war. But it allocated to departments, and the people in those seats are clients and prospects — that's the split that actually matters, and it missed it.
+
+AI Prompt: "Here's the ticket demand from six departments for a sponsored event with 2,000 tickets. Write fair allocation rules, apply them to give each department its number, rank everyone who misses out into a waitlist, and draft the email telling a department it gets fewer seats than it asked for, without starting a fight."
+
+(Demo list: departments and numbers invented.)
+
+#aiforeventplanners #corporateevents #eventprofs #eventplanningtips

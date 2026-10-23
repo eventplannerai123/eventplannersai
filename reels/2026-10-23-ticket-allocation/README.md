@@ -1,35 +1,50 @@
 # Ticket allocation reel — 2026-10-23
 
-Status: **waiting on her screen recording.** Everything that does not depend on
-the footage is built.
+Status: **waiting on her screen recording.** Everything else is built — both
+voiceovers, all three overlays and the caption.
 
 Content bank **item 4**: the hook and voiceover use only the true story — 2,000
 sponsor tickets split across departments, and every department's client was the
 most important. **The numbers on screen are demo data**, and the caption says so.
 
-## Why the voiceover is not generated yet
-
-The standing rule is to generate both voiceovers as soon as the day's script is
-settled, before the recording exists, because neither depends on the footage.
-**This day's script is not settled**, and that is the brief's own design.
+## Her catch is the ending
 
 The Oct 14 review added a twist test to this piece: show the answer, then the
 one line she would still change — "genuinely good, except…". That is the shape
-of the Oct 12 Reel that reached 83 against a weekly average of 29. So her catch,
-after she records, becomes three things at once:
+of the Oct 12 Reel that reached 83 against a weekly average of 29.
 
-- the closing voiceover line,
-- the takeaway overlay,
-- the caption's second paragraph.
+**Her catch, 2026-10-23, verbatim:** "I don't like the answer. It should
+highlight clients and prospects as well as internal departments."
 
-Generating now would mean regenerating. `build/voiceover-script-draft.txt`
-carries the two sentences that are settled.
+She is right, and it is a better catch than the one the brief guessed at. The
+brief expected politics — whose guests come off the top, which department head
+escalates. What she actually caught is a level above that: the demand sheet is
+organised by internal department, the answer allocates the same way, and nobody
+in those 2,000 seats is a department. They are clients and prospects, and that
+cut never appears anywhere in the output.
 
-**The likely catch, per the brief, is politics**: the model can write fair rules,
-but it cannot know whose guests come off the top before any rule applies, or
-which department head will escalate. Worth knowing, not worth assuming — the
-brief says never invent a miss, and if she says it genuinely got everything,
-that is the line.
+It now carries three things, which is what the brief specifies:
+
+| | |
+| --- | --- |
+| Closing voiceover line | "But it allocated to departments — and those seats are for clients and prospects. That's the split it missed." |
+| Takeaway overlay | "Departments don't sit in the seats. Clients do." |
+| Caption, second paragraph | the same point in her phrasing |
+
+**The script was held until she said it**, rather than generated to the brief's
+guess and rewritten after. That is why no voiceover existed before today.
+
+## Voiceovers
+
+| Cut | File | Length |
+| --- | --- | --- |
+| Instagram | `voiceover/instagram.mp3` | 19.88s |
+| TikTok | `voiceover/tiktok.mp3` | 20.85s |
+
+Vanessa - Beach Girl, `eleven_v4`, two takes each, the shorter of each pair
+used. **The TikTok take is 0.85s over the 15-20s target**; it gets a light
+`atempo` on the way into the cut rather than a regeneration, the same trick the
+Oct 22 rebuild used.
 
 ## The demo file is real and checked
 
@@ -50,24 +65,28 @@ read here rather than taken on trust:
 priority note that reads as non-negotiable, which is the whole point of the
 piece.
 
-## Two hooks, one overlay each
+## Two hooks and a takeaway
 
-`build/make_cards.py`, both asserted inside the safe band.
+`build/make_cards.py`, all three asserted inside the safe band.
 
 | Cut | Hook |
 | --- | --- |
 | Instagram | "2,000 tickets. Every department wanted more." — the brief's, verbatim |
 | TikTok | "Stop splitting 2,000 tickets by who emails first." — command-style, per the house rule that TikTok's hook is not a derivative of Instagram's |
 
-**The card sits at y=1240, not the usual 620.** The cut opens on the finished
+Plus the takeaway at the end: **"Departments don't sit in the seats. Clients
+do."** Two overlays is the written default; the recent briefs cut it to one, and
+this piece earns the second back because the twist test needs her line on screen.
+
+**The hook sits at y=1240, not the usual 620.** The cut opens on the finished
 allocation table, so a card at 620 would land across the numbers the shot exists
 to show. Re-check it against the real opening frames when the recording lands.
 
 ## Caption
 
-`build/caption-draft.txt` — a draft, because its second paragraph is her catch.
-The brief's "Prompt below." has been dropped: retired 2026-10-12, and the guide
-still carries it in per-day blocks until she edits them.
+`build/caption.txt`. The second paragraph is her catch. The brief's "Prompt
+below." has been dropped: retired 2026-10-12, and the guide still carries it in
+per-day blocks until she edits them.
 
 ## Who posts what
 

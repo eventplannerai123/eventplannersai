@@ -7,8 +7,17 @@ different command-style hook rather than a derivative of the Instagram line.
 Both name a number immediately, which is the hook rule — abstract superlatives
 and vague teases both measured badly.
 
-Only ONE overlay per cut: the hook at 0:00-0:02. Round 6 dropped the end card
-and the October briefs continue that, so there is no second card here.
+TWO overlays per cut, which is the written default rather than the October
+briefs' usual one. The Oct 14 review added a twist test to this piece: show the
+answer, then the one line she would still change. That line needs to be on
+screen at the end, so the takeaway card earns its place here where the recent
+briefs drop it. It is not an end card asking for a comment — it is the payoff.
+
+HER CATCH, 2026-10-23, verbatim: "I don't like the answer. It should highlight
+clients and prospects as well as internal departments." The demand sheet splits
+2,000 tickets six ways between internal departments, and the answer allocates
+the same way; the people actually in those seats are clients and prospects, and
+that cut never appears. The takeaway card is her point in her terms.
 
 Safe zones (Oct 5 rule 4): nothing important in the top 12%, the bottom 25% or
 the right 15%. The card is centred inside 260-1400 and the assert enforces it
@@ -35,6 +44,8 @@ CARDS = [
     # (name, font size, centre y, lines)
     ("hook-instagram", 60, 1240, ["2,000 tickets.", "Every department", "wanted more."]),
     ("hook-tiktok",    58, 1240, ["Stop splitting", "2,000 tickets by", "who emails first."]),
+    # The takeaway, held over the last beat. Her catch, in her terms.
+    ("takeaway",       64,  900, ["Departments don't", "sit in the seats.", "Clients do."]),
 ]
 
 
