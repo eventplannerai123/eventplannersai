@@ -1,7 +1,39 @@
 # Ticket allocation reel — 2026-10-23
 
-Status: **waiting on her screen recording.** Everything else is built — both
-voiceovers, all three overlays and the caption.
+Status: **built, not posted.** Instagram and Facebook run from here after her
+go-ahead; the TikTok cut is hers.
+
+| | `ticket-allocation-instagram.mp4` | `ticket-allocation-tiktok.mp4` |
+| --- | --- | --- |
+| Duration | 19.88s | 19.87s |
+| Loudness | −14.31 LUFS, −3.66 dBTP | −14.40 LUFS, −3.78 dBTP |
+
+Both 1080x1920 (0.5625 exactly), 30 fps, H.264 High, CRF 19, `+faststart`,
+AAC 192k / 48 kHz.
+
+## Three things the first build got wrong
+
+All three were invisible in the filtergraph and only showed up on the exported
+frames and a loudness measurement.
+
+**1. A TicketSpice ad on the last frame.** It slides into the bottom of frame
+between source 38.0s and 38.5s — "Sell More Tickets Online", "#1 Ticketing
+Software" — and the email beat originally ran to 39.18. It is the **eighth**
+advertiser seen in these recordings, and the most dangerous so far: a ticketing
+ad inside a piece about ticket allocation reads as part of the answer. Every
+beat now ends by **37.60**, and both exports were re-checked visually on a
+bottom-strip montage through the final frame.
+
+**2. A blank "Loading" frame in the prompt beat.** At source 2.7s she taps the
+attachment and the screen goes blank for about 0.7s before the demand sheet
+renders. The beat ran to 3.40 and put that on screen. It now takes 0.0–2.60 and
+stretches to fill its slot, which on a near-static prompt screen is invisible.
+
+**3. No loudness stage at all.** The voiceover is the only audio, so the first
+export measured exactly what ElevenLabs handed over: **−22.3 LUFS** against the
+house −14. The two-pass `loudnorm` that replaced it stalled at −16.0 with true
+peak at −4.19 — 2.7 dB of headroom it declined to use, so not the documented
+true-peak stall. Explicit gain plus `alimiter` (`level=0`) lands it at −14.3.
 
 Content bank **item 4**: the hook and voiceover use only the true story — 2,000
 sponsor tickets split across departments, and every department's client was the

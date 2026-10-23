@@ -1031,12 +1031,21 @@ board ids, the Drive folder, the schedule CSV. The parts that govern:
   source crop stops about 20px short of the frame bottom. Scan the bottom
   ~300px of the actual mp4 through to its final frame. A crop that misses the
   last few rows gives the same false all-clear a colour threshold does.
-- **Ads seen so far are not one banner. SEVEN advertisers**: Adobe Acrobat
+- **Ads seen so far are not one banner. EIGHT advertisers**: Adobe Acrobat
   (Sep 21), Adobe Firefly (Sep 22), Rillion "AI for Accounts Payable"
   (Sep 23), Cambridge "Event Florals in NYC" (Sep 24), Turning Stone "Make It
-  Easier" (Sep 25), **Fever "Private corporate events" (Oct 4)** and **FELFEL
-  "Book a Free Tasting — office meals stocked daily" (Oct 16)**. Do not search
-  for a known logo — look for anything new at the bottom of the reveal.
+  Easier" (Sep 25), **Fever "Private corporate events" (Oct 4)**, **FELFEL
+  "Book a Free Tasting — office meals stocked daily" (Oct 16)** and
+  **TicketSpice "Sell More Tickets Online / #1 Ticketing Software" (Oct 23)**.
+  Do not search for a known logo — look for anything new at the bottom of the
+  reveal.
+
+  **TicketSpice is the on-topic one, and that makes it worse.** It is a
+  ticketing ad inside a recording about ticket allocation, so it reads as part
+  of the answer rather than as an interruption, and a skim of the export would
+  let it through. It slid into frame between 38.0s and 38.5s of a 56.7s
+  capture — late, like FELFEL — and the first build of that day's cut carried
+  it plainly legible on the final frame.
 
   Two corrections worth keeping, because the list's whole point is that it
   keeps growing and an undercount weakens it:
