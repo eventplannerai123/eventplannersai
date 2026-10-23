@@ -683,6 +683,15 @@ MCP server; a session without `mcp__Composio__*` tools cannot post at all.
   the TikTok cut every single day** and never attempt to post it. It is the
   platform that actually reaches people, so its cut is not an afterthought
   to the Instagram one.
+
+  **Paste the caption into the reply every time the file goes over** (her
+  instruction, 2026-10-22: "Pull the caption for me always when you send tik
+  tok"). She uploads from her phone, so a caption that sits only in
+  `build/caption.txt`, in a Drive folder or in the guide is a caption she has
+  to go and find. Send the file and the caption text together, in the message
+  itself, ready to copy — no link to it, no "it's in the repo". This is the one
+  case where the reply carries a block of text rather than one line, because
+  the text *is* the deliverable.
 - **The split, stated plainly (author, 2026-09-24): anything going to
   TikTok is hers.** Not just the day's TikTok cut — the back-catalogue
   uploads and every item a brief labels "repost to TikTok" too, whatever
