@@ -211,6 +211,22 @@ is when it posts.
 | Days | `October 1`–`19`, `21`, `23`, `25`–`30` exist; create the rest as the schedule reaches them. `October 19` is `1wlB2Pyy8tfd5CqHIzYgWGKTe3FeE6H5-`, made 2026-10-19 with Composio's `GOOGLEDRIVE_CREATE_FOLDER` (`name` and `parent_id` — **not** `folder_name`, which is rejected), and its `parents` was checked against the month id rather than trusted from the reply, which does not include it. `October 17` is `1tqjkG8iGyX6ZMmeBti-oH09Fo1A2rtVR`, made 2026-10-17 with `mcp__Google_Drive__create_file` (mimeType `application/vnd.google-apps.folder`, `parentId` the month) — it inherits the month's link-sharing, so a file dropped in it is readable from here straight away |
 | Naming | finished cuts `YYYY-MM-DD-slug-instagram.mp4` and `-tiktok.mp4`; carousel slides `YYYY-MM-DD-slug-instagram-1.jpg` … `-5.jpg` and the same for `-tiktok-`; her own files keep their own names |
 
+**Convert every photo of hers to JPEG, and put the JPEG in the folder** (her
+instruction, 2026-10-25: "photo needs to be converted to jpeg always do that").
+Her phone saves HEIC, which Instagram cannot take and most things here cannot
+open. On Oct 25 the hat photo was converted for the carousel and the JPEG was
+never filed, so Drive still held only `prompt-responsibly-hat.HEIC` — while the
+guide's own YOU line for that day asked for `prompt-responsibly-hat.jpg`.
+**Converting is half the job; the JPEG going back to the day folder is the
+other half.**
+
+**A post's files go in the folder for the day the post BELONGS TO** (her
+instruction, 2026-10-25: "if this was a post from saturday put it in saturdays
+folder"). The Sat 24 industry-truth post was built and published on Sun 25, and
+its images went to neither folder until she asked. They belong in `October 24`,
+because that is the day whose block carries the piece — not the day it happened
+to go out late, and not the day it was built.
+
 **"Finished cuts" means carousel slides too.** On 2026-10-16 the runny eggs
 carousel was built, approved and committed, and the Drive upload was skipped
 entirely — she had to ask, "i dont see the carosel saved to the files". The

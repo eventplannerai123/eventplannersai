@@ -23,6 +23,18 @@ publish.
 A text-only industry-truth post — no demo file, no prompt — so the caption
 carries no `AI Prompt:` block.
 
+## Filed under October 24, not October 25
+
+It was built and published on Sun 25, and its images went to neither Drive
+folder until she asked for them. Her rule, 2026-10-25: *"if this was a post from
+saturday put it in saturdays folder"* — a post's files belong to the day whose
+block carries the piece, not the day it went out late.
+
+| | |
+| --- | --- |
+| `2026-10-24-what-they-saw-instagram.jpg` | Drive → October 24 |
+| `2026-10-24-what-they-saw-tiktok.jpg` | Drive → October 24 |
+
 ## The brand look here is the right one
 
 Lavender `#CECBF6`, deep purple `#3C3489`, Poppins, the EP✦ wordmark and the
