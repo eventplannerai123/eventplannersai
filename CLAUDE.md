@@ -112,6 +112,18 @@ should not be re-armed for this week.
 | Thu 29 | **headcount** — as a REGULAR Reel, not a trial | build it from `IMG_1005.MOV` + the Oct 7 beverage-table clip |
 | Fri 30 | coloring book part 2 | build it, no filming needed |
 
+**Thu 29's headcount Reel is the first Eryn piece, and she wants to see it
+before it posts** (her instruction, 2026-10-25). Mon 26 and Tue 27 are both
+finished cuts carrying Vanessa and need no new audio, so the voice change does
+not reach the grid until Thursday. Her message named the Tue 27 ROI rebuild as
+an Eryn piece too; that one moved to November, so its Eryn voiceover gets made
+then.
+
+The Eryn voiceover for Thursday is already generated and committed at
+`reels/2026-10-29-headcount/build/vo/headcount-eryn.mp3` — **7.31s** for the
+guide's 19-word script, which sits inside the piece's 8-12s target with a
+short tail.
+
 Morning carousels are unchanged: Wed 28 dry sandwich lunch, Thu 29 what clients
 never tell you, Sat 31 Halloween industry-truth post.
 
@@ -425,17 +437,47 @@ with the vendor quotes pair, both exact.
   and feed the measured values back in, rather than a single dynamic pass.
 - The screen recordings carry a silent audio track. The voiceover is the
   only audio.
+- **THE VOICE IS ERYN, NOT VANESSA — her change, 2026-10-25, effective
+  immediately.** "Eryn - Hyper Real, Conversation, Natural, Authentic",
+  voice id **`kdnRe2koJdOK4Ovxn2DI`**, model **`eleven_v4`**, default
+  settings, speed 1.0. Her samples are in Drive under
+  `Event planners AI > Voice tests` (`1-Eryn.mp3`). She says the guide is
+  updated everywhere, so **Vanessa (`8DzKSPdgEQPaK5vKG0Rs`) is retired** and
+  appears below only as the history of what already shipped.
+
+  Verified here on 2026-10-25: both the voice id and `eleven_v4` are live in
+  this workspace, and the first Eryn generation came back clean. `eleven_v4`'s
+  schema exposes no `speed` parameter at all, so speed 1.0 is simply the
+  default and nothing needs passing.
+
+  **Every cut already published keeps Vanessa** — the same rule as captions.
+  Nothing is re-rendered to swap the voice.
+
 - **Generate both voiceovers here — standing instruction from 2026-09-24.**
   The author used to record the Instagram one herself and leave the TikTok
-  one to this session; she asked for both to be generated from now on. Use
-  ElevenLabs, voice "Vanessa - Beach Girl" (`8DzKSPdgEQPaK5vKG0Rs`). Neither
+  one to this session; she asked for both to be generated from now on. Neither
   script depends on the footage, so both can be made as soon as the day's
   script is settled, before the recording exists.
 - **Check the day's script length before generating.** The guide's per-day
   scripts have twice run short for a 40-50s day — 66 words on Sep 24 and 64
-  on Sep 26, about 25s, which would leave ~20s of silence. Target roughly
-  2.55 words per second of finished cut and extend the script by narrating
-  what the output actually shows, as the Sep 24 rewrite did.
+  on Sep 26, about 25s, which would leave ~20s of silence. Extend a short
+  script by narrating what the output actually shows, as the Sep 24 rewrite
+  did.
+
+  **On Eryn's rate, measure rather than trust a figure — including hers.** She
+  says Eryn is "a little faster than Vanessa (about 3 words a second)". The
+  first real generation does not show that: 19 words came back at **7.28s**,
+  which is **2.61 words a second**. For comparison, Vanessa's 84-word deposit
+  tracker script ran 28.79s, or **2.92 words a second**.
+
+  Both numbers are real and the comparison is still not clean, which is the
+  point: a short clip carries proportionally more lead-in and tail silence, so
+  its words-per-second always reads low. So **do not plan a long script off a
+  short clip's rate, or the reverse** — and do not quote 3 w/s as if it were
+  measured. The rule that actually works is unchanged: generate, `ffprobe` the
+  file, and compare it to the slot before building anything around it. Use
+  ~2.6 w/s for a piece under about 15s and ~2.9 for a longer one, as a starting
+  guess only.
 
 ## Video lessons from Oct 5 (the guide's own, apply to every video)
 
@@ -443,7 +485,9 @@ Added to the guide on 2026-10-05 as six standing rules. They replace several
 things below rather than sitting alongside them, so read this block first.
 
 1. **Every video needs sound that tells the story** — an ElevenLabs voiceover
-   (Vanessa, standard settings), or, for an overlay-led piece, overlays that
+   (**Eryn** from 2026-10-25, default settings; the guide still says Vanessa in
+   places she has not reached yet, and the voice change is the newer
+   instruction), or, for an overlay-led piece, overlays that
    carry the whole story alone. **This ends the silent quick piece.** The Oct 6
    cancellation piece was built silent to the old spec and she said it "made no
    sense without sound"; the guide was rewritten the same day.
