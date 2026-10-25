@@ -71,14 +71,62 @@ thing she has to act on.
 - **The cron carries `CRON_TZ=America/New_York`**, so it follows her clock
   through the 1 Nov switch to EST on its own. A UTC-anchored schedule would
   have slipped to 7:47am in her day that morning.
-- **It posts nothing.** Step 7 of its prompt says so explicitly: Instagram and
-  Facebook still wait for her go-ahead in the conversation, every time, and
-  TikTok is still hers. The task removes the waiting, not the approval.
+- **It posts nothing she has not approved.** Instagram and Facebook wait for
+  her go-ahead in the conversation, every time, and TikTok is always hers. The
+  task removes the waiting, not the approval. **Amended 2026-10-25:** where she
+  or the guide has already approved a piece, the task schedules it rather than
+  re-asking — her Oct 19 rule is that a scheduled item must never lapse, and
+  under the new posting-time rule the evening Reel slot is 6:30pm, long after
+  the task has finished running.
+- **An evening post needs a one-shot task that fires into THIS session.** A
+  fresh-session task is given no connectors, so it cannot reach Instagram or
+  Facebook at all; it can only send a message. Found out on 2026-10-25 setting
+  up a phone reminder, which came back with exactly that warning.
 
 **What it does not fix:** the failures of Fri 23 and Sat 24 were not timing.
 Friday's cut was built and shown and then left to lapse when she did not reply;
 Saturday's post was never built at all. A 7am start only helps if the day's
 whole block gets worked, so the task reads the block rather than the thread.
+
+## She is travelling Oct 26-31 and cannot record (her note, 2026-10-25)
+
+**Do not wait for a screen recording this week.** Three pieces that needed one
+are moved to November and their briefs stay in the guide for that planning:
+
+- the **expense report** Reel (was Mon 26),
+- the **boxes / packing-list manifest** Reel (was Tue 27),
+- the **deposit tracker redo** (was Sat 31, and before that Sat 24).
+
+The deposit tracker's two voiceovers are already built and committed at
+`reels/2026-10-24-deposit-tracker-file/`, so November's build starts from her
+recording alone. The 5pm-Vegas reminder that chased it on Oct 25 is spent and
+should not be re-armed for this week.
+
+**What replaces them — every evening Reel at 6:30pm to Instagram and Facebook:**
+
+| Day | Piece | State |
+| --- | --- | --- |
+| Mon 26 | ticket allocation | cut exists, approved, scheduled from here |
+| Tue 27 | **ROI rebuild** — Sep 1 original, new first 3 seconds only | build it; show her, a one-word yes is enough |
+| Wed 28 | doors at 7pm, timeline backwards (existing cut, never on Instagram) | no re-edit |
+| Thu 29 | **headcount** — as a REGULAR Reel, not a trial | build it from `IMG_1005.MOV` + the Oct 7 beverage-table clip |
+| Fri 30 | coloring book part 2 | build it, no filming needed |
+
+Morning carousels are unchanged: Wed 28 dry sandwich lunch, Thu 29 what clients
+never tell you, Sat 31 Halloween industry-truth post.
+
+**The headcount piece never ran at all** — checked against the last 25 Instagram
+items on 2026-10-25, where the only `is_shared_to_feed: false` post is the Oct 12
+event brief. So her "if it already ran as a trial, skip it and tell me" does not
+fire, and Thu 29 goes ahead. Note that the guide's Wed 21 block claims it was
+"edited Oct 21"; **it was not** — there is no build for it in this repo, so Thu 29
+includes the edit. `IMG_1005.MOV` is Drive id
+`15zEDUgmY7b5sTMUqcsVl4a0r3iqrTJe0` (4.97 MB). Use the **beverage-table** clip
+from Oct 7, never the coffee-station one — it pans onto a sponsor's logo.
+
+**Her handover rule for the week:** anything going to TikTok gets sent with its
+caption ready to post, and **if she does not post it, leave it** — the Sunday
+recap catches it. Do not chase a TikTok upload mid-week.
 
 ## The working guide is a Google Doc (from 2026-09-30)
 
@@ -656,29 +704,48 @@ weekly accounts reached**, never the sum of per-post reach.
 Honest caveat worth repeating rather than burying: reach was already sliding
 before the change, so a recovery cannot be cleanly attributed to posting less.
 
-**Posting time: the day's main post goes out in the MORNING, around 9am**
-(her instruction, 2026-10-16: "in general we know that 9am is optimal or early
-morning"). **6:30pm is only for a day's second post** — "i think we should only
-test the 6:30 time when 2 posts are scheduled that day", same message. So a day
-with one Instagram post is a morning post, full stop.
+**POSTING TIME, REWRITTEN BY HER ON 2026-10-25. This replaces the 9am rule.**
+It is a new rule at the top of the guide, so it governs:
 
-**The morning-vs-evening test is CLOSED, unrun**, on the morning of its day 1.
-Her rule ends it rather than narrowing it: the pre-registration excluded second
-posts, so if 6:30pm only ever carries a second post, the evening arm can never
-be filled and there is nothing to compare. The Fri 16 Oct post was moved from
-6:30pm to 9:10am that morning. **Do not re-open it, and do not replace it with
-a 9am-vs-11am version** — this account cannot resolve anything under about
-1.37x at 14 posts an arm, and two hours inside one consensus band will not
-differ by 37%. The full reasoning, and the pre-registration kept unedited
-beneath it, are in
-[`docs/POSTING-TIME-TEST.md`](docs/POSTING-TIME-TEST.md).
+> Posting-time rule (Oct 25): Instagram Reels post at 6:30pm. Carousels and
+> image posts go out in the morning (about 9am) and go to TikTok the same
+> morning. Two Instagram posts on the same day are at least 6 hours apart,
+> never back to back. Before posting to TikTok, check the last 10 videos so
+> nothing goes up twice. Based on Oct 1–25: evening posts averaged 134 reach,
+> daytime posts 29.
 
-She is right on the substance: morning is the **only** thing the published
-research agreed on for a B2B audience, and 9-11am is already where 61% of the
-account's 56 posts went. Research in
-[`docs/POSTING-TIMES.md`](docs/POSTING-TIMES.md): the published studies
-contradict each other on nearly everything else. What is **not** established is
-that evening would have lost — it was never measured, so do not claim it was.
+So: **format decides the time, not whether it is the day's first post.** A Reel
+is an evening post even when it is the only thing that day — which is the exact
+opposite of the rule this file carried from Oct 16 to Oct 25 ("a day with one
+Instagram post is a morning post, full stop"). That one came from her Oct 16
+message and is now superseded by her own numbers.
+
+**The 6-hour gap is a hard constraint on a two-post day.** A 9am carousel and a
+6:30pm Reel is 9.5 hours, so the ordinary shape is fine; what it bars is
+stacking two posts in the same part of the day.
+
+**Check the last 10 TikTok videos before every TikTok post.** Her reason is a
+real duplicate: the Oct 12 consultation-notes video went up a second time on
+Oct 17. The check belongs in the handover too — the file goes to her, so the
+check has to happen before it is sent, not after it is posted.
+
+**What this does and does not settle.** 134 against 29 is a 4.6x gap, far
+outside anything this account could resolve from a two-arm test, so the
+decision is sound and the morning-vs-evening test stays closed — it is answered,
+not reopened. The honest caveat, which belongs in the record rather than in a
+reply to her: **time and format are entangled in that comparison.** Nearly every
+evening post in Oct 1–25 was a Reel and nearly every daytime post was a carousel
+or a single image, so the 4.6x could be the slot, the format, or both. Nothing
+to act on — her rule assigns Reels to the evening either way — but do not quote
+134-vs-29 as proof that the *hour* is what moved it.
+
+The older material is still worth keeping: morning was the **only** thing the
+published research agreed on for a B2B audience, and 9-11am is where 61% of the
+account's first 56 posts went. The studies contradict each other on nearly
+everything else — [`docs/POSTING-TIMES.md`](docs/POSTING-TIMES.md) — and the
+unrun test's pre-registration is in
+[`docs/POSTING-TIME-TEST.md`](docs/POSTING-TIME-TEST.md). Read those for
+context, not for the current rule.
 
 **Facebook cannot be measured at all.** It deprecated reach and impressions
 in its API in November 2025, it has 7 followers, and every reaction on every
@@ -761,6 +828,12 @@ MCP server; a session without `mcp__Composio__*` tools cannot post at all.
   the TikTok cut every single day** and never attempt to post it. It is the
   platform that actually reaches people, so its cut is not an afterthought
   to the Instagram one.
+
+  **Check the last 10 TikTok videos before handing a file over** (her rule,
+  2026-10-25). The Oct 12 consultation-notes video went up a second time on
+  Oct 17, so the duplicate has already happened once. The upload is hers, which
+  means the check has to happen *before* the file is sent — afterwards is too
+  late.
 
   **Paste the caption into the reply every time the file goes over** (her
   instruction, 2026-10-22: "Pull the caption for me always when you send tik
