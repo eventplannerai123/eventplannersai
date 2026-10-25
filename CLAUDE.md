@@ -55,6 +55,31 @@ She asked for this twice, so it is a rule, not a preference.
   later in her day than intended, so re-check anything standing when the clocks
   change.
 
+## The day starts at 6:47am without her (set up 2026-10-25)
+
+She asked for it outright: "how can we set it up so that you start working on
+each day's things at 7 AM on your own without me". A scheduled task,
+**"Daily 7am start"** (`trig_01APRHqCysmbMyy5pELStpeX`), fires into this session
+every morning and works the day's block: read the guide, check what is actually
+live, build everything that does not need her, carry forward what was missed,
+run Pinterest if there is a queue, strike what became true, and send her the one
+thing she has to act on.
+
+- **It fires at 6:47am, not 7:00.** Scheduled tasks bunch on the hour and get
+  delayed by server traffic, so it is pulled thirteen minutes early — the work
+  is ready *at* seven rather than starting then.
+- **The cron carries `CRON_TZ=America/New_York`**, so it follows her clock
+  through the 1 Nov switch to EST on its own. A UTC-anchored schedule would
+  have slipped to 7:47am in her day that morning.
+- **It posts nothing.** Step 7 of its prompt says so explicitly: Instagram and
+  Facebook still wait for her go-ahead in the conversation, every time, and
+  TikTok is still hers. The task removes the waiting, not the approval.
+
+**What it does not fix:** the failures of Fri 23 and Sat 24 were not timing.
+Friday's cut was built and shown and then left to lapse when she did not reply;
+Saturday's post was never built at all. A 7am start only helps if the day's
+whole block gets worked, so the task reads the block rather than the thread.
+
 ## The working guide is a Google Doc (from 2026-09-30)
 
 **"AI for Event Planners — Working Guide"**, doc id
