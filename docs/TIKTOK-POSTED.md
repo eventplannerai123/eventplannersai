@@ -40,6 +40,7 @@ Sep 22 coloring book build story were the last three, and all three are up.
 | 2026-10-22 | Setup times carousel, 5 slides as a photo post | **confirmed** 2026-10-22 — "Tik tok posted". Said right after the TikTok set was pointed out in Drive, so it is the setup-times carousel. The Oct 21 wrong-entrance carousel was also handed over and has **not** been confirmed; it is not recorded here as live. |
 | 2026-10-22 | Staffing plan rebuild (Rebuild 4, new hook) | **confirmed** 2026-10-23 — "Posted". A new file with a new hook and opening, so TikTok reads it as a new video rather than a repost of Sep 26. |
 | 2026-10-25 | Ticket allocation (the Fri 23 piece's TikTok cut) | **confirmed** 2026-10-25 — "tik tok posted". Handed over Fri 23 with its caption; posted two days later. The Instagram cut of the same piece has still not gone out. |
+| 2026-10-25 | Prompt Responsibly carousel, 4 slides as a photo post | **confirmed** 2026-10-25 — "posted". Same day as the Instagram carousel, which went out from here that morning. |
 | date unknown | Vendor quotes cut | **confirmed** 2026-10-04 — "vendor qoutes was posted" |
 | date unknown | Centerpieces (DIY vs florist) | **confirmed** 2026-10-04 — "Centerpieces have also posted" |
 
