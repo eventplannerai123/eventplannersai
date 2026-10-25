@@ -115,6 +115,34 @@ should not be re-armed for this week.
 Morning carousels are unchanged: Wed 28 dry sandwich lunch, Thu 29 what clients
 never tell you, Sat 31 Halloween industry-truth post.
 
+**Tue 27 is blocked, and not on a recording.** The Sep 1 ROI report Reel
+(instagram.com/reel/Dcvz867jBRq/) predates this repo, so its 1080x1920 master
+is in neither the repo nor Drive — checked `October 27`
+(`1msxf_33KpyY5efAjXqyykArjljXZ0Vxd`) on Oct 25, which holds only the packing
+list. A rebuild changes the first 3 seconds and keeps the rest of the edit
+byte-identical, so it has to start from that master. **She has to drop the
+Instagram cut into `October 27`**, full size, and it is a file copy rather than
+a recording, which is why it is still askable in a week when she cannot film.
+
+Do **not** substitute Instagram's own copy. `GOOGLEDRIVE_UPLOAD_FROM_URL` can
+fetch it server-side past the CDN block, but what comes back is the
+**720x1280** transcode — that is how the Oct 15 rebuild found out — and
+upscaling it would change picture quality, which is exactly the kind of thing
+that moves watch time on its own. A rebuild exists to measure a hook, so a
+softer picture destroys the only number it is for.
+
+And when she sends it, **check it is the Instagram cut, not the TikTok one.**
+On Oct 15 the first two files sent were the TikTok cut and a 220x480
+compressed capture. The two cuts are paced differently in the middle, not just
+at the hook, so the TikTok file cannot stand in.
+
+Day folder ids found 2026-10-25: `October 27`
+`1msxf_33KpyY5efAjXqyykArjljXZ0Vxd`, `October 28`
+`1uC8yLrT6baRWOelneMB3D_2wW19GDJLl`, `October 29`
+`1gyE_LzpNdL2PW1AQoM_vQmVC3Tw3DBkm`, `October 30`
+`1_jR3HyaU4hMJgRwf4DvufuIKuvPn_f-m`. **`October 31` does not exist yet** —
+create it for the Halloween post.
+
 **The headcount piece never ran at all** — checked against the last 25 Instagram
 items on 2026-10-25, where the only `is_shared_to_feed: false` post is the Oct 12
 event brief. So her "if it already ran as a trial, skip it and tell me" does not
