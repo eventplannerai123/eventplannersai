@@ -1,0 +1,20 @@
+Instagram (narrative hook) — 84 words, ElevenLabs Vanessa, eleven_multilingual_v2
+Script verbatim from the guide's Sat 24 block:
+
+Nine vendors still owed money, and one balance is due in eight days. I don't
+retype amounts into ChatGPT anymore. I upload the payment sheet and ask for
+every payment in date order, with the real dates worked out for anything tied
+to the wedding, like catering at fourteen days out or the band on the day. It
+totals what's paid and what's owed, and flags the catering balance, because
+that one changes with the final headcount. Upload the file. Don't retype it.
+
+TikTok (command-style hook) — 88 words, written here per the two-cuts rule
+("Stop doing X" opening, same substance, slightly different pacing):
+
+Stop retyping vendor deposits into ChatGPT. Nine vendors still owed money, one
+balance due in eight days — and I didn't type a single number. I upload the
+payment sheet and ask for every payment in date order, with the real dates
+worked out for anything tied to the wedding, like catering at fourteen days out
+or the band on the day. It totals what's paid and what's owed, and flags the
+catering balance, because that one moves with the final headcount. Upload the
+file. Don't retype it.

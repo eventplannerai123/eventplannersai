@@ -1,0 +1,9 @@
+Nine vendors still owed money. The first balance is due in 8 days.
+
+Stop typing every deposit into ChatGPT. Upload the payment sheet and let it do the date math, including the balances tied to the wedding date.
+
+AI Prompt: "Here's the vendor payment sheet for a March 13 wedding. Today is October 24. List every payment still owed in date order, working out the real date for anything tied to the wedding date. Flag anything due in the next 30 days, total what's been paid and what's still owed, and tell me which balances could still change."
+
+How many deposits are you tracking right now?
+
+#aiforeventplanners #eventprofs #eventplanningtips #vendormanagement #weddingplanner
