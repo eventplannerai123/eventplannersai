@@ -1029,8 +1029,10 @@ board ids, the Drive folder, the schedule CSV. The parts that govern:
   pointed at the back burner — and she overruled it ("no post it"). Pinterest
   keeps running.** That is the decision of record; do not re-propose the back
   burner off the same numbers. No ad spend is unaffected and still stands.
-  **The queue has been empty since Oct 19** — nothing can go out until she
-  sends the next batch of pin copy, three a day as v5 ran.
+  **The queue is full again: batch v7 landed 2026-10-25** — 74 pins, two a day,
+  Mon 26 Oct to Tue 1 Dec, audited and ready in
+  `pinterest/2026-pin-schedule-v7.csv`. It had been empty from Sat 24, when v6
+  finished, so Sun 25 had nothing to post.
 - Links carry `?utm_source=pinterest&utm_medium=social&utm_campaign=<sampler
   |book>&utm_content=<file stem>`. `campaign` is the product, because the
   question worth answering is whether the 99c sampler beats the $5.99 book.

@@ -1,15 +1,77 @@
-# Pinterest — October pin run
+# Pinterest — the pin run
 
-Twelve pins for `@calmbeforetheaisle` (the coloring book shop), one pin
-already published and eleven scheduled two a day from Oct 1.
-`2026-10-pin-schedule.csv` is the working copy: the date, the image, its
-Drive file id, the board, and the exact tagged link to post.
+The pin run for `@calmbeforetheaisle` (the coloring book shop). It arrives as
+a batch of pin copy from the author every few weeks and goes out **two a day**;
+the live batch is **v7**, 74 pins from Mon 26 Oct to Tue 1 Dec, and its working
+copy is `2026-pin-schedule-v7.csv` — see the section directly below. Each
+schedule CSV holds the date, the image, its Drive file id, the board, and the
+exact tagged link to post. The older schedules (`2026-10-pin-schedule.csv`,
+`-v5`, `-v6`) are kept as the record of what went out, not as queues.
 
 This is a separate workstream from the Reels and **needs nothing from this
 repo at post time** — `PINTEREST_CREATE_PIN` takes the image bytes via
 `media_source image_base64`, so there is no push-then-fetch step the way
 Instagram and Facebook have. The schedule lives here only so it survives a
 session ending.
+
+## THE LIVE QUEUE IS BATCH v7 — Mon 26 Oct to Tue 1 Dec (landed 2026-10-25)
+
+Read this section first. **`2026-pin-schedule-v7.csv` in this folder is the
+working copy**: one row per pin, already carrying the Drive file id, the live
+board id, the title, the description and the exact link to post. Nothing has to
+be looked up at post time.
+
+| | |
+| --- | --- |
+| Pins | **74**, `pin_43_calendar` through `pin_116_sparklers` |
+| Cadence | **two a day, every day**, 37 consecutive days |
+| Runs | Mon 26 Oct → Tue 1 Dec 2026 |
+| Her source | Drive folder `v7_oct26_dec1`, id `1LLix8MgoV7AbLFrPOV1oOFHgXAHboGsH`, inside the usual `Coloring book/pintrest/` folder — holds `pin_copy_v7.csv` (id `1YoOyA-PbrNRRvfqsHbabfdz04YTi_sfr`), all 74 images and four `v7_overview_*.jpg` contact sheets |
+| Images | all 74 downloaded into `images/` and **verified 1000x1500 exactly**, so the `image_url` route works without a Drive fetch |
+
+**This ends the dry spell.** The queue had been empty since Sat 24 Oct, when v6
+finished; nothing could go out on Sun 25.
+
+### What was checked before anything posts
+
+Pins cannot be edited at this access tier, so every argument was audited
+against the CSV she sent rather than after the fact:
+
+- 74 rows, 37 days, **exactly two per day**, no gaps and no day with three.
+- Every stated weekday matches its real date (Mon 26 Oct is a Monday, Tue 1 Dec
+  is a Tuesday).
+- No duplicate filenames, and **every one of the 74 images exists** in her Drive
+  folder.
+- No title over Pinterest's 100-character limit.
+- All four board names resolve to live boards, verified with
+  `PINTEREST_LIST_BOARDS` on 2026-10-25, not from the table below.
+- All 57 Etsy links carry the full
+  `utm_source=pinterest&utm_medium=social&utm_campaign=<book|sampler>&utm_content=pin_NN`
+  set, every `utm_content` matches its own filename, and **every `campaign`
+  matches the listing it points at** — `book` for `4572665693` ($5.99), `sampler`
+  for `4581180302` (99c). 49 book, 8 sampler.
+
+### The 17 Amazon links are untagged on purpose, and that is now correct
+
+`pin_52`, `60`, `70`, `75`, `77`, `81`, `85`, `89`, `92`, `95`, `99`, `102`,
+`106`, `107`, `112`, `114` and `115` point at the paperback,
+`https://www.amazon.com/dp/B0HL3B4CLM`, with **no `utm_*` at all**. That is
+deliberate and it is an improvement on v5: these carry Amazon's own
+`?maas=…&ref_=aa_maas&tag=maas` attribution string.
+
+The note at the bottom of this file about `pin_27` going out untagged ends here
+— it said "future Amazon pins want a `tag=`, not a `utm_`", and v7's do. **Post
+them exactly as she wrote them.** Appending a `utm_` would buy nothing (Amazon
+ignores it) and could break the `maas` string, permanently, on a pin that
+cannot be edited.
+
+### The older board is back in use
+
+v7 sends 24 pins to **`Wedding Coloring Pages`** (`1148629148653658866`), the
+board the six Sep 13-22 pins went to. Earlier sections of this file call that
+board "not used by this run" — true of v4 to v6, **not true of v7**. The split
+is 24 Wedding Coloring Pages / 19 Bridal shower gifts / 16 Adult coloring pages
+/ 15 Wedding planning printables.
 
 ## Where the source files are
 
