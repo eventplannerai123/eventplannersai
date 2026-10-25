@@ -548,6 +548,37 @@ Two honest notes on applying these, from the build they came out of:
   because those are committed. Anything else she wants archived in Drive, she
   adds from her phone.
 
+## The brand palette is LAVENDER AND DEEP PURPLE, not cream and maroon
+
+She caught this on 2026-10-25: "i thought we went back to purple". She was
+right, and it had been wrong for weeks.
+
+The guide's **Carousel image production standard** is explicit:
+
+> Build natively at 1080×1350 using code, not Canva/cropped references. Brand
+> system on every slide: lavender background #CECBF6, deep purple text #3C3489,
+> Poppins (Bold for headlines, Medium/Light for body), EP✦ wordmark, numbered
+> badge, bottom bar with handle and logo. **Never another colour scheme.**
+
+The same palette is set again for industry-truth posts. When a day's brief says
+"daily carousel (rule at the top), brand look", *that* is the brand look.
+
+**What went wrong:** every carousel built in this session used a cream
+(`#F5F1E8`) and maroon (`#7A2A36`) palette with DejaVu Serif — Oct 18 runny
+eggs, Oct 21 wrong entrance, Oct 22 setup times, Oct 25 prompt responsibly, all
+published. Each generator copied the one before it and described the result as
+"the house style", and **this file never carried the palette at all**, so there
+was nothing to check the copy against. The guide said it the whole time.
+
+- **Poppins is not installed here.** Fetch the weights from Google Fonts
+  (`fonts.googleapis.com/css2?family=Poppins:wght@400;600;700` then the
+  `fonts.gstatic.com` .ttf URLs it returns) and commit them under the piece's
+  `build/fonts/`. SIL Open Font License.
+- **Poppins has no glyph at U+2726**, so a literal "EP✦" renders a tofu box.
+  Draw the star as a polygon beside the "EP".
+- A published carousel's images cannot be swapped. Taking one down and
+  reposting is hers to decide, never a silent fix.
+
 ## Posting
 
 **Cadence from Oct 1 (October plan, written 2026-09-28).** Daily Instagram
