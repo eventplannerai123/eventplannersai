@@ -107,15 +107,22 @@ should not be re-armed for this week.
 | Day | Piece | State |
 | --- | --- | --- |
 | Mon 26 | ticket allocation | cut exists, approved, scheduled from here |
-| Tue 27 | **ROI rebuild** — Sep 1 original, new first 3 seconds only | build it; show her, a one-word yes is enough |
-| Wed 28 | doors at 7pm, timeline backwards (existing cut, never on Instagram) | no re-edit |
+| Tue 27 | doors at 7pm, timeline backwards — **moved up from Wed 28** | existing cut, no re-edit, scheduled from here |
+| Wed 28 | morning carousel only | the evening slot is spent on Tue 27 |
 | Thu 29 | **headcount** — as a REGULAR Reel, not a trial | build it from `IMG_1005.MOV` + the Oct 7 beverage-table clip |
 | Fri 30 | coloring book part 2 | build it, no filming needed |
 
 Morning carousels are unchanged: Wed 28 dry sandwich lunch, Thu 29 what clients
 never tell you, Sat 31 Halloween industry-truth post.
 
-**Tue 27 is blocked, and not on a recording.** The Sep 1 ROI report Reel
+**The ROI rebuild moved to November** (2026-10-25). She said "I can start
+posting regularly on October 29", so the master below cannot reach Drive in time
+for Tuesday, and the slot is filled with the doors-at-7pm cut rather than left
+to lapse — the guide already schedules that piece as Wed 28's second post, so it
+moved up a day rather than being invented. Keep the rest of this note for the
+November build.
+
+**Why it was blocked, and it was never a recording.** The Sep 1 ROI report Reel
 (instagram.com/reel/Dcvz867jBRq/) predates this repo, so its 1080x1920 master
 is in neither the repo nor Drive — checked `October 27`
 (`1msxf_33KpyY5efAjXqyykArjljXZ0Vxd`) on Oct 25, which holds only the packing
@@ -151,6 +158,11 @@ fire, and Thu 29 goes ahead. Note that the guide's Wed 21 block claims it was
 includes the edit. `IMG_1005.MOV` is Drive id
 `15zEDUgmY7b5sTMUqcsVl4a0r3iqrTJe0` (4.97 MB). Use the **beverage-table** clip
 from Oct 7, never the coffee-station one — it pans onto a sponsor's logo.
+
+**She is effectively offline until Thu 29** (her message, 2026-10-25: "I can
+start posting regularly on October 29"). So Mon 26 to Wed 28 run with no
+approvals, no TikTok uploads and no Stories from her, and nothing in those three
+days may depend on her. From Thu 29 her own posting resumes.
 
 **Her handover rule for the week:** anything going to TikTok gets sent with its
 caption ready to post, and **if she does not post it, leave it** — the Sunday
