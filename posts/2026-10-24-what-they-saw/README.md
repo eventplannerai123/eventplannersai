@@ -1,8 +1,24 @@
 # "What they saw / What I checked" — 2026-10-24
 
-Status: **built, not posted.** It was Saturday's post and was never built on the
-day; she approved the wording on Sun 25. Instagram and Facebook run from here
-after her go-ahead; the TikTok photo post is hers.
+Status: **published 2026-10-25** at 9:13am ET on her go-ahead ("post is
+approved"). It was Saturday's post and was never built on the day; she approved
+the wording on Sun 25 and it went out a day late, as the day's second post. The
+TikTok photo post is hers.
+
+| Account | Post |
+| --- | --- |
+| Instagram `@aiforeventplanners` | https://www.instagram.com/p/De6ycoyET00/ |
+| Facebook "The Event Planners AI" | https://www.facebook.com/122100389133449533/posts/122117567907449533 |
+
+Instagram media `18170950009474104`, `media_type: IMAGE`,
+`media_product_type: FEED` — a single image, not a carousel.
+
+**All three captions hash identically**: `build/caption.txt`, the live Instagram
+caption and the live Facebook message are all 277 characters,
+sha256 `db69dcf029f6b7c032d1669d24639b50f926bcc0f703de5d2e7f310af6e2e92d`.
+
+**Facebook surfaced on the first read-back**, 12 seconds after the Instagram
+publish.
 
 A text-only industry-truth post — no demo file, no prompt — so the caption
 carries no `AI Prompt:` block.

@@ -579,6 +579,12 @@ was nothing to check the copy against. The guide said it the whole time.
 - A published carousel's images cannot be swapped. Taking one down and
   reposting is hers to decide, never a silent fix.
 
+**Her decision, 2026-10-25: "keep it up, lavendar moving forward".** The four
+cream carousels stay live — nothing is taken down or reposted — and everything
+from the Oct 24 industry-truth post onwards is in the real palette. So the grid
+carries a visible seam, and that is deliberate rather than an oversight to
+correct later.
+
 ## Posting
 
 **Cadence from Oct 1 (October plan, written 2026-09-28).** Daily Instagram
