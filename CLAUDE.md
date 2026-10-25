@@ -88,60 +88,49 @@ Friday's cut was built and shown and then left to lapse when she did not reply;
 Saturday's post was never built at all. A 7am start only helps if the day's
 whole block gets worked, so the task reads the block rather than the thread.
 
-## She is travelling Oct 26-31 and cannot record (her note, 2026-10-25)
+## The travel week, as she revised it twice on 2026-10-25
 
-**Do not wait for a screen recording this week.** Three pieces that needed one
-are moved to November and their briefs stay in the guide for that planning:
+**She is back Wed 28**, not Thu 29 — her second message supersedes "I can start
+posting regularly on October 29". So only **Mon 26 and Tue 27** run without her.
 
-- the **expense report** Reel (was Mon 26),
-- the **boxes / packing-list manifest** Reel (was Tue 27),
-- the **deposit tracker redo** (was Sat 31, and before that Sat 24).
-
-The deposit tracker's two voiceovers are already built and committed at
-`reels/2026-10-24-deposit-tracker-file/`, so November's build starts from her
-recording alone. The 5pm-Vegas reminder that chased it on Oct 25 is spent and
-should not be re-armed for this week.
-
-**What replaces them — every evening Reel at 6:30pm to Instagram and Facebook:**
+**Every evening Reel is 6:30pm Eastern to Instagram and Facebook.** Her
+calendar, which replaces every earlier version of this week:
 
 | Day | Piece | State |
 | --- | --- | --- |
-| Mon 26 | ticket allocation | cut exists, approved, scheduled from here |
-| Tue 27 | doors at 7pm, timeline backwards — **moved up from Wed 28** | existing cut, no re-edit, scheduled from here |
-| Wed 28 | morning carousel only | the evening slot is spent on Tue 27 |
-| Thu 29 | **headcount** — as a REGULAR Reel, not a trial | build it from `IMG_1005.MOV` + the Oct 7 beverage-table clip |
+| Mon 26 | ticket allocation | existing cut, approved, scheduled from here |
+| Tue 27 | **ROI rebuild** — show her the hook, a one-word yes is enough | **blocked**: needs her Sep 1 master, see below |
+| Wed 28 | sandwich carousel (morning) + timeline Reel (6:30pm) | carousel to build; timeline cut exists, scheduled from here |
+| Thu 29 | **headcount** — regular Reel, not a trial | **built**, both cuts, first Eryn piece |
 | Fri 30 | coloring book part 2 | build it, no filming needed |
+| Sat 31 | expense report Reel | she records Thu 29 |
+| Sun 1 Nov | boxes Reel | she records Fri 30 |
+| Tue 3 Nov | deposit tracker redo | she records by Mon 2 |
 
-**Thu 29's headcount Reel is the first Eryn piece, and she wants to see it
-before it posts** (her instruction, 2026-10-25). Mon 26 and Tue 27 are both
-finished cuts carrying Vanessa and need no new audio, so the voice change does
-not reach the grid until Thursday. Her message named the Tue 27 ROI rebuild as
-an Eryn piece too; that one moved to November, so its Eryn voiceover gets made
-then.
+**Her rule: each moved piece's full instructions now live only on its new
+date.** So read the day it is on, not the day it used to be on — the old blocks
+are gone rather than duplicated.
 
-The Eryn voiceover for Thursday is already generated and committed at
-`reels/2026-10-29-headcount/build/vo/headcount-eryn.mp3` — **7.31s** for the
-guide's 19-word script, which sits inside the piece's 8-12s target with a
-short tail.
+**The three recording-dependent pieces are back on, with dates.** They were
+moved to "November" on the first pass; her second message pins them to Sat 31,
+Sun 1 Nov and Tue 3 Nov, each with the day she records. The deposit tracker's
+two Vanessa voiceovers at `reels/2026-10-24-deposit-tracker-file/` **must be
+regenerated in Eryn** before that build.
 
-Morning carousels are unchanged: Wed 28 dry sandwich lunch, Thu 29 what clients
-never tell you, Sat 31 Halloween industry-truth post.
+**Clock change: Sun 1 Nov.** Eastern goes to UTC-5 that morning, so a 6:30pm
+Eastern post is **23:30 UTC** from Sun 1 Nov onwards and 22:30 UTC before it.
+The Sun 1 Nov boxes Reel is the first one on the far side of that line.
 
-**The ROI rebuild moved to November** (2026-10-25). She said "I can start
-posting regularly on October 29", so the master below cannot reach Drive in time
-for Tuesday, and the slot is filled with the doors-at-7pm cut rather than left
-to lapse — the guide already schedules that piece as Wed 28's second post, so it
-moved up a day rather than being invented. Keep the rest of this note for the
-November build.
+### Tue 27's ROI rebuild is blocked, and not on a recording
 
-**Why it was blocked, and it was never a recording.** The Sep 1 ROI report Reel
-(instagram.com/reel/Dcvz867jBRq/) predates this repo, so its 1080x1920 master
-is in neither the repo nor Drive — checked `October 27`
+The Sep 1 ROI report Reel (instagram.com/reel/Dcvz867jBRq/) predates this repo,
+so its 1080x1920 master is in neither the repo nor Drive — checked `October 27`
 (`1msxf_33KpyY5efAjXqyykArjljXZ0Vxd`) on Oct 25, which holds only the packing
 list. A rebuild changes the first 3 seconds and keeps the rest of the edit
 byte-identical, so it has to start from that master. **She has to drop the
-Instagram cut into `October 27`**, full size, and it is a file copy rather than
-a recording, which is why it is still askable in a week when she cannot film.
+Instagram cut into `October 27`**, full size. It is a file copy rather than a
+recording, which is why it is askable in a week when she cannot film — but she
+is away until Wed 28 and the slot is Tue 27, so it has to be asked for now.
 
 Do **not** substitute Instagram's own copy. `GOOGLEDRIVE_UPLOAD_FROM_URL` can
 fetch it server-side past the CDN block, but what comes back is the
@@ -151,34 +140,32 @@ that moves watch time on its own. A rebuild exists to measure a hook, so a
 softer picture destroys the only number it is for.
 
 And when she sends it, **check it is the Instagram cut, not the TikTok one.**
-On Oct 15 the first two files sent were the TikTok cut and a 220x480
-compressed capture. The two cuts are paced differently in the middle, not just
-at the hook, so the TikTok file cannot stand in.
+On Oct 15 the first two files sent were the TikTok cut and a 220x480 compressed
+capture. The two cuts are paced differently in the middle, not just at the hook.
 
-Day folder ids found 2026-10-25: `October 27`
-`1msxf_33KpyY5efAjXqyykArjljXZ0Vxd`, `October 28`
-`1uC8yLrT6baRWOelneMB3D_2wW19GDJLl`, `October 29`
-`1gyE_LzpNdL2PW1AQoM_vQmVC3Tw3DBkm`, `October 30`
-`1_jR3HyaU4hMJgRwf4DvufuIKuvPn_f-m`. **`October 31` does not exist yet** —
-create it for the Halloween post.
+The approved hook is already settled (Sahiba, Oct 16, "2 is good"): **"If you
+didn't define success before the event, you can't prove it after."** Opening
+frame: the finished one-page report. **Never name the employer** anywhere in
+the piece, caption or overlay.
 
-**The headcount piece never ran at all** — checked against the last 25 Instagram
-items on 2026-10-25, where the only `is_shared_to_feed: false` post is the Oct 12
-event brief. So her "if it already ran as a trial, skip it and tell me" does not
-fire, and Thu 29 goes ahead. Note that the guide's Wed 21 block claims it was
-"edited Oct 21"; **it was not** — there is no build for it in this repo, so Thu 29
-includes the edit. `IMG_1005.MOV` is Drive id
-`15zEDUgmY7b5sTMUqcsVl4a0r3iqrTJe0` (4.97 MB). Use the **beverage-table** clip
-from Oct 7, never the coffee-station one — it pans onto a sponsor's logo.
+### Thu 29's headcount Reel is built, and it is the first Eryn piece
 
-**She is effectively offline until Thu 29** (her message, 2026-10-25: "I can
-start posting regularly on October 29"). So Mon 26 to Wed 28 run with no
-approvals, no TikTok uploads and no Stories from her, and nothing in those three
-days may depend on her. From Thu 29 her own posting resumes.
+She asked to see it before it posts. Both cuts are in
+`reels/2026-10-29-headcount/` with a README; the build notes worth carrying:
 
-**Her handover rule for the week:** anything going to TikTok gets sent with its
-caption ready to post, and **if she does not post it, leave it** — the Sunday
-recap catches it. Do not chase a TikTok upload mid-week.
+- **Only 3 of the 5 source seconds are usable.** `IMG_1005.MOV` opens on a
+  letterboard carrying the event's name, which is barred the same way a client
+  name is, so the cut starts at 2.00s after it leaves frame. That is why the
+  slowdown is heavier than the brief's "about 60%".
+- **The optional Oct 7 conference b-roll is not used** — it is nowhere in Drive
+  that this session can find, and the Wed 21 brief calls it "a bonus, not
+  something Friday depends on".
+- It never ran as a trial, or at all: checked against the last 25 Instagram
+  items, where the only `is_shared_to_feed: false` post is the Oct 12 event
+  brief. The guide's Wed 21 block claims it was "edited Oct 21"; it was not.
+
+**Her handover rule for the week:** every TikTok cut goes to her with its
+caption pasted into the reply, ready to post. If she does not post it, leave it.
 
 ## The working guide is a Google Doc (from 2026-09-30)
 
