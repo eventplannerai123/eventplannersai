@@ -457,6 +457,22 @@ with the vendor quotes pair, both exact.
   **Every cut already published keeps Vanessa** — the same rule as captions.
   Nothing is re-rendered to swap the voice.
 
+  **A REBUILD KEEPS THE VOICE OF THE PIECE IT REBUILDS** (her decision,
+  2026-10-26: "make the whole thing vanessa its too noticable"). A rebuild
+  replaces only the opening line, so an Eryn opening over a Vanessa body switches
+  voice three seconds in, and she could hear it immediately. The Tue 27 ROI
+  rebuild went out in Vanessa throughout.
+
+  So the rule is **one voice per piece, and the piece decides which**: Eryn for
+  anything built fresh, the original's voice for a rebuild of a Vanessa-era cut.
+  Her Oct 25 message named the ROI rebuild as an Eryn piece, which is what
+  prompted building both — that instruction was written before the clash was
+  visible, and this supersedes it for rebuilds only.
+
+  **Render both when the question is live**, as on Oct 26: two cuts differing in
+  nothing but the opening voice let her settle it in one word instead of a
+  round trip.
+
 - **Generate both voiceovers here — standing instruction from 2026-09-24.**
   The author used to record the Instagram one herself and leave the TikTok
   one to this session; she asked for both to be generated from now on. Neither

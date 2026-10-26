@@ -75,9 +75,13 @@ seconds in — audible, and not something the experiment is testing.
 
 - `roi-report-rebuild-eryn.mp4` — her standing instruction, which named this
   piece explicitly.
-- `roi-report-rebuild-vanessa.mp4` — matches the body, one voice throughout.
+- **`roi-report-rebuild-vanessa.mp4` — the one that ships.** One voice
+  throughout, matching the body.
 
-Hers to pick. Nothing else differs between them.
+**She picked Vanessa on 2026-10-26: "make the whole thing vanessa its too
+noticable".** She heard the switch straight away, which settles the general
+rule as well: a rebuild keeps the voice of the piece it rebuilds, and Eryn is
+for anything built fresh. Nothing else differs between the two files.
 
 ## Caption
 
