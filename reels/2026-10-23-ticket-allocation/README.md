@@ -126,3 +126,38 @@ per-day blocks until she edits them.
 | --- | --- |
 | Instagram + Facebook | from here, after her go-ahead |
 | TikTok | **hers** — file and caption handed over together, caption pasted into the reply |
+
+## What went out, and when
+
+The slot moved twice. Built for Fri 23, left to lapse when she did not reply,
+and then given a date of its own in her 2026-10-25 travel-week calendar: **Mon
+26 Oct, 6:30pm Eastern** — "use the existing cut and the Fri 23 caption. It's
+on TikTok since Oct 25, never on Instagram." Nothing was re-rendered; the files
+are the Oct 23 builds byte for byte.
+
+| | |
+| --- | --- |
+| TikTok | Sat 25 Oct, by her. Confirmed "tik tok posted". |
+| Instagram | Mon 26 Oct 22:32 UTC (6:32pm Eastern), media `18102849353052644`, [reel/De-XKRwGU26](https://www.instagram.com/reel/De-XKRwGU26/), `is_shared_to_feed: true` |
+| Facebook | Mon 26 Oct, video post `1129871560001934` |
+
+Posted under the one blanket go-ahead there has ever been — her Oct 25
+instruction covering Mon 26 to Wed 28 while she flies — not under the ordinary
+ask-and-wait rule, which resumes Thu 29. The 6:30pm slot came from a one-shot
+scheduled task firing into the session (`trig_01ScroGDDVUW6oY3FfVLrYVk`), which
+read both live accounts before posting: the one thing worse than missing the
+slot is filling it twice.
+
+The live Instagram caption was hashed against `build/caption.txt` and matches
+character for character, all 811 of them.
+
+**Drive: the piece stays in `October 23`, not `October 26`.** Both cuts, her
+screen recording and the demo ticket-demand sheet are already together there
+(`2026-10-23-ticket-allocation-instagram.mp4`, Drive id
+`1dURHKibAQGHmIUc-Q-sk4uPxp1wgzgFS`, and the TikTok cut beside it), filed on the
+day it was built when Oct 23 was still its block. Her rule puts a post's files
+on the day the post belongs to, and a second copy in `October 26` would split
+one piece across two folders while leaving the source behind — worse than either
+folder alone. `October 26` holds the expense-report demo files, which belong to
+the Sat 31 piece. Re-parenting cannot run from here in any case:
+`mcp__Google_Drive__update_file` takes no `addParents`.
