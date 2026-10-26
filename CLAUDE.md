@@ -213,6 +213,27 @@ worse than missing a post is posting it twice.
 caption pasted into the reply, ready to post. If she does not post it, leave it
 — she is on a plane, and the Sunday recap catches it.
 
+### Fri 30's coloring book Reel — where its source actually is
+
+Looked up 2026-10-26 so Friday does not start from nothing. The brief says to
+build it from "photos Sahiba already has … plus slow pans across pages of the
+interior PDF".
+
+- **The interior PDF is there**: `CalmBeforeTheAisle_interior_102pp.pdf`, Drive
+  id `1Ner_-szB1ZOCT3RWsiztpXS06VulJK4l`, 5.2 MB, in the `Coloring book` folder
+  (`1Gbh4_MI50jvHGQeY9FPBQ5MjnRiU5Uj7`). The sampler is beside it at
+  `1F16xxZ33LPV_mjaTpCAiceHp717_Dtm0`.
+- **`story_etsy_book/` is not under `Coloring book`** — that folder holds the
+  two PDFs, the `pintrest` subfolder and one test PNG. The brief's photos are
+  somewhere else, so find them before Friday rather than on the day.
+- Drive `October 30` (`1_jR3HyaU4hMJgRwf4DvufuIKuvPn_f-m`) holds only the
+  `Last Year — Survey, Agenda and Budget` demo doc, which belongs to the
+  carousel that moved to November, not to the book Reel.
+
+**The PDF alone can carry the piece** if the photos stay missing: 30-40s of slow
+pans across real pages is the half of the brief that is definitely available.
+Say so rather than letting Friday stall on the half that is not.
+
 ## The working guide is a Google Doc (from 2026-09-30)
 
 **"AI for Event Planners — Working Guide"**, doc id
