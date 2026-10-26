@@ -21,6 +21,12 @@ straight into tpad, which is not a freeze at all — it plays the master from
 viewer would have watched the same scroll twice. So the frame is extracted to
 a PNG first and looped.
 
+BOUND THE LOOPED CARD AND THE OUTPUT. The first build did neither: `-loop 1 -i
+CARD` carried no `-t`, and the output carried no `-t` either. It ran away — 65 MB
+and still writing after sixteen minutes, on a clip twenty-one seconds long. An
+infinite looped input needs an explicit bound even when a downstream `trim`,
+`concat` or finite main input looks like it must already supply one.
+
 LOUDNESS IS MATCHED TO THE MASTER, NOT TO -14 LUFS. The master runs -21.45
 and the body has to stay as it was, or the experiment's control is gone. So
 the new opening line is brought to the master's level instead, which is what
@@ -80,8 +86,11 @@ def build(name, vo_rel):
     open_len = dur(vo) + PAD
     gain = MASTER_LUFS - measure_i(vo)
     still = opening_still()
+    body_len = dur(SRC) - SPLICE
+    total = open_len + body_len
     out = os.path.join(REEL, f"roi-report-rebuild-{name}.mp4")
-    print(f"{name}: opening {open_len:.2f}s, VO gain {gain:+.2f} dB to match the master")
+    print(f"{name}: opening {open_len:.2f}s + body {body_len:.2f}s = {total:.2f}s, "
+          f"VO gain {gain:+.2f} dB to match the master")
 
     vf = (
         # A — frozen report frame, card held over the whole beat
@@ -101,11 +110,13 @@ def build(name, vo_rel):
     run(["ffmpeg", "-y",
          "-loop", "1", "-t", f"{open_len:.3f}", "-i", still,   # 0: opening still
          "-ss", str(SPLICE), "-i", SRC,              # 1: the body
-         "-loop", "1", "-i", CARD,                   # 2: hook card
+         "-loop", "1", "-t", f"{open_len:.3f}", "-i", CARD,   # 2: hook card, BOUNDED
          "-i", vo,                                   # 3: new opening line
          "-filter_complex", vf + ";" + af,
          "-map", "[v]", "-map", "[ao]",
-         "-c:v", "libx264", "-profile:v", "high", "-crf", "19", "-pix_fmt", "yuv420p",
+         "-t", f"{total:.3f}",
+         "-c:v", "libx264", "-preset", "fast",
+         "-profile:v", "high", "-crf", "19", "-pix_fmt", "yuv420p",
          "-movflags", "+faststart",
          "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
          out])
