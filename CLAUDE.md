@@ -181,8 +181,37 @@ She asked to see it before it posts. Both cuts are in
   items, where the only `is_shared_to_feed: false` post is the Oct 12 event
   brief. The guide's Wed 21 block claims it was "edited Oct 21"; it was not.
 
+### She is flying Mon 26 to Wed 28. Post everything, ask nothing.
+
+Her instruction, 2026-10-25, verbatim: **"so from now until wednesday you are
+posting everything without my input, i dont want to hear you missed it."**
+
+That is a standing go-ahead for Mon 26, Tue 27 and Wed 28 — the only blanket one
+there has ever been, and it expires on Wed 28. It does not extend past that date
+and it does not change the rule for any later piece: from Thu 29 nothing
+publishes without her words again.
+
+Everything in those three days is already approved and scheduled, each as a
+one-shot task firing into this session:
+
+| When | Piece | Task |
+| --- | --- | --- |
+| Mon 26, 6:30pm | ticket allocation | `trig_01ScroGDDVUW6oY3FfVLrYVk` |
+| Tue 27, 6:30pm | ROI rebuild, **Vanessa cut** | `trig_01XJAWjVWRkMRTyW5b7t53yc` |
+| Wed 28, 9:07am | dry sandwich carousel | `trig_01ALmi3vXmuwjYfXtBxu9xMa` |
+| Wed 28, 6:30pm | timeline Reel | `trig_01CaAs9gM7oYPAENXNsoS6E8` |
+
+Pinterest runs off the 6:47am task from `2026-pin-schedule-v7.csv`, two a day.
+
+**The failure she is pre-empting is the Fri 23 / Sat 24 one**: a piece built and
+shown, then left to lapse because she did not reply. With a blanket go-ahead
+there is nothing left to wait for, so a missed slot would be nobody's fault but
+this session's. Each task checks the live account first, because the one thing
+worse than missing a post is posting it twice.
+
 **Her handover rule for the week:** every TikTok cut goes to her with its
-caption pasted into the reply, ready to post. If she does not post it, leave it.
+caption pasted into the reply, ready to post. If she does not post it, leave it
+— she is on a plane, and the Sunday recap catches it.
 
 ## The working guide is a Google Doc (from 2026-09-30)
 
