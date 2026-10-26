@@ -114,8 +114,9 @@ are gone rather than duplicated.
 **The three recording-dependent pieces are back on, with dates.** They were
 moved to "November" on the first pass; her second message pins them to Sat 31,
 Sun 1 Nov and Tue 3 Nov, each with the day she records. The deposit tracker's
-two Vanessa voiceovers at `reels/2026-10-24-deposit-tracker-file/` **must be
-regenerated in Eryn** before that build.
+voiceovers are **already regenerated in Eryn** and sit beside the retired
+Vanessa pair at `reels/2026-10-24-deposit-tracker-file/build/vo/` — use the
+`-eryn` files. **Nothing is still waiting on the recording but the recording.**
 
 **Clock change: Sun 1 Nov.** Eastern goes to UTC-5 that morning, so a 6:30pm
 Eastern post is **23:30 UTC** from Sun 1 Nov onwards and 22:30 UTC before it.
@@ -451,20 +452,30 @@ with the vendor quotes pair, both exact.
   script by narrating what the output actually shows, as the Sep 24 rewrite
   did.
 
-  **On Eryn's rate, measure rather than trust a figure — including hers.** She
-  says Eryn is "a little faster than Vanessa (about 3 words a second)". The
-  first real generation does not show that: 19 words came back at **7.28s**,
-  which is **2.61 words a second**. For comparison, Vanessa's 84-word deposit
-  tracker script ran 28.79s, or **2.92 words a second**.
+  **Eryn's rate: she was right, and the same two scripts in both voices prove
+  it.** She said Eryn is "a little faster than Vanessa (about 3 words a
+  second)". Measured on the deposit tracker's two scripts, generated in both
+  voices from identical text:
 
-  Both numbers are real and the comparison is still not clean, which is the
-  point: a short clip carries proportionally more lead-in and tail silence, so
-  its words-per-second always reads low. So **do not plan a long script off a
-  short clip's rate, or the reverse** — and do not quote 3 w/s as if it were
-  measured. The rule that actually works is unchanged: generate, `ffprobe` the
-  file, and compare it to the slot before building anything around it. Use
-  ~2.6 w/s for a piece under about 15s and ~2.9 for a longer one, as a starting
-  guess only.
+  | Script | Vanessa | Eryn |
+  | --- | --- | --- |
+  | 84 words | 28.79s (2.92 w/s) | **26.24s (3.20 w/s)** |
+  | 88 words | 30.12s (2.92 w/s) | **28.48s (3.09 w/s)** |
+
+  So **about 3.1 w/s for Eryn on a real-length script**, against Vanessa's 2.92
+  — roughly 5-9% faster, exactly "a little".
+
+  **An earlier note in this file said her figure was wrong. It was not; the
+  measurement was.** That reading came from a single 19-word clip that ran
+  7.28s, or 2.61 w/s, and was written up as evidence against 3 w/s. It is not:
+  a short clip carries proportionally more lead-in and tail silence, so its
+  words-per-second always reads low. The clip was fine and the inference was
+  bad — **never characterise a voice from one short generation.**
+
+  Planning figures: **~3.1 w/s over about 20s, ~2.6 w/s under about 10s.** Both
+  are starting guesses. The rule that actually decides anything is unchanged:
+  generate, `ffprobe` the file, and compare it to the slot before building
+  around it.
 
 ## Video lessons from Oct 5 (the guide's own, apply to every video)
 

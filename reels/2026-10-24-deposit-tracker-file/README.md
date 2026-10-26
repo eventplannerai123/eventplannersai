@@ -2,7 +2,11 @@
 
 **Status: built as far as it can be. Blocked on her screen recording.**
 
-Sat 24 Oct's second Instagram post. Replaces the Sep 3 prompt, which typed every
+**The date moved twice.** Sat 24 → Sat 31 → **Tue 3 Nov**, which is where her
+revised calendar of 2026-10-25 puts it; she records by Mon 2. Nothing else
+about the piece changed.
+
+Originally Sat 24 Oct's second Instagram post. Replaces the Sep 3 prompt, which typed every
 dollar amount and date into the chat — her note of Oct 19: no planner does that.
 The Oct 15 rebuild stays up; this is a new video, not an edit of it.
 
@@ -10,8 +14,9 @@ The Oct 15 rebuild stays up; this is a new video, not an edit of it.
 
 | | |
 | --- | --- |
-| Voiceover, Instagram | `build/vo/instagram-vo.mp3` — 28.79s, 84 words, verbatim from the guide's Sat 24 block |
-| Voiceover, TikTok | `build/vo/tiktok-vo.mp3` — 30.12s, 88 words, written here for the command-style hook |
+| Voiceover, Instagram | `build/vo/instagram-vo-eryn.mp3` — **26.28s**, 84 words, verbatim from the guide's Sat 24 block |
+| Voiceover, TikTok | `build/vo/tiktok-vo-eryn.mp3` — **28.53s**, 88 words, written here for the command-style hook |
+| Retired | `instagram-vo.mp3` (28.79s) and `tiktok-vo.mp3` (30.12s), the Vanessa pair — kept only as the before half of the rate comparison |
 | Caption | `build/caption.txt` — the guide's text with "Prompt below" dropped (retired Oct 12) and the prompt under its own `AI Prompt:` label |
 | Scripts | `build/voiceover-script.txt` |
 
@@ -77,3 +82,19 @@ prompt, then the answer zoomed to about 85% width. Screen-in-shot rule applies.
 - Ad-check the **exported** mp4's bottom ~300px through to the final frame.
   Eight advertisers seen so far and the list keeps growing, so look for anything
   new rather than a known logo.
+
+
+## Regenerated in Eryn, 2026-10-25
+
+Her voice change lands before this piece is built, so the Vanessa pair would
+have shipped a retired voice. Both scripts were regenerated from identical text
+with Eryn (`kdnRe2koJdOK4Ovxn2DI`, `eleven_v4`), which also gave the cleanest
+measurement of the new voice's rate, because the same words exist in both:
+
+| Script | Vanessa | Eryn |
+| --- | --- | --- |
+| 84 words | 28.79s (2.92 w/s) | 26.24s (3.20 w/s) |
+| 88 words | 30.12s (2.92 w/s) | 28.48s (3.09 w/s) |
+
+About 5-9% faster, which is what she said it would be. Both still sit inside
+the piece's 30-45s target with room for the hold on the final frame.
