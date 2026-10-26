@@ -133,12 +133,28 @@ Instagram cut into `October 27`**, full size. It is a file copy rather than a
 recording, which is why it is askable in a week when she cannot film — but she
 is away until Wed 28 and the slot is Tue 27, so it has to be asked for now.
 
-Do **not** substitute Instagram's own copy. `GOOGLEDRIVE_UPLOAD_FROM_URL` can
-fetch it server-side past the CDN block, but what comes back is the
-**720x1280** transcode — that is how the Oct 15 rebuild found out — and
-upscaling it would change picture quality, which is exactly the kind of thing
-that moves watch time on its own. A rebuild exists to measure a hook, so a
-softer picture destroys the only number it is for.
+**Fetched 2026-10-26, and it confirms the Oct 15 finding exactly.** She could
+not find her own copy and sent the permalink, so the CDN route was run end to
+end: `INSTAGRAM_GET_IG_USER_MEDIA` paged back to media id `18146376565557032`
+for its `media_url`, then `GOOGLEDRIVE_UPLOAD_FROM_URL` pulled it server-side
+past the egress block into `October 27` as
+`2026-09-01-roi-report-INSTAGRAM-CDN-720.mp4` (Drive id
+`17Kli8UTQM6038X5QPMyOQa79x6kCIY0V`).
+
+What came back is **720x1280, 19.5s, 871 kbps** — two-thirds the resolution and
+a second-generation encode. The URL says so before you even download it: its
+`vencode_tag` reads `xpv_progressive.INSTAGRAM.CLIPS.C3.720`. **Read that tag
+and save yourself the fetch.**
+
+So the route works and the file is useless for a rebuild. Upscaling 720 to 1080
+softens the whole picture, and this piece is a **screen recording** — fine text
+edges, the worst case for an upscale. A rebuild exists to measure whether a new
+hook moves skip rate, so a softer picture ruins the one number it is for, and
+it would sit visibly below everything else on the grid either way.
+
+**The master has to come from her.** Phone camera roll, whatever she edited in,
+Dropbox — anywhere but Instagram. The copy now in `October 27` is kept only so
+nobody re-runs this fetch expecting a different answer.
 
 And when she sends it, **check it is the Instagram cut, not the TikTok one.**
 On Oct 15 the first two files sent were the TikTok cut and a 220x480 compressed
