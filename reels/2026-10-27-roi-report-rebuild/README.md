@@ -123,3 +123,42 @@ later, the master is the one thing needed.
 **Duplicate check before the hand-over**: the last 10 TikToks are nothing but
 Oct 16–25 pieces, newest the Sun 25 second-column post. No ROI piece among them,
 so the file is safe to upload. TikTok also had no post on Mon 26.
+
+## Published
+
+| Account | Post |
+| --- | --- |
+| Instagram `@aiforeventplanners` | https://www.instagram.com/reel/DfA75wxHNVV/ |
+| Facebook "The Event Planners AI" | video post `1556990562854986` |
+
+Instagram media `18003611627798319`, **`is_shared_to_feed: true`** — a regular
+feed Reel, which is what a rebuild has to be: the original went out as one, and
+the same piece posted as both a regular Reel and a Trial trips duplicate
+detection and throttles both for up to 30 days. Container finished in 20.7s over
+5 checks. Published 22:31:46 UTC, which is **6:31pm Eastern** — the slot her
+Oct 25 posting-time rule assigns to every Reel.
+
+**The live Instagram caption hashes to `736a0897`, identical to
+`build/caption.txt`** — 631 characters, and `theeventplannerai` tests false, so
+the dead handle really is gone rather than merely intended to be. The live text
+was hashed in the sandbox straight off the API response, not retyped, so the
+comparison is of the bytes Meta holds.
+
+**Facebook surfaced on the second read-back**, as a reel at
+[facebook.com/reel/1556990562854986](https://www.facebook.com/reel/1556990562854986/),
+feed entry `1233196746554445_122118362631449533`, created 22:32:23 UTC — 37
+seconds after the Instagram publish. Its live message hashes to the same
+`736a0897`, so all three texts match: the approved file, the Instagram caption
+and the Facebook description.
+
+The first read-back came back without it, which is ordinary — it took three
+read-backs and about fifteen minutes on every day from Sep 25 to Sep 28 — and
+nothing was retried in between. A blind retry after a call that already
+returned an id is how you get two copies of a post that cannot be taken back.
+
+Both accounts were read before posting and the newest item on each was Mon 26's
+ticket allocation, so the ROI rebuild was genuinely absent from both.
+
+**No employer named** anywhere in the piece, the overlay or the caption. The
+hook is her own sentence; her answer opened with a company name and she asked in
+the same breath for it kept out.
