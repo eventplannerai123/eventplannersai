@@ -89,3 +89,37 @@ for anything built fresh. Nothing else differs between the two files.
 first line swapped for the new hook, and `#theeventplannerai` — a dead handle —
 replaced by `#aiforeventplanners`. The prompt block and the closing question are
 untouched.
+
+## Filed and handed over, 2026-10-27 morning
+
+| | |
+| --- | --- |
+| Drive `October 27` | `2026-10-27-roi-report-rebuild-instagram.mp4`, id `10XQPOIa9RshM81xaZ_Eo7jjaozB1zWk7`, 8,255,494 bytes — `parents` checked against the folder id, not trusted from the reply |
+| TikTok | handed to her at 6:55am Eastern with the caption pasted into the message |
+| Instagram + Facebook | 6:30pm Eastern from here, on her Sun 25 approval |
+
+**The TikTok file is the same file, and that is the honest answer rather than
+the tidy one.** Her Tue 27 block asks for "CC's TikTok cut of the ROI rebuild
+with the same caption". The last two rebuilds each got a genuinely separate
+TikTok cut — Rebuild 4 spliced the Sep 26 piece's own **TikTok master** at
+3.78s against the Instagram master's 3.70s — because those masters were in the
+repo. **The Sep 1 TikTok master is not, anywhere this session can reach**: not
+in the repo, not in Drive `October 27`, and Instagram's CDN only serves the
+Instagram cut. So there is nothing to splice a TikTok variant out of.
+
+That matters more here than it would elsewhere, because CLAUDE.md records that
+the Sep 1 piece's two cuts are "paced differently in the middle, not just at the
+hook". A TikTok cut built from the Instagram master would therefore not be the
+Sep 1 TikTok edit with a new hook — it would be the Instagram edit. Handing over
+the Instagram-derived file is the same thing with one less pretence, and the
+Oct 19 girls-at-the-door piece already set that precedent: one file, same
+caption, both platforms.
+
+**She was not asked for the TikTok master.** She is on a plane until Wed 28, the
+piece ships tonight either way, and the rule is to look first and only ask when
+the answer changes something. If she wants the TikTok edit rebuilt properly
+later, the master is the one thing needed.
+
+**Duplicate check before the hand-over**: the last 10 TikToks are nothing but
+Oct 16–25 pieces, newest the Sun 25 second-column post. No ROI piece among them,
+so the file is safe to upload. TikTok also had no post on Mon 26.

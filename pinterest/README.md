@@ -540,10 +540,18 @@ tier.** Pinterest posting runs from the cloud session only.
 | 2026-10-24 | `pin_42_samplerstart` | Wedding Coloring Pages | `1148629079998527131` |
 | 2026-10-26 | `pin_43_calendar` | Wedding Coloring Pages | `1148629079998715969` |
 | 2026-10-26 | `pin_44_planningfrombed` | Adult coloring pages | `1148629079998715970` |
+| 2026-10-27 | `pin_45_escortcards` | Wedding planning printables | `1148629079998806782` |
+| 2026-10-27 | `pin_46_plannersix` | Wedding planning printables | `1148629079998806783` |
 
-Both Oct 2 pins read back live on `calmbeforetheaisle`, right board, title,
-description and tagged link exactly as this directory's schedule CSV holds
-them. One read-back each, no retry.
+All four v7 pins so far read back live on `calmbeforetheaisle` — right board,
+title, description and tagged link exactly as this directory's schedule CSV
+holds them. One read-back each, no retry.
+
+Both Oct 27 pins went to **Wedding planning printables**
+(`1148629148653722470`), which is what row 45 and row 46 of the CSV name; the
+two Oct 26 pins went to two different boards. The board is per-row, not per-day,
+so read it off the row rather than carrying yesterday's forward. Pins cannot be
+edited, so a wrong board is permanent.
 
 ## Posting route: `image_url`, not base64 (from 2026-10-02)
 
