@@ -40,6 +40,30 @@ She asked for this twice, so it is a rule, not a preference.
   parts in the README and the commit message, which is what they are for, and
   tell her the one thing she has to act on.
 
+- **"Nothing" is never the whole answer when something is coming** (her
+  instruction, 2026-10-27: "Dont say theres nothing for me to do if theres
+  something for me to do moving forward"). On Mon 26 she asked whether she was
+  supposed to post anything to TikTok that day. The answer was no, and that was
+  correct for Monday — the guide's Mon 26 block assigns her nothing, because the
+  ticket-allocation cut went up on Sat 25. But Tuesday's TikTok was already
+  built and sitting in the repo, and she got a flat "no" one evening and a file
+  the next morning with nothing connecting the two.
+
+  So when the answer for today is nothing, **say when the next one is in the
+  same breath.** "Nothing today, tomorrow's is the ROI rebuild and I'll send it
+  in the morning" is one line and it is the whole answer. A bare "no" is
+  accurate and still wrong, because the question she is actually asking is
+  whether anything is waiting on her — not whether today's row is empty.
+
+  This is the one case where one-thing-at-a-time does not mean one date. It
+  does not license a roundup: it is today's answer plus the next thing that
+  needs her, and nothing else.
+
+  **And an empty row is worth flagging as an empty row.** TikTok is daily, so
+  Mon 26 having no TikTok piece was a gap in the schedule rather than a day off.
+  Report it as a gap, so she can decide, instead of reporting it as "nothing to
+  do".
+
 - **End with a clear action list** — hers separated from this session's, with
   dates, **when there is genuinely more than one thing outstanding and she has
   asked for the picture.** Otherwise the last block is one line.
