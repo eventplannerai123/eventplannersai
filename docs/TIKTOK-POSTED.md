@@ -42,6 +42,7 @@ Sep 22 coloring book build story were the last three, and all three are up.
 | 2026-10-25 | Ticket allocation (the Fri 23 piece's TikTok cut) | **confirmed** 2026-10-25 — "tik tok posted". Handed over Fri 23 with its caption; posted two days later. The Instagram cut went out **Mon 26 Oct at 6:30pm**, to Instagram ([reel/De-XKRwGU26](https://www.instagram.com/reel/De-XKRwGU26/)) and Facebook, under her Oct 25 blanket go-ahead for the travel week. |
 | 2026-10-25 | Prompt Responsibly carousel, 4 slides as a photo post | **confirmed** 2026-10-25 — "posted". Same day as the Instagram carousel, which went out from here that morning. |
 | 2026-10-25 | "What they saw / What I checked" industry-truth post, as a photo post | **confirmed** 2026-10-25 — "posted to tik tok". Saturday's post, run a day late. Second TikTok of the day, after the Prompt Responsibly carousel. |
+| 2026-10-27 | ROI report rebuild (Rebuild 1, new hook) | **confirmed** 2026-10-27 — "This has been posted". Handed over at 6:55am with its caption. A rebuild has one cut, so this is the same file that goes to Instagram and Facebook at 6:30pm; the Sep 1 TikTok master exists nowhere this session can reach, so no separate TikTok edit was possible. New hook and new opening, so TikTok reads it as a new video rather than a repost of Sep 1. |
 | date unknown | Vendor quotes cut | **confirmed** 2026-10-04 — "vendor qoutes was posted" |
 | date unknown | Centerpieces (DIY vs florist) | **confirmed** 2026-10-04 — "Centerpieces have also posted" |
 
