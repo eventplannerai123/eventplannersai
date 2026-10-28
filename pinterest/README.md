@@ -542,8 +542,10 @@ tier.** Pinterest posting runs from the cloud session only.
 | 2026-10-26 | `pin_44_planningfrombed` | Adult coloring pages | `1148629079998715970` |
 | 2026-10-27 | `pin_45_escortcards` | Wedding planning printables | `1148629079998806782` |
 | 2026-10-27 | `pin_46_plannersix` | Wedding planning printables | `1148629079998806783` |
+| 2026-10-28 | `pin_47_jewelry` | Wedding Coloring Pages | `1148629079998896252` |
+| 2026-10-28 | `pin_48_cakeslices` | Wedding Coloring Pages | `1148629079998896251` |
 
-All four v7 pins so far read back live on `calmbeforetheaisle` — right board,
+All six v7 pins so far read back live on `calmbeforetheaisle` — right board,
 title, description and tagged link exactly as this directory's schedule CSV
 holds them. One read-back each, no retry.
 
