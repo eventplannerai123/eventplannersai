@@ -27,7 +27,7 @@ Sep 22 coloring book build story were the last three, and all three are up.
 | 2026-10-04 | Bar quantities quick piece | **confirmed** 2026-10-05 — "All are posted" |
 | 2026-10-05 | Hidden fees carousel, as a photo post | **confirmed** 2026-10-05 — "Hidden fees" |
 | 2026-10-06 | Cancellation clause quick piece | **confirmed** 2026-10-06 — "Tik tok posted" |
-| 2026-10-10 | Timeline backwards from doors quick piece | **confirmed** 2026-10-10 — "tik tok and the instagram piece has been posted" |
+| 2026-10-10 | Timeline backwards from doors quick piece | **confirmed** 2026-10-10 — "tik tok and the instagram piece has been posted". The Instagram half of that sentence was the then-vs-now **Story**, not this cut: Sat 10 had no Instagram Reel in its plan, and the feed read back as the Oct 5 hidden-fees carousel. The cut itself reached the Instagram feed eighteen days later, on **Wed 28 Oct at 6:32pm** ([reel/DfDgwybFRbw](https://www.instagram.com/reel/DfDgwybFRbw/)), where her Oct 25 calendar put it. |
 | 2026-10-11 | Headcount to floor space quick piece | **confirmed** 2026-10-12 — "TIK TOK WENT OUT". Scheduled Oct 10, posted Oct 11. |
 | 2026-10-12 | Event brief from consultation notes (the Instagram piece's TikTok cut) | **confirmed** 2026-10-12 — "TIK TOK WITH THE NOTES IS DONE" |
 | 2026-10-13 | Contingency carousel, 6 slides as a photo post | **confirmed** 2026-10-14 — "it did". Scheduled Oct 12, fired Oct 13. |

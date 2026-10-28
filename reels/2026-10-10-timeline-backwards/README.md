@@ -115,3 +115,41 @@ The clean band is **1161x2064 at x=22, y=300**. The obvious choice —
 1166x2074, the largest band that clears the status bar and the input bar — is
 **0.5622, not 0.5625**, and fails the assertion in `render.py`. 2064 is a
 multiple of 16, so 1161 = 9×2064/16 exactly.
+
+## Instagram, eighteen days later
+
+| | |
+| --- | --- |
+| TikTok | Sat 10 Oct, by her |
+| Instagram | **Wed 28 Oct, 6:32pm Eastern** — media `18180281197436857`, [reel/DfDgwybFRbw](https://www.instagram.com/reel/DfDgwybFRbw/), `is_shared_to_feed: true` |
+| Facebook | video post `1616374559352970`, feed entry `122118551577449533` |
+
+Her Sun 25 calendar put this piece in Wed 28's 6:30pm slot, and the blanket
+go-ahead for Mon 26 to Wed 28 covered it. It was briefly scheduled for Tue 27
+and moved back when she restored the ROI rebuild to Tuesday.
+
+**One cut across all three platforms, and the filename is misleading.**
+`timeline-backwards-tiktok.mp4` is the only file: this is a quick piece, and the
+quick-piece rule is one cut, not two. The `-tiktok` suffix dates from Oct 10,
+when quick pieces were TikTok-only; the Oct 12 daily rule put them on Instagram
+too. The file is correct — only its name is a fossil.
+
+**Both captions hash to `8c9d4d99`** — `build/caption-instagram.txt`, the live
+Instagram caption and the live Facebook description, hashed in the sandbox off
+the API responses rather than retyped. Facebook surfaced on the second
+read-back, 34 seconds after the Instagram publish; nothing was retried in
+between.
+
+The caption says `Prompt:` rather than the house `AI Prompt:`. That is how it
+was approved on Oct 10 and it went out verbatim — a published caption is not
+edited to match a later convention, the same rule that keeps "Prompt below" in
+the older live posts.
+
+**Timing:** 9.1 hours after the morning sandwich carousel, which satisfies her
+6-hour rule for a two-post day with room to spare. Both accounts were read
+before posting and the newest item on each was that carousel.
+
+**Drive:** filed in `October 28` as `2026-10-28-timeline-backwards-instagram.mp4`,
+id `1BnmCGAWcIJWpT-LbpRGO_IydEDupjUnW`, 1,652,950 bytes — `parents` checked
+against the folder id. Named for the day it posted, since that is the day whose
+block carries it.
