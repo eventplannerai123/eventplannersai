@@ -47,3 +47,14 @@ land and where Instagram's own furniture sits.
 
 The two link stickers. They are in-app only — nothing here can attach a link to
 a Story, and nothing here posts a Story at all.
+
+## Posted
+
+She posted it on **Thu 29 Oct** ("done"), three days after the line first came
+up on Tue 27. Both the Tue 27 and Thu 29 Story lines are struck in the guide;
+**Fri 30's is not**, because that is a different Story with its own line and its
+own place after the coloring book Reel goes up.
+
+Nothing here can check a Story against the live account — a Story expires, and
+the media edge does not list it, which is the mistake `docs/TIKTOK-POSTED.md`
+records from Oct 10. So her word is the record, as it is for TikTok.
