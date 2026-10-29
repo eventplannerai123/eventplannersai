@@ -297,6 +297,24 @@ whoever did it." So check for strikethrough before starting anything.
   measured against the post-insert text.
 - **Do the highest index first.** An insert shifts every index after it, so
   working top-down invalidates the ranges you already measured.
+- **And re-read the document between batches.** Descending order protects a
+  batch from itself; it does nothing about the batch before it. On 2026-10-29 a
+  second batch was built from indices measured *before* a first batch had
+  inserted two 14-unit markers lower down, so every target was 28 units short.
+  The damage was not an error message — the call returned success — it was:
+  both markers spliced mid-sentence ("The m ✅ done Oct 29ain comparison"), a
+  strikethrough that spilled onto the previous task line and the "CLAUDE CODE"
+  heading above it, and the Pinterest line's last 28 characters torn off and
+  welded onto the end of an inserted paragraph. **One read, one batch**, or
+  recompute from a fresh read before the next one.
+- **The structured read is also available locally.** `mcp__Google_Docs__read_doc`
+  is too large to return inline, so it saves the whole JSON to a file under the
+  session's `tool-results/` directory and prints the path — which is better than
+  Composio's route, because the Composio sandbox that *holds* the saved response
+  is not always the sandbox the workbench then runs in, and on 2026-10-29
+  `/mnt/files/mex/` came back missing three times in a row. Walk the local file
+  with python instead: paragraphs are under `content.tabs[].documentTab.body.content`,
+  and table cells still have to be walked.
 - Verify by re-reading the paragraph and checking `textStyle.strikethrough` is
   `True`, not by trusting the batchUpdate reply — it returns empty objects on
   success either way.
@@ -308,10 +326,19 @@ question of the day, struck only once she answered it two turns later, and the
 Tue 13 TikTok carousel, which stayed "scheduled" until she confirmed it the next
 day. So strike on the confirming message, not on the building one.
 
-**Audit the week's blocks when she asks, and periodically anyway.** Walk every
-task line in the recent day blocks and print struck/unstruck — it takes one
-pass and it is the only way to catch the ones that went true quietly. Her
-instruction is "as you go along", and going along includes going back.
+**Audit the week's blocks EVERY DAY** (her instruction, 2026-10-29: "make sure
+you do this daily moving forward"). She asked for the week's outstanding items
+and then made the check standing, so it is part of the 6:47am task now, not
+something that waits to be asked for. Walk every task line in the recent day
+blocks and print struck/unstruck — it takes one pass and it is the only way to
+catch the ones that went true quietly. Her instruction is "as you go along",
+and going along includes going back.
+
+**Report HER open lines, not this session's.** The audit exists so she knows
+what is waiting on her, so the output is the unstruck YOU lines for the days
+that have already passed, with the optional ones marked optional. A line that
+only *reads* like a task is not one — Mon 26's YOU block is the single sentence
+"Nothing to check today", which is a note and will sit unstruck forever.
 
 **Only strike what actually happened as written.** On 2026-10-12 her own line
 "Record the site-report screen recording — PLANNED TRIAL, upload it yourself"
