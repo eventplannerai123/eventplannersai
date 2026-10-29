@@ -1,0 +1,10 @@
+Get all four answers before you quote anything.
+
+What clients never tell you in the brief: the budget, the number of people, the style of event, and what they actually want it to achieve.
+
+The prompt:
+"Here's a client's first email about their event: [paste]. Check it for four things: the budget, the number of guests, the style of event (reception, seated dinner, buffet) and what they most want the event to achieve. Tell me which ones it doesn't answer, then draft a friendly reply that asks for the missing ones without sounding like a questionnaire."
+
+Save this for your next enquiry.
+
+#aiforeventplanners #eventprofs #eventplanningtips #eventplanner
