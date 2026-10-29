@@ -55,3 +55,27 @@ sets, each upload's `parents` checked against the folder id rather than trusted
 from the reply. Filed as part of the build, not when asked — the Oct 16 runny
 eggs carousel was built, approved and committed with the Drive upload skipped
 entirely, and she had to ask for it.
+
+## Published
+
+Thu 29 Oct, on her explicit go-ahead in the conversation ("sorry yes you can
+post") — the blanket travel-week go-ahead had expired the day before, so this
+was asked for and given.
+
+| | |
+| --- | --- |
+| Instagram | media `18083538851706427`, [p/DfFEe8GoPrP](https://www.instagram.com/p/DfFEe8GoPrP/), `CAROUSEL_ALBUM`, 13:03:26 UTC — 9:03am Eastern |
+| Facebook | multi-photo post `1233196746554445_122118678927449533` |
+| Caption | both live captions hash `c5e4e020`, identical to `caption.txt` |
+
+**Slide order was verified on the published post, not on the containers.**
+Carousel child ids come back non-monotonic — this build's were 288/279/282/285/351
+in request order — so ordering the parent's `children` array by id would have
+scrambled the deck. The array is ordered by the **results index** instead.
+
+To prove that worked, the five children were read back off the live post
+(`children{id,media_url}`), downloaded from the CDN, grayscaled to 160x200 and
+MAD-matched against the committed slides. Positions 1→5 map to slides 1→5 at
+**MAD 0.00** each, with the nearest other slide 8.6 or more away. The CDN URLs
+carry Instagram's own media ids, which do not map back to container ids, so
+comparing the pictures is the only real check there is.
