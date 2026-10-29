@@ -1112,6 +1112,23 @@ MCP server; a session without `mcp__Composio__*` tools cannot post at all.
   what a trial is: published, but kept off the grid and the followers' feed.
   Request it explicitly; it is not in the default field set.
 
+  **The flag flips when the trial ends, so it is a current state and not a
+  record** (found 2026-10-29). Re-pulled that day, **only Oct 12 still reads
+  `false`**; Oct 14's AV piece now reads `true`, and she sees the same thing —
+  "the only trial reel i see left is october 12". So `is_shared_to_feed` answers
+  "is this still restricted", not "was this ever a trial", and a count of trials
+  taken from it will shrink over time. The list of what *ran* as a trial lives
+  in the guide's day blocks, not in this field.
+
+  **Her app figure and the API still disagree, in the same direction as Oct 15.**
+  Oct 12 reads **106 views in the app** and **96 on the API** (83 reach, 70.5%
+  skip, 3.17s watch). Use the app number for a trial, as the guide says.
+
+  **And the guide's Mon 12 line said the opposite of the truth for seventeen
+  days.** It carried "(went up as a regular Reel, not a trial)", written on Oct
+  12 before anyone checked the field. It was a trial. Corrected in the doc on
+  2026-10-29, as a new line under it rather than by editing her own words.
+
   **This corrects a wrong call made earlier the same day.** Seeing both pieces
   in `INSTAGRAM_GET_IG_USER_MEDIA`, this session concluded the toggle had not
   been used and told her two planned trials had gone out as ordinary posts. She
