@@ -95,3 +95,33 @@ which is why the loop accepts anything within 0.2 dB.
 
 `loudnorm`'s two-pass is not used at all here, per the standing note that it
 stalls short of -14 on this kind of material.
+
+## Published
+
+Thu 29 Oct at **6:31pm Eastern**, on her explicit go-ahead in the conversation
+("yes post it"). The blanket travel-week go-ahead expired Wed 28, so this one
+was asked for twice before it went: she said "great", which is feedback rather
+than permission, and gave the word when asked directly.
+
+| | |
+| --- | --- |
+| Instagram | media `17915583696507413`, [reel/DfGFiQTlS_o](https://www.instagram.com/reel/DfGFiQTlS_o/), 22:31:59 UTC |
+| Facebook | [reel/1781480376397215](https://www.facebook.com/reel/1781480376397215/), feed id `1233196746554445_122118738753449533`, 22:32:35 UTC |
+| Drive `October 29` | `12jadCalsMm4DP6J2OzDvLuHkOy3oQmzs` (instagram) and `1dzSxBsZXWzuSNiyKNTfM-6hQCDBpEdtI` (tiktok), both exact on size |
+
+`is_shared_to_feed: true` — a regular feed Reel, which is what her Oct 25 change
+asked for. Both live captions diff clean against `build/caption.txt`, line
+breaks intact; the two-list structure depends on them.
+
+**The publish call timed out at 60s on this side and the post had already gone
+through.** A blind retry would have duplicated it, so the live media edge was
+read first — it showed the Reel at 22:31:59, published. Treat a timeout on
+`INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH` as "unknown", never as "failed".
+
+**Facebook surfaced on the first read-back**, unlike every day from Sep 25 to
+Sep 28 and both Reels earlier this week, which took two or three. So the lag is
+variable rather than reliable — still no reason to retry.
+
+The TikTok cut went to her **early, at her request** ("send it now so i can do
+it now"), about four hours before the Instagram slot rather than after it.
+Last-10 duplicate check ran first and came back clear.
