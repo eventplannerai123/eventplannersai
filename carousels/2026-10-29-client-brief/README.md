@@ -47,3 +47,11 @@ a convention. Flagged here rather than fixed.
 | --- | --- |
 | Instagram + Facebook | from here, morning, **after her go-ahead** — the blanket travel-week go-ahead expired Wed 28 |
 | TikTok | **hers** — the five `-tiktok-` slides as a photo carousel, same caption |
+
+## Filed to Drive
+
+All ten slides are in `October 29` (`1gyE_LzpNdL2PW1AQoM_vQmVC3Tw3DBkm`), both
+sets, each upload's `parents` checked against the folder id rather than trusted
+from the reply. Filed as part of the build, not when asked — the Oct 16 runny
+eggs carousel was built, approved and committed with the Drive upload skipped
+entirely, and she had to ask for it.
