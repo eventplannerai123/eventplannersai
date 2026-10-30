@@ -1050,6 +1050,18 @@ MCP server; a session without `mcp__Composio__*` tools cannot post at all.
   means the check has to happen *before* the file is sent — afterwards is too
   late.
 
+  **SEND IT THE MOMENT SHE APPROVES THE INSTAGRAM CUT** (her instruction,
+  2026-10-30: "always once the instagram is approved please"). Not at the 6:30pm
+  slot, not with the evening post — the two are now decoupled. She approves the
+  Instagram cut in the morning, so that is when the TikTok file and its caption
+  go over, and she posts it when she likes. The last-10 duplicate check runs
+  before the hand-over as always, which is earlier in the day than it used to be.
+
+  This supersedes the pattern of holding the TikTok cut until the Reel went
+  live. It came from her asking for it early twice in two days — the headcount
+  cut on Oct 29 ("send it now so i can do it now") and then the rule itself the
+  next morning.
+
   **Paste the caption into the reply every time the file goes over** (her
   instruction, 2026-10-22: "Pull the caption for me always when you send tik
   tok"). She uploads from her phone, so a caption that sits only in
