@@ -1,0 +1,9 @@
+Number every box, and tell the venue exactly what's coming.
+
+Boxes shipped to a venue get lost more than you think. Usually nobody at receiving knew they were coming or where they belonged.
+
+AI Prompt: "Here's my packing list for a two-day conference: [paste]. Six boxes ship to the hotel ahead of time. Turn it into a box-by-box manifest: box number, contents, a tracking number column, the room each box belongs in, and who at the venue signs for it. Then write a short note to the hotel's receiving team: what's arriving, on which dates, how many boxes, where to hold them, and who to call when they land."
+
+Save this for your next ship-ahead.
+
+#aiforeventplanners #eventprofs #eventplanningtips #eventplanner
