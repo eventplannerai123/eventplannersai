@@ -91,3 +91,30 @@ the source's 3.40 to 1.90, audibly flat for 0.4 dB.
 
 Instagram and Facebook at **6:30pm Eastern**, from here, after she approves.
 TikTok is hers, with the caption pasted into the reply.
+
+## Live
+
+Posted Fri 30 Oct at 6:30pm Eastern (22:49 UTC), after her approval that
+morning ("approveed").
+
+| | |
+| --- | --- |
+| Instagram | [reel/DfIsWj7EoxU](https://www.instagram.com/reel/DfIsWj7EoxU/) — media id `18108623522253576`, `is_shared_to_feed: true` |
+| Facebook | video post id `1107534105506019` |
+| TikTok | hers, confirmed 2026-10-30 ("posted to tik tok") — [video/7702450973213494542](https://www.tiktok.com/@aiforeventplanners/video/7702450973213494542) |
+
+Live Instagram caption read back and diffed against `build/caption.txt`:
+identical, line breaks and all eight hashtags intact.
+
+**The publish call timed out and the Reel went up anyway.** `INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH`
+hit the 60s MCP ceiling with no result. The container read `FINISHED` and the
+media edge showed nothing, which looks exactly like a failure; a second read a
+minute later had the Reel live, timestamped 22:49:47 — the publish had
+succeeded server-side the whole time. A retry at the first read would have
+double-posted. **A timeout is UNKNOWN, and one empty media-edge read is not an
+answer.**
+
+**The hash recorded for the caption in the scheduling task was wrong.**
+`build/caption.txt` has never changed since the build commit and its md5 is
+`623d06c5`, not the `bfd3d5a0` the task carried. The text itself was verified
+against the live TikTok description, which she posted from the same file.
