@@ -79,10 +79,20 @@ author two of her planned trials had gone out as ordinary Reels. They had not.
 
 ## Rules
 
-- **Scheduled is not posted.** From 2026-10-10 she also schedules uploads in
-  the TikTok app ahead of time. A scheduled piece gets its own row and stays
-  that way until she says it went out — a schedule can be edited, moved or
-  silently fail, and nothing reports back here either way.
+- **SCHEDULED COUNTS AS DONE — her instruction, 2026-10-30: "if something is
+  scheduled you can consider it done."** This reverses the rule below, which was
+  this session's own and not hers. A piece she has scheduled in the TikTok app
+  gets its guide line struck the moment she says she scheduled it, and the row
+  here reads scheduled rather than confirmed, which is the honest record without
+  leaving the task hanging.
+
+  The reversed rule, kept because the reasoning is still true even though the
+  conclusion is not hers: *"Scheduled is not posted. From 2026-10-10 she also
+  schedules uploads in the TikTok app ahead of time. A scheduled piece gets its
+  own row and stays that way until she says it went out — a schedule can be
+  edited, moved or silently fail, and nothing reports back here either way."*
+  It still cannot be read back, so the row stays marked as scheduled. What
+  changed is that an unstruck line is no longer the way to carry that doubt.
 - **Never offer a piece as "unposted" from a schedule line.** Check here, and if
   it is not confirmed, ask.
 - A piece can be live before its planned date. The calendar says when something

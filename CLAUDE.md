@@ -344,8 +344,15 @@ only *reads* like a task is not one — Mon 26's YOU block is the single sentenc
 "Record the site-report screen recording — PLANNED TRIAL, upload it yourself"
 was left unstruck: she recorded it, but the piece had become the event-brief
 piece and she uploaded it as a regular Reel, not a trial. Half-done against a
-changed brief is hers to judge. The TikTok line stayed unstruck too, because
-she had only scheduled it, and **scheduled is not posted**.
+changed brief is hers to judge.
+
+**But a scheduled TikTok counts as done** (her instruction, 2026-10-30: "if
+something is scheduled you can consider it done"). That reverses what this file
+said from Oct 12 — "scheduled is not posted" — which was this session's rule
+rather than hers. When she says she has scheduled a piece, strike the line with
+a `✅ scheduled <date>` marker rather than `✅ done`: it crosses the task off,
+which is what she asked for, and still records that nothing has been read back.
+`docs/TIKTOK-POSTED.md` keeps the row as scheduled for the same reason.
 
 **Question of the day.** Ask it at the start of every session, plus any
 earlier ones still unanswered, and write her answer straight into the doc's
