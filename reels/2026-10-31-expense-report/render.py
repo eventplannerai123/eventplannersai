@@ -26,11 +26,22 @@ photographed receipts. 440 still takes the status bar and the red recording dot
 off the top, and leaves the ChatGPT input bar at the bottom where the platform's
 own furniture covers it.
 
-HER SHEET CLIP IS NOT CROPPED TO FILL. Measured, the table is a 419px band in a
-2622px-tall frame — 2.9:1 — so filling a 0.5625 frame from it is impossible. It
-is cropped to the right-hand columns (Receipt source, Flag, Notes: the payoff)
-and upscaled 1.49x so the words are readable, then sat on the brand lavender,
-which also matches the coloring book Reel from the day before.
+HER SHEET CLIP IS SHOWN FULL WIDTH, which is her correction and she was right.
+The first build cropped to the right-hand columns to make the type bigger, and
+that cut the leftmost column down the middle and ran the beat on to 10.8s, where
+her scroll has gone past the table and the frame is half empty. Her words: "It's
+missing the very first column, and then when it trails off to the last column,
+it looks messy. Keep it just visible between the lines."
+
+So the crop is the full 1206 and the window is 1.6s to 9.6s at her own speed —
+it starts on a clean Date column and stops before the scroll runs out of table.
+The strip is smaller as a result. That is the trade and she made it: a complete
+table, whole columns, nothing sliced.
+
+Measured, the table is a 419px band in a 2622px-tall frame — 2.9:1 — so filling
+a 0.5625 frame from it was never possible. It sits on the brand lavender,
+between two hairlines, which also matches the coloring book Reel from the day
+before.
 
 HER CLIP ENDS ON HER OWN NAME. At about 12s she exits the preview into the Files
 app and "Sahiba Anand Paint...ume" is plainly legible in the recents list. The
@@ -54,7 +65,7 @@ VO = os.path.join(B, "vo", "expense-eryn-take1.mp3")
 
 FPS = 30
 LEAD = 1.0
-TOTAL = 25.2
+TOTAL = 25.5
 LAVENDER = "0xCECBF6"
 
 # (source, in, out, target seconds). The chat beats are cut to the voiceover's
@@ -62,8 +73,8 @@ LAVENDER = "0xCECBF6"
 BEATS = [
     (REC, 0.30, 4.30, 4.00),      # the prompt, with its three attachments
     (REC, 17.00, 23.50, 6.50),    # it names the three paper receipts and the card statement
-    (REC, 44.00, 53.40, 8.70),    # scrolls the table, lands on 11 rows and the duplicate
-    (SHEET, 6.30, 10.80, 6.00),   # her filled sheet: Flag reads Duplicate and No receipt
+    (REC, 45.50, 53.40, 7.00),    # scrolls the table, lands on 11 rows and the duplicate
+    (SHEET, 1.60, 9.60, 8.00),    # her filled sheet, at her own speed: Date through Notes
 ]
 
 
@@ -76,11 +87,11 @@ def seg(i, src, a, b, secs):
              f"crop=1206:2144:0:440,scale=1080:1920:flags=lanczos,fps={FPS},setsar=1[v{i}]")
     else:
         v = (f"[{i}:v]trim=start={a}:end={b},setpts=(PTS-STARTPTS)/{speed:.6f},"
-             f"crop=726:440:480:585,scale=1080:654:flags=lanczos,fps={FPS},setsar=1[s{i}];"
+             f"crop=1206:430:0:588,scale=1080:385:flags=lanczos,fps={FPS},setsar=1[s{i}];"
              f"color=c={LAVENDER}:s=1080x1920:d={secs}:r={FPS}[bg{i}];"
-             f"[bg{i}][s{i}]overlay=0:420:shortest=1,"
-             f"drawbox=x=0:y=419:w=1080:h=2:color=0xB0ACE4:t=fill,"
-             f"drawbox=x=0:y=1074:w=1080:h=2:color=0xB0ACE4:t=fill,setsar=1[v{i}]")
+             f"[bg{i}][s{i}]overlay=0:760:shortest=1,"
+             f"drawbox=x=0:y=759:w=1080:h=2:color=0xB0ACE4:t=fill,"
+             f"drawbox=x=0:y=1145:w=1080:h=2:color=0xB0ACE4:t=fill,setsar=1[v{i}]")
     return v
 
 
