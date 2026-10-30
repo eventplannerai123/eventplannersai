@@ -1,0 +1,12 @@
+One dinner entered twice is how an expense report gets sent back. Point AI at your inbox and make it flag duplicates before it totals anything.
+
+I used to tape receipts to paper so they could be faxed. Now I point it at my email and hand it my own template.
+
+The prompt:
+"Search my Gmail for every receipt from my work trip to Denver, Colorado, Aug 24-27, 2026. Only include Denver receipts, and some came in late, so don't go by the date an email arrived. I'm also uploading photos of three paper receipts and a screenshot of my card statement for one receipt I lost. I've attached my expense report template too. Fill it in, one row per receipt, and give me the completed Excel file to download. Don't change the layout, columns or formulas, and use only the options in the drop-downs. Put the rows in date order. In the Flag column, mark anything that looks like a duplicate as Duplicate and anything without its own receipt as No receipt. Use the Notes column to explain each flag."
+
+It found eleven rows across email, photos and a card statement, and caught the dinner that got entered twice. The one thing I'd change: it flagged a $22.64 card-statement meal as no receipt, and for that amount a statement is usually fine.
+
+Save this for your next trip.
+
+#aiforeventplanners #eventprofs #eventplanningtips #eventplanner
