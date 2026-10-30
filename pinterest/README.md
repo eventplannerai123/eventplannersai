@@ -546,6 +546,8 @@ tier.** Pinterest posting runs from the cloud session only.
 | 2026-10-28 | `pin_48_cakeslices` | Wedding Coloring Pages | `1148629079998896251` |
 | 2026-10-29 | `pin_49_cakestands` | Wedding Coloring Pages | `1148629079998986868` |
 | 2026-10-29 | `pin_50_flowerbucket` | Adult coloring pages | `1148629079998986869` |
+| 2026-10-30 | `pin_51_barcart` | Wedding Coloring Pages | `1148629079999082468` |
+| 2026-10-30 | `pin_52_engagementgift` | Bridal shower gifts | `1148629079999082496` |
 
 All eight v7 pins so far read back live on `calmbeforetheaisle` — right board,
 title, description and tagged link exactly as this directory's schedule CSV
@@ -648,3 +650,26 @@ So the pin is permanently unattributable and that costs approximately nothing:
 the account has recorded **0 outbound clicks across 26 pins in five weeks**.
 Worth noting rather than fixing, and worth remembering when the Amazon
 Attribution setup lands — **future Amazon pins want a `tag=`, not a `utm_`.**
+
+## `image_url` works, and it retires the base64 route (2026-10-30)
+
+`PINTEREST_CREATE_PIN`'s `media_source` takes an **`image_url`** variant as well
+as `image_base64`, and Pinterest fetches the image itself. Both of today's pins
+went up that way, from the pin's own Drive file:
+
+    https://drive.usercontent.google.com/download?id=<DRIVE ID>&export=download&confirm=t
+
+That URL returns `content-type: image/jpeg` at the exact byte count, because the
+`pintrest` folder inherits the parent's "anyone with the link" sharing. Nothing
+has to be downloaded, encoded or carried through the session.
+
+**Why this matters more than it sounds.** A pin image is about 280 KB, which is
+385,000 characters of base64 — an amount no session can realistically paste into
+a tool call, let alone two a day. The base64 route is the documented one and it
+is effectively unusable at this size.
+
+**Check the reply's `media.images`** — the returned `1200x` entry reports the
+stored dimensions (1000x1500 for both today), which is the one confirmation
+available here: `i.pinimg.com` is not reachable through this session's proxy, so
+the live image cannot be downloaded and compared. If a pin ever has to be
+verified pixel-for-pixel, that has to happen on her phone.
