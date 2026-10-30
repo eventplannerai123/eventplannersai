@@ -444,7 +444,17 @@ title carries "& Screen Recordings" on the end. **The id is what matters** —
 Drive allows duplicate names, so look a folder up rather than matching a string.
 
 `October 1` is `1I9q3H4T29ZoMeDt72CYik_ck-oqxhDzG` and `October 15` is
-`1LTWK7D8rNsRwell3OKUFUPq7K6whUsOY`; the rest are not listed here.
+`1LTWK7D8rNsRwell3OKUFUPq7K6whUsOY`. `October 31` is
+`16UUW2lQ9YnjyZGZyN71zOuUnQfoHJsu2` — **she created it herself** on 2026-10-30
+and dropped the expense report recording, the finished xlsx and the receipt
+photos into it, then sent the folder link with no other message. So a bare
+Drive link from her is a day folder to go and read, not something to ask about.
+The rest are not listed here.
+
+**She uploads in duplicate, and it is not an error to flag.** The `October 31`
+folder holds the 92,963,548-byte screen recording twice under one name, and
+both receipt photos twice. Match on `fileSize` plus title before treating two
+entries as two files; the phone's share sheet evidently fires twice.
 
 At the start of each month, create the month folder under the parent and its
 day subfolders, and record the month id here.
