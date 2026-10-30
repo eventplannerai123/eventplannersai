@@ -1445,14 +1445,25 @@ board ids, the Drive folder, the schedule CSV. The parts that govern:
   source crop stops about 20px short of the frame bottom. Scan the bottom
   ~300px of the actual mp4 through to its final frame. A crop that misses the
   last few rows gives the same false all-clear a colour threshold does.
-- **Ads seen so far are not one banner. EIGHT advertisers**: Adobe Acrobat
+- **Ads seen so far are not one banner. NINE advertisers**: Adobe Acrobat
   (Sep 21), Adobe Firefly (Sep 22), Rillion "AI for Accounts Payable"
   (Sep 23), Cambridge "Event Florals in NYC" (Sep 24), Turning Stone "Make It
   Easier" (Sep 25), **Fever "Private corporate events" (Oct 4)**, **FELFEL
-  "Book a Free Tasting — office meals stocked daily" (Oct 16)** and
-  **TicketSpice "Sell More Tickets Online / #1 Ticketing Software" (Oct 23)**.
-  Do not search for a known logo — look for anything new at the bottom of the
-  reveal.
+  "Book a Free Tasting — office meals stocked daily" (Oct 16)**, **TicketSpice
+  "Sell More Tickets Online / #1 Ticketing Software" (Oct 23)** and **Amazon
+  Business "Buy in Bulk — streamline purchasing with Amazon Business"
+  (Oct 30)**. Do not search for a known logo — look for anything new at the
+  bottom of the reveal.
+
+  **Amazon Business is the second on-topic one, and it is introduced by a line
+  of ChatGPT's own text.** In the boxes recording it arrives as "For bulk
+  conference supplies, here's one Amazon Business option." — a sentence in the
+  answer's own voice, in the answer's own type, immediately under a genuine
+  recommendation about labelling boxes. Only the small "Ad" marker and the
+  logo below it say otherwise. A reader skimming the export would take the
+  sentence for part of the answer, so **the ad starts at that sentence, not at
+  the logo**, and the cut has to land before it. It entered frame at ~58.5s of
+  a 62.3s capture — late, like FELFEL and TicketSpice.
 
   **TicketSpice is the on-topic one, and that makes it worse.** It is a
   ticketing ad inside a recording about ticket allocation, so it reads as part
