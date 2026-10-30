@@ -79,3 +79,21 @@ fits the budget, so a text edit re-fits itself. Slide 2 keeps the whole
 moments, then her "small change" line, then the medical-response-card prompt in
 full, then one save line and the four standing hashtags. No employer and no
 client is named anywhere in the slides or the caption.
+
+## Approved, scheduled, filed
+
+Sahiba approved it on 2026-10-30 ("approved"), before the blanket travel-week
+go-ahead's successor rules — so this is her explicit go-ahead for this piece
+and nothing else.
+
+| | |
+| --- | --- |
+| Instagram + Facebook | 9:00am Eastern Sat 31 Oct (13:00 UTC, still EDT), one-shot task `trig_01SbNbpEpKmDypCmQPJHH876` firing into this session |
+| TikTok | handed to her with the caption on 2026-10-30, the moment she approved the Instagram set. Last 10 TikToks checked first: nothing like it — the nearest are the Oct 29 client-brief carousel and the Oct 30 coloring book Reel |
+| Drive | all 14 slides in `October 31` (`16UUW2lQ9YnjyZGZyN71zOuUnQfoHJsu2`), both sets, filed as part of the build |
+
+The 6:30pm expense report Reel is a separate task (`trig_01Hix1kj2ho1vSiUWNGGZ3Dh`).
+9:00am to 6:30pm is 9½ hours, so the 6-hour two-post gap holds with room.
+
+The caption is also written into the guide's Sat 31 CLAUDE CODE block, and that
+block's carousel line is struck `✅ done Oct 30`.
