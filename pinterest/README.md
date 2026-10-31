@@ -548,6 +548,8 @@ tier.** Pinterest posting runs from the cloud session only.
 | 2026-10-29 | `pin_50_flowerbucket` | Adult coloring pages | `1148629079998986869` |
 | 2026-10-30 | `pin_51_barcart` | Wedding Coloring Pages | `1148629079999082468` |
 | 2026-10-30 | `pin_52_engagementgift` | Bridal shower gifts | `1148629079999082496` |
+| 2026-10-31 | `pin_53_scariest` | Wedding planning printables | `1148629079999170169` |
+| 2026-10-31 | `pin_54_latenight` | Wedding Coloring Pages | `1148629079999170170` |
 
 All eight v7 pins so far read back live on `calmbeforetheaisle` — right board,
 title, description and tagged link exactly as this directory's schedule CSV
