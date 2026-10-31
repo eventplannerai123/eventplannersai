@@ -97,3 +97,36 @@ The 6:30pm expense report Reel is a separate task (`trig_01Hix1kj2ho1vSiUWNGGZ3D
 
 The caption is also written into the guide's Sat 31 CLAUDE CODE block, and that
 block's carousel line is struck `✅ done Oct 30`.
+
+## Live
+
+Posted Sat 31 Oct at 9:03am Eastern (13:03 UTC), from the scheduled task, on
+her Oct 30 approval.
+
+| | |
+| --- | --- |
+| Instagram | [p/DfKODl_EbP0](https://www.instagram.com/p/DfKODl_EbP0/) — media `17989773509881305`, `CAROUSEL_ALBUM` |
+| Facebook | multi-photo post `1233196746554445_122118984231449533` |
+
+Live Instagram caption read back and diffed against `caption.txt`: identical,
+line breaks and all four hashtags intact.
+
+**Slide order verified on the published post, 1→7 at MAD 0.00 each**, with the
+next-nearest slide 12.6 or more away. Carousel child ids come back
+non-monotonic — this build's ended 537/543/534/540/657/654/660 in request
+order — so the parent's `children` array is ordered by the **results index** of
+the child call, never by id.
+
+Two things this build had to work around:
+
+- **`INSTAGRAM_CREATE_CAROUSEL_CONTAINER` with `child_image_urls` is refused**
+  ("Invalid parameter", HTTP 400, nothing created). The working route is the
+  long one: seven `INSTAGRAM_POST_IG_USER_MEDIA` calls with
+  `is_carousel_item: true`, then the parent with their ids in `children`.
+  `share_to_feed` is a Reels field and does not belong on a carousel parent.
+- **The Instagram CDN is blocked from this session's egress** —
+  `scontent-*.cdninstagram.com` returns `connect_rejected` through the proxy —
+  so the pictures could not be downloaded here to check the order. They came
+  down inside Composio's remote sandbox instead, which can reach the CDN, and
+  the MAD match was run there. Worth remembering: when the only real check
+  needs a blocked host, the workbench is a second network, not a dead end.
