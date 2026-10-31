@@ -103,6 +103,18 @@ def fit_highlight(frame_path, seed_y, lines=1, up=0, pad_x=16, pad_y=12,
 
 
 def draw_highlight(img, box, safe_top, safe_bot, name=""):
+    """Lay the amber box over the text, translucent so the words read through.
+
+    `img` must be RGB. Pillow only BLENDS an RGBA fill when the destination has
+    no alpha channel of its own: draw the same fill onto an RGBA image and it
+    REPLACES the pixels instead, so the highlight comes out a solid block with
+    the line it is meant to emphasise hidden underneath it. Found 2026-10-31,
+    on a frame opened with .convert("RGBA") — the preview showed four flat
+    yellow bars where the figures should have been.
+    """
+    assert img.mode == "RGB", (
+        f"{name}: highlight needs an RGB image, got {img.mode} — an RGBA "
+        f"destination makes the fill opaque")
     x0, y0, x1, y1 = box
     assert y0 >= safe_top and y1 <= safe_bot, \
         f"{name} highlight outside safe band: {y0}-{y1}"

@@ -33,3 +33,7 @@ carousels/*/build/preview.png
 # raw source, and one of them is a frame of her desk. The repo is public.
 reels/*/build/*-probe.png
 carousels/*/build/*-probe.png
+
+# Python bytecode.
+__pycache__/
+*.pyc
