@@ -420,7 +420,7 @@ is when it posts.
 | --- | --- |
 | Parent | `AI for Event Planners — Reels & Screen Recordings`, id `1GFs9qwlVHq6Pdo0LEX0TG5lFN4ipmtax` |
 | Month | `October`, id `1gCWHchI1_mvS7eQiQmGDlp6H8P8i59Qg` |
-| Nov | `November ` — **note the trailing space in the title** — id `1nENfiitkVU06xQsAuPKINBKTj3RliX--`, **she created it herself** on 2026-10-30 along with `November 1` (`1X_r1inNwS894c7GssykYiVgVs2d0XS-p`), where she dropped the boxes recording. `November 2` is `1R4sJIJF6iSEW3w3tiz1qZN5bCFEeAsVW` and `November 3` is `15XBdhQwnclMrFUlcP-HvJuN-RuxZKGOx`, both made here. **Look the month folder up before creating one at the start of a month** — a second `November` was created here half an hour after hers and had to be trashed, because Drive allows duplicate names and `GOOGLEDRIVE_CREATE_FOLDER` will happily make one. `GOOGLEDRIVE_DELETE_FOLDER` does not exist; `mcp__Google_Drive__trash_file` takes a folder id and works |
+| Nov | `November ` — **note the trailing space in the title** — id `1nENfiitkVU06xQsAuPKINBKTj3RliX--`, **she created it herself** on 2026-10-30 along with `November 1` (`1X_r1inNwS894c7GssykYiVgVs2d0XS-p`), where she dropped the boxes recording. Week one, all made here: `November 2` `1R4sJIJF6iSEW3w3tiz1qZN5bCFEeAsVW`, `3` `15XBdhQwnclMrFUlcP-HvJuN-RuxZKGOx`, `4` `1otzgv_rwUJm1qLwGlnNlnGiPezCi_pOx`, `5` `1iH1FrGOq5cfqHBSY23AUSw_UJ0fJUqV_`, `6` `1CQ3AvEmakzfPRg8NzBBRD9PBt3aagHm1`, `7` `11aJzyj1Bnn_8y5xoAmzx5miKuhMxqj5l`. **Look the month folder up before creating one at the start of a month** — a second `November` was created here half an hour after hers and had to be trashed, because Drive allows duplicate names and `GOOGLEDRIVE_CREATE_FOLDER` will happily make one. `GOOGLEDRIVE_DELETE_FOLDER` does not exist; `mcp__Google_Drive__trash_file` takes a folder id and works |
 | Days | `October 1`–`19`, `21`, `23`, `25`–`30` exist; create the rest as the schedule reaches them. `October 19` is `1wlB2Pyy8tfd5CqHIzYgWGKTe3FeE6H5-`, made 2026-10-19 with Composio's `GOOGLEDRIVE_CREATE_FOLDER` (`name` and `parent_id` — **not** `folder_name`, which is rejected), and its `parents` was checked against the month id rather than trusted from the reply, which does not include it. `October 17` is `1tqjkG8iGyX6ZMmeBti-oH09Fo1A2rtVR`, made 2026-10-17 with `mcp__Google_Drive__create_file` (mimeType `application/vnd.google-apps.folder`, `parentId` the month) — it inherits the month's link-sharing, so a file dropped in it is readable from here straight away |
 | Naming | finished cuts `YYYY-MM-DD-slug-instagram.mp4` and `-tiktok.mp4`; carousel slides `YYYY-MM-DD-slug-instagram-1.jpg` … `-5.jpg` and the same for `-tiktok-`; her own files keep their own names |
 
@@ -466,6 +466,21 @@ entries as two files; the phone's share sheet evidently fires twice.
 
 At the start of each month, create the month folder under the parent and its
 day subfolders, and record the month id here.
+
+**Demo files are built when the post is planned, not on the day** (her Oct 14
+rule, restated in the November plan). The generators live in
+`demo-files/YYYY-MM/` and **every total is recomputed in code and asserted
+against the figure the guide states** — a demo whose arithmetic does not hold
+ruins the Reel it exists for. `reportlab` is not installed here; `python3 -m
+pip install --break-system-packages reportlab` gets it, and `pdftoppm -r 70
+-png` renders the pages for a visual check, which is as necessary as checking
+a Reel export.
+
+Those files are **invented throughout — no real client, venue or employer** —
+which is what makes them safe in a public repo, and they have to be there:
+`GOOGLEDRIVE_UPLOAD_FROM_URL` needs a `raw.githubusercontent.com` URL to fetch
+from, and a filename with spaces and em dashes must be percent-encoded in the
+URL while the `name` argument stays human-readable.
 
 **`GOOGLEDRIVE_LIST_FILES` silently ignores its `query`.** On 2026-10-14 three
 different `'<id>' in parents` queries each returned the same 100 files — the
@@ -517,13 +532,20 @@ a wrong parent does not. **Check `parents` in the response against the folder id
 you asked for**, not just `size`. The stray copy was trashed and the file
 re-uploaded.
 
-**This session cannot move a file between Drive folders.**
-`mcp__Google_Drive__update_file` takes no `addParents`/`removeParents` — the
-call is rejected with "Unknown name". On 2026-10-16 she uploaded the runny eggs
-photo to `Event photos` rather than the day folder and it could not be filed
-from here. Renaming works; re-parenting does not. Ask her to move it in the
-Drive app (long-press → Move), and treat the file as usable where it is in the
-meantime.
+**Moving a file between Drive folders IS possible — use Composio's
+`GOOGLEDRIVE_MOVE_FILE`** (`file_id` plus `add_parents`; it removes the current
+parent for you). The native connector cannot:
+`mcp__Google_Drive__update_file` takes no `addParents`/`removeParents` and is
+rejected with "Unknown name", which is what this file wrongly generalised into
+"this session cannot move a file" after the 2026-10-16 runny eggs photo landed
+in `Event photos`. One connector's gap is not the account's.
+
+**`mcp__Google_Drive__create_file` takes `title`, not `name`** — `name` comes
+back as "Unknown name: name". With `mimeType: application/vnd.google-apps.spreadsheet`
+and `parentId` it creates a Google Sheet directly in the right folder, which is
+how the Nov 4 budget was made; `mcp__Google_Sheets__update_values` then fills
+it, and that one takes no `valueInputOption` either — a formula string in the
+values is evaluated anyway.
 
 **Do not use the inline-upload route for video.** Both the native Drive
 connector's `create_file` and Composio's `GOOGLEDRIVE_UPLOAD_FILE` take the
@@ -937,7 +959,46 @@ weekly accounts reached**, never the sum of per-post reach.
 Honest caveat worth repeating rather than burying: reach was already sliding
 before the change, so a recovery cannot be cleanly attributed to posting less.
 
-**POSTING TIME, REWRITTEN BY HER ON 2026-10-25. This replaces the 9am rule.**
+**POSTING TIME, REWRITTEN AGAIN FOR NOVEMBER (her plan, approved 2026-10-31).
+This replaces the Oct 25 split below.**
+
+> **Every Instagram post goes out at 6:30pm Eastern — Reels, carousels and
+> image posts alike. One Instagram post a day.** In October the morning
+> carousels reached 12–31 and the 6:30pm Reels 190–250, so the morning slot is
+> gone. Reels Mon, Tue, Thu, Fri; carousel or Reel Wed and Sun; the
+> planner-life image Sat. Every Instagram post also goes to Facebook. TikTok
+> gets everything, plus the back catalogue.
+
+So there is no 6-hour two-post gap left to satisfy: there is only one post a
+day. **6:30pm Eastern is 23:30 UTC from Sun 1 Nov**, when Eastern becomes EST.
+
+**TikTok runs a timing test all of week 1, and she decides at the Sun 8 recap**
+(her instruction, 2026-10-31). She posts TikTok by hand, so each slot is a
+one-shot task firing into this session that sends her the file with the caption
+pasted into the message:
+
+| Slot | Days | UTC | Task |
+| --- | --- | --- | --- |
+| 6:30pm Eastern | Mon 2, Thu 5, Fri 6 | 23:30 | `trig_011zGHXimFN9CQkEYZK88SqD`, `trig_011wQRgx9XUT5rbygLznb5vi`, `trig_01TC4A4CUA3MNoMfWYwjhzAw` |
+| 9am Eastern | Tue 3, Wed 4, Sat 7 | 14:00 | `trig_0188cLh7RMoxYubPLaVQYfmU`, `trig_01Haqj4rMYfgDYxhZLvuPFZW`, `trig_01J2dT2bNVTT3AYFNYBWpL11` |
+
+**A morning slot means the cut has to exist and be approved the night before**,
+because that TikTok goes up *before* the same day's Instagram post. A 9am
+reminder is never the first time the file gets built — her words: "for the
+morning ones, have the cut ready the night before."
+
+Honest caveat for the recap, not for her reply: **time and format are
+entangled again.** The three morning slots are a Reel, a carousel and an image;
+so are the evening three, but not in the same order. Three against three is
+also too few to separate from noise. Report the six numbers, say what they do
+and do not show, and let her decide.
+
+---
+
+*The Oct 25 rule, kept because the reasoning behind the evening slot still
+holds:*
+
+**POSTING TIME, REWRITTEN BY HER ON 2026-10-25. This replaced the 9am rule.**
 It is a new rule at the top of the guide, so it governs:
 
 > Posting-time rule (Oct 25): Instagram Reels post at 6:30pm. Carousels and
@@ -1045,6 +1106,22 @@ MCP server; a session without `mcp__Composio__*` tools cannot post at all.
   Both numbers are real; only this one works. Create the container with `media_type: REELS` and
   `share_to_feed: true`, then publish with a generous `max_wait_seconds`.
   Containers are single-use; on a processing error build a new one.
+
+  **A carousel is the long route, and the short one does not work.**
+  `INSTAGRAM_CREATE_CAROUSEL_CONTAINER` with `child_image_urls` is refused
+  outright — "Invalid parameter", HTTP 400, nothing created (2026-10-31). Build
+  one child container per slide with `INSTAGRAM_POST_IG_USER_MEDIA` and
+  `is_carousel_item: true`, then the parent with their ids in `children`.
+  `share_to_feed` is a Reels field and has no place on a carousel parent.
+  **Order the `children` array by the results index of the child call, never by
+  id** — the ids come back non-monotonic every time.
+
+  **Verifying slide order needs a second network.** The published children can
+  only really be checked by downloading the pictures and matching them, and
+  `scontent-*.cdninstagram.com` is blocked from this session's egress
+  (`connect_rejected` through the proxy). Composio's remote sandbox reaches it:
+  `COMPOSIO_REMOTE_BASH_TOOL` to curl both the CDN images and the committed
+  slides, then MAD-match there. A blocked host is not the end of a check.
 - **Facebook** — Composio account `facebook_radius-iguana`, page_id
   `1233196746554445` ("The Event Planners AI"), now recorded in the guide
   too. **`FACEBOOK_CREATE_VIDEO_POST` takes `file_url` and `description`** —
