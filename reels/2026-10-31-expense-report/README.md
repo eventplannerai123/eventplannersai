@@ -101,3 +101,22 @@ Source I=-25.14, TP=-5.13, LRA=2.00. Explicit gain of **14.0 dB** then
 gain — LRA moves 1.70 to 1.60, because the read was already flat.
 
 Bottom 320px scanned at 1fps through to the final frame: no in-app ads.
+
+## Posted Sat 31 Oct, 6:30pm Eastern
+
+| | |
+| --- | --- |
+| Instagram | [reel/DfLPLEFgX5t](https://www.instagram.com/reel/DfLPLEFgX5t/), media `18122569486941997`, 22:32:31 UTC |
+| Facebook | post `2989880928022111` |
+| Caption | read back and diffed against `build/caption.txt` — **identical** |
+
+Both live checks ran first and came back clear: the newest Instagram item was
+the morning's Halloween carousel and the Page's newest post was its Facebook
+twin. The container reached FINISHED after 41.2s and published first time, with
+no timeout to interpret.
+
+**The scheduled task carried a stale caption hash again** — it said `e1cd8885`
+and the file has always hashed to `bc4629e6`. The file is what shipped, and the
+live caption matches it character for character. That is the second task in two
+days to carry a hash written before the caption settled, so the Sun 1 task's
+prompt was edited tonight to say read the file and never trust the hash.
