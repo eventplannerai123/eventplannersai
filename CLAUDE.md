@@ -340,6 +340,26 @@ that have already passed, with the optional ones marked optional. A line that
 only *reads* like a task is not one — Mon 26's YOU block is the single sentence
 "Nothing to check today", which is a note and will sit unstruck forever.
 
+**The October strikethroughs are not a reliable record, and the daily audit
+has to allow for it.** A full pass over every October YOU line on 2026-10-31
+returned open items on 25 of 31 days, and most were false: back-catalogue
+TikToks confirmed in `docs/TIKTOK-POSTED.md` but never struck, Pinterest
+batches that demonstrably ran, conference clips she plainly filmed. Six of the
+clearest were struck that day against the TikTok log. So when the audit fires,
+**check an unstruck line against the records before carrying it to her** —
+`docs/TIKTOK-POSTED.md`, `pinterest/README.md`, the live accounts — rather than
+reading the doc as the truth.
+
+Three classes of line are never worth reporting:
+
+- **Stories.** They expire in 24 hours, nothing reports back, and an old one
+  can be neither verified nor done. Six October Story lines sit unstruck
+  forever; report only the current day's.
+- **Lines a later decision superseded.** Mon 19's "Edit IMG_0853 in ChatGPT"
+  was overtaken that same day when de-branding moved in-house.
+- **"Caption to paste" and "How:" lines**, which sit inside the YOU block and
+  read like tasks. Filter on the opening words.
+
 **Only strike what actually happened as written.** On 2026-10-12 her own line
 "Record the site-report screen recording — PLANNED TRIAL, upload it yourself"
 was left unstruck: she recorded it, but the piece had become the event-brief
