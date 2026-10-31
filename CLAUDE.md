@@ -511,6 +511,27 @@ and `createdTime > '<RFC3339>'`, and returns `parentId` per file so the answer
 can be checked. `GOOGLEDRIVE_FIND_FOLDER` is fine for folders — it does return
 `parents`. `GOOGLEDRIVE_GET_FILE_METADATA` does **not** return parents at all.
 
+**`GOOGLEDRIVE_FIND_FILE` ignores its `name` argument the same way** — found
+2026-10-31 looking for a photo she had asked for. It returned "No search
+criteria provided. Returning all accessible files (showing 100 of potentially
+more files)" and 100 unrelated files, and that answer was read as "the file is
+not in Drive". It was not a search at all. **A Composio Drive call that says it
+is returning everything has not filtered anything**, so read the preamble before
+reading the list.
+
+**`mcp__Google_Drive__search_files` uses `title`, not `name`** — `name` is
+rejected outright with "Unsupported query field", and a bare phrase is too.
+`title = 'Event photos'` and `title contains 'IMG_0853'` both work, so a file
+can be found by name from here in one call. Folder scope is `parentId = '<id>'`
+and it pages 5-10 files at a time behind `nextPageToken`, so a one-page listing
+of a big folder proves nothing.
+
+**Her loose photos live in Drive `Event photos`** (`1koNqzsop2GsuEUVdvC0bHtQuwyusrr6a`),
+and that is now her standing instruction — 2026-10-31, "its in the event photos
+google drive folder. always check there". It is the second time that folder has
+caught this session out: the Oct 16 runny eggs photo, and now the Oct 31 one.
+Check it by id before saying any photo of hers is missing or gone.
+
 **So check Drive before telling her something is missing** — rule 6 of the Oct 5
 video lessons. On 2026-10-14 she asked "are you sure its not already in the
 folder" about footage this session had just asked her to film. It was not
