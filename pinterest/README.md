@@ -561,6 +561,19 @@ two Oct 26 pins went to two different boards. The board is per-row, not per-day,
 so read it off the row rather than carrying yesterday's forward. Pins cannot be
 edited, so a wrong board is permanent.
 
+## Pins 55 and 56 — Sun 1 Nov
+
+Posted 11:49 UTC off `2026-pin-schedule-v7.csv`, row-verbatim, by the
+`image_url` route.
+
+| Pin | Board | Id | Stored |
+| --- | --- | --- | --- |
+| 55 menu | Wedding planning printables (`1148629148653722470`) | `1148629079999259308` | 1000x1500 |
+| 56 sampler row | Adult coloring pages (`1148629148653722468`) | `1148629079999259307` | 1000x1500 |
+
+Both raw URLs were checked for `200 image/jpeg` and the exact committed byte
+count before the call, because a pin cannot be edited afterwards.
+
 ## Posting route: `image_url`, not base64 (from 2026-10-02)
 
 `pin_01` went up with `media_source image_base64`. That works, but a
