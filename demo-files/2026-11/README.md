@@ -45,3 +45,29 @@ server-side upload fetches them from a `raw.githubusercontent.com` URL.
 
 PDFs land in `files/`. `pdftoppm -r 70 -png` renders them for a visual check;
 do that rather than trusting the generator, the same as for a Reel export.
+
+## Garden Reception — Budget and Rain Plan (Sun 8, built Nov 1)
+
+Not built by `make_demo_files.py`: it is a two-tab Google Sheet, made directly
+in Drive `November 8` (folder `1L2H-JKLOIXFMNntUW1Ft2dLl2MtAIrcO`, created the
+same day), id `1Y00Ga41aFYzGT7vCFBKAjWUIuo63ehCqGqS_SJVzWy8`.
+
+Built six days early, off the note from the Claude.ai chat listing it as due
+Fri 6. Its totals are **formulas, not typed figures**, and were read back after
+writing:
+
+| | Guide says | Sheet returns |
+| --- | --- | --- |
+| Outdoor plan total | $35,800 | **35800** |
+| Tent quote total | $14,080 | **14080** |
+| Tent held and not used | $3,600 | **3600** |
+
+The rain-plan total the Reel turns on is **$48,680** — the outdoor $35,800,
+less the $1,200 string lighting the tent lighting replaces, plus the $14,080
+quote — and the difference is **$12,880**. Those two are the answer's job, not
+the file's, so the sheet does not state them: the whole point of the piece is
+that AI works them out from the two tabs. The trap is the tent lighting, which
+adds $200 rather than $1,400.
+
+The rain call is 72 hours before Sat 12 June 2027, so **Wed 9 June 2027**. The
+sheet gives the rule, not the date, for the same reason.
