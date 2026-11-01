@@ -94,3 +94,20 @@ export rather than computed: 11.5 dB landed at −15.1 and −14.7.
 `build/caption.txt`, md5 `eedf79b3`. The guide's, with the house layout: body,
 blank line, `AI Prompt: "…"`, blank line, save line, four hashtags. No employer
 and no client is named.
+
+## Posted Sun 1 Nov, 6:30pm Eastern
+
+| | |
+| --- | --- |
+| Instagram | [reel/DfN6r80gKt8](https://www.instagram.com/reel/DfN6r80gKt8/), media `17966340369195947`, 23:31:14 UTC |
+| Facebook | post `2216572675904528` |
+| Caption | read back against `build/caption.txt` — identical |
+
+**The first post on the far side of the clock change.** Eastern went to EST
+this morning, so 6:30pm is 23:30 UTC rather than 22:30, and the task was set to
+that from the start. The live timestamp is 23:31:14 UTC, which is 6:31pm her
+time: right.
+
+The live check came back clear (the newest item was Saturday's expense report
+Reel), the container reached FINISHED in 19.0s, and it published first time
+with no timeout to interpret.
