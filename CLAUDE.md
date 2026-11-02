@@ -1446,6 +1446,36 @@ still unbuilt. Two things wait on them: the Round 6 awards-night piece
 promises the pack as its deliverable, and any paid guide would be built
 around them.
 
+## The Vendor Payment System — priced $24, launches Thu 5 Nov
+
+Her decision, 2026-11-02, after running Prompts 1 and 2 against her own inbox
+and a real contract: **$24**, and the Black Friday code **BLACKFRIDAY is $7 off
+($24 → $17), not 30%** — she corrected that herself in the guide's Fri 27 line.
+Build the Gumroad listing Tue 3 at $24, publish Wed 4 once she approves it, and
+send her the **product page** link, not the storefront, for her Thu 5 bio
+change.
+
+The setup guide (`19_SNj602VDJidoTFTg0C6g4EPasygdSPgXNv3-NrTRw`, in
+`Event planners AI > Products > Vendor Payment System`) is **no longer a
+draft**: the "DRAFT, Oct 25" header and the internal "Check before selling"
+section were deleted on Nov 2 and the file renamed, because that is what the
+Wed 4 line asked for once she approved. She rewrote Prompts 1 and 2 herself in
+the course of testing, so **take those two from the live doc, never from an
+older copy of them in this repo or a reply**.
+
+**The connector facts in it were wrong and are fixed.** It told buyers Claude
+could not send email; Claude can, asking approval per message, and its path is
+**Customize > Connectors**, not Settings. ChatGPT's path is **Settings > Apps
+(formerly Connectors)**. Which ChatGPT paid tiers carry the Gmail and Outlook
+connectors could not be settled — every source is a third-party blog and they
+contradict each other, with no OpenAI help-centre page — so the guide names no
+ChatGPT tier and tells the buyer to check their own Settings.
+
+**`Catering Agreement — Harbor Light Catering — May 15 2027.pdf`** sits beside
+it (`1nMLmT3dVxxIRpd35cf7DjurCwo3HQtNO`), built to match the "Reel — vendor
+payments" emails in her Gmail. It is the contract to use in any video showing
+the contract reader. **Do not trash those emails** — her instruction, same day.
+
 ## Pinterest (added to the guide 2026-09-28, started 2026-09-29)
 
 A separate account and a separate workstream: `@calmbeforetheaisle`, business
