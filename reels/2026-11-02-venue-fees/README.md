@@ -88,3 +88,14 @@ the exports are built from nothing but those stills.
 `10H1B2BXJlzWkfF_s6-de7aAoS_hK4IQi`, in `November 2`. Six pages, fictional
 venue, built Fri 31 Oct from `demo-files/2026-11/make_demo_files.py`, which
 asserts the real total ($47,062, $261.46 a head) against the guide's figure.
+
+## Posted Mon 2 Nov, 6:30pm Eastern
+
+| | |
+| --- | --- |
+| Instagram | [reel/DfQflZTD0k2](https://www.instagram.com/reel/DfQflZTD0k2/), media `18187754062417253`, 23:32:07 UTC |
+| Facebook | post `1644890357275026` |
+| Caption | read back against `build/caption.txt` — identical |
+
+Live check came back clear (the newest item was Sunday's boxes Reel), the
+container reached FINISHED in 19.0s, and it published first time.
