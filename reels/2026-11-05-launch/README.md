@@ -145,3 +145,48 @@ line is only struck for what actually happened as written.
 
 Her three Thu 5 lines still open are the Story, the bio change to the product
 page, and the TikTok upload itself.
+
+## The TikTok cut's ending, rebuilt on her note of Mon 3 Nov
+
+> "Change the CTA to 'Comment BUDGET on my Instagram and I'll send it to you,'
+> and add a 2-second end card with aiforeventplanners.gumroad.com in large
+> text. Same caption rule: no 'link in bio' on TikTok."
+
+Two changes, **both TikTok-only**:
+
+- **`end-tiktok`** replaces `end` on that cut. Three lines at 54px instead of
+  two at 60, so the longer sentence still clears the bottom 25% — it ends at
+  y=1364 against the 1440 line.
+- **`url-tiktok`**, a full lavender frame carrying the address alone, held
+  **2.0s after the voiceover stops**. The cut runs **23.92s**: 21.92s of body,
+  then the card.
+
+**The address is set on two lines, split at the dot.** On one line it fits
+only at 57px — smaller than the hook cards, on the one frame whose whole job
+is to be read and typed. Split, it sets at **101px** and still reads as one
+address. The size is computed to the 992px gutter rather than typed, so it
+cannot silently overflow.
+
+**Why TikTok gets a URL card and Instagram does not.** TikTok has no bio link
+to point at: the account is 901 followers short of the 1,000 the website field
+needs, and the business route now demands IRS tax documents (checked Nov 3 —
+the old free "Switch to Business Account" option is gone from the app). So on
+that platform the address has to be in the picture. Instagram keeps the
+shorter CTA, no URL card and no tail, because its bio link does the job.
+
+**The tail is deliberate silence**, which the timing rules otherwise warn
+against. It is two seconds of a card that exists to be read, not a dead hold
+on footage, and `apad` extends the voiceover to the file length so `-shortest`
+cannot clip the card off the end.
+
+**The Instagram cut was not re-rendered.** She approved it on Mon 3 and it is
+scheduled; it was restored from git byte-for-byte (2,160,425 bytes) rather
+than rebuilt, because re-encoding an approved artifact risks a change for no
+gain.
+
+**The caption did not change.** Her rule is unchanged and the TikTok caption
+already reads "Comment BUDGET **on my Instagram**", never "link in bio".
+
+Checked on the export: −13.9 LUFS, −1.3 dBTP over the full 23.92s; the CTA
+card is up at 19.0s and 21.5s, the URL card at 22.3s and 23.85s; frames in
+`build/check3/`.

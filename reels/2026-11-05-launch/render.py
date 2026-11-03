@@ -30,6 +30,13 @@ THE TWO CUTS DIFFER IN HOOK AND PACING, never in one file posted twice.
 Instagram takes the guide's narrative hook; TikTok takes a command-style one
 and runs its middle beats a little tighter.
 
+AND FROM HER NOTE OF NOV 3 THEY NOW DIFFER AT THE END TOO. TikTok's CTA names
+Instagram as the place to comment, and the cut holds a full-frame card with
+the Gumroad address for two seconds after the voiceover stops. That tail is
+deliberate silence, not a dead end: TikTok has no bio link to carry the
+address, so the picture has to. Instagram keeps the shorter CTA, no URL card
+and no tail, because its link is in the bio.
+
 Audio is the Eryn voiceover at -14 LUFS, and it is the only audio: the screen
 recordings carry a silent track.
 """
@@ -67,6 +74,9 @@ PLAN = {
     ],
 }
 HOOK = {"instagram": "hook-instagram", "tiktok": "hook-tiktok"}
+END = {"instagram": "end", "tiktok": "end-tiktok"}
+# Seconds of full-frame URL card held after the voiceover. TikTok only.
+TAIL = {"instagram": 0.0, "tiktok": 2.0}
 GAIN = {"instagram": 0.0, "tiktok": 0.0}
 
 
@@ -92,20 +102,27 @@ def preview(name):
     from PIL import Image
     plan = PLAN[name]
     wins, _ = windows(plan)
-    pairs = [(0, HOOK[name]), (4, "contract"), (6, "end")]
+    pairs = [(0, HOOK[name]), (4, "contract"), (6, END[name])]
     os.makedirs(os.path.join(BUILD, "preview"), exist_ok=True)
     for idx, card in pairs:
         base = Image.open(os.path.join(BEATS, plan[idx][0] + ".png")).convert("RGBA")
         over = Image.open(os.path.join(CARDS, card + ".png")).convert("RGBA")
         Image.alpha_composite(base, over).convert("RGB").save(
             os.path.join(BUILD, "preview", f"{name}-{idx}-{card}.jpg"), quality=92)
-    print(f"preview written for {name}: {[c for _, c in pairs]}")
+    shown = [c for _, c in pairs]
+    if TAIL[name]:
+        Image.open(os.path.join(CARDS, "url-tiktok.png")).convert("RGB").save(
+            os.path.join(BUILD, "preview", f"{name}-7-url.jpg"), quality=92)
+        shown.append("url-tiktok")
+    print(f"preview written for {name}: {shown}")
 
 
 def render(name):
     plan = PLAN[name]
-    wins, total = windows(plan)
-    assert abs(total - 21.92) < 0.05, f"{name} runs {total:.2f}s, not the voiceover's 21.92s"
+    wins, body = windows(plan)
+    assert abs(body - 21.92) < 0.05, f"{name} body runs {body:.2f}s, not the voiceover's 21.92s"
+    tail = TAIL[name]
+    total = body + tail
 
     ins, filt = [], []
     for i, (beat, dur) in enumerate(plan):
@@ -117,7 +134,7 @@ def render(name):
     # Cards, each over the beat it was placed against.
     cards = [(HOOK[name], wins[0][0], wins[0][0] + 2.3),
              ("contract", wins[4][0], wins[4][1]),
-             ("end", wins[6][0], wins[6][1])]
+             (END[name], wins[6][0], wins[6][1])]
     n = len(plan)
     last = "body"
     for j, (card, a, b) in enumerate(cards):
@@ -128,17 +145,30 @@ def render(name):
             f"enable='between(t,{a:.3f},{b:.3f})'[{tag}]")
         last = tag
 
+    nxt = n + len(cards)
+    if tail:
+        ins += ["-loop", "1", "-t", f"{tail:.3f}", "-i",
+                os.path.join(CARDS, "url-tiktok.png")]
+        filt.append(f"[{nxt}:v]scale={W}:{H},fps={FPS},setsar=1[tailv]")
+        filt.append(f"[{last}][tailv]concat=n=2:v=1:a=0[vout]")
+        last = "vout"
+        nxt += 1
+
     ins += ["-i", VO]
+    # The voiceover is shorter than the file whenever there is a tail, so pad
+    # it rather than letting -shortest clip the URL card off the end.
+    filt.append(f"[{nxt}:a]apad=whole_dur={total:.3f}[aout]")
+
     out = os.path.join(HERE, f"launch-{name}.mp4")
     cmd = (["ffmpeg", "-v", "error", "-y"] + ins +
            ["-filter_complex", ";".join(filt),
-            "-map", f"[{last}]", "-map", f"{n + len(cards)}:a",
+            "-map", f"[{last}]", "-map", "[aout]",
             "-c:v", "libx264", "-profile:v", "high", "-crf", "19",
             "-pix_fmt", "yuv420p", "-movflags", "+faststart",
             "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
-            "-shortest", out])
+            "-t", f"{total:.3f}", out])
     subprocess.run(cmd, check=True)
-    print(f"{name}: {total:.2f}s -> {os.path.basename(out)}")
+    print(f"{name}: body {body:.2f}s + tail {tail:.2f}s = {total:.2f}s -> {os.path.basename(out)}")
     return out
 
 

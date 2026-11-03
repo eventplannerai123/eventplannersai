@@ -17,6 +17,14 @@ after.
             says covers the sentence it is about
   end       sits over the prompt bubble, covering the keyboard rather than
             the prompt
+
+TIKTOK TAKES A DIFFERENT CTA AND A FULL-FRAME END CARD (her note, Nov 3).
+TikTok has no bio link — the account is 900 followers short of the website
+field and the business route wants tax documents — so the URL has to be in the
+picture. `end-tiktok` names Instagram as the place to comment, and
+`url-tiktok` is a full lavender frame carrying the address alone, held two
+seconds after the voiceover ends. Instagram keeps the shorter CTA and no URL
+card: its link lives in the bio.
 """
 import os
 from PIL import Image, ImageDraw, ImageFont
@@ -35,7 +43,17 @@ CARDS = {
     "hook-tiktok":    ("Stop keeping vendor\npayments in your head.", 1086, 60),
     "contract":       ("The email said 10 days.\nThe contract says\n10 business days.", 494, 54),
     "end":            ("Comment BUDGET and\nI'll send it to you.", 1120, 60),
+    "end-tiktok":     ("Comment BUDGET\non my Instagram and\nI'll send it to you.", 1086, 54),
 }
+
+# Full-frame end card, TikTok only: lavender ground, the address alone, sized
+# to fill the frame rather than typed at a fixed px.
+# Two lines, split at the dot: on one line the address fits only at 57px,
+# which is smaller than the hook cards. Split, it sets at nearly twice that
+# and still reads as one address.
+URL = ["aiforeventplanners", ".gumroad.com"]
+URL_MAX_W = 992          # 1080 less a 44px gutter either side
+URL_Y = 880              # optical centre, clear of the top 12% and bottom 25%
 PAD_X, PAD_Y = 44, 34
 
 
@@ -56,6 +74,28 @@ def card(text, px):
     return img
 
 
+def url_card():
+    """The address at the largest size that still clears the gutters."""
+    probe = ImageDraw.Draw(Image.new("RGB", (10, 10)))
+    px = 40
+    while px < 220:
+        f = ImageFont.truetype(P600, px + 1)
+        if max(probe.textlength(l, font=f) for l in URL) > URL_MAX_W:
+            break
+        px += 1
+    f = ImageFont.truetype(P600, px)
+    lh = int(px * 1.16)
+    img = Image.new("RGB", (W, H), LAVENDER)
+    d = ImageDraw.Draw(img)
+    widest = max(d.textlength(l, font=f) for l in URL)
+    assert widest <= URL_MAX_W, f"url overflows: {widest:.0f}px"
+    top = URL_Y - (lh * len(URL)) // 2
+    assert top > H * 0.12 and top + lh * len(URL) < H * 0.75, "url card hits a safe zone"
+    for i, l in enumerate(URL):
+        d.text(((W - d.textlength(l, font=f)) / 2, top + i * lh), l, font=f, fill=PURPLE)
+    return img, px, int(widest)
+
+
 def main():
     os.makedirs(OUT, exist_ok=True)
     for name, (text, top, px) in CARDS.items():
@@ -67,6 +107,10 @@ def main():
         frame.paste(c, ((W - c.size[0]) // 2, top), c)
         frame.save(os.path.join(OUT, name + ".png"))
         print(f"{name:16s} {c.size[0]}x{c.size[1]} at y={top}, bottom {top + c.size[1]}")
+
+    img, px, w = url_card()
+    img.save(os.path.join(OUT, "url-tiktok.png"))
+    print(f"{'url-tiktok':16s} full frame, {URL!r} at {px}px, {w}px wide")
 
 
 if __name__ == "__main__":
