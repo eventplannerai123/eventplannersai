@@ -1,0 +1,1 @@
+Eight vendors, eight emails, deposits and balances all on different dates. I ask it to sweep my inbox and fill the tracker. Every payment, every due date, and the ones coming up in the next thirty days turn red. Then it reads the contract and catches what the email didn't: ten business days, not ten days. I built this for myself. Comment BUDGET and I'll send it to you.
