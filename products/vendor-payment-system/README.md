@@ -74,6 +74,14 @@ editor can change it. **There is no `remove_file` tool**, so a second
 `add_file` would leave two files on the product — do not retry the attach to
 fix cosmetics.
 
+**AND THAT MEANS THE FILE CANNOT BE REPLACED FROM HERE.** On Nov 3 she added a
+line to Prompt 1 ("Don't add up totals; the tracker does the math") and asked
+for the PDF on the product to be swapped. The Gumroad toolset has `add_file`
+and `list_files` and nothing that removes one, so attaching the new export
+would leave two files with the same name and no way to delete either. A swap
+is a Gumroad-editor job: delete the old file there, upload the new one. Do not
+attempt it with `add_file` — the duplicate is permanent from here.
+
 ## What the buyer gets
 
 | | |
