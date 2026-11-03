@@ -54,7 +54,7 @@ PLAN = {
         ("b4-dates",    4.0),
         ("b6-clause",   3.4),
         ("b6-contract", 3.2),
-        ("b1-amounts",  3.12),
+        ("b7-four",     3.12),
     ],
     "tiktok": [
         ("b0-four",     2.2),
@@ -63,7 +63,7 @@ PLAN = {
         ("b4-dates",    4.2),
         ("b6-clause",   3.6),
         ("b6-contract", 3.4),
-        ("b1-amounts",  3.12),
+        ("b7-four",     3.12),
     ],
 }
 HOOK = {"instagram": "hook-instagram", "tiktok": "hook-tiktok"}

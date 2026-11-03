@@ -41,14 +41,30 @@ calculate. It starts after the send tap, though — so the opening comes from th
 first take, which has the prompt sitting in the input box and the tap on
 camera. Same prompt, and the status bar crops off, so the join is invisible.
 
-## The opening is the flag column
+## Her three notes of Nov 3
 
-The block asks for "the filled tracker with the flags, readable, in the first 2
-seconds". It is also the better frame: the amounts view truncates the year off
-every due date at the right edge ("Nov 20, 202"), so the amounts moved to the
-fifth beat where nothing depends on reading the year.
+**"Open on Vendor | Amount | Due date | Flag together."** Those four do not fit
+across her phone in portrait. Hiding every other column on the tracker copy and
+narrowing the four was not enough — two takes both pan rather than showing them
+at once. She turned the phone sideways, which fits them, so `make_four.py`
+rotates that take back with `transpose=2` and lifts the table out of it. The
+result is a wide band rather than a full frame, which is what a four-column
+table looks like at 1080 across; it sits on a blurred copy of its own frame.
 
-**The voiceover had to change by one line.** It said "the ones coming up in the
+**"Contract shot: zoom on the quote and May 3, 2027, overlay above the text."**
+A straight crop cannot zoom this. The clause is three full-width lines of a
+letter page on a phone, so a crop tight enough to enlarge the type clips the
+line ends, and one wide enough to keep them is barely a magnification.
+`make_clause.py` uses the house technique instead — isolate rather than
+magnify: the Payment Schedule paragraph goes on its own panel over a hard blur,
+ending "...no later than ten (10) business days before the event date", and the
+table row carrying **May 3, 2027** in bold follows as its own beat. The card
+moved to y=494, clear above the panel at y=840.
+
+**"End on the tracker, not the keyboard."** The last beat is the same
+four-column band, scrolled to the tail, with the Comment BUDGET card under it.
+
+## The voiceover changed by one lineIt said "the ones coming up in the
 next thirty days turn red". The tracker's conditional formatting colours only
 three states — `Paid` green, `Due this week` amber, `Overdue` red — and on Nov 5
 the nearest payment is nine days out, so nothing is amber or red. It now reads
