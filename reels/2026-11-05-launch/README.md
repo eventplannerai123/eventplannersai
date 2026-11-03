@@ -190,3 +190,44 @@ already reads "Comment BUDGET **on my Instagram**", never "link in bio".
 Checked on the export: −13.9 LUFS, −1.3 dBTP over the full 23.92s; the CTA
 card is up at 19.0s and 21.5s, the URL card at 22.3s and 23.85s; frames in
 `build/check3/`.
+
+## The ManyChat "Comment BUDGET" automation
+
+Both cuts end on **Comment BUDGET**, so the auto-reply is load-bearing on two
+platforms — and on the free plan it **cannot exist until the Reel is live**,
+because a free automation attaches only to an already-published post.
+
+**It runs in her Chrome, not from here.** This session has no browser control
+and no ManyChat connector: `request_computer_folder` serves a folder, not a
+browser, and the container's own Chromium is a fresh profile with none of her
+sign-ins. So the set-up is hers, and the only thing that matters is that she
+gets the exact steps **at the moment the Reel goes live**, not hours earlier.
+
+That hand-off is folded into the 6:30pm posting task
+(`trig_01U7uNzPKCQSBMGMangvWsx3`), which posts first, then sends her the six
+steps with **the new Reel's permalink pasted in** so she cannot attach the
+automation to an older post. The settings:
+
+| | |
+| --- | --- |
+| Path | Home → "Auto-DM links from comments" → **a specific post or reel** |
+| Keyword | `BUDGET` |
+| Public reply | on — "Sent! Check your DMs 💜" / "Just sent it to you!" / "Check your messages ✨" |
+| DM | "Here it is: the Vendor Payment System, a tracker that flags every deposit and balance before it's due, plus the six prompts I use to fill it from my inbox." |
+| Button | **Get the system** → https://aiforeventplanners.gumroad.com/l/epbvxs |
+
+**"Any post" and "next post" are paid features** — picking either is how this
+silently fails to work on the free plan. Every template extra (follow-gate,
+email capture, upsell) is skipped, and no trial is started.
+
+**Two things only this session can do**, both after she says it is live:
+
+- **Name the early commenters.** Anyone who comments BUDGET between the post
+  going up and the automation going live gets nothing, so the Reel's comments
+  get read from here and those people handed to her to answer by hand.
+- **Strike the guide line** — on her confirmation, never on sending the steps.
+
+**The free plan is 25 DMs a month.** If she reports a warning, she is told
+plainly and nothing is upgraded.
+
+Her own account will not trigger the keyword, so the test needs a friend.
