@@ -50,4 +50,5 @@ __pycache__/
 products/*/*.pdf
 products/*/guide_text.py
 products/*/build/pg-*.png
+products/*/build/hi-*.png
 products/*/build/sheet.png

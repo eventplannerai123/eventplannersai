@@ -70,6 +70,17 @@ A first build left "Prompt 6. Payment summary for a client" alone at the foot of
 a page with its block overleaf; `make_pdf.py` now measures the panel before
 drawing the heading, so a prompt and its name always travel together.
 
+**Two alignment faults she caught on Nov 3, both fixed.** `prompt()` advanced
+the cursor only by the text it had drawn, leaving the panel's own bottom
+padding above it — so the next prompt's name printed inside the previous
+tint (pages 3 and 4) and the padding read 18pt at the bottom against 7pt at
+the top. It now ends the cursor below the panel, and both pads measure 14.9pt.
+Separately, the tracker URL overshot the right margin by 44pt: a URL has no
+spaces, so the wrapper could not break it. `link()` now shrinks it until it
+fits and asserts that it does. **Check the rendered pages for ink past the
+margin before calling a build finished** — `pdftoppm -r 150 -png`, then the
+rightmost inked column against `W - M`; neither fault showed up in the text.
+
 ## How the file reaches Gumroad without going public
 
 `add_file` fetches from a public https URL and copies the file into Gumroad's

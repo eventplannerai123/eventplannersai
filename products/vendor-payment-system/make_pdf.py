@@ -145,46 +145,70 @@ class Doc:
             self.c.drawString(M + 18, self.y, ln)
             self.y -= 15
 
+    PAD = 13          # panel padding, the same at the top and the bottom
+    LEAD = 12         # mono leading
+    GAP = 8           # between paragraphs inside one panel
+
     def prompt_measure(self, paras):
+        """(wrapped blocks, panel height) = padding + lines + inter-paragraph gaps."""
         width = W - 2 * M - 28
         blocks = [self._wrap(p, MONO, 8.6, width) for p in paras]
-        return blocks, sum(len(b) * 12 for b in blocks) + (len(blocks) - 1) * 8 + 22
+        body = sum(len(b) * self.LEAD for b in blocks) + (len(blocks) - 1) * self.GAP
+        return blocks, self.PAD * 2 + body
 
     def prompt(self, paras):
-        """A copyable block: mono on a tinted panel, never split mid-panel."""
+        """A copyable block: mono on a tinted panel, never split mid-panel.
+
+        THE CURSOR ENDS BELOW THE PANEL. A first build moved it down only by
+        the text it had drawn, leaving the panel's own bottom padding above the
+        cursor — so the next prompt's name printed inside the tint. That is
+        what the misaligned headings on pages 3 and 4 were, and it also made
+        the bottom padding read as 18pt against a 7pt top.
+        """
         blocks, need = self.prompt_measure(paras)
-        self.space(10)
+        self.space(6)
         if self.y - need < BOT:
             self._new_page()
-            need = min(need, self.y - BOT)
-        top = self.y + 10
+        top = self.y + 6
         self.c.setFillColor(PANEL)
         self.c.rect(M, top - need, W - 2 * M, need, stroke=0, fill=1)
-        self.c.setFillColor(PURPLE)
-        self.y -= 4
+
+        y = top - self.PAD - 8.6          # first baseline, one cap below the pad
         for bi, b in enumerate(blocks):
             for ln in b:
-                if self.y - 12 < BOT:
-                    self._new_page()
                 self.c.setFont(MONO, 8.6)
                 self.c.setFillColor(PURPLE)
-                self.c.drawString(M + 14, self.y, ln)
-                self.y -= 12
+                self.c.drawString(M + 14, y, ln)
+                y -= self.LEAD
             if bi != len(blocks) - 1:
-                self.y -= 8
+                y -= self.GAP
+        self.y = top - need - 16
 
     def link(self, url):
+        """A URL set on one line, SHRUNK UNTIL IT FITS THE MEASURE.
+
+        A URL has no spaces, so the wrapper cannot break it and a long one
+        simply ran off the right margin — the tracker link overshot by 44pt
+        and was the one thing on page 2 that did not line up with everything
+        else. It is a link a buyer clicks rather than reads, so sizing it down
+        is better than breaking it across two lines mid-path.
+        """
+        width = W - 2 * M
+        size = 10.0
+        while size > 6.0 and self.c.stringWidth(url, "P600", size) > width:
+            size -= 0.25
         self.space(4)
         if self.y - 16 < BOT:
             self._new_page()
-        self.c.setFont("P600", 10)
+        self.c.setFont("P600", size)
         self.c.setFillColor(PURPLE)
         self.c.drawString(M, self.y, url)
-        wdt = self.c.stringWidth(url, "P600", 10)
+        wdt = self.c.stringWidth(url, "P600", size)
+        assert wdt <= width + 0.5, f"link still overflows: {url}"
         self.c.setStrokeColor(PURPLE)
         self.c.setLineWidth(0.6)
         self.c.line(M, self.y - 2, M + wdt, self.y - 2)
-        self.c.linkURL(url, (M, self.y - 4, M + wdt, self.y + 11), relative=0)
+        self.c.linkURL(url, (M, self.y - 4, M + wdt, self.y + size + 1), relative=0)
         self.y -= 16
 
     def save(self):
