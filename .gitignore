@@ -37,3 +37,17 @@ carousels/*/build/*-probe.png
 # Python bytecode.
 __pycache__/
 *.pyc
+
+# The paid product itself. The repo is public, so nothing that IS the Vendor
+# Payment System may be committed: not the built PDF and not guide_text.py,
+# which holds all six prompts verbatim. The prompts are the product; shipping
+# them here would publish a $24 download for nothing, and a first attempt at
+# this commit was correctly blocked for exactly that. The text lives in the
+# live Google Doc, which is its source of truth anyway, and the PDF reaches
+# Gumroad through a Drive link that is locked again once Gumroad has copied it.
+# The generator, the fonts, the README and the COVER are committed: the cover
+# is an advertisement, and the generator carries no product text.
+products/*/*.pdf
+products/*/guide_text.py
+products/*/build/pg-*.png
+products/*/build/sheet.png
