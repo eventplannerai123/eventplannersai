@@ -111,3 +111,37 @@ frames, one of which cut the dollar figures in half.
 `render.py`'s `preview()` composites each card onto its own beat before any
 export, and the export itself was re-checked frame by frame — the hook is gone
 by 2.5s, which is the `repeatlast` bug the rules warn about.
+
+## Approved Mon 3 Nov, scheduled for Thu 5 at 6:30pm Eastern
+
+She approved the Instagram cut on **Mon 3 Nov** — the fourth revision, the one
+whose prompt section opens on the sent message rather than the keyboard.
+
+- **Instagram + Facebook: `trig_01U7uNzPKCQSBMGMangvWsx3`**, one-shot at
+  2026-11-05 23:30 UTC, which is 6:30pm Eastern now that Eastern is EST. It
+  fires into this session, because a fresh session gets no connectors and could
+  not post at all.
+- **Her TikTok reminder is separate**: `trig_011wQRgx9XUT5rbygLznb5vi`, slot 4
+  of the week-1 timing test, same 6:30pm. The file and caption went to her at
+  approval time under her Oct 30 rule, so the reminder is a second delivery, not
+  the first.
+- **Duplicate check before the hand-over**: the last 10 TikToks (Oct 25 → Nov 3)
+  carry nothing from the Vendor Payment System. Nearest neighbours are the Oct 31
+  expense-report cut and today's hidden-cost piece; neither is this.
+
+**Filed to Drive `November 5`** (`1iH1FrGOq5cfqHBSY23AUSw_UJ0fJUqV_`), sizes
+checked against the local files byte for byte:
+
+| Cut | Drive id | Bytes |
+| --- | --- | --- |
+| Instagram | `1CpwhklZ75G4WJgI6_Fa15i0TyuW17zX2` | 2,160,425 |
+| TikTok | `15xkPDoT8FGfErXCYLqHDa5boPLTz-tdz` | 2,188,092 |
+
+**Struck in the guide on approval, not on Thursday**: her two Thu 5 recording
+lines (both clips are in `November 5`) and "Check the Reel CC sends before it
+posts." The CLAUDE CODE line stays open, because it ends "post to Instagram and
+Facebook at 6:30pm after she approves" — half of it has not happened yet, and a
+line is only struck for what actually happened as written.
+
+Her three Thu 5 lines still open are the Story, the bio change to the product
+page, and the TikTok upload itself.
