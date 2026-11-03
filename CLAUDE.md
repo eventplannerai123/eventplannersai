@@ -1379,6 +1379,37 @@ MCP server; a session without `mcp__Composio__*` tools cannot post at all.
 **Never write "Comment [KEYWORD]."** Comment-to-unlock is retired — nine
 keywords across the series returned zero comments between them.
 
+**EXCEPT "Comment BUDGET", which is back for the Vendor Payment System**, and
+from 2026-11-03 it is not only the launch piece. Her instruction that evening:
+**the Mon 9, Tue 10 and Tue 17 Reels now end on "Comment BUDGET" too.** The
+mechanic is different from the nine that failed — a ManyChat auto-reply DMs
+the Gumroad link back, so a comment actually returns something.
+
+**She said those instructions were already in the guide. They are not** —
+checked the same evening. Mon 9's takeaway overlay reads "Check the invoice
+against the BEO before you pay it.", Tue 10's reads "Check the certificate
+against the contract. Then confirm with your broker.", and **Tue 17 has no day
+block at all**, only the calendar line "Reel redo: 'The BEO is 14 pages. At 7am
+you need one.'". So the instruction lives here until a day block carries it,
+and this file is what a build should go by for those three.
+
+**How to build it, unless she says otherwise: the CTA is added, not
+substituted.** Keep the day's own takeaway line — it is the piece's point and
+the thing worth remembering — and put "Comment BUDGET and I'll send it to you."
+after it as the closing card. Substituting would throw away a real lesson line
+for a sales line on a piece that is not a launch. **Mon 9 is recorded by Sat 7,
+so raise this with her before then if it has not been settled.**
+
+**TikTok keeps its own wording**, as on Thu 5: "Comment BUDGET **on my
+Instagram** and I'll send it to you." TikTok has no bio link and the ManyChat
+automation lives on Instagram, so a bare "Comment BUDGET" on TikTok points at
+nothing. Never "link in bio" on TikTok.
+
+**And the automation is per-post on her free plan.** It attaches to one
+specific Reel, so each of these days needs its own ManyChat automation set up
+*after* that Reel is live — Thu 5's does not cover Mon 9. Say so on the day
+rather than assuming the keyword works.
+
 - **RETIRED 2026-10-12: do not write "Prompt below."** Her words: "we dont
   need to say prompt below its redundent". She is right — the prompt sits
   directly underneath, under its own `AI Prompt:` label, so the line points at
