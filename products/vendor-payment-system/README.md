@@ -82,6 +82,19 @@ would leave two files with the same name and no way to delete either. A swap
 is a Gumroad-editor job: delete the old file there, upload the new one. Do not
 attempt it with `add_file` — the duplicate is permanent from here.
 
+**She did the swap on Nov 3, and `list_files` then reported two files that are
+not two files.** It returned the current export (35,544 bytes, type `PDF`,
+`position: null`) *and* a 35,510-byte `BIN` at `position: 1` — the leftover of
+the earlier attach from Drive. On the strength of that, she was told buyers
+would get both. **She checked the editor and saw one file, and she was right.**
+
+So: **`list_files` lists records, not the product's contents**, and a record
+with no `position` is not attached to anything. Read the editor, or ask her
+to, before telling her a buyer gets two downloads. The content question is
+answerable without the file list at all — have her open the attached file and
+look at the end of Prompt 1, which carries the Nov 3 line if it is current.
+Confirmed current that evening: "its the correct file i checked".
+
 ## What the buyer gets
 
 | | |
