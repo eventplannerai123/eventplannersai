@@ -23,7 +23,9 @@ get the tab out, Prompt 4 catches vendor mail that never names the event, and
 there is a fifth rule about checking totals. She then went back to Prompt 1
 once more the same day: a literal "not stated" in a date or amount cell is
 text in a numeric column, which stops the tracker computing Due date, Days
-until due and Flag, so those come back blank with the words in Notes. The transcription was re-taken
+until due and Flag, so those come back blank with the words in Notes. Last
+of all, Prompt 6's bracket was brought into line with Prompt 3's: both now tell
+the buyer how to get the Payments tab out. The transcription was re-taken
 from the live doc and checked **both ways** — every string in it appears in
 the doc, and every paragraph of the doc appears in it — and Prompt 1's column
 list was checked against `Payments!A1:O1` in the sheet itself rather than
