@@ -1411,14 +1411,22 @@ Three things the guide's wording settles that the chat did not:
 - **TikTok says "Comment BUDGET on my Instagram"** — no bio link there, and the
   automation lives on Instagram. Never "link in bio" on TikTok.
 
-**"Claude attaches the ManyChat automation at 6:32pm" cannot happen from
-here.** ManyChat has no connector and this session has no browser control, so
-the attach is hers, exactly as on Thu 5 — she settled that day that the Claude
-desktop app would drive her browser for it. What this session can do is send
-the brief with the new Reel's permalink the moment the post is live, and read
-the comments afterwards for anyone who commented before the automation went
-up. Flagged to her 2026-11-03; do not let a day block's wording turn into a
-silently missed automation.
+**"Claude attaches the ManyChat automation at 6:32pm" means the BROWSER
+Claude, not this session** — her clarification, 2026-11-03: "Regular Claude in
+browser not you". She settled the same evening that the Claude desktop app
+drives her Chrome for ManyChat, and the day blocks are written on that
+assumption. So the line is correct as it stands and **does not need flagging
+to her again** — raising it a second time is the mistake, not the line.
+
+The division, which holds for Thu 5, Mon 9, Tue 10 and Tue 17 alike:
+
+- **Browser Claude** opens app.manychat.com and attaches the automation to that
+  evening's Reel.
+- **This session** posts the Reel, then sends the brief with **that Reel's
+  permalink** pasted in, because the free plan attaches to one specific post
+  and the browser Claude has no way to know which one without it. Afterwards it
+  reads the Reel's comments and names anyone who commented BUDGET before the
+  automation went live, since those people get nothing automatically.
 
 **The free plan holds 4 live automations at once, and that is exactly the
 count**: Thu 5, Mon 9, Tue 10, Tue 17. A fifth BUDGET Reel means retiring one
