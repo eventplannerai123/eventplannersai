@@ -64,6 +64,14 @@ moved to y=494, clear above the panel at y=840.
 **"End on the tracker, not the keyboard."** The last beat is the same
 four-column band, scrolled to the tail, with the Comment BUDGET card under it.
 
+**"The prompt section still has two frames with the keyboard up. Start that
+section on the sent message instead."** It now does. The beat came from the
+9:20 take, whose opening holds the send tap on camera — the thing the house
+rules ask for — but the keyboard comes with it, and she would rather see the
+message. So the beat is the sent bubble from the 9:35 take, which also holds
+the whole prompt where the input box held only its first few lines. **The 9:20
+recording is now unused entirely.**
+
 ## The voiceover changed by one lineIt said "the ones coming up in the
 next thirty days turn red". The tracker's conditional formatting colours only
 three states — `Paid` green, `Due this week` amber, `Overdue` red — and on Nov 5

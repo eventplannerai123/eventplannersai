@@ -6,15 +6,21 @@ were downloaded from Drive `November 5`; set it to wherever they sit.
 
 The four takes, and what each is for:
 
-  inbox-a    9:20am, 60.7s   opens correctly — prompt in the input box, send
-                             tap on camera. ITS ANSWER IS NOT USED: the totals
-                             card in it reads $59,180 unpaid and $72,480
-                             scheduled, against a true $46,080 and $59,380.
-  inbox-b    9:35am, 49.4s   the answer that ships. No totals card at all, all
-                             five near-term dates, and it says outright that it
-                             left the event-relative dates for the tracker.
-                             Starts after the send tap, which is why the
-                             opening comes from inbox-a.
+  inbox-a    9:20am, 60.7s   NOT USED AT ALL any more. Its answer put a totals
+                             card on screen reading $59,180 unpaid and $72,480
+                             scheduled, against a true $46,080 and $59,380; its
+                             opening held the send tap, but she asked on Nov 3
+                             for the prompt section to start on the sent
+                             message rather than the keyboard, so that is gone
+                             too.
+  inbox-b    9:35am, 49.4s   the answer that ships, and now the prompt beat
+                             too. No totals card at all, all five near-term
+                             dates, and it says outright that it left the
+                             event-relative dates for the tracker. It starts
+                             after the send tap, on the sent bubble — which is
+                             what she wants the section to open on, and which
+                             holds the whole prompt where the input box held
+                             only its first few lines.
   tracker    9:51am, 44.1s   the filled tracker, from the copy built here.
   contract   9:57am, 72.7s   the contract reader. Opens correctly too.
 
@@ -41,7 +47,7 @@ CROP = "crop=1206:2144:0:478,scale=1080:1920:flags=lanczos"
 BEATS = [
     # name,        source,         time,  why this frame
     ("b1-amounts",  "tracker.mp4",  16.0, "amounts and due dates, all 17 rows"),
-    ("b2-prompt",   "clip1.mp4",     0.6, "prompt in the box, send arrow lit"),
+    ("b2-prompt",   "clip1b.mp4",    1.2, "the SENT prompt bubble, no keyboard"),
     ("b3-table",    "clip1b.mp4",   37.0, "the table coming back"),
     ("b4-dates",    "clip1b.mp4",   46.0, "the five dates, large and readable"),
     ("b5-flags",    "tracker.mp4",  28.0, "Flag column: Paid green, Due in 30 days"),
