@@ -43,3 +43,26 @@ is what the Flag column actually says.
 **The payoff shot is the Summary tab, not the colours.** Six numbers, all
 correct, and the contrast with the first take's card is the whole point of the
 piece.
+
+## Her tracker clip, checked
+
+`ScreenRecording_11-03-2026 9-51-44 AM_1.MP4`, Drive `November 5`, 1206x2622,
+44.1s. Covers the Summary tab (0–11s), a horizontal scroll across Payments
+(12–27s) and the Flag column with its green `Paid` cells (30–39s). The last
+four seconds sit on an empty `Reminder log` tab and are not used.
+
+**THE SUMMARY TAB NEVER FITS IN ONE FRAME.** Column A holds the labels and
+column B the figures, and on a phone in portrait they do not fit together: up
+to about 3.5s you see "Total scheduled / Paid / Still owed" with no numbers,
+and from about 5.5s you see `$59,380 / $13,300 / $46,080` with no labels. There
+is no frame where a viewer can read both, so the opening payoff cannot be the
+Summary tab as planned.
+
+**What the cut opens on instead:** the Payments scroll at 12–18s, where Vendor
+and Amount are in frame together for all 17 rows. That reads as a filled
+tracker at a glance, which is what the first two seconds need. The Summary
+figures come later, under the voiceover that says what they are.
+
+The alternative was a fourth take with the sheet pinched out so both columns
+fit. Not worth asking for: it shrinks the type by about a third at 1080 wide,
+and the Payments shot does the job.
