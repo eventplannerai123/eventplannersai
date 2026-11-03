@@ -315,9 +315,21 @@ whoever did it." So check for strikethrough before starting anything.
   `/mnt/files/mex/` came back missing three times in a row. Walk the local file
   with python instead: paragraphs are under `content.tabs[].documentTab.body.content`,
   and table cells still have to be walked.
+- **"One read, one batch" is not enough, because SHE edits the doc too.** On
+  2026-11-03 a batch built from a read taken minutes earlier hit a line she had
+  just added a parenthetical to: the marker spliced into the middle of her own
+  words ("guide PDF  ✅ done Nov 3attached)") and the strikethrough covered only
+  the first run, leaving the rest of the sentence plain. The batchUpdate
+  returned six empty replies and no error. So the rule is **read, then batch
+  immediately**, and treat a long gap — a conversation, a build, anything —
+  as a reason to re-read first. The repair is one batch of three: insert the
+  marker at the real paragraph end (highest index first), `deleteContentRange`
+  the 13 units of the stray one, then re-style the whole paragraph.
 - Verify by re-reading the paragraph and checking `textStyle.strikethrough` is
   `True`, not by trusting the batchUpdate reply — it returns empty objects on
-  success either way.
+  success either way. **Check the paragraph's TEXT as well as its style**: a
+  marker that landed mid-sentence still reads as "struck" on the runs it
+  touched, and only the text shows the splice.
 
 **Strike it when it becomes true, not only when you do it.** The misses are
 always the same shape: a task finishes on a *later* turn than the one that
