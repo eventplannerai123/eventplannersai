@@ -1385,30 +1385,44 @@ from 2026-11-03 it is not only the launch piece. Her instruction that evening:
 mechanic is different from the nine that failed — a ManyChat auto-reply DMs
 the Gumroad link back, so a comment actually returns something.
 
-**She said those instructions were already in the guide. They are not** —
-checked the same evening. Mon 9's takeaway overlay reads "Check the invoice
-against the BEO before you pay it.", Tue 10's reads "Check the certificate
-against the contract. Then confirm with your broker.", and **Tue 17 has no day
-block at all**, only the calendar line "Reel redo: 'The BEO is 14 pages. At 7am
-you need one.'". So the instruction lives here until a day block carries it,
-and this file is what a build should go by for those three.
+**It landed in the guide while this was being written, and it SUBSTITUTES.**
+At 19:41 the three blocks carried nothing; by 19:48 Mon 9, Tue 10 and Tue 17
+each carried the same line, and it is more specific than anything said in
+chat:
 
-**How to build it, unless she says otherwise: the CTA is added, not
-substituted.** Keep the day's own takeaway line — it is the piece's point and
-the thing worth remembering — and put "Comment BUDGET and I'll send it to you."
-after it as the closing card. Substituting would throw away a real lesson line
-for a sales line on a piece that is not a launch. **Mon 9 is recorded by Sat 7,
-so raise this with her before then if it has not been settled.**
+> Vendor Payment System soft mention (added Nov 3, CC): end this Reel on
+> "Comment BUDGET for the tracker I use" **instead of the usual closing line**
+> (TikTok cut: "Comment BUDGET on my Instagram"), and make it the last line of
+> the Instagram caption too. Claude attaches the BUDGET ManyChat automation to
+> this Reel at 6:32pm (free plan: one automation per post, 4 live at once).
 
-**TikTok keeps its own wording**, as on Thu 5: "Comment BUDGET **on my
-Instagram** and I'll send it to you." TikTok has no bio link and the ManyChat
-automation lives on Instagram, so a bare "Comment BUDGET" on TikTok points at
-nothing. Never "link in bio" on TikTok.
+**This overrides the "add, don't substitute" proposal** that was made here and
+that she answered "ok add" to — she was answering a question asked before those
+lines existed, and **the guide wins**. So Mon 9's "Check the invoice against the
+BEO before you pay it." and Tue 10's "Check the certificate against the
+contract..." are **replaced**, not appended to. Build them that way.
 
-**And the automation is per-post on her free plan.** It attaches to one
-specific Reel, so each of these days needs its own ManyChat automation set up
-*after* that Reel is live — Thu 5's does not cover Mon 9. Say so on the day
-rather than assuming the keyword works.
+Three things the guide's wording settles that the chat did not:
+
+- **The line is "Comment BUDGET for the tracker I use"**, not Thu 5's "Comment
+  BUDGET and I'll send it to you." It is a *soft mention* on a piece that is
+  not a launch, and the wording carries that.
+- **It is the last line of the Instagram caption as well as the closing card.**
+- **TikTok says "Comment BUDGET on my Instagram"** — no bio link there, and the
+  automation lives on Instagram. Never "link in bio" on TikTok.
+
+**"Claude attaches the ManyChat automation at 6:32pm" cannot happen from
+here.** ManyChat has no connector and this session has no browser control, so
+the attach is hers, exactly as on Thu 5 — she settled that day that the Claude
+desktop app would drive her browser for it. What this session can do is send
+the brief with the new Reel's permalink the moment the post is live, and read
+the comments afterwards for anyone who commented before the automation went
+up. Flagged to her 2026-11-03; do not let a day block's wording turn into a
+silently missed automation.
+
+**The free plan holds 4 live automations at once, and that is exactly the
+count**: Thu 5, Mon 9, Tue 10, Tue 17. A fifth BUDGET Reel means retiring one
+first, so check before promising another.
 
 - **RETIRED 2026-10-12: do not write "Prompt below."** Her words: "we dont
   need to say prompt below its redundent". She is right — the prompt sits
