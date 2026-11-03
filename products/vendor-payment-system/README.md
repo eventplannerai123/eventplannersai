@@ -32,12 +32,35 @@ list was checked against `Payments!A1:O1` in the sheet itself rather than
 against the doc's description of it. A prompt that writes into a tracker is
 verified against the tracker.
 
-**The PDF is attached at publish, not now.** `add_file` fetches from a public
-URL and copies the file into Gumroad's storage, and the only way to hand it one
-from here is a Drive link shared for that single call. Doing that today would
-mean doing it twice if her review changes a line of the guide, so the upload
-waits until the Wed 4 publish — and it is the first step of it, before
-`publish_product`, never after.
+**The PDF is attached: one file, 35,510 bytes, checked against the local
+build's sha256.** She asked for it on before Wed 4, so it went up on the Tue 3
+listing pass rather than at publish.
+
+**SHE PUT IT IN DRIVE, BECAUSE THIS SESSION CANNOT.** `add_file` fetches from a
+public URL, and there is no way to put 35 KB of local bytes on one from here:
+`mcp__Google_Drive__create_file` takes the content inline, and transcribing
+47,348 characters of base64 through a tool call produced a 12,795-byte file —
+a corrupt PDF, caught by comparing the returned `fileSize` to the local one and
+trashed. (**Always compare that size.** The call reported success.) Publishing
+it through this repo is barred for the same reason as ever, and an artifact
+asset upload was refused. So the handover is hers: she drops the PDF into
+`Products > Vendor Payment System`, this session finds it and attaches it. One
+message, and it uses the workflow she already has for recordings.
+
+**No share step was needed**, and none is possible: the file inherits
+`role: reader, type: anyone` from the Products folder, and changing a
+permission from here is refused. So there is nothing to lock back down either —
+the folder's sharing is what it is, and the guide PDF now sits behind an
+unguessable link like the tracker does.
+
+**Gumroad lists the file as `BIN`, not PDF.** Drive serves
+`application/octet-stream` whatever the URL form (`drive.usercontent`,
+`drive.google.com/uc`, both checked), so that is the type Gumroad recorded at
+fetch time. The bytes are right and the name carries `.pdf`, so a buyer
+downloads a working file; only the type badge is wrong, and only the Gumroad
+editor can change it. **There is no `remove_file` tool**, so a second
+`add_file` would leave two files on the product — do not retry the attach to
+fix cosmetics.
 
 ## What the buyer gets
 
