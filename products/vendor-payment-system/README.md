@@ -1,19 +1,31 @@
 # The Vendor Payment System — the Gumroad listing
 
-**Status: draft built Tue 3 Nov. Nothing is published.** She approves the
-listing on Wed 4, and the Wed 4 CLAUDE CODE line publishes it and sends her the
-**product page** link (not the storefront) for her Thu 5 bio change.
+**LIVE since Tue 3 Nov**, a day ahead of the Wed 4 line: she reviewed the
+listing that afternoon and said publish.
+<https://aiforeventplanners.gumroad.com/l/epbvxs> is the **product page** — the
+link for her Thu 5 bio change, not the storefront.
 
 Price **$24**, her decision of Mon 2 after testing both prompts on her own inbox
 and a real contract. Black Friday is **$7 off with code BLACKFRIDAY ($17)**,
 Fri 27 to Mon 30 — created on Thu 26, not now.
 
-## The draft
+## The listing
 
 `https://aiforeventplanners.gumroad.com/l/epbvxs` — permalink `epbvxs`, id
-`KKvcHyyE7HsIBWM4TmRisA==`, **unpublished**. Cover, description, summary,
-tags, the four detail rows and the $24 price are all set, and the tracker is
-attached as a content button.
+`KKvcHyyE7HsIBWM4TmRisA==`, **published**. Cover, description, summary, tags,
+the four detail rows and the $24 price are all set, the tracker is attached as
+a content button and the setup guide as the file.
+
+**Her Nov 3 pass on the copy**, after reading the draft: the tagline stands
+alone, `What's inside`, `What the prompts actually do` and `What you need` are
+`<h3>` headings rather than running into the body, the six prompts are an
+`<ol>`, and Prompt 1's line is hers — "pulls the payments for one event from 90
+days of email into a table shaped to match the tracker". Category went from
+`other` to `business-and-money`. Gumroad takes `<h3>`, `<ul>`, `<ol>` and
+`<strong>` in `description` and renders them, so the formatting is real markup
+rather than blank lines.
+
+She also rewrote `custom_receipt_text` herself; leave it alone.
 
 **Re-exported Nov 3 from her own edits.** She rewrote the guide and the
 tracker the same day: Step 3 says where to paste and that the grey columns
