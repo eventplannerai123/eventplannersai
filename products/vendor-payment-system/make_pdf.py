@@ -164,12 +164,20 @@ class Doc:
         cursor — so the next prompt's name printed inside the tint. That is
         what the misaligned headings on pages 3 and 4 were, and it also made
         the bottom padding read as 18pt against a 7pt top.
+
+        THE BREAK TEST MEASURES THE PANEL'S OWN TOP, not the cursor. The panel
+        starts 6pt ABOVE the cursor (it tucks up under the heading), so testing
+        the cursor broke the page 6pt early — and `build`, which keeps a name
+        with its panel, measured it the other way. Those 6pt are the whole
+        reason "Prompt 4. Change check" sat alone at the foot of page 4 with
+        its block overleaf. One number, measured once, in both places.
         """
         blocks, need = self.prompt_measure(paras)
         self.space(6)
-        if self.y - need < BOT:
-            self._new_page()
         top = self.y + 6
+        if top - need < BOT:
+            self._new_page()
+            top = self.y
         self.c.setFillColor(PANEL)
         self.c.rect(M, top - need, W - 2 * M, need, stroke=0, fill=1)
 
@@ -285,7 +293,13 @@ def build():
         if d.y - (30 + need) < BOT:
             d._new_page()
         d.sub(name)
+        started = d.page
         d.prompt(paras)
+        # The invariant, asserted rather than eyeballed: a prompt's name and
+        # its panel are on the same page. The arithmetic here and the break
+        # test inside prompt() have disagreed twice; an assert turns the next
+        # disagreement into a failed build instead of a stranded heading.
+        assert d.page == started, f"{name} is stranded: panel broke to a new page"
 
     d.heading("Rules that keep it accurate")
     for r in G.RULES:

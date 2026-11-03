@@ -15,6 +15,18 @@ Fri 27 to Mon 30 — created on Thu 26, not now.
 tags, the four detail rows and the $24 price are all set, and the tracker is
 attached as a content button.
 
+**Re-exported Nov 3 from her own edits.** She rewrote the guide and the
+tracker the same day: Step 3 says where to paste and that the grey columns
+fill themselves, Step 5 runs Prompt 4 before Prompt 3, Prompt 1 returns all
+fifteen tracker columns (the three computed ones blank), Prompt 3 says how to
+get the tab out, Prompt 4 catches vendor mail that never names the event, and
+there is a fifth rule about checking totals. The transcription was re-taken
+from the live doc and checked **both ways** — every string in it appears in
+the doc, and every paragraph of the doc appears in it — and Prompt 1's column
+list was checked against `Payments!A1:O1` in the sheet itself rather than
+against the doc's description of it. A prompt that writes into a tracker is
+verified against the tracker.
+
 **The PDF is attached at publish, not now.** `add_file` fetches from a public
 URL and copies the file into Gumroad's storage, and the only way to hand it one
 from here is a Drive link shared for that single call. Doing that today would
@@ -70,16 +82,24 @@ A first build left "Prompt 6. Payment summary for a client" alone at the foot of
 a page with its block overleaf; `make_pdf.py` now measures the panel before
 drawing the heading, so a prompt and its name always travel together.
 
-**Two alignment faults she caught on Nov 3, both fixed.** `prompt()` advanced
+**Three layout faults, all fixed, all found by measuring the render.** `prompt()` advanced
 the cursor only by the text it had drawn, leaving the panel's own bottom
 padding above it — so the next prompt's name printed inside the previous
 tint (pages 3 and 4) and the padding read 18pt at the bottom against 7pt at
 the top. It now ends the cursor below the panel, and both pads measure 14.9pt.
 Separately, the tracker URL overshot the right margin by 44pt: a URL has no
 spaces, so the wrapper could not break it. `link()` now shrinks it until it
-fits and asserts that it does. **Check the rendered pages for ink past the
-margin before calling a build finished** — `pdftoppm -r 150 -png`, then the
-rightmost inked column against `W - M`; neither fault showed up in the text.
+fits and asserts that it does. Third, the re-export stranded "Prompt 4. Change
+check" at the foot of a page with its panel overleaf — the very thing the
+keep-together rule exists to stop. The panel starts 6pt **above** the cursor,
+and `prompt()` tested the cursor while `build()` tested the panel, so a prompt
+that fitted by 3pt broke anyway. Both now measure the panel's own top, and
+`build()` asserts that a prompt's name and its panel land on the same page.
+
+**Check the rendered pages before calling a build finished** — `pdftoppm -r 150
+-png`, then the rightmost inked column against `W - M` and the tint bands for
+their padding. None of the three showed up in the text, and the third appeared
+only after her edits moved the page breaks.
 
 ## How the file reaches Gumroad without going public
 
