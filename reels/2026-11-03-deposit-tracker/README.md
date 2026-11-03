@@ -108,3 +108,31 @@ deliberately mixing fixed dates with ones tied to the wedding.
 > anything tied to the wedding date. Flag anything due in the next 30 days,
 > total what's been paid and what's still owed, and tell me which balances
 > could still change.
+
+## Published Tue 3 Nov, 6:30pm Eastern
+
+Posted from the one-shot task `trig_01T4zMVBR4xMUVP6kZ78tHF2` on her Fri 31 Oct
+approval.
+
+| | |
+| --- | --- |
+| Instagram | media `18180986836438987` — https://www.instagram.com/reel/DfTEiCtjmS_/ |
+| Facebook | post `1832770027917063` |
+
+`is_shared_to_feed` reads `true`, so it is a normal feed Reel and not a trial.
+The live caption was read back and diffed against `build/caption.txt`: identical,
+676 characters.
+
+**Two mechanical notes worth carrying, because both look like failures and are
+not:**
+
+- **`INSTAGRAM_POST_IG_USER_MEDIA` takes no `max_wait_seconds`** — passing it is
+  a 400 ("Extra inputs are not permitted"), rejected on schema before anything
+  is created, so retrying without it is not a blind retry. That field belongs on
+  **`INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH`**, which is the second call: the
+  first only builds the container.
+- **The publish call timed out at the MCP layer after 60s and the Reel went up
+  anyway.** A timeout is UNKNOWN, never failed. The media edge was read twice
+  before anything else was done, and showed exactly one new item at 23:33:31
+  UTC. Re-publishing on the strength of that timeout would have duplicated the
+  post.
