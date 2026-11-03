@@ -8,6 +8,20 @@ Price **$24**, her decision of Mon 2 after testing both prompts on her own inbox
 and a real contract. Black Friday is **$7 off with code BLACKFRIDAY ($17)**,
 Fri 27 to Mon 30 — created on Thu 26, not now.
 
+## The draft
+
+`https://aiforeventplanners.gumroad.com/l/epbvxs` — permalink `epbvxs`, id
+`KKvcHyyE7HsIBWM4TmRisA==`, **unpublished**. Cover, description, summary,
+tags, the four detail rows and the $24 price are all set, and the tracker is
+attached as a content button.
+
+**The PDF is attached at publish, not now.** `add_file` fetches from a public
+URL and copies the file into Gumroad's storage, and the only way to hand it one
+from here is a Drive link shared for that single call. Doing that today would
+mean doing it twice if her review changes a line of the guide, so the upload
+waits until the Wed 4 publish — and it is the first step of it, before
+`publish_product`, never after.
+
 ## What the buyer gets
 
 | | |
@@ -60,4 +74,7 @@ drawing the heading, so a prompt and its name always travel together.
 
 `add_file` fetches from a public https URL and copies the file into Gumroad's
 own storage, so the source only has to be reachable for that one call. The PDF
-therefore goes up through Drive: shared, fetched, then **locked back down**.
+therefore goes up through Drive: uploaded to
+`Event planners AI > Products > Vendor Payment System`, shared "anyone with the
+link", fetched by Gumroad, then **locked back down**. Never through this repo:
+a raw.githubusercontent URL is permanent and indexed.
