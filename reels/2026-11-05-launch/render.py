@@ -5,11 +5,22 @@ seconds), then the prompt, then the answer, then the tracker's amounts, then
 the cut to the contract reader and its "10 business days" row, ending on the
 prompt with the Comment BUDGET card.
 
-THE OPENING IS THE FLAG COLUMN, not the amounts, because the block asks for
-"the filled tracker with the flags, readable, in the first 2 seconds" — and
-because the amounts frame truncates the year off every due date at the right
-edge ("Nov 20, 202"). The amounts move to the fifth beat, where nothing in the
-voiceover depends on reading the year.
+HER THREE NOTES OF NOV 3, and what each changed:
+
+  "Open on Vendor | Amount | Due date | Flag together, not the Days/Flag
+  columns alone." The Payments tab is wider than a phone, so no single frame
+  of the first recording held those four. The tracker copy now has every other
+  column hidden, which puts exactly those four on screen at readable size —
+  `b0-four` comes from a recording of that.
+
+  "Contract shot: zoom on the quote and May 3, 2027, with the overlay above the
+  text, not on it." `b6-clause` lifts the Payment Schedule paragraph onto its
+  own panel over a hard blur (see make_clause.py — a straight crop either
+  clips the lines or barely magnifies), and the card now sits at y=494, well
+  above the panel at y=840. `b6-contract` follows with the table row.
+
+  "End on the tracker or the product cover, not the keyboard." The last beat
+  is the tracker's amount column; the Comment BUDGET card goes over that.
 
 Freeze frames with a slow push, never scrolling footage — a phone scroll reads
 as a smear at 30fps and the rules ban it outright. The push is 4%, the same as
@@ -37,22 +48,22 @@ PUSH = 1.04
 # name -> (beat, seconds). The sum is the voiceover's 21.92s.
 PLAN = {
     "instagram": [
-        ("b5-flags",    2.4),
-        ("b2-prompt",   2.8),
-        ("b3-table",    3.6),
-        ("b4-dates",    4.4),
-        ("b1-amounts",  3.4),
-        ("b6-contract", 3.6),
-        ("b2-prompt",   1.72),
+        ("b0-four",     2.4),
+        ("b2-prompt",   2.6),
+        ("b3-table",    3.2),
+        ("b4-dates",    4.0),
+        ("b6-clause",   3.4),
+        ("b6-contract", 3.2),
+        ("b1-amounts",  3.12),
     ],
     "tiktok": [
-        ("b5-flags",    2.2),
-        ("b2-prompt",   2.6),
-        ("b3-table",    3.4),
-        ("b4-dates",    4.6),
-        ("b1-amounts",  3.6),
-        ("b6-contract", 3.8),
-        ("b2-prompt",   1.72),
+        ("b0-four",     2.2),
+        ("b2-prompt",   2.4),
+        ("b3-table",    3.0),
+        ("b4-dates",    4.2),
+        ("b6-clause",   3.6),
+        ("b6-contract", 3.4),
+        ("b1-amounts",  3.12),
     ],
 }
 HOOK = {"instagram": "hook-instagram", "tiktok": "hook-tiktok"}
@@ -81,7 +92,7 @@ def preview(name):
     from PIL import Image
     plan = PLAN[name]
     wins, _ = windows(plan)
-    pairs = [(0, HOOK[name]), (5, "contract"), (6, "end")]
+    pairs = [(0, HOOK[name]), (4, "contract"), (6, "end")]
     os.makedirs(os.path.join(BUILD, "preview"), exist_ok=True)
     for idx, card in pairs:
         base = Image.open(os.path.join(BEATS, plan[idx][0] + ".png")).convert("RGBA")
@@ -105,7 +116,7 @@ def render(name):
 
     # Cards, each over the beat it was placed against.
     cards = [(HOOK[name], wins[0][0], wins[0][0] + 2.3),
-             ("contract", wins[5][0], wins[5][1]),
+             ("contract", wins[4][0], wins[4][1]),
              ("end", wins[6][0], wins[6][1])]
     n = len(plan)
     last = "body"

@@ -12,8 +12,9 @@ after.
 
   hook      sits over the tracker's amount column, low enough to leave the
             dollar figures and the November due dates in clear view
-  contract  sits over the clause table, below the final balance row it is
-            about — that row carries "May 3, 2027" in bold and is the shot
+  contract  sits ABOVE the clause panel, not on it (her note, Nov 3). The
+            panel's top edge is y=840, so the card ends at 772 and nothing it
+            says covers the sentence it is about
   end       sits over the prompt bubble, covering the keyboard rather than
             the prompt
 """
@@ -32,7 +33,7 @@ P600 = os.path.join(FONTS, "Poppins-600.ttf")
 CARDS = {
     "hook-instagram": ("Eight vendor emails in.\nEvery payment date out.", 1086, 58),
     "hook-tiktok":    ("Stop keeping vendor\npayments in your head.", 1086, 60),
-    "contract":       ("The email said 10 days.\nThe contract says\n10 business days.", 1046, 56),
+    "contract":       ("The email said 10 days.\nThe contract says\n10 business days.", 494, 54),
     "end":            ("Comment BUDGET and\nI'll send it to you.", 1120, 60),
 }
 PAD_X, PAD_Y = 44, 34
