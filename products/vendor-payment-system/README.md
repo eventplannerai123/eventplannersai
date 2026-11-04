@@ -244,6 +244,19 @@ a video under a generic display name, with no account behind it and no
 engagement carried over. That is a weaker thing than the test was designed to
 measure, and a reason to drop it that has nothing to do with the $200.
 
+**Nothing can be built in the account yet, not even paused.** On Nov 4 she
+asked for the ad to be ready to look at, so `campaign/create/` was called with
+`operation_status: DISABLE` — a paused campaign that cannot spend. TikTok
+refused it outright:
+
+> Your account has an outstanding payment or no valid payment method. Check
+> your billing settings to continue.
+
+Nothing was created. So a **payment method has to be on the account before any
+object exists in it**, which puts the card before the campaign rather than
+after it — the opposite of the order the plan assumes, and a thing to decide
+rather than drift into.
+
 **The lesson worth keeping: the sign-up screen settled in one line what nine
 blogs could not.** Every figure in them was wrong by an order of magnitude for
 this account. Where a number is visible in the product itself, read it there.
