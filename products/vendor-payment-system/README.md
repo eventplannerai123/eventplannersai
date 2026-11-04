@@ -170,3 +170,29 @@ therefore goes up through Drive: uploaded to
 `Event planners AI > Products > Vendor Payment System`, shared "anyone with the
 link", fetched by Gumroad, then **locked back down**. Never through this repo:
 a raw.githubusercontent URL is permanent and indexed.
+
+## TikTok Pixel on Gumroad, and the new-advertiser credit (looked up Nov 4)
+
+The Wed 4 block asked whether Gumroad supports the TikTok Pixel, because the
+matching credit reportedly needs one. **It does — but not through Gumroad's own
+TikTok Pixel field.** That field is reported broken: `analytics.tiktok.com` is
+missing from Gumroad's `script-src` Content Security Policy, so the pixel never
+loads and a seller using that field gets no tracking at all. The working route
+is Gumroad's **third-party analytics code snippet**, with a standard
+"Place an Order" event carrying the order value.
+
+**On the credit itself, every source is a third-party blog — none is a TikTok
+page**, so the terms on the sign-up screen are the only ones worth acting on.
+What the blogs agree on: matched credit up to $6,000 in tiers from $200 of
+spend, new advertisers only, the spend threshold met inside 30 days of
+registering, one ad account per business.
+
+**Two claims rest on a single source each and are the ones that could cost
+her:** that a pixel or the Events API is required at all, and that accounts
+created through an agency, a **Business Center** or TikTok Shop are excluded.
+The second matters on the day — if it holds, the ad account must be created
+directly and not from a Business Center, and that is not a thing that can be
+undone afterwards.
+
+Written into the guide's Wed 4 block as the answer that line asked for, with
+the task struck and the answer left unstruck so it stays readable.
