@@ -181,18 +181,29 @@ loads and a seller using that field gets no tracking at all. The working route
 is Gumroad's **third-party analytics code snippet**, with a standard
 "Place an Order" event carrying the order value.
 
-**On the credit itself, every source is a third-party blog — none is a TikTok
-page**, so the terms on the sign-up screen are the only ones worth acting on.
-What the blogs agree on: matched credit up to $6,000 in tiers from $200 of
-spend, new advertisers only, the spend threshold met inside 30 days of
-registering, one ad account per business.
+**On the credit, the blogs were wrong.** They all quoted matched credit up to
+$6,000 in tiers from $200 of spend. She registered the account on Nov 4 and the
+offer actually in it is **two tiers and no more**:
 
-**Two claims rest on a single source each and are the ones that could cost
-her:** that a pixel or the Events API is required at all, and that accounts
-created through an agency, a **Business Center** or TikTok Shop are excluded.
-The second matters on the day — if it holds, the ad account must be created
-directly and not from a Business Center, and that is not a thing that can be
-undone afterwards.
+| Spend | Credit |
+| --- | --- |
+| $200 | $200 |
+| $500 | $500 |
+
+**So the ad test as planned earns nothing.** The Thu 5 block sets it at about
+$10 a day for 5 to 7 days — $50 to $70 — and the first tier starts at $200.
+Matching any credit means committing $200, which is a different decision from
+the one the plan describes, and it is the Sun 8 decision's real shape.
+
+**The account, read from the API on Nov 4** (connector `TikTok for Business`,
+live the same day): advertiser id `7704289498087194632`, "AI for Event
+Planners1104", USD, `America/New_York`, US, balance $0, status
+`STATUS_SELF_SERVICE_UNAUDITED`, and **no `owner_bc_id`** — it is not under a
+Business Center, so the exclusion worry above does not apply to it.
+
+**The lesson worth keeping: the sign-up screen settled in one line what nine
+blogs could not.** Every figure in them was wrong by an order of magnitude for
+this account. Where a number is visible in the product itself, read it there.
 
 Written into the guide's Wed 4 block as the answer that line asked for, with
 the task struck and the answer left unstruck so it stays readable.
