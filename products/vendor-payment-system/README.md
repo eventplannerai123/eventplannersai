@@ -220,6 +220,30 @@ Jan 3 lands squarely in what her own November plan calls peak proposal season
 when the book has its best case for paid reach. The launch Reel is long cold by
 then.
 
+**And there is a second notice on that screen that may kill the test outright.**
+Her words, Nov 4: *"Starting October 7, 2026, unverified TikTok accounts can't
+be linked to ad accounts for ad creation. Existing linked accounts will not be
+affected."*
+
+Two facts, both read from the API the same day:
+
+- **`identity/get/` on the new ad account returns an empty list.** Nothing is
+  linked to it. The ad account was created Nov 4, so the "existing linked
+  accounts" grandfather clause cannot apply to her.
+- **`@aiforeventplanners` reports `is_verified: false`.**
+
+So the planned test — promoting the launch Reel as a Spark Ad from her own
+account — needs exactly the link the notice restricts. **What "unverified"
+means there is not defined in the notice**, and it is not the blue tick in
+every TikTok context, so do not conclude the test is dead; the identity picker
+in Ads Manager when building an ad is where it is settled in one look.
+
+What it does mean is that the Sun 8 decision has a prior question. If the
+account cannot be linked, the only ad available is one with a custom identity —
+a video under a generic display name, with no account behind it and no
+engagement carried over. That is a weaker thing than the test was designed to
+measure, and a reason to drop it that has nothing to do with the $200.
+
 **The lesson worth keeping: the sign-up screen settled in one line what nine
 blogs could not.** Every figure in them was wrong by an order of magnitude for
 this account. Where a number is visible in the product itself, read it there.
