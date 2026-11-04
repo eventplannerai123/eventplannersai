@@ -44,3 +44,31 @@ sending anything.
 
 `build/caption.txt`, the guide's text with the prompt under its own `AI Prompt:`
 label.
+
+## Published Wed 4 Nov, 6:30pm Eastern
+
+Posted from the one-shot task `trig_013gietq9YW34DsDxdNPCghy` on her Mon 2
+approval.
+
+| | |
+| --- | --- |
+| Instagram | [p/DfVpQwQDQYi](https://www.instagram.com/p/DfVpQwQDQYi/) — media `18484287427117419`, `CAROUSEL_ALBUM`, 6 children |
+| Facebook | multi-photo post `1233196746554445_122119656693449533` |
+
+Live caption read back and diffed against `build/caption.txt`: identical, 547
+characters, line breaks and all five hashtags intact.
+
+**Slide order verified on the published post, 1→6 at MAD 0.00 each**, with the
+next-nearest source slide 7.50 or further away. Worth doing rather than
+trusting the ordering rule: the child container ids came back non-monotonic
+again — request order ended 896, 890, 887, 893, 965, 968 — so ordering the
+parent's `children` by id instead of by the child calls' **results index**
+would have shuffled slides 1 to 4.
+
+The check needs a second network: `scontent-*.cdninstagram.com` is refused by
+this session's proxy, so the published images and the committed slides were
+both pulled inside Composio's remote sandbox and compared there.
+
+Facebook took `FACEBOOK_CREATE_MULTI_PHOTO_POST` with the six raw URLs and the
+same caption, which uploads each photo unpublished and then makes one feed post
+from them — the same shape as the Halloween carousel.
