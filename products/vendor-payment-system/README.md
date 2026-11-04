@@ -257,6 +257,32 @@ object exists in it**, which puts the card before the campaign rather than
 after it — the opposite of the order the plan assumes, and a thing to decide
 rather than drift into.
 
+**She put $100 on the account on Nov 4 and the campaign now exists, paused:**
+`campaign_id 1880931999927201`, "Vendor Payment System — Gumroad traffic test",
+objective TRAFFIC, `operation_status: DISABLE`, no budget at campaign level.
+
+**The ad group stops on a number, and it is not a small problem.** In a USD
+account TikTok's floor is **$20 a day** for a daily budget, or **$140** for a
+7-day lifetime budget. The plan is $10 a day for 5 to 7 days. **That campaign
+cannot be created at all** — $70 is under the floor by either route, and the
+API refuses rather than rounds.
+
+So the shapes actually available are:
+
+| Shape | Spend | Credit earned |
+| --- | --- | --- |
+| The plan, $10/day × 7 | $70 | impossible — under the floor |
+| Floor, $20/day × 7 | $140 | $0, short of the first tier |
+| $20/day × 10 | $200 | $200 |
+
+The middle row is the trap: it is the smallest run TikTok will accept, it costs
+twice what the plan says, and it still earns nothing. **The honest choice is
+$200 or nothing**, and that is the Sun 8 decision stated properly.
+
+The ad group was deliberately **not** created at the floor. Raising her stated
+budget without asking would have buried the whole finding inside an object that
+merely looked ready.
+
 **The lesson worth keeping: the sign-up screen settled in one line what nine
 blogs could not.** Every figure in them was wrong by an order of magnitude for
 this account. Where a number is visible in the product itself, read it there.
