@@ -201,6 +201,25 @@ Planners1104", USD, `America/New_York`, US, balance $0, status
 `STATUS_SELF_SERVICE_UNAUDITED`, and **no `owner_bc_id`** — it is not under a
 Business Center, so the exclusion worry above does not apply to it.
 
+**And the coupon is dated, which decides more than the tiers do.** It is the
+**H2'26 New Advertiser Coupon**, marked *Conditional*, code `GKOLCCEJGOKMMNAP`,
+**valid 2026-12-04 07:00 to 2027-01-03 12:18**. So the money moves in December,
+not this month — the credit cannot be burned on Black Friday (Nov 27–30), which
+ends a week before the window opens.
+
+Read the window as *when the earned credit can be spent*, not as when the
+qualifying spend must happen; "Conditional" means the coupon sits in the
+account until the spend condition is met. **That reading is not certain from
+the text alone**, and the account screen can settle it, so check before
+committing $200 on the strength of it.
+
+What the dates do settle either way: **this is a December decision about the
+coloring book, not a November one about the Vendor Payment System.** Dec 4 to
+Jan 3 lands squarely in what her own November plan calls peak proposal season
+(December to February), which is when the engagement-season Stories start and
+when the book has its best case for paid reach. The launch Reel is long cold by
+then.
+
 **The lesson worth keeping: the sign-up screen settled in one line what nine
 blogs could not.** Every figure in them was wrong by an order of magnitude for
 this account. Where a number is visible in the product itself, read it there.
