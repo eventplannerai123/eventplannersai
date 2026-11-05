@@ -231,3 +231,22 @@ email capture, upsell) is skipped, and no trial is started.
 plainly and nothing is upgraded.
 
 Her own account will not trigger the keyword, so the test needs a friend.
+
+## Live
+
+| | |
+| --- | --- |
+| Instagram | [reel/DfYN-IEDf_G](https://www.instagram.com/reel/DfYN-IEDf_G/) — media id `18119607040968980`, posted 2026-11-05 23:32 UTC (6:32pm Eastern) |
+| Facebook | post id `930544016658998` |
+| TikTok | [video 7704025843101715725](https://www.tiktok.com/@aiforeventplanners/video/7704025843101715725) — **23s, so the replaced cut with the Gumroad end card**, up at 9:10am Eastern rather than 6:30pm |
+
+Live caption diffed against `build/caption.txt` character for character: identical.
+
+The media edge and the Page feed were both read before posting; neither held
+the piece, so nothing went up twice.
+
+**The TikTok went out in the morning.** She scheduled it for 9:10am Eastern,
+not the 6:30pm slot the timing test assigned to Thu 5. For the Sun 8 recap it
+counts in the morning arm as posted, which leaves the evening arm Mon 2 and
+Fri 6 — two against four, and worth saying plainly rather than reporting three
+against three.
