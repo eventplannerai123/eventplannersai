@@ -7,6 +7,12 @@ had to exist and be approved on Fri 6.
 
 Planner-life post 1 of 4 (content bank 33, weekly from November).
 
+**Approved Thu 5 Nov**, two days early. The Instagram and Facebook posts are a
+one-shot task into this session, `trig_0114dz9XuMTpPj8ydC4qqudq`, at 23:30 UTC
+Sat 7; it reads the live media edge before it posts. The TikTok file went to
+her at approval time, per her Oct 30 rule, rather than being held to Saturday
+morning.
+
 | | |
 | --- | --- |
 | Instagram | `slides/walkie-talkie-instagram.jpg` — 1080x1350 |
