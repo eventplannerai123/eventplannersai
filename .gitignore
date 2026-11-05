@@ -52,3 +52,12 @@ products/*/guide_text.py
 products/*/build/pg-*.png
 products/*/build/hi-*.png
 products/*/build/sheet.png
+
+# Freeze frames lifted from her screen recordings, and the preview/check
+# contact sheets built from them. They are intermediates: the frames are her
+# source media one step removed, and placement is already recorded in
+# make_cards.py and the reel README. Finished cuts and the finished cards are
+# committed; these are not.
+reels/*/build/beats/*.png
+reels/*/build/preview/
+reels/*/build/check/
