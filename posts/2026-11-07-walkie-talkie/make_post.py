@@ -6,9 +6,12 @@ as a numbered list.
 
 THE LINES ARE HERS. Four came from her verbatim on Nov 5; five more she picked
 from a list drafted here and approved ("1 - 4 and 6"), which makes them hers
-too. Nothing on this image was written and then assumed. Her own four keep her
-wording exactly — only the spelling of "registration" and "beginning" is
-fixed, because an overlay is set type rather than a radio call.
+too. Nothing on this image was written and then assumed. Her own lines keep
+her wording exactly, with two changes she made herself: the spelling of
+"beginning", and "the meal" to "the lunch".
+
+EIGHT, NOT NINE. She cut her own registration line against the directional
+one — "1 and 3 are too similar cut 1" — so the less obvious of the two stayed.
 
 No names, no venues, no clients, no employer: role and room only.
 
@@ -46,9 +49,11 @@ HANDLE = "@aiforeventplanners"
 TITLE = "Things I’ve said\ninto a walkie-talkie\nthis year"
 
 # Hers first, in the order she sent them, then the five she approved.
+# "I need extra staff at registration" was hers too and came out on her call:
+# "1 and 3 are too similar cut 1". Line 3 is the directional-duties one, which
+# makes the same point in a less obvious place, so it is the one that stayed.
 LINES = [
-    "I need extra staff at registration",
-    "The meal is late, someone talk to the caterer",
+    "The lunch is late, someone talk to the caterer",
     "I need extra staff on directional duties",
     "The program is beginning, everyone quiet on the radio",
     "Who moved the stanchions",
@@ -157,8 +162,8 @@ def build(H):
 
 
 def check():
-    assert len(LINES) == 9, "she approved nine lines"
-    assert len(set(LINES)) == 9, "a line is repeated"
+    assert len(LINES) == 8, "eight lines: she cut the registration one as too close to line 3"
+    assert len(set(LINES)) == 8, "a line is repeated"
     banned = ("hilton", "marriott", "convention center", "ballroom a")
     for ln in LINES:
         assert not any(b in ln.lower() for b in banned), f"named place in: {ln}"

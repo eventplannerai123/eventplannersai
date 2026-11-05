@@ -20,8 +20,13 @@ hers as well — the guide's "use her lines exactly; never invent one" is about
 not putting words in her mouth, and an approved line is not an invented one.
 Nothing on this image went on unasked.
 
-Her own four keep her wording exactly. The only change is the spelling of
-*registration* and *beginning*: an overlay is set type, not a radio call.
+**Eight, not nine.** She cut one of her own on sight: "1 and 3 are too similar
+cut 1", so *I need extra staff at registration* came out and the
+directional-duties one stayed, which makes the same point somewhere less
+obvious.
+
+Her wording is exact, with two changes she made herself: the spelling of
+*beginning*, and *the meal* to *the lunch*.
 
 Order is hers first, in the order she sent them, then the five she picked.
 
@@ -41,14 +46,14 @@ downward until the whole block fits the window, and the window differs:
 
 | | Window | Result |
 | --- | --- | --- |
-| 1350 | y 150 to 1160 | title 82px, list ends y=1154 |
-| 1920 | y 254 to 1416 — TikTok's top 12% and bottom 25% | title 84px, list ends y=1346 |
+| 1350 | y 150 to 1160 | title 84px, list ends y=1130 |
+| 1920 | y 254 to 1416 — TikTok's top 12% and bottom 25% | title 84px, list ends y=1310 |
 
 So nothing important sits under TikTok's caption or its right-hand buttons,
 and the wordmark on the 1920 sits above the bottom 25% rather than inside it.
 
 A wrapped line hangs on the number's column instead of returning to the
-margin, which is why line 4 reads as one item rather than two.
+margin, which is why line 3 reads as one item rather than two.
 
 ## Caption
 
