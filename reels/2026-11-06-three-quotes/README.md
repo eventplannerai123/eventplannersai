@@ -1,8 +1,15 @@
 # Fri 6 Nov 2026 — Three quotes, same AV job
 
 **Instagram Reel, 6:30pm Eastern (23:30 UTC — Eastern is EST from Sun 1 Nov).**
-Also to Facebook. TikTok cut hers to post, 6:30pm slot (`trig_01TC4A4CUA3MNoMfWYwjhzAw`
-is the Fri 6 evening TikTok reminder in the week-1 timing test).
+Also to Facebook. **Both cuts approved Thu 5 Nov** ("both approved"), so the
+Instagram post is a one-shot task firing into this session,
+`trig_01VJLXCdnywm69BTVnavaCv3`, at 23:30 UTC Fri 6. It checks the live media
+edge before it posts.
+
+TikTok cut is hers to post and went over with its caption the moment she
+approved, per her Oct 30 rule — not held to the slot.
+`trig_01TC4A4CUA3MNoMfWYwjhzAw` is the Fri 6 evening TikTok reminder in the
+week-1 timing test.
 
 | | |
 | --- | --- |
