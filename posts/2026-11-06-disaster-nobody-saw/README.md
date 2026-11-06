@@ -36,6 +36,27 @@ The guide's own line assigns it: "CC builds and posts to Instagram and
 Facebook; standard in the November plan". It is a one-shot task into this
 session at 17:30 UTC.
 
+## Live
+
+| | |
+| --- | --- |
+| Instagram | [p/DfaNV2HnWUK](https://www.instagram.com/p/DfaNV2HnWUK/) — media id `18083068280345317`, posted 2026-11-06 18:04 UTC |
+| Facebook | photo `122120025291449533`, post `1233196746554445_122120025315449533` |
+
+Live caption diffed against `build/caption.txt` character for character:
+identical. Media edge and Page feed both read before posting.
+
+**It went out at 1:05pm, not 12:30.** She had not been shown this format
+rendered before — that was this session's miss in the morning message — so
+the image went to her at 12:31pm with the slot stated, and posted half an
+hour later when she had not asked for a change. The next one does not need
+that pause: the format is approved now.
+
+**`FACEBOOK_CREATE_PAGE_PHOTO_POST` does not exist.** The right slug for a
+Page photo is `FACEBOOK_CREATE_PHOTO_POST`, and it takes `url` and `message`
+— not `photo_url`. The wrong name 404s at the tool layer with nothing
+created, so correcting it and calling again is not a blind retry.
+
 ## Check
 
 Sun 15 recap: sends, saves and reach against the 6:30pm posts. If 12:30pm
