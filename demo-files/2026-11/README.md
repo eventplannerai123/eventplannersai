@@ -18,6 +18,26 @@ Week two, built Fri 6 by `make_week2.py`:
 | Mon 9 | `Invoice — Autumn Board Dinner.pdf` (1 page) | `November 9` |
 | Tue 10 | `Venue Agreement — Spring Gala.pdf` (8 pages) | `November 10` |
 | Tue 10 | `Certificate of Insurance — Spring Gala.pdf` (1 page) | `November 10` |
+| Sun 8 | `Garden Reception — Budget and Rain Plan` (Google Sheet, two tabs) | `November 8` |
+
+The Sun 8 sheet is built in Drive rather than here, the same way the Wed 4
+budget was: `1oKTGZntZsocspeZrBS9auIKm0jtYZ0k_7-BJdWSqnPk`, tabs **Outdoor
+plan** and **Tent quote (rain plan)**. Both totals are live formulas and both
+were read back after writing:
+
+| | |
+| --- | --- |
+| Outdoor plan | **$35,800** |
+| Tent quote | **$14,080** |
+| Rain plan total | $35,800 − $1,200 string lighting + $14,080 = **$48,680** |
+| Difference | **$12,880** |
+| Tent held and not used | 50% of the tent line = **$3,600** |
+| Rain call | 72 hours before Sat 12 June 2027 = **Wed 9 June 2027** |
+
+All six match the guide's stated answers. The tent lighting line says on the
+face of the quote that it replaces the string lighting, which is what makes
+the $12,880 right rather than $14,080 — that substitution is the thing the
+prompt is meant to catch.
 
 Mon 9's pair has to come out **$1,140 apart in exactly three differences**,
 and it does: four guests over the 120 guarantee at $125 plus 22% service
