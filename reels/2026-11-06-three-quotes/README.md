@@ -18,6 +18,17 @@ week-1 timing test.
 | Audio | Eryn voiceover only, measured **-14.0 LUFS / -1.3 dBTP** on the Instagram export |
 | Voice | Eryn `kdnRe2koJdOK4Ovxn2DI`, `eleven_v4`, default settings |
 
+## Live
+
+| | |
+| --- | --- |
+| Instagram | [reel/DfayyEPgmsK](https://www.instagram.com/reel/DfayyEPgmsK/) — media id `17952364014056073`, posted 2026-11-06 23:32 UTC (6:32pm Eastern) |
+| Facebook | video `2287411988776422` |
+
+Live caption diffed against `build/caption.txt` character for character:
+identical. Media edge and Page feed both read before posting; neither held
+the piece.
+
 ## Her recording
 
 Drive `November 6` (`1CQ3AvEmakzfPRg8NzBBRD9PBt3aagHm1`), file id
