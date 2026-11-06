@@ -10,6 +10,35 @@ one's.
 | Wed 4 | `Event Budget — Spring Conference` (Google Sheet) | `November 4` |
 | Fri 6 | `AV Quotes — Spring Conference` — Quote A, B, C (3 PDFs) | `November 6` |
 
+Week two, built Fri 6 by `make_week2.py`:
+
+| Built for | File | Drive |
+| --- | --- | --- |
+| Mon 9 | `BEO — Autumn Board Dinner.pdf` (3 pages, signed) | `November 9` |
+| Mon 9 | `Invoice — Autumn Board Dinner.pdf` (1 page) | `November 9` |
+| Tue 10 | `Venue Agreement — Spring Gala.pdf` (8 pages) | `November 10` |
+| Tue 10 | `Certificate of Insurance — Spring Gala.pdf` (1 page) | `November 10` |
+
+Mon 9's pair has to come out **$1,140 apart in exactly three differences**,
+and it does: four guests over the 120 guarantee at $125 plus 22% service
+($610), a cake-cutting fee of $420 the BEO waives, and an unsigned 30-minute
+bar extension at $110. The BEO says in two places that the guarantee is a
+minimum rather than a cap, which is what makes the twist true — if 124 people
+came through the door, that line is correct and only the other two are
+errors.
+
+Tue 10's pair has to come out with **four mismatches and one match**. General
+liability agrees at $1M/$2M on purpose; liquor liability is $1M against the
+contract's $2M, the additional-insured and waiver-of-subrogation boxes are
+blank, and the policy ends 31 March 2027, seventeen days before the event.
+The insurance terms sit on **pages 3, 5 and 7** rather than in one list, and
+the indemnity on page 7 covers the venue's own negligence — the thing to push
+back on.
+
+`check()` re-derives both deadlines from the event date rather than copying
+them from the guide, and asserts the weekdays too: Sat 17 April 2027, client
+certificate Thu 18 March, vendor certificates Sat 3 April. All three match.
+
 `make_demo_files.py` builds the four PDFs and **fails the build if any total
 is wrong**. The guide states the number each piece has to land on, and a demo
 whose arithmetic does not hold ruins the Reel it exists for:
