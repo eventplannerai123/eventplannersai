@@ -289,3 +289,21 @@ this account. Where a number is visible in the product itself, read it there.
 
 Written into the guide's Wed 4 block as the answer that line asked for, with
 the task struck and the answer left unstruck so it stays readable.
+
+## The BUDGET automation is live (Fri 6 Nov, 7:20am)
+
+Set up in ManyChat by the browser Claude on her Chrome, not from here — her
+Nov 3 decision. It missed Thursday evening because Chrome was off, so it went
+live about thirteen hours after the Reel.
+
+Attached to [reel/DfYN-IEDf_G](https://www.instagram.com/reel/DfYN-IEDf_G/)
+specifically: the free plan allows one automation per post and four live at
+once, which is exactly the four BUDGET Reels planned (Thu 5, Mon 9, Tue 10,
+Tue 17). A fifth means retiring one first.
+
+**Nobody was missed by the gap.** `INSTAGRAM_GET_IG_MEDIA_COMMENTS` on that
+media returned an empty list, so no one commented BUDGET before the
+automation existed and there is no one to answer by hand. The note she added
+to the guide says the same.
+
+Her own comments will never trigger it, so the test needs someone else.
