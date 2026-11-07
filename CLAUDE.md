@@ -1040,6 +1040,20 @@ This replaces the Oct 25 split below.**
 So there is no 6-hour two-post gap left to satisfy: there is only one post a
 day. **6:30pm Eastern is 23:30 UTC from Sun 1 Nov**, when Eastern becomes EST.
 
+**EVERYTHING GOES TO BOTH PLATFORMS — her instruction, 2026-11-07: "Rewrite the
+plan so that it goes to TikTok as well. Everything should go to both
+platforms."** The gap was the planner-feelings second posts: the Nov 4 rule
+specified them as Instagram and Facebook only, so the Fri 6 one went nowhere
+near TikTok until she posted it herself the next day and said so. There is now
+no post type that is one-platform. A piece built here produces an Instagram
+post from this session and a file plus caption handed to her for TikTok, image
+posts included.
+
+The guide is updated in both places it mattered: the second-posts rule in the
+November plan, and the per-day line that reads "CC builds and posts to
+Instagram and Facebook", which now also says to send her the image and caption
+for TikTok.
+
 **TikTok runs a timing test all of week 1, and she decides at the Sun 8 recap**
 (her instruction, 2026-10-31). She posts TikTok by hand, so each slot is a
 one-shot task firing into this session that sends her the file with the caption
