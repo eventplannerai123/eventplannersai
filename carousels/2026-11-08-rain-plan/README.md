@@ -15,6 +15,8 @@ original stays up.
 | Instagram | `slides/2026-11-08-rain-plan-instagram-1.jpg` … `-6.jpg`, 1080x1350 |
 | TikTok | `slides/2026-11-08-rain-plan-tiktok-1.jpg` … `-6.jpg`, 1080x1920 |
 
+All twelve slides are filed in Drive `November 8` alongside the sheet.
+
 ## Slide 5 is computed from the file
 
 The guide asks for the sheet to be built and the prompt run on it, so every
