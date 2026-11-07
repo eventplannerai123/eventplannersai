@@ -14,6 +14,7 @@ the posting times pulled from `TIKTOK_LIST_VIDEOS` on Sat 7 are:
 | Thu 5 — launch Reel | evening | **9:10am** ✗ | 165 |
 | Fri 6 — three quotes | evening | **8:45am** ✗ | 188 |
 | Sat 7 — walkie-talkie image | morning | scheduled 9am | — |
+| Sun 8 — rain plan carousel | 6:30pm | **posted Sat 7, a day early** | — |
 
 So the real split is **two evenings against three mornings**, not three and
 three, and three of the six landed in the other arm.
@@ -30,6 +31,13 @@ Two things make that stronger rather than weaker, and one makes it weaker:
 - But three of six are in the wrong arm **by accident**, so this is three
   against two by circumstance, not by design. Views on this account have run
   124–317 over the same fortnight for reasons nothing here controls.
+
+**And Sunday's went up on Saturday.** She posted the rain-plan carousel the
+day it was approved rather than in its Sun 8 slot, so Sat 7 carries two
+TikToks and Sun 8 none. That is the fourth of seven pieces to land somewhere
+other than its slot, and it points at the real cause: the slots live in this
+repo and in the guide, not in her TikTok scheduler, so they are being matched
+by memory at the moment she uploads.
 
 **What to tell her at the recap:** the test did not run as designed, mornings
 are ahead on what did run, and two against three is too few to settle it. The
