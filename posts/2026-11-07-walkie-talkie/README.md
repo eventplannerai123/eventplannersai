@@ -18,6 +18,21 @@ morning.
 | Instagram | `slides/walkie-talkie-instagram.jpg` — 1080x1350 |
 | TikTok | `slides/walkie-talkie-tiktok.jpg` — 1080x1920 |
 
+## Live
+
+| | |
+| --- | --- |
+| Instagram | [p/DfdXlvjCbKW](https://www.instagram.com/p/DfdXlvjCbKW/) — media id `18110398793244844`, posted 2026-11-07 23:32 UTC (6:32pm Eastern) |
+| Facebook | photo `122120233941449533`, post `1233196746554445_122120233971449533` |
+
+Live caption diffed against `build/caption.txt` character for character:
+identical. Media edge and Page feed both read before posting.
+
+**The TikTok did not run at its 9am slot.** It was handed over and scheduled
+on Thu 5, but it was not live at 9:01am and is not in the account's last ten
+— so the test's sixth slot has no morning datapoint from this piece. See
+`docs/NOV-TIKTOK-TIMING-TEST.md`.
+
 ## The lines are hers
 
 Four came from her verbatim on Nov 5. Five more she picked from a list
