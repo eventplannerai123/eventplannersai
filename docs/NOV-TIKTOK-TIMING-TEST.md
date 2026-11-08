@@ -52,3 +52,26 @@ properly with the slots actually set in the TikTok scheduler at the time the
 plan names.
 
 Her own instruction stands either way: **she decides at the Sun 8 recap.**
+
+## The cross-platform finding (Sun 8 recap)
+
+The same image does opposite things on the two platforms:
+
+| Piece | TikTok views | Instagram views | Instagram reach |
+| --- | --- | --- | --- |
+| "The best event you ever planned" | **346** (plus 309 on the duplicate) | **23** | 16 |
+| "Things I've said into a walkie-talkie" | **312** | **21** | 11 |
+
+Those are the two best TikToks of the week and the two worst Instagram posts
+of the week, and nothing differs between them but the platform — same JPEG,
+same caption.
+
+Instagram for the week: 7 posts, 674 views, 516 reach (96 and 74 a post),
+against 9 posts, 1,403 and 964 (107 reach a post) the week before. TikTok:
+1,840 views over 8 posts, or 219 a post counting the duplicate once, against
+133 a post the week before.
+
+So the planner-life format she added on Nov 4 is working, on one platform.
+What to do about it is hers: the obvious move is to keep making them and stop
+treating them as Instagram second posts, but that is a change to her own plan
+and it belongs to the Sun 15 check she already scheduled.
