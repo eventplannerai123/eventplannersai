@@ -17,6 +17,23 @@ original stays up.
 
 All twelve slides are filed in Drive `November 8` alongside the sheet.
 
+## Live
+
+| | |
+| --- | --- |
+| Instagram | [p/Dff8cx8CYSU](https://www.instagram.com/p/Dff8cx8CYSU/) — media id `18093986798293229`, posted 2026-11-08 23:32 UTC (6:32pm Eastern) |
+| Facebook | post `1233196746554445_122120384961449533`, six photos |
+
+Live caption diffed against `build/caption.txt` character for character:
+identical.
+
+**Slide order verified 1-6 at MAD 0.00**, each published child against its
+committed slide. The check had to run in Composio's remote sandbox, because
+`scontent-*.cdninstagram.com` is blocked from this session. It was worth
+running: the child container ids came back non-monotonic again (…855, …861,
+…858, …864, …927, …930), so ordering the parent's `children` by id rather
+than by results index would have shuffled slides 2 and 3.
+
 ## Slide 5 is computed from the file
 
 The guide asks for the sheet to be built and the prompt run on it, so every
