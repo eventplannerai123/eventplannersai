@@ -1054,10 +1054,31 @@ November plan, and the per-day line that reads "CC builds and posts to
 Instagram and Facebook", which now also says to send her the image and caption
 for TikTok.
 
-**TikTok runs a timing test all of week 1, and she decides at the Sun 8 recap**
-(her instruction, 2026-10-31). She posts TikTok by hand, so each slot is a
-one-shot task firing into this session that sends her the file with the caption
-pasted into the message:
+**TIKTOK IS MORNINGS FROM MON 9 NOV — her decision at the Sun 8 recap,
+"Mornings and no to the ad".** About 9am Eastern, every day, for the rest of
+November.
+
+What it changes in practice: **the TikTok now goes up before that day's
+Instagram post**, so every cut has to exist and be approved the evening
+before. A 9am reminder is never the first time a file gets built.
+
+The honest state of the evidence, for the record rather than for her: the test
+did not run as designed. Three of the six slots went up in the other arm, so it
+was four mornings (216, 165, 189, 312 — mean 221) against two evenings (173,
+130 — mean 152), and the two evening posts were the oldest of the six and still
+the lowest two. Mornings are ahead on a weak, scrambled signal, which she chose
+to act on. **The cause of the scrambling is worth more than the result**: the
+slots live in the guide and this repo, not in her TikTok scheduler, so they get
+matched from memory at the moment she uploads.
+
+**And the ad test is dead — "no to the ad".** Not run, not to be re-proposed
+off the same numbers. `products/vendor-payment-system/README.md` keeps why the
+original $10/day shape was impossible (TikTok's USD floor is $20/day or $140
+for seven days) so nobody rebuilds the case from scratch.
+
+*The week-1 test, as it was set up (her instruction, 2026-10-31):* she posts
+TikTok by hand, so each slot was a one-shot task firing into this session that
+sent her the file with the caption pasted into the message:
 
 | Slot | Days | UTC | Task |
 | --- | --- | --- | --- |
