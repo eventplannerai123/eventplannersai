@@ -120,3 +120,56 @@ adds $200 rather than $1,400.
 
 The rain call is 72 hours before Sat 12 June 2027, so **Wed 9 June 2027**. The
 sheet gives the rule, not the date, for the same reason.
+
+## Week three — Thu 12 and Fri 13 (built Mon 9, `make_week3.py`)
+
+Both were due by Mon 9 in the guide's CLAUDE CODE lines.
+
+### Ticket Allocation — Annual Client Summit (Thu 12)
+
+Drive `November 12` (`1o4pppjuH-8V_8yuje0_r_F1Rc5yjdjVf`, created the same day),
+sheet id `1FTQoSTIJ7WqtmQ0NM_sQby7WRprE0tvQ-Itst1sYGUE`. Two tabs: **Allocation**
+(clients 900, prospects 600, partners 250, speakers 100, staff 150 = 2,000) and
+**Invite lists** (2,125 rows, one per person, from six account teams).
+
+The whole Reel is one number — **140 people on one team's client list and a
+different team's prospect list** — so `check()` proves it from the data rather
+than from the brief: exactly 140 emails appear twice and none three times,
+every pair straddles two teams *and* the two lists, no other email repeats, and
+2,125 rows resolve to 1,985 people. Clients come out 40 over and prospects 85
+over; 2,125 rows read as 125 over capacity and the event is in fact **15 seats
+short of full**.
+
+Then the same five figures were re-derived **inside the live sheet** with
+temporary COUNTA/COUNTIF/SUMPRODUCT formulas and read back — 2125, 1985, 940,
+685, 140 — before the formulas were cleared. The local build passing says
+nothing about what actually landed in Drive.
+
+**Getting 2,125 rows into a Google Sheet from here took three attempts, and the
+two that failed are worth recording.** A CSV uploaded with
+`GOOGLEDRIVE_UPLOAD_FROM_URL` arrives as **text/plain**, and Drive refuses to
+convert that: `files.copy` with a target mimeType returns *"The requested
+conversion is not supported."* `IMPORTDATA` into an API-created spreadsheet
+returns **#REF!** whatever the URL — with em dashes percent-encoded and with a
+plain ASCII filename alike. What works: build an **.xlsx** (openpyxl, not
+installed here — `python3 -m pip install --break-system-packages openpyxl`),
+upload it from a raw.githubusercontent URL, and copy *that* with
+`GOOGLEDRIVE_COPY_FILE_ADVANCED` and `mimeType:
+application/vnd.google-apps.spreadsheet`. The xlsx arrives with its real
+mimeType and converts, carrying both tabs, the frozen header and the brand
+colours. The staging xlsx and CSV were trashed afterwards.
+
+Writing the rows through `mcp__Google_Sheets__update_values` was never an
+option: the data lives in a file, so it would have to pass through the session
+in chunks, and 2,125 generated rows cannot be retyped faithfully.
+
+### Venue Quote — Fall Leadership Summit (Fri 13)
+
+Drive `November 13` (`1dobgV369hK8hiSoB9chAM37OjXULkhLx`), file id
+`1xvKEAWcixxMToNDme33ujj6qURGP15xS`. Two pages: $15,000 room + $30,000 F&B
+minimum = **$45,000** for Saturday 16 October 2027, with the weekday asserted
+rather than assumed.
+
+Page 2 carries the line the piece turns on, set in 8pt grey where small print
+belongs: *"Sunday-Thursday rates and multi-year agreements are available on
+request."* Both pages were rendered at 70dpi and read before the upload.
