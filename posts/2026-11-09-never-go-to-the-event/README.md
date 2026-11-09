@@ -28,3 +28,28 @@ asserts the text carries no prompt, no product and no CTA — the absence of a
 demo is what this post type is testing.
 
 Headline landed at 78px, the block ending at y=1200.
+
+## Live
+
+| | |
+| --- | --- |
+| Instagram | https://www.instagram.com/p/Dfh4A4FiTJg/ — 12:32pm Eastern, Mon 9 Nov |
+| Facebook | post `1233196746554445_122120487525449533` |
+| TikTok | hers, same image and caption, scheduled for 12:30pm |
+
+Posted from here on the scheduled 12:30pm task, as the guide's Mon 9 line
+assigns this one to CC. She had approved the image on Sun 8 and asked for no
+change. The live Instagram caption was read back and diffed against
+`build/caption.txt` character for character — identical. Facebook's feed was
+read first, which showed Sunday's rain-plan carousel as the newest post, so
+nothing was duplicated.
+
+**One thing to settle before Wed 11.** The guide's Mon 9, Wed 11 and Fri 13
+lines all say *planner-feelings **Reel***, and what shipped here is a still
+image — which is what she was shown and approved, and what the Fri 6 line
+specified. The Sat 14 line is explicit about the other shape: "the slide
+Reel version for Instagram and Facebook (image held 7–10 seconds, soft
+music)". A Reel posted from here cannot carry music (Instagram's audio
+library is in-app only), so a silent 8-second hold is what it would actually
+be. Worth one question to her when Wednesday's is built, rather than
+quietly picking a format.
