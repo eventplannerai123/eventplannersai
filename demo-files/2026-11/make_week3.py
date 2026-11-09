@@ -311,9 +311,71 @@ def main():
     csv_path = write_invite_csv(
         rows, os.path.join(OUT, "ticket-allocation-tab2.csv"))
     print(f"{os.path.basename(csv_path)}  {os.path.getsize(csv_path):,} bytes")
+    xlsx = workbook(
+        os.path.join(OUT, "Ticket Allocation — Annual Client Summit.xlsx"), rows)
+    print(f"{os.path.basename(xlsx)}  {os.path.getsize(xlsx):,} bytes")
     pdf = os.path.join(OUT, "Venue Quote — Fall Leadership Summit.pdf")
     venue_quote(pdf)
     print(f"{os.path.basename(pdf)}  {os.path.getsize(pdf):,} bytes")
+
+
+
+
+# ============================================================ the workbook ==
+# The guide asks for a Google Sheet. The route that works from here is an
+# .xlsx uploaded to Drive and copied with a target mimeType, which Drive
+# converts; a CSV comes in as text/plain, which Drive refuses to convert, and
+# IMPORTDATA into an API-created sheet returns #REF!.
+LAVENDER = "CECBF6"
+PURPLE = "3C3489"
+
+
+def workbook(path, rows):
+    from openpyxl import Workbook
+    from openpyxl.styles import Alignment, Font, PatternFill
+    from openpyxl.utils import get_column_letter
+
+    head_fill = PatternFill("solid", fgColor=LAVENDER)
+    head_font = Font(name="Calibri", bold=True, color=PURPLE, size=11)
+    title_font = Font(name="Calibri", bold=True, color=PURPLE, size=14)
+
+    wb = Workbook()
+
+    a = wb.active
+    a.title = "Allocation"
+    a["A1"] = "Annual Client Summit — seat allocation"
+    a["A1"].font = title_font
+    a["A3"], a["B3"] = "Group", "Seats allocated"
+    for cell in ("A3", "B3"):
+        a[cell].font = head_font
+        a[cell].fill = head_fill
+    r = 4
+    for group, n in ALLOCATION:
+        a.cell(r, 1, group)
+        a.cell(r, 2, n)
+        r += 1
+    a.cell(r, 1, "Total").font = Font(bold=True)
+    a.cell(r, 2, SEATS).font = Font(bold=True)
+    a.cell(r + 2, 1, "Venue capacity").font = Font(bold=True)
+    a.cell(r + 2, 2, SEATS)
+    a.column_dimensions["A"].width = 34
+    a.column_dimensions["B"].width = 18
+
+    b = wb.create_sheet("Invite lists")
+    b.append(["Name", "Email", "Company", "Account team", "List"])
+    for c in range(1, 6):
+        cell = b.cell(1, c)
+        cell.font = head_font
+        cell.fill = head_fill
+        cell.alignment = Alignment(vertical="center")
+    for row in rows:
+        b.append(row)
+    b.freeze_panes = "A2"
+    for c, w in enumerate([22, 34, 24, 18, 12], start=1):
+        b.column_dimensions[get_column_letter(c)].width = w
+
+    wb.save(path)
+    return path
 
 
 if __name__ == "__main__":
