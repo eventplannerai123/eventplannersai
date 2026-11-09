@@ -309,7 +309,7 @@ def main():
     rows, _ = check()
     os.makedirs(OUT, exist_ok=True)
     csv_path = write_invite_csv(
-        rows, os.path.join(OUT, "Ticket Allocation — Annual Client Summit — tab2.csv"))
+        rows, os.path.join(OUT, "ticket-allocation-tab2.csv"))
     print(f"{os.path.basename(csv_path)}  {os.path.getsize(csv_path):,} bytes")
     pdf = os.path.join(OUT, "Venue Quote — Fall Leadership Summit.pdf")
     venue_quote(pdf)
