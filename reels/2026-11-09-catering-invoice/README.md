@@ -101,3 +101,28 @@ blocked from this session.
 Her YOU line asks for **the one thing she would still change** about the
 answer. She has not said yet. If it changes the reading, the last voiceover
 line and the caption's second paragraph are the two places to redo.
+
+## Live
+
+| | |
+| --- | --- |
+| Instagram | https://www.instagram.com/reel/DfihO2fGId7/ — 6:32pm Eastern, Mon 9 Nov |
+| Facebook | video post `1786931315872496` |
+| TikTok | hers, posted 9:20am from the file sent Sun 8 — 123 views by the evening |
+
+Posted from here on the scheduled 6:30pm task. Instagram's media edge was
+read first and showed the 12:32pm planner-feelings image as the newest item,
+and the Facebook feed showed the same, so nothing was duplicated. The live
+Instagram caption was read back and diffed against `build/caption.txt`
+character for character — identical.
+
+**No BUDGET comments before the automation went live**: the Reel's comment
+edge was empty when it was read straight after publishing, so nobody is owed
+a manual DM.
+
+**Automation count, corrected.** This is the second of the four the free
+ManyChat plan allows, and the plan was Thu 5, Mon 9, Tue 10, Tue 17. Tue 10
+came off that list the same afternoon — Sahiba dropped the BUDGET CTA from
+the insurance Reel because the tracker is deposits and balances and that
+piece is an insurance certificate — so after tonight it is **Thu 5, Mon 9
+and Tue 17, with one slot free**.
