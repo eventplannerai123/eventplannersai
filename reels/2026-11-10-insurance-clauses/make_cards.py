@@ -4,12 +4,15 @@ Brand palette: lavender #CECBF6 ground, deep purple #3C3489 text, Poppins 600.
 The Instagram hook is the guide's own sentence; TikTok takes a command-style
 one, as the house rules require.
 
-THE END CARD IS THE BUDGET LINE, AND IT SUBSTITUTES. The guide's Nov 3 soft
-mention says to end this Reel on "Comment BUDGET for the tracker I use"
-*instead of* the usual closing line, so the guide's own takeaway overlay
-("Check the certificate against the contract. Then confirm with your
-broker.") is replaced rather than appended to. TikTok says "on my Instagram":
-there is no bio link there and the ManyChat automation lives on Instagram.
+NO BUDGET LINE ON THIS ONE — HER CALL, Nov 9. The guide's Nov 3 soft mention
+put "Comment BUDGET for the tracker I use" on this Reel in place of the usual
+closing line. She read it on the finished cut and asked whether it made sense
+here, and it does not: the Vendor Payment System tracks deposits and
+balances, this piece is about an insurance certificate, and it was the
+weakest of the four automations the free ManyChat plan allows. She asked for
+"save the prompt below or something like that" instead, so that is the end
+card on both cuts — the same line on each, because the prompt sits in the
+caption on either platform and nothing here depends on a bio link.
 
 PLACEMENT IS MEASURED AGAINST THE BEAT UNDERNEATH, off a y-ruler rather than
 guessed, and `preview()` in render.py composites each card onto its own beat
@@ -48,8 +51,8 @@ CARDS = {
     # tail of the indemnification section, which this beat does not need, so
     # the card goes there. The beat's 4% push lifts the heading to about 676
     # by the last frame, still clear of the card's bottom edge.
-    "end-instagram":  ("Comment BUDGET\nfor the tracker I use", 250, 54),
-    "end-tiktok":     ("Comment BUDGET\non my Instagram", 250, 54),
+    "end-instagram":  ("Save the prompt\nin the caption below.", 250, 54),
+    "end-tiktok":     ("Save the prompt\nin the caption below.", 250, 54),
 }
 PAD_X, PAD_Y = 44, 34
 

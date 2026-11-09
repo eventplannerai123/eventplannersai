@@ -78,12 +78,39 @@ Hook at 0:00–2:30, end card in the last 3s, nothing in between — the house
 rule, and both current briefs override the two-overlay default down to one
 plus the closing card.
 
-**The end card is the BUDGET line and it substitutes.** The guide's Nov 3
-soft mention says to end this Reel on "Comment BUDGET for the tracker I use"
-*instead of* the usual closing line, so the brief's own takeaway overlay
-("Check the certificate against the contract. Then confirm with your
-broker.") is replaced rather than appended to. TikTok says "on my
-Instagram": no bio link there, and the automation lives on Instagram.
+**No BUDGET line on this one — her call, Nov 9.** The guide's Nov 3 soft
+mention put "Comment BUDGET for the tracker I use" on this Reel in place of
+the usual closing line, and both cuts were built and shown that way. She
+read it on the finished cut and asked whether it made sense here. It does
+not: the Vendor Payment System tracks deposits and balances, this piece is
+about an insurance certificate, and it was the weakest fit of the four
+automations the free ManyChat plan allows.
+
+She asked for "save the prompt below or something like that", so the end
+card on both cuts is **"Save the prompt in the caption below."** — the same
+line on each, because the prompt sits in the caption on either platform and
+nothing here depends on a bio link. The BUDGET line came out of both
+captions too, which leaves them identical.
+
+Two consequences, both handled: the Tue 10 ManyChat task
+(`trig_01ETXYmJQYVSFTzGowU48LSs`) is **disabled**, so the slot is free for a
+Reel the tracker actually fits; and the guide's Tue 10 soft-mention line is
+struck with the reason, while Mon 9's is left alone because that one went
+out as written.
+
+**One loose end.** The Mon 30 ManyChat task
+(`trig_01JgU3ssUVCBzyTA7FZbmbML`) opens by turning off "the Tue 10 insurance
+clauses automation" to free a slot. That automation now never exists, so the
+instruction is a no-op — harmless for the 4-slot cap (Thu 5, Tue 17, Thu 19
+going in, Mon 30 making four), but wrong in the wording. It could not be
+corrected from here: that task is bound to SahibaLaptop and a prompt change
+needs her device-signed approval. Raise it with her nearer the date.
+
+**This also retires the guide's own takeaway overlay for this piece.** The
+brief's closing line was "Check the certificate against the contract. Then
+confirm with your broker." It was already substituted by the BUDGET line on
+Nov 3 and she did not ask for it back, so the save-the-prompt card stands
+in its place. The advice itself survives in the caption's closing paragraph.
 
 **The end card sits high on this one**, at y=250, which is the opposite of
 Mon 9. The last beat's whole job is the vendor-insurance section from about
