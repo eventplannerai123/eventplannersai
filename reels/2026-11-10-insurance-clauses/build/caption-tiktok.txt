@@ -1,0 +1,12 @@
+The contract asks for $2 million in liquor liability. The policy has $1 million.
+
+Four requirements don't match: the liquor limit, the additional insured box, the waiver of subrogation, and the dates. The one it ranked first wasn't the limit — the certificate expires March 31 and the event is April 17. One thing I'd change: it tells you to raise your own liquor limit, and usually the caterer holds the license, so the fix is their certificate naming the venue, not a bigger policy of yours. Confirm every fix with your broker and your legal or risk team before you sign.
+
+The prompt:
+"Here's a venue agreement and the certificate of insurance for the event [upload both]. List every insurance requirement in the contract with the page it's on, check each one against the certificate, and tell me which ones don't match and what to ask my broker for to fix each one. Then flag anything in the indemnification clause I should push back on."
+
+Save this for your next venue contract, and send it to the planner who finds the insurance clause after signing.
+
+Comment BUDGET on my Instagram.
+
+#aiforeventplanners #eventprofs #eventplanningtips #eventplanner #venuecontracts
