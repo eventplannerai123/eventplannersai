@@ -139,3 +139,32 @@ underneath showed through the lavender in the exported frames.
   script was cut from 57 words to 52 and regenerated at 18.96s. 52 words in
   18.96s is 2.74 w/s — well under the 3.1 w/s planning figure, because this
   script carries an em dash and two full stops the planning figure does not.
+
+## Live
+
+| | |
+| --- | --- |
+| Instagram | https://www.instagram.com/reel/DflF5sJlbVi/ — 6:31pm Eastern, Tue 10 Nov |
+| Facebook | video post `29269825615981589` |
+| TikTok | hers, from the file sent Mon 9 — not read back from here, see below |
+
+Posted from here on the scheduled 6:30pm task. Instagram's media edge was read
+first and showed Monday's catering-invoice Reel as the newest item, and the
+Facebook feed showed the same, so nothing was duplicated. The live Instagram
+caption was read back and diffed against `build/caption.txt` character for
+character — identical.
+
+**Facebook had not surfaced in the page feed at the time of writing**, which is
+normal: it has taken three read-backs and about fifteen minutes on every day
+since Sep 25. The create call returned a post id, so there is nothing to retry
+— and a blind retry on Facebook duplicates the post.
+
+**No ManyChat brief for this one**, because there is no BUDGET line: she dropped
+it from this Reel on Nov 9, the caption ends on the save-the-prompt line, and
+the Tue 10 ManyChat task (`trig_01ETXYmJQYVSFTzGowU48LSs`) is disabled. Nobody
+is owed a manual DM and nothing needed Chrome open.
+
+**The TikTok could not be confirmed from here.** `identity_get` on the
+advertiser returns an empty `identity_list` this evening, so the route that
+confirmed Thu 5, Fri 6 and Mon 9 is not answering — her upload is recorded as
+scheduled rather than posted until it reads back.
