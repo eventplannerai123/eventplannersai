@@ -33,14 +33,28 @@ as a matter of course now.
 
 A Reel posted from this session cannot use Instagram's licensed audio library
 — that is in-app only, and `INSTAGRAM_POST_IG_USER_MEDIA` has no field that
-attaches a track — so whatever is in the mp4 is what goes out. The guide asks
-for a soft bed, so one was generated here with `eleven_music_v2_5`: felt piano
-and a sustained pad, no drums, no vocals, even dynamics. Same bed as the day's
-slide Reel, trimmed to 8s, faded 0.8s in and 1.2s out.
+attaches a track — so whatever is in the mp4 is what goes out. She settled the
+question in four words on Nov 10: **"dont go out silent"**.
+
+**This piece has its own bed, and that took a correction.** Both Wednesday
+Reels first went out of here on one track, the 8-second cut being literally
+the opening of the 15-second one, and she spotted it: *"are they both the
+same?"* Two posts on the same day sharing their opening bars is worse than a
+second generation costs. So this one is a separate `eleven_music_v2_5` track —
+sparser electric piano over a low drone, slower than the slide Reel's.
+
+**Taken from 10.0s into the generation, not 0.0s.** Its first two and a half
+seconds are the drone alone, so an 8-second cut from the top would have opened
+on near-silence under a 0.8s fade. Faded 0.8s in and 1.2s out, measured to
+-14 LUFS.
 
 **Nobody in this session can hear it, so "instrumental" was checked twice
-rather than assumed.** A spectrogram shows piano transients and steady
-harmonics with none of the formant movement a sung vowel makes, and ElevenLabs
+rather than assumed.** The spectrogram shows chordal blocks and a sustained
+low drone with none of the formant movement a sung vowel makes, and ElevenLabs
 Scribe transcribed the file to an **empty string**, which is what an
-instrumental returns. What neither check can tell us is whether it *sounds*
-good, so that is put to her rather than decided here.
+instrumental returns. The generation's own settings report
+`Instrumental: False` even though the prompt asked for no vocals, so the
+settings are not the check.
+
+What neither check can tell us is whether it *sounds* good. That went to her
+with the file rather than being decided here.

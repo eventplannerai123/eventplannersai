@@ -5,13 +5,22 @@ The Nov 8 format rule turns this 12:30pm slot into a Reel: the same still held
 TikTok. Eight seconds is the middle of that range and about as long as the
 three paragraphs take to read.
 
-THE MUSIC IS THE SAME GENERATED BED AS THE DAY'S SLIDE REEL, trimmed to 8s. A
-Reel posted from this session cannot use Instagram's licensed audio library,
-so whatever is in the mp4 is what goes out. It is instrumental, and that was
-checked rather than assumed: a spectrogram showed piano transients and steady
-harmonics with none of the formant movement a sung vowel makes, and Scribe
-transcribed it to an empty string. Faded 0.8s in and 1.2s out, measured to
+THE MUSIC IS ITS OWN BED, NOT THE SLIDE REEL'S. Both pieces went out of here
+on one track at first, the 8-second cut being literally the opening of the
+15-second one, and she spotted it: "are they both the same?" Two posts on one
+day sharing their opening bars is worse than a second generation costs, so
+this one has a separate track — sparser electric piano over a low drone.
+
+Taken from **10.0s into the generation, not 0.0s**. Its first two and a half
+seconds are the drone alone, so an 8-second cut from the top would have opened
+on near-silence under a 0.8s fade. Faded 0.8s in and 1.2s out, measured to
 -14 LUFS.
+
+A Reel posted from this session cannot use Instagram's licensed audio library,
+so whatever is in the mp4 is what goes out. Instrumental, checked the same two
+ways as the other bed: the spectrogram shows chordal blocks and a sustained
+low drone with none of the formant movement a sung vowel makes, and Scribe
+transcribed it to an empty string.
 
 Nothing moves in the frame. A push on typeset text softens the glyphs for no
 gain, and there is one image.
