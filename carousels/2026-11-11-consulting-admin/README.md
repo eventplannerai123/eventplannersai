@@ -34,15 +34,36 @@ That is exactly what slide 5 says, and `check()` asserts it still matches
 `SECTION_12`. So the build fails loudly on the day the offer changes, which
 is the day the caption's last paragraph has to change with it.
 
-## The music question, unresolved
+## The music, settled
 
-The format rule asks for **soft royalty-free music** under the slide Reel. A
-Reel posted from here cannot use Instagram's licensed audio library — that
-is in-app only, and `INSTAGRAM_POST_IG_USER_MEDIA` has no field that
-attaches a track — so whatever audio is in the mp4 is what goes out. A
-royalty-free bed baked into the file is therefore the only version of this
-that works from here.
+A Reel posted from this session cannot use Instagram's licensed audio library
+— that is in-app only, and `INSTAGRAM_POST_IG_USER_MEDIA` has no field that
+attaches a track — so whatever is in the mp4 is what goes out. A royalty-free
+bed baked into the file is therefore the only version of this that works from
+here, and `eleven_music_v2_5` made one: felt piano and a sustained pad, no
+drums, no vocals, even dynamics. Trimmed to 15s, faded 0.8s in and 1.2s out,
+measured to -14 LUFS.
 
-Nothing is settled yet and nothing is assumed: the slides exist, the Reel
-assembly is tomorrow, and the choice between a baked-in bed, a silent hold
-and her uploading it in-app belongs to her.
+**Nobody in this session can hear it, so "instrumental" was checked twice
+rather than assumed.** A spectrogram shows piano transients and steady
+harmonics with none of the formant movement a sung vowel makes, and ElevenLabs
+Scribe transcribed the file to an **empty string**, which is what an
+instrumental returns. What neither check can tell us is whether it *sounds*
+good, so that is put to her rather than decided here.
+
+## The Reel
+
+`consulting-admin-instagram.mp4`, 15.0s, six slides at 2.5s — the format the
+guide asked for. **Hard cuts and no push.** Every other piece in this repo
+gives its freeze frames a 4% slow push, because they are screenshots of a
+scrolling answer and the drift reads as life. These are typeset brand slides:
+a push on 72px margins softens the glyph edges for nothing, and a crossfade
+between two lavender cards reads as a smear.
+
+## Approved as it stands
+
+She approved the six slides on Tue 10 at midday without sending her own offer
+lines, so **slide 5 keeps the guide's Section 12 wording** and that is now her
+answer rather than a placeholder. `check()` still asserts it matches
+`SECTION_12`, which means the build will fail loudly the day she changes the
+offer — and the caption's last paragraph has to change with it.
