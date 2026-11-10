@@ -145,7 +145,7 @@ underneath showed through the lavender in the exported frames.
 | | |
 | --- | --- |
 | Instagram | https://www.instagram.com/reel/DflF5sJlbVi/ — 6:31pm Eastern, Tue 10 Nov |
-| Facebook | video post `29269825615981589` |
+| Facebook | https://www.facebook.com/reel/29269825615981589/ — 6:32pm Eastern, Tue 10 Nov |
 | TikTok | hers, from the file sent Mon 9 — not read back from here, see below |
 
 Posted from here on the scheduled 6:30pm task. Instagram's media edge was read
@@ -154,10 +154,9 @@ Facebook feed showed the same, so nothing was duplicated. The live Instagram
 caption was read back and diffed against `build/caption.txt` character for
 character — identical.
 
-**Facebook had not surfaced in the page feed at the time of writing**, which is
-normal: it has taken three read-backs and about fifteen minutes on every day
-since Sep 25. The create call returned a post id, so there is nothing to retry
-— and a blind retry on Facebook duplicates the post.
+**Facebook surfaced on the second read-back**, about a minute after the create
+call, which is faster than this page's usual fifteen. Its caption matches the
+Instagram one word for word, as the file is the same.
 
 **No ManyChat brief for this one**, because there is no BUDGET line: she dropped
 it from this Reel on Nov 9, the caption ends on the save-the-prompt line, and
