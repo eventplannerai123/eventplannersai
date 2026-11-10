@@ -1,0 +1,10 @@
+2,000 tickets. 140 people were promised a seat twice.
+
+Six account teams, six invite lists, and the same client on one team's client list and another team's prospect list. On paper we were 125 over. Once the duplicates came out, there were 15 seats left. One thing I'd change: it matched on email, so the same person with a work address and a personal one still counts twice — check the names too.
+
+The prompt:
+"Here's the seat allocation for our 2,000-person client summit and the invite lists from six account teams. Check every list against the allocation: which groups are over, is anyone invited more than once under a different team or list, and how many seats are actually left once duplicates are removed? List the duplicates with both teams that invited them."
+
+Save this for your next client event.
+
+#aiforeventplanners #eventprofs #eventplanningtips #eventplanner #corporateevents
