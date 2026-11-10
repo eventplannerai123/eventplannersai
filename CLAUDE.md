@@ -1409,6 +1409,25 @@ MCP server; a session without `mcp__Composio__*` tools cannot post at all.
   plainly rather than implying the audio was auditioned. She answered it once
   and the answer stands: music, not silence.
 
+  **MAKE THE BEDS UPBEAT** — her instruction, 2026-11-10, after hearing the
+  first two: "moving forward lets to more upbeat instrumentals". The first
+  pair were deliberately soft, because the guide's format line says "soft
+  royalty-free music" and the brief was to sit behind text. She heard them and
+  wants more energy, so her words govern: **brighter and with some movement by
+  default**, not a slow pad. The Wed 11 pair stay as they are — she approved
+  those — and this applies from the next bed on.
+
+  **NEVER REUSE A BED ACROSS TWO POSTS ON THE SAME DAY.** Wednesday's two Reels
+  first went out of here on one track, the 8-second cut being the opening of
+  the 15-second one, and she caught it at once: "are they both the same?" A
+  second generation costs less than two posts sharing their opening bars.
+
+  **And check where in the generation the trim starts.** The second Wed 11 bed
+  opens on two and a half seconds of drone alone, so an 8-second cut from 0.0s
+  would have started on near-silence under the fade-in; it was taken from 10.0s
+  instead. Render the spectrogram anyway for the vocal check — read the opening
+  seconds off it while you are there.
+
   Note the genuine tension with the Oct 5 video lessons: rule 1 allows a silent
   piece "for an overlay-led piece, overlays that carry the whole story alone",
   and the Oct 4 bar-quantities cut is exactly that. So silence is not
