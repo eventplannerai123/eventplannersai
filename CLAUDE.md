@@ -1604,6 +1604,17 @@ board ids, the Drive folder, the schedule CSV. The parts that govern:
 - **It does not need this repo.** `PINTEREST_CREATE_PIN` takes the image bytes
   via `media_source image_base64`, so there is no push-then-fetch step the way
   Instagram and Facebook have. Composio account `pinterest_reking-alpha`.
+
+  **But use `image_url`, not base64** (found 2026-11-10). `media_source` also
+  takes `{source_type: "image_url", url: ...}` and Pinterest fetches it
+  server-side, exactly as Meta does. Base64 means reading the JPEG into the
+  session: a 290 KB pin becomes 390 KB of characters, about 110k tokens for
+  the pair, every single day. The pin images are committed under
+  `pinterest/images/`, so their `raw.githubusercontent.com` URLs work and the
+  call costs a line. Verify the fetch first with
+  `curl -o /dev/null -w "%{http_code} %{content_type} %{size_download}"` and
+  check the byte count against the local file — a pin cannot be edited, so a
+  wrong or missing image is permanent.
 - **Pin creation works; pin editing does not.** `PINTEREST_UPDATE_PIN` returns
   "does not have access to this restricted feature: `pin_edit`". That is the
   app's access tier, not anything session-specific, so a wrong board or a
@@ -1684,6 +1695,15 @@ board ids, the Drive folder, the schedule CSV. The parts that govern:
 - **A pasted image is not a file.** Images dropped into a message may render
   without landing in the uploads directory. Check for a real path before
   planning to use one.
+- **Run anything with Pillow in it under `python3.13`, not `python3`.** The
+  container is rebuilt between sessions and the two interpreters are not the
+  same: on 2026-11-10 `python3 -c "import PIL.Image"` failed with "cannot
+  import name `_imaging`" while `python3.13` had Pillow 12.3.0 working. Every
+  slide and card generator in this repo needs PIL, so check the interpreter
+  before concluding a generator is broken. `reportlab` and `openpyxl` are
+  likewise not installed by default —
+  `python3 -m pip install --break-system-packages <pkg>` gets them, and the
+  demo-file READMEs say which piece needs which.
 - **Her phone photos are HEIC, and nothing here decodes them out of the box.**
   `ffmpeg` reports "moov atom not found" (it reads the container as MP4) and
   ImageMagick refuses with "Unsupported codec". The fix is one line:
