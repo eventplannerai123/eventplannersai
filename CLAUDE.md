@@ -1389,6 +1389,26 @@ MCP server; a session without `mcp__Composio__*` tools cannot post at all.
   only the third gets music, at the cost of it no longer running from here.
   Say so plainly rather than letting a silent file go out unremarked.
 
+  **FOURTH OPTION, AND NOW THE DEFAULT: GENERATE THE BED HERE** (settled
+  2026-11-10, when she answered the question in four words: **"dont go out
+  silent"**). The library is in-app only; a royalty-free bed baked into the
+  mp4 is not. `eleven_music_v2_5` runs in this workspace through
+  `creative_generate_in_flow` with `node_type: "music"` — ask for the
+  instrument, "no drums, no vocals, even dynamics", trim to length, fade
+  0.8s in and 1.2s out, and measure to -14 LUFS like any other export. The
+  Wed 11 slide Reel and planner-feelings Reel were the first two.
+
+  **Nobody in this session can hear it, so prove it is instrumental rather
+  than assuming.** Two checks, both cheap: render a spectrogram
+  (`showspectrumpic`) and look for the formant movement a sung vowel makes,
+  and run the file through Scribe — **an instrumental transcribes to an empty
+  string**. The `generations_count` settings may report `Instrumental: False`
+  even when the prompt asked for none, so the settings are not the check.
+
+  What neither check settles is whether it *sounds* good, so say that to her
+  plainly rather than implying the audio was auditioned. She answered it once
+  and the answer stands: music, not silence.
+
   Note the genuine tension with the Oct 5 video lessons: rule 1 allows a silent
   piece "for an overlay-led piece, overlays that carry the whole story alone",
   and the Oct 4 bar-quantities cut is exactly that. So silence is not
