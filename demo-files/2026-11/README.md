@@ -173,3 +173,66 @@ rather than assumed.
 Page 2 carries the line the piece turns on, set in 8pt grey where small print
 belongs: *"Sunday-Thursday rates and multi-year agreements are available on
 request."* Both pages were rendered at 70dpi and read before the upload.
+
+## Week four — Mon 16 and Tue 17 (built Wed 11, `make_week4.py`)
+
+Both are due by Fri 13 under the Thu 12 CLAUDE CODE line. They were built on
+Wed 11 instead, because her recordings are due **Sat 14** and **Sun 15** and a
+file that arrives on Friday is cutting it fine for a Saturday recording.
+
+Run them under **`python3.13`**. `python3`'s Pillow is broken in this
+container (`cannot import name _imaging`) and reportlab imports PIL at module
+load, so the build fails before it reaches anything of its own.
+
+### Registration Export — Annual Partner Weekend (Mon 16)
+
+Drive `November 16` (`1mij0zABAvcy7QT7Ronw3cglG8nmG93wo`), sheet id
+`1lP0jknDbBrOVLU2UbGVZsl3uNbv4dud97G7vhAe3TGs`.
+
+3,500 rows, one per registration. The Reel turns on ChatGPT reporting **112
+duplicate registrations removed and 3,388 name tags**, so `check_registration()`
+asserts the row count, that no email appears more than twice, that each
+duplicate pair really is the same person, that the pair agrees on guest type
+(or the Client/Prospect-style split moves), the five code totals — 2,540 DEL,
+510 SPO, 96 SPK, 162 STF, 80 VIP — and that all three capitalisation styles
+are present.
+
+**The organisation count had to be fixed after the first upload.** 61 real
+organisations appear under 96 spellings, and the first build made one of the
+four variant shapes the name in capitals. Read back in the live sheet,
+`SUMPRODUCT(1/COUNTIF(D:D,D:D))` returned **91**, because COUNTIF ignores
+case — and 91 is what anyone counting in a spreadsheet would get, while the
+guide says 96. The variants now differ by punctuation or by a word and never
+by case alone, and the builder asserts the case-insensitive count too.
+
+Read back in the live sheet after conversion: 3,500 rows, 3,388 unique
+emails, 96 organisation spellings, 100 rows carrying an exact-case "Speaker"
+or "speaker" (96 speakers plus four who registered twice). The formulas were
+cleared afterwards.
+
+**`GOOGLEDRIVE_UPLOAD_FROM_URL` fetched a stale copy of the rebuilt file.**
+`curl` here returned the new 178,241 bytes while Drive's server-side fetch of
+the same `main` URL stored the old 178,557 — a CDN edge still holding the
+previous blob, and nothing in the response says so. **Use a commit-pinned raw
+URL** (`raw.githubusercontent.com/<owner>/<repo>/<sha>/<path>`) when
+re-uploading a file that has changed; it is immutable, so there is nothing to
+serve stale. Check the returned `size` against the local file either way.
+
+### BEO — Winter Partner Summit (Tue 17)
+
+Drive `November 17` (`1FgsQRalKICypLlKEd1d7Qe6M1W_Pw8Ud`), file id
+`1HOXPKBRChr_Ue-l0e9kx5NMXxZ2bqkRH`. 14 pages, Tuesday 9 February 2027, 240
+guests.
+
+The piece is "the BEO is 14 pages, at 7am you need one", so the thing that
+has to be true of the file is that **the times are scattered rather than
+listed**. `check_beo()` asserts it: eleven times across nine pages, none on
+page 1, no more than two on any page. The four vendor contacts sit in the
+page footers rather than in a list, which is where the prompt's "every vendor
+phone number" has to find them.
+
+Food and beverage $64,800 → 24% service $15,552 → 8.875% tax $7,131.24 →
+**$87,483.24**, asserted. The guide's Tue 17 file line said $86,129, which was
+a figure written before the lines existed; it is corrected in the doc, along
+with the two times it did not list (registration 8:00am, afternoon session
+2:00pm). All fourteen pages were rendered at 70dpi and read before the upload.

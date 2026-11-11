@@ -577,6 +577,15 @@ inside inherits it. Verified on Oct 16 against `October`, `October 18` and her
 the same one Meta fetches from. Drive pulls it server-side, so no bytes pass
 through the session. Push to the repo first, or the URL will not resolve.
 
+**A changed file can upload STALE.** On 2026-11-11 a rebuilt .xlsx was
+re-uploaded from its `main` raw URL: `curl` here returned the new 178,241
+bytes and Drive's server-side fetch stored the old 178,557, from a CDN edge
+still holding the previous blob. Nothing in the response says so. **Re-upload
+a changed file from a commit-pinned URL** —
+`raw.githubusercontent.com/<owner>/<repo>/<sha>/<path>`, with `git rev-parse
+HEAD` for the sha — which is immutable and cannot be stale, and check the
+returned `size` against the local file every time.
+
 **Its field names are `source_url`, `name` and `parent_folder_id`** — not
 `file_url`, and not `parent_id`. On 2026-10-04 `parent_id` was passed and
 **silently ignored**: the call reported success and the file landed in the root
