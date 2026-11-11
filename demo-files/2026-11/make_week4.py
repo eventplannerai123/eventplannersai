@@ -108,10 +108,14 @@ def _mess_case(text, mode):
 def _org_variants(canonical):
     """A second, messier spelling of the same organisation."""
     stem, suffix = canonical.rsplit(" ", 1)
+    # No all-caps variant: it would differ from the canonical name only by
+    # case, and a reader counting spellings case-insensitively would then get
+    # 91 rather than 96. Every variant here differs by punctuation or by a
+    # word, so the count is the same whichever way it is counted.
     return [
         f"{stem} {suffix}.",
         f"{stem}, {suffix}",
-        f"{stem.upper()} {suffix.upper()}",
+        f"The {stem} {suffix}",
         f"{stem} {suffix[:3]}.",
     ]
 
@@ -225,6 +229,11 @@ def check_registration(rows, canon, spellings):
     assert len(canon) == ORGS_CANONICAL, len(canon)
     assert len(spellings) == ORG_SPELLINGS, \
         f"{len(spellings)} organisation spellings, not {ORG_SPELLINGS}"
+    # Counted case-insensitively as well, because a reader counting them in a
+    # spreadsheet gets the case-insensitive answer and the guide states one
+    # number for both.
+    assert len({s.lower() for s in spellings}) == ORG_SPELLINGS, \
+        "two spellings differ only by case"
 
     # Messy capitalisation really is in the file, all three ways.
     firsts = [r[0] for r in rows]
