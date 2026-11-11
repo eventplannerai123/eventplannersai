@@ -64,7 +64,7 @@ with the file rather than being decided here.
 | | |
 | --- | --- |
 | Instagram | https://www.instagram.com/reel/DfnBgmVjkjR/ — 12:31pm Eastern, Wed 11 Nov |
-| Facebook | video post `1120581384193154` |
+| Facebook | https://www.facebook.com/reel/1120581384193154/ — 12:32pm Eastern, Wed 11 Nov |
 | TikTok | hers, the JPEG and caption sent Tue 10 |
 
 Posted from here on the scheduled 12:30pm task. Instagram's media edge was

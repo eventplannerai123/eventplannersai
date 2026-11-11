@@ -67,3 +67,32 @@ lines, so **slide 5 keeps the guide's Section 12 wording** and that is now her
 answer rather than a placeholder. `check()` still asserts it matches
 `SECTION_12`, which means the build will fail loudly the day she changes the
 offer — and the caption's last paragraph has to change with it.
+
+## Live
+
+| | |
+| --- | --- |
+| Instagram | https://www.instagram.com/reel/DfnqwDUgFM5/ — 6:32pm Eastern, Wed 11 Nov |
+| Facebook | video post `1157250943457511` |
+| TikTok | hers, the six JPEGs as a photo carousel at 9:20am |
+
+Posted from here on the scheduled 6:30pm task. Instagram's media edge was read
+first and showed the 12:30pm planner-feelings Reel as the newest item, which is
+expected rather than a duplicate, and the Facebook feed showed the same. The
+live caption was read back and diffed against `build/caption.txt` character for
+character — identical.
+
+**The first publish came back 408, and that is NOT the Wed 11 lunchtime
+timeout.** At 12:30pm the MCP transport timed out at 60s while the Reel went up
+fine. Here the call returned cleanly with Instagram's own message: *"Container
+did not reach FINISHED status within 45 seconds. Last status: IN_PROGRESS."*
+This file is 657 KB against the planner-feelings 363 KB, so it was still
+transcoding. Nothing had published — confirmed on the media edge — and
+`INSTAGRAM_GET_POST_STATUS` then read FINISHED, so the second publish was made
+on evidence rather than blindly.
+
+**`INSTAGRAM_GET_POST_STATUS` takes `creation_id`, not `ig_container_id`.** The
+obvious name is rejected with "Following fields are missing: {'creation_id'}".
+
+**No ManyChat brief and no BUDGET line**: the ask on this one is "DM me", which
+is the guide's own wording.
