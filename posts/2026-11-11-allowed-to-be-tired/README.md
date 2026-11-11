@@ -58,3 +58,23 @@ settings are not the check.
 
 What neither check can tell us is whether it *sounds* good. That went to her
 with the file rather than being decided here.
+
+## Live
+
+| | |
+| --- | --- |
+| Instagram | https://www.instagram.com/reel/DfnBgmVjkjR/ — 12:31pm Eastern, Wed 11 Nov |
+| Facebook | video post `1120581384193154` |
+| TikTok | hers, the JPEG and caption sent Tue 10 |
+
+Posted from here on the scheduled 12:30pm task. Instagram's media edge was
+read first and showed Tuesday's insurance Reel as the newest item, and the
+Facebook feed showed the same, so nothing was duplicated. The live caption was
+read back and diffed against `build/caption.txt` character for character —
+identical.
+
+**The publish call timed out at 60 seconds and the post had gone up anyway.**
+A timeout on `INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH` is UNKNOWN, not failed:
+the media edge showed the Reel live at 17:31:51 UTC with its own id. Reading
+the edge is the only safe response — a second publish call on a container that
+already published is how a post gets duplicated.
