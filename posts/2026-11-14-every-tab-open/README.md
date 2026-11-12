@@ -19,21 +19,32 @@ slivers.
 
 What a reader recognises as *my tabs* is the tab shape, the favicon dot and the
 close cross — so they are stacked inside a browser window, and the shape does
-the work a horizontal strip does on a laptop. Each tab came out 107px tall at
+the work a horizontal strip does on a laptop. Each tab came out 94px tall at
 34px type.
 
 **The last tab is the active one, and that is the whole AI tie.** Seven tabs are
 the job; one is doing the boring part. ChatGPT is the only tab in full white
 with the purple accent bar.
 
-## The list is the guide's default, not hers
+## Two of the tabs are hers
 
-Her Sat 14 YOU line asks for her real 6 to 8 tabs by Thu 12 and says CC uses
-the list below if she does not send them. She has not, so this is the default.
+Asked on Thu 12 for her real list she sent **"staffing plan"** and **"rsvp
+list"**, then *"the rest you have are good"*. Both went in and the other
+defaults stayed.
 
-Swapping it is one edit to `TABS` — the layout fits whatever it is given and
-asserts 6 to 8 of them. **Ask again before Friday evening**, because that is
-when the file goes to her for the 9am TikTok.
+The staffing plan sits second, with the working documents rather than the
+reference ones, because content bank 9 is hers too: *"the project plan got the
+team to the event; the staffing plan and run of show ran it on site"*.
+
+**Nine tabs, and one default came out.** "Directions to the loading dock" went
+to make room, because "Loading dock rules.pdf" already covers the dock — the
+same near-duplicate she cut herself on the Sat 7 post (*"1 and 3 are too
+similar cut 1"*). The guide's "6 to 8" is the size of the list it asks HER for,
+not a cap on the image; nine fits at 94px a tab, well clear of the 60px floor
+the builder asserts.
+
+**The caption names her two as well**, because the caption lists the tabs and
+the list is hers now.
 
 ## Nothing named
 
@@ -66,11 +77,11 @@ settles it.
 
 ## Checks
 
-- 6 to 8 tabs asserted; the active tab asserted to be the last one.
+- 6 to 10 tabs asserted; the active tab asserted to be the last one.
 - No "prompt", "link in bio", "Gumroad" or "Comment" in the image text or the
   caption.
 - Tab height asserted at 60px minimum so the titles stay readable; it came out
-  at 107px.
+  at 94px.
 - Brand system is the guide's: lavender #CECBF6, deep purple #3C3489, Poppins,
   EP + star wordmark drawn as a polygon because Poppins has no U+2726 glyph.
 - TikTok safe zones: the title starts at y=250, clear of the top 12% (230), and

@@ -10,11 +10,19 @@ recognises as "my tabs" is the tab shape, the favicon dot and the close cross
 a horizontal strip would do on a laptop. Rendering the brief literally would
 have produced eight unreadable slivers.
 
-THE LIST IS THE GUIDE'S DEFAULT, NOT HERS. Her Sat 14 YOU line asks for her
-real 6 to 8 tabs by Thu 12 and says CC uses the list below if she does not
-send them. She has not, so this is the default, and swapping it is one edit to
-TABS — the layout fits whatever it is given. Ask again before Friday evening,
-because that is when the file goes to her for the 9am TikTok.
+TWO OF THESE TABS ARE HERS. Asked on Thu 12 for her real list she sent
+"staffing plan" and "rsvp list", then "the rest you have are good" — so those
+two went in and the other defaults stayed. The staffing plan sits second, with
+the working documents rather than the reference ones, because content bank 9
+is hers too: "the project plan got the team to the event; the staffing plan
+and run of show ran it on site".
+
+**NINE TABS, AND ONE DEFAULT CAME OUT.** "Directions to the loading dock" went
+to make room, because "Loading dock rules.pdf" already covers the dock — the
+same near-duplicate she cut herself on the Sat 7 post ("1 and 3 are too
+similar cut 1"). The guide's "6 to 8" is the size of the list it asks HER for,
+not a cap on the image; nine fits at 93px a tab, which is still well clear of
+the 60px floor the builder asserts.
 
 THE LAST TAB IS THE ACTIVE ONE, and that is the whole AI tie: seven tabs are
 the job, one is doing the boring part. It is the only tab drawn in full white
@@ -62,12 +70,13 @@ TITLE = "Every tab open on my\nlaptop at 2am before\nload-in"
 # The guide's default list. Eight tabs, the last one active.
 TABS = [
     "Floor plan — v4",
-    "Hourly forecast — Saturday",
+    "Staffing plan v3.xlsx",
+    "RSVP list — 412 confirmed",
     "BEO v7 FINAL (final).pdf",
+    "Hourly forecast — Saturday",
     "Delivery tracker — 14 boxes",
     "“quick question” — Inbox (1)",
     "Loading dock rules.pdf",
-    "Directions to the loading dock",
     "ChatGPT",
 ]
 
@@ -144,7 +153,9 @@ def build():
 
 
 def check():
-    assert 6 <= len(TABS) <= 8, "the guide asks for 6 to 8 tabs"
+    # The guide's "6 to 8" is the size of the list it asks HER for, not a cap
+    # on the image. She sent two and approved the rest, which makes nine.
+    assert 6 <= len(TABS) <= 10, "too few or too many tabs to read"
     joined = " ".join([TITLE] + TABS).lower()
     for banned in ("prompt", "link in bio", "gumroad", "comment ", "claude"):
         assert banned not in joined, f"no sales line or prompt: found {banned!r}"
