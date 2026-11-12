@@ -119,3 +119,18 @@ paragraph rather than white space.
   `alimiter=limit=0.841:level=0` to measure -14.01.
 - 52 words in 18.48s is 2.81 w/s, in line with the 2.74 measured on Tue 10 and
   well under the 3.1 planning figure.
+
+## Live
+
+**Instagram, Thu 12 Nov, 6:31pm Eastern** —
+[reel/DfqPfjvAqkt](https://www.instagram.com/reel/DfqPfjvAqkt/), media id
+`17971882320206242`, `is_shared_to_feed: true`. The media edge was read first
+and held nothing newer than Nov 11, so nothing was at risk of going up twice.
+Caption diffed against `build/caption.txt` character for character: identical.
+
+**Facebook** — posted the same evening, `1126211393469666`. The Page feed was
+read before the call and carried nothing from Nov 12, so her in-app
+cross-post toggle had not beaten it there.
+
+No ManyChat brief on this one: the Nov 3 BUDGET soft mention covers Thu 5,
+Mon 9, Tue 10 and Tue 17 only, and Tue 10 came off it on Nov 9.
