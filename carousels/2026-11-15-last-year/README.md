@@ -62,3 +62,22 @@ Instrumental proved rather than assumed — spectrogram and Scribe, as always.
 - No employer, client or venue anywhere; no BUDGET line and no "link in bio",
   because this piece has nothing to download.
 - The caption carries the same figures as slide 4, asserted.
+
+## The music bed
+
+Own generation, `eleven_music_v2_5` — vibraphone and muted bass over brushed
+drums, upbeat per her Nov 10 instruction and deliberately not Friday's
+guitar-and-marimba or Saturday's piano-and-claps. Never a shared bed.
+
+Instrumental, proved both ways: the spectrogram shows rhythmic transients and
+flat harmonic bands with none of the formant movement a sung vowel makes, and
+Scribe returned an empty string.
+
+30.02s raw, trimmed 0.0–13.0s (the generation opens on a full-band transient,
+so no near-silent head to skip), 0.8s fade in, 1.2s fade out. This one came
+out of the model hot — **-14.2 LUFS raw**, against the usual -22.8 — so the
+gain sweep landed at **+0.2 dB** into `alimiter=limit=0.841:level=0` for
+-14.0 LUFS, where Friday's needed +3.4. Never carry a gain figure over.
+
+Export: 1080x1920, 30fps, H.264 high, CRF 19, +faststart, AAC 192k/48kHz,
+12.50s, -13.8 LUFS measured on the finished mp4.
