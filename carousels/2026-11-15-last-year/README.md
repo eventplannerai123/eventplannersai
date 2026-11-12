@@ -81,3 +81,18 @@ gain sweep landed at **+0.2 dB** into `alimiter=limit=0.841:level=0` for
 
 Export: 1080x1920, 30fps, H.264 high, CRF 19, +faststart, AAC 192k/48kHz,
 12.50s, -13.8 LUFS measured on the finished mp4.
+
+## Approved, filed and scheduled
+
+She approved the slides on Thu 12 Nov ("approved"), three days early, after
+asking for the piece so her weekend was clear.
+
+- Drive `November 15` (`1C1-XU7xEqb9ucxEI2wmIFs4fjA9joGkd`), created here —
+  the Reel plus the five slides as `-tiktok-1.jpg` … `-5.jpg`, all six
+  uploaded from **commit-pinned** raw URLs and each returned `size` checked
+  against the local file.
+- Instagram and Facebook at **6:30pm Sunday**, one-shot task
+  `trig_019rWVMyvUs2b1YpKxvD1ASu` (23:30 UTC — Eastern is EST now).
+- TikTok handed to her with the caption pasted into the reply the moment she
+  approved, per her Oct 30 rule. Last-10 duplicate check ran first and came
+  back clear.
