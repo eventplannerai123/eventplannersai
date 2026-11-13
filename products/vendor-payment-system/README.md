@@ -307,3 +307,27 @@ automation existed and there is no one to answer by hand. The note she added
 to the guide says the same.
 
 Her own comments will never trigger it, so the test needs someone else.
+
+## The Sat 14 Story image
+
+`make_story.py` → `story/vendor-payment-tracker-story.jpg`, 1080x1920. The
+guide's Fri 13 line asks for "a screenshot of the filled Vendor Payment System
+tracker"; this is a brand-look render of it rather than a literal screengrab,
+because a Google Sheet is 16:9 of mostly empty columns and a Story is 9:16.
+
+**Every number is read from the live tracker**, `Vendor Payment Tracker —
+May 15, 2027 wedding` (`1P6zCWC18kY-SC2oocX7xzZcEMF0CXxEg3f6qDqdiOqo`), the
+one filled from the Nov 2 inbox test — including the two that recompute daily,
+Due this week ($9,680) and Due in the next 30 days. Every vendor in it is a
+demo vendor from the product's own test emails, which is what makes it safe to
+publish.
+
+**It carries no headline and no CTA.** Her Sat 14 YOU line puts the text
+"Every vendor payment in one place," and the Gumroad link sticker on top in
+the app; a printed line underneath a sticker reads as a mistake. The empty
+band under the grid is where the sticker goes.
+
+**Column widths are measured, not typed.** The first build ran "Second
+payment" straight through the Amount column and pushed the "Due this week"
+chip off the card; the generator now measures every column against the real
+strings and asserts the flag column ends inside the card.
