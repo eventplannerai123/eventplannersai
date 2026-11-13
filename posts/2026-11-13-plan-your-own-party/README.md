@@ -69,3 +69,20 @@ none. What neither check settles is whether it *sounds* good.
   sung vowel makes, and Scribe returned an empty string. Its own settings
   reported "Instrumental: False", which is why the settings are not the check.
 - Export probed at 1080x1920, 8.00s, 30fps, and measured at -14.0 LUFS.
+
+## Live
+
+**Instagram, Fri 13 Nov, 12:31pm Eastern** —
+[reel/DfsLCymgHEV](https://www.instagram.com/reel/DfsLCymgHEV/), media id
+`18004520558806740`. The media edge and the Page feed were both read first and
+held nothing newer than Thursday's ticket-allocation Reel. Caption diffed
+against `build/caption.txt` character for character: identical, emoji
+included.
+
+**Facebook** — `2164603411149042`, posted straight after.
+
+The TikTok photo post went to her the same morning with the caption pasted
+into the message. It had not gone over with the Reel, which was the gap: her
+Fri 13 YOU line asks for it as its own photo post around 12:30pm, and the
+Nov 7 both-platforms rule means a planner-feelings piece is never Instagram
+only.
