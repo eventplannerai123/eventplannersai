@@ -133,3 +133,18 @@ dense paragraph.
   +12.0 to +13.5 and **+12.7 dB** through `alimiter=limit=0.841:level=0`
   measured -14.0.
 - 53 words in 17.52s is 3.02 w/s, in line with the 3.1 planning figure for Eryn.
+
+## Live
+
+**Instagram, Fri 13 Nov, 6:31pm Eastern** —
+[reel/Dfs0OO6DYoz](https://www.instagram.com/reel/Dfs0OO6DYoz/), media id
+`18057645656589115`. The media edge and the Page feed were both read first:
+the newest item on each was the 12:30pm planner-feelings Reel, which is the
+day's other post rather than a duplicate. Caption diffed against
+`build/caption.txt` character for character: identical, en dash and em dashes
+included.
+
+**Facebook** — `1069647909427800`.
+
+No ManyChat brief and no BUDGET line: the Nov 3 soft mention covers Thu 5,
+Mon 9, Tue 10 and Tue 17 only, and Tue 10 came off it on Nov 9.
