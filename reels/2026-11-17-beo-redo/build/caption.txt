@@ -7,6 +7,6 @@ Then it did something better than guessing. Where the BEO never says who is resp
 The prompt:
 "Here's the BEO for tomorrow's event. Give me one page I can hold at 7am: every time in chronological order, with the room, the headcount and who is responsible, plus every vendor phone number. One side of paper, nothing else."
 
-Comment BUDGET for the tracker I use.
+Ask for the blanks too — they're your call list.
 
 #aiforeventplanners #eventprofs #eventplanningtips #eventplanner #eventprofstips

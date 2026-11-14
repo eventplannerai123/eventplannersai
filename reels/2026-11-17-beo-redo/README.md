@@ -56,12 +56,19 @@ highlighted row on b4 are all built on it.
 - Eryn, `eleven_v4`, 18.08s from 57 words — 3.15 w/s. Raw at **-23.4 LUFS**,
   sweep landed at **+12.7 dB** into `alimiter=limit=0.841:level=0` for -14.0
   LUFS on both exports. Saturday's piece needed +14.0; never carry it over.
-- **This one carries the BUDGET line and Mon 16 did not.** The Nov 3 soft
-  mention covers Thu 5, Mon 9, Tue 10 and Tue 17, and Tue 10 came off it on
-  Nov 9. End card: "Comment BUDGET for the tracker I use." — TikTok says
-  "Comment BUDGET on my Instagram." because the automation lives there and
-  TikTok has no bio link. It is the last line of the Instagram caption too,
-  and browser Claude attaches the automation at 6:32pm.
+- **THE BUDGET LINE CAME OFF, HER DECISION, 2026-11-14.** The Nov 3 soft
+  mention put one here and Tue 17 was the last of its four Reels. She saw the
+  finished cut, asked why it carried one, and said to pull it. Both cuts now
+  end on the piece's own takeaway — "Ask for the blanks too. They're your
+  call list." — the captions are identical across the two platforms again,
+  and the Tue 17 ManyChat task (`trig_01P7VVJRq2MFYBVXxJdFGNq1`) is
+  **disabled**, because a CTA on screen with no automation behind it promises
+  a DM that never arrives.
+
+  **That is two of the four pulled for the same reason** — Tue 10's
+  insurance piece on Nov 9, this one on Nov 14 — and both times the line went
+  in because the guide's block said so, not because it fitted the piece.
+  Her instruction the same day: double-check the closing line from now on.
 - No in-app ad anywhere, checked to the final frame.
 
 Exports: 1080x1920, 30fps, H.264 high, CRF 19, +faststart, AAC 192k/48kHz,

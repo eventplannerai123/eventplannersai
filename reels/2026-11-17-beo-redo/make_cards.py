@@ -4,12 +4,13 @@ Brand palette: lavender #CECBF6 ground, deep purple #3C3489 text, Poppins 600.
 The Instagram hook is the guide's own overlay line; TikTok takes a
 command-style one.
 
-**THIS ONE CARRIES THE BUDGET LINE AND THE MON 16 PIECE DID NOT.** The Nov 3
-soft mention covers Thu 5, Mon 9, Tue 10 and Tue 17, and Tue 10 came off it
-on Nov 9, so Tue 17 is the live one: the end card is the guide's own
-"Comment BUDGET for the tracker I use.", and the TikTok cut says "Comment
-BUDGET on my Instagram." because the automation lives there and TikTok has no
-bio link. It is the last line of the Instagram caption too.
+**THE BUDGET LINE CAME OFF ON 2026-11-14, HER DECISION.** The Nov 3 soft
+mention put one here — Tue 17 was the last of its four Reels, Thu 5, Mon 9,
+Tue 10 and Tue 17, and Tue 10 had already come off on Nov 9. She saw the
+finished cut, asked why it carried one, and said to pull it. So the end card
+is the piece's own takeaway instead, both cuts share it, and the ManyChat
+task for Tue 17 is disabled. That is the second of the four to come off this
+way, and for the same reason both times: the CTA did not fit the piece.
 
 PLACEMENT IS MEASURED AGAINST THE BEAT UNDERNEATH, and `preview()` in
 render.py composites each card onto its own beat before anything is exported.
@@ -39,8 +40,8 @@ P600 = os.path.join(FONTS, "Poppins-600.ttf")
 CARDS = {
     "hook-instagram": ("The BEO is 14 pages.\nAt 7am you need one.", 1220, 52),
     "hook-tiktok":    ("Stop carrying the\n14-page BEO.", 1220, 56),
-    "end-instagram":  ("Comment BUDGET\nfor the tracker I use.", 1150, 52),
-    "end-tiktok":     ("Comment BUDGET\non my Instagram.", 1150, 52),
+    "end-instagram":  ("Ask for the blanks too.\nThey\u2019re your call list.", 1150, 50),
+    "end-tiktok":     ("Ask for the blanks too.\nThey\u2019re your call list.", 1150, 50),
 }
 PAD_X, PAD_Y = 44, 34
 
@@ -66,11 +67,11 @@ def card(text, px):
 
 def main():
     os.makedirs(OUT, exist_ok=True)
-    # The BUDGET line is the whole point of the Tue 17 end card; a silent
-    # rewrite would drop a live ManyChat automation on the floor.
-    assert "Comment BUDGET" in CARDS["end-instagram"][0]
-    assert CARDS["end-tiktok"][0].endswith("on my Instagram."), \
-        "TikTok has no bio link; the automation lives on Instagram"
+    # She pulled the BUDGET line on Nov 14. Nothing here may put one back:
+    # the ManyChat task for this Reel is disabled, so a CTA on screen would
+    # promise a DM that never arrives.
+    for name, (text, _, _) in CARDS.items():
+        assert "BUDGET" not in text, f"{name} still carries a BUDGET line"
     for name, (text, top, px) in CARDS.items():
         c = card(text, px)
         bottom = top + c.size[1]
