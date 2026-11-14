@@ -1,0 +1,12 @@
+The BEO is 14 pages. At 7am you need one.
+
+Fourteen pages, and the times you actually need are spread over eleven of them. One page, in clock order, with the room, the headcount and the vendor numbers, is the thing that goes in your pocket at 7am. It pulled all four vendor numbers out of the page footers, where a BEO hides them.
+
+Then it did something better than guessing. Where the BEO never says who is responsible — the room flips, the session leads, the bar operator — it wrote "not named in BEO" instead of inventing a name. So add one line to the prompt: ask it to list every item the BEO doesn't name a lead for. The blanks stop being a half-empty column and become a chase list for four o'clock the day before.
+
+The prompt:
+"Here's the BEO for tomorrow's event. Give me one page I can hold at 7am: every time in chronological order, with the room, the headcount and who is responsible, plus every vendor phone number. One side of paper, nothing else."
+
+Comment BUDGET on my Instagram.
+
+#aiforeventplanners #eventprofs #eventplanningtips #eventplanner #eventprofstips
