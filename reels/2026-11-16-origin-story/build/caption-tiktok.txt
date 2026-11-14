@@ -1,0 +1,12 @@
+3,500 name tags, every one coded by guest type.
+
+A four-day weekend for 3,500 people, and the name tags were the job nobody sees. It used to take hours by hand, or a formula that half worked.
+
+112 duplicate registrations out, 3,388 tags in, 96 spellings of 61 organisation names made consistent, and a guest-type code on every row. The one thing it can't know is who is wearing two hats: a sponsor who is also speaking needs the speaker code, not the sponsor one, so anyone with two roles is still a check by hand.
+
+The prompt:
+"Here's the registration export for a 3,500-person partner weekend. Clean it for a name-tag mail merge: remove duplicate registrations, fix the capitalisation of names and job titles, make the organisation names consistent, and give every row a guest-type code — DEL, SPO, SPK, STF or VIP. Tell me how many rows you removed, list every organisation name you changed, and give me the count for each code."
+
+Clean the export before the mail merge, not after the tags are printed.
+
+#aiforeventplanners #eventprofs #eventplanningtips #eventplanner
