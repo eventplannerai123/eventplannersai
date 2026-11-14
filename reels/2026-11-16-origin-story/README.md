@@ -64,3 +64,16 @@ brief asks for.
 Exports: 1080x1920, 30fps, H.264 high, CRF 19, +faststart, AAC 192k/48kHz,
 19.44s both cuts, -14.0 LUFS measured on each. Hook and end card verified on
 the exported frames, not just in the preview.
+
+## Approved, filed and scheduled
+
+She approved it on Sat 14 ("approved"), two days early, the same day she
+recorded it.
+
+- Drive `November 16` (`1mij0zABAvcy7QT7Ronw3cglG8nmG93wo`) — both cuts,
+  uploaded from **commit-pinned** raw URLs with each returned `size` checked
+  against the local file.
+- Instagram and Facebook at **6:30pm Monday**, one-shot task
+  `trig_0124njsgPQjeVY9se4eLnMey` (23:30 UTC).
+- TikTok handed over the moment she approved, per her Oct 30 rule, after a
+  clear last-10 duplicate check.
