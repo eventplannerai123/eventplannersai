@@ -87,3 +87,16 @@ settles it.
 - TikTok safe zones: the title starts at y=250, clear of the top 12% (230), and
   the wordmark sits above the bottom 25%.
 - Export probed at 1080x1920, 8.00s, 30fps, and measured at -14.0 LUFS.
+
+## Live
+
+**Instagram, Sat 14 Nov, 6:31pm Eastern** —
+[reel/DfvZEjUD2Z6](https://www.instagram.com/reel/DfvZEjUD2Z6/), media id
+`18118485428118305`. The media edge and the Page feed were both read first
+and held nothing newer than Friday's venue-email Reel. Caption diffed against
+`build/caption.txt` character for character: identical — including her two
+tabs, the staffing plan and the RSVP list.
+
+**Facebook** — `29045838368442919`.
+
+No BUDGET line and no ManyChat on this one.
