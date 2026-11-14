@@ -73,3 +73,17 @@ highlighted row on b4 are all built on it.
 
 Exports: 1080x1920, 30fps, H.264 high, CRF 19, +faststart, AAC 192k/48kHz,
 18.08s both cuts, -14.0 LUFS measured on each.
+
+## Approved, filed and scheduled
+
+Approved on Sat 14, three days early, the same day she recorded it — and
+recut the same afternoon when she pulled the BUDGET line.
+
+- Drive `November 17` (`1FgsQRalKICypLlKEd1d7Qe6M1W_Pw8Ud`) — both cuts of
+  the **recut**, uploaded from commit-pinned raw URLs with each returned
+  `size` checked against the local file.
+- Instagram and Facebook at **6:30pm Tuesday**, one-shot task
+  `trig_01JXAhPkG3CpmzsiXPkqYX5y` (23:30 UTC). Its prompt pins the recut's
+  commit and stops the post outright if the caption still contains the word
+  BUDGET.
+- TikTok handed over after a clear last-10 check.

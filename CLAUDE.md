@@ -1515,6 +1515,41 @@ The division, which holds for Thu 5, Mon 9, Tue 10 and Tue 17 alike:
 count**: Thu 5, Mon 9, Tue 10, Tue 17. A fifth BUDGET Reel means retiring one
 first, so check before promising another.
 
+**CHECK THE CLOSING LINE AGAINST THE PIECE, EVERY TIME** — her instruction,
+2026-11-14: "double check the closing lines moving forward". It is the rule
+that comes out of pulling the same CTA twice.
+
+The Nov 3 soft mention put "Comment BUDGET" on four Reels. **Two of the four
+have now come off, and for the same reason both times**: on Nov 9 she read
+the finished insurance-clauses cut and asked whether a tracker CTA made sense
+on an insurance piece, and on Nov 14 she watched the BEO redo and asked
+outright why it had a BUDGET line. Both times the line was there because the
+guide's day block said so, and nobody checked it against what the piece was
+actually about. Both times she caught it on the rendered video, which is the
+latest and most expensive moment to catch anything.
+
+So before rendering, read the closing line next to the piece's own subject
+and ask whether the one follows from the other. A tracker CTA belongs on a
+piece about money. It does not belong on one about insurance certificates or
+a run sheet. **A line copied out of the guide is a starting point to check,
+never a decision already made** — the same rule the Oct 19 branding note
+reached about the shortlist's EDIT lines.
+
+When it does not fit, say so **before** generating the voiceover, because the
+last VO line, the end card and the caption's last line are one decision and
+re-rendering means redoing all three.
+
+**Pulling the CTA means pulling the automation too.** A closing card that
+says "Comment BUDGET" with no ManyChat automation behind it promises a DM
+that never arrives, so the piece's ManyChat task gets disabled in the same
+sitting — `trig_01ETXYmJQYVSFTzGowU48LSs` for Tue 10, and
+`trig_01P7VVJRq2MFYBVXxJdFGNq1` for Tue 17. The free plan's four slots are
+accounted for in the Vendor Payment System section; two of them are now free.
+
+**And the generator should enforce it.** `reels/2026-11-17-beo-redo/make_cards.py`
+asserts that no card carries the word BUDGET, so a later edit cannot put one
+back by accident. Copy that assert into any piece whose CTA has been pulled.
+
 - **RETIRED 2026-10-12: do not write "Prompt below."** Her words: "we dont
   need to say prompt below its redundent". She is right — the prompt sits
   directly underneath, under its own `AI Prompt:` label, so the line points at
