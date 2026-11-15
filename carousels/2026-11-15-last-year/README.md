@@ -96,3 +96,13 @@ asking for the piece so her weekend was clear.
 - TikTok handed to her with the caption pasted into the reply the moment she
   approved, per her Oct 30 rule. Last-10 duplicate check ran first and came
   back clear.
+
+## Live
+
+**Instagram, Sun 15 Nov, 6:32pm Eastern** —
+[reel/Dfx968EHNa2](https://www.instagram.com/reel/Dfx968EHNa2/), media id
+`17964696254997279`. The media edge and the Page feed were both read first
+and held nothing newer than Saturday's planner-life Reel. Caption diffed
+against `build/caption.txt` character for character: identical.
+
+**Facebook** — `1686148229769870`.
