@@ -236,3 +236,27 @@ Food and beverage $64,800 → 24% service $15,552 → 8.875% tax $7,131.24 →
 a figure written before the lines existed; it is corrected in the doc, along
 with the two times it did not list (registration 8:00am, afternoon session
 2:00pm). All fourteen pages were rendered at 70dpi and read before the upload.
+
+## Week 5 — `make_week5.py`
+
+**Staffing Plan — Fall Product Launch** (Wed 18 Nov slide Reel, "every role
+has a captain"). Google Sheet in Drive `November 18`
+(`1Vd-aqk-iMbGXTMkaXP3oGaa8kGvAjZos`), id
+`11I47YKlbK4vt_FZWMgJyMYwwR636mhUarQhR3NNmaDo`. Two tabs: **Staff**, 40 rows
+in six roles, and **Escalations**, three situations per role.
+
+Asserted against the guide's figures: 8 + 10 + 4 + 6 + 4 + 8 = 40, five roles
+with exactly one named captain, and **Hospitality and VIPs with two Leads and
+no Captain** — the defect slide 5 is about, so it is asserted rather than
+hoped for. Names, the company and every 555 number are invented.
+
+**The Escalations tab leaves Hospitality's captain cell blank** rather than
+writing "NOT NAMED". The gap has to be derived from the Staff tab; a label
+would hand the answer over, and the Reel would be showing AI read a word
+rather than spot a problem.
+
+**The first name generator hung.** It paired `FIRST[i % 32]` with
+`LAST[(7i + 3) % 32]`, and since 7 and 32 are coprime that pair cycles after
+32 values — while 40 staff minus 5 captains and 2 leads needs 33 distinct
+generated names. The 33rd request looped forever looking for a combination
+that could not exist. Walking both indices independently gives 1,024.
