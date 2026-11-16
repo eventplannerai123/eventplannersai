@@ -77,3 +77,19 @@ recorded it.
   `trig_0124njsgPQjeVY9se4eLnMey` (23:30 UTC).
 - TikTok handed over the moment she approved, per her Oct 30 rule, after a
   clear last-10 duplicate check.
+
+## Live
+
+- Instagram: https://www.instagram.com/reel/Df0it63DkuF/ — media id
+  `18080075453443538`, posted 2026-11-16T23:33:02Z (6:33pm Eastern),
+  `media_product_type: REELS`, `is_shared_to_feed: true`. The live caption
+  matches `build/caption.txt` character for character.
+- Facebook: page post `1067133373013225`, the same cut and the same caption,
+  after reading the page feed first — it held nothing newer than the day's
+  12:30pm planner-feelings Reel.
+- **The publish took two calls, and that is normal rather than a fault.** The
+  first came back a clean 408 with the container still `IN_PROGRESS`, which
+  means nothing was published; `INSTAGRAM_GET_POST_STATUS` on the
+  `creation_id` read `FINISHED` about a minute later and the same container
+  published first time. A clean 408 is never a reason to build a second
+  container — that is how a piece goes up twice.
