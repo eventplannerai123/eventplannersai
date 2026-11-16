@@ -65,3 +65,15 @@ She approved it the same morning she added the block.
   Reel and not a photo.
 - TikTok handed to her with the caption at approval time, after a clear
   last-10 check.
+
+## Live
+
+- Instagram: https://www.instagram.com/reel/Dfz5ZXnGbJS/ — media id
+  `18136310140674970`, posted 2026-11-16T17:33:16Z (12:33pm Eastern). Read
+  back as `media_type: VIDEO`, `media_product_type: REELS`,
+  `is_shared_to_feed: true` — **a Reel, not a photo**, which is the Sun 15
+  standing check on this slot. The live caption matches `build/caption.txt`
+  character for character.
+- Facebook: page post `2079383872734078`, the same cut and the same caption.
+  The page feed was read first and held nothing newer than Sunday's slide
+  Reel, so the in-app cross-post toggle had not already placed it.
