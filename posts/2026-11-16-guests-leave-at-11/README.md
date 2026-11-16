@@ -51,3 +51,17 @@ assume the sign.
 
 Export: 1080x1920, 30fps, CRF 19, +faststart, AAC 192k/48kHz, 8.00s,
 -14.0 LUFS measured on the finished mp4.
+
+## Approved, filed and scheduled
+
+She approved it the same morning she added the block.
+
+- Drive `November 16` (`1mij0zABAvcy7QT7Ronw3cglG8nmG93wo`) — the Reel and the
+  JPEG, uploaded from commit-pinned raw URLs with each returned `size`
+  checked against the local file.
+- Instagram and Facebook at **12:30pm today**, one-shot task
+  `trig_01AxMstF5Ac1krCEEjfWT565` (17:30 UTC). Its prompt carries the Sun 15
+  standing check: read the item back afterwards and confirm it posted as a
+  Reel and not a photo.
+- TikTok handed to her with the caption at approval time, after a clear
+  last-10 check.
