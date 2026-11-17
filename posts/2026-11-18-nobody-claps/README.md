@@ -52,3 +52,16 @@ The finished mp4 measures -14.1 LUFS.
 - Within 10 minutes of it going up she leaves the first comment herself — her
   own answer to the caption's question. All nine Instagram posts Nov 9–14 had
   zero comments, which is what that line is for.
+
+## Filed and scheduled
+
+- Drive `November 18` (`1Vd-aqk-iMbGXTMkaXP3oGaa8kGvAjZos`) — the Reel and the
+  JPEG, uploaded from **commit-pinned** raw URLs with each returned `size`
+  checked against the local file.
+- Instagram and Facebook at **12:30pm Wednesday**, one-shot task
+  `trig_01FtTmu1D97gQeu9JLfYyZ83` (17:30 UTC — Eastern is EST now). This slot
+  is assigned to CC by the guide, so it is scheduled rather than re-asked; its
+  prompt carries the standing Reel-not-photo check.
+- TikTok photo post is hers, around 12:30pm, from the JPEG and caption handed
+  over on Tue 17.
+
