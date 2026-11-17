@@ -8,7 +8,10 @@ HARD CUTS AND NO PUSH. These are typeset brand slides, not screenshots of a
 scrolling answer: a push on 72px margins softens the glyph edges for nothing,
 and a crossfade between two lavender cards reads as a smear.
 
-SIX SLIDES, SO 15.0s — one more than Sunday, because the answer slide has to
+SIX SLIDES AT 3.00s, SO 18.0s — slowed from 2.50s on her note of Nov 17
+("slow down the reel a little"). Still inside the 15–20s target, and slide 5
+is the reason: it carries a card, five thumbnails and the flag, which is more
+to read in one beat than any slide of the Sunday set. One more slide than Sunday, because the answer slide has to
 stand on its own. Slide 5 carries the Registration card, five thumbnails and
 the flag, and folding it into a five-slide set would mean cutting either the
 thumbnails or the flag, and the flag is the piece.
@@ -35,12 +38,12 @@ import subprocess
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SLIDES = os.path.join(HERE, "slides")
-BED = os.path.join(HERE, "build", "music", "bed-15s.wav")
+BED = os.path.join(HERE, "build", "music", "bed-18s.wav")
 
 W, H, FPS = 1080, 1920, 30
-PER_SLIDE = 2.50
+PER_SLIDE = 3.00
 N = 6
-TOTAL = PER_SLIDE * N          # 15.0s
+TOTAL = PER_SLIDE * N          # 18.0s
 
 
 def render():

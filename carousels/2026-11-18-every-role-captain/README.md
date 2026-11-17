@@ -1,6 +1,7 @@
 # Wed 18 Nov — "Every role has a captain, so nobody has to guess who to ask."
 
-Content bank 28. Six slides, 1080x1920, brand look: lavender `#CECBF6`, deep
+Content bank 28. Six slides, 1080x1920, **3.00s each after her Nov 17 note to
+slow it down** — 18.00s in all, inside the 15–20s target. Brand look: lavender `#CECBF6`, deep
 purple `#3C3489`, Poppins, EP✦ wordmark, numbered badge, bottom bar.
 
 Built Tue 17 to her Wed 18 CC line, which asks for the slides and the
@@ -38,6 +39,15 @@ one with no captain", which hands over the catch three slides early.
 `check()` now fails if any captain's name or the phrase "no captain" appears on
 slide 3.
 
+## The planner is "them"
+
+Her instruction, Nov 17: *"change her to them"*. Slide 1 read "Nobody should
+have to find her" and slide 2 "every question lands on her". `check()` now
+fails if "her", "hers", "she" or "she’s" appears anywhere in the slide text,
+so a later edit cannot put it back — the account says "event planner", and
+gendering the one person in the story narrows who reads it as being about
+themselves.
+
 ## The closing line, checked against the piece
 
 Her Nov 14 rule. This is a piece about a staff briefing, not about money, so
@@ -47,7 +57,7 @@ after she pulled its CTA. Slide 6 closes on the takeaway and a save.
 
 ## Export
 
-`render.py` — six slides at 2.50s, hard cuts, 15.00s, 1080x1920, 30fps, CRF 19,
+`render.py` — six slides at **3.00s**, hard cuts, 18.00s, 1080x1920, 30fps, CRF 19,
 `+faststart`, AAC 192k/48kHz. No push and no crossfade: these are typeset
 cards, not a scrolling answer.
 
@@ -62,11 +72,12 @@ sung-vowel formant movement, and Scribe returned an empty string. The
 generation's own settings report `Instrumental: False` either way, so they are
 not the check.
 
-30.02s raw, trimmed 0.0–15.0s (full texture from the first frame), 0.8s fade
-in, 1.2s fade out. It came out of the model hot: **0 dB of gain measured -13.9
-LUFS**, so no gain at all was applied. Monday's needed -0.7 and Saturday's
-+0.2 — sweep it every time, and do not assume the sign. The finished mp4
-measures -14.0 LUFS.
+30.02s raw, trimmed 0.0–18.0s (full texture from the first frame), 0.8s fade
+in, 1.2s fade out. It came out of the model hot: **-0.3 dB** of gain for -14.0
+LUFS. Monday's needed -0.7 and Saturday's +0.2 — sweep it every time, and do
+not assume the sign. **And re-sweep when the length changes**: the same 0 dB
+measured -13.9 at the first 15s trim and -13.7 at 18s, because the loudness is
+integrated over whatever you keep.
 
 ## Where it goes
 

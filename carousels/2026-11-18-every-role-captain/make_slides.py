@@ -86,11 +86,11 @@ FLAG = "Hospitality and VIPs: 8 staff, two leads, no captain."
 
 SLIDES = [
     dict(n=1, head="Every role has\na captain, so nobody\nhas to guess\nwho to ask.",
-         sub="40 staff on site. One planner. Nobody should have to find her."),
+         sub="40 staff on site. One planner. Nobody should have to find them."),
 
     dict(n=2, head="When staff aren’t sure,\nthey go looking for\nthe planner.",
          body="The one person who shouldn’t have to be found. Forty staff, "
-              "six roles, and every question lands on her — because nobody "
+              "six roles, and every question lands on them — because nobody "
               "was told who else to ask."),
 
     dict(n=3, head="Name one captain\nper role at the\nbriefing.",
@@ -351,6 +351,14 @@ def check():
     assert missing == ["Hospitality and VIPs"], missing
     assert "two leads, no captain" in FLAG
     assert "8 staff" in FLAG
+
+    # The planner is "them", not "her" — her instruction, Nov 17. The account
+    # says "event planner", and gendering the one person in the story narrows
+    # who reads it as being about themselves.
+    words = " ".join(str(v) for x in SLIDES for k, v in x.items()
+                     if isinstance(v, str)).lower().replace(",", " ").split()
+    for pronoun in ("her", "hers", "she", "she’s"):
+        assert pronoun not in words, f"the planner is still {pronoun!r} on a slide"
 
     # No employer, no client, no venue, anywhere.
     text = " ".join(str(v) for x in SLIDES for k, v in x.items()
