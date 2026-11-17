@@ -331,3 +331,34 @@ band under the grid is where the sticker goes.
 payment" straight through the Amount column and pushed the "Due this week"
 chip off the card; the generator now measures every column against the real
 strings and asserts the flag column ends inside the card.
+
+## Thu 19's recording folder (prepared 2026-11-17)
+
+The guide's Thu 19 CC line asked for this by Mon 16 and it had not been done —
+found on the Tue 17 audit, and it blocked her, because step 1 of her recording
+is "open the tracker link CC saves in Reels > November > November 19".
+
+Drive `November 19` is `1QbiCyJL5p2bj8EZZfQJ2LthAZxrOSLvW`, created under the
+`November ` month folder (trailing space, `1nENfiitkVU06xQsAuPKINBKTj3RliX--`).
+It holds:
+
+- **`Vendor Payment Tracker`**, `1f6Yg3f6Yhhn6crxLyB8I0sV3apQOpdEZTNmjG5ET-z8`
+  — a copy of the product master (`1q1RvBQZFvzctAt8Q0WB0Q7p3gW6U8JLQyw6DjX26FMo`),
+  not the master itself, so a clumsy click during the recording cannot touch
+  what buyers get. Her "make a copy" link is the file's edit URL with `/edit`
+  replaced by `/copy`.
+- **`Catering Agreement — Harbor Light Catering — May 15 2027.pdf`**,
+  `114txqystv5ArbI4xqZTJNbPDpg3jKhAx`, for step 4.
+
+**The eight practice emails are still under the Gmail label** "Reel — vendor
+payments", all eight, and their figures still match the brief: five deposits
+totalling $13,300 paid, Petal Press $680 (which was due Nov 14, so it reads as
+overdue on a Nov 17 recording, exactly as the brief wants), Fernwood Estate
+$9,000 due Nov 20.
+
+**The guide said 18 payments and there are 17.** Its own enumeration lists 17
+— Fernwood 3, Harbor Light 3, Bloom & Bough 2, Lumen 2, Sound Theory 2, Petal
+Press 1, Crumb & Co. 2, Tall Order 2 — and the filled tracker
+(`1P6zCWC18kY-SC2oocX7xzZcEMF0CXxEg3f6qDqdiOqo`) holds 17 rows. Corrected to 17
+in both places in the doc, the Mon 2 practice-run line and the Thu 19 block.
+Nothing on screen cites the count, so no build depended on it.
