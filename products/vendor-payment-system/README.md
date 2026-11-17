@@ -362,3 +362,40 @@ Press 1, Crumb & Co. 2, Tall Order 2 — and the filled tracker
 (`1P6zCWC18kY-SC2oocX7xzZcEMF0CXxEg3f6qDqdiOqo`) holds 17 rows. Corrected to 17
 in both places in the doc, the Mon 2 practice-run line and the Thu 19 block.
 Nothing on screen cites the count, so no build depended on it.
+
+## Testing whether ChatGPT can write into the tracker (her call, 2026-11-17)
+
+She asked mid-recording why step 3 is a copy-and-paste at all, and told me to
+test the alternative this week.
+
+**The capability is real and officially documented**, which the Nov 17 search
+settled: OpenAI's own help article
+[ChatGPT for Excel and Google Sheets](https://help.openai.com/en/articles/20001063-chatgpt-for-excel-and-google-sheets)
+describes a sidebar add-on that builds and updates spreadsheets directly,
+installed from the Workspace Marketplace and opened from the Extensions menu.
+The [Marketplace listing](https://workspace.google.com/marketplace/app/chatgpt/870214997678)
+lists "Edit and update existing spreadsheets" and says it works on Free, Go,
+Plus and Pro. That replaces the vendor-blog answer given earlier the same day,
+which could not be relied on.
+
+**What still has to be tested, and why it needs her**: the add-on installs into
+a Google account and runs against an open sheet, so it cannot be exercised from
+this session. The test is five minutes on her laptop, against a throwaway copy
+rather than the product master.
+
+Two things to decide from the result, not from the fact that it works:
+
+- **Does it land in the right columns?** The tracker's grey columns (Due date,
+  Days until due, Flag) must stay empty — they calculate themselves — and the
+  example row in A2 has to be replaced rather than pushed down, or the summary
+  carries the example's $17,150.
+- **The privacy line changes.** The Marketplace listing says workbook content
+  may be shared with Google and OpenAI so the add-on can read and update the
+  sheet. Buyers paste vendor contracts and payment amounts into this tracker,
+  so if this route goes into the guide it is named in the guide, not buried.
+
+**The paste is not only a limitation.** It is where a buyer checks the amounts
+against the invoice before they become the record — which the setup guide tells
+them to do, and which has nowhere to happen if the model writes straight in. If
+the add-on works, it belongs in the guide as an optional step with that warning
+attached, not as the default.
