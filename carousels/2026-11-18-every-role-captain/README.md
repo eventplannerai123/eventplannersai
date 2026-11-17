@@ -86,3 +86,22 @@ integrated over whatever you keep.
   standing check.
 - **TikTok, about 9am Wednesday**, the same six JPEGs as a photo carousel,
   from her, with the caption pasted into the message.
+
+## Approved, filed and scheduled
+
+She asked for the slides early on Tue 17 ("send me the slides now"), made two
+changes and approved the same morning.
+
+- Drive `November 18` (`1Vd-aqk-iMbGXTMkaXP3oGaa8kGvAjZos`) — the Reel and the
+  six slides as `-tiktok-1.jpg` … `-6.jpg`, uploaded from **commit-pinned** raw
+  URLs with each returned `size` checked against the local file. The three
+  files her changes touched (the mp4 and slides 1 and 2) were re-uploaded from
+  the new commit and the superseded copies trashed, so the folder holds one
+  version of each.
+- Instagram and Facebook at **6:30pm Wednesday**, one-shot task
+  `trig_01MogsjyiWVyX2JiBmCpQ7Hf` (23:30 UTC — Eastern is EST now). Its prompt
+  carries the standing Reel-not-photo check.
+- TikTok carousel handed over the moment she approved, per her Oct 30 rule,
+  with the caption pasted into the message. The last-10 duplicate check ran
+  first and came back clear: Nov 10 to Nov 17 holds no staffing, escalation or
+  briefing piece.
