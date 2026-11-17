@@ -46,25 +46,38 @@ VO = os.path.join(HERE, "build", "vo")
 WORK = os.path.join(HERE, "build", "beats")
 
 W, H, FPS = 1080, 1920, 30
-PANEL_W, PANEL_H, PANEL_Y = 1080, 950, 500
-CROP_W, CROP_H = 900, 792
+PANEL_W, PANEL_H, PANEL_Y = 1080, 980, 450
 
 # Gain into alimiter, swept against the finished export rather than computed.
 GAIN_DB = {"instagram": 13.4, "tiktok": 13.4}
 
 # (name, source, src_start, out_dur, speed, crop_x, crop_y, card)
-# The crop is 900x792 rather than a tighter box: at 760 wide the answer column
-# ran off the right of the panel mid-sentence. 1.2x is enough magnification on
-# a 1900-wide capture, and cy is chosen per source so the app's own input bar
-# ("Ask ChatGPT") falls below the crop, per the Oct 5 cleaning rule.
+# Every crop is 1080:980 in aspect so it fills the panel exactly, but its SIZE
+# is chosen per beat rather than shared.
+#
+# **The two tracker beats show the whole sheet, top to bottom** - her note of
+# Nov 17, "have it show the entire length of the spreadsheet". A 630-tall crop
+# from y=265 holds the header and all seventeen payment rows at once; the
+# earlier 792-tall box from y=140 was taller and showed FEWER rows, because it
+# started above the data and ran out before the last vendor.
+#
+# **It also stops above the tab bar**, at y=895 of a 944-tall capture, which is
+# the other half of her note: "dont show the reminders". The Reminder log tab
+# sits in that bar, and she opens the tab itself at 40.0s of the recording, so
+# the step-3 beat ends at 39.15s.
+#
+# cy is chosen per source so the app's own input bar ("Ask ChatGPT") falls
+# below the crop too, per the Oct 5 cleaning rule.
+#
+# (name, src, src_start, out_dur, speed, crop_w, crop_h, crop_x, crop_y, card)
 BEATS = [
-    ("b0-payoff",  "r4", 23.00,  2.84,  1.00,  820, 140, "hook"),
-    ("b1-copy",    "r3",  0.30,  2.64,  1.00,  260, 170, "step1"),
-    ("b2a-prompt", "r2",  6.00,  5.00,  8.00,  700, 150, "step2"),
-    ("b2b-table",  "r2", 47.00,  1.29,  1.00,  740, 150, "step2"),
-    ("b3-paste",   "r4", 31.00, 12.15,  1.00,  220, 140, "step3"),
-    ("b4a-upload", "r5", 40.00,  4.60,  6.96,  360, 200, "step4"),
-    ("b4b-mayday", "r5", 73.00,  4.05,  1.00,  360, 200, "step4"),
+    ("b0-payoff",  "r4", 23.00,  2.84, 1.00, 694, 630, 970, 265, "hook"),
+    ("b1-copy",    "r3",  0.30,  2.64, 1.00, 771, 700, 250, 170, "step1"),
+    ("b2a-prompt", "r2",  6.00,  5.00, 8.00, 771, 700, 690, 150, "step2"),
+    ("b2b-table",  "r2", 47.00,  1.29, 1.00, 771, 700, 730, 150, "step2"),
+    ("b3-paste",   "r4", 27.00, 12.15, 1.00, 694, 630, 240, 265, "step3"),
+    ("b4a-upload", "r5", 40.00,  4.60, 6.96, 771, 700, 350, 200, "step4"),
+    ("b4b-mayday", "r5", 73.00,  4.05, 1.00, 771, 700, 350, 200, "step4"),
 ]
 END_DUR = 3.43
 # TikTok only: the Thu 19 block ends that cut on the address in large text,
@@ -74,7 +87,7 @@ TOTAL = {"instagram": sum(b[3] for b in BEATS) + END_DUR,
          "tiktok": sum(b[3] for b in BEATS) + END_DUR + URL_DUR}
 
 
-def beat(name, src, start, dur, speed, cx, cy, card):
+def beat(name, src, start, dur, speed, cw, ch, cx, cy, card):
     """One beat: crop the region that matters, scale it into the panel, and
     composite the card over it so the hole in the card frames the footage."""
     inp = os.path.join(SRC, f"{src}.mp4")
@@ -83,7 +96,7 @@ def beat(name, src, start, dur, speed, cx, cy, card):
     out = os.path.join(WORK, f"{name}.mp4")
     take = dur * speed
     vf = (f"[0:v]trim=start={start}:duration={take},setpts=(PTS-STARTPTS)/{speed},"
-          f"crop={CROP_W}:{CROP_H}:{cx}:{cy},"
+          f"crop={cw}:{ch}:{cx}:{cy},"
           f"scale={PANEL_W}:{PANEL_H}:flags=lanczos,fps={FPS}[p];"
           f"color=c=0xCECBF6:s={W}x{H}:d={dur}:r={FPS}[bg];"
           f"[bg][p]overlay=0:{PANEL_Y}:shortest=1[v0];"

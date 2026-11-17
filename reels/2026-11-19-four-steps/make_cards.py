@@ -36,7 +36,7 @@ M = 72
 HANDLE = "@aiforeventplanners"
 
 # The panel the footage sits in. Everything else is placed around it.
-PANEL_Y, PANEL_H = 500, 950
+PANEL_Y, PANEL_H = 450, 980
 
 STEPS = [
     (1, "Make a copy"),
@@ -83,7 +83,7 @@ def step_card(n, line):
     d.rectangle([0, PANEL_Y, W, PANEL_Y + PANEL_H], fill=(0, 0, 0, 0))
 
     r = 64
-    cx, cy = M + r, PANEL_Y - 230
+    cx, cy = M + r, PANEL_Y - 155
     d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=PURPLE)
     nf = F(P700, 72)
     t = str(n)
@@ -107,7 +107,7 @@ def hook_card():
     d.rectangle([0, PANEL_Y, W, PANEL_Y + PANEL_H], fill=(0, 0, 0, 0))
     hf = F(P700, 82)
     lines = wrap(d, HOOK, hf, W - 2 * M)
-    y = PANEL_Y - 60 - len(lines) * 96
+    y = PANEL_Y - 44 - len(lines) * 96
     for ln in lines:
         d.text((M, y), ln, font=hf, fill=PURPLE)
         y += 96

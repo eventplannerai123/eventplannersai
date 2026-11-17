@@ -5,8 +5,8 @@ Facebook; TikTok about 9am, from her.
 
 | File | | |
 | --- | --- | --- |
-| `four-steps-instagram.mp4` | 1080x1920, **36.00s**, 8.43 MB | -14.0 LUFS |
-| `four-steps-tiktok.mp4` | 1080x1920, **38.00s**, 8.47 MB | -13.9 LUFS |
+| `four-steps-instagram.mp4` | 1080x1920, **36.00s**, 8.89 MB | -14.0 LUFS |
+| `four-steps-tiktok.mp4` | 1080x1920, **38.00s**, 8.93 MB | -13.9 LUFS |
 
 ## Built Tue 17, from four recordings she made that morning
 
@@ -31,20 +31,40 @@ She fixed it; the cut starts at 31.0s, after it resolves. The finished tracker
 reads $59,380 scheduled, $13,300 paid, Petal Press overdue and Fernwood's
 $9,000 due this week — checked against the live sheet, not against the frames.
 
+## The tracker shots show the whole sheet, and never the Reminder log
+
+Her note, Nov 17: *"when you show the tracker have it show the entire length of
+the spreadsheet and dont show the reminders"*. Both halves changed the build.
+
+**The whole sheet.** The payoff and step 3 now take a **630-tall crop from
+y=265**, which holds the header and all seventeen payment rows at once. The
+first version used a *taller* 792-tall box from y=140 and showed **fewer** rows,
+because it started above the data and ran out before the last vendor — more
+pixels, less sheet.
+
+**No Reminder log.** The crop stops at y=895 of a 944-tall capture, above the
+tab bar the Reminder log tab sits in, so the tab name is out of frame for the
+whole piece. She also opens that tab at 40.0s of the recording, so the step-3
+beat now ends at **39.15s** rather than running to 43.15s as it first did.
+
+Everything else was refitted to match: the panel is 1080x980 at y=450, and
+every crop is 1080:980 in aspect so it fills it exactly, with its size chosen
+per beat rather than shared.
+
 ## The source is landscape, which is new
 
 Every other piece this month came off her phone at 1080x1920. These are laptop
 captures at about 1910x1040, so a full-frame fit would letterbox the whole
 browser window into 1080x589 and nothing on it would be readable. Each beat
-instead takes a **900x792 crop of the part of the screen that matters** and
-scales it 1.2x into a 1080x950 panel at y=500, with the card carrying the step
-number above it and the handle below.
+instead takes a crop of the part of the screen that matters and scales it into a
+1080x980 panel at y=450, with the card carrying the step number above it and
+the handle below.
 
 Two things that came out of looking at the exported frames rather than the
 plan: at a 760-wide crop the answer column ran off the right of the panel
-mid-sentence, so the crop was widened; and `cy` is chosen per source so the
-**"Ask ChatGPT" composer bar falls below the crop**, per the Oct 5 cleaning
-rule.
+mid-sentence, so the ChatGPT crops were widened to 771; and `cy` is chosen per
+source so the **"Ask ChatGPT" composer bar falls below the crop**, per the
+Oct 5 cleaning rule.
 
 ## The cuts are timed to the voiceover's own pauses
 
