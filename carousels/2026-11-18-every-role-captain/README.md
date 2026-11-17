@@ -1,0 +1,77 @@
+# Wed 18 Nov — "Every role has a captain, so nobody has to guess who to ask."
+
+Content bank 28. Six slides, 1080x1920, brand look: lavender `#CECBF6`, deep
+purple `#3C3489`, Poppins, EP✦ wordmark, numbered badge, bottom bar.
+
+Built Tue 17 to her Wed 18 CC line, which asks for the slides and the
+planner-feelings image a day early so she can check them Tuesday evening and
+post the TikTok at 9am Wednesday — under the Sun 8 morning rule a cut has to
+exist and be approved the night before.
+
+## What it runs on
+
+`Staffing Plan — Fall Product Launch`, Drive `November 18`
+(sheet `11I47YKlbK4vt_FZWMgJyMYwwR636mhUarQhR3NNmaDo`), built Nov 16 by
+`demo-files/2026-11/make_week5.py`. 600 guests, 40 staff in six roles, one row
+per person; a second tab gives three escalation situations per role.
+
+**The defect is deliberate and asserted in the generator**: Hospitality and
+VIPs has two people marked "lead" and no captain, and the Escalations tab
+leaves its captain cell blank rather than writing "NOT NAMED". So the gap has
+to be derived from the Staff tab — which is the difference between AI spotting
+a problem and AI reading a word.
+
+## Slide 5 is derived here, and that is on the record
+
+Nothing in this session can drive ChatGPT. The guide's CC line says to run the
+prompt on the sheet and show what comes back, so the Registration card was
+composed here and **every value on it is read out of the file** — Dana Ruiz,
+channel 2, `(212) 555-0200`, and the three Registration situations verbatim
+from the Escalations tab. `check()` asserts the captain, the channel, the
+mobile, the staff counts summing to 40 and that exactly one role has no named
+captain. The slide does not claim an AI wrote it, and her YOU line is to check
+slide 5, which is the right check.
+
+**Slide 3 was rebuilt to stop it spoiling slide 5.** The first version listed
+each role with its captain's name and ended "VIPs — channel 7, and this is the
+one with no captain", which hands over the catch three slides early.
+`check()` now fails if any captain's name or the phrase "no captain" appears on
+slide 3.
+
+## The closing line, checked against the piece
+
+Her Nov 14 rule. This is a piece about a staff briefing, not about money, so
+there is no "Comment BUDGET" line on it — `check()` asserts the word BUDGET
+appears nowhere in the slides, the same assert the Tue 17 BEO redo carries
+after she pulled its CTA. Slide 6 closes on the takeaway and a save.
+
+## Export
+
+`render.py` — six slides at 2.50s, hard cuts, 15.00s, 1080x1920, 30fps, CRF 19,
+`+faststart`, AAC 192k/48kHz. No push and no crossfade: these are typeset
+cards, not a scrolling answer.
+
+**Its bed is its own.** Nylon-string guitar and a woodblock pulse over an
+upright bass, upbeat per her Nov 10 instruction. Wednesday carries two posts
+and they do not share a track — the 12:30pm planner-feelings Reel runs on
+Rhodes and glockenspiel from a separate generation, because on Nov 11 both of
+that day's Reels went out on one bed and she heard it at once.
+
+Instrumental proved twice: the spectrogram shows percussive transients with no
+sung-vowel formant movement, and Scribe returned an empty string. The
+generation's own settings report `Instrumental: False` either way, so they are
+not the check.
+
+30.02s raw, trimmed 0.0–15.0s (full texture from the first frame), 0.8s fade
+in, 1.2s fade out. It came out of the model hot: **0 dB of gain measured -13.9
+LUFS**, so no gain at all was applied. Monday's needed -0.7 and Saturday's
++0.2 — sweep it every time, and do not assume the sign. The finished mp4
+measures -14.0 LUFS.
+
+## Where it goes
+
+- **Instagram and Facebook, 6:30pm Wednesday**, as a slide Reel. After posting,
+  read the item back and confirm `media_product_type: REELS` — the Sun 15
+  standing check.
+- **TikTok, about 9am Wednesday**, the same six JPEGs as a photo carousel,
+  from her, with the caption pasted into the message.
