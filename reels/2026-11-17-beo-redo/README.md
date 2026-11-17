@@ -87,3 +87,33 @@ recut the same afternoon when she pulled the BUDGET line.
   commit and stops the post outright if the caption still contains the word
   BUDGET.
 - TikTok handed over after a clear last-10 check.
+
+## Live
+
+- Instagram: https://www.instagram.com/reel/Df3Hj_0FMkx/ — media id
+  `17897496864614226`, posted 2026-11-17T23:33:25Z (6:33pm Eastern),
+  `media_product_type: REELS`, `is_shared_to_feed: true`. The live caption
+  matches `build/caption.txt` character for character, and carries no BUDGET
+  line — checked against the file before the container was built, as the
+  posting task required.
+- Facebook: page post `1829001488175377`, the same cut and caption, after
+  reading the page feed first.
+- **No ManyChat brief was sent and none was due.** She pulled the CTA on Nov 14
+  and `trig_01P7VVJRq2MFYBVXxJdFGNq1` stays disabled.
+
+### The first container failed, and the file was not the cause
+
+`INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH` returned HTTP 400, "Container
+18104575139367131 processing failed with ERROR status", whose own message
+blames "the media file (format, size, aspect ratio)". It was not the file.
+Checked before doing anything: the raw URL served all 2,048,445 bytes, and
+`ffprobe` read 1080x1920, H.264 High, yuv420p, 30fps, AAC LC, 18.08s — the
+same spec as every cut that has posted this month.
+
+So a **fresh container** was built, as the single-use rule says, and this time
+its status was polled rather than published into blind: `IN_PROGRESS`, then
+`FINISHED` about a minute later, then published first time.
+
+**Build a new container and check its status; do not re-render the video.** An
+ERROR container is Instagram's transcoder failing, and the error text points at
+the file whether or not the file is at fault.
