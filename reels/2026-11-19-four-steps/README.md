@@ -1,0 +1,92 @@
+# Thu 19 Nov — the Vendor Payment System in four steps
+
+The product's second Reel, after the Thu 5 launch. 6:30pm Instagram and
+Facebook; TikTok about 9am, from her.
+
+| File | | |
+| --- | --- | --- |
+| `four-steps-instagram.mp4` | 1080x1920, **36.00s**, 8.43 MB | -14.0 LUFS |
+| `four-steps-tiktok.mp4` | 1080x1920, **38.00s**, 8.47 MB | -13.9 LUFS |
+
+## Built Tue 17, from four recordings she made that morning
+
+Her Thu 19 YOU line asked for the four steps screen-recorded by Tue 17, and the
+folder they start from was two days late on my side — `November 19` did not
+exist until Tue 17, which is in `products/vendor-payment-system/README.md`.
+
+| | Source | What it shows |
+| --- | --- | --- |
+| Step 1 | `Recording 2026-11-17 092938` (17.7s) | the `/copy` link, the Copy document dialog, Make a copy |
+| Step 2 | `092258` (70.2s) | Prompt 1 in ChatGPT with Gmail connected, and the table it returns |
+| Step 3 | `093505` (44.6s) | the table pasted into the Payments tab, the colours filling in |
+| Step 4 | `094509` (96.5s) | the catering agreement uploaded, Prompt 2, the clause table |
+
+Her **first take of step 1 was re-recorded**: a Chrome bar reading *"Claude"
+started debugging this browser* sat across the top for the whole 11.7 seconds.
+The second take is clean and opens on the dialog, which the first did not.
+
+**Step 3's first seconds show `#REF!`** in the Due date header, because the
+paste carried the AI table's own header row into row 2 and broke the formula.
+She fixed it; the cut starts at 31.0s, after it resolves. The finished tracker
+reads $59,380 scheduled, $13,300 paid, Petal Press overdue and Fernwood's
+$9,000 due this week — checked against the live sheet, not against the frames.
+
+## The source is landscape, which is new
+
+Every other piece this month came off her phone at 1080x1920. These are laptop
+captures at about 1910x1040, so a full-frame fit would letterbox the whole
+browser window into 1080x589 and nothing on it would be readable. Each beat
+instead takes a **900x792 crop of the part of the screen that matters** and
+scales it 1.2x into a 1080x950 panel at y=500, with the card carrying the step
+number above it and the handle below.
+
+Two things that came out of looking at the exported frames rather than the
+plan: at a 760-wide crop the answer column ran off the right of the panel
+mid-sentence, so the crop was widened; and `cy` is chosen per source so the
+**"Ask ChatGPT" composer bar falls below the crop**, per the Oct 5 cleaning
+rule.
+
+## The cuts are timed to the voiceover's own pauses
+
+Found with `silencedetect` rather than guessed. "One:" lands at 2.84s, "Two:"
+at 5.48, "Three:" at 11.77, "Four:" at 23.92 and "That's it" at 32.57 — so each
+step's footage starts exactly where Eryn names it, and the payoff holds for the
+first 2.84s before step 1 exists.
+
+Speed: step 2's wait is compressed 8.0x and step 4's analysis 7.0x, then both
+settle to 1.0x on what came back. Steps 1 and 3 run at normal speed, because
+the thing to watch is the click and the colours filling in.
+
+## The script was extended from 76 words to 100, deliberately
+
+The block asks for "about 70 words" **and** 35-45 seconds, and both cannot hold
+at Eryn's ~3 words a second: the guide's own 76 words measured **25.2s**, which
+would have left ten seconds of silence inside her own duration target. The
+duration is the instruction — the block says "Sahiba's target for this one, so
+the 20-second cap doesn't apply" — and the word count was a planning estimate.
+
+The 24 extra words narrate what the recording actually shows: eight emails and
+seventeen payments, the three summary figures, and May 3. That is exactly what
+the guide's own rule says to do with a short script. Instagram measures 35.6s,
+TikTok 36.0s.
+
+## The closing line, checked against the piece
+
+Her Nov 14 rule took "Comment BUDGET" **off** the Tue 10 insurance Reel and the
+Tue 17 BEO redo, because neither was about money. This one is the opposite
+case: the Reel exists to sell the Vendor Payment System, the CTA is the
+product's own, and the Thu 19 block specifies it. So `make_cards.py` asserts
+the word BUDGET **is** present — the inverse of the assert the BEO generator
+carries — and that the TikTok card says "on my Instagram", never "link in bio".
+
+TikTok also ends on a 2-second card with `aiforeventplanners.gumroad.com` in
+large type, as the block asks, because TikTok has no bio link to point at. The
+address is split at the dot so it sets at 94px instead of shrinking to fit one
+line.
+
+## ManyChat
+
+The BUDGET automation is attached by the browser Claude at 6:32pm, not from
+here, and the Mon 9 automation comes off first — the free plan holds four at
+once. After posting, send the brief with this Reel's permalink, because the
+free plan attaches to one specific post.

@@ -1,0 +1,8 @@
+file '/home/user/eventplannersai/reels/2026-11-19-four-steps/build/beats/b0-payoff.mp4'
+file '/home/user/eventplannersai/reels/2026-11-19-four-steps/build/beats/b1-copy.mp4'
+file '/home/user/eventplannersai/reels/2026-11-19-four-steps/build/beats/b2a-prompt.mp4'
+file '/home/user/eventplannersai/reels/2026-11-19-four-steps/build/beats/b2b-table.mp4'
+file '/home/user/eventplannersai/reels/2026-11-19-four-steps/build/beats/b3-paste.mp4'
+file '/home/user/eventplannersai/reels/2026-11-19-four-steps/build/beats/b4a-upload.mp4'
+file '/home/user/eventplannersai/reels/2026-11-19-four-steps/build/beats/b4b-mayday.mp4'
+file '/home/user/eventplannersai/reels/2026-11-19-four-steps/build/beats/end-instagram.mp4'
