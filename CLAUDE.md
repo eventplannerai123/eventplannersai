@@ -64,6 +64,35 @@ She asked for this twice, so it is a rule, not a preference.
   Report it as a gap, so she can decide, instead of reporting it as "nothing to
   do".
 
+- **ANYTHING SHE HAS TO APPROVE GOES TO HER IN THE MORNING, NEVER THE EVENING**
+  (her instruction, 2026-11-17: "always send me things in the morning to approve
+  not the evening moving forward"). It is a standing rule, and it overrides the
+  "show Sahiba <day> evening" wording that sits in most of the guide's CLAUDE
+  CODE lines — those were written before she said this, and the rule governs
+  rather than the line.
+
+  **In practice it means a day earlier, not a later hour.** A piece for
+  Wednesday is sent Tuesday morning, not Tuesday evening, because the Sun 8
+  morning-TikTok rule still stands: the TikTok goes up about 9am, before that
+  day's Instagram post, so the cut has to be approved before that morning. Send
+  it the previous morning and she has the whole day; send it the previous
+  evening and the approval and the 9am slot are hours apart.
+
+  **The reason, in her words: "i normally dont work in the evenings."** So an
+  evening hand-over is not a slightly worse time, it is a message she reads the
+  next day — which is why Fri 23 Oct's cut lapsed. Nothing that needs her
+  should be sent after the working day, and nothing should be planned on the
+  assumption she will look at it that night.
+
+  It also follows what already works. On 2026-11-17 she asked for Wednesday's
+  slides at 8am rather than waiting for the evening hand-over the guide
+  specified, approved them within the hour, and scheduled both TikToks before
+  9am.
+
+  **What this does NOT change: the 6:30pm post itself.** That slot is automated
+  through a one-shot task and needs nothing from her at the time — only the
+  approval, which now happens the previous morning.
+
 - **End with a clear action list** — hers separated from this session's, with
   dates, **when there is genuinely more than one thing outstanding and she has
   asked for the picture.** Otherwise the last block is one line.
