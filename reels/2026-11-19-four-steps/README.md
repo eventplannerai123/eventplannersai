@@ -133,3 +133,21 @@ The BUDGET automation is attached by the browser Claude at 6:32pm, not from
 here, and the Mon 9 automation comes off first — the free plan holds four at
 once. After posting, send the brief with this Reel's permalink, because the
 free plan attaches to one specific post.
+
+## Approved, filed and scheduled
+
+She approved it on Tue 17, two days ahead of the slot, after two rounds of
+changes — the tracker framing and the step-3 mismatch, both above.
+
+- Drive `November 19` (`1QbiCyJL5p2bj8EZZfQJ2LthAZxrOSLvW`) — both cuts, from
+  **commit-pinned** raw URLs with each returned `size` checked against the local
+  file. The superseded uploads were trashed, so the folder holds one version of
+  each.
+- Instagram and Facebook at **6:30pm Thursday**, one-shot task
+  `trig_011TtmmvrC6ncALYbkMtjYST` (23:30 UTC). Its prompt carries the standing
+  Reel-not-photo check, the ManyChat brief with this Reel's permalink, and the
+  reminder to read the comments afterwards for anyone who commented BUDGET
+  before the automation went live.
+- TikTok handed over the moment she approved, with the caption pasted into the
+  message. The last-10 duplicate check ran first and came back clear.
+
