@@ -19,7 +19,7 @@ beat's frames, not by reusing one rectangle.
 "Three:" at 11.77, "Four:" at 23.92 and "That's it" at 32.57, so each step's
 footage starts exactly where Eryn names it.
 
-**The script was extended from the guide's 76 words to 100.** The block asks
+**The script was extended from the guide's 76 words to 96.** The block asks
 for "about 70 words" AND 35-45 seconds, which cannot both hold at Eryn's ~3
 words a second: 76 words measured 25.2s, which would have left ten seconds of
 silence inside her own duration target. The duration is the instruction ("so
@@ -49,7 +49,7 @@ W, H, FPS = 1080, 1920, 30
 PANEL_W, PANEL_H, PANEL_Y = 1080, 980, 450
 
 # Gain into alimiter, swept against the finished export rather than computed.
-GAIN_DB = {"instagram": 13.4, "tiktok": 13.4}
+GAIN_DB = {"instagram": 13.2, "tiktok": 13.1}
 
 # (name, source, src_start, out_dur, speed, crop_x, crop_y, card)
 # Every crop is 1080:980 in aspect so it fills the panel exactly, but its SIZE
@@ -62,29 +62,42 @@ GAIN_DB = {"instagram": 13.4, "tiktok": 13.4}
 # started above the data and ran out before the last vendor.
 #
 # **It also stops above the tab bar**, at y=895 of a 944-tall capture, which is
-# the other half of her note: "dont show the reminders". The Reminder log tab
+# the other half of that note: "dont show the reminders". The Reminder log tab
 # sits in that bar, and she opens the tab itself at 40.0s of the recording, so
-# the step-3 beat ends at 39.15s.
+# no tracker beat runs past 37.41s.
+#
+# **STEP 3 IS TWO BEATS, IN THE ORDER THE VOICEOVER SAYS THEM** - her note,
+# "step 3 audio should match what is being shown on the sheet". The line is
+# "paste what it gives you into the tracker, and every deposit and balance gets
+# its own due date and a colour: paid, due this week, overdue", so b3a shows the
+# pasted rows while she describes the paste and b3b cuts to the Flag column,
+# with its green, amber and red cells, exactly on the three words that name
+# them. The recording happens to go colours-first, so the two halves are taken
+# from different parts of it rather than played in capture order.
 #
 # cy is chosen per source so the app's own input bar ("Ask ChatGPT") falls
 # below the crop too, per the Oct 5 cleaning rule.
 #
 # (name, src, src_start, out_dur, speed, crop_w, crop_h, crop_x, crop_y, card)
 BEATS = [
-    ("b0-payoff",  "r4", 23.00,  2.84, 1.00, 694, 630, 970, 265, "hook"),
-    ("b1-copy",    "r3",  0.30,  2.64, 1.00, 771, 700, 250, 170, "step1"),
-    ("b2a-prompt", "r2",  6.00,  5.00, 8.00, 771, 700, 690, 150, "step2"),
-    ("b2b-table",  "r2", 47.00,  1.29, 1.00, 771, 700, 730, 150, "step2"),
-    ("b3-paste",   "r4", 27.00, 12.15, 1.00, 694, 630, 240, 265, "step3"),
-    ("b4a-upload", "r5", 40.00,  4.60, 6.96, 771, 700, 350, 200, "step4"),
-    ("b4b-mayday", "r5", 73.00,  4.05, 1.00, 771, 700, 350, 200, "step4"),
+    ("b0-payoff",  "r4", 26.60, 2.77, 1.00, 694, 630, 970, 265, "hook"),
+    ("b1-copy",    "r3",  0.30, 2.56, 1.00, 771, 700, 250, 170, "step1"),
+    ("b2a-prompt", "r2",  6.00, 5.00, 8.00, 771, 700, 690, 150, "step2"),
+    ("b2b-table",  "r2", 47.00, 1.25, 1.00, 771, 700, 730, 150, "step2"),
+    ("b3a-paste",  "r4", 31.00, 6.41, 1.00, 694, 630, 240, 265, "step3"),
+    ("b3b-colour", "r4", 24.00, 2.53, 1.00, 694, 630, 970, 265, "step3"),
+    ("b4a-upload", "r5", 40.00, 4.60, 6.96, 771, 700, 350, 200, "step4"),
+    ("b4b-mayday", "r5", 73.00, 4.51, 1.00, 771, 700, 350, 200, "step4"),
 ]
-END_DUR = 3.43
+# The CTA card holds from "That's it" to the end of each voiceover; TikTok's
+# runs 0.55s longer, so its card does too rather than letting the last syllable
+# land on the address card.
+END_DUR = {"instagram": 3.14, "tiktok": 3.70}
 # TikTok only: the Thu 19 block ends that cut on the address in large text,
 # because TikTok has no bio link to point at. Two seconds, after the CTA card.
 URL_DUR = 2.00
-TOTAL = {"instagram": sum(b[3] for b in BEATS) + END_DUR,
-         "tiktok": sum(b[3] for b in BEATS) + END_DUR + URL_DUR}
+TOTAL = {"instagram": sum(b[3] for b in BEATS) + END_DUR["instagram"],
+         "tiktok": sum(b[3] for b in BEATS) + END_DUR["tiktok"] + URL_DUR}
 
 
 def beat(name, src, start, dur, speed, cw, ch, cx, cy, card):
@@ -108,7 +121,7 @@ def beat(name, src, start, dur, speed, cw, ch, cx, cy, card):
     return out
 
 
-def end(card, dur=END_DUR):
+def end(card, dur):
     out = os.path.join(WORK, f"{card}.mp4")
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-loop", "1",
                     "-t", f"{dur:.3f}", "-i", os.path.join(CARDS, f"{card}.png"),
@@ -121,7 +134,7 @@ def end(card, dur=END_DUR):
 def render(platform):
     os.makedirs(WORK, exist_ok=True)
     parts = [beat(*b) for b in BEATS]
-    parts.append(end(f"end-{platform}"))
+    parts.append(end(f"end-{platform}", END_DUR[platform]))
     if platform == "tiktok":
         parts.append(end("url-tiktok", URL_DUR))
 

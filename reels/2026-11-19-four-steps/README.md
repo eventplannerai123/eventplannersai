@@ -5,8 +5,8 @@ Facebook; TikTok about 9am, from her.
 
 | File | | |
 | --- | --- | --- |
-| `four-steps-instagram.mp4` | 1080x1920, **36.00s**, 8.89 MB | -14.0 LUFS |
-| `four-steps-tiktok.mp4` | 1080x1920, **38.00s**, 8.93 MB | -13.9 LUFS |
+| `four-steps-instagram.mp4` | 1080x1920, **32.80s**, 8.55 MB | -14.0 LUFS |
+| `four-steps-tiktok.mp4` | 1080x1920, **35.33s**, 8.60 MB | -13.9 LUFS |
 
 ## Built Tue 17, from four recordings she made that morning
 
@@ -66,6 +66,29 @@ mid-sentence, so the ChatGPT crops were widened to 771; and `cy` is chosen per
 source so the **"Ask ChatGPT" composer bar falls below the crop**, per the
 Oct 5 cleaning rule.
 
+## Step 3 says what step 3 shows
+
+Her note, Nov 17: *"step 3 audio should match what is being shown on the sheet
+— or the other way around"*. It did not. The line named three summary figures
+($59,380 scheduled, $13,300 paid, one overdue) that live on the **Summary tab**,
+and the recording never opens that tab — it is the Payments tab from start to
+finish. Checked frame by frame across all 45 seconds before changing anything,
+rather than assuming.
+
+**Both ends moved.** The voiceover now says *"every deposit and balance gets
+its own due date and a colour: paid, due this week, overdue"* — three words that
+are literally in the Flag column — and step 3 became **two beats in the order
+the line says them**: the pasted rows while she describes the paste, then a cut
+to the Flag column, with its green, amber and red cells, exactly on the three
+words that name them.
+
+The recording happens to run colours-first (they are in frame 23-30s, and the
+sheet scrolls left afterwards), so the two halves are taken from different parts
+of it rather than played in capture order. The payoff takes a third window,
+26.60-29.37s, so no second of footage appears twice.
+
+Both voiceovers were regenerated. 96 words, 32.37s and 32.91s.
+
 ## The cuts are timed to the voiceover's own pauses
 
 Found with `silencedetect` rather than guessed. "One:" lands at 2.84s, "Two:"
@@ -85,10 +108,10 @@ would have left ten seconds of silence inside her own duration target. The
 duration is the instruction — the block says "Sahiba's target for this one, so
 the 20-second cap doesn't apply" — and the word count was a planning estimate.
 
-The 24 extra words narrate what the recording actually shows: eight emails and
-seventeen payments, the three summary figures, and May 3. That is exactly what
-the guide's own rule says to do with a short script. Instagram measures 35.6s,
-TikTok 36.0s.
+The extra words narrate what the recording actually shows: eight emails and
+seventeen payments, the three flag colours, and May 3. That is exactly what the
+guide's own rule says to do with a short script. Instagram measures 32.37s,
+TikTok 32.91s.
 
 ## The closing line, checked against the piece
 
