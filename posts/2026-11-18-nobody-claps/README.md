@@ -65,3 +65,16 @@ The finished mp4 measures -14.1 LUFS.
 - TikTok photo post is hers, around 12:30pm, from the JPEG and caption handed
   over on Tue 17.
 
+
+## Published
+
+- **Instagram Reel, Wed 18 Nov 12:30pm Eastern** —
+  [instagram.com/reel/Df5DAwKETjb](https://www.instagram.com/reel/Df5DAwKETjb/),
+  media id `18118179839625720`, read back as `media_product_type: REELS` and
+  `is_shared_to_feed: true`. That read-back is the point of the check: on Mon 9
+  this slot went up as a photo and reached 15, against 146 and 130 for the two
+  that went up as Reels.
+- **Facebook**, post id `2227416111154702`. The Page feed was read first and
+  held nothing from Nov 18, so there was no cross-post to duplicate.
+- Live caption diffed against `build/caption.txt` character for character —
+  identical, hashtags included.
