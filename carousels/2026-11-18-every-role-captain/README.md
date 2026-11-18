@@ -105,3 +105,21 @@ changes and approved the same morning.
   with the caption pasted into the message. The last-10 duplicate check ran
   first and came back clear: Nov 10 to Nov 17 holds no staffing, escalation or
   briefing piece.
+
+## Published
+
+- **Instagram Reel, Wed 18 Nov 6:30pm Eastern** —
+  [instagram.com/reel/Df5sQGQjUmF](https://www.instagram.com/reel/Df5sQGQjUmF/),
+  media id `18117134804231948`, read back as `media_product_type: REELS` and
+  `is_shared_to_feed: true`. The check matters most on a slide Reel, which is
+  the shape that can land as an image.
+- **Facebook**, post id `1479708740758559`. The Page feed was read first and
+  held only the day's 12:30pm planner-feelings piece, so there was nothing to
+  duplicate.
+- The container sat `IN_PROGRESS` for about three and a half minutes before it
+  read `FINISHED` — longer than any other cut this month, and the 18-second
+  slide Reel is the largest file of the week. It published first time off the
+  same container; nothing was rebuilt.
+- Live caption identical to `build/caption.txt`, hashtags included. No BUDGET
+  line and no ManyChat brief: this is a staffing piece, and `make_slides.py`
+  asserts the word appears on no slide.
