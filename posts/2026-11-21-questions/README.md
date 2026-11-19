@@ -23,3 +23,16 @@ one."
 - The Reel version — the image held 7-10 seconds under its own bed, for
   Instagram and Facebook — with its own generation, not Friday's.
 - Upload to Drive `November 21` (`1R2tXAIuuZUmAvWxb0Vj7be_W7J8_FroB`).
+
+## Built Thu 19
+
+- The Reel version is rendered: 1080x1920, **8.00s**, 30fps, CRF 19,
+  AAC 192k/48kHz, **-14.04 LUFS**, over its own bed (nylon guitar and electric
+  piano, a separate generation from Friday's marimba; instrumental by
+  spectrogram and by Scribe returning an empty string; +3.7 dB into the
+  limiter).
+- Filed to Drive `November 21` (`1R2tXAIuuZUmAvWxb0Vj7be_W7J8_FroB`), image and
+  Reel both, from commit-pinned raw URLs with the returned sizes checked.
+- **If her questions arrive, both are rebuilt**: change `QUESTIONS`, flip
+  `FROM_HER`, run `make_post.py` then `render.py`, re-upload, and rewrite the
+  caption's second paragraph around her list.
