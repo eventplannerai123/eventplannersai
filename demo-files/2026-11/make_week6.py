@@ -292,7 +292,14 @@ CONTACTS = [
     ("Catering office", "Marchetti Hospitality", "(212) 555-0190"),
 ]
 
-WALK_GAP = 30        # minutes between the captain's walks
+# The captain walks every 15 minutes in the busiest hour. What decides a flag
+# is not that gap but the shorter gap BETWEEN GUEST WAVES: 30 minutes, doors
+# to keynote. A refresh longer than that means the station is still being
+# rebuilt when the next 100 people arrive, and only two are — the raw bar at
+# 40 minutes and the crudités display at 35. Against the 15-minute walk gap
+# four stations would flag, which is not what the piece claims.
+WAVE_GAP = 30
+WALK_EVERY = 15
 TOTAL_GUESTS = 300
 
 
@@ -392,10 +399,14 @@ def check_beo():
     assert [s[0] for s in STATIONS if _mins(s[1]) > _mins("6:45pm")] \
         == ["Dessert station"]
 
-    flags = [s[0] for s in STATIONS if s[3] > WALK_GAP]
+    flags = [s[0] for s in STATIONS if s[3] > WAVE_GAP]
     assert flags == ["Raw bar", "Crudités and cheese display"], flags
     assert len(flags) == 2, flags
-    assert all(s[3] <= WALK_GAP for s in STATIONS if s[0] not in flags)
+    assert all(s[3] <= WAVE_GAP for s in STATIONS if s[0] not in flags)
+    # And the walk gap is NOT the test: against 15 minutes, four would flag.
+    assert len([s for s in STATIONS if s[3] > WALK_EVERY]) == 4, \
+        "the piece claims two flags, so the test is the wave gap, not the walk"
+    assert gaps[0] == WAVE_GAP, (gaps, WAVE_GAP)
 
     # Nothing in the file names a busiest hour or counts the stations for you.
     text = " ".join(str(x) for x in (WAVES, STATIONS, RUN_OF_SHOW, CONTACTS))
@@ -406,4 +417,5 @@ def check_beo():
           f"{TOTAL_GUESTS} in three waves {gaps[0]} and {gaps[1]} minutes "
           f"apart; {len(STATIONS)} stations and bars; six of seven open "
           f"6:30-7:30pm; {len(flags)} refreshes longer than the "
-          f"{WALK_GAP}-minute walk ({', '.join(flags)})")
+          f"{WAVE_GAP}-minute gap between waves ({', '.join(flags)}), "
+          f"walks every {WALK_EVERY} minutes")
