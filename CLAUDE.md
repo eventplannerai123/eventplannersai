@@ -141,6 +141,35 @@ Friday's cut was built and shown and then left to lapse when she did not reply;
 Saturday's post was never built at all. A 7am start only helps if the day's
 whole block gets worked, so the task reads the block rather than the thread.
 
+## The posting tasks run on Sonnet from 2026-11-19
+
+She asked whether she could drop to Claude Pro, and her usage screen that
+afternoon read **20% of the weekly limit with one day to go**. Pro is a fifth
+of Max, so that week would have been roughly a whole Pro week — at the ceiling,
+with the 6:30pm post as the thing that breaks first. The decision: stay put,
+cut the spend, and look at the same screen next Thursday.
+
+Her instruction, one word: **"Switch"**. So every one-shot posting task now
+carries `model: claude-sonnet-5-5` — Thu 19, Fri 20 (both slots), Sat 21 and
+Sun 22. The work they do is mechanical: check what is live, build a container,
+publish, read it back, commit, push.
+
+**The 6:47am daily task stays on Opus.** It reads the day's block, decides what
+is missing, writes captions and scripts, and audits her open lines — the
+judgement, which is the half worth paying for.
+
+**IT MAY NOT TAKE EFFECT, AND THAT HAS TO BE CHECKED RATHER THAN ASSUMED.**
+Every one of these tasks fires into THIS session rather than starting a fresh
+one, and `update_trigger` says a task bound to a persistent session keeps that
+session's model until the binding clears. The stored value is there either way.
+**The test is the next fire**: afterwards, call `get_session` and read
+`external_metadata.last_served_model`. If it still says Opus, the lever is not
+the task's model at all.
+
+A fresh-session task is not the workaround: it gets no connectors, so it cannot
+reach Instagram or Facebook at all. That is the Oct 25 finding and it still
+holds.
+
 ## The travel week, as she revised it twice on 2026-10-25
 
 **She is back Wed 28**, not Thu 29 — her second message supersedes "I can start
