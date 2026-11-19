@@ -151,3 +151,17 @@ changes — the tracker framing and the step-3 mismatch, both above.
 - TikTok handed over the moment she approved, with the caption pasted into the
   message. The last-10 duplicate check ran first and came back clear.
 
+
+## Published
+
+- **Instagram Reel, Thu 19 Nov 6:30pm Eastern** —
+  [instagram.com/reel/Df8RDJPDC4_](https://www.instagram.com/reel/Df8RDJPDC4_/),
+  media id `18505193725103116`, read back as `media_product_type: REELS` and
+  `is_shared_to_feed: true`.
+- **Facebook**, post id `1162750396524454`, after reading the Page feed and
+  finding nothing from tonight.
+- Live caption identical to `build/caption-instagram.txt`, BUDGET line and
+  hashtags included.
+- **The container sat `IN_PROGRESS` for about six and a half minutes** — the
+  longest yet, and this is the largest file of the month at 8.55 MB and 32.80s.
+  It published first time off that same container; nothing was rebuilt.
