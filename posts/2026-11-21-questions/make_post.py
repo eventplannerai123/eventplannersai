@@ -34,20 +34,23 @@ F = lambda p, s: ImageFont.truetype(p, s)
 M = 84
 HANDLE = "@aiforeventplanners"
 
-TITLE = "Questions I get\nasked at every\nevent."
+TITLE = "Questions I get\nasked at every\ncorporate event."
 
 # Hers as they come in, Nov 19, one at a time; the rest are the content
 # bank's until she replaces them. The only edit to her words is the question
 # mark, so the list sets consistently.
 QUESTIONS = [
-    "Where’s the bathroom?",            # content bank
-    "What’s the Wi-Fi password?",        # content bank
-    "Can you change the temperature?",  # hers, Nov 19
+    "Where’s the bathroom?",                 # content bank
+    "What’s the Wi-Fi password?",             # content bank
+    "Can you change the temperature?",       # hers, Nov 19
+    "Is the coffee still out?",              # hers, Nov 19
+    "Is there a quiet place to take a call?",  # hers, Nov 19
+    "Can you charge my phone for me?",       # hers, Nov 19
 ]
 LAST_INTRO = "And the one nobody ever asks the planner:"
 LAST = "Did you eat?"
 
-FROM_HER = False   # flip when QUESTIONS is her list
+FROM_HER = True    # 3 to 6 are hers; 1 and 2 are the bank's, which she kept
 
 
 def build():
@@ -55,8 +58,18 @@ def build():
     d = ImageDraw.Draw(img)
 
     tf = F(P600, 88)
-    qf = F(P400, 50)
-    nf = F(P600, 50)
+    # The questions set as large as the SAFE AREA allows, not as large as the
+    # frame allows: nothing important in the right 15%, where TikTok's buttons
+    # sit. Her "Is there a quiet place to take a call?" runs 886px at 50pt and
+    # would have ended 120px inside that strip.
+    maxw = int(W * 0.85) - (M + 70)
+    for qpx in range(50, 29, -1):
+        qf = F(P400, qpx)
+        if max(d.textlength(q, font=qf) for q in QUESTIONS) <= maxw:
+            break
+    else:
+        raise SystemExit("the questions do not fit the safe area")
+    nf = F(P600, qpx)
     intro_f = F(P400, 38)
     last_f = F(P600, 76)
 
@@ -64,8 +77,9 @@ def build():
     tstep = int(88 * 1.17)
     # Measured before anything is drawn, so three bank questions and eight of
     # hers both land centred rather than stacked at the top.
+    qstep = max(84, int(qpx * 2.16))
     total = (len(title_lines) * tstep + 90
-             + len(QUESTIONS) * 108
+             + len(QUESTIONS) * qstep
              + 60 + 54 + 66 + int(76 * 1.2))
     top, bottom = 150, H - 170
     y = top + ((bottom - top) - total) // 2
@@ -78,7 +92,7 @@ def build():
     for i, q in enumerate(QUESTIONS, 1):
         d.text((M, y), f"{i}.", font=nf, fill=WHITE)
         d.text((M + 70, y), q, font=qf, fill=LAVENDER)
-        y += 108
+        y += qstep
 
     y += 60
     d.line([(M, y), (W - M, y)], fill=LAVENDER, width=2)
@@ -98,11 +112,13 @@ def build():
 def check():
     assert 3 <= len(QUESTIONS) <= 7, "three from the bank, up to seven of hers"
     assert LAST == "Did you eat?", "the piece ends on the one nobody asks"
+    # Her change, Nov 19: "i would change it to every corporate event".
+    assert "corporate event" in TITLE, "the title says corporate event"
     joined = " ".join(QUESTIONS + [TITLE, LAST_INTRO, LAST]).lower()
     for banned in ("prompt", "chatgpt", "claude", "comment ", "link in bio"):
         assert banned not in joined, f"no demo and no CTA: found {banned!r}"
     print(f"checks pass: {len(QUESTIONS)} questions"
-          f" ({'hers' if FROM_HER else 'the content bank default'})"
+          f" ({'four of them hers' if FROM_HER else 'the content bank default'})"
           ", ending on the one nobody asks")
 
 
@@ -112,6 +128,15 @@ def main():
     img, end_y = build()
     assert img.size == (W, H)
     assert end_y < H - 180, "the block runs into the handle"
+    # The safe-area check, asserted on the finished image rather than trusted.
+    img2 = Image.new("RGB", (W, H), PURPLE)
+    dd = ImageDraw.Draw(img2)
+    for qpx in range(50, 29, -1):
+        f = F(P400, qpx)
+        if max(dd.textlength(q, font=f) for q in QUESTIONS) <= int(W * 0.85) - (M + 70):
+            break
+    assert M + 70 + max(dd.textlength(q, font=F(P400, qpx)) for q in QUESTIONS) \
+        <= int(W * 0.85), "a question runs into the right 15%"
     p = os.path.join(OUT, "questions.jpg")
     img.save(p, quality=95)
     print(f"text ends y={end_y} -> {os.path.basename(p)}")
