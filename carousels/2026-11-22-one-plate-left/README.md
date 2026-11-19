@@ -1,4 +1,11 @@
-# Sun 22 Nov, 6:30pm — "One plate left and a line. How embarrassing."
+# Sun 22 Nov, 6:30pm — "Only a few plates left and a line. How embarrassing."
+
+**The headline changed when she saw the photo** (Nov 19: "the first slide has
+more than one plate. say only a few plates left"). The guide had written "One
+plate left" months before anyone had a picture, and the picture has a stack of
+clean plates in it. The overlay, the caption's first line and all three
+mentions in the guide now say "Only a few plates left"; `check()` asserts the
+old wording cannot come back.
 
 Six slides, content bank 38, third in the conference catering series after
 runny eggs and dry sandwiches. One set at 1080x1920: a slide Reel for

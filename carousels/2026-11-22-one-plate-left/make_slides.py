@@ -100,7 +100,10 @@ FLAG_SUB = "Longer than the 30 minutes between waves, so call those two in befor
 
 SLIDES = [
     dict(n=1, photo=True,
-         head="One plate left and a line.\nHow embarrassing.",
+         # "say only a few plates left" — her note, Nov 19, looking at the
+         # photo: there is a stack of clean plates in it, so "one plate left"
+         # described a picture nobody can see.
+         head="Only a few plates\nleft and a line.\nHow embarrassing.",
          sub="300 guests, seven stations and bars, nobody watching them."),
 
     dict(n=2, head="Every event needs\na food and beverage\ncaptain.",
@@ -389,6 +392,9 @@ def check():
     assert len(SLIDES) == 6, len(SLIDES)
     assert [x["n"] for x in SLIDES] == [1, 2, 3, 4, 5, 6]
     assert SLIDES[3]["quote"] == PROMPT
+    # The overlay has to match the photo: it shows a stack of plates.
+    assert "a few plates left" in SLIDES[0]["head"].replace("\n", " ")
+    assert "One plate left" not in SLIDES[0]["head"]
     assert os.path.exists(PHOTO), f"her photo is not at {PHOTO}"
     # The crop has to take the right-hand strip off, or the figure is back.
     assert CROP[2] <= 0.85, "the crop must remove the right-hand strip"
