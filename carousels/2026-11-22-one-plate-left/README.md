@@ -75,6 +75,22 @@ four against the walk gap, so neither can be quietly swapped for the other.
 - The planner is "them", never "her" — her Nov 17 instruction, asserted.
 - Thorne Hall and Marchetti Hospitality are invented and appear on no slide.
 
+## The Reel
+
+Six slides at **3.00s** = **18.00s**, 1080x1920, 30fps, CRF 19, AAC 192k/48kHz,
+**-14.05 LUFS**. The Sun 22 line says "about 2.5 seconds a slide"; 3.00 is what
+she asked for on Nov 17 ("slow down the reel a little") and approved on the
+Wed 18 set. Slide 5 is why it matters — seven sheet rows, the busiest hour, a
+walk schedule and the flag is more to read in one beat than anything else here.
+
+Hard cuts, no push, and slide 1 does not move either: a slow zoom on a still
+photograph is the oldest tell there is.
+
+The bed is its own generation — vibraphone over upright piano and plucked
+double bass — instrumental by spectrogram and by Scribe returning an empty
+string, trimmed 0-18s, **-0.55 dB** into the limiter. It came out of the model
+hot, where Friday's needed +4.05, which is why the gain is swept every time.
+
 ## Posting
 
 - **Instagram and Facebook at 6:30pm Sunday**, as a slide Reel, after she
