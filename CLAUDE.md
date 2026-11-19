@@ -158,13 +158,25 @@ publish, read it back, commit, push.
 is missing, writes captions and scripts, and audits her open lines — the
 judgement, which is the half worth paying for.
 
-**IT MAY NOT TAKE EFFECT, AND THAT HAS TO BE CHECKED RATHER THAN ASSUMED.**
-Every one of these tasks fires into THIS session rather than starting a fresh
-one, and `update_trigger` says a task bound to a persistent session keeps that
-session's model until the binding clears. The stored value is there either way.
-**The test is the next fire**: afterwards, call `get_session` and read
-`external_metadata.last_served_model`. If it still says Opus, the lever is not
-the task's model at all.
+**IT DID NOT TAKE, AND THE TEST IS DONE.** The Thu 19 6:30pm fire ran and
+`get_session` reported `last_served_model: claude-opus-5`. That is exactly what
+`update_trigger` warns: a task bound to a persistent session keeps that
+session's model. **The stored `claude-sonnet-5-5` on all five posting tasks is
+inert** — it is left in place because it costs nothing and would bite if the
+binding ever cleared, but nothing about tonight's cost changed.
+
+So the model of a task that fires into this session is not a lever at all. The
+two that remain, neither tried yet:
+
+- **Switch this session's own model.** One setting, and everything follows it —
+  including the 6:47am building, which is the half worth paying for. Hers to
+  choose, not something to do quietly.
+- **Give the posting slots their own Sonnet session** and point the tasks at it
+  with `persistent_session_id`. The open question is connectors: a
+  *fresh-session* task gets none (Oct 25), but a session created deliberately
+  with `create_session` in this environment may keep them. **Test that on
+  something that is not a live post before a 6:30pm slot depends on it** — the
+  posting path is the one thing that must not be experimented on.
 
 A fresh-session task is not the workaround: it gets no connectors, so it cannot
 reach Instagram or Facebook at all. That is the Oct 25 finding and it still
