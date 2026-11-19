@@ -48,3 +48,30 @@ thing she will recognise.
 **Sunday opens on a text slide instead.** The other five slides are unchanged
 and the BEO file they run on is already built and filed. If a photo of a
 picked-over station turns up later it can replace slide 1 before Saturday.
+
+## Resolved, Thu 19: she sent a different photo, and it is better
+
+Not the one the guide described — that one does not exist — but a picked-over
+breakfast buffet: two chafing trays scraped down to smears of egg, a bacon
+tray with three rashers left, tongs lying in it, and a stack of clean plates
+waiting beside them. It is the same point the brief wanted and it is hers.
+
+**Checked the whole frame before accepting it**, per the Oct 19 branding rule:
+
+- No faces. One person stands at the right edge, cropped to a torso in a grey
+  shirt — no face, no lanyard, nothing identifying.
+- No logos, no room signage, no readable text anywhere; the background is a
+  sneeze guard, a fruit bowl and a dark wall.
+- Nothing names a venue or a client.
+
+So the only edit it needs is a light blur on that figure at the right edge,
+which costs nothing and keeps a stranger out of a public post.
+
+Converted to JPEG and filed as `event-one-plate-left.jpg` in Drive
+`November 22` (`1eWtasWEg4pZJ4wQctvxW9R6gcvDDZWXc`), id
+`1wYWoCsIiOQPNXzPRva1lVq0-rCAMGMky`, per her Oct 25 rule that every photo of
+hers is converted and the JPEG goes back to the day folder.
+
+**It is landscape, 1448x1086.** A 9:16 crop would throw away most of the
+width, so slide 1 sets it as a full-width panel with the overlay above it,
+the same shape the four-steps Reel used for a landscape capture.
