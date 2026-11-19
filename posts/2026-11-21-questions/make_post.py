@@ -36,11 +36,13 @@ HANDLE = "@aiforeventplanners"
 
 TITLE = "Questions I get\nasked at every\nevent."
 
-# From the content bank, until she sends her own list.
+# Hers as they come in, Nov 19, one at a time; the rest are the content
+# bank's until she replaces them. The only edit to her words is the question
+# mark, so the list sets consistently.
 QUESTIONS = [
-    "Where’s the bathroom?",
-    "What’s the Wi-Fi password?",
-    "Are you with the family?",
+    "Where’s the bathroom?",            # content bank
+    "What’s the Wi-Fi password?",        # content bank
+    "Can you change the temperature?",  # hers, Nov 19
 ]
 LAST_INTRO = "And the one nobody ever asks the planner:"
 LAST = "Did you eat?"
