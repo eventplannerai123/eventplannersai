@@ -308,7 +308,7 @@ to the guide says the same.
 
 Her own comments will never trigger it, so the test needs someone else.
 
-## The Sat 14 Story image
+## The weekly Story image
 
 `make_story.py` → `story/vendor-payment-tracker-story.jpg`, 1080x1920. The
 guide's Fri 13 line asks for "a screenshot of the filled Vendor Payment System
@@ -326,6 +326,19 @@ publish.
 "Every vendor payment in one place," and the Gumroad link sticker on top in
 the app; a printed line underneath a sticker reads as a mistake. The empty
 band under the grid is where the sticker goes.
+
+**Re-rendered each week from the live sheet, 2026-11-20 for her Sat 21
+Story.** Three figures moved since the Nov 13 build: Petal Press' $680 went
+six days past its Nov 14 due date, so the sheet's Flag column now reads
+**Overdue** on that row and the generator has a chip for it — filled red with
+white text, the loudest thing on the card, because a caught late payment is
+the whole argument for the tracker. Fernwood's second payment came due today,
+so Due this week fell from $9,680 to $9,000. "Next payment due" still reads
+Nov 14 because that row is unpaid; that is the sheet's own arithmetic and the
+Overdue chip on the same row explains it, so it is left as the tracker states
+it. The grid now carries eleven rows rather than ten — the card holds eleven
+and the generator asserts the last one is in frame, along with the Overdue row
+itself.
 
 **Column widths are measured, not typed.** The first build ran "Second
 payment" straight through the Amount column and pushed the "Due this week"

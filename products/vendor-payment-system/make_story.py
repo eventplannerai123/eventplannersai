@@ -44,6 +44,7 @@ MUTED = (124, 118, 176)
 
 # Flag chips. Read off the tracker's own computed column.
 CHIP = {
+    "Overdue":         ((168, 36, 52), (255, 255, 255)),
     "Due this week":   ((255, 232, 232), (168, 36, 52)),
     "Due in 30 days":  ((255, 243, 219), (150, 95, 12)),
     "Upcoming":        ((233, 232, 250), (60, 52, 137)),
@@ -57,27 +58,37 @@ F = lambda p, s: ImageFont.truetype(p, s)
 
 HANDLE = "@aiforeventplanners"
 
-# --- live values, read from the real tracker on 2026-11-13 ---------------
+# --- live values, read from the real tracker on 2026-11-20 --------------
+# Re-read for her Sat 21 Story. Three things moved since the Nov 13 build:
+# Petal Press' $680 went six days past its Nov 14 due date and the sheet now
+# flags it OVERDUE; Fernwood's second payment came due today, so Due this
+# week fell from $9,680 to $9,000; and Due in the next 30 days reads $16,750.
+# "Next payment due" still says Nov 14 because that row is unpaid — which is
+# the tracker working, not a stale screenshot, and the Overdue chip on the
+# same row says so.
 SUMMARY = [
     ("Total scheduled", "$59,380"),
     ("Paid", "$13,300"),
     ("Still owed", "$46,080"),
-    ("Due this week", "$9,680"),
+    ("Due this week", "$9,000"),
 ]
 NEXT_DUE = ("Next payment due", "Nov 14, 2026 · Petal Press")
 
-# Vendor, Payment, Amount, Due date, Flag
+# Vendor, Payment, Amount, Due date, Flag — the sheet's own first eleven rows,
+# in its own order, with its own computed Flag column. Eleven is what the card
+# holds; the generator asserts it.
 ROWS = [
-    ("Fernwood Estate",       "Deposit",        "$6,000",  "—",        "Paid"),
+    ("Fernwood Estate",       "Deposit",        "$6,000",  "—",             "Paid"),
     ("Fernwood Estate",       "Second payment", "$9,000",  "Nov 20, 2026",  "Due this week"),
     ("Fernwood Estate",       "Final balance",  "$10,500", "Apr 15, 2027",  "Upcoming"),
-    ("Harbor Light Catering", "Deposit",        "$4,000",  "—",        "Paid"),
+    ("Harbor Light Catering", "Deposit",        "$4,000",  "—",             "Paid"),
     ("Harbor Light Catering", "Second payment", "$6,500",  "Dec 1, 2026",   "Due in 30 days"),
     ("Harbor Light Catering", "Final payment",  "$7,200",  "May 5, 2027",   "Upcoming"),
-    ("Bloom & Bough",         "Deposit",        "$1,200",  "—",        "Paid"),
+    ("Bloom & Bough",         "Deposit",        "$1,200",  "—",             "Paid"),
     ("Bloom & Bough",         "Balance",        "$2,800",  "May 1, 2027",   "Upcoming"),
-    ("Lumen Photo Co.",       "Retainer",       "$1,500",  "—",        "Paid"),
-    ("Petal Press",           "Invoice",        "$680",    "Nov 14, 2026",  "Due this week"),
+    ("Lumen Photo Co.",       "Retainer",       "$1,500",  "—",             "Paid"),
+    ("Lumen Photo Co.",       "Balance",        "$3,000",  "Apr 15, 2027",  "Upcoming"),
+    ("Petal Press",           "Invoice",        "$680",    "Nov 14, 2026",  "Overdue"),
 ]
 
 M = 40
@@ -193,6 +204,8 @@ def check():
         assert flag in CHIP, f"unknown flag {flag!r}"
     paid = sum(int(r[2].replace("$", "").replace(",", "")) for r in ROWS if r[4] == "Paid")
     assert paid == 12700, f"paid rows shown sum to {paid}; the tracker's Paid is $13,300 across all rows"
+    assert sum(1 for r in ROWS if r[4] == "Overdue") == 1, (
+        "the tracker's Overdue row is what makes this image worth posting")
     text = " ".join(" ".join(r) for r in ROWS).lower()
     for banned in ("comment ", "link in bio", "gumroad", "prompt"):
         assert banned not in text, banned
