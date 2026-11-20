@@ -1,0 +1,11 @@
+142 RSVPs. 23 dietary notes, written 14 different ways.
+
+Gluten-free, GF, celiac, "no gluten please" — four spellings of one table. The caterer needs them grouped and counted, with names, not a column of free text. It found six real restrictions in the twenty-three notes.
+
+The part I'd have missed: three people chose a meal that contradicts their own note, and six plus-ones never chose at all. It wouldn't let me order 142 — it said don't finalize until those nine are resolved, because the room is 148.
+
+AI Prompt: "Here's the RSVP list for our 180-person holiday party. Give me what the caterer needs: the meal count for each option, every dietary restriction grouped and counted with the guest names against each, and flag anyone whose meal choice contradicts their dietary note or who hasn't chosen a meal yet."
+
+Send the caterer the conflicts, not just the counts.
+
+#aiforeventplanners #eventprofs #eventplanningtips #eventplanner #holidayparty
