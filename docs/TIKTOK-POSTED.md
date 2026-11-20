@@ -133,3 +133,4 @@ author two of her planned trials had gone out as ordinary Reels. They had not.
 - Two TikTok slots that the plan still shows as filled are in fact free: **Tue
   13 Oct** (held the vendor quotes cut) and whatever day the centerpieces piece
   would have taken.
+| 2026-11-23 | 142 RSVPs. 23 dietary notes, written 14 different ways (Reel redo cut) | **sent** 2026-11-20 — she approved the Instagram cut the same afternoon ("go ahead"), so the file and caption went over at once under her Oct 30 rule. Her Friday recording, with the ChatGPT "Get Plus" pop-up cut out at her request — measured at 46.0–47.6s of the source and asserted out of every beat. 18.56s, ending on "142 meals. 148 people." rather than the brief's planned takeaway, because the answer refused to finalise at 142. Last-10 check clear: Nov 10–22 holds no RSVP, caterer, dietary or meal-count piece. Nothing read back yet. |

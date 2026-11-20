@@ -147,8 +147,10 @@ from `drive.usercontent.google.com`, then trashed.
 
 ## Posting
 
-- **Instagram and Facebook at 6:30pm Monday**, from a one-shot task, after she
-  approves.
+- **Instagram and Facebook at 6:30pm Monday**, one-shot task
+  `trig_011HT4oc8zJjqK2Vtkv7aFRK` (23:30 UTC — Eastern is EST now), created
+  after she said "go ahead" on Fri 20. Its prompt carries the Reel-not-photo
+  read-back.
 - **TikTok at about 9am Monday**, hers. Last-10 duplicate check run before the
   hand-over: Nov 10–22 holds no RSVP, caterer, dietary or meal-count piece.
   The nearest are the Nov 18 staffing captain and the Nov 22 catering captain,
