@@ -54,3 +54,18 @@ screen. Exports measure **-13.82 LUFS**.
 - **TikTok at about 9am**, hers, with its own caption and end card.
 - Her Story the same evening: the timelapse or a photo of the book, the text
   "Giveaway open until Fri 27," and the post shared in.
+
+## Posted
+
+- **Instagram**, Fri 20 Nov 6:31pm Eastern, from `trig_01JbxYMsYw3eANaYW958muK9`:
+  [instagram.com/reel/Df-11HBlH_X](https://www.instagram.com/reel/Df-11HBlH_X/),
+  media `17970851820208246`, read back as `media_product_type: REELS`. The
+  container reached FINISHED after 19.2s over seven status checks and
+  published first time.
+- **Facebook** `4030670113894758`, same caption.
+- **The full rules went out word for word.** The live caption was diffed
+  against `build/caption-instagram.txt` character for character and is
+  identical — the dates, the 11:59pm Eastern close, the random draw, the
+  Nov 28 announcement, "contacted by DM from @aiforeventplanners only", the
+  no-password-or-payment line, "No purchase necessary", "US residents 18+",
+  "Entries count on Instagram only", and the not-sponsored-by-Instagram line.
