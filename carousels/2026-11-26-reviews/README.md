@@ -4,7 +4,7 @@ Built Fri 20 Nov from the three reviews Sahiba sent that afternoon, after the
 Fri 20 block's YOU line asked her to check the listing. Her line: "3 reviewas",
 then the paste.
 
-**Thu 26 Nov, 6:30pm**, her decision on Fri 20 ("yes"). The guide's Fri 20 CC
+**Thu 26 Nov, 6:30pm**, one-shot task `trig_019SGEKTiU2mZfqL65pRArpD` (23:30 UTC under EST), her decision on Fri 20 ("yes"). The guide's Fri 20 CC
 line said to propose a date at the Sun 22 recap; she settled it two days
 early, in the same sitting as approving the slides. The Thanksgiving calendar
 piece that held the slot (content bank 36) is unscheduled and goes back in the
