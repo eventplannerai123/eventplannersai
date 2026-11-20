@@ -42,3 +42,16 @@ Wednesday's needed +1.3 and Monday's -0.7, so the gain is swept every time.
   caption pasted into the message. Her Nov 7 rule: nothing is one-platform.
 - Within 10 minutes of it going up she leaves the first comment herself. Both
   Wed 18 posts still have none, which is what that line is for.
+
+## Posted
+
+- **Instagram**, Fri 20 Nov 12:31pm Eastern, from `trig_011MNiNnfYK67FXD4s9tx2fT`:
+  [instagram.com/reel/Df-MnnLiksh](https://www.instagram.com/reel/Df-MnnLiksh/),
+  media `18096659651191490`. Read back as `media_product_type: REELS`, not a
+  photo — which is the check that matters on a still-image Reel, after Mon 9's
+  went up as an image and reached 15 against 146 and 130 for the two posted as
+  Reels. The container sat IN_PROGRESS for 21.8s over eight status checks and
+  published first time.
+- **Facebook** `1150760967446684`, same caption.
+- Live caption diffed against `build/caption.txt` character for character:
+  identical.
