@@ -407,6 +407,22 @@ Two things to decide from the result, not from the fact that it works:
   sheet. Buyers paste vendor contracts and payment amounts into this tracker,
   so if this route goes into the guide it is named in the guide, not buried.
 
+**Chased Fri 20, and she has not run it.** Looked before asking: no copy of
+the tracker in her Drive has been touched since Nov 17 14:34, which is the
+Thu 19 recording itself — the newest `Copy of Vendor Payment Tracker`
+(`17QiIcUwwH4JS60BauHZetIpWoZIEQVg9NTxjEQwhzGE`) holds the pasted result from
+that take, with the grey columns computed by the sheet's own formulas. That is
+the paste route working, not the add-on.
+
+So the test went over with a throwaway already made for it: **`ADD-ON TEST —
+throwaway copy (not the product)`**, `1_GflodLs6EOdz2LyHsNkASitqp-1fFgc4U2NDZnZvMQ`,
+copied from the product master (`1q1RvBQZFvzctAt8Q0WB0Q7p3gW6U8JLQyw6DjX26FMo`)
+into `Products > Vendor Payment System`. The master is the right source
+because it still carries the Spring Gala example row at A2 and its $17,150 —
+which is what makes the second question answerable at all. **The pass/fail
+number is the Summary's Total scheduled: $21,500 if the example row was
+replaced, $38,650 if it was pushed down.**
+
 **The paste is not only a limitation.** It is where a buyer checks the amounts
 against the invoice before they become the record — which the setup guide tells
 them to do, and which has nowhere to happen if the model writes straight in. If
