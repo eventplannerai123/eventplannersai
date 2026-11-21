@@ -75,11 +75,16 @@ def render(cut):
         p = os.path.join(SRC, name)
         assert os.path.exists(p), p
         if start is None:
+            # The still is 3:4, not 9:16, so it is COVERED and cropped like
+            # the clips rather than scaled to the frame — scaling a 1512x2016
+            # photo straight to 1080x1920 would stretch it 33%. The 4% push
+            # then pans the crop down over the beat so it is not a dead stop.
             ins += ["-loop", "1", "-t", f"{dur:.3f}", "-i", p]
             w, h = int(W * PUSH) // 2 * 2, int(H * PUSH) // 2 * 2
             filt.append(
-                f"[{i}:v]scale={w}:{h}:flags=lanczos,"
-                f"crop={W}:{H}:{(w - W) // 2}:'(ih-{H})*(t/{dur:.3f})',"
+                f"[{i}:v]scale={w}:{h}:force_original_aspect_ratio=increase:"
+                f"flags=lanczos,"
+                f"crop={W}:{H}:(iw-{W})/2:'(ih-{H})*(t/{dur:.3f})',"
                 f"fps={FPS},setsar=1[v{i}]")
         else:
             ins += ["-ss", f"{start:.3f}", "-t", f"{dur:.3f}", "-i", p]

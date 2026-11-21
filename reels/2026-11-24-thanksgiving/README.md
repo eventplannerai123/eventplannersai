@@ -49,14 +49,40 @@ and the cut lands before it.
 kitchen. The rule is that the voiceover is the only audio — and it also means
 nothing anyone said at that table goes out.
 
-## The one thing worth re-sending
+## The turkey came twice, and the second one is in
 
-**The turkey still arrived at 640x1136.** That is a compressed send, not the
-original, and at 1080 wide it is upscaled 1.69x — soft enough to see against
-the two video beats, which are native 1080. It is the closing frame, so it is
-the worst place for it. Her Sep rule covers exactly this: uploads go at
-Actual/Original size. Asked for again; the cut is built with what is here and
-takes a drop-in replacement without any other change.
+**The first send was 640x1136** — the compressed size, not the original — and
+at 1080 wide that is a 1.69x upscale on the closing frame, soft enough to see
+against two native-1080 video beats. Her own rule covers it: uploads go at
+Actual/Original size. Asked for again, and the full one came back at
+**1512x2016**.
+
+That changed the filter, not just the file. The first was 9:16 already, so it
+scaled straight to frame; **1512x2016 is 3:4**, and scaling that to 1080x1920
+would stretch it by a third. The still is now covered and cropped like the
+clips — `force_original_aspect_ratio=increase`, then the 4% push pans the
+crop down over the beat. A 1:1 look at the result before and after is the
+check that mattered: herb flecks and skin texture are crisp in the second.
+
+## The prep photo that is not in it
+
+She also sent a shot of the counter mid-prep — a dozen bowls of diced
+vegetables, exactly the "professional prep" image the brief wanted. It is
+**a screenshot of someone else's Instagram Story**: another account's
+username and profile photo at the top, and tagged handles — including her own
+personal one — burned into the bottom of the picture itself.
+
+Both can be cropped off, and she asked for that. What survives is the
+problem: the clean photo area is about **800 x 900**, so a full-bleed 9:16
+crop out of it is roughly **500px wide**, upscaled past 2x. Beside two
+native-1080 clips it would read as a screenshot, which is what it is.
+
+The Nov 22 precedent — setting a landscape photo as a full-width panel on a
+brand ground rather than cropping it to 9:16 — would rescue the resolution
+but not the consistency: one panelled beat among three full-bleed ones.
+
+So it is out unless the original turns up, and the piece is not short of
+material at three beats.
 
 ## The cuts
 
