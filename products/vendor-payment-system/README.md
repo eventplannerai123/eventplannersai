@@ -491,6 +491,19 @@ One honest limit: this is one run of one case. It is the case that actually
 burned her, which is why it is worth acting on, but it is not proof the
 add-on never puts text in a numeric cell.
 
+**The test also found a real gap in the product, which is worth more than
+the add-on question.** With the two new rows the Summary reads **Total
+scheduled $22,700** — 6,000 + 9,000 + 6,500 + 1,200. That is correct
+arithmetic and a misleading number: there are five payments and one of them
+has no amount, so the real total is $22,700 *plus Fernwood's final balance*.
+Nothing on the Summary tab says so. A buyer would read $22,700 as the whole
+commitment.
+
+The tracker already counts things it wants you to notice — "Overdue payments"
+is a count row. A second one, **"Payments with no amount yet"**, would close
+this in the same idiom and cost one formula. Raised with her Sat 21; hers to
+decide, and it is a change to a product people have bought.
+
 **The paste stays the default**, and the reason is unchanged and has nothing
 to do with reliability — see below.
 
