@@ -449,6 +449,51 @@ shared with Google and OpenAI so the add-on can read and update the sheet.
 Buyers paste vendor contracts and payment amounts into this tracker, so if
 this route goes in the guide it is named in the guide, not buried.
 
+## The missing-value test, Sat 21 Nov — and it changed the recommendation
+
+She pushed back on leaving the add-on out: "i didnt like it when the paste
+didnt work the first time", and she was right that it hadn't. On Nov 3 the
+pasted result came back with the computed columns blank, because ChatGPT had
+written a literal "not stated" into a date or amount cell and text in a
+numeric column stops the tracker calculating. The fix then was a **prompt**
+fix — Prompt 1 rewritten the same day to return those cells blank with the
+words in Notes.
+
+So the open question was whether the add-on shares that flaw, since it is the
+same model deciding what to put in a cell. Her words: "i dont want other
+people to have the same problem." The test, run on the throwaway in a fresh
+sidebar chat, with **nothing in the prompt about leaving cells blank** —
+because a buyer would not know to say it:
+
+> Add two more payments to the Payments tab. Fernwood Estate, Venue — final
+> balance, due Apr 15 2027, unpaid; the contract doesn't state the amount.
+> Bloom & Bough, Florals — deposit $1,200, unpaid; the contract doesn't state
+> when it's due.
+
+**It got both right, unprompted:**
+
+| | Amount | Fixed due date | Computed columns | Notes |
+| --- | --- | --- | --- | --- |
+| Fernwood, final balance | **empty** | Apr 15, 2027 | 145 days, "Upcoming" | "Contract doesn't state the amount." |
+| Bloom & Bough, deposit | $1,200 | **empty** | "No due date" | "Contract doesn't state when it's due." |
+
+That is exactly the behaviour Prompt 1 had to be rewritten to produce, done
+without being asked, and the tracker's own formulas kept working on both rows.
+
+**So the recommendation here was wrong and is reversed.** It argued the
+add-on was not worth the privacy line, partly on the grounds that it would
+carry the same failure and hide it where a blank column at least showed. It
+does not carry it. The add-on belongs in the setup guide as an **optional**
+step, with the Marketplace privacy line stated plainly: workbook content may
+be shared with Google and OpenAI so the add-on can read and update the sheet.
+
+One honest limit: this is one run of one case. It is the case that actually
+burned her, which is why it is worth acting on, but it is not proof the
+add-on never puts text in a numeric cell.
+
+**The paste stays the default**, and the reason is unchanged and has nothing
+to do with reliability — see below.
+
 **The paste is not only a limitation.** It is where a buyer checks the amounts
 against the invoice before they become the record — which the setup guide tells
 them to do, and which has nowhere to happen if the model writes straight in. If
