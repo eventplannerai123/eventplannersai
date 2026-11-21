@@ -30,8 +30,15 @@ from `$TG_SRC`.
   celery, mushroom, onion, bread. Used 0.00–2.40.
 - **`table.mov`, 5.80s** — a pan across the laid table: mac and cheese,
   creamed spinach, roast potatoes, garlic knots, an empty plate waiting.
-  **Used 0.00–3.80 of it**, because a hand comes into the bottom of frame at
-  about 4.75s.
+  **Used 0.00–2.80 of it**, because a hand comes into the bottom of frame at
+  about 4.75s. It was 3.80s until the vegetable tray went in.
+- **the vegetable tray still**, `veg.jpg`, 1512x2016 — a sheet tray of
+  roasted sweet potato, squash, cauliflower, sprouts, mushrooms and new
+  potatoes on the counter. **She sent it on Sat 21 after seeing the
+  three-beat cut**, full size and with no message, which is a beat to add
+  rather than a question to ask. Second beat, with a 4% push that pans
+  **upward** where the turkey's pans down, so the two stills are not the
+  same move twice. `render.py` asserts the two directions differ.
 - **the turkey still** — the platter on an autumn-leaf cloth, as the closing
   beat with a 4% push.
 - the plated dinner still is not used: steak and mac and cheese reads as a
@@ -81,29 +88,36 @@ The Nov 22 precedent — setting a landscape photo as a full-width panel on a
 brand ground rather than cropping it to 9:16 — would rescue the resolution
 but not the consistency: one panelled beat among three full-bleed ones.
 
-So it is out unless the original turns up, and the piece is not short of
-material at three beats.
+So it is out unless the original turns up, and **on Sat 21 she said she does
+not have it**. The prep shot is closed. The vegetable tray she sent minutes
+later is what the fourth beat became instead, and it needed no crop at all.
 
 ## The cuts
 
-**8.60s each**, 1080x1920, 30fps, CRF 19, AAC 192k at 48 kHz, `+faststart`,
-**-14.3 LUFS**. Two cuts, never one file posted twice.
+**9.60s each**, 1080x1920, 30fps, CRF 19, AAC 192k at 48 kHz, `+faststart`,
+**-14.5 LUFS**. Two cuts, never one file posted twice.
 
 | | Instagram | TikTok |
 | --- | --- | --- |
 | held overlay | "Thanksgiving for 20. The headcount is the easy part." | "Thanksgiving for 20. Stop starting with the headcount." |
-| pan | 2.40s | 2.20s |
-| table | 3.80s | 4.00s |
+| pan | 2.20s | 2.00s |
+| vegetable tray | 2.20s | 2.40s |
+| table | 2.80s | 2.80s |
 | turkey | 2.40s | 2.40s |
+
+**The tray added one second to the piece, not two.** A fourth beat at its
+natural length would have run the cut to 11s against a 6.53s voiceover, and
+the extra would all have landed as silence on the final still. The first and
+third beats gave the time back instead.
 
 On this format the held overlay **is** the hook, so it is the thing that
 differs: the brief's line on Instagram, a command-style one on TikTok, as the
 structure rules require.
 
 The card sits at y=1140 in the lower third, because the food is in the middle
-of all three shots and the bottom 25% is TikTok's furniture. It is opaque and
-it never leaves the screen, so it was composited onto all three beats before
-anything was exported.
+of all four shots and the bottom 25% is TikTok's furniture. It is opaque and
+it never leaves the screen, so it is composited over the whole concatenated
+body rather than per beat.
 
 **No CTA on the frame.** The caption ends on a question instead.
 
@@ -114,14 +128,15 @@ Eryn (`kdnRe2koJdOK4Ovxn2DI`), `eleven_v4`, the brief's own 21 words:
 > Twenty people isn't a shopping list. Tell it the serving time, the oven
 > you've got, and who's already bringing a pie.
 
-**6.53s**, starting at 0.90s so it ends at 7.43s and the turkey holds for
-just over a second after it. A freeze on the last frame is fine; a long
-silent tail is not, and 1.2s is not one.
+**6.53s**, starting at **1.20s** so it ends at 7.73s and the turkey holds
+1.87s after it — 0.90s and 1.17s before the tray went in. A freeze on the
+last frame is fine; a long silent tail is not, and `render.py` now asserts
+the tail stays under two seconds rather than leaving it to judgement.
 
 Measured in at -22.5 LUFS, true peak -2.1 — a crest factor of 20.4 dB, so the
 gain was swept rather than computed: +8.5 landed at -15.4, +10.0 at -14.4,
 +11.0 at -13.8. **+10.7 dB** into `alimiter=limit=0.891:level=0` measures
--13.9, and the export measures -14.3.
+-13.9, and the export measures -14.5 over the longer cut.
 
 ## Caption
 

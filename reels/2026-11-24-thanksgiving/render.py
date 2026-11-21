@@ -23,19 +23,26 @@ Both clips report 1920x1080 and carry **rotation=-90**, so they decode as
 kitchen. The rule is that the voiceover is the only audio, and it also means
 nothing anyone said at that table goes out.
 
-Beats, 8.60s:
+Beats, 9.60s:
 
-- 2.40s  the stuffing pan steaming on the hob. Motion from frame one, and
+- 2.20s  the stuffing pan steaming on the hob. Motion from frame one, and
          steam reads as cooking before any word does.
-- 3.80s  the pan across the laid table: mac and cheese, creamed spinach,
+- 2.20s  the sheet tray of roasted vegetables, still on the counter. **Added
+         Sat 21** — she sent it after seeing the three-beat cut, full size
+         (1512x2016), so it takes the same cover-and-push treatment as the
+         turkey. Its push pans **upward** where the turkey's pans down, so
+         the two stills do not read as the same move twice.
+- 2.80s  the pan across the laid table: mac and cheese, creamed spinach,
          roast potatoes, garlic knots, an empty plate waiting. **Cut at
          4.60s of a 5.80s clip** — a hand comes into the bottom of frame at
-         about 4.75s and there is no reason to include it.
+         about 4.75s and there is no reason to include it. It was 3.80s
+         before the tray went in; 2.80s still reads the pan.
 - 2.40s  the turkey, with a 4% push so it is not a dead stop.
 
-The voiceover is 6.53s and starts at 0.90s, so it ends at 7.43s and the
-turkey holds for just over a second after it. A freeze on the last frame is
-fine; a long silent tail is not, and 1.2s is not one.
+The voiceover is 6.53s and starts at **1.20s** (0.90s before the tray), so
+it ends at 7.73s and the turkey holds 1.87s after it. A freeze on the last
+frame is fine; a long silent tail is not, and the whole piece grew by one
+second rather than by the tray's full length for exactly that reason.
 """
 import os
 import subprocess
@@ -47,29 +54,40 @@ SRC = os.environ["TG_SRC"]
 
 W, H, FPS = 1080, 1920, 30
 PUSH = 1.04
-VO_AT = 0.90
+VO_AT = 1.20
 
 # Two cuts, same footage, different held overlay and slightly different
 # pacing — never the same file posted twice.
 PLAN = {
     "instagram": [
-        ("pan.mov",    0.00, 2.40),   # the stuffing pan, steaming
-        ("table.mov",  0.00, 3.80),   # the laid table; a hand arrives at ~4.75s
-        ("turkey.jpg", None, 2.40),   # the platter, with a slow push
+        ("pan.mov",    0.00, 2.20),   # the stuffing pan, steaming
+        ("veg.jpg",    None, 2.20),   # the sheet tray, pushing upward
+        ("table.mov",  0.00, 2.80),   # the laid table; a hand arrives at ~4.75s
+        ("turkey.jpg", None, 2.40),   # the platter, pushing downward
     ],
     "tiktok": [
-        ("pan.mov",    0.00, 2.20),
-        ("table.mov",  0.00, 4.00),
+        ("pan.mov",    0.00, 2.00),
+        ("veg.jpg",    None, 2.40),
+        ("table.mov",  0.00, 2.80),
         ("turkey.jpg", None, 2.40),
     ],
 }
-TOTAL = 8.60
+TOTAL = 9.60
+
+# Which way each still's crop travels. Two stills in one cut pushing the same
+# way reads as one move repeated, so they are opposed.
+PUSH_DOWN = {"turkey.jpg": True, "veg.jpg": False}
 
 
 def render(cut):
     BEATS = PLAN[cut]
     assert abs(sum(b[2] for b in BEATS) - TOTAL) < 0.01, f"{cut} is not {TOTAL}s"
     assert 8.0 <= TOTAL <= 12.0, f"{TOTAL:.2f}s is outside the brief's 8-12s"
+    # The voiceover must not be left hanging on a silent tail.
+    assert TOTAL - (VO_AT + 6.53) <= 2.0, "the tail after the voiceover is too long"
+    stills = [b[0] for b in BEATS if b[1] is None]
+    assert len({PUSH_DOWN[s] for s in stills}) == len(stills), (
+        "two stills in one cut push the same way")
     ins, filt = [], []
     for i, (name, start, dur) in enumerate(BEATS):
         p = os.path.join(SRC, name)
@@ -81,10 +99,13 @@ def render(cut):
             # then pans the crop down over the beat so it is not a dead stop.
             ins += ["-loop", "1", "-t", f"{dur:.3f}", "-i", p]
             w, h = int(W * PUSH) // 2 * 2, int(H * PUSH) // 2 * 2
+            assert name in PUSH_DOWN, f"{name} has no push direction"
+            travel = (f"(t/{dur:.3f})" if PUSH_DOWN[name]
+                      else f"(1-t/{dur:.3f})")
             filt.append(
                 f"[{i}:v]scale={w}:{h}:force_original_aspect_ratio=increase:"
                 f"flags=lanczos,"
-                f"crop={W}:{H}:(iw-{W})/2:'(ih-{H})*(t/{dur:.3f})',"
+                f"crop={W}:{H}:(iw-{W})/2:'(ih-{H})*{travel}',"
                 f"fps={FPS},setsar=1[v{i}]")
         else:
             ins += ["-ss", f"{start:.3f}", "-t", f"{dur:.3f}", "-i", p]
