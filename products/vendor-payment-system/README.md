@@ -500,9 +500,30 @@ Nothing on the Summary tab says so. A buyer would read $22,700 as the whole
 commitment.
 
 The tracker already counts things it wants you to notice — "Overdue payments"
-is a count row. A second one, **"Payments with no amount yet"**, would close
-this in the same idiom and cost one formula. Raised with her Sat 21; hers to
-decide, and it is a change to a product people have bought.
+is a count row. **She said add it, and it is in**: a second count row,
+**"Payments with no amount yet"**, at Summary row 7, directly under Overdue
+payments, in the product master
+(`1q1RvBQZFvzctAt8Q0WB0Q7p3gW6U8JLQyw6DjX26FMo`).
+
+    =COUNTIFS(Payments!C2:C,"<>",Payments!F2:F,"")
+
+A row counts when it has a vendor and no amount, so blank rows below the data
+are not counted.
+
+**The formula was proved against real data before it went into the product.**
+Written into a scratch cell on the throwaway first, where the add-on test had
+left exactly one amountless payment among five: it returned 1 of 5. The
+scratch cells were then cleared. On the master, which holds only the example
+row and its $17,150, it reads 0 — which is the other half of the check.
+
+**No buyer has the old version.** Gumroad reports 0 units and $0 for Nov 1–21,
+so the product has not sold since the Thu 5 launch and the fix lands before
+the first copy goes out. Nobody needs telling.
+
+**The setup guide needs no change for it.** Checked rather than assumed: the
+live guide describes the Summary tab as "a one-glance summary" with
+"automatic Overdue and Due this week flags" and nowhere enumerates its rows,
+so an added row does not contradict it.
 
 **The paste stays the default**, and the reason is unchanged and has nothing
 to do with reliability — see below.
