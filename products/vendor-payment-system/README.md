@@ -625,3 +625,17 @@ The staging copy, `Vendor Payment System — Setup Guide (for Gumroad upload).pd
 (`1-RHRXC4w_ZUeHjbd1JVaYO7no-im7jfa`), is left in place until a real download
 off the Gumroad page is confirmed — if Gumroad streams from the URL rather
 than copying the bytes, trashing it would break the product.
+
+### Settled: one file, typed PDF
+
+She uploaded the PDF by hand in the product editor and deleted the linked
+copy, upload first so the product was never empty. `list_files` now returns
+**one** file: "Vendor Payment System — Setup Guide", type **PDF**, 36,538
+bytes — the same byte count as the local build, so it is the Saturday
+rebuild and not a stale one. The staging copy has been trashed from Drive.
+
+**The rule this leaves behind: upload a PDF to Gumroad by hand, not by URL.**
+`add_file` with a link works and gets the bytes right, but Gumroad types the
+file from the URL's filename, and no Drive download link has one. Both BIN
+files on this product came in that way. For anything a buyer should be able
+to preview, the thirty seconds in the editor is the difference.
