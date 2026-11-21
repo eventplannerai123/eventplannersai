@@ -36,7 +36,7 @@ numbered badge, EP + star wordmark, bottom bar.
 2. Pamela M. — "So cute!"
 3. Christina N. — "So cute! 100% would recommend."
 4. Rose R. — "Perfect gift"
-5. "Two copies are up for grabs until Friday."
+5. "Last day to enter is tomorrow."
 
 Each review slide carries its title as the headline and its body as the quote,
 both the reviewer's own words.
@@ -47,15 +47,23 @@ polygons, five-pointed, inner radius 0.382 of the outer.
 
 ## Why Thursday, and not another day
 
-**The closing slide has a deadline in it.** "Two copies are up for grabs until
-Friday" is true only while the Nov 20 giveaway is open, and it closes **Fri 27
-Nov at 11:59pm Eastern**. So the piece only works Mon 23 to Thu 26 — and Mon
-23 is the RSVP redo, Tue 24 Thanksgiving-for-20 and Wed 25 the consulting
-carousel. Thu 26 was the only slot left, and the piece that held it has no
-deadline on it, which is why that one moved rather than this one.
+**The closing slide has a deadline in it.** The giveaway opened Fri 20 and
+closes **Fri 27 Nov at 11:59pm Eastern**, so the piece only worked Mon 23 to
+Thu 26 — and Mon 23 is the RSVP redo, Tue 24 Thanksgiving-for-20 and Wed 25
+the consulting carousel. Thu 26 was the only slot left, and the piece that
+held it has no deadline on it, which is why that one moved rather than this
+one.
 
-It also sits a day before Fri 27's coloring book Reel and the last day of the
-giveaway, so the two run together rather than competing.
+**She spotted what that costs, and the fix was the wording, not the date.**
+On Sat 21: "So it's only open 1 day?" The giveaway runs eight days, but
+anyone who finds it *through this post* has about one — which is exactly
+right. Rather than move the piece into a taken slot, the short window became
+the point: slide 5 now reads **"Last day to enter is tomorrow."** and the
+caption says the same with the closing time on it. `check()` asserts that
+wording, because it is true on Thu 26 and on no other day.
+
+It also sits a day before Fri 27's coloring book Reel, which is the actual
+last call, so the two run as a pair rather than competing.
 
 ## The Reel
 

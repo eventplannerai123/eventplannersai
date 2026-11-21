@@ -24,13 +24,14 @@ wordmark, numbered badge, bottom bar. One set at 1080x1920 — Instagram and
 Facebook take the slide Reel, TikTok takes the same slides as a photo
 carousel.
 
-**THE CLOSING SLIDE TIES TO THE GIVEAWAY, SO THE PIECE HAS A DEADLINE.** It
-says two copies are up for grabs until Friday, which is true only while the
-Nov 20 giveaway is open — it closes Fri 27 Nov at 11:59pm Eastern. The Nov 14
-rule is to check the closing line against the piece: this one fits, because
-the piece is about the book and the giveaway is for the book. But it means
-the Reel has to post Mon 23 to Thu 26, and `check()` is not what enforces
-that — the date proposal at the Sun 22 recap is.
+**THE CLOSING SLIDE IS THE LAST CALL, AND ONLY WORKS ON THU 26.** It first
+read "Two copies are up for grabs until Friday"; she asked the obvious
+question on Sat 21 — if the piece runs Thursday and the giveaway closes
+Friday, is it only open a day? It is, for anyone who finds it through this
+post. Rather than move the piece, the short window became the point:
+**"Last day to enter is tomorrow."** The giveaway closes **Fri 27 Nov at
+11:59pm Eastern**, so this slide is true on Thu 26 and on no other day, and
+`check()` asserts the wording so a later edit cannot leave it vague.
 """
 import os
 import math
@@ -74,8 +75,9 @@ SLIDES = [
     dict(n=2, stars="Pamela M.", head=REVIEWS[0][1], quote=REVIEWS[0][2]),
     dict(n=3, stars="Christina N.", head=REVIEWS[1][1], quote=REVIEWS[1][2]),
     dict(n=4, stars="Rose M.", head=REVIEWS[2][1], quote=REVIEWS[2][2]),
-    dict(n=5, head="Two copies are up\nfor grabs until Friday.",
-         sub="Comment the bride, bridesmaid or planner you’d give it to."),
+    dict(n=5, head="Last day to enter\nis tomorrow.",
+         sub="Two paperbacks. Comment the bride, bridesmaid or planner "
+             "you’d give it to."),
 ]
 SLIDES[3]["stars"] = "Rose R."
 
@@ -230,6 +232,11 @@ def check():
     assert "BUDGET" not in text, "a slide carries a BUDGET line"
 
     assert len([s for s in SLIDES if s.get("stars")]) == 3, "three reviews, no more"
+
+    # The closing slide is only true on Thu 26, the day before the giveaway
+    # closes. If the piece ever moves, this is what should stop it.
+    assert SLIDES[-1]["head"] == "Last day to enter\nis tomorrow.", (
+        "the closing slide is dated: it reads as the last call on Thu 26 only")
     print(f"checks pass: {len(SLIDES)} slides, {len(seen)} reviews, all verbatim")
 
 
