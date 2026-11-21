@@ -591,3 +591,37 @@ takes about a second.
 
 Nothing has sold yet (0 units, Nov 1–21), so no buyer has the duplicate or
 the old text.
+
+### Uploaded Sat 21 — and it came out typed BIN again, for a findable reason
+
+She deleted both old files (`list_files` returned `[]`), and the new PDF went
+up: **36,538 bytes, exact match on size and sha256** against the local file,
+which was itself checked by downloading the Drive URL back before handing it
+to Gumroad.
+
+**It is typed `BIN`, not `PDF` — and that is how the old duplicate got that
+way too.** Gumroad reads the type off the URL's filename, and the route here
+is a Drive direct-download link:
+
+    https://drive.usercontent.google.com/download?id=<id>&export=download&confirm=t
+
+There is no `.pdf` anywhere in that path, so Gumroad has nothing to infer
+from. The display name does not help: the old BIN file was *called*
+"...Setup Guide.pdf" and was still typed BIN, while the old PDF-typed one had
+no extension in its name at all — so that one was almost certainly uploaded
+by hand in the product editor, which reads the real file.
+
+What it costs: the file downloads and opens correctly, but Gumroad will not
+preview it in the browser on the buyer's download page. Her call whether that
+is worth a drag-and-drop in the editor.
+
+**Routes that do not work for this.** `raw.githubusercontent.com` is out —
+the PDF is gitignored precisely because the repo is public and this is a $24
+download. `share_file` was denied here, which turned out not to matter: the
+`Products` folder already carries anyone-with-link reader and the new file
+inherited it, so **check inherited permissions before calling share at all**.
+
+The staging copy, `Vendor Payment System — Setup Guide (for Gumroad upload).pdf`
+(`1-RHRXC4w_ZUeHjbd1JVaYO7no-im7jfa`), is left in place until a real download
+off the Gumroad page is confirmed — if Gumroad streams from the URL rather
+than copying the bytes, trashing it would break the product.
