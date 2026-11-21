@@ -52,3 +52,13 @@ questions that lands at 44pt.
   **The first pair were uploaded before her questions arrived and were trashed
   rather than left beside the new ones** — a day folder holding two versions
   of the same piece is how the wrong one gets posted.
+
+## Live
+
+- Instagram: https://www.instagram.com/reel/DgBaqWvGJhl/ — posted Sat 21 Nov 6:30pm Eastern,
+  read back as `media_product_type: REELS`, caption identical to
+  `build/caption.txt` character for character.
+- Facebook: post id `1656762256468023` on page 1233196746554445, same cut,
+  same caption. The Page feed was read twice before posting — once at the
+  start and once immediately before the call — because her in-app
+  cross-post toggle can beat this session to it.
