@@ -553,3 +553,41 @@ against the invoice before they become the record — which the setup guide tell
 them to do, and which has nowhere to happen if the model writes straight in. If
 the add-on works, it belongs in the guide as an optional step with that warning
 attached, not as the default.
+
+## Regenerating the PDF, and what Gumroad already has (Sat 21)
+
+Rebuilt after the three guide edits. The route, because `guide_text.py` is
+gitignored and has to be remade each time:
+
+1. Read the live doc, then `scratchpad/mkguide.py <saved json>` rebuilds
+   `guide_text.py` from it. It asserts six prompts, five rules, a tracker
+   link, and all three of Saturday's edits present — so a stale or truncated
+   read fails the build instead of shipping a half-updated guide.
+2. `python3.13 make_pdf.py`. **Not `python3`** — reportlab imports PIL and
+   this container's python3 PIL is broken (`cannot import name _imaging`).
+3. `pdftoppm -r 70 -png` and look at every page.
+
+Result: **6 pages, 36,538 bytes**, against the 35,544 now on Gumroad. All
+three edits are in and in the right places — the Summary line on page 2, the
+add-on paragraphs under Step 3 on page 3, the totals rule on page 6.
+
+**GUMROAD ALREADY CARRIES THE GUIDE TWICE, AND THAT IS A BUG NOBODY SPOTTED.**
+`list_files` on `epbvxs` returns:
+
+| Name | Type | Size |
+| --- | --- | --- |
+| Vendor Payment System — Setup Guide | PDF | 35,544 |
+| Vendor Payment System — Setup Guide.pdf | **BIN** | 35,510 |
+
+Two near-identical uploads of the same document, one of them typed `BIN`
+rather than `PDF`, which is the one that will not preview in the browser. A
+buyer's download page lists both.
+
+**There is no delete-file tool for Gumroad here** — `add_file` adds, and
+nothing removes. So adding the new PDF without her first deleting those two
+would leave three copies of the guide on a live product, two of them stale.
+She deletes them in the product editor; then `add_file` with a public URL
+takes about a second.
+
+Nothing has sold yet (0 units, Nov 1–21), so no buyer has the duplicate or
+the old text.
