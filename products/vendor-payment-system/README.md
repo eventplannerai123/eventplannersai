@@ -423,6 +423,32 @@ which is what makes the second question answerable at all. **The pass/fail
 number is the Summary's Total scheduled: $21,500 if the example row was
 replaced, $38,650 if it was pushed down.**
 
+**RUN SAT 21 NOV, AND IT PASSED BOTH CHECKS.** Read off the throwaway copy
+here rather than taken on her word:
+
+- **Total scheduled reads $21,500**, which is 6,000 + 9,000 + 6,500. The
+  Spring Gala example row was **replaced**, not pushed down — $38,650 would
+  have meant the opposite.
+- **The grey columns calculated themselves and the add-on did not type over
+  them.** Row 3 carries Due date Nov 20, Days until due -1, Flag "Overdue";
+  row 4 carries Dec 1, 10, "Due in 30 days". It filled only the lavender
+  columns, which is what the sheet's "How to use" line asks of a human.
+
+**Three rows is the right answer, not a fault.** She flagged that the
+Payments tab "only has 3 line items" — the prompt asked for exactly three
+payments, so three is correct. Worth recording because it is the obvious
+thing to misread as a failure.
+
+One cosmetic liberty: it wrote "Wedding" in the Event column where the
+example row said "Spring Gala". Nothing depends on that column.
+
+**So the capability is confirmed and the question is now editorial**, not
+technical: whether it goes into the setup guide as an optional step, with
+the privacy line the Marketplace listing requires — workbook content may be
+shared with Google and OpenAI so the add-on can read and update the sheet.
+Buyers paste vendor contracts and payment amounts into this tracker, so if
+this route goes in the guide it is named in the guide, not buried.
+
 **The paste is not only a limitation.** It is where a buyer checks the amounts
 against the invoice before they become the record — which the setup guide tells
 them to do, and which has nowhere to happen if the model writes straight in. If
