@@ -520,10 +520,30 @@ row and its $17,150, it reads 0 — which is the other half of the check.
 so the product has not sold since the Thu 5 launch and the fix lands before
 the first copy goes out. Nobody needs telling.
 
-**The setup guide needs no change for it.** Checked rather than assumed: the
-live guide describes the Summary tab as "a one-glance summary" with
-"automatic Overdue and Due this week flags" and nowhere enumerates its rows,
-so an added row does not contradict it.
+**The setup guide was changed for it, after she asked.** The first check
+answered the wrong question — whether the new row *contradicted* the guide,
+which it did not — and she pushed: "what about the instructions file". The
+guide should use the row, not merely tolerate it. Three edits, Sat 21:
+
+- **What's inside** now ends "...flags, and a one-glance summary that counts
+  anything still missing an amount."
+- **Check the totals yourself**, under Rules that keep it accurate, gains the
+  case that actually happened: "And a total can be right and still
+  incomplete. If a contract never states an amount, leave that cell empty
+  rather than typing a note into it, and the summary's 'Payments with no
+  amount yet' will tell you how many are still open." That is the useful one
+  — it teaches the behaviour the add-on did by itself and the paste had to be
+  prompted into.
+- **Step 3** gains the add-on as an optional route, in two paragraphs: the
+  install path (Extensions, Add-ons, Get add-ons, the one by OpenAI, then
+  Extensions, ChatGPT, Open sidebar), and then the two caveats — that
+  workbook content may be shared with Google and OpenAI, said in the guide
+  rather than buried, and that pasting stays the recommended route because
+  the paste is where the amounts get checked.
+
+Verified by re-reading: the edits land in paragraphs 4, 19, 20 and 43, the
+two new ones are plain paragraphs under Step 3 rather than bullets, and
+nothing spilled into the paragraph before or after.
 
 **The paste stays the default**, and the reason is unchanged and has nothing
 to do with reliability — see below.
