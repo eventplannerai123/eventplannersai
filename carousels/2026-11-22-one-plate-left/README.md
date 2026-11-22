@@ -97,3 +97,16 @@ hot, where Friday's needed +4.05, which is why the gain is swept every time.
   approves.
 - **TikTok at about 9am**, hers, the same six slides as a photo carousel.
 - Her Sun 22 block also has a Story to planners about bulk author copies.
+
+## Live
+
+- Instagram: https://www.instagram.com/reel/DgD_hp8jfA8/ — posted Sun 22 Nov
+  6:30pm Eastern. The container sat IN_PROGRESS for 38.2s over 13 checks and
+  published first time. Read back as `media_product_type: REELS`, which is
+  the check that matters on a slide Reel: six stills under a bed is exactly
+  the shape Instagram can file as an image instead.
+- Facebook: post id `1951972382852894` on page 1233196746554445, same cut,
+  same caption. The Page feed was read first — her in-app cross-post toggle
+  can beat this session to it.
+- Caption identical to `build/caption.txt` character for character,
+  curly apostrophes and the accent in crudités included.
