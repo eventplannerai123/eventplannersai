@@ -27,3 +27,29 @@ return on what it did spend is fine; there is just almost nothing of it.
 So the question for the recap is not "is the ROAS good" — it is whether a
 campaign that cannot spend $3.30 a day is worth leaving on until Nov 30, or
 whether the bid is the thing holding it back.
+
+## The Nov 16–22 figures are incomplete, and the guide line is unticked again
+
+On Nov 21 the Wed 18 YOU line — "Pull the Nov 16–22 numbers from the ad
+console (impressions, clicks, spend, sales, and which keyword sold) for the
+Sun 22 recap" — was struck as done. She caught it on Nov 23: the numbers are
+nowhere in the guide, and the recap's Money paragraph never got them.
+
+Two things were wrong with striking it.
+
+- **The set is incomplete.** What she sent covers impressions, clicks, sales
+  and purchases. **Spend for that window is missing**, and so is the keyword
+  question (moot while sales are $0, but not answered). The $2.30 cost in the
+  section above is from a chart over a range that *included* the one sale, so
+  it is not the Nov 16–22 number and must not be reported as one.
+- **The window is short by a day.** She read the console on Sat 21, so the
+  figures are **Nov 16–21**, six days, not the seven the line asks for.
+
+The line is unticked as of Nov 23 and she is sending screenshots. When they
+arrive, the Money paragraph of the Nov 16–22 recap takes impressions, clicks,
+spend, sales and which keyword sold, and this table gets a corrected row.
+
+**The general rule it illustrates:** a task that produces a figure is not
+done when the figure arrives, it is done when the figure is *where the task
+said to put it*. The Wed 18 line said "for the Sun 22 recap", and that is the
+half that did not happen.
