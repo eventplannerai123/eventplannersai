@@ -156,3 +156,13 @@ from `drive.usercontent.google.com`, then trashed.
   The nearest are the Nov 18 staffing captain and the Nov 22 catering captain,
   and neither is about counts.
 - Within 10 minutes of the 6:30pm post she leaves the first comment herself.
+
+## Live
+
+- Instagram: https://www.instagram.com/reel/DgGkQDRjApO/ — posted Mon 23 Nov
+  6:30pm Eastern. Container finished in 18.8s over 7 checks and published
+  first time. Read back as `media_product_type: REELS`.
+- Facebook: post id `2267770110620553` on page 1233196746554445, same cut,
+  same caption. The Page feed was read first.
+- Caption identical to `build/caption.txt` character for character, em dashes
+  and curly apostrophes included.
