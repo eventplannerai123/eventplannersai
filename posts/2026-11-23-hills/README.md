@@ -83,3 +83,15 @@ cut starts at 0.0; **+0.0 dB** into the limiter, which is where it arrived.
 - **Instagram and Facebook at 12:30pm Monday**, after she approves.
 - **TikTok**, hers, the same image as a photo post.
 - She leaves the first comment within ten minutes of it going up.
+
+## Live
+
+- Instagram: https://www.instagram.com/reel/DgF7AJUnPsR/ — posted Mon 23 Nov
+  12:30pm Eastern. Container finished in 19.0s over 7 checks and published
+  first time. Read back as `media_product_type: REELS` rather than an image,
+  which is the check that matters on a single still held nine seconds under
+  a bed.
+- Facebook: post id `1853055239039461` on page 1233196746554445, same cut,
+  same caption. The Page feed was read first.
+- Caption identical to `build/caption.txt` character for character, curly
+  apostrophes included.
