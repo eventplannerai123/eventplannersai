@@ -6,12 +6,15 @@ Facebook, and the same image as a photo post on TikTok. Deep purple #3C3489
 ground, lavender #CECBF6 boxes, Poppins — the inverse of the carousel, as the
 November plan specifies for this format.
 
-**IT IS BUILT WITH FOUR LINES AND THE FORMAT WANTS FIVE.** Her Wed 25 YOU line
-asks her for a fifth by Mon 23 — one true thing from her own years — and says
-in as many words that it runs with four if none comes. So this is the four the
-guide wrote, laid out as four, and `check()` accepts four or five rather than
-pretending the slot is filled. **Adding her fifth is one edit**: put it in
-LINES and in GUIDE_PLUS_HERS, and rerun.
+**THE FIFTH LINE IS HERS, CHOSEN MON 23.** Her Wed 25 YOU line asked her for
+one true thing from her own years by Mon 23, and said the piece runs with four
+if none came. She picked from six suggestions and the answer was **"Answering
+a client email at 11pm because they sent it at 11pm."** — the only one of the
+six about a boundary rather than money or blame, and the one that matches the
+list's own rhythm, where the habit and its excuse sit in the same sentence.
+
+`check()` still accepts four or five, so the piece degrades rather than breaks
+if the line is ever pulled.
 
 **THE LINES ARE THE GUIDE'S, VERBATIM.** `check()` asserts the first four word
 for word, so a later tidy-up fails the build instead of publishing a
@@ -54,7 +57,9 @@ GUIDE_FOUR = [
     "Signing the Saturday quote without asking for the weekday rate.",
 ]
 
-LINES = list(GUIDE_FOUR)
+HERS = "Answering a client email at 11pm because they sent it at 11pm."
+
+LINES = GUIDE_FOUR + [HERS]
 
 PAD_X, PAD_Y, GAP = 38, 30, 24
 RADIUS = 26
