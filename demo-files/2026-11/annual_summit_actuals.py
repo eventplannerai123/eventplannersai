@@ -15,6 +15,8 @@ Fictional company, no real vendors, no venue name — the standing rule, and
 this file goes on screen in a public Reel.
 """
 
+from decimal import Decimal
+
 ROWS = [
     ("Venue rental",            18000, "2027 rate confirmed in contract: $19,500"),
     ("Catering",                35500, "Caterer's 2027 menu letter: $151 a person"),
@@ -49,17 +51,31 @@ def check():
 
     # A flat uplift on everything — the wrong answer, and the number the
     # voiceover contrasts against.
-    flat = round(sum(r[1] * (1 + UPLIFT) for r in ROWS))
-    assert flat == 111034, f"flat 3% gives {flat}, not 111034"
+    flat = Decimal(total) * (1 + Decimal("0.03"))
+    assert flat == Decimal("111034.00"), f"flat 3% gives {flat}, not 111034"
 
     # The right answer: the two quoted lines at their quotes, 3% on the nine.
     catering_2027 = PER_HEAD_2027 * GUESTS
     assert catering_2027 == 37750, catering_2027
     rest = [r for r in ROWS if not r[2]]
     assert len(rest) == 9, len(rest)
-    real = VENUE_2027 + catering_2027 + sum(round(r[1] * (1 + UPLIFT)) for r in rest)
-    assert real == 113180, f"the quoted-rate budget gives {real}, not 113180"
-    assert real - flat == 2146, real - flat
+    real = (Decimal(VENUE_2027) + Decimal(catering_2027)
+            + sum(Decimal(r[1]) * (1 + Decimal("0.03")) for r in rest))
+
+    # **NOT $113,180, WHICH IS WHAT THE GUIDE PREDICTED.** Two lines land on
+    # a half-dollar at 3% — printing $1,905.50 and insurance $1,287.50 — and
+    # ChatGPT kept both rather than rounding them up. Its answer on screen is
+    # $113,179, and the screen is what the viewer reads, so the voiceover and
+    # the caption follow the screen rather than the guide. Checked against the
+    # Nov 24 recording frame by frame: "TOTAL $107,800 $113,179 4.99%".
+    assert real == Decimal("113179.00"), f"the quoted-rate budget gives {real}"
+    assert real - flat == Decimal("2145.00"), real - flat
+
+    # The increase ChatGPT leads on is against the 2026 actuals, not against
+    # the flat uplift — a different comparison, and the one on screen.
+    over_actuals = real - Decimal(total)
+    assert over_actuals == Decimal("5379.00"), over_actuals
+    assert round(over_actuals / Decimal(total) * 100, 2) == Decimal("4.99")
 
     # No real company, venue or vendor anywhere on the sheet.
     text = " ".join(f"{a} {c}" for a, _, c in ROWS).lower()
@@ -67,8 +83,10 @@ def check():
         assert banned not in text, f"the sheet names {banned!r}"
 
     print(f"checks pass: 11 lines totalling ${total:,}, catering "
-          f"${PER_HEAD_2026} x {GUESTS}, flat 3% ${flat:,}, "
-          f"with the two quotes ${real:,} (+${real - flat:,})")
+          f"${PER_HEAD_2026} x {GUESTS}, flat 3% ${flat:,.0f}, "
+          f"with the two quotes ${real:,.0f} "
+          f"(+${real - flat:,.0f} on the flat uplift, "
+          f"+${over_actuals:,.0f} on the actuals)")
     return total
 
 
