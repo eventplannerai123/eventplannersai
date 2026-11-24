@@ -1339,6 +1339,42 @@ MCP server; a session without `mcp__Composio__*` tools cannot post at all.
   cut on Oct 29 ("send it now so i can do it now") and then the rule itself the
   next morning.
 
+  **RUN `tools/handover.py` BEFORE EVERY HAND-OVER. DO NOT DECIDE IN THE
+  MOMENT WHAT GOES OVER** (her instruction, 2026-11-24: "make sure this
+  doesnt happen again"). Three hand-overs in two days sent the wrong file,
+  and she caught one of them herself — "i dont see anything scheduled for the
+  28th on my tik tok".
+
+  | Date | Sent | Should have been |
+  | --- | --- | --- |
+  | Wed 25 audit carousel | the slide Reel mp4 | the six slide JPEGs |
+  | Sat 28 two-emails carousel | the slide Reel mp4 | the six slide JPEGs |
+  | Sun 29 budget Reel | `-instagram.mp4` | `-tiktok.mp4` |
+
+  **The cause is not forgetting the hand-over.** It is that a piece has two
+  deliverables and only one of them is the file she has just approved, so
+  sending *a* file feels like the job is done. Which is why the fix is a
+  command rather than a rule to remember:
+
+  ```
+  python3.13 tools/handover.py carousels/2026-11-28-two-emails
+  ```
+
+  It prints the exact paths and the caption file, warns which file is
+  Instagram's, and exits non-zero if anything is missing. `--all` sweeps
+  every piece, which is how to find one whose TikTok deliverable never went.
+
+  What it encodes, so it is written down here too:
+
+  - **A slide piece hands over the JPEGs in numeric order.** The mp4 is
+    Instagram's. (Sorting slide filenames as strings puts -10 before -2, so
+    the tool sorts on the number.)
+  - **A footage Reel hands over the `-tiktok.mp4`.** The two cuts differ in
+    hook, end card and pacing, so the Instagram one is wrong on three counts.
+  - **The caption is `build/caption-tiktok.txt` when it exists.** It exists
+    when it differs — usually because it says "on my Instagram", there being
+    no bio link on TikTok.
+
   **Paste the caption into the reply every time the file goes over** (her
   instruction, 2026-10-22: "Pull the caption for me always when you send tik
   tok"). She uploads from her phone, so a caption that sits only in
