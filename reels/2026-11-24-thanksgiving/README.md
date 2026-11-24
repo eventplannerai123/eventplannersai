@@ -141,3 +141,20 @@ gain was swept rather than computed: +8.5 landed at -15.4, +10.0 at -14.4,
 ## Caption
 
 No `AI Prompt:` block — there is no prompt in this piece, the same as Oct 29.
+
+## Published
+
+Tue 24 Nov 2026, 6:30pm Eastern (23:30 UTC), from the one-shot task
+`trig_01VukKbLCE4PjkVq6nmdKwBa`. She approved it on Sat 21 Nov, after the
+vegetable tray went in as a second beat.
+
+- Instagram: https://www.instagram.com/reel/DgJJTfQlqOc/ (media id
+  `17881068858565843`, container `18105892523367131`, FINISHED after 21.9s).
+  Live caption diffed against `build/caption.txt` — identical.
+- Facebook: post id `1671365664650528`, from the same commit-pinned URL
+  (`f039aaf`, 8,423,305 bytes verified before the call). Not yet in the Page
+  feed at the time of writing, which is normal and never a reason to retry.
+
+Checked both accounts before posting: the newest items were Mon 23's RSVP
+dietary Reel on Instagram (23:31 UTC) and its Facebook cross-post, so nothing
+had beaten this slot.
