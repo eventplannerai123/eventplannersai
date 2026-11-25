@@ -70,12 +70,35 @@ screen. Exports measure **-13.82 LUFS**.
   no-password-or-payment line, "No purchase necessary", "US residents 18+",
   "Entries count on Instagram only", and the not-sponsored-by-Instagram line.
 
-## If it closes with fewer than two entries (her decision, Wed 25 Nov)
+## If it closes with fewer than two entries — settled over three messages
 
-**"then we save the books for a later giveaway in a month or two."** So no
-substitute draw, no giving a copy away to whoever happened to enter, and no
-extension of the deadline — both paperbacks go back in the cupboard and the
-giveaway runs again in December or January.
+She answered this **twice**, on Nov 23 in the guide and again on Nov 25 in
+conversation, and the two did not agree. Both are recorded because the
+difference is what the Mon 30 piece gets built from.
+
+**Nov 23, in her own words on the guide's Fri 27 line:** any outside entrant
+still wins a copy; any book with no winner rolls into the **Mon 30 hat
+giveaway**; if both roll over, that giveaway's prize becomes the hat plus a
+coloring book for the winner and a coloring book for a second winner, with
+Monday's overlay, voiceover and caption rules rewritten for two winners.
+
+**That line was never struck**, so the daily audit read it as open and put the
+question to her a second time. The audit was reading `strikethrough` and not
+the line's text, which carried her answer in plain sight. Written up as a
+standing rule in `CLAUDE.md`.
+
+**Nov 25, first answer:** "then we save the books for a later giveaway in a
+month or two" — which would have emptied Monday's giveaway back to hat-only.
+
+**Nov 25, after the conflict was put to her: "hat plus a book."** So Monday's
+prize is **the hat plus one coloring book**, and the reading carried into the
+build is **one winner**, with the second book held for a giveaway in a month
+or two. That is what reconciles both of today's messages: one book now, one
+saved. A giveaway's published rules have to state a winner count and cannot
+be left vague, so if she meant two, she corrects this in a word.
+
+No substitute draw on this giveaway, no copy to whoever happened to enter, and
+no extension of the Fri 27 deadline.
 
 The state when she decided: **zero comments on the Reel**, five days in and
 two days from closing, checked with `INSTAGRAM_GET_IG_MEDIA_COMMENTS` on
