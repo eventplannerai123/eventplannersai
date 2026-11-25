@@ -96,11 +96,40 @@ starts at 0.0; **+0.3 dB** into the limiter.
 (`7710652569181375775`, 285 views by Wed 25). The guide only ever asked for
 the pair on Instagram, so this is the day's TikTok rather than half the test.
 
-**Instagram, Wed 25 Nov at 9:30am Eastern — version A only**, as a trial:
-`reel/DgKv2XuRg-X/`, media `18093133250372083`, `is_shared_to_feed: false`,
-which is what a live trial reads as. B was not up three minutes later, and she
-said so herself — "oh i need to post both as trials" — so both files went over
-again.
+**Instagram, Wed 25 Nov — both, as trials, two minutes apart:**
+
+| | Live | Media | Posted |
+| --- | --- | --- | --- |
+| **A** | `reel/DgKv2XuRg-X/` | `18093133250372083` | 9:30am Eastern |
+| **B** | `reel/DgKwEyuRBGY/` | `18088237253707790` | 9:32am Eastern |
+
+Both read `is_shared_to_feed: false`, which is what a live trial looks like.
+A went up alone first; B was not there three minutes later, and she said so
+herself — "oh i need to post both as trials" — so both files went over again
+and B followed.
+
+**Which is which cannot be read off the captions, because the captions are
+identical by design** — the test varies the title on screen and nothing else.
+So they were told apart by measuring the title block, in the one way that
+needs no guessing: count the bands of white text rows in the top third of the
+frame.
+
+| | Title bands | Spans |
+| --- | --- | --- |
+| local A render | 2 | (372,464) (475,544) |
+| live 9:30am | 2 | (373,464) (476,544) |
+| local B render | 3 | (321,413) (423,516) (526,595) |
+| live 9:32am | 3 | (322,412) (424,516) (527,595) |
+
+Within a pixel on every span, so the mapping is settled rather than inferred
+from the order she happened to upload them in. **A's title wraps to two lines,
+not one** — worth writing down, since the two-against-three count is now the
+fingerprint that identifies them.
+
+`scontent-*.cdninstagram.com` is blocked from this session, so the two
+thumbnails were fetched and measured in Composio's remote sandbox, the same
+route the Oct 31 carousel used to check slide order. A blocked host is not the
+end of a check.
 
 **The Tue 24 YOU line was struck and then un-struck**, which is worth
 recording rather than hiding. It was struck on her "posted as as trial", and
