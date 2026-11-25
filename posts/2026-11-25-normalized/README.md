@@ -67,3 +67,36 @@ transients and nothing sweeping, and Scribe returned an empty string.
 - She leaves the first comment within ten minutes — her own answer to the
   caption's question. The Wed 18 and Fri 20 first comments went up on Nov 21,
   days late, which does nothing.
+
+## Published
+
+Wed 25 Nov 2026, 12:30pm Eastern (17:30 UTC), from the one-shot task
+`trig_016mxU8v4eF4Le6KDhdxMyx2`. The guide's Wed 25 CLAUDE CODE line assigns
+this slot to CC, and she chose the fifth line herself on Mon 23.
+
+- Instagram: https://www.instagram.com/reel/DgLEks5xQN9/ (media id
+  `18116074847190849`, container `18106023029367131`, FINISHED after 18.7s).
+  **`media_product_type` reads `REELS`**, which is the check that matters on a
+  single still held nine seconds — that is exactly the shape Instagram can
+  file as an image instead. Live caption diffed against `build/caption.txt`:
+  identical.
+- Facebook: post id `1185125960741606`, same commit-pinned URL
+  (`a43a9fb`, 424,112 bytes verified against the local file before the call).
+
+Checked both accounts first. Nothing of this piece was live; the newest items
+were the two hook-test trials from this morning.
+
+### Her Facebook toggle cross-posted both hook-test trials
+
+Worth recording because it was not planned: the two "advice I'd burn" trials
+she uploaded at 9:30am and 9:32am appeared on the Page as Reels at 14:30:12
+and 14:32:17 UTC, carrying her Instagram captions verbatim. The advice-burn
+README says Facebook gets only the winner, after it is shared; her in-app
+toggle got there first.
+
+**Nothing to do about it.** Facebook cannot be measured at all — reach and
+impressions were deprecated in its API in Nov 2025 — so having both versions
+there costs nothing and tells nobody anything. It does not touch the
+Instagram trial figures, which are what the test is read from, and it is not
+an Instagram duplicate: two different files, and a Facebook cross-post is a
+separate object from an Instagram trial.
