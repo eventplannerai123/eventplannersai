@@ -77,3 +77,39 @@ settings read `Instrumental: False` regardless, so they are not the check.
 - **TikTok**, hers, the same six JPEGs as a photo carousel at about 9am.
 - After posting, confirm `media_product_type` reads REELS. Six stills under a
   bed is exactly the shape Instagram can file as an image instead.
+
+## Published
+
+Wed 25 Nov 2026, 6:30pm Eastern (23:30 UTC), from the one-shot task
+`trig_01VLVKXUbqAHpJdcwhWLwqMw`. She approved it Mon 23 — "this looks good",
+then "yes schedule it".
+
+- Instagram: https://www.instagram.com/reel/DgLt5Zzqp-3/ (media id
+  `18032647229691207`, container `18106068809367131`, FINISHED after 22.0s).
+  **`media_product_type` reads `REELS`** — the check that matters here, six
+  stills under a bed being exactly the shape Instagram can file as an image.
+  Live caption diffed against `build/caption.txt`: identical.
+- Facebook: post id `2639507153179387`, same commit-pinned URL
+  (`6926033`, 627,289 bytes verified against the local file first).
+
+Checked both accounts before posting; the newest items were the day's 12:30pm
+list Reel and the two hook-test trials.
+
+## The TikTok carousel went over as JPEGs, after going over wrong once
+
+The hand-over on Nov 23 sent `audit-instagram.mp4` — the slide Reel, which is
+Instagram's file. TikTok needed the six slide JPEGs. They went over on Nov 24
+and she scheduled them for 9am Wed 25.
+
+That miss is one of the three that produced `tools/handover.py`, and the rule
+it encodes applies exactly here: **a slide piece hands over the JPEGs in
+numeric order, and the mp4 is Instagram's.** Run the command rather than
+deciding in the moment which file this piece's TikTok is.
+
+## What this piece is trying to beat
+
+Wed 11's consulting post opened on "What I'd fix first…" with no number in the
+first line: 83 reach and **zero DMs**. This one opens on "One week of your
+admin. Three fixes." and asks for the DM outright, so the number to watch is
+enquiries rather than reach. From Thursday her Wed 25 YOU line asks her to say
+roughly what any enquiry asked.
