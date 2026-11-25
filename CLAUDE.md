@@ -432,6 +432,23 @@ clearest were struck that day against the TikTok log. So when the audit fires,
 `docs/TIKTOK-POSTED.md`, `pinterest/README.md`, the live accounts — rather than
 reading the doc as the truth.
 
+**AND READ THE LINE'S TEXT, NOT JUST ITS STRIKETHROUGH.** On 2026-11-25 the
+Fri 27 giveaway-fallback line was reported to her as an open question. It was
+not open: she had answered it **in the line itself on Nov 23**, in her own
+words, under a "✅ Decided Nov 23 (Sahiba)" marker — she had simply not applied
+strikethrough formatting, which she has no easy way to do. The audit read
+`textStyle.strikethrough` and nothing else, so a line carrying her own written
+decision came through as unanswered, and she was asked the same question twice
+and gave a different answer the second time.
+
+So before carrying any unstruck line to her, **search its text for `✅`,
+"Decided", "Done", "Answered" or a date in her voice.** A line that contains
+its own answer is finished whatever its formatting says — and where her two
+answers differ, the later one governs, but say so rather than silently
+switching: her Nov 23 answer had a consequence attached (unclaimed books
+rolling into the Mon 30 hat giveaway, and Monday's Reel rewritten for two
+winners) that her Nov 25 answer removes without mentioning.
+
 Three classes of line are never worth reporting:
 
 - **Stories.** They expire in 24 hours, nothing reports back, and an old one
