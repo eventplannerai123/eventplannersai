@@ -69,3 +69,32 @@ screen. Exports measure **-13.82 LUFS**.
   Nov 28 announcement, "contacted by DM from @aiforeventplanners only", the
   no-password-or-payment line, "No purchase necessary", "US residents 18+",
   "Entries count on Instagram only", and the not-sponsored-by-Instagram line.
+
+## If it closes with fewer than two entries (her decision, Wed 25 Nov)
+
+**"then we save the books for a later giveaway in a month or two."** So no
+substitute draw, no giving a copy away to whoever happened to enter, and no
+extension of the deadline — both paperbacks go back in the cupboard and the
+giveaway runs again in December or January.
+
+The state when she decided: **zero comments on the Reel**, five days in and
+two days from closing, checked with `INSTAGRAM_GET_IG_MEDIA_COMMENTS` on
+media `17970851820208246`. The Sun 22 recap had already found none; this is
+the same number four days later, so the Fri 27 fallback line stopped being a
+contingency and became the likely path.
+
+What it changes about Sat 28:
+
+- The 9am draw has nothing to draw from unless entries arrive in the last two
+  days, so the job becomes writing her the Story wording instead, for a
+  giveaway that closed empty rather than two winners to announce.
+- Her line about DMing winners for addresses and shipping media mail is moot
+  in that case; the unpin-and-re-pin line is not, and still runs.
+
+It is recorded on the guide's own Fri 27 fallback line rather than in a new
+paragraph, because that is where the question was asked and where anyone
+reading it later will look.
+
+**Nothing about Thu 26 or Fri 27 changes.** Both pieces say the giveaway is
+open and closing Friday, which is true either way; a giveaway that ends with
+too few entries is still a giveaway that ran.
