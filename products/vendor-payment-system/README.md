@@ -639,3 +639,27 @@ rebuild and not a stale one. The staging copy has been trashed from Drive.
 file from the URL's filename, and no Drive download link has one. Both BIN
 files on this product came in that way. For anything a buyer should be able
 to preview, the thirty seconds in the editor is the difference.
+## The BLACKFRIDAY code
+
+Created **Wed 25 Nov 2026**, a day inside the Thu 26 deadline in the guide's
+CC line, which asked for it by Thursday.
+
+- **$7 off, not 30%** — her own correction in the guide's Fri 27 line. Passed
+  as `amount_cents: 700`, so $24 becomes $17.
+- **Scoped to this product only** (`product_id: epbvxs`,
+  `KKvcHyyE7HsIBWM4TmRisA==`). An all-products code would also have applied to
+  the two pay-what-you-want cheat sheets, where $7 off nothing is meaningless.
+- **Valid Fri 27 Nov 00:00 to Mon 30 Nov 23:59 Eastern**, which under EST is
+  `2026-11-27T05:00:00Z` to `2026-12-01T04:59:00Z`.
+- Discount id `h0n58q510FNSqbrnluf_OQ==`.
+
+The guide's line also says "and check at checkout". The API confirms the code
+exists with the right amount, product and window; a live checkout test cannot
+tell us anything yet, because the code does not start working until Friday.
+Worth her trying it once on Friday morning, which is the only moment the test
+is meaningful.
+
+Three places already promise it in copy that is scheduled to go out: the Sun 29
+budget Reel's closing card and both its captions. Those were written before the
+code existed, so this closes a gap between a promise and a fact rather than
+adding anything new.

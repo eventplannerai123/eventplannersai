@@ -21,6 +21,14 @@ THE RULES IT ENCODES
 --------------------
 - A piece with a `slides/` directory of numbered JPEGs is a **carousel**:
   TikTok gets the JPEGs in order. The mp4 is Instagram's.
+- A piece whose slides are named per platform — `-instagram-1.jpg` and
+  `-tiktok-1.jpg` — is still one carousel, and **TikTok gets the `-tiktok-`
+  set**, whether or not the two are byte-identical. Found 2026-11-25 on the
+  Thu 26 reviews piece: ten files in one directory read as a ten-image
+  variant set and the tool refused to name anything at all, which is the
+  same failure as naming the wrong thing. The two sets there happened to be
+  identical, so nothing had gone out wrong; a piece where they differ would
+  have put the Instagram wording on TikTok.
 - A piece with `slides/` holding exactly one image is a **single image**:
   TikTok gets that image.
 - A piece with a `*-tiktok.mp4` is a **footage Reel**: TikTok gets that
@@ -45,6 +53,11 @@ def deliverable(piece):
         raise SystemExit(f"no such piece: {piece}")
 
     slides = os.path.join(d, "slides")
+    # October's carousels split the two sets into slides/instagram/ and
+    # slides/tiktok/ rather than suffixing the filenames. Either way the
+    # TikTok set is the one that goes over.
+    if os.path.isdir(os.path.join(slides, "tiktok")):
+        slides = os.path.join(slides, "tiktok")
     imgs = []
     if os.path.isdir(slides):
         imgs = sorted(f for f in os.listdir(slides)
@@ -60,6 +73,22 @@ def deliverable(piece):
     def n(f):
         m = re.search(r"-(\d+)\.(?:jpg|jpeg|png)$", f, re.I)
         return int(m.group(1)) if m else None
+
+    # A single image named per platform — `-instagram.jpg` and `-tiktok.jpg`
+    # — is one post with two renders, not two posts. Take TikTok's.
+    pair = [f for f in imgs if re.search(r"-tiktok\.(?:jpg|jpeg|png)$", f, re.I)]
+    if len(pair) == 1 and len(imgs) == 2 and \
+            any(re.search(r"-instagram\.(?:jpg|jpeg|png)$", f, re.I)
+                for f in imgs):
+        imgs = pair
+
+    # Slides named per platform are one carousel, not two. Take TikTok's.
+    tiktok_slides = [f for f in imgs if re.search(r"-tiktok-\d+\.", f, re.I)]
+    if tiktok_slides and [n(f) for f in tiktok_slides] and \
+            sorted(n(f) for f in tiktok_slides) == \
+            list(range(1, len(tiktok_slides) + 1)):
+        imgs = tiktok_slides
+
     nums = [n(f) for f in imgs]
     numbered = len(imgs) > 1 and None not in nums and \
         sorted(nums) == list(range(1, len(imgs) + 1))
