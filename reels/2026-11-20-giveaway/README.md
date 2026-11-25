@@ -94,8 +94,10 @@ month or two" — which would have emptied Monday's giveaway back to hat-only.
 prize is **the hat plus one coloring book**, and the reading carried into the
 build is **one winner**, with the second book held for a giveaway in a month
 or two. That is what reconciles both of today's messages: one book now, one
-saved. A giveaway's published rules have to state a winner count and cannot
-be left vague, so if she meant two, she corrects this in a word.
+saved. **She confirmed it in the next breath — "and then only 1 book" — so
+one winner is hers, not an inference.** A giveaway's published rules have to
+state a winner count and cannot be left vague, which is why it was put to her
+as a reading rather than built on a guess.
 
 No substitute draw on this giveaway, no copy to whoever happened to enter, and
 no extension of the Fri 27 deadline.
