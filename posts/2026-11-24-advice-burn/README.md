@@ -89,3 +89,41 @@ starts at 0.0; **+0.3 dB** into the limiter.
   winner to everyone, Facebook gets it then.
 - The winning hook style goes into the next week's day blocks, and the weekly
   recap logs both versions.
+
+## What actually went up
+
+**TikTok, Tue 24 Nov at 9:05am Eastern** — one version, as an ordinary video
+(`7710652569181375775`, 285 views by Wed 25). The guide only ever asked for
+the pair on Instagram, so this is the day's TikTok rather than half the test.
+
+**Instagram, Wed 25 Nov at 9:30am Eastern — version A only**, as a trial:
+`reel/DgKv2XuRg-X/`, media `18093133250372083`, `is_shared_to_feed: false`,
+which is what a live trial reads as. B was not up three minutes later, and she
+said so herself — "oh i need to post both as trials" — so both files went over
+again.
+
+**The Tue 24 YOU line was struck and then un-struck**, which is worth
+recording rather than hiding. It was struck on her "posted as as trial", and
+the media edge showed one of the two. Her own rule decides it: only strike
+what happened as written, and half of a two-piece test is not the task. The
+repair was one batch — `deleteContentRange` over the 69-unit marker, then
+`updateTextStyle` with `strikethrough: false` back over the paragraph — and
+re-reading confirms the line is its original text again with nothing spilled
+either side.
+
+The lesson is narrower than "verify before striking", which was already the
+rule. It is that **"posted" in the singular is not confirmation of a pair.**
+A line asking for two things needs the count checked, not the verb.
+
+## The 72-hour point moved to Sat 28
+
+A went up Wed 25, not Tue 24, so the comparison the guide puts on Fri 27 is a
+day early. `trig_01S1hqeSm7EmMGU8xxQe6muN` fires Sat 28 at 9:10am Eastern to
+do it, and it is written to refuse the comparison outright if only one of the
+two is up — a trial reaches only non-followers, so A cannot be compared
+against anything else in the feed, and one piece is not a test.
+
+**Non-follower reach decides it, not views.** Views would reward whichever one
+Instagram happened to push. And at this account's volume two pieces is a weak
+signal either way: if they land within a few percent the honest answer is that
+they tied.
