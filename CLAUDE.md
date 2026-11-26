@@ -540,6 +540,12 @@ is when it posts.
 | Parent | `AI for Event Planners — Reels & Screen Recordings`, id `1GFs9qwlVHq6Pdo0LEX0TG5lFN4ipmtax` |
 | Month | `October`, id `1gCWHchI1_mvS7eQiQmGDlp6H8P8i59Qg` |
 | Nov | `November ` — **note the trailing space in the title** — id `1nENfiitkVU06xQsAuPKINBKTj3RliX--`, **she created it herself** on 2026-10-30 along with `November 1` (`1X_r1inNwS894c7GssykYiVgVs2d0XS-p`), where she dropped the boxes recording. Week one, all made here: `November 2` `1R4sJIJF6iSEW3w3tiz1qZN5bCFEeAsVW`, `3` `15XBdhQwnclMrFUlcP-HvJuN-RuxZKGOx`, `4` `1otzgv_rwUJm1qLwGlnNlnGiPezCi_pOx`, `5` `1iH1FrGOq5cfqHBSY23AUSw_UJ0fJUqV_`, `6` `1CQ3AvEmakzfPRg8NzBBRD9PBt3aagHm1`, `7` `11aJzyj1Bnn_8y5xoAmzx5miKuhMxqj5l`. **Look the month folder up before creating one at the start of a month** — a second `November` was created here half an hour after hers and had to be trashed, because Drive allows duplicate names and `GOOGLEDRIVE_CREATE_FOLDER` will happily make one. `GOOGLEDRIVE_DELETE_FOLDER` does not exist; `mcp__Google_Drive__trash_file` takes a folder id and works |
+| Dec | `December`, id `1-5wxcU4RTQyi8OhAJ7qD3UvRoNgTn71w`, made 2026-11-26 after
+listing the parent and finding only September, October and `November ` (and an
+empty next page, because a one-page listing proves nothing). `December 1` is
+`1yLIBHMcwXSWFoPiqzW5E0VDmueYLdtV4`, and it inherits `anyoneWithLink: reader`
+— checked with `get_file_permissions`, not assumed, because a folder that does
+not inherit it makes the curl route return a sign-in page instead of her file |
 | Days | `October 1`–`19`, `21`, `23`, `25`–`30` exist; create the rest as the schedule reaches them. `October 19` is `1wlB2Pyy8tfd5CqHIzYgWGKTe3FeE6H5-`, made 2026-10-19 with Composio's `GOOGLEDRIVE_CREATE_FOLDER` (`name` and `parent_id` — **not** `folder_name`, which is rejected), and its `parents` was checked against the month id rather than trusted from the reply, which does not include it. `October 17` is `1tqjkG8iGyX6ZMmeBti-oH09Fo1A2rtVR`, made 2026-10-17 with `mcp__Google_Drive__create_file` (mimeType `application/vnd.google-apps.folder`, `parentId` the month) — it inherits the month's link-sharing, so a file dropped in it is readable from here straight away |
 | Naming | finished cuts `YYYY-MM-DD-slug-instagram.mp4` and `-tiktok.mp4`; carousel slides `YYYY-MM-DD-slug-instagram-1.jpg` … `-5.jpg` and the same for `-tiktok-`; her own files keep their own names |
 
