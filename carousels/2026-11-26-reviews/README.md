@@ -109,3 +109,22 @@ right, where Friday's needed +4.05 and Sunday's -0.55. The export measures
 
 **No BUDGET line** — a coloring-book piece, not a money one, and `check()`
 asserts the word appears on no slide.
+
+## Published
+
+Thu 26 Nov 2026, 6:30pm Eastern (23:30 UTC), from the one-shot task
+`trig_019SGEKTiU2mZfqL65pRArpD`. She approved the slides and the date on Fri 20
+and the reworded closing slide on Sat 21. **First post since the session moved
+to Sonnet** (switched ~1:44pm that afternoon).
+
+- Instagram: https://www.instagram.com/reel/DgOSzIcuhXV/ (media id
+  `17910293283656104`, container `18106240229367131`, FINISHED after 18.9s).
+  **`media_product_type` reads `REELS`** — the check a slide Reel needs.
+  Live caption diffed against `build/caption.txt`: **identical**, so all three
+  reviewer quotes went out word for word.
+- Facebook: post id `1143825441626761`, same commit-pinned URL (`10390cf`,
+  702,455 bytes verified against the local file first). Page feed checked
+  before posting; nothing of this piece was there.
+
+Date checked before posting, because the closing slide and caption both say
+tomorrow is the last day to enter: it was Thu 26 Nov, so that is true.
