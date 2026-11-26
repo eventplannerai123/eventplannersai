@@ -197,6 +197,28 @@ numbers. **The one lever that would actually cut the bill is switching this
 session's own model**, which is hers and was put to her as a choice. The stored
 `claude-sonnet-5-5` on the five posting tasks stays inert, for the reason above.
 
+**SWITCHED TO SONNET, THU 26 NOV 2026, ~1:44pm EASTERN.** Her words: "Let's do
+sonnet", then "I changed it" after running `/model claude-sonnet-5-5` herself —
+it cannot be set from inside the session, which is why it was hers to do.
+`get_session` confirmed it the same minute: `session_context.model` and
+`external_metadata.model` both read `claude-sonnet-5-5`, with
+`user_switched_model` set. `last_served_model` still read `claude-opus-5` at
+that moment, because it only updates on the next served turn — so the proof is
+the next fire, not that reading.
+
+**This is a one-week test, not a permanent change.** Look at the same usage
+screen Thu 3 Dec. The question it answers: does Sonnet bring 20% of Max down
+far enough that Pro becomes safe? "Far enough" means well under 10%, since Pro
+is a fifth of Max and a week at 20% is already exactly one Pro week.
+
+**What to watch, because the switch is not free.** The 6:47am task is the half
+that needs judgement — reading the day's block, writing captions and scripts,
+auditing her open lines — and it now runs on Sonnet. Watch for the
+Nov 25 failure shape in particular: a line carrying her own written decision
+reported to her as open, because the audit read formatting and not text. If the
+audit starts missing things Opus caught, say so on Thu 3 Dec rather than
+absorbing it, and let her weigh the saving against it.
+
 She sent the screenshot twice, a minute apart and from two different exports —
 the same duplicate-share behaviour as the `October 31` Drive uploads. Compare
 the numbers, not the file hashes, before treating a second send as new
