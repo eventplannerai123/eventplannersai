@@ -182,6 +182,26 @@ A fresh-session task is not the workaround: it gets no connectors, so it cannot
 reach Instagram or Facebook at all. That is the Oct 25 finding and it still
 holds.
 
+**RE-CHECKED THU 26 NOV, AND THE ANSWER IS SETTLED: STAY ON MAX.** Her screen
+read **20% of the weekly limit with one day to go** — the same figure as Nov 19,
+to the percentage point. Two identical weeks a week apart is a stable number
+rather than a one-off, which is what the re-check existed to establish.
+
+The arithmetic is the whole answer. Pro is a fifth of Max, so **20% of a Max
+week is one entire Pro week**. Not close to the ceiling: exactly on it, with
+nothing left for a re-render, a rebuild, or a week with two giveaways in it.
+And the thing that breaks first when the limit binds is the 6:30pm post.
+
+So the Nov 19 question is closed and does not need re-asking off the same
+numbers. **The one lever that would actually cut the bill is switching this
+session's own model**, which is hers and was put to her as a choice. The stored
+`claude-sonnet-5-5` on the five posting tasks stays inert, for the reason above.
+
+She sent the screenshot twice, a minute apart and from two different exports —
+the same duplicate-share behaviour as the `October 31` Drive uploads. Compare
+the numbers, not the file hashes, before treating a second send as new
+information.
+
 ## The travel week, as she revised it twice on 2026-10-25
 
 **She is back Wed 28**, not Thu 29 — her second message supersedes "I can start
