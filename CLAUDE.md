@@ -588,6 +588,9 @@ empty next page, because a one-page listing proves nothing). `December 1` is
 `1yLIBHMcwXSWFoPiqzW5E0VDmueYLdtV4`, and it inherits `anyoneWithLink: reader`
 — checked with `get_file_permissions`, not assumed, because a folder that does
 not inherit it makes the curl route return a sign-in page instead of her file |
+| Nov 30 | `November 30` is `1QqBWP_5Jv33nM8b93mgw23QpxeyHJYrZ`, made 2026-11-27 for the hat
+footage she films by Sat 28. Searched for it first by parent and title, and
+checked `anyoneWithLink: reader` after creating it |
 | Days | `October 1`–`19`, `21`, `23`, `25`–`30` exist; create the rest as the schedule reaches them. `October 19` is `1wlB2Pyy8tfd5CqHIzYgWGKTe3FeE6H5-`, made 2026-10-19 with Composio's `GOOGLEDRIVE_CREATE_FOLDER` (`name` and `parent_id` — **not** `folder_name`, which is rejected), and its `parents` was checked against the month id rather than trusted from the reply, which does not include it. `October 17` is `1tqjkG8iGyX6ZMmeBti-oH09Fo1A2rtVR`, made 2026-10-17 with `mcp__Google_Drive__create_file` (mimeType `application/vnd.google-apps.folder`, `parentId` the month) — it inherits the month's link-sharing, so a file dropped in it is readable from here straight away |
 | Naming | finished cuts `YYYY-MM-DD-slug-instagram.mp4` and `-tiktok.mp4`; carousel slides `YYYY-MM-DD-slug-instagram-1.jpg` … `-5.jpg` and the same for `-tiktok-`; her own files keep their own names |
 
