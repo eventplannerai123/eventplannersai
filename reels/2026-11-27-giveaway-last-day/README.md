@@ -77,3 +77,7 @@ for this one to have none.
   points entrants to Instagram because entries count there only.
 - Her own Fri 27 lines: two Stories after the Reel, and the giveaway closes
   at 11:59pm. The draw runs Sat 28 at 9am.
+
+## What went up
+
+Fri 27 Nov 6:30pm ET. Instagram Reel https://www.instagram.com/reel/DgQ3Xi6hwO9/ (media 17914050123576095, `REELS`, shared to feed). Facebook video 1835516080999506. Commit-pinned source 1c2134b. Live caption diffed against `build/caption.txt`: identical. Pre-flight: neither platform carried this piece; Page feed read first.
