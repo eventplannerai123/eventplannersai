@@ -56,3 +56,7 @@ empty string.
 - **TikTok**, hers, the same image as a photo post.
 - She leaves the first comment within ten minutes — her own answer to
   "What's the one thing you'll check this weekend anyway?"
+
+## What went up
+
+Fri 27 Nov 12:30pm ET. Instagram Reel https://www.instagram.com/reel/DgQOQCKgFmW/ (media 18063208364800680, `REELS`, shared to feed). Facebook video 1847318846303843. Video served from commit-pinned URL at 1c2134b. Live caption diffed against `build/caption.txt`: identical.
