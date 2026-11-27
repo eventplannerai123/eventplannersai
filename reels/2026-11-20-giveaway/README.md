@@ -123,3 +123,23 @@ reading it later will look.
 **Nothing about Thu 26 or Fri 27 changes.** Both pieces say the giveaway is
 open and closing Friday, which is true either way; a giveaway that ends with
 too few entries is still a giveaway that ran.
+
+## And if it closes empty: nothing is posted (her decision, Fri 27 Nov)
+
+**"we wont post anything if no one entered."** Fri 27 morning the Reel still
+had zero comments (`INSTAGRAM_GET_IG_MEDIA_COMMENTS`, media
+`17970851820208246`), so that is the likely path.
+
+So if nobody has entered when it closes at 11:59pm Fri 27: **no winners Story,
+no "closed empty" Story, no Story wording** — nothing goes out about it at all.
+That replaces what was said to her on Thu 26 ("I'll send you the Story wording
+for a giveaway that closed empty"), which assumed an announcement she does not
+want. The Sat 28 9am draw has nothing to draw from, so it becomes a one-line
+check for late entries and nothing more.
+
+What still stands from before: both books are held for a later giveaway in a
+month or two, and the Mon 30 hat giveaway is hat plus one book, one winner.
+
+The unpin of the giveaway Reel and re-pin of "You're allowed to be tired" is a
+separate tidy-up she did not mention, so it is left on her Sat 28 line as it
+was.
