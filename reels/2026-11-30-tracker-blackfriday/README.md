@@ -24,3 +24,16 @@ Reminder log tab never does.
   hand, not by automation.
 - `render.py` needs `TRACKER_SRC` pointing at the folder with `r4.mp4`.
 - ElevenLabs' CDN is blocked here; the mp3s came down through Drive.
+
+## Filed
+
+Drive `November 30` (`1QqBWP_5Jv33nM8b93mgw23QpxeyHJYrZ`), uploaded from commit
+641641d with `size` checked: Instagram `1j3m5NiYnkKs0HdhUeFbn22CFiiCJwxdQ`
+(3,401,760), TikTok `16JturpE7zp2em3BGPT-Pj403IfGYJH1Y` (3,472,707). Two working
+voiceover mp3s also sit in that folder (the route out of ElevenLabs' blocked
+CDN) and could not be trashed from here — the caller has no permission on
+files the other connector created.
+
+**Not yet approved or scheduled.** Goes to her Sun 29 morning with the hat Reel;
+the Mon 30 6:30pm Instagram and Facebook slot needs a one-shot task once she
+approves. Pinterest for Sat 28 posted 6:48am (pins 109, 110).
