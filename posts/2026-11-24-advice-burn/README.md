@@ -156,3 +156,19 @@ against anything else in the feed, and one piece is not a test.
 Instagram happened to push. And at this account's volume two pieces is a weak
 signal either way: if they land within a few percent the honest answer is that
 they tied.
+
+## The 72-hour comparison, read Sat 28 Nov ~9:11am ET
+
+Both still read `is_shared_to_feed: false` (still trials), read before anything was shared.
+
+| | Views | Reach | Avg watch | Interactions |
+| --- | --- | --- | --- | --- |
+| A, two-line title (`18093133250372083`) | 20 | 16 | 3.13s | 0 |
+| B, three-line title (`18088237253707790`) | 15 | 10 | 3.45s | 0 |
+
+The account exposes no non-follower split, but a trial reaches non-followers
+only, so reach is that figure. A is ahead on reach by six accounts and on views by
+five; B held viewers about a third of a second longer. At this volume that is a
+weak signal, not a result: both sit far under the 100-view bar that clears a
+trial, and the watch-time edge points the other way. A was recommended for "Share
+to everyone" because reach is the metric the test was set up on. The tap is hers.
