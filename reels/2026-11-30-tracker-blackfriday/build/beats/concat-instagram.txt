@@ -1,5 +1,0 @@
-file '/home/user/eventplannersai/reels/2026-11-30-tracker-blackfriday/build/beats/instagram-b0-payoff.mp4'
-file '/home/user/eventplannersai/reels/2026-11-30-tracker-blackfriday/build/beats/instagram-b1-paste.mp4'
-file '/home/user/eventplannersai/reels/2026-11-30-tracker-blackfriday/build/beats/instagram-b2-colour.mp4'
-file '/home/user/eventplannersai/reels/2026-11-30-tracker-blackfriday/build/beats/instagram-price.mp4'
-file '/home/user/eventplannersai/reels/2026-11-30-tracker-blackfriday/build/beats/instagram-end-instagram.mp4'

@@ -1,6 +1,0 @@
-file '/home/user/eventplannersai/reels/2026-11-30-tracker-blackfriday/build/beats/tiktok-b0-payoff.mp4'
-file '/home/user/eventplannersai/reels/2026-11-30-tracker-blackfriday/build/beats/tiktok-b1-paste.mp4'
-file '/home/user/eventplannersai/reels/2026-11-30-tracker-blackfriday/build/beats/tiktok-b2-colour.mp4'
-file '/home/user/eventplannersai/reels/2026-11-30-tracker-blackfriday/build/beats/tiktok-price.mp4'
-file '/home/user/eventplannersai/reels/2026-11-30-tracker-blackfriday/build/beats/tiktok-end-tiktok.mp4'
-file '/home/user/eventplannersai/reels/2026-11-30-tracker-blackfriday/build/beats/tiktok-url-tiktok.mp4'
